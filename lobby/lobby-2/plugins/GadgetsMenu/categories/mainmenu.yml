@@ -1,0 +1,69 @@
+MainMenu:
+  Hats:
+    Name: '&aГоловы'
+    Material: DIAMOND_HELMET
+    Lore:
+    - '&fЭти головы способны помочь'
+    - '&fВам выразиться!'
+  Particles:
+    Name: '&aЧастицы'
+    Material: BLAZE_POWDER
+    Lore:
+    - '&fСоздайте вокруг себя красивые'
+    - '&fчастицы, когда Вы стоите.'
+  Suits:
+    Name: '&aКостюмы'
+    Material: GOLDEN_LEGGINGS
+    Lore:
+    - '&fСоберите и наденьте все части'
+    - '&fодного костюма, чтобы получить'
+    - '&fуникальные способности!'
+  Gadgets:
+    Name: '&aГаджеты'
+    Material: PISTON
+    Lore:
+    - '&fОни сделают лобби веселее!'
+  Pets:
+    Name: '&aPets'
+    Material: BONE
+    Lore:
+    - '&fUnlock these pets to have'
+    - '&fthem follow you around in'
+    - '&flobbies!'
+  Morphs:
+    Name: '&aПревращения'
+    Material: ZOMBIE_HEAD
+    Lore:
+    - '&fМаксимальные превращения!'
+    - '&fИспользуя их в лобби, Вы'
+    - '&fпревратитесь в моба и'
+    - '&fоткроете уникальные возможности.'
+  Banners:
+    Name: '&aБаннеры'
+    Material: CUSTOM_MATERIAL_1
+    Lore:
+    - '&fИх можно надеть вместо шляпы!'
+  Emotes:
+    Name: '&aЭмоции'
+    Material: head:60c432cbc490a8af6e9dfeb28095c0a0ec79fff705fb184674d1e743bd05baa
+    Lore:
+    - '&fВыразите себя! Покажите всем'
+    - '&fчто Вы чувствуете сейчас.'
+  Cloaks:
+    Name: '&aПлащи'
+    Material: ENCHANTING_TABLE
+    Lore:
+    - '&fКрутые плащи для крутых игроков!'
+  Animated Hats:
+    Name: '&aАнимированные Головы'
+    Material: head:5ebfd2396cbabdb42c348bcf41599c87a506a71ef60948c496f95c6cb63141
+    Lore:
+    - '&fОни дополняют Ваш внешний вид.'
+  Miniatures:
+    Name: '&aПитомцы'
+    Material: head:9da39269ef45f825ec61bb4f8aa09bd3cf07996fb6fac338a6e91d6699ae425
+    Lore:
+    - '&fЭти милые питомцы будут'
+    - '&fвсегда рядом с Вами!'
+Inventory-Size: 54
+Slot-Layout: 10, 12, 14, 16, 27, 29, 31, 33, 35

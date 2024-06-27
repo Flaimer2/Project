@@ -1,0 +1,25 @@
+locations:
+  E1:
+    world: Lobby
+    x: -264
+    y: 34
+    z: -181
+    particle: Spiral
+  E2:
+    world: Lobby
+    x: -256
+    y: 34
+    z: -181
+    particle: Spiral
+  D1:
+    world: Lobby
+    x: -269
+    y: 28
+    z: -180
+    particle: FireSpew
+  D2:
+    world: Lobby
+    x: -251
+    y: 28
+    z: -180
+    particle: FireSpew

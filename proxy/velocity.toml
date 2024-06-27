@@ -1,0 +1,305 @@
+# Config version. Do not change this
+config-version = "2.6"
+
+# What port should the proxy be bound to? By default, we'll bind to all addresses on port 25577.
+bind = "0.0.0.0:25565"
+
+# What should be the MOTD? This gets displayed when the player adds your server to
+# their server list. Only MiniMessage format is accepted.
+motd = "         <bold><red>⚝  </red></bold><bold><gold>SnapiX   </gold></bold><bold><green>v1</green></bold><green>.</green><bold><green>0   </green></bold><bold><dark_gray>⦅</dark_gray></bold><green>1.8 - 1.19.x</green><bold><dark_gray>⦆</dark_gray></bold><bold><red>  ⚝</red></bold>\n     <white>Анархия, SkyBlock, SnapiPass и многое другое!</white>"
+
+# What should we display for the maximum number of players? (Velocity does not support a cap
+# on the number of players online.)
+show-max-players = 500
+
+# Should we authenticate players with Mojang? By default, this is on.
+online-mode = false
+
+# Should the proxy enforce the new public key security standard? By default, this is on.
+force-key-authentication = false
+
+# If client's ISP/AS sent from this proxy is different from the one from Mojang's
+# authentication server, the player is kicked. This disallows some VPN and proxy
+# connections but is a weak form of protection.
+prevent-client-proxy-connections = false
+
+# Should we forward IP addresses and other data to backend servers?
+# Available options:
+# - "none":        No forwarding will be done. All players will appear to be connecting
+#                  from the proxy and will have offline-mode UUIDs.
+# - "legacy":      Forward player IPs and UUIDs in a BungeeCord-compatible format. Use this
+#                  if you run servers using Minecraft 1.12 or lower.
+# - "bungeeguard": Forward player IPs and UUIDs in a format supported by the BungeeGuard
+#                  plugin. Use this if you run servers using Minecraft 1.12 or lower, and are
+#                  unable to implement network level firewalling (on a shared host).
+# - "modern":      Forward player IPs and UUIDs as part of the login process using
+#                  Velocity's native forwarding. Only applicable for Minecraft 1.13 or higher.
+player-info-forwarding-mode = "LEGACY"
+
+# If you are using modern or BungeeGuard IP forwarding, configure a file that contains a unique secret here.
+# The file is expected to be UTF-8 encoded and not empty.
+forwarding-secret-file = "forwarding.secret"
+
+# Announce whether or not your server supports Forge. If you run a modded server, we
+# suggest turning this on.
+# 
+# If your network runs one modpack consistently, consider using ping-passthrough = "mods"
+# instead for a nicer display in the server list.
+announce-forge = false
+
+# If enabled (default is false) and the proxy is in online mode, Velocity will kick
+# any existing player who is online if a duplicate connection attempt is made.
+kick-existing-players = false
+
+# Should Velocity pass server list ping requests to a backend server?
+# Available options:
+# - "disabled":    No pass-through will be done. The velocity.toml and server-icon.png
+#                  will determine the initial server list ping response.
+# - "mods":        Passes only the mod list from your backend server into the response.
+#                  The first server in your try list (or forced host) with a mod list will be
+#                  used. If no backend servers can be contacted, Velocity won't display any
+#                  mod information.
+# - "description": Uses the description and mod list from the backend server. The first
+#                  server in the try (or forced host) list that responds is used for the
+#                  description and mod list.
+# - "all":         Uses the backend server's response as the proxy response. The Velocity
+#                  configuration is used if no servers could be contacted.
+ping-passthrough = "DISABLED"
+
+# If not enabled (default is true) player IP addresses will be replaced by <ip address withheld> in logs
+enable-player-address-logging = true
+
+[servers]
+# Configure your servers here. Each key represents the server's name, and the value
+# represents the IP address of the server to connect to.
+auth = "127.0.0.1:21001"
+lobby-1 = "127.0.0.1:21101"
+lobby-2 = "127.0.0.1:21102"
+lobby-3 = "127.0.0.1:21103"
+classic = "127.0.0.1:21201"
+anarchy = "127.0.0.1:21301"
+skypvp = "127.0.0.1:21401"
+skyblock = "127.0.0.1:21501"
+sw-1 = "127.0.0.1:21601"
+sw-2 = "127.0.0.1:21602"
+sw-3 = "127.0.0.1:21603"
+sw-4 = "127.0.0.1:21604"
+sw-5 = "127.0.0.1:21605"
+sw-6 = "127.0.0.1:21606"
+sw-7 = "127.0.0.1:21607"
+sw-8 = "127.0.0.1:21608"
+sw-9 = "127.0.0.1:21609"
+sw-10 = "127.0.0.1:21610"
+sw-11 = "127.0.0.1:21611"
+sw-12 = "127.0.0.1:21612"
+sw-13 = "127.0.0.1:21613"
+sw-14 = "127.0.0.1:21614"
+sw-15 = "127.0.0.1:21615"
+sw-16 = "127.0.0.1:21616"
+sw-17 = "127.0.0.1:21617"
+sw-18 = "127.0.0.1:21618"
+sw-19 = "127.0.0.1:21619"
+sw-20 = "127.0.0.1:21620"
+sw-21 = "127.0.0.1:21621"
+sw-22 = "127.0.0.1:21622"
+sw-23 = "127.0.0.1:21623"
+sw-24 = "127.0.0.1:21624"
+sw-25 = "127.0.0.1:21625"
+sw-26 = "127.0.0.1:21626"
+sw-27 = "127.0.0.1:21627"
+sw-28 = "127.0.0.1:21628"
+sw-29 = "127.0.0.1:21629"
+sw-30 = "127.0.0.1:21630"
+sw-31 = "127.0.0.1:21631"
+sw-32 = "127.0.0.1:21632"
+sw-33 = "127.0.0.1:21633"
+sw-34 = "127.0.0.1:21634"
+sw-35 = "127.0.0.1:21635"
+sw-36 = "127.0.0.1:21636"
+sw-37 = "127.0.0.1:21637"
+sw-38 = "127.0.0.1:21638"
+sw-39 = "127.0.0.1:21639"
+sw-40 = "127.0.0.1:21640"
+sw-41 = "127.0.0.1:21641"
+sw-42 = "127.0.0.1:21642"
+tb-1 = "127.0.0.1:21701"
+tb-2 = "127.0.0.1:21702"
+tb-3 = "127.0.0.1:21703"
+tb-4 = "127.0.0.1:21704"
+tb-5 = "127.0.0.1:21705"
+tb-6 = "127.0.0.1:21706"
+tb-7 = "127.0.0.1:21707"
+tb-8 = "127.0.0.1:21708"
+tb-9 = "127.0.0.1:21709"
+tb-10 = "127.0.0.1:21710"
+tb-11 = "127.0.0.1:21711"
+tb-12 = "127.0.0.1:21712"
+tb-13 = "127.0.0.1:21713"
+tb-14 = "127.0.0.1:21714"
+tb-15 = "127.0.0.1:21715"
+bw-1 = "127.0.0.1:21801"
+bw-2 = "127.0.0.1:21802"
+bw-3 = "127.0.0.1:21803"
+bw-4 = "127.0.0.1:21804"
+bw-5 = "127.0.0.1:21805"
+bw-6 = "127.0.0.1:21806"
+bw-7 = "127.0.0.1:21807"
+bw-8 = "127.0.0.1:21808"
+bw-9 = "127.0.0.1:21809"
+bw-10 = "127.0.0.1:21810"
+bw-11 = "127.0.0.1:21811"
+bw-12 = "127.0.0.1:21812"
+bw-13 = "127.0.0.1:21813"
+bw-14 = "127.0.0.1:21814"
+bw-15 = "127.0.0.1:21815"
+bw-16 = "127.0.0.1:21816"
+bw-17 = "127.0.0.1:21817"
+bw-18 = "127.0.0.1:21818"
+bw-19 = "127.0.0.1:21819"
+bw-20 = "127.0.0.1:21820"
+bw-21 = "127.0.0.1:21821"
+bw-22 = "127.0.0.1:21822"
+bw-23 = "127.0.0.1:21823"
+bw-24 = "127.0.0.1:21824"
+bw-25 = "127.0.0.1:21825"
+bw-26 = "127.0.0.1:21826"
+bw-27 = "127.0.0.1:21827"
+bw-28 = "127.0.0.1:21828"
+bw-29 = "127.0.0.1:21829"
+bw-30 = "127.0.0.1:21830"
+bw-31 = "127.0.0.1:21831"
+bw-32 = "127.0.0.1:21832"
+bw-33 = "127.0.0.1:21833"
+bw-34 = "127.0.0.1:21834"
+bw-35 = "127.0.0.1:21835"
+bw-36 = "127.0.0.1:21836"
+bw-37 = "127.0.0.1:21837"
+bw-38 = "127.0.0.1:21838"
+bw-39 = "127.0.0.1:21839"
+bw-40 = "127.0.0.1:21840"
+bw-41 = "127.0.0.1:21841"
+bw-42 = "127.0.0.1:21842"
+mm-1 = "127.0.0.1:21901"
+mm-2 = "127.0.0.1:21902"
+mm-3 = "127.0.0.1:21903"
+mm-4 = "127.0.0.1:21904"
+mm-5 = "127.0.0.1:21905"
+mm-6 = "127.0.0.1:21906"
+mm-7 = "127.0.0.1:21907"
+mm-8 = "127.0.0.1:21908"
+mm-9 = "127.0.0.1:21909"
+mm-10 = "127.0.0.1:21910"
+mm-11 = "127.0.0.1:21911"
+mm-12 = "127.0.0.1:21912"
+mm-13 = "127.0.0.1:21913"
+mm-14 = "127.0.0.1:21914"
+mm-15 = "127.0.0.1:21915"
+mm-16 = "127.0.0.1:21916"
+mm-17 = "127.0.0.1:21917"
+mm-18 = "127.0.0.1:21918"
+mm-19 = "127.0.0.1:21919"
+mm-20 = "127.0.0.1:21920"
+mm-21 = "127.0.0.1:21921"
+mm-22 = "127.0.0.1:21922"
+mm-23 = "127.0.0.1:21923"
+mm-24 = "127.0.0.1:21924"
+mm-25 = "127.0.0.1:21925"
+mm-26 = "127.0.0.1:21926"
+mm-27 = "127.0.0.1:21927"
+mm-28 = "127.0.0.1:21928"
+mm-29 = "127.0.0.1:21929"
+mm-30 = "127.0.0.1:21930"
+mm-31 = "127.0.0.1:21931"
+mm-32 = "127.0.0.1:21932"
+mm-33 = "127.0.0.1:21933"
+mm-34 = "127.0.0.1:21934"
+mm-35 = "127.0.0.1:21935"
+mm-36 = "127.0.0.1:21936"
+mw-1 = "127.0.0.1:22001"
+mw-2 = "127.0.0.1:22002"
+mw-3 = "127.0.0.1:22003"
+mw-4 = "127.0.0.1:22004"
+mw-5 = "127.0.0.1:22005"
+mw-6 = "127.0.0.1:22006"
+mw-7 = "127.0.0.1:22007"
+mw-8 = "127.0.0.1:22008"
+mw-9 = "127.0.0.1:22009"
+mw-10 = "127.0.0.1:22010"
+mw-11 = "127.0.0.1:22011"
+mw-12 = "127.0.0.1:22012"
+mw-13 = "127.0.0.1:22013"
+mw-14 = "127.0.0.1:22014"
+mw-15 = "127.0.0.1:22015"
+mw-16 = "127.0.0.1:22016"
+mw-17 = "127.0.0.1:22017"
+mw-18 = "127.0.0.1:22018"
+mw-19 = "127.0.0.1:22019"
+mw-20 = "127.0.0.1:22020"
+
+# In what order we should try servers when a player logs in or is kicked from a server.
+try = [
+    "auth"
+]
+
+[forced-hosts]
+
+[advanced]
+# How large a Minecraft packet has to be before we compress it. Setting this to zero will
+# compress all packets, and setting it to -1 will disable compression entirely.
+compression-threshold = 256
+
+# How much compression should be done (from 0-9). The default is -1, which uses the
+# default level of 6.
+compression-level = -1
+
+# How fast (in milliseconds) are clients allowed to connect after the last connection? By
+# default, this is three seconds. Disable this by setting this to 0.
+login-ratelimit = 3000
+
+# Specify a custom timeout for connection timeouts here. The default is five seconds.
+connection-timeout = 5000
+
+# Specify a read timeout for connections here. The default is 30 seconds.
+read-timeout = 30000
+
+# Enables compatibility with HAProxy's PROXY protocol. If you don't know what this is for, then
+# don't enable it.
+haproxy-protocol = false
+
+# Enables TCP fast open support on the proxy. Requires the proxy to run on Linux.
+tcp-fast-open = false
+
+# Enables BungeeCord plugin messaging channel support on Velocity.
+bungee-plugin-message-channel = true
+
+# Shows ping requests to the proxy from clients.
+show-ping-requests = false
+
+# By default, Velocity will attempt to gracefully handle situations where the user unexpectedly
+# loses connection to the server without an explicit disconnect message by attempting to fall the
+# user back, except in the case of read timeouts. BungeeCord will disconnect the user instead. You
+# can disable this setting to use the BungeeCord behavior.
+failover-on-unexpected-server-disconnect = true
+
+# Declares the proxy commands to 1.13+ clients.
+announce-proxy-commands = true
+
+# Enables the logging of commands
+log-command-executions = false
+
+# Enables logging of player connections when connecting to the proxy, switching servers
+# and disconnecting from the proxy.
+log-player-connections = true
+
+[query]
+# Whether to enable responding to GameSpy 4 query responses or not.
+enabled = false
+
+# If query is enabled, on what port should the query protocol listen on?
+port = 25577
+
+# This is the map name that is reported to the query services.
+map = "Velocity"
+
+# Whether plugins should be shown in query response by default or not
+show-plugins = false

@@ -1,0 +1,60 @@
+Events:
+  vk:
+    type: block_interact
+    conditions:
+    - '%block_x% == -262'
+    - '%block_y% == 30'
+    - '%block_z% == -211'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'call_event: clickhead;%name%=&9Вконтакте;%link%=https://vk.com/mcsnapix'
+  discord:
+    type: block_interact
+    conditions:
+    - '%block_x% == -261'
+    - '%block_y% == 30'
+    - '%block_z% == -211'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'call_event: clickhead;%name%=&9Discord;%link%=https://discord.com/invite/uQBQuU4'
+  vkauth:
+    type: block_interact
+    conditions:
+    - '%block_x% == -260'
+    - '%block_y% == 30'
+    - '%block_z% == -211'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'call_event: clickhead;%name%=&6Привязку;%link%=https://vk.com/authsnapix'
+  site:
+    type: block_interact
+    conditions:
+    - '%block_x% == -259'
+    - '%block_y% == 30'
+    - '%block_z% == -211'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'call_event: clickhead;%name%=&aСайт;%link%=https://www.mcsnapix.ru/'
+  forum:
+    type: block_interact
+    conditions:
+    - '%block_x% == -258'
+    - '%block_y% == 30'
+    - '%block_z% == -211'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'call_event: clickhead;%name%=&3Форум;%link%=https://forum.mcsnapix.ru/'
+  clickhead:
+    type: call
+    actions:
+      default:
+      - 'call_event: soundsuccess'
+      - 'message: &7'
+      - 'message: &f  Ссылка на %name%&f:'
+      - 'message: &a  %link%'
+      - 'message: &7'

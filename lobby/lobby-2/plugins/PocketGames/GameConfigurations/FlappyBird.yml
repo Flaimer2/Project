@@ -1,0 +1,48 @@
+# Edit Flappy Bird in this file.
+# 
+# All items are customizable. Play around with the GameSettings and find the sweet spot for your server!
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: false
+GameHeader: '&3&lFlappy Bird'
+MenuItem:
+  page: 1
+  slot: 31
+  item: FEATHER
+  name: '      &6&l&m--[-&f  &3&lFlappy Bird&f  &6&l&m-]--'
+  lore:
+  - ' &f&m-----------------------------&7 '
+  - '  &eFlap as far as you possibly can!'
+  - '  &eFly through the green tubes to'
+  - '  &escore points. Colliding with a'
+  - '  &etube will end the game instantly!'
+  - ' &7&m-----------------------------&7 '
+  - '  &f&oLeft Click -> Play Game'
+  - '  &f&oRight Click -> Highscore'
+  - ' &7&m-----------------------------&7 '
+GameItems:
+  bird:
+    head: http://textures.minecraft.net/texture/f8a82c8b75dd1c2ce8133c0ba939b8c52e47d3ec374950f47dddbbe345e20
+    name: '&eFaby'
+  column:
+    item: STAINED_CLAY:5
+    name: '&a&l*'
+  trunk:
+    item: STAINED_GLASS_PANE:12
+    name: '&8&l*'
+  leaves:
+    item: STAINED_GLASS_PANE:5
+    name: '&a&l*'
+  sun:
+    item: STAINED_GLASS_PANE:4
+    name: '&eSun'
+  background:
+    item: STAINED_GLASS_PANE:3
+    name: '&b&l*'
+Controls:
+  up:
+    slot: 22
+    head: http://textures.minecraft.net/texture/a99aaf2456a6122de8f6b62683f2bc2eed9abb81fd5bea1b4c23a58156b669
+    name: '&aFlap'

@@ -1,0 +1,16 @@
+location: lobby:-248.500:31.900:-156.500
+enabled: true
+display-range: 256
+update-range: 64
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&fКто-то раскидал по лобби &cПодарки&f.'
+    height: 0.3
+  - content: '&fНайдите их и получите призы!'
+    height: 0.6
+  - content: '&fНайдено подарков: &a%lobbypresents_found%/%lobbypresents_max%'
+    height: 0.0
+  actions: {}

@@ -1,0 +1,17 @@
+# This file contains the userdata of players who play Pocket Games.
+# MaxInactivity is the maximum time (in days) userdata is saved for for each player.
+# Inactivity means not playing any Pocket Games. Inactivity is reset whenever a game is started.
+# Set to -1 to never delete any userdata. Set to 0 to never save.
+# If set to 0 Pocket Games will only store userdata until reload/restart.
+# It is advised that you never edit any userdata manually. Especially not the saves!
+
+MaxInactivity: 30
+Players:
+  b8a47f4c-108e-33dd-a551-34497268b20f:
+    player: Danuk16
+    timestamp: 1719258199
+    sound: true
+  67b6efe6-bf52-3c13-8d21-291fd6b1fe76:
+    player: FlaimerPro
+    timestamp: 1719258196
+    sound: true

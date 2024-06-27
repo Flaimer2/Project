@@ -1,0 +1,61 @@
+# Edit Simon Says in this file.
+# 
+# All items are customizable. Play around with the GameSettings and find the sweet spot for your server!
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: Саймон говорит
+MenuItem:
+  page: 1
+  slot: 30
+  item: RAW_FISH:3
+  name: '&9&lСаймон говорит'
+  lore:
+  - '&eОписание:'
+  - '&fПроверьте свои запоминающие способности'
+  - '&fс помощью этой простой игры! Всё что Вам'
+  - '&fнужно сделать – запомнить порядок цветов.'
+  - '&fС каждым ходом будет прибавляться один цвет.'
+  - ''
+  - '&aНажмите ЛКМ, чтобы начать игру'
+  - '&aНажмите ПКМ, чтобы увидеть топ'
+GameItems:
+  filler:
+    item: STAINED_GLASS_PANE:7
+    name: '&7&l*'
+  green:
+    normal:
+      item: STAINED_GLASS_PANE:5
+      name: '&a&lЗЕЛЕНЫЙ'
+    clicked:
+      item: STAINED_GLASS_PANE:5
+      name: '&a&lЗЕЛЕНЫЙ'
+      glow: true
+  red:
+    normal:
+      item: STAINED_GLASS_PANE:14
+      name: '&c&lКРАСНЫЙ'
+    clicked:
+      item: STAINED_GLASS_PANE:14
+      name: '&a&lКРАСНЫЙ'
+      glow: true
+  yellow:
+    normal:
+      item: STAINED_GLASS_PANE:4
+      name: '&e&lЖЕЛТЫЙ'
+    clicked:
+      item: STAINED_GLASS_PANE:4
+      name: '&e&lЖЕЛТЫЙ'
+      glow: true
+  blue:
+    normal:
+      item: STAINED_GLASS_PANE:11
+      name: '&9&lСИНИЙ'
+    clicked:
+      item: STAINED_GLASS_PANE:11
+      name: '&9&lСИНИЙ'
+      glow: true
+GameSettings:
+  clicksAnimationSpeed: 7

@@ -1,0 +1,15 @@
+# значение true означает включено
+# значение false означает выключено
+# плагин от vk.com/reallykoxay
+
+noIceMelt: true # запрет таяния 
+noDamage: true # запрет урона
+noHunger: true # запрет голода
+noBreak: true # запрет ломания блоков
+noPlace: true # запрет установки блоков
+noFire: true # запрет распостранения огня и сгорания блоков
+noWeather: true # запрет погоды
+noMessage: true # отключает сообщения при входе/выходе/кике/смерти
+noChat: true # отключает чат
+giveInvisibility: true # выдача эффекта невидимости при заходе
+giveSpeed: false # выдача эффекта скорости при заходе

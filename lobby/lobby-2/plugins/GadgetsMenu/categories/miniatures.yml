@@ -1,0 +1,243 @@
+Miniatures:
+  Doge:
+    Name: '&9Собака'
+    Material: head:b72e164fc95e9fe7389da2f1b08e138ce1df6bc256511a50de23cc358cc83c
+    Mystery Dust: 42000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Mr Smiley:
+    Name: '&9Mr. Smiley'
+    Material: head:0d366a476466f0241af31c71db697855a39a16dc14bddff2098ed5050ff
+    Mystery Dust: 45000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Devil:
+    Name: '&9Дьявол'
+    Material: head:9da39269ef45f825ec61bb4f8aa09bd3cf07996fb6fac338a6e91d6699ae425
+    Mystery Dust: 48000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Astronaut:
+    Name: '&5Астронавт'
+    Material: head:ec342e45dc4d016b355bdb1e80acf9928b2d420c8eafcc59741d672145cf4385
+    Mystery Dust: 58000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Zombie:
+    Name: '&9Зомби'
+    Material: ZOMBIE_HEAD
+    Mystery Dust: 55000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Enderman:
+    Name: '&5Эндермен'
+    Material: head:7a59bb0a7a32965b3d90d8eafa899d1835f424509eadd4e6b709ada50b9cf
+    Mystery Dust: 65000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Iron Golem:
+    Name: '&5Железный голем'
+    Material: head:89091d79ea0f59ef7ef94d7bba6e5f17f2f7d4572c44f90f76c4819a714
+    Mystery Dust: 65000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Witch:
+    Name: '&6Ведьма'
+    Material: head:d122b564634cc7b0305881336dab63dbb6d311c5acf1f604eae179597f2364
+    Mystery Dust: 70000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Swamp Monster:
+    Name: '&6Болотный Монстр'
+    Material: head:d88ba8bb50b79e441e47b7e452764d5fff6693779d2dadd9f7f52f98d7ea0
+    Mystery Dust: 72000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Scarecrow:
+    Name: '&6Пугало'
+    Material: head:7cf772a5542b97c98de6b1133942444aa6b83fe2916fab816c106eab9468
+    Mystery Dust: 72000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Clown:
+    Name: '&5Клоун'
+    Material: head:86dbc1debc57438a5de4ba915151382abc3d8f1318e2a35e78dfb30f04bc467
+    Mystery Dust: 62000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Ghost:
+    Name: '&5Привидение'
+    Material: head:32555ca901ab6301e7ce9789b57ebab59349c1acd7973f4ebbd0c38e10ada1f1
+    Mystery Dust: 60000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Grim Reaper:
+    Name: '&6Сме-е-ерть'
+    Material: head:badfc62ff19950a9afd6c23291d0b25e19c74eb922c184e5edd3255f3fad9565
+    Mystery Dust: 75000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Miner:
+    Name: '&6Шахтер'
+    Material: head:d357444ade64ec6cea645ec57e775864d67c5fa62299786e03799317ee4ad
+    Mystery Dust: 75000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Santa:
+    Name: '&6Санта'
+    Material: head:14e424b1676feec3a3f8ebade9e7d6a6f71f7756a869f36f7df0fc182d436e
+    Mystery Dust: 68000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Snowman:
+    Name: '&6Снеговик'
+    Material: head:ce4bee0403a208fbdc2ab2a61e3ff23b3270554253683a6d0a5516aca84a2be7
+    Mystery Dust: 68000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Reindeer:
+    Name: '&5Северный олень'
+    Material: head:ebd46b38b21b342caf917ad9ca42afb68388a5591bcc9aded1e8e346e18890
+    Mystery Dust: 65000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Lantern:
+    Name: '&5Фонарь'
+    Material: head:f243706075a4f5f2731a8ad5f636058b1d5b3a49c1f14f5b9babcf2044f59355
+    Mystery Dust: 65000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Present:
+    Name: '&6Подарок'
+    Material: head:6cef9aa14e884773eac134a4ee8972063f466de678363cf7b1a21a85b7
+    Mystery Dust: 78000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Globe:
+    Name: '&6Земной шар'
+    Material: head:c9c8881e42915a9d29bb61a16fb26d059913204d265df5b439b3d792acd56
+    Mystery Dust: 78000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Mars:
+    Name: '&6Марс'
+    Material: head:777d616bc44ac9b3730fed47f29a378f88a16728c67048c1a387d229e1cba
+    Mystery Dust: 80000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Snowglobe:
+    Name: '&6Снежный шар'
+    Material: head:7bbe8fd1aa39f15076e884dfe6ddb9a3f3761db31e2b1f9940b5dfd34d1c4d
+    Mystery Dust: 85000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''

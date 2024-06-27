@@ -1,0 +1,62 @@
+# Edit Snake in this file.
+# 
+# All items are customizable. Play around with the GameSettings and find the sweet spot for your server!
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: Змейка
+MenuItem:
+  page: 1
+  slot: 33
+  head: http://textures.minecraft.net/texture/b0b9d167309773d1fb87be28934a7acf0e6c7fb16342b89ac2fb3abccb4dbf
+  name: '&7&lЗмейка'
+  lore:
+  - '&eОписание:'
+  - '&fСыграйте в старую добрую игру'
+  - '&f"Змейка". Съешьте как можно'
+  - '&fбольше яблок, не столкнувшись'
+  - '&fс собой или со стенами!'
+  - ''
+  - '&aНажмите ЛКМ, чтобы начать игру'
+  - '&aНажмите ПКМ, чтобы увидеть топ'
+GameItems:
+  background:
+    item: STAINED_GLASS_PANE:3
+    name: '&7&l*'
+  food:
+    item: APPLE
+    name: '&cЯблоко'
+  snake:
+    head:
+      item: PUMPKIN
+      name: '&aГолова'
+    body:
+      item: LEAVES
+      name: '&aТело'
+    tail:
+      item: FEATHER
+      name: '&aХвост'
+GameSettings:
+  gameSpeed:
+    startSpeed: 15
+    difficultyIncrementRate: 0.85
+    maxGameSpeed: 6
+Controls:
+  up:
+    slot: 13
+    head: http://textures.minecraft.net/texture/a99aaf2456a6122de8f6b62683f2bc2eed9abb81fd5bea1b4c23a58156b669
+    name: '&aВверх'
+  down:
+    slot: 22
+    head: http://textures.minecraft.net/texture/3912d45b1c78cc22452723ee66ba2d15777cc288568d6c1b62a545b29c7187
+    name: '&aВниз'
+  left:
+    slot: 21
+    head: http://textures.minecraft.net/texture/5f133e91919db0acefdc272d67fd87b4be88dc44a958958824474e21e06d53e6
+    name: '&aВлево'
+  right:
+    slot: 23
+    head: http://textures.minecraft.net/texture/e3fc52264d8ad9e654f415bef01a23947edbccccf649373289bea4d149541f70
+    name: '&aВправо'

@@ -1,0 +1,65 @@
+Custom-Loots:
+  2500-Money:
+    Name: '&a2500$'
+    Rarity: Common
+    Category: '&cДеньги'
+    CanBeFound: true
+    Execute-Command:
+      Enabled: true
+      Commands:
+      - money give {PLAYER} 2500
+  5000-Money:
+    Name: '&a5000$'
+    Rarity: Common
+    Category: '&cДеньги'
+    CanBeFound: true
+    Execute-Command:
+      Enabled: true
+      Commands:
+      - money give {PLAYER} 5000
+  15000-Money:
+    Name: '&915000$'
+    Rarity: Rare
+    Category: '&cДеньги'
+    CanBeFound: true
+    Execute-Command:
+      Enabled: true
+      Commands:
+      - money give {PLAYER} 15000
+  100000-Money:
+    Name: '&6100000$'
+    Rarity: Legendary
+    Category: '&cДеньги'
+    CanBeFound: true
+    Execute-Command:
+      Enabled: true
+      Commands:
+      - money give {PLAYER} 100000
+  800-exp:
+    Name: '&a800exp'
+    Rarity: Common
+    Category: '&9Опыт'
+    CanBeFound: true
+    Execute-Command:
+      Enabled: true
+      Commands:
+      - alonsolevels addexp {PLAYER} 800 false true
+  1500-exp:
+    Name: '&91500exp'
+    Rarity: Rare
+    Category: '&9Опыт'
+    CanBeFound: true
+    Execute-Command:
+      Enabled: true
+      Commands:
+      - alonsolevels addexp {PLAYER} 1500 false true
+  4000-exp:
+    Name: '&64000exp'
+    Rarity: Legendary
+    Category: '&9Опыт'
+    CanBeFound: true
+    Execute-Command:
+      Enabled: true
+      Commands:
+      - alonsolevels addexp {PLAYER} 4000 false true
+

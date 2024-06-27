@@ -1,0 +1,57 @@
+# Edit BlockCrush in this file.
+# 
+# Add/remove as many blocks as you want.
+# Do not add the glow: attribute to the blocks as it is used to show selected and connected items.
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: Три в ряд
+MenuItem:
+  page: 2
+  slot: 24
+  item: IRON_BLOCK
+  name: '&e&lТри в ряд'
+  lore:
+  - '&eОписание:'
+  - '&fЭта игра похожа на популярную игру'
+  - '&fCandy Crush. Меняйте местами блоки'
+  - '&fтак, чтобы было как минимум три'
+  - '&fодинаковых блока подряд.'
+  - ''
+  - '&aНажмите ЛКМ, чтобы начать игру'
+  - '&aНажмите ПКМ, чтобы увидеть топ'
+GameItems:
+  background:
+    item: STAINED_GLASS_PANE:7
+    name: '&7&l*'
+  movesCounter:
+    item: WATCH
+    name: '&fОсталось &a%moves% &fходов!'
+    slot: 22
+  Blocks:
+    dirt:
+      item: DIRT
+      name: '&fГрязь'
+    stone:
+      item: STONE
+      name: '&7Камень'
+    log:
+      item: LOG
+      name: '&6Дерево'
+    sand:
+      item: SAND
+      name: '&7Песок'
+    ice:
+      item: ICE
+      name: '&bЛёд'
+    brick:
+      item: BRICK
+      name: '&cКирпич'
+    netherrack:
+      item: NETHERRACK
+      name: '&4Адский камень'
+GameSettings:
+  moves: 15
+  gravitySpeed: 3

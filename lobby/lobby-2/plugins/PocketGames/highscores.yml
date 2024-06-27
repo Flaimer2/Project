@@ -1,0 +1,466 @@
+# This is a Highscore file for all Pocket Games.
+# Every game has a minimum_score/maximum_time and five positions each containing a player and score.
+# 'minimum_score' represents the lowest score needed to enter the high score.
+# 'maximum_time' represents the max time in seconds you can take in order to enter the high score.
+# Everything can be edited though it is advised only manually editing the values for minimum_score and maximum_time.
+# 'minimum_score' and 'maximum_time' cannot be 0, null, negative or decimal!
+
+DiamondCollect:
+  minimum_score: 10
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+AppleCatch:
+  minimum_score: 30
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+FlappyBird:
+  minimum_score: 15
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+MatchIt:
+  maximum_time: 60
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+DinoRun:
+  minimum_score: 250
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+'2048':
+  minimum_score: 7500
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+Super2048:
+  minimum_score: 50000
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+SimonSays:
+  minimum_score: 8
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+GapJump:
+  minimum_score: 10
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+WhacAMole:
+  minimum_score: 350
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+DropTower:
+  minimum_score: 35
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+NameIt:
+  minimum_score: 25
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+TheQuiz:
+  minimum_score: 10
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+Basket:
+  minimum_score: 5
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+OverUnder:
+  minimum_score: 5
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+FallingBlocks:
+  minimum_score: 30
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+CaveIn:
+  minimum_score: 400
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+CookieClicker:
+  minimum_score: 100000
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+Snake:
+  minimum_score: 15
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+SpeedClicker:
+  minimum_score: 120
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+BlockCrush:
+  minimum_score: 70
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+DontTap:
+  minimum_score: 60
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+Tetris:
+  minimum_score: 10
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+Flow:
+  maximum_time: 180
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+TicTacToe:
+  minimum_score: 5
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+Sudoku:
+  maximum_time: 1200
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0
+Minesweeper:
+  maximum_time: 300
+  '1':
+    player: ''
+    score: 0
+  '2':
+    player: ''
+    score: 0
+  '3':
+    player: ''
+    score: 0
+  '4':
+    player: ''
+    score: 0
+  '5':
+    player: ''
+    score: 0

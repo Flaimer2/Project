@@ -1,0 +1,45 @@
+# Edit Connect4 in this file.
+# 
+# All items are customizable. Play around with the GameSettings and find the sweet spot for your server!
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: Connect4
+MenuItem:
+  page: 1
+  slot: 24
+  item: GOLDEN_APPLE
+  name: '&e&lConnect4'
+  lore:
+  - '&eОписание:'
+  - '&fКто сможет соединить 4 предмета'
+  - '&fпервым? Нажмите сверху на стекло'
+  - '&fчтобы сделать свой ход. Вы должны'
+  - '&fсоединить 4 предмета либо по вертикали,'
+  - '&fлибо по горизонтали, либо по диагонали.'
+  - ''
+  - '&aНажмите, чтобы начать игру'
+GameItems:
+  background:
+    item: STAINED_GLASS_PANE:3
+    name: '&b&l█'
+  clickableRow:
+    item: STAINED_GLASS_PANE:3
+    name: '&b&l█'
+    glow: true
+  border:
+    item: STAINED_GLASS_PANE:11
+    name: '&7&l█'
+  red:
+    item: APPLE
+    name: '&cКрасный'
+  yellow:
+    item: GOLDEN_APPLE
+    name: '&eЖёлтый'
+GameSettings:
+  dropSpeed: 3
+Inactivity:
+  enabled: true
+  duration: 30

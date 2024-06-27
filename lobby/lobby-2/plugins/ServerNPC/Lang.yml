@@ -1,0 +1,43 @@
+# # # # # # # # # # # # # # # # # # # #
+#                                     #
+#      Thanks for use ServerNPC       #
+#                                     #
+# # # # # # # # # # # # # # # # # # # #
+LANG-VERSION: 1.0
+NEED_UPDATE: A new version is available. You have %s and the new version is %s
+NEED_PERMISSION: You don't have permissions to execute this. &c(%s)
+SCOREBOARD_PREFIX: '&8[NPC] '
+SCOREBOARD_SUFFIX: ''
+YOU_CANT_DO_THIS: You can't do this.
+NPC_DONT_EXIST: The NPC &c%s&f does not exist. &c&l✖
+NPC_DELETED: The NPC &c%s&f was successfully deleted. &a&l✔
+NPC_SKIN_CHANGE_TRY: Trying to change skin of &c%s&f...
+NPC_SKIN_CHANGE_SUCCESS: The skin of the NPC &c%s&f was successfuly changed. &ePlease
+  move to see the NPC&f. &a&l✔
+NPC_SKIN_CHANGE_ERROR: Error trying to change skin of &c%s&f. &c&l✖
+ACTIONS_TITLE: '&6● &fACTIONS FROM &e%s'
+ACTIONS_EMPTY: '  &e➥ &cEMPTY'
+ACTIONS_LISTED: '  &e➥&f ID: %s &a➟&f %s'
+ACTIONS_ACTION: '&fCONSOLE=%s &e▌&f PERM=%s &e▌&f ACTION=%s'
+ACTION_ADDED: Successfully added new Action. &a&l✔
+ACTION_REMOVED: Successfully removed Action. &a&l✔
+ACTION_ERROR_ID: The ID of the action does not exist. &c&l✖
+ACTION_ERROR_SAVING: Error saving Actions. &c&l✖
+ACTION_CD_CHANGED: You have successfully changed %s cooldown. Now it's %s
+CANCELLED: Action Cancelled.
+HOLOGRAM_ADDED: '&a&l✔&f Successfully added Hologram Line: %s'
+HOLOGRAM_CHANGED_LINE: '&a&l✔&f Successfully changed the line &b%s&f to %s'
+NPC_CREATED: Successfully created the NPC &e%s&f. &a&l✔
+NPC_ALREADY_EXIST: The NPC &e%s&f already exists. &c&l✖
+NPC_DONT_16: The NPC &e%s&f name is more longer than 16 chars. &7(Have %s) &c&l✖
+NPC_LIST_TITLE: '&6● &fNPCs Available'
+NPC_LIST_EMPTY: '  &e➥ &cEMPTY'
+NPC_LIST_LISTED: '  &e➥ &b%s &6➟&f Skin: &e%s &b▌ &fLocation: &e%s'
+NPC_SEATED: '%s is now seated.'
+NPC_NO_SEATED: '%s is no longer seated.'
+NPC_NAMETAG: The nametag of the NPC %s is now invisible.
+NPC_NO_NAMETAG: The nametag of the NPC %s is now invisible.
+NPC_LOOK_RANGE_INVALID: '"%s" Is not is a valid range. Please set a valid one.'
+NPC_LOOK_RANGE_CHANGED: The range of vision for "%s" was successfully changed. Now
+  it's %s
+NPC_INTERACT_COOLDOWN: Please wait %s(s) to click again.

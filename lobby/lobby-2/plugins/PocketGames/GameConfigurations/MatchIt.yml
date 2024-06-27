@@ -1,0 +1,78 @@
+# Edit MatchIt in this file.
+# 
+# Add as many matchItems as you want, though at least 14. Increment paths e.g '15', '16', '17' etc. if you add more items.
+# All items including match items can have lore, name, amount, glow, itemFlags etc.
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: Сопоставление
+MenuItem:
+  page: 1
+  slot: 29
+  item: BLAZE_ROD
+  name: '&a&lСопоставление'
+  lore:
+  - '&eОписание:'
+  - '&fСыграйте в игру, которая развивает'
+  - '&fпамять! Нажмите на блок шерсти,'
+  - '&fчтобы перевернуть его. Сопоставляйте'
+  - '&fпредметы как можно быстрее!'
+  - ''
+  - '&aНажмите ЛКМ, чтобы начать игру'
+  - '&aНажмите ПКМ, чтобы увидеть топ'
+  glow: true
+GameItems:
+  border:
+    item: STAINED_CLAY:14
+    name: '&7&l*'
+  matchItems:
+    '1':
+      item: BONE
+      name: '&fКость'
+    '2':
+      item: DIAMOND
+      name: '&bАлмаз'
+    '3':
+      item: GOLD_INGOT
+      name: '&7Золотой слиток'
+    '4':
+      item: IRON_INGOT
+      name: '&8Железный слиток'
+    '5':
+      item: GLOWSTONE_DUST
+      name: '&7Светокаменная пыль'
+    '6':
+      item: TNT
+      name: '&cTNT'
+    '7':
+      item: BLAZE_ROD
+      name: '&6Огненный стержень'
+    '8':
+      item: ARROW
+      name: '&fСтрела'
+    '9':
+      item: HOPPER
+      name: '&7Воронка'
+    '10':
+      item: ANVIL
+      name: '&7Наковальня'
+    '11':
+      item: COAL
+      name: '&8Уголь'
+    '12':
+      item: APPLE
+      name: '&cЯблоко'
+    '13':
+      item: STRING
+      name: '&fНить'
+    '14':
+      item: MAGMA_CREAM
+      name: '&cСгусток магмы'
+GameSettings:
+  wrongMatchDelay: 20
+Controls:
+  flipItem:
+    item: WOOL
+    name: '&fНажмите, чтобы перевернуть'

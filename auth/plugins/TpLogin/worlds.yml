@@ -1,0 +1,23 @@
+worlds:
+  auth:
+    Different-Spawn-World:
+      Enabled: true
+      World-Name: auth
+      Location-Name: default
+    Location:
+      default:
+        X: 0.5
+        Y: 50.0
+        Z: 0.5
+        Yaw: 90.0
+        Pitch: 0.0
+    MOTD: []
+    Join-Message: []
+    Quit-Message: []
+    Global-Commands: []
+    Join-Commands: []
+    Quit-Commands: []
+    Void-Teleport:
+      Enabled: true
+      World-Name: auth
+      Location-Name: default

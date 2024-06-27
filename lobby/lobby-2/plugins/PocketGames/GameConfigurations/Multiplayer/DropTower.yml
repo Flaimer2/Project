@@ -1,0 +1,41 @@
+# Edit DropTower in this file.
+# 
+# All items are customizable. Play around with the GameSettings and find the sweet spot for your server!
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: Дроппер
+MenuItem:
+  page: 1
+  slot: 20
+  item: DROPPER
+  name: '&7&lДроппер'
+  lore:
+  - '&eОписание:'
+  - '&fПадайте как можно быстрее! Если Вы'
+  - '&fбудете медлить, то Вы проиграете своему'
+  - '&fсопернику. Чем больше очков будет набрано,'
+  - '&fтем быстрее будет игра. Удачного падения!'
+  - ''
+  - '&aНажмите, чтобы начать игру'
+GameItems:
+  background:
+    item: STAINED_GLASS_PANE:3
+    name: '&b&l*'
+  platforms:
+    item: QUARTZ_BLOCK
+    name: '&f&l*'
+GameSettings:
+  gameSpeed: 10
+  maxGameSpeed: 4
+Controls:
+  left:
+    slot: 21
+    head: http://textures.minecraft.net/texture/5f133e91919db0acefdc272d67fd87b4be88dc44a958958824474e21e06d53e6
+    name: '&aВлево'
+  right:
+    slot: 23
+    head: http://textures.minecraft.net/texture/e3fc52264d8ad9e654f415bef01a23947edbccccf649373289bea4d149541f70
+    name: '&aВправо'

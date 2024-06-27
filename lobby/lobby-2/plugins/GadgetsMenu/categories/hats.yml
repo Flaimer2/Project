@@ -1,0 +1,1971 @@
+Hats:
+  Hamburger:
+    Name: '&aГамбургер'
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Chocolate Donut:
+    Name: '&aШоколадный пончик'
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Sandwich:
+    Name: '&aСэндвич'
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Computer:
+    Name: '&aКомпьютер'
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Gold Steve:
+    Name: '&9Золотой Стив'
+    Mystery Dust: 28000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Diamond Steve:
+    Name: '&5Алмазный стив'
+    Mystery Dust: 38000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Emerald Steve:
+    Name: '&6Изумрудный стив'
+    Mystery Dust: 42000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Scared:
+    Name: '&aИспуганый'
+    Mystery Dust: 8000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Angel:
+    Name: '&aАнгел'
+    Mystery Dust: 8000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Embarrassed:
+    Name: '&aСмущенный'
+    Mystery Dust: 8000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Sad:
+    Name: '&aГрустный'
+    Mystery Dust: 8000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Cool:
+    Name: '&aКрутой'
+    Mystery Dust: 8000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Surprised:
+    Name: '&aУдивленный'
+    Mystery Dust: 8000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Dead:
+    Name: '&aМертвый'
+    Mystery Dust: 8000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Cry:
+    Name: '&aКрик'
+    Mystery Dust: 8000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Grin:
+    Name: '&aУмешка'
+    Mystery Dust: 8000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Wink:
+    Name: '&aПодмигивание'
+    Mystery Dust: 8000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Derp:
+    Name: '&aБаттхерт'
+    Mystery Dust: 8000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Mustache:
+    Name: '&aУсы'
+    Mystery Dust: 8000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Big Smile:
+    Name: '&aБольшая улыбка'
+    Mystery Dust: 8000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Smile:
+    Name: '&aУлыбка'
+    Mystery Dust: 8000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Netherlands:
+    Name: '&aНидерланды'
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Norway:
+    Name: '&aНорвегия'
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Sweden:
+    Name: '&aШвеция'
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Chile:
+    Name: '&aЧили'
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Monaco:
+    Name: '&aМонако'
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Canada:
+    Name: '&aКанада'
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  United States:
+    Name: '&aСША'
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Italy:
+    Name: '&aИталия'
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  England:
+    Name: '&aАнлгия'
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Germany:
+    Name: '&aГермания'
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Singapore:
+    Name: '&aСингапур'
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  France:
+    Name: '&aФранция'
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Spain:
+    Name: '&aИспания'
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-A:
+    Name: '&aБуква ''''A'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-B:
+    Name: '&aБуква ''''B'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-C:
+    Name: '&aБуква ''''C'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-D:
+    Name: '&aБуква ''''D'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-E:
+    Name: '&aБуква ''''E'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-F:
+    Name: '&aБуква ''''F'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-G:
+    Name: '&aБуква ''''G'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-H:
+    Name: '&aБуква ''''H'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-I:
+    Name: '&aБуква ''''I'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-J:
+    Name: '&aБуква ''''J'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-K:
+    Name: '&aБуква ''''K'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-L:
+    Name: '&aБуква ''''L'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-M:
+    Name: '&aБуква ''''M'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-N:
+    Name: '&aБуква ''''N'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-O:
+    Name: '&aБуква ''''O'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-P:
+    Name: '&aБуква ''''P'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-Q:
+    Name: '&aБуква ''''Q'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-R:
+    Name: '&aБуква ''''R'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-S:
+    Name: '&aБуква ''''S'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-T:
+    Name: '&aБуква ''''T'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-U:
+    Name: '&aБуква ''''U'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-V:
+    Name: '&aБуква ''''V'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-W:
+    Name: '&aБуква ''''W'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-X:
+    Name: '&aБуква ''''X'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-Y:
+    Name: '&aБуква ''''Y'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Letter-Z:
+    Name: '&aБуква ''''Z'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Number-0:
+    Name: '&aЦифра ''''0'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Number-1:
+    Name: '&aЦифра ''''1'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Number-2:
+    Name: '&aЦифра ''''2'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Number-3:
+    Name: '&aЦифра ''''3'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Number-4:
+    Name: '&aЦифра ''''4'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Number-5:
+    Name: '&aЦифра ''''5'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Number-6:
+    Name: '&aЦифра ''''6'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Number-7:
+    Name: '&aЦифра ''''7'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Number-8:
+    Name: '&aЦифра ''''8'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Number-9:
+    Name: '&aЦифра ''''9'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Symbol-Plus:
+    Name: '&aСимвол ''''+'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Symbol-Pound-Key:
+    Name: '&aСимвол ''''#'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Symbol-Question:
+    Name: '&aСимвол ''''?'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Symbol-Exclamation:
+    Name: '&aСимвол ''''!'''''
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Blaze:
+    Name: '&aИфрит'
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Enderman:
+    Name: '&aЭндермэн'
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Slime:
+    Name: '&aСлизень'
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Ocelot:
+    Name: '&aОцелот'
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Ender Dragon:
+    Name: '&9Дракон Края'
+    Mystery Dust: 18000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Cave Spider:
+    Name: '&aПещерный Паук'
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Pig Zombie:
+    Name: '&9Свинозомби'
+    Mystery Dust: 18000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Chicken:
+    Name: '&aКурица'
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Pig:
+    Name: '&aСвинья'
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Cow:
+    Name: '&aКорова'
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Squid:
+    Name: '&9Спрут'
+    Mystery Dust: 20000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Horse:
+    Name: '&9Лошадь'
+    Mystery Dust: 15000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Bird:
+    Name: '&aПтичка'
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Poke Ball:
+    Name: '&aПокеболл'
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Mario:
+    Name: '&aМарио'
+    Mystery Dust: 8000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Freddy Fazbear:
+    Name: '&aФредди Фазбэр'
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Bonnie:
+    Name: '&aБонни'
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Jake:
+    Name: '&aДжейк'
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Doge:
+    Name: '&aДоджи'
+    Mystery Dust: 9000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Polar Bear:
+    Name: '&aПолярный Медведь'
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Koala:
+    Name: '&aКоала'
+    Mystery Dust: 9000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Bee:
+    Name: '&aПчела'
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Clownfish:
+    Name: '&9Клоун'
+    Mystery Dust: 7000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Ferret:
+    Name: '&aХорек'
+    Mystery Dust: 9000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Walrus:
+    Name: '&aМорж'
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Monkey:
+    Name: '&aОбезьяна'
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Cactus:
+    Name: '&aКактус'
+    Mystery Dust: 7000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Duck:
+    Name: '&9Утка'
+    Mystery Dust: 15000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Earth:
+    Name: '&aЗемля'
+    Mystery Dust: 9000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Snowglobe:
+    Name: '&aСнежный шар'
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Toaster:
+    Name: '&aТостер'
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Cheese:
+    Name: '&9Сыр'
+    Mystery Dust: 15000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Mars:
+    Name: '&9Марс'
+    Mystery Dust: 15000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Penguin:
+    Name: '&aПингвин'
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Elephant:
+    Name: '&aСлон'
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Astronaut:
+    Name: '&9Астронавт'
+    Mystery Dust: 15000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Otter:
+    Name: '&9Выдра'
+    Mystery Dust: 20000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Mummy:
+    Name: '&9Мумия'
+    Mystery Dust: 20000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Orc:
+    Name: '&9Орк'
+    Mystery Dust: 18000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Minotaur:
+    Name: '&9Минотавр'
+    Mystery Dust: 18000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Demon Knight:
+    Name: '&9Демон Найт'
+    Mystery Dust: 21000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  White Wizard:
+    Name: '&9Белый мастер'
+    Mystery Dust: 15000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Miner:
+    Name: '&9Копатель'
+    Mystery Dust: 15000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Monk:
+    Name: '&9Монах'
+    Mystery Dust: 15000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Wood Elf:
+    Name: '&9Лесной эльф'
+    Mystery Dust: 15000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Pirate:
+    Name: '&9Пират'
+    Mystery Dust: 18000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Odin:
+    Name: '&9Один'
+    Mystery Dust: 18000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Ghost:
+    Name: '&9Призрак'
+    Mystery Dust: 20000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Scarecrow:
+    Name: '&9Чучело'
+    Mystery Dust: 20000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Fox:
+    Name: '&9Лиса'
+    Mystery Dust: 18000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Ghast:
+    Name: '&9Гаст'
+    Mystery Dust: 25000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Candy Cane:
+    Name: '&9Конфета'
+    Mystery Dust: 25000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Pug:
+    Name: '&9Мопс'
+    Mystery Dust: 18000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Owl:
+    Name: '&9Сова'
+    Mystery Dust: 20000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Panda:
+    Name: '&9Панда'
+    Mystery Dust: 20000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Sloth:
+    Name: '&9Ленивец'
+    Mystery Dust: 25000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Gorilla:
+    Name: '&9Горилла'
+    Mystery Dust: 25000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Snowman:
+    Name: '&5Снеговик'
+    Mystery Dust: 43000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Reindeer:
+    Name: '&5Северный олень'
+    Mystery Dust: 43000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Shulker:
+    Name: '&5Шалкер'
+    Mystery Dust: 45000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Australia:
+    Name: '&aАвстралия'
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Black Chocolate Bar:
+    Name: '&aЧёрный шоколадный батончик'
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  White Chocolate Bar:
+    Name: '&aБелый шоколадный батончик'
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Gold Block:
+    Name: '&9Золотой Блок'
+    Mystery Dust: 28000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Diamond Block:
+    Name: '&5Алмазный Блок'
+    Mystery Dust: 35000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Neutral:
+    Name: '&aНейтральный'
+    Mystery Dust: 8000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Fall In Love:
+    Name: '&aВлюблённый'
+    Mystery Dust: 8000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  China:
+    Name: '&aКитай'
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-B:
+    Name: '&aРадужная буква ''''B'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-C:
+    Name: '&aРадужная буква ''''C'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-D:
+    Name: '&aРадужная буква ''''D'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-E:
+    Name: '&aРадужная буква ''''E'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-F:
+    Name: '&aРадужная буква ''''F'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-G:
+    Name: '&aРадужная буква ''''G'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-H:
+    Name: '&aРадужная буква ''''H'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-I:
+    Name: '&aРадужная буква ''''I'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-J:
+    Name: '&aРадужная буква ''''J'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-K:
+    Name: '&aРадужная буква ''''K'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-L:
+    Name: '&aРадужная буква ''''L'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-M:
+    Name: '&aРадужная буква ''''M'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-N:
+    Name: '&aРадужная буква ''''N'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-O:
+    Name: '&aРадужная буква ''''O'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-P:
+    Name: '&aРадужная буква ''''P'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-Q:
+    Name: '&aРадужная буква ''''Q'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-R:
+    Name: '&aРадужная буква ''''R'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-S:
+    Name: '&aРадужная буква ''''S'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-T:
+    Name: '&aРадужная буква ''''T'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-U:
+    Name: '&aРадужная буква ''''U'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-V:
+    Name: '&aРадужная буква ''''V'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-W:
+    Name: '&aРадужная буква ''''W'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-X:
+    Name: '&aРадужная буква ''''X'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-Y:
+    Name: '&aРадужная буква ''''Y'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-Z:
+    Name: '&aРадужная буква ''''Z'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Aquarius Constellation:
+    Name: '&9''''Водолей'''''
+    Mystery Dust: 28000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Pisces Constellation:
+    Name: '&9''''Рыбы'''''
+    Mystery Dust: 28000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Aries Constellation:
+    Name: '&9''''Овен'''''
+    Mystery Dust: 28000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Taurus Constellation:
+    Name: '&9''''Телец'''''
+    Mystery Dust: 28000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Gemini Constellation:
+    Name: '&9''''Близнецы'''''
+    Mystery Dust: 28000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Cancer Constellation:
+    Name: '&9''''Рак'''''
+    Mystery Dust: 28000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Leo Constellation:
+    Name: '&9''''Лев'''''
+    Mystery Dust: 28000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Virgo Constellation:
+    Name: '&9''''Дева'''''
+    Mystery Dust: 28000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Libra Constellation:
+    Name: '&9''''Весы'''''
+    Mystery Dust: 28000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Scorpio Constellation:
+    Name: '&9''''Скорпион'''''
+    Mystery Dust: 28000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Sagittarius Constellation:
+    Name: '&9''''Стрелец'''''
+    Mystery Dust: 28000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Capricorn Constellation:
+    Name: '&9''''Козерог'''''
+    Mystery Dust: 28000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Magma Cube:
+    Name: '&aКуб Магмы'
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Mushroom Cow:
+    Name: '&aГрибная Корова'
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Iron Golem:
+    Name: '&9Железный Голем'
+    Mystery Dust: 25000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Herobine:
+    Name: '&9Херобрин'
+    Mystery Dust: 25000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Nurse:
+    Name: '&aМедсестра'
+    Mystery Dust: 8000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Cool Doge:
+    Name: '&9Крутой Доджи'
+    Mystery Dust: 15000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rabbit:
+    Name: '&aКролик'
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Tiger:
+    Name: '&aТигр'
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Beach Ball:
+    Name: '&aПляжный мяч'
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Skull:
+    Name: '&9Череп'
+    Mystery Dust: 22000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Pumpkin:
+    Name: '&9Тыква'
+    Mystery Dust: 25000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Turtle:
+    Name: '&5Черепаха'
+    Mystery Dust: 45000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Solved Rubiks Cube:
+    Name: '&5Решённый Кубик Рубика'
+    Mystery Dust: 45000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Scrambled Rubiks Cube:
+    Name: '&6Не решённый Кубик Рубика'
+    Mystery Dust: 55000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow Glitch:
+    Name: '&9Радужный Glitch'
+    Mystery Dust: 18000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Pacman:
+    Name: '&9Pac-Man'
+    Mystery Dust: 18000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow-Letter-A:
+    Name: '&aРадужная буква ''''A'''''
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Herobrine:
+    Name: '&9Херобрин'
+    Mystery Dust: 25
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''

@@ -1,0 +1,58 @@
+# --{ =-=-=-=-=-=-=-=-=-= ItemJoin's Custom Item Configurations, by RockinChaos =-=-=-=-=-=-=-=-=-= }--
+# See the tutorial page for a more in-depth explanation; https://github.com/RockinChaos/ItemJoin/wiki
+# Join the discord for easy plugin support; https://discord.gg/D5FnJ7C
+# 
+# Modifying the Version will cause this file to break and regenerate.
+items-Version: 8
+items-Delay: 0
+items-Overwrite: lobby
+items-Spamming: false
+items-RestrictCount: false
+items:
+  1:
+    id: COMPASS
+    slot: 0
+    name: '&8★  §6Выбор режима &8★  &e&lПРАВЫЙ КЛИК'
+    itemflags: item-store, hide-attributes, death-drops, self-drops, cancel-events
+    triggers: join, respawn, world-switch
+    enabled-worlds: lobby
+    interact:
+      - 'console: invero menu open MainModeSelector %player%'
+  2:
+    id: SKULL_ITEM:3
+    slot: 1
+    name: '&8★  &bВаш профиль &8★  &e&lПРАВЫЙ КЛИК'
+    skull-owner: '%tab_placeholder_condition:getSkinName%'
+    itemflags: dynamic, item-store, hide-attributes, death-drops, self-drops, cancel-events
+    triggers: join, respawn, world-switch
+    enabled-worlds: lobby
+    interact:
+      - 'player: invero menu open Profile %player%'
+  3:
+    id: NETHER_STAR
+    slot: 4
+    name: '&8★  &aГаджеты &8★  &e&lПРАВЫЙ КЛИК'
+    itemflags: item-store, hide-attributes, death-drops, self-drops, cancel-events
+    triggers: join, respawn, world-switch
+    enabled-worlds: lobby
+    interact:
+      - 'player: gadgetsmenu main'
+  4:
+    id: SKULL_ITEM:3
+    slot: 7
+    name: '&8★  &9Карманные игры &8★  &e&lПРАВЫЙ КЛИК'
+    skull-owner: '__Skippy__'
+    itemflags: item-store, hide-attributes, death-drops, self-drops, cancel-events
+    triggers: join, respawn, world-switch
+    enabled-worlds: lobby
+    interact:
+      - 'console: pg menu %player%'
+  5:
+    id: DIAMOND
+    slot: 8
+    name: '&8★  §6Донат-меню &8★  &e&lПРАВЫЙ КЛИК'
+    itemflags: item-store, hide-attributes, death-drops, self-drops, cancel-events
+    triggers: join, respawn, world-switch
+    enabled-worlds: lobby
+    interact:
+      - 'console: invero menu open Donate %player%'

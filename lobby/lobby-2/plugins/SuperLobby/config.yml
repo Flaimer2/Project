@@ -1,0 +1,265 @@
+
+debug: false
+newconfig: true
+update-check: false
+prefix: '&6lobby &7| '
+messages: RU
+join-clear-inventory: true
+join-clear-chat: false
+join-spawn: true
+command-spawn: true
+info-commands: false
+custom-events: false
+menu: false
+disable-daylight-sensor-interaction:
+  enable: true
+  world:
+  - lobby
+  - auth
+disable-dropper-interaction:
+  enable: true
+  world:
+  - lobby
+  - auth
+disable-hopper-interaction:
+  enable: true
+  world:
+  - lobby
+  - auth
+disable-fence-gate-interaction:
+  enable: true
+  world:
+  - lobby
+  - auth
+disable-trapdoor-interaction:
+  enable: true
+  world:
+  - lobby
+  - auth
+disable-button-interaction:
+  enable: true
+  world:
+  - lobby
+  - auth
+disable-dispenser-interaction:
+  enable: true
+  world:
+  - lobby
+  - auth
+disable-noteblock-interaction:
+  enable: true
+  world:
+  - lobby
+  - auth
+disable-armorstands-interaction:
+  enable: true
+  world:
+  - lobby
+  - auth
+disable-door-interaction:
+  enable: true
+  world:
+  - lobby
+  - auth
+disable-rain:
+  enable: true
+  world:
+  - lobby
+  - auth
+disable-block-break:
+  enable: true
+  world:
+  - lobby
+  - auth
+disable-block-place:
+  enable: true
+  world:
+  - lobby
+  - auth
+disable-block-burn:
+  enable: true
+  world:
+  - lobby
+  - auth
+disable-drop-item:
+  enable: true
+  world:
+  - lobby
+  - auth
+disable-item-move:
+  enable: true
+  world:
+  - lobby
+  - auth
+disable-item-damage:
+  enable: true
+  world:
+  - lobby
+  - auth
+disable-pick-up-items:
+  enable: true
+  world:
+  - lobby
+  - auth
+disable-entity-explode:
+  enable: true
+  world:
+  - lobby
+  - auth
+disable-damage:
+  enable: true
+  world:
+  - lobby
+  - auth
+disable-hunger:
+  enable: true
+  world:
+  - lobby
+  - auth
+disable-death-message:
+  enable: true
+  world:
+  - lobby
+  - auth
+disable-creature-spawn:
+  enable: true
+  world:
+  - lobby
+  - auth
+clear-drops-on-death:
+  enable: true
+  world:
+  - lobby
+  - auth
+lobby-items:
+  enable: false
+  join-server: false
+  respawn: false
+  join-world: false
+  world:
+  - lobby
+void-tp:
+  enable: true
+  level: 3
+  world:
+  - lobby
+  - auth
+always-day:
+  enable: true
+  world:
+  - lobby
+  - auth
+frame-protect:
+  enable: true
+  world:
+  - lobby
+  - auth
+farm-protect:
+  enable: true
+  world:
+  - lobby
+  - auth
+jump-pads:
+  enable: true
+  plate-block: HEAVY_WEIGHTED_PRESSURE_PLATE
+  plate-block-old: GOLD_PLATE
+  sound: BLOCK_PISTON_EXTEND
+  sound-old: PISTON_EXTEND
+  world:
+  - lobby
+  - auth
+join-boss-bar:
+  enable: false
+  message: '&3Welcome to mundopixels!'
+  color: BLUE
+  style: NOTCHED_20
+  seconds: 10
+join-tab:
+  enable: false
+  update: 1000
+  header: |-
+    &7
+    &f&m--&7&m--&8&m[-&r &6&lMUNDO&f&lPIXELS &7&lNETWORK &8&m-]&7&m--&f&m--
+    &7
+  footer: |-
+    &7
+    &7Website: &7mundopixels.net
+    &7Facebook: &7facebook.mundopixels.net
+    &7Store: &7tienda.mundopixels.net
+    &7
+join-titles:
+  enable: false
+  fade-in: 20
+  stay: 50
+  fade-out: 10
+  title: '&6<player> &bWelcome to'
+  sub-title: '&6&lMUNDO&f&lPIXELS'
+join-motd:
+  enable: false
+  message:
+  - '&a&m---------------------------------------------------'
+  - ' '
+  - '&a# &6&l<player> &7Welcome to &6&lMUNDO&f&lPIXELS &fNETWORK!'
+  - ' '
+  - '&a# &7Buy rank on: &2tienda.mundopixels.net'
+  - '&a# &7Facebook: &2facebook.mundopixels.net'
+  - '&a# &7For more information type &2/info'
+  - ' '
+  - '&a&m---------------------------------------------------'
+join-action-bar:
+  enable: false
+  seconds: 10
+  message: '&6Welcome to mundopixels!'
+commands-blacklist:
+  enable: false
+  bypass: superlobby.admin
+  list:
+  - /p
+  - /pl
+  - /bukkit:pl
+  - /'?'
+  - /bukkit:?
+  - /help
+  - /bukkit:help
+  - /plugins
+  - /bukkit:plugins
+  - /about
+  - /bukkit:about
+  - /ver
+  - /bukkit:ver
+  - /version
+  - /bukkit:version
+  - /gc
+  - /tps
+  - /me
+  - /bukkit:me
+  - /bukkit:ehelp
+  - /icanhasbukkit
+  - /icanhasspigot
+  - /info
+  - /mc:help
+  - /minecraft:help
+  - /essentials:help
+  - /essentials:ehelp
+  - /perm
+  - /mv
+  - /multiverse-core:mv
+  - /we
+  - /worldedit
+disable-tab-complete:
+  enable: false
+  bypass: superlobby.staff
+  whitelist:
+  - /warp
+  - /menu
+  - /games
+  - /info
+  - /yt
+  - /pay
+  - /tpa
+  - /tpaccept
+always-night:
+  enable: false
+  world:
+  - lobby
+  - auth

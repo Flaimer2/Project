@@ -1,0 +1,53 @@
+# # # # # # # # # # # # # # # # # # # #
+#                                     #
+#      Thanks for use ServerNPC       #
+#                                     #
+# # # # # # # # # # # # # # # # # # # #
+
+# WARNING: All of this configurations need a restart to apply changes!
+
+# Disable debug messages :)
+debug: false
+
+# Only enable this if you want to debug all(ALL PACKETS) incoming and outgoing packets :)
+debug_packets: false
+
+# Beta features
+# I don't recommend use in a production server.
+# Only use for informational purposes.
+beta: false
+
+# Call skins async
+# If enable, calls in their own thread. If not, uses the main spigot thread to call skins.
+# true = less lag - false = causes lag.
+# Default = true
+skins async: true
+
+# Enable or disable the notify of updates. (Only players with npc.notify will get the notify)
+update notification: false
+
+# If your server have troubles with %player_name% disable this.
+clone skin: true
+
+# Hologram system: AUTO, TRHOLOGRAM, DecentHolograms, HOLOGRAMS, CMI
+HoloSystem: DecentHolograms
+
+# Enable or disable Cooldown message
+# Customize it on Lang.yml
+Cooldown Message: false
+
+# Client side things
+Client Side:
+  # You want the Look Close only sees by the Client Side? Turn this on.
+  Look Close: false
+
+#
+# NPC Prefix and Suffix
+#
+Scoreboard:
+  # Leave empty to remove one of them.
+  prefix: '&8[NPC] '
+  suffix: ''
+  # A-Z | 0-100
+  priority: 'Z'
+# jP/2q6gCbj4RFa7e11XOAluKhKk6O4mIkSZGRC2jqW0homjw5ibeyRSHGT2Z8JDwPsTdLO4B7V+2p4mYmfOcxeitTMl9qgKPR5P9kBjCQ94=

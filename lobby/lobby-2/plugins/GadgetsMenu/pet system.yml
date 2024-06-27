@@ -1,0 +1,420 @@
+Pet-System:
+  Enabled: false
+  Level: '&8LvL&7{LEVEL} '
+  Rename-Pet: '&a(Используйте /pet name чтобы изменить имя питомца)'
+  EXP: '{EXP_BLOCKS} &b{OBTAINED_EXP}&f/{MAX_EXP}'
+  Max-EXP: '{EXP_BLOCKS} &bМакс. &7EXP'
+  EXP-Block:
+    Remain: '&7■'
+    Retain: '&b■'
+    Amount-Of-Blocks: 10
+  Percentage-Bar: '{REMAIN}&f/100'
+  Pet-Name-Command:
+    Enabled: false
+    Description: Имя Вашего питомца.
+  Pet-Name-Blacklist:
+    Enabled: false
+    Blacklist:
+    - fuck
+    - bitch
+    - сука
+    - пидор
+    - лох
+    - блядь
+  Happiness:
+    Okay:
+      DisplayName: '&eОбычное'
+      Color: '&e'
+    Happy:
+      DisplayName: '&2Счастливый'
+      Color: '&2'
+    Very-Happy:
+      DisplayName: '&aОчень счастливый'
+      Color: '&a'
+    Super-Happy:
+      DisplayName: '&bСупер счастливый'
+      Color: '&b'
+  Send-Pet-On-Mission:
+    Cooldown-Minutes: 60
+    Gain-EXP:
+      Happy: 400
+      Very-Happy: 600
+      Super-Happy: 800
+    Play-Sound:
+      Enabled: false
+      Sound: ENTITY_PLAYER_LEVELUP
+    Lores:
+      Ready-To-Send-Pet-On-Mission:
+      - ''
+      - '&7Cooldown: &aREADY'
+      - ''
+      - '&eНажмите чтобы получить EXP!'
+      Send-Pet-On-Mission-On-Cooldown:
+      - ''
+      - '&7Cooldown: &c{COOLDOWN_MINUTES} minutes'
+      - ''
+      - '&cOn cooldown.'
+  Stats:
+    Hunger:
+      Name: Голодный
+      Play-Sound:
+        Enabled: false
+        Click-Sound: UI_BUTTON_CLICK
+        Feed-Sound: ENTITY_VILLAGER_AMBIENT
+        Fulled-Sound: BLOCK_NOTE_BLOCK_BELL
+      Lore:
+        Pet-Item:
+        - ''
+        - '&7Уменьшает голод у'
+        - '&7питомца.'
+        Item-Remain:
+        - ''
+        - '&7Осталось: &f{REMAIN}'
+        - '&eНажмите, чтобы дать питомцу!'
+    Thirst:
+      Name: Жажда
+      Play-Sound:
+        Enabled: false
+        Click-Sound: UI_BUTTON_CLICK
+        Feed-Sound: ENTITY_VILLAGER_AMBIENT
+        Fulled-Sound: BLOCK_NOTE_BLOCK_BELL
+      Lore:
+        Pet-Item:
+        - ''
+        - '&7Уменьшает жажду у'
+        - '&7питомца.'
+        Item-Remain:
+        - ''
+        - '&7Осталось: &f{REMAIN}'
+        - '&eНажмите, чтобы дать питомцу!'
+    Exercise:
+      Name: Развлечения
+      Play-Sound:
+        Enabled: false
+        Click-Sound: UI_BUTTON_CLICK
+        Feed-Sound: ENTITY_VILLAGER_AMBIENT
+        Fulled-Sound: BLOCK_NOTE_BLOCK_BELL
+      Lore:
+        Pet-Item:
+        - ''
+        - '&7Увеличивает показатель Развлечения у'
+        - '&7питомца.'
+        Item-Remain:
+        - ''
+        - '&7Осталось: &f{REMAIN}'
+        - '&eНажмите, чтобы дать питомцу!'
+  Lores:
+    Summon-Pet:
+    - ''
+    - '&6ЛКМ, &7чтобы заспавнить этого питомца.'
+    Despawn-Pet:
+    - ''
+    - '&6ЛКМ, &7чтобы убрать питомца.'
+    Provide-Care:
+    - '&bПКМ, &7чтобы поухаживать за питомцем.'
+  General-Settings:
+    Pet-Silent: false
+Pet-Items:
+  Apple:
+    Name: '&bЯблоко'
+    Material: APPLE
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 0
+    Lore:
+    - '&7Вкусный фрукт!'
+  Melon:
+    Name: '&bАрбуз'
+    Material: MELON
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 1
+    Lore:
+    - '&7В нём есть семена.'
+  Pumpkin-Pie:
+    Name: '&bТыквенный пирог'
+    Material: PUMPKIN_PIE
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 2
+    Lore:
+    - '&7Размер пирога: Всё это...'
+  Carrot:
+    Name: '&bМорковь'
+    Material: CARROT
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 3
+    Lore:
+    - '&7Хорошо влияет на зрение!'
+  Baked-Potato:
+    Name: '&bПеченый картофель'
+    Material: BAKED_POTATO
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 4
+    Lore:
+    - '&7Ка-Рто-Шка, Ка-Рто-Шка.'
+  Mushroom-Soup:
+    Name: '&bГрибной суп'
+    Material: MUSHROOM_STEW
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 5
+    Lore:
+    - '&7Это же не грибное'
+    - '&7рагу!'
+  Flower:
+    Name: '&bЦветок'
+    Material: RED_TULIP
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 6
+    Lore:
+    - '&7Вроде вкусно... Но запах'
+    - '&7всё же лучше!'
+  Hay:
+    Name: '&bСено'
+    Material: HAY_BLOCK
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 7
+    Lore:
+    - '&7Ну это просто сено...'
+  Wheat:
+    Name: '&bПшеница'
+    Material: WHEAT
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 8
+    Lore:
+    - '&7Она ещё не обработана.'
+  Bread:
+    Name: '&bХлеб'
+    Material: BREAD
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 9
+    Lore:
+    - '&7Свежевыпеченный.'
+  Cookie:
+    Name: '&bПеченье'
+    Material: COOKIE
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 10
+    Lore:
+    - '&7С шоколадной крошкой!'
+  Cake:
+    Name: '&bТорт'
+    Material: CAKE
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 11
+    Lore:
+    - '&7Очень вкусный торт!'
+  Raw-Fish:
+    Name: '&bСырая рыба'
+    Material: COD
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 12
+    Lore:
+    - '&7Поймана местным'
+    - '&7рыбаком.'
+  Raw-Porkchop:
+    Name: '&bСырая свинина'
+    Material: PORKCHOP
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 13
+    Lore:
+    - '&7Для тех, кто любит сырое'
+    - '&7мясо!'
+  Angus-Steak:
+    Name: '&bЖареный стейк'
+    Material: COOKED_BEEF
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 14
+    Lore:
+    - '&7Хорошо приготовленное и выдерженное'
+    - '&7мясо'
+  Bone:
+    Name: '&bКосточка'
+    Material: BONE
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 15
+    Lore:
+    - '&7Выкопали из земли.'
+  Rotten-Flesh:
+    Name: '&bГнилая плоть'
+    Material: ROTTEN_FLESH
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 16
+    Lore:
+    - '&7Фуууу!'
+  Magma-Cream:
+    Name: '&bСгусток магмы'
+    Material: MAGMA_CREAM
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 17
+    Lore:
+    - '&7ПРЕДУПРЕЖДЕНИЕ: Очень горячее!'
+  Water:
+    Name: '&bВода'
+    Material: WATER_BUCKET
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 27
+    Lore:
+    - '&7Чистая вода.'
+  Milk:
+    Name: '&bМолоко'
+    Material: MILK_BUCKET
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 28
+    Lore:
+    - '&7Коровье молоко.'
+    - '&7Или не коровье...'
+  Lava:
+    Name: '&bЛава'
+    Material: LAVA_BUCKET
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 29
+    Lore:
+    - '&7ОЧЕНЬ горячее!'
+  Stick:
+    Name: '&bПалочка'
+    Material: STICK
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 33
+    Lore:
+    - '&7Деревянная палочка.'
+  Ball:
+    Name: '&bМячик'
+    Material: SLIME_BALL
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 34
+    Lore:
+    - '&7Отскакивает и катится!'
+  Leash:
+    Name: '&bПоводок'
+    Material: LEAD
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 35
+    Lore:
+    - '&7Давай пойдем погуляем!'
+  Feather:
+    Name: '&bПеро'
+    Material: FEATHER
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 42
+    Lore:
+    - '&7Защекочу тебя!'
+  Frisbee:
+    Name: '&bФрисби'
+    Material: MUSIC_DISC_13
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 43
+    Lore:
+    - '&7Он ЛеТаЕт!'
+  Sparring-Sword:
+    Name: '&bМеч'
+    Material: WOODEN_SWORD
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 44
+    Lore:
+    - '&7Только осторожно!'

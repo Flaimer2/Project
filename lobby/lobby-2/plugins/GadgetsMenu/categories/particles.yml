@@ -1,0 +1,232 @@
+Particles:
+  Water Splash:
+    Name: '&aВсплеск воды'
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: NETHER_STAR
+  Drip Water:
+    Name: '&9Капли воды'
+    Mystery Dust: 25000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Material: WATER_BUCKET
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Drip Lava:
+    Name: '&9Капли лавы'
+    Mystery Dust: 25000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: LAVA_BUCKET
+  Crit:
+    Name: '&9Критический удар'
+    Mystery Dust: 22000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: STONE_SWORD
+  Magic Crit:
+    Name: '&9Магический удар'
+    Mystery Dust: 20000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: SPLASH_POTION:8204
+  Spell:
+    Name: '&5Заклинание'
+    Mystery Dust: 30000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: ENDER_CHEST
+  Instant Spell:
+    Name: '&5Мгновенное заклинание'
+    Mystery Dust: 32000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: GHAST_TEAR
+  Mob Spell:
+    Name: '&5Заклинания мобов'
+    Mystery Dust: 35000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: EXPERIENCE_BOTTLE
+  Witch Spell:
+    Name: '&6Частицы ведьмы'
+    Mystery Dust: 40000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: POTION:8260
+  Angry Villager:
+    Name: '&5Злой Житель'
+    Mystery Dust: 32000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: FIRE_CHARGE
+  Happy Villager:
+    Name: '&5Счастливй Житель'
+    Mystery Dust: 35000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: EMERALD
+  Town Aura:
+    Name: '&aГородская аура'
+    Mystery Dust: 18000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: MYCELIUM
+  Note:
+    Name: '&5Ноты'
+    Mystery Dust: 35000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: NOTE_BLOCK
+  Portal:
+    Name: '&aПортал'
+    Mystery Dust: 18000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: ENDER_PEARL
+  Enchantment Table:
+    Name: '&9Зачарованный стол'
+    Mystery Dust: 28000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: ENCHANTING_TABLE
+  Flame:
+    Name: '&aОгонь'
+    Mystery Dust: 45000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: GOLD_NUGGET
+  Redstone:
+    Name: '&aКрасная пыль'
+    Mystery Dust: 48000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: REDSTONE
+  Heart:
+    Name: '&9Сердечки'
+    Mystery Dust: 28000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: POPPY
+  Fireworks Spark:
+    Name: '&6Фейерверки'
+    Mystery Dust: 52000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: FIREWORK_ROCKET
+  Smoke:
+    Name: '&aДым'
+    Mystery Dust: 18000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: FIREWORK_STAR
+  Slime:
+    Name: '&aСлизь'
+    Mystery Dust: 22000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: SLIME_BALL

@@ -1,0 +1,50 @@
+MYSQL:
+  Enable: true
+  host: localhost
+  port: '3306'
+  database: server_lobby
+  table_name: presents
+  username: root
+  password: root
+Effect:
+  distance: 5
+  ticks: 40
+  amount_canclaim: 8
+  amount_claimed: 3
+  canclaim: VILLAGER_HAPPY
+  claimed: CRIT
+  click: REDSTONE
+Messages:
+  found: '&fВы нашли один из &aподарков&f! &7(&a%found%&7/&b%total%&7)'
+  alreadyfound: '&fВы уже &aнашли&f этот подарок&f.'
+  completed: '&aОтлично&f! Найдены все подарки. &7(&a%found%&7/&b%total%&7)'
+  actionbar: '&b&lПодарочки &c(&a%found%&f/&a%total%&c)'
+  actionbar-completed: '&b&lПодарочки &a&lCompleted!&f &c(&a%found%&f/&a%total%&c)'
+Actionbar:
+  enable: false
+  world: {}
+  update: 10
+Sounds:
+  found: ENTITY_PLAYER_LEVELUP
+  alreadyfound: ENTITY_ENDEREYE_DEATH
+Rewards:
+  type: both
+  sequence-rewards:
+    '1': money give %player% 3000
+    '2': money give %player% 1000
+    '3': money give %player% 1000
+    '4': money give %player% 1000
+    '5': money give %player% 5000
+    '6': money give %player% 1000
+    '7': money give %player% 1000
+    '8': money give %player% 1000
+    '9': money give %player% 5000
+    '10': money give %player% 1000
+    '11': money give %player% 1000
+    '12': money give %player% 1000
+    '13': money give %player% 1000
+    '14': money give %player% 1000
+    '15': money give %player% 1000
+    '16': money give %player% 1000
+    '17': money give %player% 1000
+    '18': gmysterybox give %player% 1 3 ex=7d

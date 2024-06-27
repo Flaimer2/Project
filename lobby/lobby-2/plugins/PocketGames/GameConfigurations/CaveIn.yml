@@ -1,0 +1,83 @@
+# Edit CaveIn in this file.
+# 
+# Add as many resources as you want.
+# Value equals score pr. block.
+# Probability is calculated through a weight system. Larger probability values equals greater frequency of that item.
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: Пещера
+MenuItem:
+  page: 1
+  slot: 31
+  item: STONE_PICKAXE
+  name: '&8&lПещера'
+  lore:
+  - '&eОписание:'
+  - '&fЭто игра про добычу полезных ископаемых.'
+  - '&fВам необходимо искать самые большие'
+  - '&fжилы различных ресурсов. Редкие ресурсы и'
+  - '&fкрупные жилы приносят больше очков.'
+  - ''
+  - '&aНажмите ЛКМ, чтобы начать игру'
+  - '&aНажмите ПКМ, чтобы увидеть топ'
+  itemFlags:
+  - HIDE_ATTRIBUTES
+GameItems:
+  background:
+    item: STAINED_GLASS_PANE:7
+    name: '&7&l*'
+  border:
+    item: QUARTZ_BLOCK
+    name: '&f&l*'
+  movesCounter:
+    item: WATCH
+    name: '&a%moves% &fходов'
+    slot: 22
+  Resources:
+    dirt:
+      item: DIRT
+      value: 1
+      probability: 5
+      name: '&6Грязь'
+      lore:
+      - '&a%value% &fочко за'
+      - '&fодин блок грязи'
+    stone:
+      item: STONE
+      value: 2
+      probability: 4
+      name: '&7Камень'
+      lore:
+      - '&a%value% &fочка за'
+      - '&fодин блок камня'
+    iron:
+      item: IRON_INGOT
+      value: 4
+      probability: 3.5
+      name: '&fЖелезо'
+      lore:
+      - '&a%value% &fочка за'
+      - '&fодно железо'
+    gold:
+      item: GOLD_INGOT
+      value: 7
+      probability: 3
+      name: '&eЗолото'
+      lore:
+      - '&a%value% &fочков за'
+      - '&fодно золото'
+    diamond:
+      item: DIAMOND
+      value: 10
+      probability: 1
+      name: '&bАлмаз'
+      lore:
+      - '&a%value% &fочков за'
+      - '&fодин алмаз'
+GameSettings:
+  moves: 30
+  gravitySpeed: 3
+  obliqueBlocks: false

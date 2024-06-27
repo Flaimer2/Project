@@ -1,0 +1,135 @@
+# Edit 2048 in this file.
+# 
+# All tiles can be changed independently. Do not change the paths or add more.
+# The paths defines the values of the tiles. You can name your tiles whatever you want it does not have to be the value.
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: '2048'
+MenuItem:
+  page: 1
+  slot: 22
+  item: EMPTY_MAP
+  name: '&a&l2048'
+  lore:
+  - '&eОписание:'
+  - '&fПопулярная игра 2048 теперь в майнкрафт!'
+  - '&fВаша главная цель – получить плитку'
+  - '&f2048! Продолжайте играть, чтобы'
+  - '&fдостичь самого высокого результата.'
+  - ''
+  - '&aНажмите ЛКМ, чтобы начать игру'
+  - '&aНажмите ПКМ, чтобы увидеть топ'
+GameItems:
+  filler:
+    item: STAINED_GLASS_PANE:7
+  tiles:
+    '2':
+      item: WOOL:0
+      name: '&a2'
+    '4':
+      item: WOOL:1
+      name: '&a4'
+    '8':
+      item: WOOL:2
+      name: '&a8'
+    '16':
+      item: WOOL:3
+      name: '&a16'
+    '32':
+      item: WOOL:4
+      name: '&a32'
+    '64':
+      item: WOOL:5
+      name: '&a64'
+    '128':
+      item: WOOL:6
+      name: '&a128'
+    '256':
+      item: WOOL:7
+      name: '&a256'
+    '512':
+      item: WOOL:8
+      name: '&a512'
+    '1024':
+      item: WOOL:9
+      name: '&a1 024'
+    '2048':
+      item: WOOL:10
+      name: '&a2 048'
+    '4096':
+      item: WOOL:11
+      name: '&a4 096'
+    '8192':
+      item: WOOL:12
+      name: '&a8 192'
+    '16384':
+      item: WOOL:13
+      name: '&a16 384'
+    '32768':
+      item: WOOL:14
+      name: '&a32 768'
+    '65536':
+      item: WOOL:15
+      name: '&a65 536'
+    '131072':
+      item: STAINED_CLAY:0
+      name: '&a131 072'
+    '262144':
+      item: STAINED_CLAY:1
+      name: '&a262 144'
+    '524288':
+      item: STAINED_CLAY:2
+      name: '&a524 288'
+    '1048576':
+      item: STAINED_CLAY:3
+      name: '&a1 048 576'
+    '2097152':
+      item: STAINED_CLAY:4
+      name: '&a2 097 152'
+    '4194304':
+      item: STAINED_CLAY:5
+      name: '&a4 194 304'
+    '8388608':
+      item: STAINED_CLAY:6
+      name: '&a8 388 608'
+    '16777216':
+      item: STAINED_CLAY:7
+      name: '&a16 777 216'
+    '33554432':
+      item: STAINED_CLAY:8
+      name: '&a33 554 432'
+    '67108864':
+      item: STAINED_CLAY:9
+      name: '&a67 108 864'
+    '134217728':
+      item: STAINED_CLAY:10
+      name: '&a134 217 728'
+    '268435456':
+      item: STAINED_CLAY:11
+      name: '&a268 435 456'
+    '536870912':
+      item: STAINED_CLAY:12
+      name: '&a536 870 912'
+    '1073741824':
+      item: STAINED_CLAY:13
+      name: '&a1 073 741 824'
+Controls:
+  up:
+    slot: 13
+    head: http://textures.minecraft.net/texture/a99aaf2456a6122de8f6b62683f2bc2eed9abb81fd5bea1b4c23a58156b669
+    name: '&aВверх'
+  down:
+    slot: 22
+    head: http://textures.minecraft.net/texture/3912d45b1c78cc22452723ee66ba2d15777cc288568d6c1b62a545b29c7187
+    name: '&aВниз'
+  left:
+    slot: 21
+    head: http://textures.minecraft.net/texture/5f133e91919db0acefdc272d67fd87b4be88dc44a958958824474e21e06d53e6
+    name: '&aВлево'
+  right:
+    slot: 23
+    head: http://textures.minecraft.net/texture/e3fc52264d8ad9e654f415bef01a23947edbccccf649373289bea4d149541f70
+    name: '&aВправо'

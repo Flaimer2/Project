@@ -1,0 +1,58 @@
+#---------------------------------------------------------------#
+#   ___  ___   ___ _  _____ _____    ___   _   __  __ ___ ___
+#  | _ \/ _ \ / __| |/ / __|_   _|  / __| /_\ |  \/  | __/ __|
+#  |  _/ (_) | (__| ' <| _|  | |   | (_ |/ _ \| |\/| | _|\__ \
+#  |_|  \___/ \___|_|\_\___| |_|    \___/_/ \_\_|  |_|___|___/
+#
+#  By: Benz56
+#---------------------------------------------------------------#
+
+# Most of the plugins configuration options are located in the other files.
+
+
+# Disable specific worlds: (Case-sensitive)
+# - This only disables playing games in those worlds.
+# - leave blank to enable all worlds.
+# - Bypassed by console commands.
+# - You can invert the list essentially making it a whitelist.
+invertBlacklist: false
+worldBlacklist:
+  #- world
+  #- world_nether
+
+
+# MySQL database support:
+# - Disabled by default.
+# - The plugin will automatically switch to file if the connection fails.
+# - Please use stop/start or /reload if changing MySQL settings. Not /pga reload!
+# - Once set, do not change the database name again. This will generate a new database instead.
+MySQL:
+  enabled: true
+  host: localhost
+  port: 3306
+  database: server_lobby?useSSL=false&autoReConnect=true
+  username: root
+  password: root
+
+
+# MaxPlayers allows you to limit the amount of PocketGames players playing at the same time.
+# - Set this to any natural number to set a limit.
+# - Set this to 0 to disable the limit.
+MaxPlayers: 0
+
+
+# Don't kick players for AFK'ing if they have the PocketGames inventory open.
+# You can manage PocketGames player inactivity in the settings.yml file under InactivityTimer.
+# Supports:
+# - Essentials
+# - CMI
+OverrideAFKPlugins: false
+
+
+# Update Checker.
+# Enable or disable the update checker.
+updateCheckerEnabled: false
+# false: All OPs are notified of a new update when they join.
+# true: OPs are only notified if they have the pocketgames.update permission as well.
+# N.B. any user with the pocketgames.update permission is notified; OP or not.
+updateCheckerPermissionOnly: false

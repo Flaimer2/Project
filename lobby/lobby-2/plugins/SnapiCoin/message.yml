@@ -1,0 +1,30 @@
+commands:
+  admin:
+    deposit-coin:
+      use: 'Используйте'
+      not-found: '&fНет игрока %name%'
+      successfully-sender: '&fВы успешно отправили %sender% %receiver% %amount% %coin% %coin_before%'
+      error-amount: '&fНе правильное количество %amount%'
+      successfully-receiver: '&fВы успешно получили %sender% %receiver% %amount% %coin% %coin_before%'
+
+    set-coin:
+      use: 'Используйте'
+      not-found: '&fНет игрока %name%'
+      successfully-sender: '&fВы успешно установили %sender% %receiver% %amount% %coin% %coin_before%'
+      error-amount: '&fНе правильное количество %amount%'
+      successfully-receiver: '&fВам успешно установили %sender% %receiver% %amount% %coin% %coin_before%'
+
+    withdraw-coin:
+      use: 'Используйте'
+      not-found: '&fНет игрока %name%'
+      successfully-sender: '&fВы успешно украли %sender% %receiver% %amount% %coin% %coin_before%'
+      error-amount: '&fНе правильное количество %amount%'
+      successfully-receiver: '&fВас успешно обокрали %sender% %receiver% %amount% %coin% %coin_before%'
+
+
+  coin:
+    not-found: 'Не найден %name%'
+    success-other: 'Монет %coin% %name%'
+    success-self: 'Монет %name% %coin%'
+
+

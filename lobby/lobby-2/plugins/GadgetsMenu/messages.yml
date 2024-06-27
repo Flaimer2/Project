@@ -1,0 +1,982 @@
+# 
+# Not-Enough-MysteryDust-To-Purchase: '{PREFIX}&cИзвините, у вас недостаточно денег
+Prefix: '&6Гаджеты &7| &f'
+GUI-Menus:
+  Main: Главное меню
+  Hats: Головы
+  Particles: Частицы
+  Suits: Костюмы
+  Gadgets: Гаджеты
+  Pets: Питомцы
+  Morphs: Превращения
+  Banners: Баннеры
+  Emotes: Эмоции
+  Cloaks: Плащи
+  Purchase-Menu:
+    GUI-Name: Подтверждение покупки
+    Items:
+      Confirm:
+        Name: '&aПодтвердить'
+        Material: LIME_TERRACOTTA
+        Lore: ''
+        Slot: 11
+      Cancel:
+        Name: '&cОтменить'
+        Material: RED_TERRACOTTA
+        Lore: ''
+        Slot: 15
+  Confirm-Open-Mystery-Box-Menu:
+    GUI-Name: Подтверждение открытия
+    Items:
+      Open:
+        Name: '&aОткрыть'
+        Material: GREEN_WOOL
+        Lore:
+        - '&fОткрыть Мистическую Коробку'
+        - ''
+        - '&cЭто действие нельзя отменить!'
+        Slot: 29
+      Cancel:
+        Name: '&cОтменить'
+        Material: RED_WOOL
+        Lore:
+        - ''
+        - '&aВернуться к списку Коробок'
+        Slot: 33
+  Mystery-Vault-Menu:
+    GUI-Name: Мистическое Хранилище
+    Items:
+      Error:
+        Name: '&cЧего-то не хватает...'
+        Material: RED_STAINED_GLASS_PANE
+        Lore:
+        - '&fА, у Вас нет &bМистических Коробок&f!'
+        Slot: 22
+      Loading-Mystery-Boxes:
+        Name: '&cЗагрузка...'
+        Material: RED_STAINED_GLASS_PANE
+        Lore:
+        - '&fЗагрузка ваших Мистических Коробок!'
+        - '&fПожалуйста, переоткройте меню Мистического Хранилища'
+        Slot: 22
+      Mystery-Box-Information:
+        Name: '&aИнформация об Мистической Коробке'
+        Material: BOOK
+        Lore:
+        - '&bМистическая Коробка &fсодержит почти'
+        - '&fлюбые косметические предметы. Заработайте'
+        - '&bМистические Коробки&f, все что вам нужно -'
+        - '&fиграть на сервере!'
+        - ''
+        - '&fВаши 5 последних найденных предметов:'
+        - '&f1. {RECENT_LOOT_1}'
+        - '&f2. {RECENT_LOOT_2}'
+        - '&f3. {RECENT_LOOT_3}'
+        - '&f4. {RECENT_LOOT_4}'
+        - '&f5. {RECENT_LOOT_5}'
+        - ''
+        - '&fУ Вас: &b{MYSTERY_BOXES} Мистических Коробок'
+        Slot: 48
+        Loot-Contain-Rarity: true
+      Craft-Mystery-Boxes:
+        Name: '&aПокупка Мистических Коробок'
+        Material: ANVIL
+        Lore:
+        - '&fВсякий раз, когда Вы будете находить'
+        - '&fпредметы, которые у вас уже есть,'
+        - '&bвы получите часть денег назад&f'
+        - ''
+        - '&fУ Вас: &a{MYSTERY_DUST}$'
+        - '&aНажмите, чтобы открыть меню покупки'
+        Show: true
+        Slot: 49
+      Gift-Inventory:
+        Name: '&aGift Inventory'
+        Material: head:d2ac1c51807e261c12c4f2adbad36b8b2c497c277f7223ec244cb4608c59c
+        Show: false
+        Slot: 47
+        Lore:
+        - '&fSend gifts to your friends and'
+        - '&fgain better friendship in return!'
+        - ''
+        - '&fGift packs you purchase will be'
+        - '&fstored here'
+        - ''
+        - '&fGifts sent: &e{GIFT_SENT}'
+        - '&fGifts received: &e{GIFT_RECEIVED}'
+        - ''
+        - '&eClick to view your gift inventory!'
+      Animations:
+        Name: '&aАнимации'
+        Material: REDSTONE
+        Lore:
+        - '&fВыберите анимацию по своему вкусу,'
+        - '&fдля вашего Мистического Хранилища'
+        - '&fкогда вы открываете коробку'
+        - ''
+        - '&aНажмите, чтобы открыть меню'
+        Show: true
+        Slot: 53
+      Open-Multiple-Boxes:
+        Name: '&aОткрыть несколько коробок'
+        Material: NETHER_STAR
+        Lore:
+        - '&fВы можете откройть несколько'
+        - '&fкоробок одновременно!'
+        - ''
+        - '&aНажмите, чтобы открыть меню'
+        Show: true
+        Slot: 50
+  Mystery-Box-Crafting-Menu:
+    GUI-Name: Покупка Мистических Коробок
+    Items:
+      1-Star:
+        Name: '&bМистическая Коробка #1'
+        Material: ENDER_CHEST
+        Price: 11990
+        Slot: 9
+        Lore:
+        - '&fЭта Мистическая коробка содержит'
+        - '&fследующие предметы:'
+        - ''
+        - '&aОбычные предметы&f: &b4'
+        - '&9Редкие предметы&f: &b1'
+        - '&5Эпические предметы&f: &b1'
+        - '&6Легендарные предметы&f: &b1'
+        - ''
+        - '&fРедкость: &e✰&f✰✰✰✰'
+      2-Star:
+        Name: '&bМистическая Коробка #2'
+        Material: ENDER_CHEST
+        Price: 19990
+        Slot: 11
+        Lore:
+        - '&fЭта Мистическая коробка содержит'
+        - '&fследующие предметы:'
+        - ''
+        - '&aОбычные предметы&f: &b3'
+        - '&9Редкие предметы&f: &b2'
+        - '&5Эпические предметы&f: &b1'
+        - '&6Легендарные предметы&f: &b1'
+        - ''
+        - '&fРедкость: &e✰✰&f✰✰✰'
+      3-Star:
+        Name: '&bМистическая Коробка #3'
+        Material: ENDER_CHEST
+        Price: 29990
+        Slot: 13
+        Lore:
+        - '&fЭта Мистическая коробка содержит'
+        - '&fследующие предметы:'
+        - ''
+        - '&aОбычные предметы&f: &b2'
+        - '&9Редкие предметы&f: &b2'
+        - '&5Эпические предметы&f: &b2'
+        - '&6Легендарные предметы&f: &b1'
+        - ''
+        - '&fРедкость: &e✰✰✰&f✰✰'
+      4-Star:
+        Name: '&bМистическая Коробка #4'
+        Material: ENDER_CHEST
+        Price: 39990
+        Slot: 15
+        Lore:
+        - '&fЭта Мистическая коробка содержит'
+        - '&fследующие предметы:'
+        - ''
+        - '&aОбычные предметы&f: &b1'
+        - '&9Редкие предметы&f: &b1'
+        - '&5Эпические предметы&f: &b2'
+        - '&6Легендарные предметы&f: &b3'
+        - ''
+        - '&fРедкость: &e✰✰✰✰&f✰'
+      5-Star:
+        Name: '&bМистическая Коробка #5'
+        Material: ENDER_CHEST
+        Price: 54990
+        Slot: 17
+        Lore:
+        - '&fЭта Мистическая коробка содержит'
+        - '&fследующие предметы:'
+        - ''
+        - '&aОбычные предметы&f: &b0'
+        - '&9Редкие предметы&f: &b1'
+        - '&5Эпические предметы&f: &b2'
+        - '&6Легендарные предметы&f: &b4'
+        - ''
+        - '&fРедкость: &e✰✰✰✰✰'
+  Gift-Inventory-Menu:
+    GUI-Name: Подарочный инвентарь
+    Items:
+      Mystery-Gift:
+        Name: '&aМистический Подарок (5-Пакет)'
+        Material: ENDER_CHEST
+        Lore:
+        - '&fЭтот подарочный пакет содержит &a5'
+        - '&bМистических Коробок&f'
+        - ''
+        - '&aНажмите, чтобы отправить игроку'
+      Error:
+        Name: '&cОшибка!'
+        Material: RED_STAINED_GLASS_PANE
+        Lore:
+        - '&fУ Вас нет &bПодарочных пакетов&f!'
+        Slot: 22
+  Send-Gift-Menu:
+    GUI-Name: Игроки онлайн
+    Items:
+      Mystery-Gift:
+        Name: '&aМистический Подарок (5-Пакет)'
+        Material: ENDER_CHEST
+        Lore:
+        - '&fЭтот подарочный пакет содержит &a5'
+        - '&bМистических Коробок&f'
+        - ''
+        - '&bВыберите, кому отправить этот пакет!'
+        Slot: 4
+      Player:
+        Lore:
+        - ''
+        - '&aНажмите, чтобы отправить подарок!'
+  Confirm-Send-Gift-Menu:
+    GUI-Name: Подтверждение отправки Подарка
+    Items:
+      Player:
+        Name: '&f{PLAYER}'
+        Lore: ''
+        Slot: 12
+      Mystery-Gift:
+        Name: '&aМистический Подарок (5-Пакет)'
+        Material: ENDER_CHEST
+        Lore:
+        - '&fЭтот подарочный пакет содержит &a5'
+        - '&bМистических Коробок&f'
+        Slot: 14
+      Confirm:
+        Name: '&aПодтвердить'
+        Material: LIME_TERRACOTTA
+        Lore: ''
+        Slot: 29
+      Cancel:
+        Name: '&cОтменить'
+        Material: RED_TERRACOTTA
+        Lore: ''
+        Slot: 33
+  Settings-Menu:
+    GUI-Name: Settings
+    Items:
+      Ignore-Cooldown:
+        Name: '&aIgnore Cooldown'
+        Material: BARRIER
+        Show: true
+        Slot: 20
+        Lore: ''
+      Self-Morph-View:
+        Name: '&aSelf Morph View'
+        Material: ENDER_EYE
+        Show: true
+        Slot: 24
+        Lore: ''
+      Enabled:
+        Name: '&aEnabled'
+        Material: LIME_WOOL
+        Lore: ''
+      Disabled:
+        Name: '&cDisabled'
+        Material: RED_WOOL
+        Lore: ''
+  Mystery-Vault-Animations-Menu:
+    GUI-Name: Анимация Мистического Хранилища
+    Items:
+      Random-Mystery-Vault-Animation:
+        Name: '&eРандомная анимация'
+        Material: ENDER_PEARL
+        Slot: 40
+        Show: true
+        Lore:
+        - '&fЕсли Вы не можете'
+        - '&fвыбрать анимацию,'
+        - '&fто это для Вас!'
+        - ''
+        - '&fСтатус: {STATUS}'
+        - ''
+  Open-Multiple-Boxes-Menu:
+    GUI-Name: Открыть несколько коробок
+    Items:
+      Open-20-Boxes:
+        Name: '&aОткрыть 20 Коробок'
+        Material: NETHER_STAR
+        Lore:
+        - '&fОткройте до 20 коробок'
+        - '&fодновременно'
+        - ''
+        - '&aНажмите,чтобы открыть'
+        Slot: 19
+      Open-50-Boxes:
+        Name: '&aОткрыть 50 Коробок'
+        Material: NETHER_STAR
+        Lore:
+        - '&fОткройте до 50 коробок'
+        - '&fодновременно'
+        - ''
+        - '&aНажмите,чтобы открыть'
+        Slot: 22
+      Open-250-Boxes:
+        Name: '&aОткрыть 250 Коробок'
+        Material: NETHER_STAR
+        Lore:
+        - '&fОткройте до 250 коробок'
+        - '&fодновременно'
+        - ''
+        - '&aНажмите,чтобы открыть'
+        Slot: 25
+  Confirm-Open-Multiple-Boxes-Menu:
+    GUI-Name: Подтвердить открытие
+    Items:
+      Confirm:
+        Name: '&aПодтвердить'
+        Material: LIME_TERRACOTTA
+        Lore: ''
+        Slot: 11
+      Cancel:
+        Name: '&cОтменить'
+        Material: RED_TERRACOTTA
+        Lore: ''
+        Slot: 15
+  Animated Hats: Анимированные головы
+  Miniatures: Питомцы
+  Pet-Items-Menu:
+    GUI-Name: Предметы для питомца
+    Items:
+      Your-Pet:
+        Name: '&eВаш питомец'
+        Show: false
+        Slot: 50
+      Zero-Item-Remain:
+        Show-Custom-Item: true
+        Material: GRAY_DYE
+        Play-Sound:
+          Enabled: true
+          Sound: ENTITY_ENDERMAN_TELEPORT
+Items:
+  Go-Back:
+    Name: '&eНазад'
+    Material: ARROW
+    Show: true
+    Lore: ''
+    Slot: 39
+  Previous-Page:
+    Name: '&eПредыдущая страница'
+    Material: ARROW
+    Lore:
+    - '&fСтраница &a{PAGE}'
+    Slot: 39
+  Next-Page:
+    Name: '&eСледующая страница'
+    Material: ARROW
+    Lore:
+    - '&fСтраница &a{PAGE}'
+    Slot: 41
+  Already-Selected:
+    Show-In-Lore: true
+    Lore:
+    - ''
+    - '&fУже выбрано'
+  Click-To-Select:
+    Show-In-Lore: true
+    Lore:
+    - ''
+    - '&aНажмите для выбора'
+  Unlocked:
+    Show-In-Lore: true
+    Lore:
+    - ''
+    - '&fРазблокировано: &a{HASPERMISSION}/{SIZE} &8({PERCENTAGE}%)'
+    - ''
+    - '&aНажмите для просмотра!'
+  Settings:
+    Name: '&eНастройки'
+    Material: COMPARATOR
+    Show: false
+    Lore:
+    - '&fПозволяет редактировать и управлять'
+    - '&fразличными персональными настройками'
+    Slot: 53
+  MainMenu-Item:
+    Name: '&aГлавное Меню'
+    Material: TRAPPED_CHEST
+    Show: false
+    Lore:
+    - ''
+    - '&fНаслаждайтесь приятными'
+    - '&fкосметическими функциями!'
+    Slot: 49
+  Morph-Slimeball:
+    Name: '&aАктивировать Навыки Превращения'
+  Self-Morph-View:
+    Name: '&eПросмотр Своего Превращения'
+    Material: ENDER_EYE
+    Show: true
+    Lore:
+    - '&fСтатус: {STATUS}'
+    - ''
+    - '&aНажмите, чтобы переключить'
+    - '&aпросмотр своего превращения'
+    Slot: 50
+  Rename-Pet:
+    Name: '&eИмя вашего питомца'
+    Material: NAME_TAG
+    Show: true
+    Lore:
+    - '&fПереименуйте своего питомца, введя имя в чат'
+    Slot: 53
+  Pages:
+    Name: ' &r(Страница {CURRENT_PAGE}/{MAX_PAGES})'
+  Enough-Mystery-Dust:
+    Lore:
+    - ''
+    - '&aНажмите, для покупки за &b{COST}&e$!'
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Not-Enough-Mystery-Dust:
+    Lore:
+    - ''
+    - '&b> &fДанную косметику можно'
+    - '&b> &fприобрести по выгодной цене!'
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_ENDERMAN_TELEPORT
+  Item-Unpurchasable:
+    Lore:
+    - ''
+    - '&cНе удается купить'
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_ENDERMAN_TELEPORT
+  Failed-To-Purchase:
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_ENDERMAN_TELEPORT
+  Multiple-Boxes-Loot-Book:
+  - '   &1&lМИСТИЧЕСКАЯ КОРОБКА'
+  - ''
+  - '&0Вы нашли'
+  - '&0следующие предметы в'
+  - '&0Мистической Коробке:'
+  - '&9&l+{MYSTERY_DUST}$'
+  - ''
+  - ''
+  - '&0Перейдите на следующую'
+  - '&0страницу, чтобы просмотреть'
+  - '&0все предметы'
+  Settings-Status:
+  - '&e&l{SETTING}'
+  - ''
+  - '  &fСтатус: {STATUS}'
+  - ''
+  Send-Pet-On-Mission:
+    Name: '&aОтпавить питомца на задание'
+    Material: OAK_BOAT
+    Show: true
+    Slot: 45
+    Lore:
+    - '&fОтправьте &2Счастливого, &aОчень'
+    - '&aСчастливого&f, и &bСупер Счастливого &fпитомца'
+    - '&fна секретное задание для питомцев'
+    - '&fв награду Ваш питомиц получит EXP!'
+    - ''
+    - '&fЧем больше у Вашего питомца EXP, тем'
+    - '&fсчастливей Ваш питомец'
+  Enough-Mystery-Dust-To-Craft-Mystery-Box:
+    Lore:
+    - ''
+    - '&fСтоимость: &a{COST}&f$'
+    - '&aНажмите для покупки!'
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Not-Enough-Mystery-Dust-To-Craft-Mystery-Box:
+    Lore:
+    - ''
+    - '&fСтоимость: &a{COST}&f$'
+    - '&cНе хватает денег!'
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_ENDERMAN_TELEPORT
+  Current-Spawned-Pet:
+    Name: '&eТекущий питомец'
+    Show: true
+    Slot: 4
+  Equip-Entire-Suit:
+    Name: '&aЭкипировка'
+    Material: LEATHER
+    Show: true
+    Slot: 41
+    Lore:
+    - '&fВы можете надеть костюм на все'
+    - '&fчасти тела, которые вы разблокировали'
+    - ''
+    - '&aНажмите, чтобы надеть'
+  Failed-To-Deduct-Mystery-Dust:
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_ENDERMAN_TELEPORT
+Reset-Buttons:
+  Reset-Cosmetics:
+    Name: '&cУбрать косметику'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    Slot: 49
+  Reset-Hat:
+    Name: '&cУбрать голову'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    Slot: 40
+  Reset-Particle:
+    Name: '&cУбрать частицы'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    Slot: 40
+  Reset-Suit:
+    Name: '&cУбрать костюм'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    Slot: 40
+  Reset-Gadget:
+    Name: '&cУбрать гаджеты'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    Slot: 40
+  Reset-Pet:
+    Name: '&cУбрать питомца'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    Slot: 40
+  Reset-Morph:
+    Name: '&cУбрать Превращение'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    Slot: 40
+  Reset-Banner:
+    Name: '&cУбрать баннер'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    Slot: 40
+  Reset-Emote:
+    Name: '&cУбрать эмоции'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    Slot: 40
+  Reset-Cloak:
+    Name: '&cСнять плащ'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    Slot: 40
+  Reset-Animated-Hat:
+    Name: '&cСнять анимированную голову'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 40
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Miniature:
+    Name: '&cУбрать Питомца'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 40
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+Cooldown-In-Action-Bar:
+  Enabled: true
+  Cooldown-Block:
+    Remain: '&c|'
+    Retain: '&a|'
+    Amount-Of-Blocks: 100
+  Cooldown-Message: '{NAME} &f{COOLDOWN_BLOCK} &f{TIME_LEFT} сек.'
+Item-Purchase-Messages:
+  Purchase-Hat: '{PREFIX}&fВы купили {ITEM}&f'
+  Purchase-Particle: '{PREFIX}&fВы купили {ITEM}&f'
+  Purchase-Suit: '{PREFIX}&fВы купили {ITEM}&f'
+  Purchase-Gadget: '{PREFIX}&fВы купили {ITEM}&f'
+  Purchase-Pet: '{PREFIX}&fВы купили {ITEM}&f'
+  Purchase-Morph: '{PREFIX}&fВы купили {ITEM}&f'
+  Purchase-Banner: '{PREFIX}&fВы купили {ITEM}&f'
+  Purchase-Emote: '{PREFIX}&fВы купили {ITEM}&f'
+  Purchase-Cloak: '{PREFIX}&fВы купили {ITEM}&f'
+  Purchase-Animated-Hat: '{PREFIX}&fВы купили {ITEM}&f'
+  Purchase-Miniature: '{PREFIX}&fВы купили {ITEM}&f'
+Checking-For-Update: '{PREFIX}&rПроверка обновлений...'
+Cooldown: '{PREFIX}&fПодождите &a{COOLDOWN} сек.&f, прежде чем использовать это снова'
+Error: '{PREFIX}&cПри выполнении этой операции произошла ошибка!'
+No-Permission: '{PREFIX}&cУ вас нет необходимого разрешения!'
+World-Disabled: '{PREFIX}&cУ вас нет разрешения на это в этом мире!'
+Banners-Are-Disabled: '{PREFIX}&cКосметические баннеры отключены!'
+Cloaks-Are-Disabled: '{PREFIX}&cКосметические эффекты отключены!'
+Emotes-Are-Disabled: '{PREFIX}&cКосметические эмоции отключены!'
+Gadgets-Are-Disabled: '{PREFIX}&cКосметические гаджеты отключены!'
+Hats-Are-Disabled: '{PREFIX}&cКосметические шляпы отключены!'
+Morphs-Are-Disabled: '{PREFIX}&cКосметические превращения отключены!'
+Particles-Are-Disabled: '{PREFIX}&cКосметические эффекты отключены!'
+Pets-Are-Disabled: '{PREFIX}&cКосметические питомцы отключены!'
+Suits-Are-Disabled: '{PREFIX}&cКосметические костюмы отключены!'
+Select-Banner: '&fВы выбрали баннер &a{BANNER}&a'
+Select-Cloak: '&fВы выбрали плащ &a{CLOAK}&a'
+Select-Emote: '&fВы выбрали эмоцию &a{EMOTE}&a'
+Select-Gadget: '&fВы выбрали гаджет &a{GADGET}&a'
+Select-Hat: '&fВы выбрали голову &a{HAT}&a'
+Select-Morph: '&aВы превратились в &a{MORPH}&a'
+Select-Particle: '&fВы выбрали частицы &a{PARTICLE}&a'
+Select-Pet: '&aВаш питомец &e{PET} &aзаспавнен'
+Select-Suit: '&fВы выбрали &a{SUIT}&a'
+Reset-Banner: '&fВы &cсняли &fсвой банер'
+Reset-Cloak: '&fВы &cсняли &fсвой плащ'
+Reset-Cosmetics: '&fВы &cвыключили &fвсе активные косметики'
+Reset-Emote: '&fВы &cубрали &fсвои эмоции'
+Reset-Gadget: '&fВы &cубрали &fгаджет'
+Reset-Hat: '&fВы &cсняли &fголову'
+Reset-Morph: '&fВаше Превращение сброшено'
+Reset-Particle: '&fВы &cубрали &fчастицы'
+Reset-Pet: '&fВаш Питомец сброшен'
+Reset-Suit: '&fВы &cсняли &fсвой костюм'
+Characters-Too-Long: '{PREFIX}&cИмя питомца не может быть длиннее {CHARACTERS} символов!'
+Does-Not-Support-Characters: '{PREFIX}&cВы можете использовать только английский алфавит
+  для имени'
+No-Player-Nearby: '{PREFIX}&cРядом нет ни одного игрока!'
+Not-Allowed-From-Console: '{PREFIX}&cВы не можете использовать эту команду из консоли!'
+Not-Enough-Space: '{PREFIX}&cНедостаточно места, чтобы использовать этот гаджет!'
+Not-Enough-Space-For-Target-Block: '{PREFIX}&cНедостаточно места для использования
+  этого гаджета на выбранном вами блоке!'
+Not-On-Ground: '{PREFIX}&cВы должны быть на земле, чтобы использовать это!'
+Player-Not-Found: '{PREFIX}&cИгрок не найден!'
+Player-Is-Offline: '{PREFIX}&cЭтот игрок в настоящее время оффлайн!'
+Plugin-Reloaded: '{PREFIX}&9Плагин был перезагружен'
+Reloading-Plugin: '{PREFIX}&9Перезагрузка плагина...'
+Required-Number-Format: '{PREFIX}&cТребуется номер!'
+Required-Positive-Number: '{PREFIX}&cТребуется положительное число!'
+Target-A-Block: '{PREFIX}&cВы должны смотреть на блок!'
+Target-A-Player: '{PREFIX}&cВы должны смотреть на игрока!'
+Remove-Item-From-Slot-To-Equip-Gadget: '{PREFIX}&cВы должны удалить свой предмет в
+  слоте {SLOT}(&b{ITEM}&c) для включения гаджета!'
+Remove-Item-From-Slot-To-Equip-Morph: '{PREFIX}&cВы должны удалить свой предмет в
+  слоте {SLOT}(&b{ITEM}&c) для включения превращения!'
+Remove-Item-From-Slot-To-Equip-Emote: '{PREFIX}&cВы должны удалить свой предмет в
+  слоте {SLOT}(&b{ITEM}&c) для включения эмоций!'
+Remove-Helmet-To-Equip-Hat: '{PREFIX}&cВы должны снять шлем, чтобы надеть голову!'
+Remove-Helmet-To-Equip-Banner: '{PREFIX}&cВы должны снять шлем, чтобы надеть баннер!'
+Remove-Helmet-To-Equip-Emote: '{PREFIX}&cВы должны снять шлем, чтобы надеть эмоцию!'
+Remove-Armor-To-Equip-Suit: '{PREFIX}&cВы должны снять свою броню, чтобы надеть костюм!'
+Failed-To-Purchase: '&cНе удалось получить ваш купленный предмет!'
+Item-Unpurchasable: '{PREFIX}&cВы не можете приобрести этот предмет!'
+Player-Not-Enough-MysteryDust: '{PREFIX}&cУ вас всего &b{MYSTERY_DUST}&c$'
+Added-MysteryDust: '{PREFIX}&eВы успешно добавили &b{MYSTERY_DUST}&e$ игроку &b{PLAYER}&e'
+Check-MysteryDust: '&e{PLAYER} имеет &b{MYSTERY_DUST}&e$'
+Received-MysteryDust: '{PREFIX}&fВы получили &a{MYSTERY_DUST}&a$'
+Removed-MysteryDust: '{PREFIX}&eВы удалили &b{MYSTERY_DUST}&e$ у игрока &b{PLAYER}&e'
+Sent-MysteryDust: '{PREFIX}&eВы отправили &b{MYSTERY_DUST}&e$ игроку &b{PLAYER}&e'
+Set-MysteryDust: '{PREFIX}&eВы установили &b{MYSTERY_DUST}&e$ для игрока &b{PLAYER}&e'
+Only-Have-MysteryDust: '{PREFIX}&b{PLAYER} &cимеет только &b{MYSTERY_DUST}&c$'
+Removed-MysteryDust-From-Player: '{PREFIX}&b{MYSTERY_DUST}&e$ удалено с вашего аккаунта'
+Not-Enough-MysteryDust-To-Purchase: '{PREFIX}&fНа вашем счёте недостаточно средств
+  для покупки!'
+Pay-MysteryDust-To-Self: '{PREFIX}&cВы не можете заплатить самому себе!'
+Gave-Mystery-Boxes: '{PREFIX}&eВы успешно дали &b{MYSTERY_BOXES} Мистической Коробки
+  &eигроку &b{PLAYER}&e'
+Gave-Mystery-Boxes-To-All-Players: '{PREFIX}&eВы успешно дали &b {MYSTERY_BOXES} Мистической
+  Коробки &eвсем &b{ONLINE} &eигрокам'
+Received-Mystery-Boxes: '{PREFIX}&fВы получили &a{MYSTERY_BOXES} &fМистическую Коробку'
+Added-Mystery-Vault: '{PREFIX}&aМистическое Хранилище &f''{NAME}'' &aуспешно создано'
+Mystery-Vault-Same-Location: '{PREFIX}&cВы уже создали Мистическое Хранилище в этом
+  месте!'
+Mystery-Vault-Is-Exists: '{PREFIX}&cМистическое Хранилище с таким именем уже существует!'
+Do-Not-Have-Any-Mystery-Vault: '{PREFIX}&cУ вас нет Мистического Хранилища!'
+No-Mystery-Vault-Nearby: '{PREFIX}&cВ данном радиусе нет Мистического Хранилища!'
+Removed-Mystery-Vault: '{PREFIX}&aМистическое Хранилище &f''{NAME}'' &aуспешно удалено'
+Mystery-Vault-Not-Found: '{PREFIX}&cНевозможно найти Мистическое Хранилище в этом
+  месте!'
+Mystery-Vault-Not-Found-With-Name: '{PREFIX}&cНе удалось найти Мистическое Хранилище
+  с именем &f''{NAME}''&c!'
+Teleport-To-Mystery-Vault: '{PREFIX}&eВы были телепортированы к Мистическому Хранилищю
+  с именем &f''{NAME}''&e'
+Open-Mystery-Vault-At-A-Time: '{PREFIX}&cЗдесь уже кто-то открывает Мистический Сундук!'
+Can-Only-Open-One-Mystery-Box: '{PREFIX}&cМистический Сундук ещё открывается!'
+Purchase-Cancelled: '{PREFIX}&cПокупка отменена!'
+Mystery-Boxes-Are-Disabled: '{PREFIX}&cМистические Коробки отключены!'
+Crafted-Mystery-Box: '&fВы купили &a{NAME}&a'
+Gave-Mystery-Gifts: '{PREFIX}&eВы успешно дали &b{GIFTS} &eМистических подарочных
+  пакетов&e игроку &b{PLAYER}&e'
+Received-Mystery-Gifts: '{PREFIX}&eВы получили &b{GIFTS} &eМистических подарочных
+  пакетов&e от игрока &b{PLAYER}&e'
+Send-A-Gift-To-Player: '&eВы отправляете подарок, содержащий &b5 Мистических Коробок
+  &eигроку &b{PLAYER}&e!'
+Emote-Is-Activated: '{PREFIX}&fЭмоция уже &aактивна&f!'
+Gadget-Is-Activated: '{PREFIX}&fГаджет уже &aактивен&f!'
+Is-Not-Morphed: '&cВы сейчас не превращены!'
+Morph-Skill-Is-Activated: '{PREFIX}&c{MORPH} умение уже активно!'
+Rename-Pet: '&eИмя питомца {TYPE} было изменено на &a{NAME}&e'
+Rocket-Countdown: '&c&lЗАПУСК РАКЕТЫ ЧЕРЕЗ {TIMER} {SECOND}!'
+Rocket-Lift-Off: '&a&lМЫ ЛЕТИМ!'
+Enabled-Self-Morph-View: '{PREFIX}&eВы включили режим просмотра для превращения!'
+Disabled-Self-Morph-View: '{PREFIX}&eВы выключили режим просмотра для превращения!'
+Enabled-Bypass-Cooldown: '{PREFIX}&eВы включили задержку'
+Disabled-Bypass-Cooldown: '{PREFIX}&eВы выключили задержку'
+Rename-Pet-In-Chat: |-
+  &eУ вас есть &c20 &eсекунд для ввода имени вашего питомца, укажите имя своего питомца в чате.
+  &eВведите &2Cancel &eдля отмены переименования вашего питомца.
+Timed-Out: '&cВремя для переименования вашего питомца истекло, вы не изменили имя
+  своего питомца!'
+Cancel-Rename-Pet: '&cПереименование питомца отменено'
+Reset-Suit-Helmet: '&fВы сняли шлем'
+Reset-Suit-Chestplate: '&fВы сняли нагрудник'
+Reset-Suit-Leggings: '&fВы сняли поножи'
+Reset-Suit-Boots: '&fВы сняли ботинки'
+Disabled-Command-While-Cosmetics-Activated: '{PREFIX}&cВы не можете использовать эту
+  команду, когда косметика активирована!'
+Invalid-Type: '{PREFIX}&cЭтот {TYPE} введенное вами недействительно!'
+Type-Is-Not-Enabled: '{PREFIX}&cЭтот {TYPE} не включен!'
+Suit-Ability-Is-Activated: '{PREFIX}&fСпособность костюма уже &aактивна&f!'
+Morph-Ability-Is-Disabled: '{PREFIX}&c{MORPH} способность в настоящее время отключена!'
+Turn-Off-Bumblebee-Song: '{PREFIX}&cПесня Bumblebee отключена!'
+Required-Time-Format: '{PREFIX}&cТребуется формат времени! (''h'' для часов,''d''
+  для дней, ''m'' для месяцев)'
+Playing-Song: '{RANDOM_COLOR}Сейчас играет: {SONG}'
+Already-Activate-One: '{PREFIX}&cЭтот гаджет {GADGET} уже активирован! Пожалуйста,
+  повторите попытку позже'
+Enabled: '&aВключено'
+Disabled: '&cВыключено'
+Not-Allowed-Cosmetics-In-Region: '{PREFIX}&cВсе косметики в этом регионе не разрешены'
+Not-Allowed-Hat-In-Region: '{PREFIX}&cШляпы в этом регионе не разрешены'
+Not-Allowed-Particle-In-Region: '{PREFIX}&cЭффекты в этом регионе не разрешены'
+Not-Allowed-Suit-In-Region: '{PREFIX}&cКостюмы в этом регионе не разрешены'
+Not-Allowed-Gadget-In-Region: '{PREFIX}&cГаджеты в этом регионе не разрешены'
+Not-Allowed-Pet-In-Region: '{PREFIX}&cПитомцы в этом регионе не разрешены'
+Not-Allowed-Morph-In-Region: '{PREFIX}&cПревращения в этом регионе не разрешены'
+Not-Allowed-Banner-In-Region: '{PREFIX}&cБаннеры в этом регионе не разрешены'
+Not-Allowed-Emote-In-Region: '{PREFIX}&cЭмоции в этом регионе не разрешены'
+Not-Allowed-Cloak-In-Region: '{PREFIX}&cПлащ в этом регионе не разрешены'
+Second: сек.
+Seconds: сек.
+Minute: мин.
+Minutes: мин.
+Hour: ч.
+Hours: ч.
+Day: д.
+Days: д.
+Not-On-Flat-Ground: '{PREFIX}&cВы должны быть на плоской земле, чтобы использовать
+  это!'
+Stand-On-Two-Blocks-High: '{PREFIX}&cВы должны стоять чуть выше'
+Set-Player-MysteryDust: '{PREFIX}&eВаши деньги были настроены на &b{MYSTERY_DUST}&e'
+Redefined-Mystery-Vault: '{PREFIX}&aРасположение мистического хранилища &f''{NAME}''
+  &aбыло переопределено'
+Received-Gift: '&aВы получили подарок от &r{PLAYER}&a! Посетите &bМистическое Хранилище
+  &aдля открытия!'
+Mystery-Box-Was-Expired: '{PREFIX}&cЭта мистическая коробка истекла. Пожалуйста, открывайте
+  свои мистические коробки до истечения срока их действия'
+Check-Mystery-Boxes: '&e{PLAYER} имеет &b{MYSTERY_BOXES} &eМистических коробок'
+Select-Mystery-Vault-Animation: '&fВы выбрали &a{ANIMATION} &fдля вашего мистического
+  хранилища'
+Not-Enough-Mystery-Boxes: '&cУ вас не хватает Мистических коробок'
+Only-Boolean-Value-Can-Be-Accepted: '&cМожно принимать только логическое значение!'
+Cooldown-Bypass: Обход Задержек
+Self-Morph-View: Просмотр своего превращения
+Counting-Mystery-Boxes: '&cПодсчёт Мистических Коробок...'
+Required-Full-Data: '{PREFIX}&cВозможно, что Ваши данные были удалены...'
+No-Cosmetic-Equipped: Нет
+Rename-Pet-For-Player: '&e{PLAYER} {TYPE} имя питомца изменено на &a{NAME}&e'
+Animated-Hats-Are-Disabled: '{PREFIX}&cАнимированные головы были выключены!'
+Miniatures-Are-Disabled: '{PREFIX}&cПитомцы были выключены!'
+Equip-Animated-Hat-For-Player: '&eВы включили {ANIMATED_HAT} у &b{PLAYER}&e'
+Equip-Banner-For-Player: '&eВы включили {BANNER} для &b{PLAYER}&e'
+Equip-Cloak-For-Player: '&eВы включили {CLOAK} для &b{PLAYER}&e'
+Equip-Emote-For-Player: '&eВы включили {EMOTE} для &b{PLAYER}&e'
+Equip-Gadget-For-Player: '&eВы включили {GADGET} для &b{PLAYER}&e'
+Equip-Hat-For-Player: '&eВы включили {HAT} для &b{PLAYER}&e'
+Equip-Miniature-For-Player: '&eВключение {MINIATURE} у &b{PLAYER}'
+Equip-Morph-For-Player: '&eВы превратили &b{PLAYER} &eв {MORPH}&e'
+Equip-Particle-For-Player: '&eВы включили {PARTICLE} у &b{PLAYER}&e'
+Equip-Pet-For-Player: '&eСпавн {PET} &eпитомца у &b{PLAYER}'
+Equip-Suit-For-Player: '&eВы включили {SUIT} у &b{PLAYER}&e'
+Select-Animated-Hat: '&fВы выбрали анимированную голову &a{ANIMATED_HAT}&a'
+Select-Miniature: '&fПитомец &a{MINIATURE}&f появился!'
+Select-Entire-Suit: '&fВы включили &a{PIECES}&f части костюма &a{SUIT}&a'
+No-Suit-Pieces-To-Equip: '&cУ вас нет никаких частей костюма, чтобы одеться!'
+Reset-Animated-Hat: '&fВы &cубрали &fанимированную голову'
+Reset-Miniature: '&fВы &cубрали &fсвоего питомца'
+Granted-Access-To-Animated-Hat: '&eYou''ve been granted permission to equip {ANIMATED_HAT}&e'
+Granted-Access-To-Banner: '&eYou''ve been granted permission to equip {BANNER}&e'
+Granted-Access-To-Cloak: '&eYou''ve been granted permission to equip {CLOAK}&e'
+Granted-Access-To-Emote: '&eYou''ve been granted permission to equip {EMOTE}&e'
+Granted-Access-To-Gadget: '&eYou''ve been granted permission to equip {GADGET}&e'
+Granted-Access-To-Hat: '&eYou''ve been granted permission to equip {HAT}&e'
+Granted-Access-To-Miniature: '&eYou''ve been granted permission to equip {MINIATURE}&e'
+Granted-Access-To-Morph: '&eYou''ve been granted permission to equip {MORPH}&e'
+Granted-Access-To-Particle: '&eYou''ve been granted permission to equip {PARTICLE}&e'
+Granted-Access-To-Pet: '&eYou''ve been granted permission to equip {PET}&e'
+Granted-Access-To-Suit: '&eYou''ve been granted permission to equip {SUIT}&e'
+Granted-Access-To-Animated-Hat-For-Player: '&e{PLAYER} is now allowed to use {ANIMATED_HAT}&e'
+Granted-Access-To-Banner-For-Player: '&e{PLAYER} is now allowed to use {BANNER}&e'
+Granted-Access-To-Cloak-For-Player: '&e{PLAYER} is now allowed to use {CLOAK}&e'
+Granted-Access-To-Emote-For-Player: '&e{PLAYER} is now allowed to use {EMOTE}&e'
+Granted-Access-To-Gadget-For-Player: '&e{PLAYER} is now allowed to use {GADGET}&e'
+Granted-Access-To-Hat-For-Player: '&e{PLAYER} is now allowed to use {HAT}&e'
+Granted-Access-To-Miniature-For-Player: '&e{PLAYER} is now allowed to use {MINIATURE}&e'
+Granted-Access-To-Morph-For-Player: '&e{PLAYER} is now allowed to use {MORPH}&e'
+Granted-Access-To-Particle-For-Player: '&e{PLAYER} is now allowed to use {PARTICLE}&e'
+Granted-Access-To-Pet-For-Player: '&e{PLAYER} is now allowed to use {PET}&e'
+Granted-Access-To-Suit-For-Player: '&e{PLAYER} is now allowed to use {SUIT}&e'
+No-Longer-Have-Access-To-Animated-Hat: '&eYou no longer have access to {ANIMATED_HAT}&e'
+No-Longer-Have-Access-To-Banner: '&eYou no longer have access to {BANNER}&e'
+No-Longer-Have-Access-To-Cloak: '&eYou no longer have access to {CLOAK}&e'
+No-Longer-Have-Access-To-Emote: '&eYou no longer have access to {EMOTE}&e'
+No-Longer-Have-Access-To-Gadget: '&eYou no longer have access to {GADGET}&e'
+No-Longer-Have-Access-To-Hat: '&eYou no longer have access to {HAT}&e'
+No-Longer-Have-Access-To-Miniature: '&eYou no longer have access to {MINIATURE}&e'
+No-Longer-Have-Access-To-Morph: '&eYou no longer have access to {MORPH}&e'
+No-Longer-Have-Access-To-Particle: '&eYou no longer have access to {PARTICLE}&e'
+No-Longer-Have-Access-To-Pet: '&eYou no longer have access to {PET}&e'
+No-Longer-Have-Access-To-Suit: '&eYou no longer have access to {SUIT}&e'
+Already-Has-Permission: '&c{PLAYER} already has this permission'
+Successful-Remove-Permission: '&eРазрешение &c{TYPE} &eбыло удалено у {PLAYER}&e'
+Not-Allow-Cosmetics-In-This-Location: '{PREFIX}&cВы не можете использовать косметику
+  здесь!'
+Not-Allow-Teleport-To-That-Location: '{PREFIX}&cВы не можете телепортироваться с косметикой
+  в это место!'
+Remove-Helmet-To-Equip-Animated-Hat: '{PREFIX}&cВы должны убрать свой Шлем, чтобы
+  использовать Анимированные головы!'
+Added-MysteryDust-To-All-Players: '{PREFIX}&eВы добавили &b{MYSTERY_DUST} &e$ &b{ONLINE}
+  &eигроку(ам)'
+No-Permission-To-Open-One-Star-Box: '{PREFIX}&cВы не можете открыть эту Мистическую
+  коробку'
+No-Permission-To-Open-Two-Star-Box: '{PREFIX}&cВы не можете открыть эту Мистическую
+  коробку'
+No-Permission-To-Open-Three-Star-Box: '{PREFIX}&cВы не можете открыть эту Мистическую
+  коробку'
+No-Permission-To-Open-Four-Star-Box: '{PREFIX}&cВы не можете открыть эту Мистическую
+  коробку'
+No-Permission-To-Open-Five-Star-Box: '{PREFIX}&cВы не можете открыть эту Мистическую
+  коробку'
+No-Pet-Spawned: '{PREFIX}&cВы не можете спавнить питомца'
+Unlock-Pet-Before-Rename: '&c{PLAYER} должен сначала получить {TYPE}, прежде чем Вы
+  сможете переименовать его'
+Pet-Name-In-Blacklist: '&cТакое имя нельзя поставить питомцу'
+Not-Allowed-To-Ride-Other-Pet: '&cВы не можете кататься на чужих питомцах'
+Request-Pet-With-Happy-Status: '&cВаш питомец должен быть со статусом: Счастливый
+  и выше, что-бы сделать это!'
+Click-To-Increase-Happiness: '&bЧтобы сделать Вашего питомца счастливым, вы должны
+  им заняться!'
+Pet-Earn-EXP: '&eВаш питомец {LEVEL} {PET_NAME} &eзаработал &b{EXP} EXP &eза выполнение
+  миссии!'
+Pet-Level-Up: '&eВаш питомец {LEVEL} {PET_NAME} &eзаработал &b{EXP} EXP &eза выполнение
+  миссии! Его уровень повышен'
+Send-Pet-For-Mission-Is-On-Cooldown: '&cВаш питомец устал. Пожождите {COOLDOWN_MINUTES}м'
+No-Permission-To-Spawn-Pet: '&cУ Вас нет разрешения!'
+Pet-Stat-Fulled: '&cВаш {PET_NAME} &c{STAT} переполнен!'
+Zero-Pet-Item-Remain: '&cЭтот предмет можно найти в &bМистических коробках&c!'
+Ate-Food-And-Dont-Like-It: '&eYour {PET_NAME} &eate a &a{ITEM}&e. They don''t like
+  it very much. (&a+{INCREMENT} &bHunger&e)'
+Ate-Food-And-Like-It: '&eYour {PET_NAME} &eate a &a{ITEM}&e. They like it! (&a+{INCREMENT}
+  &bHunger&e)'
+Ate-Food-And-Really-Like-It: '&eYour {PET_NAME} &eate a &a{ITEM}&e. They really like
+  it! (&a+{INCREMENT} &bHunger&e)'
+Ate-Favourite-Food: '&eYour {PET_NAME} &eate a &a{ITEM}&e. It''s their favourite food!
+  (&a+{INCREMENT} &bHunger&e)'
+Drank-Drink-And-Dont-Like-It: '&eYour {PET_NAME} &edrank a &a{ITEM}&e. They don''t
+  like it very much. (&a+{INCREMENT} &bThirst&e)'
+Drank-Drink-And-Like-It: '&eYour {PET_NAME} &edrank a &a{ITEM}&e. They like it! (&a+{INCREMENT}
+  &bThirst&e)'
+Drank-Drink-And-Really-Like-It: '&eYour {PET_NAME} &edrank a &a{ITEM}&e. They really
+  like it! (&a+{INCREMENT} &bThirst&e)'
+Drank-Favourite-Drink: '&eYour {PET_NAME} &edrank a &a{ITEM}&e. It''s their favourite
+  drink! (&a+{INCREMENT} &bThirst&e)'
+Played-Toy-And-Dont-Like-It: '&eYour {PET_NAME} &eplayed with a &a{ITEM}&e. They don''t
+  like it very much. (&a+{INCREMENT} &bExercise&e)'
+Played-Toy-And-Like-It: '&eYour {PET_NAME} &eplayed with a &a{ITEM}&e. They like it!
+  (&a+{INCREMENT} &bExercise&e)'
+Played-Toy-And-Really-Like-It: '&eYour {PET_NAME} &eplayed with a &a{ITEM}&e. They
+  really like it! (&a+{INCREMENT} &bExercise&e)'
+Played-Favourite-Toy: '&eYour {PET_NAME} &eplayed with a &a{ITEM}&e. It''s their favourite
+  toy! (&a+{INCREMENT} &bExercise&e)'
+Added-Pet-Item: '{PREFIX}&eYou''ve successfully added &b{AMOUNT} &e{PET_ITEM} &epet
+  item to &b{PLAYER}&e'
+Received-Pet-Item: '{PREFIX}&eYou''ve received &b{AMOUNT} &e{PET_ITEM} &epet item
+  from &b{PLAYER}&e'
+Removed-Pet-Item: '{PREFIX}&eYou''ve removed &b{AMOUNT} &e{PET_ITEM} &epet item from
+  &b{PLAYER}&e'
+Removed-Pet-Item-From-Player: '{PREFIX}&b{AMOUNT} &e{PET_ITEM} &ehas been removed
+  from your pet items'
+Set-Pet-Item: '{PREFIX}&eYou''ve set &b{AMOUNT} &e{PET_ITEM} &epet item for &b{PLAYER}&e'
+Set-Player-Pet-Item: '{PREFIX}&eYour &e{PET_ITEM} &epet item have been set to &b{AMOUNT}&e'
+Enabled-Random-Mystery-Vault-Animation: '{PREFIX}&fВы &aвключили &fРандомную Анимацию'
+Disabled-Random-Mystery-Vault-Animation: '{PREFIX}&fВы &cвыключили &fРандомную Анимацию'
+Gadget-Activated-In-Same-Area: '{PREFIX}&cThere''s a gadget activated in this area!
+  Please try at another area'
+Unequip-Cosmetics-Due-To-Low-TPS: '{PREFIX}&cВсе Гаджеты были выключены! Слишком большая
+  нагрузка на сервер.'
+Disable-Usage-Of-Cosmetics: '{PREFIX}&cИзвините за неудобства, все Гаджеты были отключены
+  из-за слишком большой нагрузки на сервер.'
+Not-Allow-Cosmetics-In-Region: '{PREFIX}&cYou''re not allowed to equip cosmetics in
+  this region'
+Not-Allow-Hat-In-Region: '{PREFIX}&cYou''re not allowed to equip hat in this region'
+Not-Allow-Animated-Hat-In-Region: '{PREFIX}&cYou''re not allowed to equip animated
+  hat in this region'
+Not-Allow-Particle-In-Region: '{PREFIX}&cYou''re not allowed to equip particle in
+  this region'
+Not-Allow-Suit-In-Region: '{PREFIX}&cYou''re not allowed to equip suit in this region'
+Not-Allow-Gadget-In-Region: '{PREFIX}&cЗдесь нельзя использовать гаджеты!'
+Not-Allow-Pet-In-Region: '{PREFIX}&cЗдесь нельзя использовать питомцев'
+Not-Allow-Miniature-In-Region: '{PREFIX}&cЗдесь нельзя использовать Питомцев'
+Not-Allow-Morph-In-Region: '{PREFIX}&cЗдесь нельзя превращаться'
+Not-Allow-Banner-In-Region: '{PREFIX}&cЗдесь нельзя использовать баннер'
+Not-Allow-Emote-In-Region: '{PREFIX}&cЗдесь нельзя использовать эмоции'
+Not-Allow-Cloak-In-Region: '{PREFIX}&cЗдесь нельзя носить плащ'
+Not-Allow-Pet-Riding-In-Region: '{PREFIX}&cЗдесь нельзя ездить на питомце'
+No-Recent-Loot-Found: Нет
+Failed-To-Deduct-Mystery-Dust: '{PREFIX}&cFailed to deduct your mystery dust. Please
+  try again'
+No-Permission-To-Ride-Pet: '&cYou do not have the permission to ride pet!'
+Loading: '&cЗагрузка...'
+Cosmetic-Reset-Completed: '&aCosmetic reset completed'

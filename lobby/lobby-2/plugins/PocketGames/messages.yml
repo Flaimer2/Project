@@ -1,0 +1,150 @@
+# This is a Message file for all Pocket Games.
+# All messages are fully customizable and support color codes, formatting and ASCII symbols.
+# Set the prefix and use %prefix% to add the plugins prefix to a message.
+# Prepend any message with <ActionBar> to send it as an ActionBar message.
+# Leave a message blank ('') to disable it.
+# 
+# You can also create messages with Hover and Click events. Syntax options: (Space between comma and quote is NOT allowed)
+#  - ["Message","/Command"]
+#  - ["Message","Hover"]
+#  - ["Message","/Command","Hover"]
+#  - ["Message","/Command","Suggest"]
+#  - ["Message","/Command","Hover","Suggest"]
+# You can add as many events to a message as you want. Example:
+# '%prefix% Click to ["&a&nAccept","/pg duel accept","&aClick to accept!"] &aor ["&c&nDeny","/pg duel deny","&cClick to deny!"]&a!'
+# The "Suggest" tag is used if the click event should suggest the command. Default is Run.
+
+Prefix: '&eКарманные игры &7|'
+Messages:
+  noPermission: '%prefix% &cУ вас нет разрешения на это!'
+  reloadKick: '%prefix% &cПерезагрузка сервера. Вы были выкинуты из игры!'
+  playerOnly: '%prefix% &cКоманда может быть использована только для игрока!'
+  configReload: '%prefix% &aКонфигурационные файлы успешно перезагружены!'
+  unknownGame: '%prefix% &cНеизвестная игра!'
+  noCommands: Неизвестная команда. Введите "/help" для помощи.
+  invalidArgs: '%prefix% &cНедействительные аргументы!'
+  invalidFile: '%prefix% &cНедействительное имя файла!'
+  fileReset: '%prefix% &a&n%file%&a успешно перезагружен!'
+  sectionFileReset: '%prefix% &a&n%section%&a in &a&n%file%&a has been successfully
+    reset!'
+  databaseNotEnabled: '%prefix% &cDatabase is not enabled!'
+  databaseReset: '%prefix% &aDatabase has been successfully reset!'
+  databaseTableReset: '%prefix% &aDatabase table &a&n%table%&a has been successfully
+    reset!'
+  damaged: '%prefix% &cПожалуйста, будьте на земле во время игры!'
+  disabledWorld: '%prefix% &cЭтот мир был выключен!'
+  playerNotOnline: '%prefix% &cИгрок не онлайн!'
+  somethingWentWrong: '%prefix% &cЧто-то пошло не так. Пожалуйста, свяжитесь с Администрацией
+    проекта!'
+  invulnerabilityON: ''
+  invulnerabilityOFF: ''
+  maxPlayers: '%prefix% &cСейчас слишком много игроков в игре. Попробуйте позже!'
+  checkCommandPlaying: '%prefix% &a%player% &fиграет в &a%game%!'
+  checkCommandNotPlaying: '%prefix% &a%player% &fне играет!'
+  checkCommandMenu: '%prefix% &a%player% &fв настоящее время просматривает меню Карманных
+    игр!'
+  targetPlayerNoPerm: '%prefix% &cИгрок, на которого нацелена задача, не имеет на
+    это разрешения!'
+  duelInviteSent: '%prefix% &fВаше приглашение на игру было отправлено!'
+  duelInviteReceived: '%prefix% &a%player% &fпригласил Вас поиграть в &a%game%&f!
+    Нажмите на ["&a&nПринять","/pg duel accept","&aНажмите, чтобы принять!"]&f или
+    ["&c&nОтклонить","/pg duel deny","&cНажмите, чтобы отклонить!"]&f!'
+  duelInviteDeclined: '%prefix% &a%player% &cотклонил &fваше приглашение на игру!'
+  duelInviteAccepted: '%prefix% &a%player% &aпринял &fваше приглашение на игру!'
+  duelInviteDelay: '%prefix% &cПожалуйста, подождите, прежде чем отправить ещё одно
+    приглашение!'
+  duelInviteExpired: '%prefix% &cВаше приглашение на игру истекло!'
+  noInvite: '%prefix% &cВы отклонили приглашение на игру!'
+  isPlaying: '%prefix% &cИгрок уже играет!'
+  maxInactivity: '%prefix% &cВы слишком долго были неактивны!'
+  disabledGame: '%prefix% &cЭта игра была отключена в 1.14 и выше!'
+  challengeableToggled: '%prefix% &aЗадание: &f%challengeable%'
+  cantChallengePlayer: '%prefix% &cНевозможно бросить вызов игроку!'
+  ListCommand:
+    header:
+    - '&9&m&l---------------------------------'
+    - ' &7&oBelow is a list of all available Pocket Games:'
+    Entry:
+      prepend: ' &7&l● '
+      game: '["&e%game%","/pocketgames play %game%","&7&oClick to play."]'
+      separator: '&7, '
+      separatorEndOfLine: false
+      append: ''
+      length: 35
+    footer:
+    - ' &7&oНажмите на любую игру, чтобы сыграть в нее!'
+    - '&9&m&l---------------------------------'
+Help:
+  PocketGames:
+  - '&9&m&l----------------------------------'
+  - ' &7&oBelow is a list of all Pocket Games commands:'
+  - |-
+    [" &7&l● &e/pocketgames help","/pocketgames help","&eOpens this help page.
+
+    &7&oClick to run command."]
+  - |-
+    [" &7&l● &e/pocketgames menu [player]","/pocketgames menu ","&eOpens the Pocket Games main menu.
+
+    &7&oClick to suggest command.","Suggest"]
+  - |-
+    [" &7&l● &e/pocketgames multiplayer [player]","/pocketgames multiplayer","&eOpens the Pocket Games multiplayer menu.
+
+    &7&oClick to run command."]
+  - |-
+    [" &7&l● &e/pocketgames spectate [player]","/pocketgames spectate ","&eOpens the Pocket Games spectator menu.
+
+    &7&oClick to run command."]
+  - "[\" &7&l● &e/pocketgames play <game> [player]\",\"/pocketgames play \",\"&ePlay\
+    \ the specified game or \n&eopen the game for a [player].\n\n&7&oClick to suggest\
+    \ command.\",\"Suggest\"]"
+  - |-
+    [" &7&l● &e/pocketgames highscore <game> [player]","/pocketgames highscore ","&eOpen the highscore for the specified game
+    &eor open the highscore for a [player].
+
+    &7&oClick to suggest command.","Suggest"]
+  - |-
+    [" &7&l● &e/pocketgames duel <accept/deny/toggle/player> [game]","/pocketgames duel ","&eChallenge a player in a multiplayer game,
+    &eaccept/deny a challenge
+    &eor toggle challenges.
+
+    &7&oClick to suggest command.","Suggest"]
+  - |-
+    [" &7&l● &e/pocketgames check <player>","/pocketgames check ","&eCheck if a player is playing a Pocket Game.
+
+    &7&oClick to suggest command.","Suggest"]
+  - |-
+    [" &7&l● &e/pocketgames list","/pocketgames list","&eView a list of all available
+    single player Pocket Games.
+
+    &7&oClick to run command."]
+  - ' &7&oHover over any command to see usage!'
+  - '&9&m&l----------------------------------'
+  Admin:
+  - '&9&m&l----------------------------------'
+  - ' &7&oBelow is a list of all Pocket Games Admin commands:'
+  - |-
+    [" &7&l● &e/pga help","/pocketgamesadmin help","&eOpens this help page.
+
+    &7&oClick to run command."]
+  - |-
+    [" &7&l● &e/pga reset file <file> [section]","/pocketgamesadmin reset file ","&eReset a configuration file to default
+    or a section in highscores.yml.
+
+    &c&oThis is irreversible!
+    &7&oClick to suggest command.","Suggest"]
+  - |-
+    [" &7&l● &e/pga reset database [table]","/pocketgamesadmin reset database ","&eReset the whole database to default
+    or just a table with the [table] parameter.
+
+    &c&oThis is irreversible!
+    &7&oClick to suggest command.","Suggest"]
+  - |-
+    [" &7&l● &e/pga info","/pocketgamesadmin info","&eDisplays info about the plugin.
+
+    &7Click to run command."]
+  - |-
+    [" &7&l● &e/pga reload","/pocketgamesadmin reload ","&eReload all Pocket Games configurations.
+
+    &7&oClick to run command."]
+  - ' &7&oHover over any command to see usage!'
+  - '&9&m&l----------------------------------'

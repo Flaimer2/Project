@@ -1,0 +1,47 @@
+# Edit Whac-A-Mole in this file.
+# 
+# All items are customizable. Play around with the GameSettings and find the sweet spot for your server!
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: Поймай крота!
+MenuItem:
+  page: 1
+  slot: 23
+  item: IRON_SPADE
+  name: '&2&lПоймай крота!'
+  lore:
+  - '&eОписание:'
+  - '&f"Поймай крота" теперь и в Майнкрафт!'
+  - '&fВаша задача – ударить максимальное'
+  - '&fколичество кротов за 60 секунд. Чем'
+  - '&fбольше кротов Вы ударите, тем сложнее'
+  - '&fбудет игра! Вооружитесь молотком!'
+  - ''
+  - '&aНажмите ЛКМ, чтобы начать игру'
+  - '&aНажмите ПКМ, чтобы увидеть топ'
+GameItems:
+  mole:
+    head: http://textures.minecraft.net/texture/fea3f447455cd229dbc7eb3974e3cb5766aacfc46b5a3bf4c596d19594179d
+    name: '&aКрот'
+  background:
+    item: STAINED_GLASS_PANE:3
+    name: '&b&l*'
+  hills:
+    center:
+      item: STAINED_GLASS_PANE:12
+      name: '&8&l*'
+    edgeNormal:
+      item: STAINED_GLASS_PANE:5
+      name: '&a&l*'
+    edgeHighlight:
+      item: STAINED_GLASS_PANE:5
+      name: '&a&l*'
+      glow: true
+GameSettings:
+  showMole:
+    ticks: 20
+  showDoubleMole:
+    ticks: 25

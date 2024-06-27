@@ -1,0 +1,32 @@
+settings:
+  defaultscene:
+    nopermission: scene1
+  dithering: false
+  global: false
+  advancedpalette: true
+  resetonradiusexit: false
+scenes:
+  scene1:
+    object1:
+      type: image
+      width: 640
+      height: 385
+      image: welcome.png
+displays:
+  default:
+    invisible: true
+    glow: false
+    distance: 100.0
+    world: lobby
+    direction: west
+    down: down
+    firstlocation:
+      x: -246.0
+      y: 31.0
+      z: -155.0
+    secondlocation:
+      x: -246.0
+      y: 33.0
+      z: -151.0
+internal:
+  pluginversion: '19.8'

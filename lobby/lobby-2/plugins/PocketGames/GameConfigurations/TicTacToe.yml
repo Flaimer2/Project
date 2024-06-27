@@ -1,0 +1,40 @@
+# Edit TicTacToe in this file.
+# 
+# This game implements an unbeatable AI. The difficulty can be set by changing the 'AI_ChanceOfRandomMove'.
+# If this is set to 0 you can only tie or lose, never win. Setting it higher increases the chance of choosing a
+# random move instead of the correct move. (The random move can still be the correct move)
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: Крестики-Нолики
+MenuItem:
+  page: 2
+  slot: 30
+  item: SLIME_BALL
+  name: '&3&lКрестики-Нолики'
+  lore:
+  - '&eОписание:'
+  - '&fСыграйте в Крестики-Нолики против'
+  - '&fкомпьютера. Выиграйте столько раз'
+  - '&fсколько Вы сможете за 60 секунд.'
+  - ''
+  - '&aНажмите ЛКМ, чтобы начать игру'
+  - '&aНажмите ПКМ, чтобы увидеть топ'
+GameItems:
+  border:
+    item: STAINED_GLASS_PANE:15
+    name: '&f&l█'
+  board:
+    item: STAINED_GLASS_PANE:7
+    name: '&f&l█'
+  playerItem:
+    item: SLIME_BALL
+    name: '&4&l⬤'
+  AI_Item:
+    item: NETHER_STAR
+    name: '&9&l✖'
+GameSettings:
+  AI_ChanceOfRandomMove: 20
+  gameDuration: 60

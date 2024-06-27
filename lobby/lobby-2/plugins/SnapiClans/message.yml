@@ -1,0 +1,169 @@
+response-invite:
+  accept: '&fВаше приглашение в клан было &aпринято &fигроком &a%receiver%'
+  ignore: '&fВаше приглашение в клан было &7проигнорировано &fигроком &a%receiver%'
+  decline: '&fВаше приглашение в клан было &cотклонено &fигроком &a%receiver%'
+
+commands:
+  info:
+    value:
+      - '&r'
+      - '&r  &e&lИнформация о клане %clan%'
+      - '&r'
+      - '&f  Создатель клана &7– &a%clan_owner%'
+      - '&f  Количество участников &7– &a%clan_members_size%/%clan_max_members%'
+      - '&f  Дата создания клана &7– &a%clan_date_creation%'
+      - '&r'
+    use: '&fВы &cне состоите &fни в каком клане. Если вы хотите узнать информацию о клане, используйте: &a/clan info название'
+    not-found-clan: '&cКлан не найден!'
+
+  members:
+    format: '&r  &f%count%. &a%name% &7- &f%role%'
+    header:
+      - '&r'
+      - '&r  &e&lСписок участников клана %clan%'
+      - '&r'
+    footer:
+      - '&r'
+      - '&r  &fВ клане &7– &a%clan_members_size%/%clan_max_members% игроков'
+      - '&r'
+    no-clan: '&fВы &cне состоите &fни в каком клане!'
+
+  accept:
+    use: '&fИспользуйте: &a/clan accept игрок'
+    success: '&fВы вступили в клан &a%clan%&f!'
+    already-in-clan: '&fВы &cуже &fсостоите в клане'
+    limit-max-members: '&fВы &cне можете &fвступить в клан &a%clan%&f, так как был достигнут лимит участников в клане!'
+    error-sender-decrease: '&fИгрок, который вас &aпригласил&f, был &cпонижен&f, поэтому вы не можете принять его приглашение'
+    error-sender-not-in-clan: '&fИгрок, который вас &aпригласил&f, &cвышел &fиз клана, поэтому вы не можете принять его приглашение'
+    player-not-invite: '&fИгрок &a%sender% &fне приглашал вас в клан'
+
+  tag:
+    use: '&cИспользуйте: /clan tag тэг'
+    success: '&cТэг успешно установлен'
+    no-clan: '&cВы не в клане'
+    no-money: '&cБОМЖ!!!'
+    tag-used: '&cТэг уже используется'
+    no-permission: '&cУ вас нет разрешения, чтобы менять тэг клана'
+
+  help:
+    - '&r'
+    - '&r  &e&lКоманды кланов'
+    - '&r'
+    - '&f  Создать клан &7– &a/clan create название'
+    - '&f  Посмотреть информацию о клане &7– &a/clan info'
+    - '&f  Список участников клана &7– &a/clan members'
+    - '&f  Пригласить игрока &7– &a/clan invite игрок'
+    - '&f  Удалить игрока &7– &a/clan remove игрок'
+    - '&f  Повысить игрока &7– &a/clan role increase игрок'
+    - '&f  Понизить игрока &7– &a/clan role decrease игрок'
+    - '&f  Удалить клан &7– &a/clan disband'
+    - '&r'
+  role:
+    use: '&fИспользуйте: &a/clan role increase/decrease игрок'
+    success-decrease: '&fВы успешно &cпонизили &fигрока &a%player_name%'
+    success-increase: '&fВы успешно &aповысили &fигрока &a%player_name%'
+    no-clan: '&fВы &cне состоите &fни в каком клане!'
+    no-permission: '&cУ вас нет разрешения, чтобы изменить роль'
+
+  chat:
+    write-message: '&fНапишите &aсообщение&f, чтобы его можно было отправить'
+    no-clan: '&fВы &cне состоите &fни в каком клане!'
+
+  remove-clan:
+    accept: '<mm><red><hover:show_text:"<red>Нажмите, чтобы подтвердить</red>"><click:run_command:"/clan disband accept">Нажмите, чтобы потвердить удаление</click></hover></red>'
+    success: '&fВы &cудалили &fклан &a%clan%&f!'
+    no-clan: '&fВы &cне состоите &fни в каком клане!'
+    no-permission: '&cУ вас нет разрешения, чтобы сделать это'
+
+  create-clan:
+    use: '&fИспользуйте: &a/clan create название'
+    success: '&fВы &aуспешно &fсоздали клан &a%clan%&f. Удачи!'
+    clan-displayname-invalid: '&cВы не правильно написали отображаемое название клана'
+    already-in-clan: '&fВы &cне можете &fсоздать клан, потому что вы состоите в клане'
+    clan-name-invalid: '&fВ названии клана содержатся &cнедопустимые символы &fили оно слишком &cкороткое&f/&cдлинное! '
+    level-low: '&fВы &cне можете &fсоздать клан. Необходим &a14 уровень&f!'
+    no-money: '&fНа вашем счету &cнедостаточно &fденег для создания клана &7(у вас: %money%$/50000$)'
+    clan-already-create: '&fКлан с таким названием уже &cсуществует&f!'
+
+  invite:
+    use: '&fИспользуйте: &a/clan invite игрок'
+    success: '&fВы &aотправили &fприглашение игроку &a%receiver%&f! У него есть &a60 сек. &fчтобы принять его'
+    already-in-clan: '&fИгрок &cуже &fсостоит в клане'
+    limit-max-members: '&fВы &cне можете &fдобавить нового участника в клан, так как был достигнут лимит участников в клане!'
+    no-clan: '&fВы &cне состоите &fни в каком клане!'
+    accept-or-decline: '<mm><white>Игрок <green>%name%</green> приглашает вас в клан <green>%clan%</green>. У вас есть <green>60 сек.</green> чтобы ответить. Нажмите на</white> <click:run_command:"/clan accept %name%"><green><hover:show_text:"<green>Нажмите, чтобы принять!</green>">Принять</hover></green></click> <white>или</white> <click:run_command:"/clan decline %name%"><red><hover:show_text:"<red>Нажмите, чтобы отклонить!</red>">Отклонить</hover></red></click>'
+    cannot-self: '&fОй! Вы &cне можете &fпригласить себя же. Найдите уже себе друзей :)'
+    player-level-low: '&fВы &cне можете &fпригласить игрока &a%receiver% &7(%level% уровень)&f! У игрока уровень ниже &a7&f!'
+    already-invite: '&cВы уже пригласили игрока %receiver%'
+    not-exist-receiver: '&fВы &cне можете &fпригласить игрока &a%receiver%&f! Такого игрока не существует'
+    offline-receiver: '&fВы &cне можете &fпригласить игрока &a%receiver%&f, так как он офлайн'
+    no-permission: '&cУ вас нет разрешения, чтобы отправлять приглашение'
+
+  roleDecrease:
+    use: '&fИспользуйте: &a/clan role decrease игрок'
+    success: '&fВы &cпонизили &fигрока &a%decrease% &fдо &a%clan_role%'
+    no-clan: '&fВы &cне состоите &fни в каком клане!'
+    success-for-player: '&fОй! Вас понизили в клане до &a%clan_role%'
+    player-equals: '&fУ игрока такая же роль, как у вас, поэтому вы &cне можете &fего понизить'
+    player-not-clan: '&fИгрок &cне состоит &fв вашем клане!'
+    player-bigger: '&fУ игрока выше роль, чем у вас, поэтому вы &cне можете &fего понизить'
+    cannot-self: '&fВы &cне можете &fпонижать себя. Зачем?'
+    already-min: '&fУ игрока уже &cминимальный &fуровень'
+    no-permission: '&cУ вас нет разрешения, чтобы понижать игроков'
+
+  roleIncrease:
+    use: '&fИспользуйте: &a/clan role increase игрок'
+    success: '&fВы &aповысили &fигрока &a%increase% &fдо &a%clan_role%'
+    no-clan: '&fВы &cне состоите &fни в каком клане!'
+    success-for-player: '&fУра! Вас повысили в клане до &a%clan_role%'
+    player-equals: '&fУ игрока такая же роль, как у вас, поэтому вы &cне можете &fего повысить'
+    player-not-clan: '&fИгрок &cне состоит &fв вашем клане!'
+    player-bigger: '&fУ игрока выше роль, чем у вас, поэтому вы &cне можете &fего повысить'
+    cannot-self: '&fВы &cне можете &fповышать себя. Так будет неинтересно :)'
+    already-max: '&fУ игрока уже &aмаксимальный &fуровень'
+    no-permission: '&cУ вас нет разрешения, чтобы повышать игроков'
+
+  leave:
+    success: '&fВы &cпокинули &fклан &a%clan%&f!'
+    no-clan: '&fВы &cне состоите &fни в каком клане!'
+    you-cant-leave-clan: '&fВы &cне можете &fвыйти из клана, так как вы его создатель'
+
+  admin:
+    create:
+      use: '&fИспользуйте: &a/clan admin create название игрок'
+      success: '&aВы &aуспешно &fсоздали клан!'
+      already-in-clan: '&fИгрок &cуже &fсостоит в клане'
+      clan-already-create: '&fКлан c таким названием уже &cсоздан'
+
+    reload:
+      success: '&fПлагин был &aуспешно &fперезагружен!'
+
+    disband:
+      use: '&fИспользуйте: &a/clan admin disband название'
+      success: '&fКлан был успешно &cудалён&f!'
+      clan-not-create: '&fКлана c таким названием &cне существует'
+
+    createUser:
+      use: '&fИспользуйте: /clan admin createuser название игрок роль'
+      success: '&fВ клан был &aуспешно &fдобавлен игрок!'
+      clan-not-create: '&cКлан c таким названием не существует'
+      already-in-clan: '&fИгрок уже &cсостоит &fв клане'
+
+
+  decline:
+    use: '&fИспользуйте: &a/clan decline игрок'
+    success: '&fВы &cотказались &fот приглашения в клан &a%clan%'
+    player-not-invite: '&fИгрок &a%name% &fне приглашал вас в клан'
+
+  removeUser:
+    use: '&fИспользуйте: &a/clan remove игрок'
+    success: '&fВы успешно &cудалили &fигрока &a%kicked%'
+    success-for-kicked-player: '&fВы были &cисключены &fиз клана!'
+    no-clan: '&fВы &cне состоите &fни в каком клане!'
+    player-equals: '&fУ игрока такая же роль, поэтому вы &cне можете &fего исключить!'
+    player-not-clan: '&fИгрок &cне состоит &fв вашем клане!'
+    player-bigger: '&fУ игрока выше роль, чем у вас, поэтому вы &cне можете &fего исключить!'
+    cannot-self: '&fВы &cне можете &fудалить себя'
+    no-permission: '&cУ вас нет разрешения, чтобы удалять игроков'
+
+

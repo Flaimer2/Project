@@ -1,0 +1,38 @@
+# Edit TicTacToe in this file.
+# 
+# All items are customizable. The starting player is chosen randomly when the game starts.!
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: Крестики-Нолики
+MenuItem:
+  page: 1
+  slot: 23
+  item: SLIME_BALL
+  name: '&3&lКрестики-Нолики'
+  lore:
+  - '&eОписание:'
+  - '&fНадоело играть против компьютера?'
+  - '&fСыграйте против настоящего человека'
+  - '&fв Крестики-Нолики и посмотрите'
+  - '&fкто из вас выиграет!'
+  - ''
+  - '&aНажмите, чтобы начать игру'
+GameItems:
+  border:
+    item: STAINED_GLASS_PANE:15
+    name: '&f&l█'
+  board:
+    item: STAINED_GLASS_PANE:7
+    name: '&f&l█'
+  O:
+    item: SLIME_BALL
+    name: '&4&l⬤'
+  X:
+    item: NETHER_STAR
+    name: '&9&l✖'
+Inactivity:
+  enabled: true
+  duration: 30

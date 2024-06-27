@@ -1,0 +1,239 @@
+Emotes:
+  Smile:
+    Name: '&aУлыбка'
+    Cooldown: 10
+    Mystery Dust: 10000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Hologram:
+      Enabled: true
+      Text: '&fулыбки'
+  Cool:
+    Name: '&aКрутой'
+    Cooldown: 10
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Hologram:
+      Enabled: true
+      Text: '&fB)'
+  Wink:
+    Name: '&aПодмигивание'
+    Cooldown: 10
+    Mystery Dust: 12000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Hologram:
+      Enabled: true
+      Text: '&fподмигивает'
+  Grin:
+    Name: '&aУсмешка'
+    Cooldown: 10
+    Mystery Dust: 13000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Hologram:
+      Enabled: true
+      Text: '&fУра!'
+  Surprised:
+    Name: '&aУдивление'
+    Cooldown: 10
+    Mystery Dust: 15000
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Hologram:
+      Enabled: true
+      Text: '&fОМГ'
+  Cry:
+    Name: '&9Крик'
+    Cooldown: 10
+    Mystery Dust: 25000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Hologram:
+      Enabled: true
+      Text: '&fВааааа!'
+  Sleepy:
+    Name: '&9Сонный'
+    Cooldown: 10
+    Mystery Dust: 20000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Hologram:
+      Enabled: true
+      Text: '&fZZzzzz'
+  Rage:
+    Name: '&9Ярость'
+    Cooldown: 10
+    Mystery Dust: 23000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&cГррррр!!!'
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Frown:
+    Name: '&9Хмурный'
+    Cooldown: 10
+    Mystery Dust: 22000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&fсопение'
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Cheeky:
+    Name: '&9Нахальный'
+    Cooldown: 10
+    Mystery Dust: 22000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&f:P'
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Sun Tan:
+    Name: '&9Загар'
+    Cooldown: 10
+    Mystery Dust: 25000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&fСолнечный'
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Heart Eyes:
+    Name: '&9Влюблённый'
+    Cooldown: 10
+    Mystery Dust: 28000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&d❤  ❤'
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Dizzy:
+    Name: '&9Головокружение'
+    Cooldown: 10
+    Mystery Dust: 28000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&fx_x'
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  RIP:
+    Name: '&9ПОКОЙСЯ С МИРОМ'
+    Cooldown: 10
+    Mystery Dust: 28000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&fОтдых в Пепперони'
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Relax:
+    Name: '&9Релакс'
+    Cooldown: 10
+    Mystery Dust: 28000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&fфуух'
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Spicy:
+    Name: '&9Острый'
+    Cooldown: 10
+    Mystery Dust: 28000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&fОжоги!'
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Deal With It:
+    Name: '&9Справился'
+    Cooldown: 10
+    Mystery Dust: 28000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&fСправился :)'
+    Lore:
+      Locked: ''
+      Unlocked: ''

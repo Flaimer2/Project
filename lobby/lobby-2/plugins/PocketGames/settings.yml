@@ -1,0 +1,219 @@
+# Edit items in all of the Pocket Games GUI's.
+# Use the in-game GUI's for reference if you are unsure what something changes.
+# Items support material names, id's and data values (Default file shows all methods).
+# Please read the Pocket Games Wiki carefully:
+# https://github.com/Benz56/PocketGames/wiki
+
+
+Menu:
+  header: Карманные игры
+  border:
+    enabled: false
+    item: STAINED_GLASS_PANE:11
+    name: '&f&l*'
+    slots: 0,1,2,3,5,6,7,8,9,17,36,44,45,46,47,48,50,51,52,53
+  Info:
+    enabled: true
+    item: BOOK
+    name: '&aКарманные игры'
+    lore:
+    - '&fИграйте в потрясающие мини-игры с'
+    - '&fграфическим интерфейсом и получайте '
+    - '&fнаграду за достижение высоких результатов! '
+    slot: 49
+  noPermission:
+    item: WOOL:14
+    name: '&c&lНет разрешения'
+    showTicks: 20
+    hideGame: false
+  PageButtons:
+    nextPage:
+      slot: 50
+      head: http://textures.minecraft.net/texture/e3fc52264d8ad9e654f415bef01a23947edbccccf649373289bea4d149541f70
+      name: '&eСледующая страница'
+    prevPage:
+      slot: 48
+      head: http://textures.minecraft.net/texture/5f133e91919db0acefdc272d67fd87b4be88dc44a958958824474e21e06d53e6
+      name: '&eПредыдущая страница'
+Hotbar:
+  SoundToggle:
+    enabled: true
+    'on':
+      item: NOTE_BLOCK
+      name: '&eЗвук: &aВключен'
+      slot: 0
+    'off':
+      item: NOTE_BLOCK
+      name: '&eЗвук: &cВыключен'
+      slot: 0
+  EndGame:
+    enabled: true
+    item: ENDER_STONE
+    name: '&eКонец игры'
+    slot: 3
+  Restart:
+    enabled: true
+    item: ENDER_PEARL
+    name: '&eПерезапустить игру'
+    slot: 5
+  MainMenu:
+    enabled: true
+    item: SPRUCE_DOOR_ITEM
+    name: '&eГлавное меню'
+    slot: 8
+    customMenu: false
+    command: /Open custom menu %player%
+  PlayAgain:
+    enabled: true
+    item: WOOL:5
+    name: '&aИграть снова'
+    slot: 22
+  Close:
+    enabled: false
+    item: BARRIER
+    name: '&cЗакрыть'
+    slot: 8
+    customClose: false
+    command: /Open custom menu %player%
+Countdown:
+  enabled: true
+  Numbers:
+    item: STAINED_GLASS_PANE:11
+    name: '&f&l*'
+  Underline:
+    enabled: true
+    item: STAINED_GLASS_PANE:15
+    name: '&f&l*'
+  Filler:
+    enabled: true
+    item: STAINED_GLASS_PANE:0
+    name: '&7&l*'
+GameOver:
+  border:
+    enabled: true
+    item: STAINED_GLASS_PANE:11
+    name: '&f&l*'
+    slots: 0,1,2,3,4,5,6,7,8,9,17,18,26,27,35,36,44,45,46,47,48,49,50,51,52,53
+  Result:
+    points:
+      item: PAPER
+      name: '&a&lРезультаты игры'
+      lore1:
+      - '&fВы набрали &a%points% &fочков!'
+      - ''
+      - '&f&oВам нужно как минимум %minPoints% очков,'
+      - '&f&oчтобы войти в рейтинг'
+      lore2:
+      - ''
+      - '&fВы набрали &a%points% &fочков!'
+      - ''
+      - '&a&oВы попали в рейтинг!'
+      slot: 31
+    time:
+      item: WATCH
+      name: '&a&lВремя'
+      lore1:
+      - ''
+      - '&fВы прошли за &a%time% &fсекунд!'
+      - ''
+      - '&f&oВы были слишком медленны. Вы должны'
+      - '&f&oпотратить не более %maxTime% секунд'
+      - '&f&oдля того, чтобы войти в рейтинг'
+      lore2:
+      - ''
+      - '&fВаше время составило &a%time% &fсекунд!'
+      - ''
+      - '&a&oВы попали в рейтинг!'
+      slot: 31
+Highscore:
+  border:
+    enabled: true
+    item: STAINED_GLASS_PANE:11
+    name: '&f&l*'
+    slots: 0,1,2,3,4,5,6,7,8,9,17,18,26,27,35,36,37,38,39,40,41,42,43,44
+  top:
+    default:
+      name: '&6&l#%position%&b Игрок &f- &90'
+      lore: []
+    '1':
+      name: '&6&l#1&b %player% &f- &9%score%'
+      lore: []
+    '2':
+      name: '&6&l#2&b %player% &f- &9%score%'
+      lore: []
+    '3':
+      name: '&6&l#3&b %player% &f- &9%score%'
+      lore: []
+    '4':
+      name: '&6&l#4&b %player% &f- &9%score%'
+      lore: []
+    '5':
+      name: '&6&l#5&b %player% &f- &9%score%'
+      lore: []
+  maxOneEntry: false
+Invulnerability:
+  enabled: true
+  after: 15
+  setInvisibleInstead: false
+  Animation:
+    enabled: true
+    particle: REDSTONE
+    color: '&c'
+    radius: 1.2
+    ringDistance: 8
+    ringDensity: 4
+    speed: 3
+InactivityTimer:
+  enabled: true
+  maxInactivitySeconds: 900
+Spectator:
+  enabled: true
+  item: SKULL_ITEM:3
+  name: '&aНаблюдать за игроками'
+  lore:
+  - '&fНаблюдайте за тем, как играют'
+  - '&fдругие игроки прямо сейчас'
+  - ''
+  - '&aНажмите, чтобы наблюдать за игроками'
+  slot: 21
+  spectator_head:
+    name: '&a%player% &fиграет в &a%game_noColor%&f!'
+    lore:
+    - ''
+    - '&aНажмите, чтобы наблюдать'
+Multiplayer:
+  enabled: true
+  head: http://textures.minecraft.net/texture/c56c4d0ac3277547a093d0b79e39d846593c674f3f5f81a8cb9b1826a073
+  name: '&aМногопользовательские игры!'
+  lore:
+  - '&fИграйте с другими игроками в'
+  - '&fразличные игры прямо в меню'
+  - ''
+  - '&aНажмите, чтобы играть в'
+  - '&aмногопользовательские игры'
+  slot: 23
+  opponent:
+    name: '&a%player%'
+    lore:
+    - ''
+    - '&aНажмите, чтобы бросить вызов'
+    loadSkin: true
+  endScreen:
+    background:
+      item: STAINED_GLASS_PANE:3
+      name: '&b&l█'
+    winnerBanner: true
+  Inactivity:
+    item: WATCH
+    name: '&a%seconds% &fсекунд, чтобы сделать свой ход!'
+  duelInviteDelay: 2
+  duelInviteExpiry: 300
+  duelPlayersWithoutGamePermission: false
+Sounds:
+  lose: ANVIL_LAND
+  win: LEVEL_UP
+  noPermission: ANVIL_LAND
+CrashSafetyFile:
+  enabled: true
+UserDataFile:
+  enabled: true

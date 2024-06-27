@@ -1,0 +1,74 @@
+# This is an language file for InteractiveBoard
+
+messages:
+  prefix: '&3&lInteractiveBoard &r&7> '
+  errorprefix: '&c&lInteractiveBoard Error &r&7> '
+  board_created: Board has been named &a%name%&7. Open board file named &a%name%.yml&7
+    to configure the board.
+  board_teleport: You have been teleported to a board named &a%name%&7.
+  name_select: Please punch the board you want to get the name of.
+  board_name: '&a%name%'
+  shop:
+    success_prefix: '&7>&r&a '
+    error_prefix: '&7>&r&c '
+    function_purchase: You have successfully completed a purchase.
+    balance_insufficient: You do not have enough balance to complete this action.
+    item_purchase: You purchased x%amount% %item_name% for $%price%.
+    item_sold: You sold x%amount% %item_name% for $%price%.
+    inventory_full: You do not have enough space in your inventory to buy this item.
+    no_item: You need to have at least x%amount% %item_name% to sell.
+  selection:
+    tool_name: '&l&7<> &bInteractiveBoard Selector &7<>'
+    tool_given: Selection tool given. To create a board use the selection tool and
+      firstly right click the &a&lbottom left&r&7 corner, then right click the &a&ltop
+      right&r&7 corner.
+    first_position_set: First position set.
+    second_position_set: Second position set.
+    first_position_removed: First position removed.
+    second_position_removed: Second position removed.
+    complete: |-
+      Selection complete.
+      Use &a/ib create &l<board name>&7 to create a board.
+    complete_text1: Hi %player_name% you successfully created a board!
+    complete_text2: Open configuration in plugins/InteractiveBoard/boards/ directory
+      to edit board.
+  delete:
+    select: Please punch the board you want to delete.
+    confirm_message: Successfully selected a board, press the confirm button on the
+      board to confirm deletion.
+    confirm_boardmessage: Are you sure you want to delete this board?
+    confirm: Confirm
+    cancel: Cancel
+    complete: Board has been deleted successfully.
+  error:
+    selection_must_be_1wide: Selection must be 1 wide in one direction.
+    selection_must_be_in_same_world: Selection must be in the same world.
+    selection_not_completed: Selection must be completed before creating board.
+    selection_positions_incorrect: Selection is not correct. Please place the first
+      selection block at the bottom left corner and the second one at the top right
+      corner of the board.
+    invalid_command: Invalid command, please use &a/ib help&7 to see commands.
+    invalid_character: Character &c#&7 can not be used in board names.
+    board_not_found: Board with this name was not found.
+    board_exists: Board under this name already exists.
+    board_not_deletable: This board can not be deleted in game.
+    board_not_resettable: This board can not be reset in game.
+    horizontal_unsupported: Horizontal boards are only supported in &c&l1.13+&7 versions.
+  reload: All boards have been reloaded.
+  reset:
+    select: Please punch the board you want to reset.
+    complete: Board &a%name%&7 has been reset successfully.
+  coordinates:
+    select: Please click the pixel you want to get the coordinates of.
+    complete: 'x: &a&l%x%&r&7 y: &a&l%y%&r&7'
+  help: |-
+    &7======== &3&bInteractiveBoard Help &r&7========
+    &a/ib &7create - use to create a new board
+    &a/ib &7delete - use to delete a board
+    &a/ib &7reload - reload board configurations
+    &a/ib &7teleport &a<name>&7 - teleport to a board
+    &a/ib &7fonts - get names of fonts loaded from the font folder
+    &a/ib &7name - get name of a board
+    &a/ib &7reset - reload a specific board
+    &a/ib &7coordinates - get x and y coordinates of a pixel
+version: '19.8'

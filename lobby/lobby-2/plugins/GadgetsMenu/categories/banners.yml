@@ -1,0 +1,191 @@
+Banners:
+  Snow Bunny:
+    Name: '&5Снежный зайчик'
+    Mystery Dust: 15000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Reindeer:
+    Name: '&5Северный олень'
+    Mystery Dust: 20000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Holiday Tree:
+    Name: '&5Праздничное дерево'
+    Mystery Dust: 20000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Santa:
+    Name: '&5Санта'
+    Mystery Dust: 25000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Holiday Wreath:
+    Name: '&5Праздничный Венок'
+    Mystery Dust: 28000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Heart:
+    Name: '&5Сердце'
+    Mystery Dust: 30000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Guitar:
+    Name: '&5Гитара'
+    Mystery Dust: 25000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Dino:
+    Name: '&5Дино'
+    Mystery Dust: 40000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Redpool:
+    Name: '&5Редпулл'
+    Mystery Dust: 42000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Pengu:
+    Name: '&5Пенки'
+    Mystery Dust: 50000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Pug:
+    Name: '&5Мопс'
+    Mystery Dust: 48000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Skull King:
+    Name: '&6Череп Короля'
+    Mystery Dust: 65000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Tryhard:
+    Name: '&5Модерн'
+    Mystery Dust: 48000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Pumpkin:
+    Name: '&5Тыква'
+    Mystery Dust: 50000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Crown:
+    Name: '&5Корона'
+    Mystery Dust: 48000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Fire Creeper:
+    Name: '&5Огненный Крипер'
+    Mystery Dust: 48000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Portal:
+    Name: '&6Портал'
+    Mystery Dust: 60000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow Wall:
+    Name: '&6Радужная стена'
+    Mystery Dust: 62000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Devourer:
+    Name: '&6Пожиратель'
+    Mystery Dust: 68000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''

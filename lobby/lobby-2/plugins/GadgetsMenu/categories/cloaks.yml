@@ -1,0 +1,134 @@
+Cloaks:
+  Superhero:
+    Name: '&6Супергерой'
+    Mystery Dust: 65000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: RED_DYE
+  Mystical:
+    Name: '&6Мистический'
+    Mystery Dust: 85000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: BOOK
+  Firewings:
+    Name: '&6Огненные Крылья'
+    Mystery Dust: 72000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: BLAZE_POWDER
+  Vampire Wings:
+    Name: '&6Вампирские Крылья'
+    Mystery Dust: 78000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: REDSTONE
+  Icewings:
+    Name: '&6Ледяные Крылья'
+    Mystery Dust: 72000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id001
+      - '&7Это только мне или это холодно здесь?'
+      Unlocked: *id001
+    Material: ICE
+  Shaman:
+    Name: '&6Шаман'
+    Mystery Dust: 85000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: BONE
+  Firerings:
+    Name: '&6Огненное Кольцо'
+    Mystery Dust: 50000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: BLAZE_ROD
+  Frosty:
+    Name: '&6Мороз'
+    Mystery Dust: 78000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: SNOWBALL
+  Scanner:
+    Name: '&6Сканер'
+    Mystery Dust: 65000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+    Material: BEACON
+  Archangel:
+    Name: '&6Ангел'
+    Material: head:36f0485453d3a90f354321e8f382bef106bf506424f70c04a207f82bdb2856b9
+    Mystery Dust: 70000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Yin and Yang:
+    Name: '&6Инь и Ян'
+    Material: head:7fc0e041e45e1d96934bb9159e7b9e1ed74ff99a9b9342214302fdba57fd2
+    Mystery Dust: 62000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Flame of the Titans:
+    Name: '&6Пламя Титана'
+    Material: MAGMA_CREAM
+    Mystery Dust: 65000
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''

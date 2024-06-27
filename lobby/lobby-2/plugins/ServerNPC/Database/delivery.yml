@@ -1,0 +1,65 @@
+NPC:
+  ==: com.isnakebuzz.npcapi.settings.NPCSettings
+  name: Delivery
+  skin: "2114814239"
+  uuid: d9b22c3b-1293-52cd-0000-000000000000
+  Actions: []
+  Click Delay: 1
+  isSeated: false
+  NameTag: false
+  isHolder: false
+  Location:
+    ==: org.bukkit.Location
+    world: lobby
+    x: -271.5
+    y: 29.0
+    z: -169.5
+    pitch: 0.0
+    yaw: -90.0
+  Inventory:
+    ==: com.isnakebuzz.npcapi.settings.sub.InventorySettings
+    HEAD:
+      ==: org.bukkit.inventory.ItemStack
+      type: AIR
+    CHEST:
+      ==: org.bukkit.inventory.ItemStack
+      type: AIR
+    LEGS:
+      ==: org.bukkit.inventory.ItemStack
+      type: AIR
+    FEET:
+      ==: org.bukkit.inventory.ItemStack
+      type: AIR
+    MAINHAND:
+      ==: org.bukkit.inventory.ItemStack
+      type: AIR
+    OFFHAND:
+      ==: org.bukkit.inventory.ItemStack
+      type: AIR
+  Hologram:
+    ==: com.isnakebuzz.npcapi.settings.sub.HologramSettings
+    Height: 2.5
+    Lines:
+      - '&bЕжедневные награды'
+      - '&e&lПРАВЫЙ КЛИК'
+  Render:
+    ==: com.isnakebuzz.npcapi.settings.sub.RenderSettings
+    Distance: 60.0
+    Permission: none
+  Glowing:
+    ==: com.isnakebuzz.npcapi.settings.sub.GlowingSettings
+    Enabled: false
+    Need Perms: false
+    Glowing Color: AQUA
+  LookClose:
+    ==: com.isnakebuzz.npcapi.settings.sub.LookSettings
+    Enabled: false
+    Range: 5.0
+  Mob:
+    ==: com.isnakebuzz.npcapi.settings.sub.MobSettings
+    Villager Profession: FARMER
+    Villager Type: PLAINS
+    dyeColor: GREEN
+    is_baby: false
+    is_angry: false
+    slimeSize: 5

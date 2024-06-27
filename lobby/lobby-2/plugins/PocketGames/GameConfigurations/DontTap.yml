@@ -1,0 +1,40 @@
+# Edit DontTap in this file.
+# 
+# All items are customizable. Play around with the GameSettings and find the sweet spot for your server!
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: Не нажимай
+MenuItem:
+  page: 2
+  slot: 29
+  item: LAVA_BUCKET
+  name: '&c&lНе нажимай'
+  lore:
+  - '&eОписание:'
+  - '&fУ вас есть 10 секунд, чтобы нажать на'
+  - '&f30 вёдер с водой. Каждые 30 нажатий,'
+  - '&fВы будете получать по 10 секунд.'
+  - '&fОсторожно! Не нажимайте на вёдра с'
+  - '&fлавой! Они очень горячие!'
+  - ''
+  - '&aНажмите ЛКМ, чтобы начать игру'
+  - '&aНажмите ПКМ, чтобы увидеть топ'
+GameItems:
+  background:
+    item: STAINED_GLASS_PANE:3
+    name: '&7&l*'
+  tap:
+    item: WATER_BUCKET
+    name: '&b&lВода'
+  dontTap:
+    item: LAVA_BUCKET
+    name: '&c&lЛава'
+  timer:
+    item: WATCH
+    name: '&aВремя'
+GameSettings:
+  time: 10
+  clicks: 30

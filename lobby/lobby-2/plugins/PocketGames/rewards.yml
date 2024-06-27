@@ -1,0 +1,936 @@
+# This is a rewards file for all Pocket Games.
+# 
+# Commands are executed as Console and corresponds to the highscore position a player reaches.
+# Default is executed if a player did not make the highscore, but cleared 'minimum_points'/'maximum_time'.
+# It is also possible to have rewards based on score. Refer to the example below.
+# Valid placeholders: %player%, %score%, %time%, %game% & %game_noColor%
+# Example reward: (Do not use '/')
+# 
+# DiamondCollect:
+#   '1':
+#     rewards:
+#     - false, broadcast &d&l%player% &ereached first position in &b&lDiamondCollect &ewith a score of %score% points!
+#     - true, give %player% diamond 1
+#     - false, msg %player% &aYou just won 100$!
+#     - false, eco give %player% 100
+#   '2':
+#     rewards: []
+#   '3':
+#     rewards: []
+#   '4':
+#     rewards: []
+#   '5':
+#     rewards: []
+#   default:
+#     rewards: []
+#   scoreRewards:
+#     '5':         #<- Score is 5 to 9.
+#       rewards:
+#       - false, broadcast &a%player% scored between 5 and 9!
+#     '10':        #<- Score is 10 to 14.
+#       rewards:
+#       - false, broadcast &a%player% scored between 10 and 14!
+#     '15':        #<- Score is 15 or higher.
+#       rewards:
+#       - false, broadcast &a%player% scored more than 15!
+# 
+# GlobalRewards are executed for all games. If '1' in GlobalRewards is set it would be executed as well as the above.
+# 
+# The boolean (true/false) value is used to queue commands until the game inventory is closed again.
+# This is used to avoid giving a player items in the Pocket Games inventory and effectively deleting them again on close.
+# true = queue, false = execute instantly. Queue ALL commands that reward items. Messages and eco are ok to execute instantly.
+# Use this link to watch an in-depth guide on how to configure the rewards correctly: https://www.youtube.com/watch?v=YbxBuPPvffA&t=406s
+
+
+GlobalRewards:
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+DiamondCollect:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+AppleCatch:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+FlappyBird:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+MatchIt:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+DinoRun:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+'2048':
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+Super2048:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+SimonSays:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+GapJump:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+WhacAMole:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+DropTower:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+NameIt:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+TheQuiz:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+Basket:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+OverUnder:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+FallingBlocks:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+CaveIn:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+CookieClicker:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+Snake:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+SpeedClicker:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+BlockCrush:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+DontTap:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+Tetris:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+Flow:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+TicTacToe:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+Sudoku:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []
+Minesweeper:
+  excludeFromGlobal: true
+  '1':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпервое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 5000
+  '2':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aвторое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 3000
+  '3':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aтретье
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1500
+  '4':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aчетвёртое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 1000
+  '5':
+    rewards:
+    - 'false, trmenu action %player% tell: &eКарманные игры &7| &fВы попали на &aпятое
+      место &fв рейтинге! За это Вы получили награду.'
+    - false, money give %player% 700
+  default:
+    rewards: []
+  scoreRewards:
+    '0':
+      rewards: []

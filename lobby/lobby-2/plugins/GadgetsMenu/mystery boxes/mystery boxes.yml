@@ -1,0 +1,568 @@
+Mystery-Boxes:
+  Enabled: true
+  Loots-Can-Be-Found:
+    Hats: true
+    Particles: true
+    Suits: true
+    Gadgets: true
+    Pets: false
+    Banners: true
+    Morphs: true
+    Emotes: true
+    Cloaks: true
+    Animated Hats: true
+    Miniatures: true
+  Rarity:
+    Common: '&a[Обычный]'
+    Rare: '&9[Редкий]'
+    Epic: '&5[Эпический]'
+    Legendary: '&6[Легендарный]'
+  Found-Loot:
+    Common:
+      Play-Sound:
+        Enabled: true
+        Sound: ENTITY_CHICKEN_EGG
+      Send-Message:
+        Enabled: true
+        Message:
+        - ''
+        - '  &b&lМистическая Коробка'
+        - ''
+        - '  &fВы нашли предметы!'
+        - '  &f1x &a[Обычный] {LOOT}'
+        - ''
+      Give-Pet-Items:
+        Enabled: false
+        Min: 20
+        Max: 30
+    Rare:
+      Play-Sound:
+        Enabled: true
+        Sound: ENTITY_VILLAGER_AMBIENT
+      Send-Message:
+        Enabled: true
+        Message:
+        - ''
+        - '  &b&lMистическая Коробка'
+        - ''
+        - '  &fВы нашли предметы!'
+        - '  &f1x &9[Редкий] {LOOT}'
+        - ''
+      Give-Pet-Items:
+        Enabled: false
+        Min: 25
+        Max: 35
+    Epic:
+      Play-Sound:
+        Enabled: true
+        Sound: ENTITY_PLAYER_LEVELUP
+      Send-Message:
+        Enabled: true
+        Message:
+        - ''
+        - '  &b&lMистическая Коробка'
+        - ''
+        - '  &fВы нашли предметы!'
+        - '  &f1x &5[Эпический] {LOOT}'
+        - ''
+      Give-Pet-Items:
+        Enabled: false
+        Min: 35
+        Max: 40
+    Legendary:
+      Play-Sound:
+        Enabled: true
+        Sound: ENTITY_ENDER_DRAGON_AMBIENT
+      Send-Message:
+        Enabled: true
+        Message:
+        - ''
+        - '  &b&lMистическая Коробка'
+        - ''
+        - '  &fВы нашли предметы!'
+        - '  &f1x &6[Легендарный] {LOOT}'
+        - ''
+      Give-Pet-Items:
+        Enabled: false
+        Min: 35
+        Max: 45
+  Already-Had-Loot:
+    Common:
+      Give-Mystery-Dust:
+        Enabled: true
+        Min: 200
+        Max: 400
+      Send-Message:
+        Enabled: true
+        Message:
+        - '&fВы уже имеете &a[Обычный] {LOOT}&f, вместо этого,'
+        - '&fвам было начислено &a{MYSTERY_DUST}$&f.'
+      Execute-Command:
+        Enabled: true
+        Command: alonsolevels addexp {PLAYER} 200 false true
+    Rare:
+      Give-Mystery-Dust:
+        Enabled: true
+        Min: 1500
+        Max: 3000
+      Send-Message:
+        Enabled: true
+        Message:
+        - '&fВы уже имеете &9[Редкий] {LOOT}&f, вместо этого,'
+        - '&fвам было начислено &a{MYSTERY_DUST}$&f.'
+      Execute-Command:
+        Enabled: true
+        Command: alonsolevels addexp {PLAYER} 500 false true
+    Epic:
+      Give-Mystery-Dust:
+        Enabled: true
+        Min: 7000
+        Max: 9000
+      Send-Message:
+        Enabled: true
+        Message:
+        - '&fВы уже имеете &5[Эпический] {LOOT}&f, вместо этого,'
+        - '&fвам было начислено &a{MYSTERY_DUST}$&f.'
+      Execute-Command:
+        Enabled: true
+        Command: alonsolevels addexp {PLAYER} 800 false true
+    Legendary:
+      Give-Mystery-Dust:
+        Enabled: true
+        Min: 10000
+        Max: 14000
+      Send-Message:
+        Enabled: true
+        Message:
+        - '&fВы уже имеете &6[Легендарный] {LOOT}&f, вместо этого,'
+        - '&fвам было начислено &a{MYSTERY_DUST}$&f.'
+      Execute-Command:
+        Enabled: true
+        Command: alonsolevels addexp {PLAYER} 1500 false true
+  Holograms:
+    Found-Loot:
+      Common: '&f[Обычный] &d{LOOT}'
+      Rare: '&f[&eРедкий&f] &d{LOOT}'
+      Epic: '&f[&6Эпический&f] &d{LOOT}'
+      Legendary: '&f[&5Легендарный&f] &d{LOOT}'
+    Mystery-Vault:
+      Line-1: '&bМистический сундук'
+      Line-2: '&fНажмите, чтобы открыть'
+    Individual-Holograms:
+      Available-Mystery-Boxes:
+      - '&6Мистических коробок: {MYSTERY_BOXES}'
+      - '&aМистических коробок: {MYSTERY_BOXES}'
+      - '&eМистических коробок: {MYSTERY_BOXES}'
+      Enabled: true
+      Zero-Mystery-Box-Available: '&cНет Мистических коробок'
+    Hologram-Height: 1.21
+  Broadcast:
+    Opening-Mystery-Box:
+      Enabled: true
+      Message: '&6Мистические коробки &7| &f{PLAYER} &rоткрывает Мистическую Коробку!'
+    Found-Loot:
+      Common:
+        Enabled: false
+        Message: '&6Мистические коробки &7| &f{PLAYER} &rнашел &a[Обычный] {LOOT}&r!'
+      Rare:
+        Enabled: false
+        Message: '&6Мистические коробки &7| &f{PLAYER} &rнашел &9[Редкий] {LOOT}&r!'
+      Epic:
+        Enabled: true
+        Message: '&6Мистические коробки &7| &f{PLAYER} &rнашел &5[Эпический] {LOOT}&r!'
+      Legendary:
+        Enabled: true
+        Message: '&6Мистические коробки &7| &f{PLAYER} &rнашел &6[Легендарный] {LOOT}&r!'
+    Found-Mystery-Box:
+      One-Star:
+        Enabled: false
+        Message: '{PLAYER} &fнашел &e✰&f✰✰✰✰ &fМистическую Коробку!'
+      Two-Star:
+        Enabled: false
+        Message: '{PLAYER} &fнашел &e✰✰&f✰✰✰ &fМистическую Коробку!'
+      Three-Star:
+        Enabled: true
+        Message: '{PLAYER} &fнашел &e✰✰✰&f✰✰ &fМистическую Коробку!'
+      Four-Star:
+        Enabled: true
+        Message: '{PLAYER} &fнашел &e✰✰✰✰&f✰ &fМистическую Коробку!'
+      Five-Star:
+        Enabled: true
+        Message: '{PLAYER} &fнашел &e✰✰✰✰✰ &fМистическую Коробку!'
+  Mystery-Boxes-Reward:
+    Enabled: true
+    Chance-To-Get-Mystery-Box: 100
+    Chance:
+      One-Star: 70
+      Two-Star: 10
+      Three-Star: 10
+      Four-Star: 7
+      Five-Star: 3
+    Play-Time:
+      Hours: 3
+      Minutes: 0
+      Seconds: 0
+    Message:
+      One-Star: '&fВы нашли &e✰&f✰✰✰✰ &fМистическую Коробку!'
+      Two-Star: '&fВы нашли &e✰✰&f✰✰✰ &fМистическую Коробку!'
+      Three-Star: '&fВы нашли &e✰✰✰&f✰✰ &fМистическую Коробку!'
+      Four-Star: '&fВы нашли &e✰✰✰✰&f✰ &fМистическую Коробку!'
+      Five-Star: '&fВы нашли &e✰✰✰✰✰ &fМистическую Коробку!'
+    Allow-AFK: true
+    Expiry-Date-In-Days: 7
+    Enabled-Worlds:
+    - '*'
+  Types:
+    Normal-Mystery-Box:
+      Name: '&aМистическая Коробка'
+      Material: ENDER_CHEST
+      Lore:
+        Expiry-Date: '&cИстекает {EXPIRY_DATE}'
+        Never-Expired: '&fЭта Мистическая коробка никогда не истечёт.'
+        Quality:
+          One-Star:
+          - '&fЭта коробка содержит что-то одно из следущего:'
+          - ''
+          - '&a[Обычный] {ITEM_ONE}'
+          - '&a[Обычный] {ITEM_TWO}'
+          - '&a[Обычный] {ITEM_THREE}'
+          - '&a[Обычный] {ITEM_FOUR}'
+          - '&9[Редкий] {ITEM_FIVE}'
+          - '&5[Эпический] {ITEM_SIX}'
+          - '&6[Легендарный] {ITEM_SEVEN}'
+          - ''
+          - '&fРедкость: &e✰&f✰✰✰✰'
+          - '{EXPIRY_DATE}'
+          - ''
+          - '&aНажмите для открытия!'
+          Two-Star:
+          - '&fЭта коробка содержит что-то одно из следущего:'
+          - ''
+          - '&a[Обычный] {ITEM_ONE}'
+          - '&a[Обычный] {ITEM_TWO}'
+          - '&a[Обычный] {ITEM_THREE}'
+          - '&9[Редкий] {ITEM_FOUR}'
+          - '&9[Редкий] {ITEM_FIVE}'
+          - '&5[Эпический] {ITEM_SIX}'
+          - '&6[Легендарный] {ITEM_SEVEN}'
+          - ''
+          - '&fРедкость: &e✰✰&f✰✰✰'
+          - '{EXPIRY_DATE}'
+          - ''
+          - '&aНажмите для открытия!'
+          Three-Star:
+          - '&fЭта коробка содержит что-то одно из следущего:'
+          - ''
+          - '&a[Обычный] {ITEM_ONE}'
+          - '&a[Обычный] {ITEM_TWO}'
+          - '&9[Редкий] {ITEM_THREE}'
+          - '&9[Редкий] {ITEM_FOUR}'
+          - '&5[Эпический] {ITEM_FIVE}'
+          - '&5[Эпический] {ITEM_SIX}'
+          - '&6[Легендарный] {ITEM_SEVEN}'
+          - ''
+          - '&fРедкость: &e✰✰✰&f✰✰'
+          - '{EXPIRY_DATE}'
+          - ''
+          - '&aНажмите для открытия!'
+          Four-Star:
+          - '&fЭта коробка содержит что-то одно из следущего:'
+          - ''
+          - '&a[Обычный] {ITEM_ONE}'
+          - '&9[Редкий] {ITEM_TWO}'
+          - '&5[Эпический] {ITEM_THREE}'
+          - '&5[Эпический] {ITEM_FOUR}'
+          - '&6[Легендарный] {ITEM_FIVE}'
+          - '&6[Легендарный] {ITEM_SIX}'
+          - '&6[Легендарный] {ITEM_SEVEN}'
+          - ''
+          - '&fРедкость: &e✰✰✰✰&f✰'
+          - '{EXPIRY_DATE}'
+          - ''
+          - '&aНажмите для открытия!'
+          Five-Star:
+          - '&fЭта коробка содержит что-то одно из следущего:'
+          - ''
+          - '&9[Редкий] {ITEM_ONE}'
+          - '&5[Эпический] {ITEM_TWO}'
+          - '&5[Эпический] {ITEM_THREE}'
+          - '&6[Легендарный] {ITEM_FOUR}'
+          - '&6[Легендарный] {ITEM_FIVE}'
+          - '&6[Легендарный] {ITEM_SIX}'
+          - '&6[Легендарный] {ITEM_SEVEN}'
+          - ''
+          - '&fРедкость: &e✰✰✰✰✰'
+          - '{EXPIRY_DATE}'
+          - ''
+          - '&aНажмите для открытия!'
+    Gifted-Mystery-Box:
+      Name: '&dПодаренная Мистическая Коробка'
+      Material: ENDER_CHEST
+      Lore:
+        One-Star:
+        - '&fЭта коробка содержит что-то одно из следущего:'
+        - ''
+        - '&a[Обычный] {ITEM_ONE}'
+        - '&a[Обычный] {ITEM_TWO}'
+        - '&a[Обычный] {ITEM_THREE}'
+        - '&a[Обычный] {ITEM_FOUR}'
+        - '&9[Редкий] {ITEM_FIVE}'
+        - '&5[Эпический] {ITEM_SIX}'''
+        - '&6[Легендарный] {ITEM_SEVEN}'
+        - ''
+        - '&fРедкость: &e✰&f✰✰✰✰'
+        - ''
+        - '&fВы получили этот подарок от:'
+        - '&f{SENDER}'
+        - ''
+        - '&aНажмите для открытия!'
+        Two-Star:
+        - '&fЭта коробка содержит что-то одно из следущего:'
+        - ''
+        - '&a[Обычный] {ITEM_ONE}'
+        - '&a[Обычный] {ITEM_TWO}'
+        - '&a[Обычный] {ITEM_THREE}'
+        - '&9[Редкий] {ITEM_FOUR}'
+        - '&9[Редкий] {ITEM_FIVE}'
+        - '&5[Эпический] {ITEM_SIX}'
+        - '&6[Легендарный] {ITEM_SEVEN}'
+        - ''
+        - '&fРедкость: &e✰✰&f✰✰✰'
+        - ''
+        - '&fВы получили этот подарок от:'
+        - '&f{SENDER}'
+        - ''
+        - '&aНажмите для открытия!'
+        Three-Star:
+        - '&fЭта коробка содержит что-то одно из следущего:'
+        - ''
+        - '&a[Обычный] {ITEM_ONE}'
+        - '&a[Обычный] {ITEM_TWO}'
+        - '&9[Редкий] {ITEM_THREE}'
+        - '&9[Редкий] {ITEM_FOUR}'
+        - '&5[Эпический] {ITEM_FIVE}'
+        - '&5[Эпический] {ITEM_SIX}'
+        - '&6[Легендарный] {ITEM_SEVEN}'
+        - ''
+        - '&fРедкость: &e✰✰✰&f✰✰'
+        - ''
+        - '&fВы получили этот подарок от:'
+        - '&f{SENDER}'
+        - ''
+        - '&aНажмите для открытия!'
+        Four-Star:
+        - '&fЭта коробка содержит что-то одно из следущего:'
+        - ''
+        - '&a[Обычный] {ITEM_ONE}'
+        - '&9[Редкий] {ITEM_TWO}'
+        - 5Epic {ITEM_THREE}
+        - '&5[Эпический] {ITEM_FOUR}'
+        - '&6[Легендарный] {ITEM_FIVE}'
+        - '&6[Легендарный] {ITEM_SIX}'
+        - '&6[Легендарный] {ITEM_SEVEN}'
+        - ''
+        - '&fРедкость: &e✰✰✰✰&f✰'
+        - ''
+        - '&fВы получили этот подарок от:'
+        - '&f{SENDER}'
+        - ''
+        - '&aНажмите для открытия!'
+        Five-Star:
+        - '&fЭта коробка содержит что-то одно из следущего:'
+        - ''
+        - '&9[Редкий] {ITEM_ONE}'
+        - '&5[Эпический] {ITEM_TWO}'
+        - '&5[Эпический] {ITEM_THREE}'
+        - '&6[Легендарный] {ITEM_FOUR}'
+        - '&6[Легендарный] {ITEM_FIVE}'
+        - '&6[Легендарный] {ITEM_SIX}'
+        - '&6[Легендарный] {ITEM_SEVEN}'
+        - ''
+        - '&fРедкость: &e✰✰✰✰✰'
+        - ''
+        - '&fВы получили этот подарок от:'
+        - '&f{SENDER}'
+        - ''
+        - '&aНажмите для открытия!'
+    Crafted-Mystery-Box:
+      One-Star:
+        Name: '&bКупленная Мистическая Коробка #1'
+        Material: ENDER_CHEST
+        Lore:
+        - '&fЭта коробка содержит что-то одно из следущего:'
+        - ''
+        - '&a[Обычный] {ITEM_ONE}'
+        - '&a[Обычный] {ITEM_TWO}'
+        - '&a[Обычный] {ITEM_THREE}'
+        - '&a[Обычный] {ITEM_FOUR}'
+        - '&9[Редкий] {ITEM_FIVE}'
+        - '&5[Эпический] {ITEM_SIX}'
+        - '&6[Легендарный] {ITEM_SEVEN}'
+        - ''
+        - '&fРедкость: &e✰&f✰✰✰✰'
+        - '&bПриобретено {DATE}'
+        - ''
+        - '&aНажмите для открытия!'
+      Two-Star:
+        Name: '&bКупленная Мистическая Коробка #2'
+        Material: ENDER_CHEST
+        Lore:
+        - '&fЭта коробка содержит что-то одно из следущего:'
+        - ''
+        - '&a[Обычный] {ITEM_ONE}'
+        - '&a[Обычный] {ITEM_TWO}'
+        - '&a[Обычный] {ITEM_THREE}'
+        - '&9[Редкий] {ITEM_FOUR}'
+        - '&9[Редкий] {ITEM_FIVE}'
+        - '&5[Эпический] {ITEM_SIX}'
+        - '&6[Легендарный] {ITEM_SEVEN}'
+        - ''
+        - '&fРедкость: &e✰✰&f✰✰✰'
+        - '&bПриобретено {DATE}'
+        - ''
+        - '&aНажмите для открытия!'
+      Three-Star:
+        Name: '&bКупленная Мистическая Коробка #3'
+        Material: ENDER_CHEST
+        Lore:
+        - '&fЭта коробка содержит что-то одно из следущего:'
+        - ''
+        - '&a[Обычный] {ITEM_ONE}'
+        - '&a[Обычный] {ITEM_TWO}'
+        - '&9[Редкий] {ITEM_THREE}'
+        - '&9[Редкий] {ITEM_FOUR}'
+        - '&5[Эпический] {ITEM_FIVE}'
+        - '&5[Эпический] {ITEM_SIX}'
+        - '&6[Легендарный] {ITEM_SEVEN}'
+        - ''
+        - '&fРедкость: &e✰✰✰&f✰✰'
+        - '&bПриобретено {DATE}'
+        - ''
+        - '&aНажмите для открытия!'
+      Four-Star:
+        Name: '&bКупленная Мистическая Коробка #4'
+        Material: ENDER_CHEST
+        Lore:
+        - '&fЭта коробка содержит что-то одно из следущего:'
+        - ''
+        - '&a[Обычный] {ITEM_ONE}'
+        - '&9[Редкий] {ITEM_TWO}'
+        - '&5[Эпический] {ITEM_THREE}'
+        - '&5[Эпический] {ITEM_FOUR}'
+        - '&6[Легендарный] {ITEM_FIVE}'
+        - '&6[Легендарный] {ITEM_SIX}'
+        - '&6[Легендарный] {ITEM_SEVEN}'
+        - ''
+        - '&fРедкость: &e✰✰✰✰&f✰'
+        - '&bПриобретено {DATE}'
+        - ''
+        - '&aНажмите для открытия!'
+      Five-Star:
+        Name: '&bКупленная Мистическая Коробка #5'
+        Material: ENDER_CHEST
+        Lore:
+        - '&fЭта коробка содержит что-то одно из следущего:'
+        - ''
+        - '&9[Редкий] {ITEM_ONE}'
+        - '&5[Эпический] {ITEM_TWO}'
+        - '&5[Эпический] {ITEM_THREE}'
+        - '&6[Легендарный] {ITEM_FOUR}'
+        - '&6[Легендарный] {ITEM_FIVE}'
+        - '&6[Легендарный] {ITEM_SIX}'
+        - '&6[Легендарный] {ITEM_SEVEN}'
+        - ''
+        - '&fРедкость: &e✰✰✰✰✰'
+        - '&bПриобретено {DATE}'
+        - ''
+        - '&aНажмите для открытия!'
+  Chances:
+    One-Star:
+      Common: 70
+      Rare: 20
+      Epic: 8
+      Legendary: 2
+    Two-Star:
+      Common: 70
+      Rare: 25
+      Epic: 4
+      Legendary: 1
+    Three-Star:
+      Common: 58
+      Rare: 20
+      Epic: 15
+      Legendary: 7
+    Four-Star:
+      Common: 52
+      Rare: 22
+      Epic: 18
+      Legendary: 8
+    Five-Star:
+      Rare: 40
+      Epic: 50
+      Legendary: 10
+  Execute-Command:
+    Enabled: false
+    Command: pex user {PLAYER} add {PERMISSION}
+  JSON-Messages:
+    Found-Mystery-Box:
+      One-Star:
+        Message:
+        - '&bМистическая коробка'
+        - '&fРедкость: &e✰&f✰✰✰✰'
+        - '&fТы можешь найти &bМистическую коробку'
+        - '&fиграя на нашем сервере.'
+      Two-Star:
+        Message:
+        - '&bМистическая коробка'
+        - '&fРедкость: &e✰✰&f✰✰✰'
+        - '&fТы можешь найти &bМистическую коробку'
+        - '&fиграя на нашем сервере.'
+      Three-Star:
+        Message:
+        - '&bМистическая коробка'
+        - '&fРедкость: &e✰✰✰&f✰✰'
+        - '&fТы можешь найти &bМистическую коробку'
+        - '&fиграя на нашем сервере.'
+      Four-Star:
+        Message:
+        - '&bМистическая коробка'
+        - '&fРедкость: &e✰✰✰✰&f✰'
+        - '&fТы можешь найти &bМистическую коробку'
+        - '&fиграя на нашем сервере.'
+      Five-Star:
+        Message:
+        - '&bМистическая коробка'
+        - '&fРедкость: &e✰✰✰✰✰'
+        - '&fТы можешь найти &bМистическую коробку'
+        - '&fиграя на нашем сервере.'
+    Found-Loot:
+      Common:
+        Message:
+        - '&a[Обычный] {LOOT}'
+        - '&fТип: {CATEGORY}'
+        - '&fРедкость: &a[Обычное]'
+      Rare:
+        Message:
+        - '&9[Редкий] {LOOT}'
+        - '&fТип: {CATEGORY}'
+        - '&fРедкость: &9[Редкое]'
+      Epic:
+        Message:
+        - '&5[Эпический] {LOOT}'
+        - '&fТип: {CATEGORY}'
+        - '&fРедкость: &5[Эпическое]'
+      Legendary:
+        Message:
+        - '&6[Легендарный] {LOOT}'
+        - '&fТип: {CATEGORY}'
+        - '&fРедкость: &6[Легендарное]'
+    Mystery-Dust:
+      Message:
+      - '&bМистические коробки'
+      - '&fЗа этот предмет Вы получили'
+      - '&fнемного &a$ &fназад'
+    Pet-Items:
+      Message:
+      - '&fView your &aПредмет для питомца &fby'
+      - '&bright-clicking &fone of your'
+      - '&fpets in the &bPets Menu.'

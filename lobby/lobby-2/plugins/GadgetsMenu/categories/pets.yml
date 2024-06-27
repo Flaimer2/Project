@@ -1,0 +1,6817 @@
+Pets:
+  Cow:
+    Name: '&eКорова'
+    Enabled: false
+    Lore:
+    - '&7Нажмите здесь, чтобы увидеть всех'
+    - '&7домашних животных в категории Корова!'
+    Types:
+      Cow:
+        Name: '&aКорова'
+        Mystery Dust: 10000
+        Rarity: Common
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Корова'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Корова'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: LEATHER
+        Default-Pet-Name: '&aКорова'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Mushroom Soup
+          - Cookie
+          - Water
+          - Ball
+          Favourite:
+          - Wheat
+          - Milk
+          - Feather
+      Baby Cow:
+        Name: '&9Корова (Ребёнок)'
+        Mystery Dust: 30000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Корова (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Корова (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: WHEAT
+        Default-Pet-Name: '&9Корова (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Mushroom Soup
+          - Wheat
+          - Water
+          - Feather
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+      Mushroom Cow:
+        Name: '&5Грибная корова'
+        Mystery Dust: 50000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Грибная корова'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Грибная корова'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: RED_MUSHROOM
+        Default-Pet-Name: '&5Грибная корова'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Wheat
+          - Milk
+          - Stick
+          Favourite:
+          - Mushroom Soup
+          - Water
+          - Feather
+      Baby Mushroom Cow:
+        Name: '&6Грибная корова (Ребёнок)'
+        Mystery Dust: 90000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Грибная корова (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Грибная корова (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: BROWN_MUSHROOM
+        Default-Pet-Name: '&6Грибная корова (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Cookie
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Mushroom Soup
+          - Water
+          - Ball
+          Favourite:
+          - Wheat
+          - Milk
+          - Feather
+    Material: LEATHER
+    GUI-Name: Корова
+  Chicken:
+    Name: '&eКурица'
+    Enabled: false
+    Lore:
+    - '&7Нажмите здесь, чтобы увидеть всех'
+    - '&7домашних животных в категории Курица!'
+    Types:
+      Chicken:
+        Name: '&aКурица'
+        Mystery Dust: 10000
+        Rarity: Common
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Курица'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Курица'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: FEATHER
+        Default-Pet-Name: '&aКурица'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Melon
+          - Cookie
+          - Milk
+          - Stick
+          Favourite:
+          - Flower
+          - Water
+          - Frisbee
+      Baby Chicken:
+        Name: '&9Курица (Ребёнок)'
+        Mystery Dust: 30000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Курица (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Курица (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: WHEAT_SEEDS
+        Default-Pet-Name: '&9Курица (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Flower
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Melon
+          - Wheat
+          - Water
+          - Frisbee
+          Favourite:
+          - Cookie
+          - Milk
+          - Stick
+    Material: EGG
+    GUI-Name: Курица
+  Wolf:
+    Name: '&eВолк'
+    Enabled: false
+    Lore:
+    - '&7Нажмите здесь, чтобы увидеть всех'
+    - '&7домашних животных в категории Волк!'
+    Types:
+      Wolf:
+        Name: '&aВолк'
+        Mystery Dust: 10000
+        Rarity: Common
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Волк'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Волк'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: BONE
+        Default-Pet-Name: '&aВолк'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Hay
+          - Wheat
+          - Lava
+          - Frisbee
+          - Sparring Sword
+          Really-Like:
+          - Angus Steak
+          - Milk
+          - Ball
+          Favourite:
+          - Bone
+          - Water
+          - Leash
+      Baby Wolf:
+        Name: '&9Волк (Ребёнок)'
+        Mystery Dust: 30000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Волк (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Волк (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: BONE_MEAL
+        Default-Pet-Name: '&9Волк (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Baked Potato
+          - Flower
+          - Hay
+          - Wheat
+          - Bread
+          - Cake
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Frisbee
+          - Sparring Sword
+          Really-Like:
+          - Raw Porkchop
+          - Bone
+          - Water
+          - Stick
+          - Leash
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+    Material: BONE
+    GUI-Name: Волк
+  Pig:
+    Name: '&eСвинья'
+    Enabled: false
+    Lore:
+    - '&7Нажмите здесь, чтобы увидеть всех'
+    - '&7домашних животных в категории Свинья!'
+    Types:
+      Pig:
+        Name: '&aСвинья'
+        Mystery Dust: 10000
+        Rarity: Common
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Свинья'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Свинья'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: COOKED_PORKCHOP
+        Default-Pet-Name: '&aСвинья'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Leash
+          Really-Like:
+          - Melon
+          - Pumpkin Pie
+          - Carrot
+          - Milk
+          - Ball
+          Favourite:
+          - Apple
+          - Water
+          - Frisbee
+      Baby Pig:
+        Name: '&9Свинья (Ребёнок)'
+        Mystery Dust: 30000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Свинья (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Свинья (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: CARROT
+        Default-Pet-Name: '&9Свинья (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Leash
+          Really-Like:
+          - Melon
+          - Pumpkin Pie
+          - Baked Potato
+          - Water
+          - Stick
+          - Frisbee
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+      Pig Zombie:
+        Name: '&5Свинозомби'
+        Mystery Dust: 50000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.6
+        Lore:
+          Locked:
+          - '&7Тип: &9Свинозомби'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Свинозомби'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: GOLD_INGOT
+        Default-Pet-Name: '&5Свинозомби'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Water
+          - Frisbee
+          Really-Like:
+          - Angus Steak
+          - Milk
+          - Stick
+          Favourite:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+      Baby Pig Zombie:
+        Name: '&6Свинозомби (Ребёнок)'
+        Mystery Dust: 85000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.5
+        Lore:
+          Locked:
+          - '&7Тип: &9Свинозомби (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Свинозомби (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: GOLD_NUGGET
+        Default-Pet-Name: '&6Свинозомби (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Water
+          - Frisbee
+          Really-Like:
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Favourite:
+          - Rotten Flesh
+          - Milk
+          - Stick
+    Material: PORKCHOP
+    GUI-Name: Свинья
+  Silverfish:
+    Name: '&eЧешуйница'
+    Enabled: false
+    Lore:
+    - '&7Нажмите здесь, чтобы увидеть всех'
+    - '&7домашних животных в категории Чешуйница!'
+    Types:
+      Silverfish:
+        Name: '&aЧешуйница'
+        Mystery Dust: 12000
+        Rarity: Common
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.6
+        Lore:
+          Locked:
+          - '&7Тип: &9Чешуйница'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Чешуйница'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: INFESTED_STONE
+        Default-Pet-Name: '&aЧешуйница'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Rotten Flesh
+          - Milk
+          - Ball
+          Favourite:
+          - Bone
+          - Water
+          - Stick
+    Material: INFESTED_STONE
+    GUI-Name: Чешуйница
+  Endermite:
+    Name: '&eЭндермит'
+    Enabled: false
+    Lore:
+    - '&7Нажмите здесь, чтобы увидеть всех'
+    - '&7домашних животных в категории Эндермит!'
+    Types:
+      Endermite:
+        Name: '&6Эндермит'
+        Mystery Dust: 55000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.6
+        Lore:
+          Locked:
+          - '&7Тип: &9Эндермит'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Эндермит'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: ENDERMITE_SPAWN_EGG
+        Default-Pet-Name: '&6Эндермит'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Cake
+          - Water
+          - Sparring Sword
+          Really-Like:
+          - Raw Porkchop
+          - Milk
+          - Ball
+          Favourite:
+          - Rotten Flesh
+          - Lava
+          - Frisbee
+    Material: ENDERMITE_SPAWN_EGG
+    GUI-Name: Эндермит
+  Zombie:
+    Name: '&eЗомби'
+    Enabled: false
+    Lore:
+    - '&7Нажмите здесь, чтобы увидеть всех'
+    - '&7домашних животных в категории Зомби!'
+    Types:
+      Zombie:
+        Name: '&aЗомби'
+        Mystery Dust: 12000
+        Rarity: Common
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.6
+        Lore:
+          Locked:
+          - '&7Тип: &9Зомби'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Зомби'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: ROTTEN_FLESH
+        Default-Pet-Name: '&aЗомби'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Water
+          - Leash
+          Really-Like:
+          - Raw Porkchop
+          - Milk
+          - Stick
+          Favourite:
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+      Baby Zombie:
+        Name: '&9Зомби (Ребёнок)'
+        Mystery Dust: 50000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.5
+        Lore:
+          Locked:
+          - '&7Тип: &9Зомби (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Зомби (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: POTATO
+        Default-Pet-Name: '&9Зомби (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Water
+          - Frisbee
+          Really-Like:
+          - Cookie
+          - Lava
+          - Ball
+          Favourite:
+          - Rotten Flesh
+          - Milk
+          - Sparring Sword
+      Red Little Helper:
+        Name: '&5Красный Маленький Помощник'
+        Mystery Dust: 50000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.5
+        Lore:
+          Locked:
+          - '&7Тип: &9Красный Маленький Помощник'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Красный Маленький Помощник'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: LEATHER_HELMET:#FF0000
+        Default-Pet-Name: '&5Красный Маленький Помощник'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Flower
+          - Water
+          - Leash
+          Really-Like:
+          - Cake
+          - Lava
+          - Ball
+          Favourite:
+          - Cookie
+          - Milk
+          - Frisbee
+      Green Little Helper:
+        Name: '&5Зеленый Маленький Помощник'
+        Mystery Dust: 30000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.5
+        Lore:
+          Locked:
+          - '&7Тип: &9Зеленый Маленький Помощник'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Зеленый Маленький Помощник'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: LEATHER_HELMET:#00FF00
+        Default-Pet-Name: '&5Зеленый Маленький Помощник'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Flower
+          - Water
+          - Leash
+          Really-Like:
+          - Cookie
+          - Lava
+          - Frisbee
+          Favourite:
+          - Cake
+          - Milk
+          - Ball
+      Husk:
+        Name: '&aКадавр'
+        Mystery Dust: 45000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.6
+        Lore:
+          Locked:
+          - '&7Тип: &9Кадавр'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Кадавр'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: head:d674c63c8db5f4ca628d69a3b1f8a36e29d8fd775e1a6bdb6cabb4be4db121
+        Default-Pet-Name: '&aZombie Husk'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Water
+          - Leash
+          Really-Like:
+          - Raw Porkchop
+          - Milk
+          - Ball
+          Favourite:
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+      Baby Husk:
+        Name: '&9Кадавр (Ребёнок)'
+        Mystery Dust: 60000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.5
+        Lore:
+          Locked:
+          - '&7Тип: &9Кадавр (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Кадавр (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: head:d674c63c8db5f4ca628d69a3b1f8a36e29d8fd775e1a6bdb6cabb4be4db121
+        Default-Pet-Name: '&9Zombie Husk (Baby)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Water
+          - Leash
+          Really-Like:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+    Material: ZOMBIE_HEAD
+    GUI-Name: Зомби
+  Cat:
+    Name: '&eКот'
+    Enabled: false
+    Lore:
+    - '&7Нажмите здесь, чтобы увидеть всех'
+    - '&7домашних животных в категории Зомби!'
+    Types:
+      Black Cat:
+        Name: '&aКот: Черный'
+        Mystery Dust: 12000
+        Rarity: Common
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Кот: Черный'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Кот: Черный'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: COOKED_COD
+        Default-Pet-Name: '&aКот: Черный'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Baked Potato
+          - Flower
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Cookie
+          - Cake
+          - Milk
+          - Frisbee
+          Favourite:
+          - Raw Fish
+          - Water
+          - Ball
+      Baby Black Cat:
+        Name: '&9Кот: Черный (Ребёнок)'
+        Mystery Dust: 30000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Кот: Черный (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Кот: Черный (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: COOKED_COD
+        Default-Pet-Name: '&9Кот: Черный (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Baked Potato
+          - Flower
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Cookie
+          - Cake
+          - Water
+          - Frisbee
+          Favourite:
+          - Raw Fish
+          - Milk
+          - Ball
+      Red Cat:
+        Name: '&aКот: Красный'
+        Mystery Dust: 12000
+        Rarity: Common
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Кот: Красный'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Кот: Красный'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: COOKED_SALMON
+        Default-Pet-Name: '&aКот: Красный'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Baked Potato
+          - Flower
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Cookie
+          - Cake
+          - Milk
+          - Frisbee
+          Favourite:
+          - Raw Fish
+          - Water
+          - Ball
+      Baby Red Cat:
+        Name: '&9Кот: Красный (Ребёнок)'
+        Mystery Dust: 30000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Кот: Красный (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Кот: Красный (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: COOKED_SALMON
+        Default-Pet-Name: '&9Кот: Красный (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Baked Potato
+          - Flower
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Cookie
+          - Cake
+          - Water
+          - Frisbee
+          Favourite:
+          - Raw Fish
+          - Milk
+          - Ball
+      Siamese Cat:
+        Name: '&aКот: Сиамский'
+        Mystery Dust: 12000
+        Rarity: Common
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Кот: Сиамский'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Кот: Сиамский'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: TROPICAL_FISH
+        Default-Pet-Name: '&aКот: Сиамский'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Baked Potato
+          - Flower
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Cookie
+          - Cake
+          - Milk
+          - Frisbee
+          Favourite:
+          - Raw Fish
+          - Water
+          - Ball
+      Baby Siamese Cat:
+        Name: '&9Кот: Сиамский (Ребёнок)'
+        Mystery Dust: 30000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Кот: Сиамский (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Кот: Сиамский (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: TROPICAL_FISH
+        Default-Pet-Name: '&9Кот: Сиамский (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Baked Potato
+          - Flower
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Cookie
+          - Cake
+          - Water
+          - Frisbee
+          Favourite:
+          - Raw Fish
+          - Milk
+          - Ball
+      Wild Ocelot:
+        Name: '&9Дикий Оцелот'
+        Mystery Dust: 15000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Дикий Оцелот'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Дикий Оцелот'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: COD
+        Default-Pet-Name: '&9Дикий Оцелот'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Baked Potato
+          - Flower
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Cookie
+          - Cake
+          - Milk
+          - Frisbee
+          Favourite:
+          - Raw Fish
+          - Water
+          - Ball
+      Baby Wild Ocelot:
+        Name: '&5Дикий Оцелот (Ребёнок)'
+        Mystery Dust: 35000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Дикий Оцелот (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Дикий Оцелот (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: COD
+        Default-Pet-Name: '&5Дикий Оцелот (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Baked Potato
+          - Flower
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Cookie
+          - Cake
+          - Water
+          - Frisbee
+          Favourite:
+          - Raw Fish
+          - Milk
+          - Ball
+    Material: COD
+    GUI-Name: Кот
+  Rabbit:
+    Name: '&eКролик'
+    Enabled: false
+    Lore:
+    - '&7Нажмите здесь, чтобы увидеть всех'
+    - '&7домашних животных в категории Кролик!'
+    Types:
+      Black Rabbit:
+        Name: '&9Кролик: Черный'
+        Mystery Dust: 22000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.9
+        Lore:
+          Locked:
+          - '&7Тип: &9Кролик: Черный'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Кролик: Черный'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: head:72c58116a147d1a9a26269224a8be184fe8e5f3f3df9b61751369ad87382ec9
+        Default-Pet-Name: '&9Кролик: Черный'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cookie
+          - Milk
+          - Ball
+          Favourite:
+          - Carrot
+          - Water
+          - Frisbee
+      Baby Black Rabbit:
+        Name: '&5Кролик: Черный (Ребёнок)'
+        Mystery Dust: 28000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.9
+        Lore:
+          Locked:
+          - '&7Тип: &9Кролик: Черный (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Кролик: Черный (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: CARROT
+        Default-Pet-Name: '&5Кролик: Черный (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Carrot
+          - Water
+          - Frisbee
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+      Black & White Rabbit:
+        Name: '&5Кролик: Черный & Белый'
+        Mystery Dust: 45000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.9
+        Lore:
+          Locked:
+          - '&7Тип: &9Кролик: Черный & Белый'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Кролик: Черный & Белый'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: head:cb8cff4b15b8ca37e25750f345718f289cb22c5b3ad22627a71223faccc
+        Default-Pet-Name: '&5Кролик: Черный & Белый'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cookie
+          - Milk
+          - Ball
+          Favourite:
+          - Carrot
+          - Water
+          - Frisbee
+      Baby Black & White Rabbit:
+        Name: '&6Кролик: Черный & Белый (Ребёнок)'
+        Mystery Dust: 51000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.9
+        Lore:
+          Locked:
+          - '&7Тип: &9Кролик: Черный & Белый (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Кролик: Черный & Белый (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: CARROT
+        Default-Pet-Name: '&6Кролик: Черный & Белый (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Carrot
+          - Water
+          - Frisbee
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+      Brown Rabbit:
+        Name: '&9Кролик: Коричневый'
+        Mystery Dust: 22000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.9
+        Lore:
+          Locked:
+          - '&7Тип: &9Кролик: Коричневый'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Кролик: Коричневый'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: head:7d1169b2694a6aba826360992365bcda5a10c89a3aa2b48c438531dd8685c3a7
+        Default-Pet-Name: '&9Кролик: Коричневый'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cookie
+          - Milk
+          - Ball
+          Favourite:
+          - Carrot
+          - Water
+          - Frisbee
+      Baby Brown Rabbit:
+        Name: '&5Кролик: Коричневый (Ребёнок)'
+        Mystery Dust: 28000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.9
+        Lore:
+          Locked:
+          - '&7Тип: &9Кролик: Коричневый (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Кролик: Коричневый (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: CARROT
+        Default-Pet-Name: '&5Кролик: Коричневый (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Carrot
+          - Water
+          - Frisbee
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+      Gold Rabbit:
+        Name: '&5Кролик: Золотой'
+        Mystery Dust: 45000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.9
+        Lore:
+          Locked:
+          - '&7Тип: &9Кролик: Золотой'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Кролик: Золотой'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: head:c977a3266bf3b9eaf17e5a02ea5fbb46801159863dd288b93e6c12c9cb
+        Default-Pet-Name: '&5Кролик: Золотой'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cookie
+          - Milk
+          - Ball
+          Favourite:
+          - Carrot
+          - Water
+          - Frisbee
+      Baby Gold Rabbit:
+        Name: '&6Кролик: Золотой (Ребёнок)'
+        Mystery Dust: 51000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.9
+        Lore:
+          Locked:
+          - '&7Тип: &9Кролик: Золотой (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Кролик: Золотой (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: CARROT
+        Default-Pet-Name: '&6Кролик: Золотой (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Carrot
+          - Water
+          - Frisbee
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+      Salt & Pepper Rabbit:
+        Name: '&5Кролик: Соль & Перец'
+        Mystery Dust: 45000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.9
+        Lore:
+          Locked:
+          - '&7Тип: &9Кролик: Соль & Перец'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Кролик: Соль & Перец'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: head:dc29aebe803e5d4dc3b010c9dd56444f863b2d86a6a2afd4a6a721748ba4fa
+        Default-Pet-Name: '&5Кролик: Соль & Перец'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cookie
+          - Milk
+          - Ball
+          Favourite:
+          - Carrot
+          - Water
+          - Frisbee
+      Baby Salt & Pepper Rabbit:
+        Name: '&6Кролик: Соль & Перец (Ребёнок)'
+        Mystery Dust: 51000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.9
+        Lore:
+          Locked:
+          - '&7Тип: &9Кролик: Соль & Перец (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Кролик: Соль & Перец (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: CARROT
+        Default-Pet-Name: '&6Кролик: Соль & Перец (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Carrot
+          - Water
+          - Frisbee
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+      White Rabbit:
+        Name: '&9Кролик: Белый'
+        Mystery Dust: 22000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.9
+        Lore:
+          Locked:
+          - '&7Тип: &9Кролик: Белый'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Кролик: Белый'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: head:374d8298797e712bb1f75ad6ffa7734ac4237ea69be1db92f0e41115a2c170cf
+        Default-Pet-Name: '&9Кролик: Белый'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cookie
+          - Milk
+          - Ball
+          Favourite:
+          - Carrot
+          - Water
+          - Frisbee
+      Baby White Rabbit:
+        Name: '&5Кролик: Белый (Ребёнок)'
+        Mystery Dust: 28000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.9
+        Lore:
+          Locked:
+          - '&7Тип: &9Кролик: Белый (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Кролик: Белый (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: CARROT
+        Default-Pet-Name: '&5Кролик: Белый (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Carrot
+          - Water
+          - Frisbee
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+    Material: CARROT
+    GUI-Name: Кролик
+  Sheep:
+    Name: '&eОвца'
+    Enabled: false
+    Lore:
+    - '&7Нажмите здесь, чтобы увидеть всех'
+    - '&7домашних животных в категории Овца!'
+    Types:
+      Black Sheep:
+        Name: '&5Овца: Черный'
+        Mystery Dust: 40000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Черный'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Черный'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: BLACK_TERRACOTTA
+        Default-Pet-Name: '&5Овца: Черный'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+      Baby Black Sheep:
+        Name: '&6Овца: Черный (Ребёнок)'
+        Mystery Dust: 75000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Черный (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Черный (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: BLACK_WOOL
+        Default-Pet-Name: '&6Овца: Черный (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+      Blue Sheep:
+        Name: '&9Овца: Синий'
+        Mystery Dust: 20000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Синий'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Синий'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: BLUE_TERRACOTTA
+        Default-Pet-Name: '&9Овца: Синий'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+      Baby Blue Sheep:
+        Name: '&5Овца: Синий (Ребёнок)'
+        Mystery Dust: 55000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Синий (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Синий (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: BLUE_WOOL
+        Default-Pet-Name: '&5Овца: Синий (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+      Brown Sheep:
+        Name: '&aОвца: Коричневый'
+        Mystery Dust: 12000
+        Rarity: Common
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Коричневый'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Коричневый'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: BROWN_TERRACOTTA
+        Default-Pet-Name: '&aОвца: Коричневый'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+      Baby Brown Sheep:
+        Name: '&9Овца: Коричневый (Ребёнок)'
+        Mystery Dust: 30000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Коричневый (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Коричневый (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: BROWN_WOOL
+        Default-Pet-Name: '&9Овца: Коричневый (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+      Cyan Sheep:
+        Name: '&9Овца: Голубой'
+        Mystery Dust: 20000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Голубой'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Голубой'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: CYAN_TERRACOTTA
+        Default-Pet-Name: '&9Овца: Голубой'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+      Baby Cyan Sheep:
+        Name: '&5Овца: Голубой (Ребёнок)'
+        Mystery Dust: 55000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Голубой (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Голубой (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: CYAN_WOOL
+        Default-Pet-Name: '&5Овца: Голубой (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+      Gray Sheep:
+        Name: '&aОвца: Серый'
+        Mystery Dust: 12000
+        Rarity: Common
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Серый'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Серый'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: GRAY_TERRACOTTA
+        Default-Pet-Name: '&aОвца: Серый'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+      Baby Gray Sheep:
+        Name: '&9Овца: Серый (Ребёнок)'
+        Mystery Dust: 30000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Серый (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Серый (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: GRAY_WOOL
+        Default-Pet-Name: '&9Овца: Серый (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+      Green Sheep:
+        Name: '&9Овца: Зеленый'
+        Mystery Dust: 20000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Зеленый'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Зеленый'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: GREEN_TERRACOTTA
+        Default-Pet-Name: '&9Овца: Зеленый'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+      Baby Green Sheep:
+        Name: '&5Овца: Зеленый (Ребёнок)'
+        Mystery Dust: 55000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Зеленый (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Зеленый (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: GREEN_WOOL
+        Default-Pet-Name: '&5Овца: Зеленый (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+      Light Blue Sheep:
+        Name: '&9Овца: Светло-синий'
+        Mystery Dust: 20000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Светло-синий'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Светло-синий'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: LIGHT_BLUE_TERRACOTTA
+        Default-Pet-Name: '&9Овца: Светло-синий'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+      Baby Light Blue Sheep:
+        Name: '&5Овца: Светло-синий (Ребёнок)'
+        Mystery Dust: 55000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Светло-синий (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Светло-синий (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: LIGHT_BLUE_WOOL
+        Default-Pet-Name: '&5Овца: Светло-синий (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+      Lime Sheep:
+        Name: '&9Овца: Лаймовый'
+        Mystery Dust: 20000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Лаймовый'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Лаймовый'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: LIME_TERRACOTTA
+        Default-Pet-Name: '&9Овца: Лаймовый'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+      Baby Lime Sheep:
+        Name: '&5Овца: Лаймовый (Ребёнок)'
+        Mystery Dust: 55000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Лаймовый (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Лаймовый (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: LIME_WOOL
+        Default-Pet-Name: '&5Овца: Лаймовый (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+      Magenta Sheep:
+        Name: '&9Овца: Пурпурный'
+        Mystery Dust: 20000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Пурпурный'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Пурпурный'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: MAGENTA_TERRACOTTA
+        Default-Pet-Name: '&9Овца: Пурпурный'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+      Baby Magenta Sheep:
+        Name: '&5Овца: Пурпурный (Ребёнок)'
+        Mystery Dust: 55000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Пурпурный (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Пурпурный (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: MAGENTA_WOOL
+        Default-Pet-Name: '&5Овца: Пурпурный (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+      Orange Sheep:
+        Name: '&9Овца: Оранжевый'
+        Mystery Dust: 20000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Оранжевый'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Оранжевый'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: ORANGE_TERRACOTTA
+        Default-Pet-Name: '&9Овца: Оранжевый'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+      Baby Orange Sheep:
+        Name: '&5Овца: Оранжевый (Ребёнок)'
+        Mystery Dust: 55000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Оранжевый (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Оранжевый (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: ORANGE_WOOL
+        Default-Pet-Name: '&5Овца: Оранжевый (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+      Pink Sheep:
+        Name: '&5Овца: Розовый'
+        Mystery Dust: 55000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Розовый'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Розовый'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: PINK_TERRACOTTA
+        Default-Pet-Name: '&5Овца: Розовый'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+      Baby Pink Sheep:
+        Name: '&6Овца: Розовый (Ребёнок)'
+        Mystery Dust: 75000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Розовый (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Розовый (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: PINK_WOOL
+        Default-Pet-Name: '&6Овца: Розовый (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+      Purple Sheep:
+        Name: '&9Овца: Фиолетовый'
+        Mystery Dust: 55000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Фиолетовый'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Фиолетовый'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: PURPLE_TERRACOTTA
+        Default-Pet-Name: '&9Овца: Фиолетовый'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+      Baby Purple Sheep:
+        Name: '&5Овца: Фиолетовый (Ребёнок)'
+        Mystery Dust: 75000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Фиолетовый (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Фиолетовый (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: PURPLE_WOOL
+        Default-Pet-Name: '&5Овца: Фиолетовый (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+      Red Sheep:
+        Name: '&9Овца: Красный'
+        Mystery Dust: 20000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Красный'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Красный'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: RED_TERRACOTTA
+        Default-Pet-Name: '&9Овца: Красный'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+      Baby Red Sheep:
+        Name: '&5Овца: Красный (Ребёнок)'
+        Mystery Dust: 55000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Красный (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Красный (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: RED_WOOL
+        Default-Pet-Name: '&5Овца: Красный (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+      Silver Sheep:
+        Name: '&aОвца: Серебряный'
+        Mystery Dust: 12000
+        Rarity: Common
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Серебряный'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Серебряный'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: LIGHT_GRAY_TERRACOTTA
+        Default-Pet-Name: '&aОвца: Серебряный'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+      Baby Silver Sheep:
+        Name: '&9Овца: Серебряный (Ребёнок)'
+        Mystery Dust: 30000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Серебряный (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Серебряный (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: LIGHT_GRAY_WOOL
+        Default-Pet-Name: '&9Овца: Серебряный (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+      White Sheep:
+        Name: '&aОвца: Белый'
+        Mystery Dust: 12000
+        Rarity: Common
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Белый'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Белый'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: WHITE_TERRACOTTA
+        Default-Pet-Name: '&aОвца: Белый'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+      Baby White Sheep:
+        Name: '&9Овца: Белый (Ребёнок)'
+        Mystery Dust: 30000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Белый (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Белый (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: WHITE_WOOL
+        Default-Pet-Name: '&9Овца: Белый (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+      Yellow Sheep:
+        Name: '&9Овца: Желтый'
+        Mystery Dust: 20000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Желтый'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Желтый'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: YELLOW_TERRACOTTA
+        Default-Pet-Name: '&9Овца: Желтый'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+      Baby Yellow Sheep:
+        Name: '&5Овца: Желтый (Ребёнок)'
+        Mystery Dust: 55000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Овца: Желтый (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Овца: Желтый (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: YELLOW_WOOL
+        Default-Pet-Name: '&5Овца: Желтый (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+      Rainbow Sheep:
+        Name: '&6Sheep: Rainbow'
+        Material: EXPERIENCE_BOTTLE
+        Mystery Dust: 75000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Default-Pet-Name: '&6Sheep: Rainbow'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Sheep: Rainbow yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Sheep: Rainbow'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+    Material: WHITE_WOOL
+    GUI-Name: Овца
+  Horse:
+    Name: '&eЛошадь'
+    Enabled: false
+    Lore:
+    - '&7Нажмите здесь, чтобы увидеть всех'
+    - '&7домашних животных в категории Лошадь!'
+    Types:
+      Black Horse:
+        Name: '&5Лошадь: Черный'
+        Mystery Dust: 42000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Лошадь: Черный'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лошадь: Черный'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: COAL
+        Default-Pet-Name: '&5Лошадь: Черный'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Apple
+          - Water
+          - Leash
+      Baby Black Horse:
+        Name: '&6Лошадь: Черный (Ребёнок)'
+        Mystery Dust: 60000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Лошадь: Черный (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лошадь: Черный (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: CHARCOAL
+        Default-Pet-Name: '&6Лошадь: Черный (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Water
+          - Leash
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+      Brown Horse:
+        Name: '&aЛошадь: Коричневый'
+        Mystery Dust: 15000
+        Rarity: Common
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Лошадь: Коричневый'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лошадь: Коричневый'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: BRICK
+        Default-Pet-Name: '&aЛошадь: Коричневый'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Apple
+          - Water
+          - Leash
+      Baby Brown Horse:
+        Name: '&9Лошадь: Коричневый (Ребёнок)'
+        Mystery Dust: 30000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Лошадь: Коричневый (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лошадь: Коричневый (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: COCOA_BEANS
+        Default-Pet-Name: '&9Лошадь: Коричневый (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Water
+          - Leash
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+      Chestnut Horse:
+        Name: '&9Лошадь: Каштан'
+        Mystery Dust: 25000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Лошадь: Каштан'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лошадь: Каштан'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: MELON_SEEDS
+        Default-Pet-Name: '&9Лошадь: Каштан'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Apple
+          - Water
+          - Leash
+      Baby Chestnut Horse:
+        Name: '&5Лошадь: Каштан (Ребёнок)'
+        Mystery Dust: 55000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Лошадь: Каштан (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лошадь: Каштан (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: PUMPKIN_SEEDS
+        Default-Pet-Name: '&5Лошадь: Каштан (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Water
+          - Leash
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+      Creamy Horse:
+        Name: '&9Лошадь: Сливочный'
+        Mystery Dust: 25000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Лошадь: Сливочный'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лошадь: Сливочный'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: MILK_BUCKET
+        Default-Pet-Name: '&9Лошадь: Сливочный'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Apple
+          - Water
+          - Leash
+      Baby Creamy Horse:
+        Name: '&5Лошадь: Сливочный (Ребёнок)'
+        Mystery Dust: 55000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Лошадь: Сливочный (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лошадь: Сливочный (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: SUGAR
+        Default-Pet-Name: '&5Лошадь: Сливочный (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Water
+          - Leash
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+      Dark Brown Horse:
+        Name: '&9Лошадь: Темно-коричневый'
+        Mystery Dust: 25000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Лошадь: Темно-коричневый'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лошадь: Темно-коричневый'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: DARK_OAK_LOG
+        Default-Pet-Name: '&9Лошадь: Темно-коричневый'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Apple
+          - Water
+          - Leash
+      Baby Dark Brown Horse:
+        Name: '&5Лошадь: Темно-коричневый (Ребёнок)'
+        Mystery Dust: 55000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Лошадь: Темно-коричневый (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лошадь: Темно-коричневый (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: DARK_OAK_PLANKS
+        Default-Pet-Name: '&5Лошадь: Темно-коричневый (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Water
+          - Leash
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+      Gray Horse:
+        Name: '&9Лошадь: Серый'
+        Mystery Dust: 25000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Лошадь: Серый'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лошадь: Серый'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: APPLE
+        Default-Pet-Name: '&9Лошадь: Серый'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Apple
+          - Water
+          - Leash
+      Baby Gray Horse:
+        Name: '&5Лошадь: Серый (Ребёнок)'
+        Mystery Dust: 55000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Лошадь: Серый (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лошадь: Серый (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: GRAY_DYE
+        Default-Pet-Name: '&5Лошадь: Серый (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Water
+          - Leash
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+      White Horse:
+        Name: '&5Лошадь: Белый'
+        Mystery Dust: 42000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Лошадь: Белый'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лошадь: Белый'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: QUARTZ_BLOCK
+        Default-Pet-Name: '&5Лошадь: Белый'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Apple
+          - Water
+          - Leash
+      Baby White Horse:
+        Name: '&6Лошадь: Белый (Ребёнок)'
+        Mystery Dust: 60000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Лошадь: Белый (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лошадь: Белый (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: DIORITE
+        Default-Pet-Name: '&6Лошадь: Белый (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Water
+          - Leash
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+      Donkey:
+        Name: '&9Осел'
+        Mystery Dust: 27000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Осел'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Осел'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: LEATHER
+        Default-Pet-Name: '&9Осел'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Apple
+          - Water
+          - Leash
+      Baby Donkey:
+        Name: '&5Осел (Ребёнок)'
+        Mystery Dust: 40000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Осел (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Осел (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: CARROT
+        Default-Pet-Name: '&5Осел (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Water
+          - Leash
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+      Mule:
+        Name: '&9Мул'
+        Mystery Dust: 22000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Мул'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Мул'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: COOKED_MUTTON
+        Default-Pet-Name: '&9Мул'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Apple
+          - Water
+          - Leash
+      Baby Mule:
+        Name: '&5Мул (Ребёнок)'
+        Mystery Dust: 35000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Мул (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Мул (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: MUTTON
+        Default-Pet-Name: '&5Мул (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Water
+          - Leash
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+      Skeleton Horse:
+        Name: '&6Лошадь-Скелет'
+        Mystery Dust: 65000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Лошадь-Скелет'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лошадь-Скелет'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: BONE
+        Default-Pet-Name: '&6Лошадь-Скелет'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Water
+          - Frisbee
+          Really-Like:
+          - Magma Cream
+          - Milk
+          - Ball
+          Favourite:
+          - Bone
+          - Lava
+          - Leash
+      Baby Skeleton Horse:
+        Name: '&6Лошадь-Скелет (Ребёнок)'
+        Mystery Dust: 85000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Лошадь-Скелет (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лошадь-Скелет (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: BONE_MEAL
+        Default-Pet-Name: '&6Лошадь-Скелет (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Water
+          - Feather
+          Really-Like:
+          - Magma Cream
+          - Lava
+          - Leash
+          Favourite:
+          - Bone
+          - Milk
+          - Ball
+      Undead Horse:
+        Name: '&5Лошадь-Зомби'
+        Mystery Dust: 63000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Лошадь-Зомби'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лошадь-Зомби'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: DARK_OAK_SAPLING
+        Default-Pet-Name: '&5Лошадь-Зомби'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Water
+          - Feather
+          Really-Like:
+          - Bone
+          - Milk
+          - Ball
+          Favourite:
+          - Rotten Flesh
+          - Lava
+          - Leash
+      Baby Undead Horse:
+        Name: '&6Лошадь-Зомби (Ребёнок)'
+        Mystery Dust: 85000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Лошадь-Зомби (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лошадь-Зомби (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: DEAD_BUSH
+        Default-Pet-Name: '&6Лошадь-Зомби (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Water
+          - Feather
+          Really-Like:
+          - Bone
+          - Lava
+          - Leash
+          Favourite:
+          - Rotten Flesh
+          - Milk
+          - Ball
+    Material: SADDLE
+    GUI-Name: Лошадь
+  Villager:
+    Name: '&eЖитель'
+    Enabled: false
+    Lore:
+    - '&7Нажмите здесь, чтобы увидеть всех'
+    - '&7домашних животных в категории Житель!'
+    Types:
+      Blacksmith Villager:
+        Name: '&9Житель: Кузнец'
+        Mystery Dust: 22000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Житель: Кузнец'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Житель: Кузнец'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: IRON_ORE
+        Default-Pet-Name: '&9Житель: Кузнец'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cookie
+          - Milk
+          - Feather
+          Favourite:
+          - Bread
+          - Water
+          - Frisbee
+      Baby Blacksmith Villager:
+        Name: '&5Житель: Кузнец (Ребёнок)'
+        Mystery Dust: 55000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Житель: Кузнец (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Житель: Кузнец (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: IRON_INGOT
+        Default-Pet-Name: '&5Житель: Кузнец (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Bread
+          - Water
+          - Frisbee
+          Favourite:
+          - Cookie
+          - Milk
+          - Feather
+      Butcher Villager:
+        Name: '&9Житель: Мясник'
+        Mystery Dust: 22000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Житель: Мясник'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Житель: Мясник'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: IRON_AXE
+        Default-Pet-Name: '&9Житель: Мясник'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cookie
+          - Milk
+          - Feather
+          Favourite:
+          - Bread
+          - Water
+          - Frisbee
+      Baby Butcher Villager:
+        Name: '&5Житель: Мясник (Ребёнок)'
+        Mystery Dust: 55000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Житель: Мясник (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Житель: Мясник (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: WOODEN_AXE
+        Default-Pet-Name: '&5Житель: Мясник (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Bread
+          - Water
+          - Frisbee
+          Favourite:
+          - Cookie
+          - Milk
+          - Feather
+      Farmer Villager:
+        Name: '&9Житель: Фермер'
+        Mystery Dust: 22000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Житель: Фермер'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Житель: Фермер'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: IRON_HOE
+        Default-Pet-Name: '&9Житель: Фермер'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cookie
+          - Milk
+          - Feather
+          Favourite:
+          - Bread
+          - Water
+          - Frisbee
+      Baby Farmer Villager:
+        Name: '&5Житель: Фермер (Ребёнок)'
+        Mystery Dust: 55000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Житель: Фермер (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Житель: Фермер (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: WOODEN_HOE
+        Default-Pet-Name: '&5Житель: Фермер (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Bread
+          - Water
+          - Frisbee
+          Favourite:
+          - Cookie
+          - Milk
+          - Feather
+      Librarian Villager:
+        Name: '&9Житель: Библиотекарь'
+        Mystery Dust: 22000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Житель: Библиотекарь'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Житель: Библиотекарь'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: BOOKSHELF
+        Default-Pet-Name: '&9Житель: Библиотекарь'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cookie
+          - Milk
+          - Feather
+          Favourite:
+          - Bread
+          - Water
+          - Frisbee
+      Baby Librarian Villager:
+        Name: '&5Житель: Библиотекарь (Ребёнок)'
+        Mystery Dust: 55000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Житель: Библиотекарь (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Житель: Библиотекарь (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: BOOK
+        Default-Pet-Name: '&5Житель: Библиотекарь (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Bread
+          - Water
+          - Frisbee
+          Favourite:
+          - Cookie
+          - Milk
+          - Feather
+      Priest Villager:
+        Name: '&9Житель: Священник'
+        Mystery Dust: 22000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Житель: Священник'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Житель: Священник'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: WRITABLE_BOOK
+        Default-Pet-Name: '&9Житель: Священник'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cookie
+          - Milk
+          - Feather
+          Favourite:
+          - Bread
+          - Water
+          - Frisbee
+      Baby Priest Villager:
+        Name: '&5Житель: Священник (Ребёнок)'
+        Mystery Dust: 55000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Житель: Священник (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Житель: Священник (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: MAP
+        Default-Pet-Name: '&5Житель: Священник (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Bread
+          - Water
+          - Frisbee
+          Favourite:
+          - Cookie
+          - Milk
+          - Feather
+      Witch:
+        Name: '&5Ведьма'
+        Mystery Dust: 45000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Ведьма'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Ведьма'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: POTION:8196
+        Default-Pet-Name: '&5Ведьма'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Baked Potato
+          - Water
+          - Feather
+          Favourite:
+          - Pumpkin Pie
+          - Milk
+          - Stick
+      Zombie Villager:
+        Name: '&aЖитель: Зомби'
+        Mystery Dust: 52000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.6
+        Lore:
+          Locked:
+          - '&7Тип: &aЖитель: Зомби'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Житель: Зомби'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: GOLDEN_APPLE
+        Default-Pet-Name: '&aЖитель: Зомби'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Cake
+          - Water
+          - Leash
+          Really-Like:
+          - Raw Porkchop
+          - Milk
+          - Ball
+          Favourite:
+          - Rotten Flesh
+          - Lava
+          - Stick
+      Baby Zombie Villager:
+        Name: '&aЖитель: Зомби (Ребёнок)'
+        Mystery Dust: 75000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.5
+        Lore:
+          Locked:
+          - '&7Тип: &aЖитель: Зомби (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Житель: Зомби (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: GOLDEN_HELMET
+        Default-Pet-Name: '&aЖитель: Зомби (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Cake
+          - Water
+          - Leash
+          Really-Like:
+          - Bone
+          - Lava
+          - Stick
+          Favourite:
+          - Rotten Flesh
+          - Milk
+          - Ball
+      Evoker:
+        Name: '&6Маг'
+        Mystery Dust: 80000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.6
+        Lore:
+          Locked:
+          - '&7Тип: &9Маг'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Маг'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: head:4f6fb89d1c631bd7e79fe185ba1a6705425f5c31a5ff626521e395d4a6f7e2
+        Default-Pet-Name: '&6Маг'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Angus Steak
+          - Milk
+          - Feather
+          Favourite:
+          - Bone
+          - Water
+          - Stick
+      Vindicator:
+        Name: '&6Поборник'
+        Mystery Dust: 80000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.6
+        Lore:
+          Locked:
+          - '&7Тип: &9Поборник'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Поборник'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: head:4f6fb89d1c631bd7e79fe185ba1a6705425f5c31a5ff626521e395d4a6f7e2
+        Default-Pet-Name: '&6Поборник'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Angus Steak
+          - Milk
+          - Feather
+          Favourite:
+          - Bone
+          - Water
+          - Stick
+      Illusioner:
+        Name: '&6Иллюзор'
+        Mystery Dust: 85000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.6
+        Lore:
+          Locked:
+          - '&7Тип: &6Иллюзор'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Иллюзор'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: head:1c678c9f4c6dd4d991930f82e6e7d8b89b2891f35cba48a4b18539bbe7ec927
+        Default-Pet-Name: '&6Иллюзор'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Angus Steak
+          - Milk
+          - Feather
+          Favourite:
+          - Bone
+          - Water
+          - Stick
+    Material: EMERALD
+    GUI-Name: Житель
+  Spider:
+    Name: '&eПаук'
+    Enabled: false
+    Lore:
+    - '&7Нажмите здесь, чтобы увидеть всех'
+    - '&7домашних животных в категории Паук!'
+    Types:
+      Spider:
+        Name: '&5Паук'
+        Mystery Dust: 42000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Паук'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Паук'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: SPIDER_EYE
+        Default-Pet-Name: '&5Паук'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Leash
+          Really-Like:
+          - Angus Steak
+          - Milk
+          - Sparring Sword
+          Favourite:
+          - Rotten Flesh
+          - Water
+          - Stick
+      Cave Spider:
+        Name: '&9Пещерный Паук'
+        Mystery Dust: 27000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Пещерный Паук'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Пещерный Паук'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: STRING
+        Default-Pet-Name: '&9Пещерный Паук'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Leash
+          Really-Like:
+          - Rotten Flesh
+          - Milk
+          - Stick
+          Favourite:
+          - Angus Steak
+          - Water
+          - Sparring Sword
+    Material: SPIDER_EYE
+    GUI-Name: Паук
+  Skeleton:
+    Name: '&eСкелет'
+    Enabled: false
+    Lore:
+    - '&7Нажмите здесь, чтобы увидеть всех'
+    - '&7домашних животных в категории Скелет!'
+    Types:
+      Skeleton:
+        Name: '&5Скелет'
+        Mystery Dust: 50000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Скелет'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Скелет'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: BOW
+        Default-Pet-Name: '&5Скелет'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Water
+          - Feather
+          Really-Like:
+          - Bone
+          - Milk
+          - Stick
+          Favourite:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+      Wither Skeleton:
+        Name: '&6Скелет-Иссушитель'
+        Mystery Dust: 70000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Скелет-Иссушитель'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Скелет-Иссушитель'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: STONE_SWORD
+        Default-Pet-Name: '&6Скелет-Иссушитель'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Water
+          - Feather
+          Really-Like:
+          - Rotten Flesh
+          - Milk
+          - Stick
+          Favourite:
+          - Bone
+          - Lava
+          - Sparring Sword
+      Stray Skeleton:
+        Name: '&6Древний скелет'
+        Mystery Dust: 85000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.6
+        Lore:
+          Locked:
+          - '&7Тип: &6Древний скелет'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Древний скелет'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: head:78ddf76e555dd5c4aa8a0a5fc584520cd63d489c253de969f7f22f85a9a2d56
+        Default-Pet-Name: '&6Древний скелет'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Water
+          - Feather
+          Really-Like:
+          - Rotten Flesh
+          - Milk
+          - Frisbee
+          Favourite:
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+    Material: BOW
+    GUI-Name: Скелет
+  Blaze:
+    Name: '&eВсполох'
+    Enabled: false
+    Lore:
+    - '&7Нажмите здесь, чтобы увидеть всех'
+    - '&7домашних животных в категории Всполох!'
+    Types:
+      Blaze:
+        Name: '&6Всполох'
+        Mystery Dust: 55000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Всполох'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Всполох'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: BLAZE_ROD
+        Default-Pet-Name: '&6Всполох'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Water
+          - Sparring Sword
+          Really-Like:
+          - Bone
+          - Milk
+          - Frisbee
+          Favourite:
+          - Magma Cream
+          - Lava
+          - Stick
+    Material: BLAZE_ROD
+    GUI-Name: Всполох
+  Creeper:
+    Name: '&eКрипер'
+    Enabled: false
+    Lore:
+    - '&7Нажмите здесь, чтобы увидеть всех'
+    - '&7домашних животных в категории Крипер!'
+    Types:
+      Creeper:
+        Name: '&5Крипер'
+        Mystery Dust: 52000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Крипер'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Крипер'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: GUNPOWDER
+        Default-Pet-Name: '&5Крипер'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Hay
+          - Water
+          - Sparring Sword
+          Really-Like:
+          - Flower
+          - Milk
+          - Frisbee
+          Favourite:
+          - Cake
+          - Lava
+          - Stick
+      Powered Creeper:
+        Name: '&6Усиленый крипер'
+        Mystery Dust: 75000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.7
+        Lore:
+          Locked:
+          - '&7Тип: &9Усиленый крипер'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Усиленый крипер'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: TNT
+        Default-Pet-Name: '&6Усиленый крипер'
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Hay
+          - Water
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Milk
+          - Stick
+          Favourite:
+          - Flower
+          - Lava
+          - Frisbee
+    Material: CREEPER_HEAD
+    GUI-Name: Крипер
+  Golem:
+    Name: '&eГолем'
+    Enabled: false
+    Lore:
+    - '&7Нажмите здесь, чтобы увидеть всех'
+    - '&7домашних животных в категории Крипер!'
+    Types:
+      Golem:
+        Name: '&6Голем'
+        Mystery Dust: 200000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.6
+        Lore:
+          Locked:
+          - '&7Тип: &9Голем'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Голем'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: IRON_BLOCK
+        Default-Pet-Name: '&6Голем'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Water
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Milk
+          - Frisbee
+          Favourite:
+          - Flower
+          - Lava
+          - Ball
+    Material: head:89091d79ea0f59ef7ef94d7bba6e5f17f2f7d4572c44f90f76c4819a714
+    GUI-Name: Голем
+  Snowman:
+    Name: '&eСнеговик'
+    Enabled: false
+    Lore:
+    - '&7Нажмите здесь, чтобы увидеть всех'
+    - '&7домашних животных в категории Снеговик!'
+    Types:
+      Snowman:
+        Name: '&bСнеговик'
+        Mystery Dust: 52000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.6
+        Lore:
+          Locked:
+          - '&7Тип: &9Снеговикс'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Снеговик'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: SNOWBALL
+        Default-Pet-Name: '&bСнеговик'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Pumpkin Pie
+          - Milk
+          - Ball
+          Favourite:
+          - Carrot
+          - Water
+          - Stick
+    Material: SNOWBALL
+    GUI-Name: Снеговик
+  Polar Bear:
+    Name: '&eПолярный медведь'
+    Enabled: false
+    Lore:
+    - '&7Нажмите здесь, чтобы увидеть всех'
+    - '&7домашних животных в категории Полярный медведь!'
+    Types:
+      Polar Bear:
+        Name: '&bПолярный медведь'
+        Mystery Dust: 55000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.6
+        Lore:
+          Locked:
+          - '&7Тип: &9Полярный медведь'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Полярный медведь'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: head:bab178f5cdd750f0e356860aa5539153eb2abec1e146ca57c65d25a5df8fdfe
+        Default-Pet-Name: '&bПолярный медведь'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Leash
+          Really-Like:
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Raw Fish
+          - Water
+          - Stick
+      Baby Polar Bear:
+        Name: '&6Полярный Медведь (Ребёнок)'
+        Mystery Dust: 75000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.5
+        Lore:
+          Locked:
+          - '&7Тип: &9Полярный Медведь (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Полярный Медведь (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: head:bab178f5cdd750f0e356860aa5539153eb2abec1e146ca57c65d25a5df8fdfe
+        Default-Pet-Name: '&6Полярный Медведь (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Leash
+          Really-Like:
+          - Raw Fish
+          - Water
+          - Stick
+          Favourite:
+          - Wheat
+          - Milk
+          - Ball
+    Material: head:bab178f5cdd750f0e356860aa5539153eb2abec1e146ca57c65d25a5df8fdfe
+    GUI-Name: Полярный медведь
+  Llama:
+    Name: '&eЛама'
+    Enabled: false
+    Lore:
+    - '&7Нажмите здесь, чтобы увидеть всех'
+    - '&7домашних животных в категории Лама!'
+    Types:
+      Brown Llama:
+        Name: '&5Лама: Коричневая'
+        Mystery Dust: 60000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.6
+        Lore:
+          Locked:
+          - '&7Тип: &9Лама: Коричневая'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лама: Коричневая'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: head:c2b1ecff77ffe3b503c30a548eb23a1a08fa26fd67cdff389855d74921368
+        Default-Pet-Name: '&5Лама: Коричневая'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Angus Steak
+          - Lava
+          - Leash
+          Really-Like:
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Hay
+          - Water
+          - Stick
+      Baby Brown Llama:
+        Name: '&6Лама: Коричневая (Ребёнок)'
+        Mystery Dust: 80000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.5
+        Lore:
+          Locked:
+          - '&7Тип: &9Лама: Коричневая (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лама: Коричневая (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: head:c2b1ecff77ffe3b503c30a548eb23a1a08fa26fd67cdff389855d74921368
+        Default-Pet-Name: '&6Лама: Коричневая (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Angus Steak
+          - Lava
+          - Leash
+          Really-Like:
+          - Wheat
+          - Water
+          - Stick
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+      Creamy Llama:
+        Name: '&5Лама: Каштан'
+        Mystery Dust: 55000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.6
+        Lore:
+          Locked:
+          - '&7Тип: &9Лама: Каштан'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лама: Каштан'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: head:80899acfebf947a0effc4022deb080543f7e389116bd4964c2c227ffa34a3375
+        Default-Pet-Name: '&5Лама: Каштан'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Angus Steak
+          - Lava
+          - Leash
+          Really-Like:
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Hay
+          - Water
+          - Stick
+      Baby Creamy Llama:
+        Name: '&6Лама: Каштан (Ребёнок)'
+        Mystery Dust: 75000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.5
+        Lore:
+          Locked:
+          - '&7Тип: &9Лама: Каштан (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лама: Каштан (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: head:80899acfebf947a0effc4022deb080543f7e389116bd4964c2c227ffa34a3375
+        Default-Pet-Name: '&6Лама: Каштан (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Angus Steak
+          - Lava
+          - Leash
+          Really-Like:
+          - Wheat
+          - Water
+          - Stick
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+      Gray Llama:
+        Name: '&5Лама: Серая'
+        Mystery Dust: 55000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.6
+        Lore:
+          Locked:
+          - '&7Тип: &9Лама: Серая'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лама: Серая'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: head:cf24e56fd9ffd7133da6d1f3e2f455952b1da462686f753c597ee82299a
+        Default-Pet-Name: '&5Лама: Серая'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Angus Steak
+          - Lava
+          - Leash
+          Really-Like:
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Hay
+          - Water
+          - Stick
+      Baby Gray Llama:
+        Name: '&6Лама: Серая (Ребёнок)'
+        Mystery Dust: 75000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.5
+        Lore:
+          Locked:
+          - '&7Тип: &9Лама: Серая (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лама: Серая (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: head:cf24e56fd9ffd7133da6d1f3e2f455952b1da462686f753c597ee82299a
+        Default-Pet-Name: '&6Лама: Серая (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Angus Steak
+          - Lava
+          - Leash
+          Really-Like:
+          - Wheat
+          - Water
+          - Stick
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+      White Llama:
+        Name: '&5Лама: Белая'
+        Mystery Dust: 55000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.6
+        Lore:
+          Locked:
+          - '&7Тип: &9Лама: Белая'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лама: Белая'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: head:83d9b5915912ffc2b85761d6adcb428a812f9b83ff634e331162ce46c99e9
+        Default-Pet-Name: '&5Лама: Белая'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Angus Steak
+          - Lava
+          - Leash
+          Really-Like:
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Hay
+          - Water
+          - Stick
+      Baby White Llama:
+        Name: '&6Лама: Белая (Ребёнок)'
+        Mystery Dust: 75000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Move-Speed: 0.5
+        Lore:
+          Locked:
+          - '&7Тип: &9Лама: Белая (Ребёнок)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Лама: Белая (Ребёнок)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+        Material: head:83d9b5915912ffc2b85761d6adcb428a812f9b83ff634e331162ce46c99e9
+        Default-Pet-Name: '&6Лама: Белая (Ребёнок)'
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Angus Steak
+          - Lava
+          - Leash
+          Really-Like:
+          - Wheat
+          - Water
+          - Stick
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+    Material: head:83d9b5915912ffc2b85761d6adcb428a812f9b83ff634e331162ce46c99e9
+    GUI-Name: Лама
+  Bat:
+    Name: '&5Летучая мышь'
+    Material: COAL
+    GUI-Name: Летучая мышь
+    Enabled: false
+    Lore:
+    - '&7Нажмите здесь, чтобы увидеть всех'
+    - '&7домашних животных в категории Летучая Мышь!'
+    Types:
+      Bat:
+        Name: '&5Летучая мышь'
+        Material: COAL
+        Mystery Dust: 37000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Default-Pet-Name: '&5Летучая мышь'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Leash
+          Really-Like:
+          - Cookie
+          - Milk
+          - Ball
+          Favourite:
+          - Melon
+          - Water
+          - Stick
+        Lore:
+          Locked:
+          - '&7Тип: &5Летучая мышь'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &5Летучая мышь'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+  Enderman:
+    Name: '&6Эндермен'
+    Material: head:7a59bb0a7a32965b3d90d8eafa899d1835f424509eadd4e6b709ada50b9cf
+    GUI-Name: Эндермен
+    Enabled: false
+    Lore:
+    - '&7Нажмите здесь, чтобы увидеть всех'
+    - '&7домашних животных в категории Эндермен!'
+    Types:
+      Enderman:
+        Name: '&6Эндермен'
+        Material: head:7a59bb0a7a32965b3d90d8eafa899d1835f424509eadd4e6b709ada50b9cf
+        Mystery Dust: 150000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Default-Pet-Name: '&6Эндермен'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Mushroom Soup
+          - Hay
+          - Wheat
+          - Raw Porkchop
+          - Angus Steak
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          Really-Like:
+          - Pumpkin Pie
+          - Bone
+          - Water
+          - Leash
+          - Sparring Sword
+          Favourite:
+          - Baked Potato
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Тип: &6Эндермен'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &6Эндермен'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+  Slime:
+    Name: '&6Слизень'
+    Material: SLIME_BLOCK
+    GUI-Name: Слизень
+    Enabled: false
+    Lore:
+    - '&7Нажмите здесь, чтобы увидеть всех'
+    - '&7домашних животных в категории Слизень!'
+    Types:
+      Big Slime:
+        Name: '&6Слизень (Большой)'
+        Material: SLIME_BLOCK
+        Mystery Dust: 100000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Default-Pet-Name: '&6Слизень (Большой)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Rotten Flesh
+          - Water
+          - Stick
+          Favourite:
+          - Bone
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Тип: &6Слизень (Большой)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Слизень (Большой)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+      Small Slime:
+        Name: '&5Слизень (Маленький)'
+        Material: SLIME_BLOCK
+        Mystery Dust: 63000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Default-Pet-Name: '&5Слизень (Маленький)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Rotten Flesh
+          - Water
+          - Stick
+          Favourite:
+          - Bone
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Тип: &5Слизень (Маленький)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Слизень (Маленький)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+      Tiny Slime:
+        Name: '&9Слизень (Крошечный)'
+        Material: SLIME_BALL
+        Mystery Dust: 30000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Default-Pet-Name: '&9Слизень (Крошечный)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Rotten Flesh
+          - Water
+          - Stick
+          Favourite:
+          - Bone
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Тип: &9Слизень (Крошечный)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Слизень (Крошечный)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+      Big Magma Cube:
+        Name: '&6Куб Магмы (Большой)'
+        Material: MAGMA_CREAM
+        Mystery Dust: 100000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Default-Pet-Name: '&6Куб Магмы (Большой)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Apple
+          - Melon
+          - Pumpkin Pie
+          - Carrot
+          - Baked Potato
+          - Flower
+          - Hay
+          - Wheat
+          - Bread
+          - Cookie
+          - Cake
+          - Water
+          - Stick
+          Really-Like:
+          - Raw Porkchop
+          - Angus Steak
+          - Bone
+          - Milk
+          - Leash
+          - Frisbee
+          Favourite:
+          - Magma Cream
+          - Lava
+          - Ball
+        Lore:
+          Locked:
+          - '&7Тип: &6Куб Магмы (Большой)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Куб Магмы (Большой)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+      Small Magma Cube:
+        Name: '&5Куб Магмы (Маленький)'
+        Material: BLAZE_POWDER
+        Mystery Dust: 63000
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Default-Pet-Name: '&5Куб Магмы (Маленький)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Apple
+          - Melon
+          - Pumpkin Pie
+          - Carrot
+          - Baked Potato
+          - Flower
+          - Hay
+          - Wheat
+          - Bread
+          - Cookie
+          - Cake
+          - Water
+          - Stick
+          Really-Like:
+          - Raw Porkchop
+          - Angus Steak
+          - Bone
+          - Milk
+          - Leash
+          - Frisbee
+          Favourite:
+          - Magma Cream
+          - Lava
+          - Ball
+        Lore:
+          Locked:
+          - '&7Тип: &5Куб Магмы (Маленький)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Куб Магмы (Маленький)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+      Tiny Magma Cube:
+        Name: '&9Куб Магмы (Крошечный)'
+        Material: LAVA_BUCKET
+        Mystery Dust: 30000
+        Rarity: Rare
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Default-Pet-Name: '&9Куб Магмы (Крошечный)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Apple
+          - Melon
+          - Pumpkin Pie
+          - Carrot
+          - Baked Potato
+          - Flower
+          - Hay
+          - Wheat
+          - Bread
+          - Cookie
+          - Cake
+          - Water
+          - Stick
+          Really-Like:
+          - Raw Porkchop
+          - Angus Steak
+          - Bone
+          - Milk
+          - Leash
+          - Frisbee
+          Favourite:
+          - Magma Cream
+          - Lava
+          - Ball
+        Lore:
+          Locked:
+          - '&7Тип: &5Куб Магмы (Крошечный)'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Куб Магмы (Крошечный)'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+  Squid:
+    Name: '&6Спрут'
+    Material: INK_SAC
+    GUI-Name: Спрут
+    Enabled: false
+    Lore:
+    - '&7Нажмите здесь, чтобы увидеть всех'
+    - '&7домашних животных в категории Спрут!'
+    Types:
+      Squid:
+        Name: '&6Спрут'
+        Material: INK_SAC
+        Mystery Dust: 78000
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Default-Pet-Name: '&6Спрут'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Pumpkin Pie
+          - Wheat
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Raw Fish
+          - Water
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Тип: &5Спрут'
+          - ''
+          - '&7Нажмите, чтобы купить этого питомца.'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Тип: &9Спрут'
+          - ''
+          - '&7Статус: {HAPPINESS}'
+          - ''
+          - '&7Голод: {HUNGER}'
+          - '&7Жажда: {THIRST}'
+          - '&7Развлечения: {EXERCISE}'
+  Panda:
+    Name: '&6Panda'
+    Material: head:dca096eea506301bea6d4b17ee1605625a6f5082c71f74a639cc940439f47166
+    GUI-Name: Panda
+    Enabled: false
+    Lore:
+    - '&7Click here to see all pets'
+    - '&7in the Panda category!'
+    Types:
+      Normal Panda:
+        Name: '&5Panda: Normal'
+        Material: head:dca096eea506301bea6d4b17ee1605625a6f5082c71f74a639cc940439f47166
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Default-Pet-Name: '&5Panda: Normal'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Ball
+          Favourite:
+          - Apple
+          - Milk
+          - Stick
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Normal yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Normal'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Baby Normal Panda:
+        Name: '&6Panda: Normal (Baby)'
+        Material: head:dca096eea506301bea6d4b17ee1605625a6f5082c71f74a639cc940439f47166
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Default-Pet-Name: '&6Panda: Normal (Baby)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Stick
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Normal (Baby) yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Normal (Baby)'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Lazy Panda:
+        Name: '&5Panda: Lazy'
+        Material: head:7818b681cace1c641919f53edadecb142330d089a826b56219138c33b7a5e0db
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Default-Pet-Name: '&5Panda: Lazy'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Ball
+          Favourite:
+          - Apple
+          - Milk
+          - Stick
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Lazy yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Lazy'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Baby Lazy Panda:
+        Name: '&6Panda: Lazy (Baby)'
+        Material: head:7818b681cace1c641919f53edadecb142330d089a826b56219138c33b7a5e0db
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Default-Pet-Name: '&6Panda: Lazy (Baby)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Stick
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Lazy (Baby) yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Lazy (Baby)'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Worried Panda:
+        Name: '&5Panda: Worried'
+        Material: head:c8e921c57e54dd07337ffba629e72caf3850d836b76562b1bc3bc5949f2d41d
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Default-Pet-Name: '&5Panda: Worried'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Ball
+          Favourite:
+          - Apple
+          - Milk
+          - Stick
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Worried yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Worried'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Baby Worried Panda:
+        Name: '&6Panda: Worried (Baby)'
+        Material: head:c8e921c57e54dd07337ffba629e72caf3850d836b76562b1bc3bc5949f2d41d
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Default-Pet-Name: '&6Panda: Worried (Baby)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Stick
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Worried (Baby) yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Worried (Baby)'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Playful Panda:
+        Name: '&5Panda: Playful'
+        Material: head:b6463e64ce29764db3cb46806cee606afc24bdf0ce14b6660c270a96c787426
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Default-Pet-Name: '&5Panda: Playful'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Ball
+          Favourite:
+          - Apple
+          - Milk
+          - Stick
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Playful yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Playful'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Baby Playful Panda:
+        Name: '&6Panda: Playful (Baby)'
+        Material: head:b6463e64ce29764db3cb46806cee606afc24bdf0ce14b6660c270a96c787426
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Default-Pet-Name: '&6Panda: Playful (Baby)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Stick
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Playful (Baby) yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Playful (Baby)'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Brown Panda:
+        Name: '&5Panda: Brown'
+        Material: head:c5d0d45bf992b072cf5c513e06beefe8bdc809c8150f3d14b883796a7b74e406
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Default-Pet-Name: '&5Panda: Brown'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Ball
+          Favourite:
+          - Apple
+          - Milk
+          - Stick
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Brown yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Brown'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Baby Brown Panda:
+        Name: '&6Panda: Brown (Baby)'
+        Material: head:c5d0d45bf992b072cf5c513e06beefe8bdc809c8150f3d14b883796a7b74e406
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Default-Pet-Name: '&6Panda: Brown (Baby)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Stick
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Brown (Baby) yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Brown (Baby)'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Weak Panda:
+        Name: '&5Panda: Weak'
+        Material: head:5c2d25e956337d82791fa0e6617a40086f02d6ebfbfd5a6459889cf206fca787
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Default-Pet-Name: '&5Panda: Weak'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Ball
+          Favourite:
+          - Apple
+          - Milk
+          - Stick
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Weak yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Weak'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Baby Weak Panda:
+        Name: '&6Panda: Weak (Baby)'
+        Material: head:5c2d25e956337d82791fa0e6617a40086f02d6ebfbfd5a6459889cf206fca787
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Default-Pet-Name: '&6Panda: Weak (Baby)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Stick
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Weak (Baby) yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Weak (Baby)'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Aggressive Panda:
+        Name: '&5Panda: Aggressive'
+        Material: head:83fe1e782ae96a30336a03ef74681ce3a6905fcc673fa56c046aaee6aa28307d
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Default-Pet-Name: '&5Panda: Aggressive'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Ball
+          Favourite:
+          - Apple
+          - Milk
+          - Stick
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Aggressive yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Aggressive'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Baby Aggressive Panda:
+        Name: '&6Panda: Aggressive (Baby)'
+        Material: head:83fe1e782ae96a30336a03ef74681ce3a6905fcc673fa56c046aaee6aa28307d
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: false
+        CanBeFound: false
+        Purchasable: false
+        Default-Pet-Name: '&6Panda: Aggressive (Baby)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Stick
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Aggressive (Baby) yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Aggressive (Baby)'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+  Turtle:
+    Name: '&6Turtle'
+    Material: head:fc8593b91058ff24a0f6845130ed3e449569ce9c6b22fa9cd1ed7360b5045ea3
+    GUI-Name: Turtle
+    Enabled: true
+    Lore:
+    - '&7Click here to see all pets'
+    - '&7in the Turtle category!'
+    Types:
+      Turtle:
+        Name: '&5Turtle'
+        Material: head:fc8593b91058ff24a0f6845130ed3e449569ce9c6b22fa9cd1ed7360b5045ea3
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Turtle'
+        Move-Speed: 0.4
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Porkchop
+          - Angus Steak
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Raw Fish
+          - Water
+          - Ball
+          Favourite:
+          - Carrot
+          - Milk
+          - Stick
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Turtle yours'
+          - '&7today!'
+          Unlocked:
+          - '{PET_NAME}'
+          - '&7Type: &9Turtle'
+      Baby Turtle:
+        Name: '&6Turtle (Baby)'
+        Material: TURTLE_EGG
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Turtle (Baby)'
+        Move-Speed: 0.4
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Porkchop
+          - Angus Steak
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Raw Fish
+          - Water
+          - Stick
+          Favourite:
+          - Carrot
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Turtle (Baby) yours'
+          - '&7today!'
+          Unlocked:
+          - '{PET_NAME}'
+          - '&7Type: &9Turtle (Baby)'
+  Fox:
+    Name: '&6Fox'
+    Material: head:d8954a42e69e0881ae6d24d4281459c144a0d5a968aed35d6d3d73a3c65d26a
+    GUI-Name: Fox
+    Enabled: true
+    Lore:
+    - '&7Click here to see all pets'
+    - '&7in the Fox category!'
+    Types:
+      Red Fox:
+        Name: '&5Red Fox'
+        Material: head:d8954a42e69e0881ae6d24d4281459c144a0d5a968aed35d6d3d73a3c65d26a
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Red Fox'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Flower
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Frisbee
+          Favourite:
+          - Wheat
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Red Fox yours'
+          - '&7today!'
+          Unlocked:
+          - '{PET_NAME}'
+          - '&7Type: &9Red Fox'
+      Baby Red Fox:
+        Name: '&6Red Fox (Baby)'
+        Material: FOX_SPAWN_EGG
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Red Fox (Baby)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Flower
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Wheat
+          - Water
+          - Frisbee
+          Favourite:
+          - Cake
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Red Fox (Baby) yours'
+          - '&7today!'
+          Unlocked:
+          - '{PET_NAME}'
+          - '&7Type: &9Red Fox (Baby)'
+      Snow Fox:
+        Name: '&6Snow Fox'
+        Material: head:41436377eb4c4b4e39fb0e1ed8899fb61ee1814a9169b8d08729ef01dc85d1ba
+        Mystery Dust: 65
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Snow Fox'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Flower
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Frisbee
+          Favourite:
+          - Wheat
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Snow Fox yours'
+          - '&7today!'
+          Unlocked:
+          - '{PET_NAME}'
+          - '&7Type: &9Snow Fox'
+      Baby Snow Fox:
+        Name: '&6Snow Fox (Baby)'
+        Material: FOX_SPAWN_EGG
+        Mystery Dust: 80
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Snow Fox (Baby)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Flower
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Wheat
+          - Water
+          - Frisbee
+          Favourite:
+          - Cake
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Snow Fox (Baby) yours'
+          - '&7today!'
+          Unlocked:
+          - '{PET_NAME}'
+          - '&7Type: &9Snow Fox (Baby)'
+  Goat:
+    Name: '&6Goat'
+    Material: head:457a0d538fa08a7affe312903468861720f9fa34e86d44b89dcec5639265f03
+    GUI-Name: Goat
+    Enabled: true
+    Lore:
+    - '&7Click here to see all pets'
+    - '&7in the Goat category!'
+    Types:
+      Goat:
+        Name: '&5Goat'
+        Material: head:457a0d538fa08a7affe312903468861720f9fa34e86d44b89dcec5639265f03
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Goat'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Porkchop
+          - Angus Steak
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Carrot
+          - Water
+          - Ball
+          Favourite:
+          - Wheat
+          - Milk
+          - Stick
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Goat yours'
+          - '&7today!'
+          Unlocked:
+          - '{PET_NAME}'
+          - '&7Type: &9Goat'
+      Baby Goat:
+        Name: '&6Goat (Baby)'
+        Material: WHEAT
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Goat (Baby)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Porkchop
+          - Angus Steak
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Carrot
+          - Water
+          - Stick
+          Favourite:
+          - Wheat
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Goat (Baby) yours'
+          - '&7today!'
+          Unlocked:
+          - '{PET_NAME}'
+          - '&7Type: &9Goat (Baby)'

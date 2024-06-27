@@ -1,0 +1,85 @@
+# Edit Gap Jump in this file.
+# 
+# All items are customizable. Play around with the GameSettings and find the sweet spot for your server!
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: Gap Jump
+MenuItem:
+  page: 1
+  slot: 20
+  item: GRASS
+  name: '&a&lGap Jump'
+  lore:
+  - '&eОписание:'
+  - '&fПрыгайте с острова на остров в этой'
+  - '&fзабавной мини-игре. Щелкните, чтобы зарядиться,'
+  - '&fзатем щелкните ещё раз, чтобы запустить'
+  - '&fптичку на соседний остров!'
+  - ''
+  - '&aНажмите ЛКМ, чтобы начать игру'
+  - '&aНажмите ПКМ, чтобы увидеть топ'
+GameItems:
+  character:
+    head: http://textures.minecraft.net/texture/451b78fbe4df1d74cdf9aa495641d0aab9d5c0367c774dbb0e7facff36dff
+    name: '&eХиппо'
+  platformTop:
+    item: GRASS
+    name: '&a&l*'
+  platformBottom:
+    item: DIRT
+    name: '&a&l*'
+  cloud:
+    item: STAINED_GLASS_PANE:0
+    name: '&fОблако'
+  sun:
+    item: STAINED_GLASS_PANE:4
+    name: '&eСолнце'
+  background:
+    item: STAINED_GLASS_PANE:3
+    name: '&b&l*'
+  ChargeBars:
+    edgeLeft:
+      item: REDSTONE_TORCH_ON
+      name: '&c&l■'
+    edgeRight:
+      item: REDSTONE_TORCH_ON
+      name: '&c&l■'
+    default:
+      item: WOOL
+      name: '&f&l■'
+    '1':
+      item: WOOL:5
+      name: '&a&l■'
+    '2':
+      item: WOOL:5
+      name: '&a&l■'
+    '3':
+      item: WOOL:4
+      name: '&7&l■'
+    '4':
+      item: WOOL:4
+      name: '&7&l■'
+    '5':
+      item: WOOL:1
+      name: '&6&l■'
+    '6':
+      item: WOOL:1
+      name: '&6&l■'
+    '7':
+      item: WOOL:14
+      name: '&4&l■'
+GameSettings:
+  jumpSpeed: 5
+  chargeBarSpeed: 5
+  screenMoveLeftSpeed: 4
+  screenMoveLeftDelay: 3
+Controls:
+  up:
+    slot: 22
+    head: http://textures.minecraft.net/texture/a99aaf2456a6122de8f6b62683f2bc2eed9abb81fd5bea1b4c23a58156b669
+    name: '&aНажмите, чтобы зарядить'
+    lore:
+    - '&fНажмите ещё раз, чтобы запустить'

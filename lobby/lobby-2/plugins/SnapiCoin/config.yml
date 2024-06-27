@@ -1,0 +1,7 @@
+alias:
+  set-command: 'admin set'
+  main-command: 'snapers|coin|coins'
+  withdraw-command: 'admin withdraw'
+  deposit-command: 'admin deposit'
+
+console-name-for-sender: 'console'

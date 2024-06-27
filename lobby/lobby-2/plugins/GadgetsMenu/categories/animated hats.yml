@@ -1,0 +1,81 @@
+Animated-Hats:
+  Siren:
+    Name: '&9Сирена'
+    Mystery Dust: 20000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Traffic Light:
+    Name: '&9Светофор'
+    Mystery Dust: 22000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Sammy The Cookie:
+    Name: '&9Печенька'
+    Mystery Dust: 25000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Chroma Slime:
+    Name: '&9Цветной Слизень'
+    Mystery Dust: 28000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Color Block:
+    Name: '&9Цветной блок'
+    Mystery Dust: 28000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Joe the Penguin:
+    Name: '&9Пингвин'
+    Mystery Dust: 25000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Comet the Reindeer:
+    Name: '&9Олень (Комета)'
+    Mystery Dust: 28000
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Broken TV:
+    Name: '&5Сломанный ТВ'
+    Mystery Dust: 40000
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: false
+    Purchasable: true
+    Lore:
+      Locked: '&7Можно только купить!'
+      Unlocked: '&7Можно только купить!'

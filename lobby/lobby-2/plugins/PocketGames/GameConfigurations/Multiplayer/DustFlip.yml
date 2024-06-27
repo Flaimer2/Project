@@ -1,0 +1,40 @@
+# Edit DustFlip in this file.
+# 
+# All items are customizable. Once a player reaches the WinningScore the game ends.
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: Что выпадет?
+MenuItem:
+  page: 1
+  slot: 22
+  item: REDSTONE
+  name: '&c&lЧто выпадет?'
+  lore:
+  - '&eОписание:'
+  - '&fСуть игры заключается в том, что'
+  - '&fВы и ваш соперник выбираете, что'
+  - '&fвероятнее всего выпадет. Выигрывает'
+  - '&fтот, кто угадал что выпадет 3 раза.'
+  - ''
+  - '&aНажмите, чтобы начать игру'
+GameItems:
+  background:
+    item: STAINED_GLASS_PANE:3
+    name: '&b&l█'
+  selectorBorder:
+    item: STAINED_GLASS_PANE:7
+    name: '&7&l█'
+  item1:
+    item: REDSTONE
+    name: '&cКрасная пыль'
+  item2:
+    item: GLOWSTONE_DUST
+    name: '&eСветокаменная пыль'
+GameSettings:
+  WinningScore: 3
+Inactivity:
+  enabled: true
+  duration: 30

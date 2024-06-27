@@ -1,0 +1,12 @@
+location: lobby:-275.500:35.000:-154.500
+enabled: true
+display-range: 256
+update-range: 64
+update-interval: 80
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&c&lСделать рейтинги!!!'
+    height: 0.0
+  actions: {}

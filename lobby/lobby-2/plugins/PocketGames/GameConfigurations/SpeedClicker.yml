@@ -1,0 +1,36 @@
+# Edit SpeedClicker in this file.
+# 
+# All items are customizable. Play around with the GameSettings and find the sweet spot for your server!
+# The maximum supported game duration is 99 seconds.
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: Кликер
+MenuItem:
+  page: 2
+  slot: 20
+  head: http://textures.minecraft.net/texture/aacacb836c5e428b49b5d224cab22828efe2f6c704f759364d71c656e301420
+  name: '&c&lКликер'
+  lore:
+  - '&eОписание:'
+  - '&fКак быстро Вы можете кликать? Не знаете?'
+  - '&fПроверьте это с помощью этой простой'
+  - '&fигры. Нажимайте на кнопку как можно'
+  - '&fбыстрее в течении 20 секунд.'
+  - ''
+  - '&aНажмите ЛКМ, чтобы начать игру'
+  - '&aНажмите ПКМ, чтобы увидеть топ'
+GameItems:
+  border:
+    item: STAINED_CLAY:9
+    name: '&9&l*'
+  background:
+    item: STAINED_GLASS_PANE:14
+    name: '&c&l*'
+  button:
+    item: STONE_BUTTON
+    name: '&a&lЖмите!'
+GameSettings:
+  gameDuration: 20

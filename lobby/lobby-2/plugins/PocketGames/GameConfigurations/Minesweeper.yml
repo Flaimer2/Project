@@ -1,0 +1,45 @@
+# Edit MineSweeper in this file.
+# 
+# All items are customizable. Play around with the GameSettings and find the sweet spot for your server!
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: Сапёр
+MenuItem:
+  page: 2
+  slot: 23
+  item: TNT
+  name: '&4&lСапёр'
+  lore:
+  - '&eОписание:'
+  - '&fСапёр – это однопользовательская'
+  - '&fигра-головоломка. Цель игры – открыть'
+  - '&fвсе ячейки, не задев ни одной мины.'
+  - '&fВ игре есть подсказки, которые показывают'
+  - '&fколичество мин рядом с вашей ячейкой'
+  - ''
+  - '&aНажмите ЛКМ, чтобы начать игру'
+  - '&aНажмите ПКМ, чтобы увидеть топ'
+GameItems:
+  covered:
+    item: STAINED_GLASS_PANE:7
+    name: '&8&l█'
+    lore:
+    - '&aНажмите ЛКМ, чтобы сделать ход'
+    - '&aНажмите ПКМ, чтобы поставить метку'
+  uncovered:
+    item: STAINED_GLASS_PANE:8
+    name: '&7&l█'
+  flag:
+    item: REDSTONE_TORCH_ON
+    name: '&c&l█'
+    lore:
+    - '&aНажмите ЛКМ, чтобы сделать ход'
+    - '&aНажмите ПКМ, чтобы убрать метку'
+  mine:
+    item: TNT
+    name: '&4&lМина'
+GameSettings:
+  mines: 6

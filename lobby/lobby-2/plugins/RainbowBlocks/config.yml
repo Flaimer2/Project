@@ -1,0 +1,80 @@
+#
+#  _____       _       _                   ____  _            _        
+# |  __ \     (_)     | |                 |  _ \| |          | |       
+# | |__) |__ _ _ _ __ | |__   _____      _| |_) | | ___   ___| | _____ 
+# |  _  // _` | | '_ \| '_ \ / _ \ \ /\ / /  _ <| |/ _ \ / __| |/ / __|
+# | | \ \ (_| | | | | | |_) | (_) \ V  V /| |_) | | (_) | (__|   <\__ \
+# |_|  \_\__,_|_|_| |_|_.__/ \___/ \_/\_/ |____/|_|\___/ \___|_|\_\___/
+#                                                                      
+#                                                                      
+#
+# Thanks for downloading my plugin!  
+# By Husly Made With Love <3         
+#
+# Configurations Version: 6.0
+# Plugin Version: 13.0
+#
+
+# This setting is for if you want the player to shift sync any block.
+# If its set to true, that means you dont need to shift sync
+# If its false, you need to shift sync.
+RainbowSync: 
+   Shift: true
+
+Messages:
+   Prefix: "&6RainBowBlocks &6 " # Prefix Message for /rainbow
+   Enable: "&aYou Have Toggled On Rainbow Blocks!" # Enable Message for /rainbow
+   Disable: "&cYou Have Toggled Off Rainbow Blocks" # Disables Message for /rainbow
+   Reload: "&aThe Configuration has been successfully reloaded." # Reload Message for when you reload the plugin
+   NoPerm: "&c&lERROR &f- &cYou do not have permissions to use this :("
+
+#
+# <!> Settings For The Changing Speed
+# <!> The Plugin Runs in ticks, so here are some recommended tick speeds.
+# <!> NOTE: Recommend 10 for simple non fast usage.
+# <!> Note: Any changes to the Speed down below, It is required for you to Restart the server to apply the
+# Changes.
+# ==============
+# <!> Plugin Default / Recommendations: 10
+# <!> Plugin Fast Changing: 1 
+# <!> Plugin Speed Normal: 5
+# <!> Plugin Speed Crazy: 15
+#
+Settings:
+   Time: 10 
+   
+#
+# ATTENTION, 1.15.2 to 1.16.2, IF you get a error from /rainbow, change the Sound's to one of these for all of them
+#
+# Get any of the sounds you want from here!
+#
+# 1.15.2 - 1.16.2 https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+# 1.12 + Sounds: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+# 1.8.8 Sounds: https://helpch.at/docs/1.8.8/index.html?org/bukkit/Sound.html
+#
+
+Sound:
+  Enable: "ORB_PICKUP" #/rainbow On sound
+  Disable: "BAT_DEATH" #/rainbow off sound
+  Reload: "LEVEL_UP" #/rainbow reload 
+  DeniedPermission: "CREEPER_HISS" 
+  Help: "FIRE_IGNITE"
+  Version: "ENDERDRAGON_DEATH"
+  
+# This is the /rainbow help customize it all you want!
+Help:
+  - "&a&l       &0&l[&1&lR&2&la&3&li&4&ln&5&lb&6&lo&9&lw&d&lB&b&ll&e&lo&8&lc&7&lk&f&ls&0&l]       "
+  - " "
+  - "&4\u25cf &3&lCommands &4\u25cf"
+  - " "
+  - "&4&l» &6/rainbow - &aToggles Rainbow."
+  - "&4&l» &6/rainbow reload -  &aReloads Configurations.."
+  - "&4&l» &6/rainbow help - &aSends you this help msg."
+  - "&4&l» &6/rainbow ver/version - &aSends you the current version and config version."
+  - " "
+  - "&4\u25cf &3&lPermissions &4\u25cf"
+  - " "
+  - "&4&l» &arainbowblocks.use - &aAllows you to use the /rainbow commands."
+  - "&4&l» &arainbowblocks.update - &aAllows you to see the updates that come."
+  - "&6"
+  - "&3Developed by &bHusly"

@@ -1,0 +1,135 @@
+[13:06:59] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Booting up Velocity 3.3.0-SNAPSHOT (git-a72aef52-b375)...
+[13:06:59] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading localizations...
+[13:07:00] [main/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Connections will use NIO channels, Java compression, Java ciphers
+[13:07:00] [main/WARN] [com.velocitypowered.proxy.config.VelocityConfiguration]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[13:07:00] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading plugins...
+[13:07:02] [main/INFO] [lastloginapi]: Loading libraries of LastLoginAPI v1.7.4, this may take a while
+[13:07:02] [main/INFO] [lastloginapi]: Verifying checksum for jar-relocator
+[13:07:02] [main/INFO] [lastloginapi]: Verifying checksum for asm
+[13:07:02] [main/INFO] [lastloginapi]: Verifying checksum for asm-commons
+[13:07:02] [main/INFO] [lastloginapi]: Verifying checksum for gson
+[13:07:02] [main/INFO] [lastloginapi]: Verifying checksum for jdbi3-core
+[13:07:02] [main/INFO] [lastloginapi]: Verifying checksum for geantyref
+[13:07:03] [main/INFO] [lastloginapi]: Verifying checksum for caffeine
+[13:07:03] [main/INFO] [lastloginapi]: Verifying checksum for jdbi3-stringtemplate4
+[13:07:03] [main/INFO] [lastloginapi]: Verifying checksum for ST4
+[13:07:03] [main/INFO] [lastloginapi]: Verifying checksum for antlr-runtime
+[13:07:03] [main/INFO] [lastloginapi]: Verifying checksum for jdbi3-sqlobject
+[13:07:03] [main/INFO] [lastloginapi]: Verifying checksum for slf4j-api
+[13:07:03] [main/INFO] [lastloginapi]: Verifying checksum for slf4j-simple
+[13:07:04] [main/INFO] [lastloginapi]: Verifying checksum for HikariCP
+[13:07:04] [main/INFO] [lastloginapi]: Verifying checksum for mariadb-java-client
+[13:07:04] [main/INFO] [lastloginapi]: Verifying checksum for mysql-connector-j
+[13:07:04] [main/INFO] [lastloginapi]: Verifying checksum for postgresql
+[13:07:04] [main/INFO] [lastloginapi]: Verifying checksum for h2
+[13:07:04] [main/INFO] [lastloginapi]: Verifying checksum for sqlite-jdbc
+[13:07:05] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin lastloginapi 1.7.4 by AlessioDP
+[13:07:05] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin luckperms 5.4.117 by Luck
+[13:07:05] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin protocolize v2 by Exceptionflug
+[13:07:07] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin protocolizelegacysupport 1.0.0 by Exceptionflug
+[13:07:07] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin serverutils 3.5.4 by FrankHeijden
+[13:07:07] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin snapilibrary 1.4.1 by Flaimer
+[13:07:07] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin snapibalancer 1.3 by Flaimer
+[13:07:07] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin snapistaff 1.0.0 by SnapiX
+[13:07:07] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin snapiuuid 1.0.0 by Flaimer
+[13:07:07] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loaded 9 plugins
+[13:07:08] [Velocity Async Event Executor - #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:         __    
+[13:07:08] [Velocity Async Event Executor - #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:   |    |__)   LuckPerms v5.4.117
+[13:07:08] [Velocity Async Event Executor - #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]:   |___ |      Running on Velocity - Velocity
+[13:07:08] [Velocity Async Event Executor - #0/INFO] [com.velocitypowered.proxy.console.VelocityConsole]: 
+[13:07:08] [Velocity Async Event Executor - #0/INFO] [luckperms]: Loading configuration...
+[13:07:09] [Velocity Async Event Executor - #0/INFO] [luckperms]: Loading storage provider... [MARIADB]
+[13:07:09] [Velocity Async Event Executor - #0/INFO] [me.lucko.luckperms.lib.hikari.HikariDataSource]: luckperms-hikari - Starting...
+[13:07:09] [Velocity Async Event Executor - #0/INFO] [me.lucko.luckperms.lib.hikari.HikariDataSource]: luckperms-hikari - Start completed.
+[13:07:10] [Velocity Async Event Executor - #0/INFO] [luckperms]: Loading messaging service... [REDIS]
+[13:07:10] [Velocity Async Event Executor - #0/INFO] [luckperms]: Loading internal permission managers...
+[13:07:10] [Velocity Async Event Executor - #0/INFO] [luckperms]: Performing initial data load...
+[13:07:10] [Velocity Async Event Executor - #0/INFO] [luckperms]: Successfully enabled. (took 3437ms)
+[13:07:10] [Velocity Async Event Executor - #0/INFO] [lastloginapi]: Initializing LastLoginAPI v1.7.4
+[13:07:13] [Velocity Async Event Executor - #0/ERROR] [com.velocitypowered.proxy.console.VelocityConsole]: [Velocity Async Event Executor - #0] INFO com.alessiodp.lastloginapi.libs.hikari.HikariDataSource - HikariPool-1 - Starting...
+[13:07:14] [Velocity Async Event Executor - #0/ERROR] [com.velocitypowered.proxy.console.VelocityConsole]: [Velocity Async Event Executor - #0] INFO com.alessiodp.lastloginapi.libs.hikari.pool.HikariPool - HikariPool-1 - Added connection com.alessiodp.lastloginapi.libs.mysql.cj.jdbc.ConnectionImpl@4ac1f21d
+[13:07:14] [Velocity Async Event Executor - #0/ERROR] [com.velocitypowered.proxy.console.VelocityConsole]: [Velocity Async Event Executor - #0] INFO com.alessiodp.lastloginapi.libs.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[13:07:15] [Velocity Async Event Executor - #0/INFO] [lastloginapi]: LastLoginAPI v1.7.4 enabled
+[13:07:15] [Velocity Async Event Executor - #0/INFO] [protocolize]: ======= PROTOCOLIZE =======
+[13:07:15] [Velocity Async Event Executor - #0/INFO] [protocolize]: Version 2.3.3:1029 by Exceptionflug
+[13:07:15] [Velocity Async Event Executor - #0/INFO] [protocolize]: Swap channel initializers (ignore the following two warnings)...
+[13:07:15] [Velocity Async Event Executor - #0/INFO] [dev.simplix.protocolize.velocity.netty.ProtocolizeBackendChannelInitializer]: Respecting the previous registered BackendChannelInitializer: com.velocitypowered.proxy.network.BackendChannelInitializer
+[13:07:15] [Velocity Async Event Executor - #0/WARN] [com.velocitypowered.proxy.network.ConnectionManager]: The backend channel initializer has been replaced by dev.simplix.protocolize.velocity.ProtocolizePlugin.swapChannelInitializers(ProtocolizePlugin.java:133)
+[13:07:15] [Velocity Async Event Executor - #0/INFO] [dev.simplix.protocolize.velocity.netty.ProtocolizeServerChannelInitializer]: Respecting the previous registered ServerChannelInitializer: com.velocitypowered.proxy.network.ServerChannelInitializer
+[13:07:15] [Velocity Async Event Executor - #0/WARN] [com.velocitypowered.proxy.network.ConnectionManager]: The server channel initializer has been replaced by dev.simplix.protocolize.velocity.ProtocolizePlugin.swapChannelInitializers(ProtocolizePlugin.java:135)
+[13:07:15] [Velocity Async Event Executor - #0/INFO] [protocolize]: Swapped channel initializers
+[13:07:18] [Velocity Async Event Executor - #0/INFO] [Protocolize]: Enabled module dev.simplix.protocolize.data.DataModule
+[13:07:18] [Velocity Async Event Executor - #0/INFO] [ProtocolizeLegacySupport]: Legacy support enabled.
+[13:07:18] [Velocity Async Event Executor - #0/INFO] [Protocolize]: Enabled module dev.simplix.protocolize.legacy.LegacyModule
+[13:07:19] [Velocity Async Event Executor - #0/ERROR] [com.velocitypowered.proxy.event.VelocityEventManager]: Couldn't pass ProxyInitializeEvent to serverutils 3.5.4
+com.electronwill.nightconfig.core.io.ParsingException: Not enough data available
+	at com.electronwill.nightconfig.core.io.ParsingException.notEnoughData(ParsingException.java:22) ~[server.jar:3.3.0-SNAPSHOT (git-a72aef52-b375)]
+	at com.electronwill.nightconfig.core.io.ReaderInput.directReadChar(ReaderInput.java:36) ~[server.jar:3.3.0-SNAPSHOT (git-a72aef52-b375)]
+	at com.electronwill.nightconfig.core.io.AbstractInput.readChar(AbstractInput.java:49) ~[server.jar:3.3.0-SNAPSHOT (git-a72aef52-b375)]
+	at com.electronwill.nightconfig.core.io.AbstractInput.readCharsUntil(AbstractInput.java:123) ~[server.jar:3.3.0-SNAPSHOT (git-a72aef52-b375)]
+	at com.electronwill.nightconfig.toml.TableParser.parseKey(TableParser.java:167) ~[server.jar:3.3.0-SNAPSHOT (git-a72aef52-b375)]
+	at com.electronwill.nightconfig.toml.TableParser.parseDottedKey(TableParser.java:146) ~[server.jar:3.3.0-SNAPSHOT (git-a72aef52-b375)]
+	at com.electronwill.nightconfig.toml.TableParser.parseNormal(TableParser.java:56) ~[server.jar:3.3.0-SNAPSHOT (git-a72aef52-b375)]
+	at com.electronwill.nightconfig.toml.TomlParser.parse(TomlParser.java:59) ~[server.jar:3.3.0-SNAPSHOT (git-a72aef52-b375)]
+	at com.electronwill.nightconfig.toml.TomlParser.parse(TomlParser.java:52) ~[server.jar:3.3.0-SNAPSHOT (git-a72aef52-b375)]
+	at com.electronwill.nightconfig.core.io.ConfigParser.parse(ConfigParser.java:113) ~[server.jar:3.3.0-SNAPSHOT (git-a72aef52-b375)]
+	at com.electronwill.nightconfig.core.io.ConfigParser.parse(ConfigParser.java:219) ~[server.jar:3.3.0-SNAPSHOT (git-a72aef52-b375)]
+	at com.electronwill.nightconfig.core.io.ConfigParser.parse(ConfigParser.java:202) ~[server.jar:3.3.0-SNAPSHOT (git-a72aef52-b375)]
+	at com.electronwill.nightconfig.core.file.WriteAsyncFileConfig.load(WriteAsyncFileConfig.java:138) ~[server.jar:3.3.0-SNAPSHOT (git-a72aef52-b375)]
+	at com.electronwill.nightconfig.core.file.SimpleCommentedFileConfig.load(SimpleCommentedFileConfig.java:38) ~[server.jar:3.3.0-SNAPSHOT (git-a72aef52-b375)]
+	at net.frankheijden.serverutils.velocity.entities.VelocityTomlConfig.<init>(VelocityTomlConfig.java:26) ~[?:?]
+	at net.frankheijden.serverutils.velocity.entities.VelocityResourceProvider.load(VelocityResourceProvider.java:44) ~[?:?]
+	at net.frankheijden.serverutils.common.config.ServerUtilsConfig.init(ServerUtilsConfig.java:190) ~[?:?]
+	at net.frankheijden.serverutils.common.config.ServerUtilsResource.<init>(ServerUtilsResource.java:25) ~[?:?]
+	at net.frankheijden.serverutils.common.config.ConfigResource.<init>(ConfigResource.java:10) ~[?:?]
+	at net.frankheijden.serverutils.common.entities.ServerUtilsPlugin.reload(ServerUtilsPlugin.java:182) ~[?:?]
+	at net.frankheijden.serverutils.common.entities.ServerUtilsPlugin.enable(ServerUtilsPlugin.java:154) ~[?:?]
+	at net.frankheijden.serverutils.velocity.ServerUtils.onEnable(ServerUtils.java:86) ~[?:?]
+	at net.frankheijden.serverutils.velocity.Lmbda$7.execute(Unknown Source) ~[?:?]
+	at com.velocitypowered.proxy.event.UntargetedEventHandler$VoidHandler.lambda$buildHandler$0(UntargetedEventHandler.java:56) ~[server.jar:3.3.0-SNAPSHOT (git-a72aef52-b375)]
+	at com.velocitypowered.proxy.event.VelocityEventManager.fire(VelocityEventManager.java:598) ~[server.jar:3.3.0-SNAPSHOT (git-a72aef52-b375)]
+	at com.velocitypowered.proxy.event.VelocityEventManager.lambda$fire$5(VelocityEventManager.java:479) ~[server.jar:3.3.0-SNAPSHOT (git-a72aef52-b375)]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+[13:07:19] [Velocity Async Event Executor - #0/ERROR] [com.velocitypowered.proxy.event.VelocityEventManager]: Couldn't pass ProxyInitializeEvent to snapistaff 1.0.0
+java.lang.NoClassDefFoundError: co/aikar/commands/VelocityCommandManager
+	at ru.snapix.snapistaff.SnapiStaff.onEnable(SnapiStaff.kt:33) ~[?:?]
+	at ru.snapix.snapistaff.Lmbda$11.execute(Unknown Source) ~[?:?]
+	at com.velocitypowered.proxy.event.UntargetedEventHandler$VoidHandler.lambda$buildHandler$0(UntargetedEventHandler.java:56) ~[server.jar:3.3.0-SNAPSHOT (git-a72aef52-b375)]
+	at com.velocitypowered.proxy.event.VelocityEventManager.fire(VelocityEventManager.java:598) ~[server.jar:3.3.0-SNAPSHOT (git-a72aef52-b375)]
+	at com.velocitypowered.proxy.event.VelocityEventManager.lambda$fire$5(VelocityEventManager.java:479) ~[server.jar:3.3.0-SNAPSHOT (git-a72aef52-b375)]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+Caused by: java.lang.ClassNotFoundException: co.aikar.commands.VelocityCommandManager
+	at com.velocitypowered.proxy.plugin.PluginClassLoader.loadClass0(PluginClassLoader.java:87) ~[server.jar:3.3.0-SNAPSHOT (git-a72aef52-b375)]
+	at com.velocitypowered.proxy.plugin.PluginClassLoader.loadClass(PluginClassLoader.java:64) ~[server.jar:3.3.0-SNAPSHOT (git-a72aef52-b375)]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	... 8 more
+[13:07:20] [Netty NIO Boss #0/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[13:07:20] [main/INFO] [com.velocitypowered.proxy.Velocity]: Done (24,61s)!
+[13:07:20] [DefaultDispatcher-worker-2/INFO] [snapibalancer]: Success subscribed to channel: balancer-connect
+[13:12:18] [Netty NIO Worker #1/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] Danuk16 (/127.0.0.1:52595) has connected
+[13:12:18] [Netty NIO Worker #1/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] Danuk16 -> auth has connected
+[13:12:28] [Netty NIO Worker #1/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] Danuk16 -> lobby-2 has connected
+[13:12:29] [Netty NIO Worker #1/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] Danuk16 -> auth has disconnected
+[14:35:36] [Netty NIO Worker #1/INFO] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] Danuk16 (/127.0.0.1:52595): kicked from server lobby-2: §aСервер перезагружается
+[14:35:36] [Netty NIO Worker #1/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] Danuk16 -> lobby-2 has disconnected
+[14:35:36] [Netty NIO Worker #1/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] Danuk16 -> auth has connected
+[15:30:23] [Netty NIO Worker #1/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] Danuk16 -> lobby-2 has connected
+[15:30:23] [Netty NIO Worker #1/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] Danuk16 -> auth has disconnected
+[15:33:12] [Netty NIO Worker #1/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] Danuk16 (/127.0.0.1:52595) has disconnected
+[15:33:12] [Netty NIO Worker #1/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] Danuk16 -> lobby-2 has disconnected
+[16:40:00] [Thread-15/INFO] [com.velocitypowered.proxy.VelocityServer]: Shutting down the proxy...
+[16:40:00] [Thread-15/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Closing endpoint /0.0.0.0:25565
+[16:40:00] [Velocity Async Event Executor - #0/INFO] [lastloginapi]: Disabling LastLoginAPI
+[16:40:00] [Velocity Async Event Executor - #0/ERROR] [com.velocitypowered.proxy.console.VelocityConsole]: [Velocity Async Event Executor - #0] INFO com.alessiodp.lastloginapi.libs.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[16:40:00] [Velocity Async Event Executor - #0/ERROR] [com.velocitypowered.proxy.console.VelocityConsole]: [Velocity Async Event Executor - #0] INFO com.alessiodp.lastloginapi.libs.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[16:40:00] [Velocity Async Event Executor - #0/INFO] [lastloginapi]: LastLoginAPI disabled
+[16:40:00] [Velocity Async Event Executor - #0/INFO] [luckperms]: Starting shutdown process...
+[16:40:00] [Velocity Async Event Executor - #0/INFO] [luckperms]: Closing messaging service...
+[16:40:00] [Velocity Async Event Executor - #0/INFO] [luckperms]: Closing storage...
+[16:40:00] [Velocity Async Event Executor - #0/INFO] [me.lucko.luckperms.lib.hikari.HikariDataSource]: luckperms-hikari - Shutdown initiated...
+[16:40:00] [Velocity Async Event Executor - #0/INFO] [me.lucko.luckperms.lib.hikari.HikariDataSource]: luckperms-hikari - Shutdown completed.
+[16:40:00] [Velocity Async Event Executor - #0/INFO] [luckperms]: Goodbye!

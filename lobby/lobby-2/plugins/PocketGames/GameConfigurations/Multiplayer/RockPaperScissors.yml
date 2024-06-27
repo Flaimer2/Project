@@ -1,0 +1,43 @@
+# Edit Rock Paper Scissors in this file.
+# 
+# All items are customizable. The BestOf has to be an uneven number and a max of 9.
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: Камень-ножницы-бумага
+MenuItem:
+  page: 1
+  slot: 21
+  item: SHEARS
+  name: '&a&lКамень-ножницы-бумага'
+  lore:
+  - '&eОписание:'
+  - '&fСыграйте в классическую игру'
+  - '&f"Камень-ножницы-бумага" против'
+  - '&fдругого игрока. Сделайте свой ход'
+  - '&fи ждите, пока Ваш противник сходит.'
+  - ''
+  - '&aНажмите, чтобы начать игру'
+GameItems:
+  background:
+    item: STAINED_GLASS_PANE:3
+    name: '&b&l█'
+  overlay:
+    item: STAINED_GLASS_PANE:15
+    name: '&0&l█'
+  rock:
+    item: COBBLESTONE
+    name: '&8Камень'
+  paper:
+    item: PAPER
+    name: '&fБумага'
+  scissors:
+    item: SHEARS
+    name: '&7Ножницы'
+GameSettings:
+  BestOf: 3
+Inactivity:
+  enabled: true
+  duration: 30

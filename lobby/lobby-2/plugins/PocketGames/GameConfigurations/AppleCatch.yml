@@ -1,0 +1,92 @@
+# Edit AppleCatch in this file.
+# 
+# You can change the point value of the three different apples as the appearance of all items, lives, and controls.
+# You can add more lives by simply adding more paths. (Increment each path by 1: '1', '2', '3', '4', '5', '6' etc.)
+# At least one life is needed. Remember to add a slot: if you add more lives.
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: Яблочный улов
+MenuItem:
+  page: 1
+  slot: 24
+  item: GOLDEN_APPLE
+  name: '&c&lЯблочный улов'
+  lore:
+  - '&eОписание:'
+  - '&fПоймайте как можно больше яблок.'
+  - '&fЧем больше поймаете – тем сложнее будет'
+  - '&fигра! Так же есть супер яблоки, которые'
+  - '&fдают намного больше очков, чем обычные.'
+  - ''
+  - '&aНажмите ЛКМ, чтобы начать игру'
+  - '&aНажмите ПКМ, чтобы увидеть топ'
+GameItems:
+  basket:
+    head: http://textures.minecraft.net/texture/31385a7afb3552faf71c2c5a8e6a5b1d2e672c786e8074433eb5839ace83b4
+    name: '&7&lКорзинка'
+  grass:
+    item: DOUBLE_PLANT:2
+    name: '&2&l*'
+  trunk:
+    item: STAINED_GLASS_PANE:12
+    name: '&8&l*'
+  leaves:
+    item: STAINED_GLASS_PANE:5
+    name: '&a&l*'
+  cloud:
+    item: STAINED_GLASS_PANE:0
+    name: '&fОблако'
+  sun:
+    item: STAINED_GLASS_PANE:4
+    name: '&7Солнце'
+  background:
+    item: STAINED_GLASS_PANE:3
+    name: '&b&l*'
+  apples:
+    normal:
+      points: 1
+      item: APPLE
+      name: '&a&lЯблоко'
+      lore:
+      - '&a1 очко'
+    super:
+      points: 3
+      item: GOLDEN_APPLE
+      name: '&b&lСупер-яблоко'
+      lore:
+      - '&a3 очка'
+    god:
+      points: 5
+      item: GOLDEN_APPLE:1
+      name: '&d&lБожественное яблоко'
+      lore:
+      - '&a5 очков'
+  lives:
+    '1':
+      slot: 9
+      head: http://textures.minecraft.net/texture/76fdd4b13d54f6c91dd5fa765ec93dd9458b19f8aa34eeb5c80f455b119f278
+      name: '&4❤'
+    '2':
+      slot: 10
+      head: http://textures.minecraft.net/texture/76fdd4b13d54f6c91dd5fa765ec93dd9458b19f8aa34eeb5c80f455b119f278
+      name: '&4❤'
+    '3':
+      slot: 11
+      head: http://textures.minecraft.net/texture/76fdd4b13d54f6c91dd5fa765ec93dd9458b19f8aa34eeb5c80f455b119f278
+      name: '&4❤'
+GameSettings:
+  gameSpeed: 8
+  maxGameSpeed: 5
+  appleSpawnRate: 5
+Controls:
+  left:
+    slot: 21
+    head: http://textures.minecraft.net/texture/5f133e91919db0acefdc272d67fd87b4be88dc44a958958824474e21e06d53e6
+    name: '&aВлево'
+  right:
+    slot: 23
+    head: http://textures.minecraft.net/texture/e3fc52264d8ad9e654f415bef01a23947edbccccf649373289bea4d149541f70
+    name: '&aВправо'

@@ -1,0 +1,287 @@
+# Edit Cookie Clicker in this file.
+# 
+# You can change slot, price, basePrice, cpc, and cps as you go without messing up old saves.
+# All values are recalculated when the game is opened which is why you are able to do this.
+# If you do change these values please use /reload or /restart. NOT /pg reload.
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: Cookie Clicker
+MenuItem:
+  page: 1
+  slot: 32
+  item: COOKIE
+  name: '&d&lCookie Clicker'
+  lore:
+  - '&eОписание:'
+  - '&fМини-версия популярной в других'
+  - '&fстранах игры Cookie Clicker. Покупайте'
+  - '&fздания и улучшения, чтобы добывать огромное'
+  - '&fколичество вкусного шоколадного печенья'
+  - ''
+  - '&aНажмите ЛКМ, чтобы начать игру'
+  - '&aНажмите ПКМ, чтобы увидеть топ'
+GameItems:
+  background:
+    item: STAINED_GLASS_PANE:11
+    name: '&9&l*'
+  edge:
+    item: LOG
+    name: '&8&l*'
+  mainCookie:
+    item: COOKIE
+    name: '&a&lНажмите на меня'
+    glow: true
+  fallingCookie:
+    item: COOKIE
+    name: '&7&l*'
+  info:
+    slot: 13
+    item: PAPER
+    name: '&9&l&oСтатистика:'
+    lore:
+    - '&fСейчас есть: &a%cookiesCurrent% печенья'
+    - '&fВсего добыто: &a%cookiesTotal% печенья'
+    - '&fCpc: &a%cpc% печенья за клик'
+    - '&fCps: &a%cps% печенья в секунду'
+    - '&fНаигранно: &a%played%'
+    glow: true
+  save:
+    slot: 22
+    item: BOOK_AND_QUILL
+    name: '&a&lНажмите, чтобы сохранить'
+    lore:
+    - '&fНе забудьте сохраниться перед'
+    - '&fзакрытием инвертаря. Закончите'
+    - '&fигру, чтобы обновить Ваш рейтинг'
+    - ''
+    - '&a&oАвтосохранение каждые 30 секунд'
+  reset:
+    slot: 31
+    item: TNT
+    name: '&c&lСбросить прогресс'
+    lore:
+    - '&fЭто действие отменить &cнельзя&f!'
+    - '&fНажмите три раза, чтобы'
+    - '&fсбросить весь прогресс'
+  Milk:
+    normal:
+      item: STAINED_GLASS_PANE:0
+      name: '&f&l*'
+    chocolate:
+      item: STAINED_GLASS_PANE:12
+      name: '&f&l*'
+  Buildings:
+    building1:
+      slot: 9
+      cps: 0.1
+      basePrice: 15
+      head: http://textures.minecraft.net/texture/532a5838fd9cd4c977f15071d6997ff5c7f956074a2da571a19ccefb03c57
+      name: '&aАвтокликер &7(У вас: %amount%)'
+      lore:
+      - '&fАвтокликер кликает один'
+      - '&fраз в 10 секунд'
+      - ''
+      - '&fCps: &a0,10'
+      - '&fСтоимость: &a%price%'
+    building2:
+      slot: 10
+      cps: 1
+      basePrice: 100
+      head: http://textures.minecraft.net/texture/dbc2b22444eb38bd29cbeecafa33b936f92ad1e8637bb11f84f868bf3d68a4
+      name: '&aБабушка &7(У вас: %amount%)'
+      lore:
+      - '&fМилая бабушка может'
+      - '&fиспечь много печенья'
+      - ''
+      - '&fCps: &a1,00'
+      - '&fСтоимость: &a%price%'
+    building3:
+      slot: 11
+      cps: 8
+      basePrice: 1100
+      item: WOOD_HOE
+      name: '&aФерма &7(У вас: %amount%)'
+      lore:
+      - '&fНа ферме можно сделать'
+      - '&fпобольше печенья'
+      - ''
+      - '&fCps: &a8,00'
+      - '&fСтоимость: &a%price%'
+      itemFlags:
+      - HIDE_ATTRIBUTES
+    building4:
+      slot: 18
+      cps: 47
+      basePrice: 12000
+      item: STONE_PICKAXE
+      name: '&aШахта &7(У вас: %amount%)'
+      lore:
+      - '&fПеченье добывают везде...'
+      - '&fДаже в шахтах'
+      - ''
+      - '&fCps: &a47,00'
+      - '&fСтоимость: &a%price%'
+      itemFlags:
+      - HIDE_ATTRIBUTES
+    building5:
+      slot: 19
+      cps: 260
+      basePrice: 130000
+      item: FURNACE
+      name: '&aФабрика &7(У вас: %amount%)'
+      lore:
+      - '&fФабрика производит'
+      - '&fмного печенья'
+      - ''
+      - '&fCps: &a260,00'
+      - '&fСтоимость: &a%price%'
+    building6:
+      slot: 20
+      cps: 1400
+      basePrice: 1400000
+      item: GOLD_NUGGET
+      name: '&aГос. банк &7(У вас: %amount%)'
+      lore:
+      - '&fЭтот банк осуществляет'
+      - '&fэмиссию... Печенья?'
+      - ''
+      - '&fCps: &a1.400,00'
+      - '&fСтоимость: &a%price%'
+    building7:
+      slot: 27
+      cps: 7800
+      basePrice: 20000000
+      head: http://textures.minecraft.net/texture/9452abb9528bc3ad48ff2bb5256bf8c0fd144fabfe4c8e28ebf2ef29ee15f937
+      name: '&aХрам &7(У вас: %amount%)'
+      lore:
+      - '&fПолон драгоценного,'
+      - '&fдревнего шоколада'
+      - ''
+      - '&fCps: &a7.800,00'
+      - '&fСтоимость: &a%price%'
+    building8:
+      slot: 28
+      cps: 44000
+      basePrice: 330000000
+      item: EXP_BOTTLE
+      name: '&aБашня волшебника &7(У вас: %amount%)'
+      lore:
+      - '&fВызывает печенье с помощью'
+      - '&fмагических заклинаний'
+      - ''
+      - '&fCps: &a44.000,00'
+      - '&fСтоимость: &a%price%'
+    building9:
+      slot: 29
+      cps: 260000
+      basePrice: 5.1E9
+      item: FIREWORK
+      name: '&aПланета &7(У вас: %amount%)'
+      lore:
+      - '&fЭто печенье доставляют'
+      - '&fпрямо с планеты Печенья...'
+      - ''
+      - '&fCps: &a260.000,00'
+      - '&fСтоимость: &a%price%'
+  CpcUpgrades:
+    bought:
+      item: WOOL:14
+      name: '&c&oУ вас уже есть это улучшение!'
+    upgrade1:
+      slot: 15
+      cpc: 0.02
+      price: 100
+      head: http://textures.minecraft.net/texture/8cca259d3ec8a9e26279a09c981fc57d46a74b27a27f2d8a1c4877867bb7899
+      name: '&aБольшой палец'
+      lore:
+      - '&a+0,02 &fза один клик'
+      - ''
+      - '&fСтоимость: &a%price%'
+    upgrade2:
+      slot: 16
+      cpc: 0.04
+      price: 500
+      head: http://textures.minecraft.net/texture/90e0a4d48cd829a6d5868909d643fa4affd39e8ae6caaf6ec79609cf7649b1c
+      name: '&aУсиленный указательный палец'
+      lore:
+      - '&a+0,04 &fза один клик'
+      - ''
+      - '&fСтоимость: &a%price%'
+    upgrade3:
+      slot: 17
+      cpc: 0.06
+      price: 10000
+      head: http://textures.minecraft.net/texture/e138452bca86cb9abcae325e889917bdc7bec95b4da8f1e706c3c4d4ef727bd
+      name: '&aМультитач'
+      lore:
+      - '&a+0,06 &fза один клик'
+      - ''
+      - '&fСтоимость: &a%price%'
+    upgrade4:
+      slot: 24
+      cpc: 0.1
+      price: 100000
+      head: http://textures.minecraft.net/texture/370a90a159d79854cdeca5cd4b1b633984a0bc1c9f187d8397f584f614a
+      name: '&aТысяча пальцев'
+      lore:
+      - '&a+0,1 &fза один клик'
+      - ''
+      - '&fСтоимость: &a%price%'
+    upgrade5:
+      slot: 25
+      cpc: 0.5
+      price: 1000000
+      head: http://textures.minecraft.net/texture/67d196f5fbc31afee3372da4f9669dc9536ee3eb60c9161b11632a268bfdf467
+      name: '&aМиллион пальцев'
+      lore:
+      - '&a+0,5 &fза один клик'
+      - ''
+      - '&fСтоимость: &a%price%'
+    upgrade6:
+      slot: 26
+      cpc: 5
+      price: 10000000
+      head: http://textures.minecraft.net/texture/577ec44fb7503de6afe3bdd7e583c7b93979f59f6d634b6b6a5af7f3a1c58515
+      name: '&aМиллиард пальцев'
+      lore:
+      - '&a+5,0 &fза один клик'
+      - ''
+      - '&fСтоимость: &a%price%'
+    upgrade7:
+      slot: 33
+      cpc: 50
+      price: 100000000
+      head: http://textures.minecraft.net/texture/16227036b8afed6935d53143d16488d39cf4fb73a671f2b2955e80fc9dfe458
+      name: '&aТриллион пальцев'
+      lore:
+      - '&a+50,0 &fза один клик'
+      - ''
+      - '&fСтоимость: &a%price%'
+    upgrade8:
+      slot: 34
+      cpc: 500
+      price: 1.0E10
+      head: http://textures.minecraft.net/texture/aacacb836c5e428b49b5d224cab22828efe2f6c704f759364d71c656e301420
+      name: '&aКвадриллион пальцев'
+      lore:
+      - '&a+500,0 &fза один клик'
+      - ''
+      - '&fСтоимость: &a%price%'
+    upgrade9:
+      slot: 35
+      cpc: 5000
+      price: 1.0E13
+      head: http://textures.minecraft.net/texture/ac9f813ae82cd688574a849ab9ab441346763adb9ce7cf1b1c727de795df9b
+      name: '&aКвинтиллион пальцев'
+      lore:
+      - '&a+5.000,0 &fза один клик'
+      - ''
+      - '&fСтоимость: &a%price%'
+GameSettings:
+  changeToChocolateAt: 100000
+  fallingCookieAnimationSpeed: 8
+  maxFallingCookiesOnScreen: 6
+  milkAnimationSpeed: 20

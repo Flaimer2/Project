@@ -1,0 +1,11 @@
+connectCommand:
+  help:
+    - 'fsf'
+    - 'sgg'
+  useCommandMode: 'Используйте: /connect mode <SkyWars> <Solo>'
+  modeServerNotFound: '&cНе найден лучший сервер для режима %server_mode%'
+  cantJoin: '&cВы не можете зайти на сервер %server_name%'
+  serverNotFound: '&cСервер %server_name% не найден!'
+  unknownServerMode: '&cНе найден режим %server_mode%'
+  typeModeServerNotFound: '&cНе найден лучший сервер для режима %server_mode% c типом %server_type%'
+

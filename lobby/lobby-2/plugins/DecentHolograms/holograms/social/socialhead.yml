@@ -1,0 +1,16 @@
+location: lobby:-259.500:33.000:-207.500
+enabled: true
+display-range: 256
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&6&lСсылки'
+    height: 0.6
+  - content: '&aНажмите &fна голову, чтобы &aполучить'
+    height: 0.3
+  - content: '&fссылку на необходимый ресурс'
+    height: 0.3
+  actions: {}

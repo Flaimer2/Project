@@ -1,0 +1,160 @@
+location: lobby:-270.500:33.000:-156.500
+enabled: true
+display-range: 256
+update-range: 64
+update-interval: 40
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&aРейтинг по режимам'
+    height: 0.5
+  - content: '&aBedWars'
+    height: 0.25
+  - content: '&7SkyWars'
+    height: 0.25
+  - content: '&7TheBridge'
+    height: 0.25
+  - content: '&7MurderMystery'
+    height: 0.5
+  - content: '&aНажмите, чтобы переключить'
+    height: 0.25
+  actions:
+    LEFT:
+    - NEXT_PAGE
+    - NEXT_PAGE:leaderboard1
+    - NEXT_PAGE:leaderboard2
+    - NEXT_PAGE:leaderboard3
+    - SOUND:UI_BUTTON_CLICK:3.0:1.0
+    RIGHT:
+    - NEXT_PAGE
+    - NEXT_PAGE:leaderboard1
+    - NEXT_PAGE:leaderboard2
+    - NEXT_PAGE:leaderboard3
+    - SOUND:UI_BUTTON_CLICK:3.0:1.0
+    SHIFT_LEFT:
+    - NEXT_PAGE
+    - NEXT_PAGE:leaderboard1
+    - NEXT_PAGE:leaderboard2
+    - NEXT_PAGE:leaderboard3
+    - SOUND:UI_BUTTON_CLICK:3.0:1.0
+    SHIFT_RIGHT:
+    - NEXT_PAGE
+    - NEXT_PAGE:leaderboard1
+    - NEXT_PAGE:leaderboard2
+    - NEXT_PAGE:leaderboard3
+    - SOUND:UI_BUTTON_CLICK:3.0:1.0
+- lines:
+  - content: '&aРейтинг по режимам'
+    height: 0.5
+  - content: '&7BedWars'
+    height: 0.25
+  - content: '&aSkyWars'
+    height: 0.25
+  - content: '&7TheBridge'
+    height: 0.25
+  - content: '&7MurderMystery'
+    height: 0.5
+  - content: '&aНажмите, чтобы переключить'
+    height: 0.25
+  actions:
+    LEFT:
+    - NEXT_PAGE
+    - NEXT_PAGE:leaderboard1
+    - NEXT_PAGE:leaderboard2
+    - NEXT_PAGE:leaderboard3
+    - SOUND:UI_BUTTON_CLICK:3.0:1.0
+    RIGHT:
+    - NEXT_PAGE
+    - NEXT_PAGE:leaderboard1
+    - NEXT_PAGE:leaderboard2
+    - NEXT_PAGE:leaderboard3
+    - SOUND:UI_BUTTON_CLICK:3.0:1.0
+    SHIFT_LEFT:
+    - NEXT_PAGE
+    - NEXT_PAGE:leaderboard1
+    - NEXT_PAGE:leaderboard2
+    - NEXT_PAGE:leaderboard3
+    - SOUND:UI_BUTTON_CLICK:3.0:1.0
+    SHIFT_RIGHT:
+    - NEXT_PAGE
+    - NEXT_PAGE:leaderboard1
+    - NEXT_PAGE:leaderboard2
+    - NEXT_PAGE:leaderboard3
+    - SOUND:UI_BUTTON_CLICK:3.0:1.0
+- lines:
+  - content: '&aРейтинг по режимам'
+    height: 0.5
+  - content: '&7BedWars'
+    height: 0.25
+  - content: '&7SkyWars'
+    height: 0.25
+  - content: '&aTheBridge'
+    height: 0.25
+  - content: '&7MurderMystery'
+    height: 0.5
+  - content: '&aНажмите, чтобы переключить'
+    height: 0.25
+  actions:
+    LEFT:
+    - NEXT_PAGE
+    - NEXT_PAGE:leaderboard1
+    - NEXT_PAGE:leaderboard2
+    - NEXT_PAGE:leaderboard3
+    - SOUND:UI_BUTTON_CLICK:3.0:1.0
+    RIGHT:
+    - NEXT_PAGE
+    - NEXT_PAGE:leaderboard1
+    - NEXT_PAGE:leaderboard2
+    - NEXT_PAGE:leaderboard3
+    - SOUND:UI_BUTTON_CLICK:3.0:1.0
+    SHIFT_LEFT:
+    - NEXT_PAGE
+    - NEXT_PAGE:leaderboard1
+    - NEXT_PAGE:leaderboard2
+    - NEXT_PAGE:leaderboard3
+    - SOUND:UI_BUTTON_CLICK:3.0:1.0
+    SHIFT_RIGHT:
+    - NEXT_PAGE
+    - NEXT_PAGE:leaderboard1
+    - NEXT_PAGE:leaderboard2
+    - NEXT_PAGE:leaderboard3
+    - SOUND:UI_BUTTON_CLICK:3.0:1.0
+- lines:
+  - content: '&aРейтинг по режимам'
+    height: 0.5
+  - content: '&7BedWars'
+    height: 0.25
+  - content: '&7SkyWars'
+    height: 0.25
+  - content: '&7TheBridge'
+    height: 0.25
+  - content: '&aMurderMystery'
+    height: 0.5
+  - content: '&aНажмите, чтобы переключить'
+    height: 0.25
+  actions:
+    LEFT:
+    - PAGE:1
+    - PAGE:leaderboard1:1
+    - PAGE:leaderboard2:1
+    - PAGE:leaderboard3:1
+    - SOUND:UI_BUTTON_CLICK:3.0:1.0
+    RIGHT:
+    - PAGE:1
+    - PAGE:leaderboard1:1
+    - PAGE:leaderboard2:1
+    - PAGE:leaderboard3:1
+    - SOUND:UI_BUTTON_CLICK:3.0:1.0
+    SHIFT_LEFT:
+    - PAGE:1
+    - PAGE:leaderboard1:1
+    - PAGE:leaderboard2:1
+    - PAGE:leaderboard3:1
+    - SOUND:UI_BUTTON_CLICK:3.0:1.0
+    SHIFT_RIGHT:
+    - PAGE:1
+    - PAGE:leaderboard1:1
+    - PAGE:leaderboard2:1
+    - PAGE:leaderboard3:1
+    - SOUND:UI_BUTTON_CLICK:3.0:1.0
