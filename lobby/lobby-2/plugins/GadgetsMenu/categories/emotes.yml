@@ -12,7 +12,7 @@ Emotes:
       Unlocked: ''
     Hologram:
       Enabled: true
-      Text: '&fулыбки'
+      Text: '&fХех :)'
   Cool:
     Name: '&aКрутой'
     Cooldown: 10
@@ -40,7 +40,7 @@ Emotes:
       Unlocked: ''
     Hologram:
       Enabled: true
-      Text: '&fподмигивает'
+      Text: '&f*подмигивает*'
   Grin:
     Name: '&aУсмешка'
     Cooldown: 10
@@ -96,7 +96,7 @@ Emotes:
       Unlocked: ''
     Hologram:
       Enabled: true
-      Text: '&fZZzzzz'
+      Text: '&fZ-z-z-z-z'
   Rage:
     Name: '&9Ярость'
     Cooldown: 10
@@ -112,7 +112,7 @@ Emotes:
       Locked: ''
       Unlocked: ''
   Frown:
-    Name: '&9Хмурный'
+    Name: '&9Хмурый'
     Cooldown: 10
     Mystery Dust: 22000
     Rarity: Rare
@@ -121,7 +121,7 @@ Emotes:
     Purchasable: true
     Hologram:
       Enabled: true
-      Text: '&fсопение'
+      Text: '&f*сопение*'
     Lore:
       Locked: ''
       Unlocked: ''
@@ -135,7 +135,7 @@ Emotes:
     Purchasable: true
     Hologram:
       Enabled: true
-      Text: '&f:P'
+      Text: '&f:p'
     Lore:
       Locked: ''
       Unlocked: ''
@@ -149,7 +149,7 @@ Emotes:
     Purchasable: true
     Hologram:
       Enabled: true
-      Text: '&fСолнечный'
+      Text: '&fЯ на море с:'
     Lore:
       Locked: ''
       Unlocked: ''
@@ -177,7 +177,7 @@ Emotes:
     Purchasable: true
     Hologram:
       Enabled: true
-      Text: '&fx_x'
+      Text: '&fПлохо...'
     Lore:
       Locked: ''
       Unlocked: ''
@@ -191,7 +191,7 @@ Emotes:
     Purchasable: true
     Hologram:
       Enabled: true
-      Text: '&fОтдых в Пепперони'
+      Text: '&fx_x'
     Lore:
       Locked: ''
       Unlocked: ''
@@ -205,7 +205,7 @@ Emotes:
     Purchasable: true
     Hologram:
       Enabled: true
-      Text: '&fфуух'
+      Text: '&fФуух!'
     Lore:
       Locked: ''
       Unlocked: ''
@@ -219,7 +219,7 @@ Emotes:
     Purchasable: true
     Hologram:
       Enabled: true
-      Text: '&fОжоги!'
+      Text: '&fА-а-а!'
     Lore:
       Locked: ''
       Unlocked: ''
@@ -233,7 +233,7 @@ Emotes:
     Purchasable: true
     Hologram:
       Enabled: true
-      Text: '&fСправился :)'
+      Text: '&fЯ молодец :)'
     Lore:
       Locked: ''
       Unlocked: ''

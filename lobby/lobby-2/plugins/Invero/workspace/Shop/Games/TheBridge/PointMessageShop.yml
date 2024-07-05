@@ -1,0 +1,199 @@
+title: '&0Сообщения гола'
+scale: [ 9, 6 ]
+virtual: true
+
+layout: |-
+  #########
+  #       #
+  #       #
+  #       #
+  #########
+  P#R#B#S#N
+
+items:  
+  P:
+    relocate: 5
+    material: arrow
+    name: '&aПредыдущая страница'
+    action: |-
+      page previous
+      menu title update
+    sub:
+      - rule: 'page isFirst'
+        inherit: false
+        material: air
+  S:
+    update: 1
+    relocate: 1
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWI3NzE3ZDlkMzNkNjlhZjg1NWQ4NGNmY2ExODExMTZhNzI1YzE5MTVmMDBmNTE0NzE2ZDliYmIwZWFlYTZiZiJ9fX0=
+    name: '§aСортировка'
+    lore: |-
+      &fПо редкости &a←
+      &fПо алфавиту
+
+      &aНажмите, чтобы изменить
+    action: |-
+      regenerate sort MessageSort
+      ctx set sort to 2
+    sub:
+      - rule: 'check ctx get sort == 2'
+        lore: |-
+          &fПо редкости
+          &fПо алфавиту &a←
+
+          &aНажмите, чтобы изменить
+        action: |-
+          regenerate sort
+          ctx set sort to 1
+  B:
+    material: arrow
+    name: '&aВернуться в магазин'
+    action: menu switch TheBridgeShop
+  R:
+    update: 5
+    relocate: 5
+    material: air
+    sub:
+      - rule: 'check size papi "%luckperms_meta_snapithebridge.cosmetics.message%" != 0'
+        material: barrier
+        name: '&aОтменить выбранное сообщение'
+        lore: |-
+          &fНажмите, чтобы отменить
+          &fвыбранное сообщение гола
+
+          &fКак выглядит: &9%player_name% &fпрыгнул 
+          &fв портал команды &cКрасная&f!
+
+          &aНажмите, чтобы убрать!
+        action: |-
+          console inline "lp user %player_name% perm unset snapithebridge.cosmetics.message.{{papi "%luckperms_meta_snapithebridge.cosmetics.message%"}}"
+          console "lp user %player_name% meta unset snapithebridge.cosmetics.message"
+          console "lp user %player_name% meta unset snapithebridge.cosmetics.message.name"
+          sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1   
+  N:
+    relocate: 5
+    material: arrow
+    name: '&aСледующая страница'
+    action: |-
+      page next
+      menu title update
+    sub:
+      - rule: 'page isLast'
+        inherit: false
+        material: air
+  # Воздух
+  '#':
+    material: air
+
+generator:
+  output:
+    update: 1
+    enhancedLore: true
+    head: '{{ element head }}'
+    name: '{{ element MessageName }}'
+    lore: |-
+      &fКак выглядит: {{ element description }}
+      
+      &fРедкость: {{ element rarity }}
+      &fЦена: &a{{ element price }}{{ if element isPriceSnapers then "₵ " else "$ " }}
+      
+      {{ if perm inline "snapithebridge.cosmetics.message.{{element Message}}" then "&a&cУ вас уже стоит это сообщение!" else if perm inline "snapithebridge.cosmetics.message.{{element Message}}.shop" then "&aНажмите, чтобы включить" else if all [ check money get >= element price not isPriceSnapers ] then "&aНажмите, чтобы приобрести сообщение" else if all [ check papi "%coin_amount%" >= element price isPriceSnapers ] then "&aНажмите, чтобы приобрести сообщение" else "&cУ вас не хватает денег для покупки" }}
+    action: |-
+      if perm inline "snapithebridge.cosmetics.message.{{element Message}}" then {
+        sound ENTITY_VILLAGER_NO by 1 1
+      } else if perm inline "snapithebridge.cosmetics.message.{{element Message}}.shop" then {
+        sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        console inline "lp user %player_name% perm set snapithebridge.cosmetics.message.{{element Message}}"
+      } else if all [ check money get >= element price not isPriceSnapers ] then {
+        console inline "money take %player_name% {{element price}}"
+        console inline "lp user %player_name% perm set snapithebridge.cosmetics.message.{{element Message}}"
+        console inline "lp user %player_name% perm set snapithebridge.cosmetics.message.{{element Message}}.shop"
+        console "lp user %player_name% meta set snapithebridge.cosmetics.message.amount %math_{luckperms_meta_snapithebridge.cosmetics.message.amount}+1%"
+        console inline "lp user %player_name% meta set snapithebridge.cosmetics.message {{element Message}}"
+        console inline "lp user %player_name% meta set snapithebridge.cosmetics.message.name {{element MessageName}}"
+        sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        msg inline "&aМагазин &7| &fВы успешно приобрели сообщение гола {{element MessageName}}"
+        title "&fВы приобрели" subtitle inline "сообщение гола {{element MessageName}}" by 20 20 10
+        menu close
+      } else if all [ check papi "%coin_amount%" >= element price isPriceSnapers ] then {
+        console inline "snapicoin remove %player_name% {{element price}} -s"
+        console inline "lp user %player_name% perm set snapithebridge.cosmetics.message.{{element Message}}"
+        console inline "lp user %player_name% perm set snapithebridge.cosmetics.message.{{element Message}}.shop"
+        console "lp user %player_name% meta set snapithebridge.cosmetics.message.amount %math_{luckperms_meta_snapithebridge.cosmetics.message.amount}+1%"
+        console inline "lp user %player_name% meta set snapithebridge.cosmetics.message {{element Message}}"
+        console inline "lp user %player_name% meta set snapithebridge.cosmetics.message.name {{element MessageName}}"
+        sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        msg inline "&aМагазин &7| &fВы успешно приобрели сообщение при голе {{element MessageName}}"
+        title "&fВы приобрели" subtitle inline "сообщение гола {{element MessageName}}" by 20 20 10
+        menu close
+      } else {
+        sound ENTITY_ITEM_BREAK by 1 0
+      }  
+  elements:
+    - Message: 'banzai'
+      MessageName: '§aБанзай'
+      # Без цвета для сортировки
+      MessageSort: 'Банзай'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDVjOGVkNDE3YmNkYjJiNjY1Y2NiZGJlMjlhY2JlNmEwNmY2Y2I3OWQ2Y2VmYzkwNzU0NjQ0ZGRkN2YxYzJhMyJ9fX0='
+      description:
+        §9%player_name% §fбесстрашно
+        \\n§fпроник к порталу команды &cКрасная&f!
+      rarity: '&a[Обычная]'
+      isPriceSnapers: false
+      price: 19000
+    - Message: 'bouncer'
+      MessageName: '§aВышибала с моста'
+      # Без цвета для сортировки
+      MessageSort: 'Вышибала с моста'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODlhYjNhNGFmYmNjZDBjMjcwYmNhNTQ0OWNlODgzZWZmMDgwMmIzY2FmNmNhNjRjNzRmMDM4YzMzMWJiMTMwMSJ9fX0='
+      description:
+        Удар! &9%player_name% &fпроникает к порталу
+        \\n&fкоманды &cКрасная&f, и его невозможно остановить!
+      rarity: '&a[Обычная]'
+      isPriceSnapers: false
+      price: 19000
+    - Message: 'pirate'
+      MessageName: '§aПират'
+      # Без цвета для сортировки
+      MessageSort: 'Пират'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjdkZmFjNWU1YzYwNGJkZDc1MDI2ZGRmNmRiOWUzNzE1Nzk0MWM3Yjk3NGQ3NjYxODY0NmY1YTcyYTJhZWM3MCJ9fX0='
+      description:
+        Разрази меня гром! &9%player_name% &fтолько
+        \\n&fчто совершил набег на портал команды &cКрасная&f!
+      rarity: '&9[Редкая]'
+      isPriceSnapers: false
+      price: 26000
+    - Message: 'daredevil'
+      MessageName: '§aСорвиголова'
+      # Без цвета для сортировки
+      MessageSort: 'Сорвиголова'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGFiNDVhNDZkYjY5NDNhNDMzNzUwNWY5ZjhkMWFjMmNmOTVhMDFlYzBjYjA2M2NhZDc4MzA5ODU4OWFjNzIyZSJ9fX0='
+      description:
+        Держитесь за свои шляпы, &cКрасная&f команда! 
+        \\n&9%player_name% &fтолько что совершил эпический прыжок в ваш портал!
+      rarity: '&9[Редкая]'
+      isPriceSnapers: false
+      price: 26000
+    - Message: 'superman'
+      MessageName: '§aСупермен'
+      # Без цвета для сортировки
+      MessageSort: 'Супермен'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDU0MzVjMzdlZGFmZTE2NWM5MmFlMzczNmUxNWM0NjRhZDYyMWQ2MTIyMDQzNWQxYTM5YWRiNDcwNWZiODg2In19fQ=='
+      description:
+        Это птица, это самолет... Нет, это
+        \\n&9%player_name% &fлетит прямо в портал команды &cКрасная&f!
+      rarity: '&5[Эпическая]'
+      isPriceSnapers: false
+      price: 39000
+    - Message: 'interdimensional'
+      MessageName: '§aМежпространственный нарушитель'
+      # Без цвета для сортировки
+      MessageSort: 'Межпространственный нарушитель'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ0YTdhM2VjNjEyNjUwYjU2MjE2ZGFmNDI5M2UxZDNiNzkzNGM1MTllNWI5ZDU0NjI2N2YwMjIwYTk2ZWYyNCJ9fX0='
+      description:
+        Вжик! &9%player_name% &fтолько что проскользнул
+        \\n&fчерез разлом и попал прямо в портал команды &cКрасная&f!
+      rarity: '&6[Легендарная]'
+      isPriceSnapers: true
+      price: 79
+    

@@ -1,0 +1,56 @@
+menu:
+  title: '§0Мини-игры'
+layout:
+  - '         '
+  - '  1 2 3  '
+  - '         '
+  - '    4    '
+  - '         '
+  - '    B    '
+
+items:
+  1:
+    material: ender_pearl
+    name: '&aSkyWars'
+    lore: |-
+      &fВ этом меню, вы можете
+      &fприобрести различные функции
+      &fдля мини-игры SkyWars
+      
+      &aНажмите, чтобы открыть меню
+    action: command "sw lobby"
+  2:
+    material: red_bed
+    name: '&aBedWars'
+    lore: |-
+      &fВ этом меню, вы можете
+      &fприобрести различные функции
+      &fдля мини-игры BedWars
+      
+      &aНажмите, чтобы открыть меню
+    action: command "menus open cosmetics" as op
+  3:
+    material: iron_sword
+    flag: HIDE_ATTRIBUTES
+    name: '&aMurderMystery'
+    lore: |-
+      &fВ этом меню, вы можете
+      &fприобрести различные функции
+      &fдля мини-игры MurderMystery
+      
+      &aНажмите, чтобы открыть меню
+    action: menu switch MurderMysteryShop
+  4:
+    material: red_terracotta
+    name: '&aTheBridge'
+    lore: |-
+      &fВ этом меню, вы можете
+      &fприобрести различные функции
+      &fдля мини-игры TheBridge
+      
+      &aНажмите, чтобы открыть меню
+    action: menu switch TheBridgeShop
+  B:
+    material: arrow
+    name: '&aВернуться в магазин'
+    action: menu switch Shop

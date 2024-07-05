@@ -11,7 +11,7 @@ alias:
   tag-command: 'tag'
   invite-command: 'invite'
   accept-command: 'accept'
-  decline-command: 'decline'
+  decline-command: 'deny'
   disband-command: 'disband'
   chat-command: 'chat'
   main-command: 'clan|guild'

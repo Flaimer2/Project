@@ -1,0 +1,74 @@
+menu:
+  title: '§0Магазин TheBridge'
+  virtual: true
+layout:
+  - '         '
+  - '         '
+  - '  1 2 3  '
+  - '         '
+  - '        '
+  - '    B    '
+
+items:
+  # luckperms_meta:
+  # snapithebridge.cosmetics.effect.amount - количество разблокированных эффектов
+  # snapithebridge.cosmetics.effect.name - Название выбранного эффекта (Форматированное)
+  # snapithebridge.cosmetics.effect - Название выбранного эффекта
+  # perm:
+  # snapithebridge.cosmetics.effect.name.shop - покупка предмета
+  1: 
+    material: blaze_powder
+    name: '&aЭффекты гола'
+    lore: |-
+      &fКаждый ваш гол будет сопровождаться
+      &fразличными эффектами
+    
+      &fРазблокировано: &a{{ node metaNumber with "snapithebridge.cosmetics.effect.amount" }}/8
+      &fВыбрано: &a{{ node metaSelect with "snapithebridge.cosmetics.effect.name" }}
+
+      &aНажмите, чтобы открыть!
+    action: menu switch PointEffectShop
+  2: 
+    material: sign
+    name: '&aСообщение гола'
+    lore: |-
+      &fКаждый ваш гол будет сопровождаться
+      &fуникальными сообщениями
+    
+      &fРазблокировано: &a{{ node metaNumber with "snapithebridge.cosmetics.message.amount" }}/8
+      &fВыбрано: &a{{ node metaSelect with "snapithebridge.cosmetics.message.name" }}
+
+      &aНажмите, чтобы открыть!
+    action: menu switch PointMessageShop
+  3: 
+    material: noteblock
+    name: '&aЗвуки гола'
+    lore: |-
+      &fКаждый ваш гол будет сопровождаться
+      &fуникальным звуком
+    
+      &fРазблокировано: &a{{ node metaNumber with "snapithebridge.cosmetics.sound.amount" }}/8
+      &fВыбрано: &a{{ node metaSelect with "snapithebridge.cosmetics.sound.name" }}
+
+      &aНажмите, чтобы открыть!
+    action: menu switch PointSoundShop
+  B:
+    material: arrow
+    name: '&aВернуться в магазин'
+    action: menu switch GameShop
+
+nodes:
+  metaNumber:
+    type: kether
+    value: |-
+      set value to &invokeArgs[0]
+      set placeholder to papi inline "%luckperms_meta_{{&value}}%"
+
+      if check size &placeholder == 0 then 0 else &placeholder
+  metaSelect:
+    type: kether
+    value: |-
+      set value to &invokeArgs[0]
+      set placeholder to papi inline "%luckperms_meta_{{&value}}%"
+
+      if check size &placeholder == 0 then "§aНе выбрано" else &placeholder

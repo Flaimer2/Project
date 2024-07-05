@@ -53,6 +53,8 @@ commands:
     - '&f  Посмотреть информацию о клане &7– &a/clan info'
     - '&f  Список участников клана &7– &a/clan members'
     - '&f  Пригласить игрока &7– &a/clan invite игрок'
+    - '&f  Принять приглашение в клан &7– &a/clan accept игрок'
+    - '&f  Отклонить приглашение в клан &7– &a/clan deny игрок'
     - '&f  Удалить игрока &7– &a/clan remove игрок'
     - '&f  Повысить игрока &7– &a/clan role increase игрок'
     - '&f  Понизить игрока &7– &a/clan role decrease игрок'
@@ -91,9 +93,9 @@ commands:
     already-in-clan: '&fИгрок &cуже &fсостоит в клане'
     limit-max-members: '&fВы &cне можете &fдобавить нового участника в клан, так как был достигнут лимит участников в клане!'
     no-clan: '&fВы &cне состоите &fни в каком клане!'
-    accept-or-decline: '<mm><white>Игрок <green>%name%</green> приглашает вас в клан <green>%clan%</green>. У вас есть <green>60 сек.</green> чтобы ответить. Нажмите на</white> <click:run_command:"/clan accept %name%"><green><hover:show_text:"<green>Нажмите, чтобы принять!</green>">Принять</hover></green></click> <white>или</white> <click:run_command:"/clan decline %name%"><red><hover:show_text:"<red>Нажмите, чтобы отклонить!</red>">Отклонить</hover></red></click>'
+    accept-or-decline: '<mm><white>Игрок <green>%name%</green> приглашает вас в клан <green>%clan%</green>. У вас есть <green>60 сек.</green> чтобы ответить. Нажмите на</white> <click:run_command:"/clan accept %name%"><green><hover:show_text:"<green>Нажмите, чтобы принять!</green>">Принять</hover></green></click> <white>или</white> <click:run_command:"/clan deny %name%"><red><hover:show_text:"<red>Нажмите, чтобы отклонить!</red>">Отклонить</hover></red></click>'
     cannot-self: '&fОй! Вы &cне можете &fпригласить себя же. Найдите уже себе друзей :)'
-    player-level-low: '&fВы &cне можете &fпригласить игрока &a%receiver% &7(%level% уровень)&f! У игрока уровень ниже &a7&f!'
+    player-level-low: '&fВы &cне можете &принимать приглашение &7(Ваш уровень %level%)&f! У вас уровень ниже &a7&f!'
     already-invite: '&cВы уже пригласили игрока %receiver%'
     not-exist-receiver: '&fВы &cне можете &fпригласить игрока &a%receiver%&f! Такого игрока не существует'
     offline-receiver: '&fВы &cне можете &fпригласить игрока &a%receiver%&f, так как он офлайн'
@@ -151,7 +153,7 @@ commands:
 
 
   decline:
-    use: '&fИспользуйте: &a/clan decline игрок'
+    use: '&fИспользуйте: &a/clan deny игрок'
     success: '&fВы &cотказались &fот приглашения в клан &a%clan%'
     player-not-invite: '&fИгрок &a%name% &fне приглашал вас в клан'
 

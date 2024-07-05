@@ -1,0 +1,155 @@
+menu:
+  title: '§0Мини-игры'
+
+layout:
+  - '         '
+  - '  1 2 3  '
+  - '         '
+  - '  4 5 6  '
+  - '         '
+  - '    7    '
+
+items:
+  1:
+    material: ender_pearl
+    update: 160
+    name: '&b&lSkyWars'
+    lore: |-
+      &eОписание:
+      &fЭто мини-игра, основанная на стратегии,
+      &fв которой Вы появляетесь на острове
+      &fокружённым пустотой и другими островами,
+      &fцель игры - выжить и убить других игроков
+
+      &eИнформация
+      &fИгроков онлайн: &a%minigames_skywars_online:total%
+
+      &aНажмите, чтобы выбрать режим 
+    action: |-
+      ctx set 'back' to 'GameMode'
+      menu switch SkyWarsSelector
+  2:
+    material: red_bed
+    update: 160
+    name: '&c&lBedWars'
+    lore: |-
+      &eОписание:
+      &fВ этой мини-игре Вы будете
+      &fсражаться против других команд.
+      &fЗащищайте свою кровать, и ломайте
+      &fкровати других команд!
+
+      &eИнформация
+      &fИгроков онлайн: &a%minigames_bedwars_online:total%
+
+      &aНажмите, чтобы выбрать режим 
+    action: |-
+      ctx set 'back' to 'GameMode'
+      menu switch BedWarsSelector
+  3:
+    material: iron_sword
+    flag: HIDE_ATTRIBUTES
+    update: 160
+    name: '&e&lMurderMystery'
+    lore: |-
+      &eОписание:
+      &fЭто простая мини-игра, в которой
+      &fмирные жители и детектив должны
+      &fвычислить и уничтожить маньяка,
+      &fкоторый убивает всех на своём пути
+
+      &eИнформация
+      &fИгроков онлайн: &a%minigames_murdermystery_online:total%
+
+      &aНажмите, чтобы выбрать режим 
+    action: |-
+      ctx set 'back' to 'GameMode'
+      menu switch MurderMysterySelector
+  4:
+    material: gold_ingot
+    update: 160
+    name: '&6&lMinerware'
+    lore: |-
+      &eОписание:
+      &fMinerware содержит в себе
+      &fбольшое количество микро-игр,
+      &fнаправленных на то, чтобы
+      &fвыяснить – кто самый быстрый
+
+      &eИнформация
+      &fИгроков онлайн: &a%minigames_minerware_online:total%
+
+      &aНажмите ЛКМ, чтобы присоединиться!
+      &aНажмите ПКМ, чтобы выбрать сервер!
+    action:
+      left: |-
+        if check size papi "%minigames_minerware_mode:classic_id:ServerName%" != 0 then {
+          connect inline "{{papi %minigames_minerware_mode:classic_id:ServerName%}}"
+          menu close
+        } else {
+          msg "&cНет доступных серверов"
+        }
+      right: |-
+        ctx set 'back' to 'GameMode'
+        menu switch MinerwareSelector
+  5:
+    material: red_terracotta
+    update: 160
+    name: '&9&lTheBridge'
+    lore: |-
+      &eОписание:
+      &fНа карте есть всего один мост,
+      &fкоторый соединяет два острова
+      &fвражеских команд. Ваша цель –
+      &fзапрыгнуть в портал другой команды
+
+      &eИнформация
+      &fИгроков онлайн: &a%minigames_thebridge_online:total%
+
+      &aНажмите, чтобы выбрать режим 
+    action: |-
+      ctx set 'back' to 'GameMode'
+      menu switch TheBridgeSelector
+  6:
+    material: 45
+    update: 160
+    name: '&9&lBuildBattle'
+    lore: |-
+      &eОписание:
+      &fЭто мини-игра, в которой игроки
+      &fсоревнуются друг с другом в
+      &fнавыках строительства. Лучшая
+      &fпостройка определяется голосованием
+
+      &eИнформация
+      &fИгроков онлайн: &a%minigames_buildbattle_online:total%
+
+      &aНажмите, чтобы выбрать режим 
+    action: |-
+      ctx set 'back' to 'GameMode'
+      menu switch BuildBattleSelector
+  7:
+    material: ender_pearl
+    name: '&b&lРандомная Мини-Игра'
+    lore: |-
+      &eОписание:
+      &fЭта кнопка телепортирует вас
+      &fна рандомную мини-игру!
+
+      &aНажмите, чтобы начать игру
+    action: command "randomgame"
+    frames-prop:
+      last: 15
+      type: reversable
+    frames:
+    - material: ender_pearl
+    - material: red_bed
+    - material: iron_sword
+      flag: HIDE_ATTRIBUTES
+    - material: gold_ingot
+    - material: red_terracotta
+    - material: 45
+
+bindings:
+  command:
+    name: 'game'

@@ -1,0 +1,191 @@
+title: '&0Эффекты гола'
+scale: [ 9, 6 ]
+virtual: true
+
+layout: |-
+  #########
+  #       #
+  #       #
+  #       #
+  #########
+  P#R#B#S#N
+
+items:  
+  P:
+    relocate: 5
+    material: arrow
+    name: '&aПредыдущая страница'
+    action: |-
+      page previous
+      menu title update
+    sub:
+      - rule: 'page isFirst'
+        inherit: false
+        material: air
+  S:
+    update: 1
+    relocate: 1
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWI3NzE3ZDlkMzNkNjlhZjg1NWQ4NGNmY2ExODExMTZhNzI1YzE5MTVmMDBmNTE0NzE2ZDliYmIwZWFlYTZiZiJ9fX0=
+    name: '§aСортировка'
+    lore: |-
+      &fПо редкости &a←
+      &fПо алфавиту
+
+      &aНажмите, чтобы изменить
+    action: |-
+      regenerate sort EffectSort
+      ctx set sort to 2
+    sub:
+      - rule: 'check ctx get sort == 2'
+        lore: |-
+          &fПо редкости
+          &fПо алфавиту &a←
+
+          &aНажмите, чтобы изменить
+        action: |-
+          regenerate sort
+          ctx set sort to 1
+  B:
+    material: arrow
+    name: '&aВернуться в магазин'
+    action: menu switch TheBridgeShop
+  R:
+    update: 5
+    relocate: 5
+    material: air
+    sub:
+      - rule: 'check size papi "%luckperms_meta_snapithebridge.cosmetics.effect%" != 0'
+        material: barrier
+        name: '&aОтменить выбранный эффект гола'
+        lore: |-
+          &fНажмите, чтобы отменить
+          &fвыбранный эффект гола
+
+          &aНажмите, чтобы убрать!
+        action: |-
+          console inline "lp user %player_name% perm unset snapithebridge.cosmetics.effect.{{papi "%luckperms_meta_snapithebridge.cosmetics.effect%"}}"
+          console "lp user %player_name% meta unset snapithebridge.cosmetics.effect"
+          console "lp user %player_name% meta unset snapithebridge.cosmetics.effect.name"
+          sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1   
+  N:
+    relocate: 5
+    material: arrow
+    name: '&aСледующая страница'
+    action: |-
+      page next
+      menu title update
+    sub:
+      - rule: 'page isLast'
+        inherit: false
+        material: air
+  # Воздух
+  '#':
+    material: air
+
+generator:
+  output:
+    update: 1
+    head: '{{ element head }}'
+    name: '{{ element EffectName }}'
+    lore: |-
+
+      &fРедкость: {{ element rarity }}
+      &fЦена: &a{{ element price }}{{ if element isPriceSnapers then "₵ " else "$ " }}
+      
+      {{ if perm inline "snapithebridge.cosmetics.effect.{{element Effect}}" then "&a&cУ вас уже стоит этот эффект!" else if perm inline "snapithebridge.cosmetics.effect.{{element Effect}}.shop" then "&aНажмите, чтобы включить" else if all [ check money get >= element price not isPriceSnapers ] then "&aНажмите, чтобы приобрести эффект" else if all [ check papi "%coin_amount%" >= element price isPriceSnapers ] then "&aНажмите, чтобы приобрести эффект" else "&cУ вас не хватает денег для покупки" }}
+    action: |-
+      if perm inline "snapithebridge.cosmetics.effect.{{element Effect}}" then {
+        sound ENTITY_VILLAGER_NO by 1 1
+      } else if perm inline "snapithebridge.cosmetics.effect.{{element Effect}}.shop" then {
+        sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        console inline "lp user %player_name% perm set snapithebridge.cosmetics.effect.{{element Effect}}"
+      } else if all [ check money get >= element price not isPriceSnapers ] then {
+        console inline "money take %player_name% {{element price}}"
+        console inline "lp user %player_name% perm set snapithebridge.cosmetics.effect.{{element Effect}}"
+        console inline "lp user %player_name% perm set snapithebridge.cosmetics.effect.{{element Effect}}.shop"
+        console "lp user %player_name% meta set snapithebridge.cosmetics.effect.amount %math_{luckperms_meta_snapithebridge.cosmetics.effect.amount}+1%"
+        console inline "lp user %player_name% meta set snapithebridge.cosmetics.effect {{element Effect}}"
+        console inline "lp user %player_name% meta set snapithebridge.cosmetics.effect.name {{element EffectName}}"
+        sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        msg inline "&aМагазин &7| &fВы успешно приобрели эффект гола {{element trailname}}"
+        title "&fВы приобрели" subtitle inline "эффект гола {{element trailname}}" by 20 20 10
+        menu close
+      } else if all [ check papi "%coin_amount%" >= element price isPriceSnapers ] then {
+        console inline "snapicoin remove %player_name% {{element price}} -s"
+        console inline "lp user %player_name% perm set snapithebridge.cosmetics.effect.{{element Effect}}"
+        console inline "lp user %player_name% perm set snapithebridge.cosmetics.effect.{{element Effect}}.shop"
+        console "lp user %player_name% meta set snapithebridge.cosmetics.effect.amount %math_{luckperms_meta_snapithebridge.cosmetics.effect.amount}+1%"
+        console inline "lp user %player_name% meta set snapithebridge.cosmetics.effect {{element Effect}}"
+        console inline "lp user %player_name% meta set snapithebridge.cosmetics.effect.name {{element EffectName}}"
+        sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        msg inline "&aМагазин &7| &fВы успешно приобрели эффект гола {{element trailname}}"
+        title "&fВы приобрели" subtitle inline "эффект гола {{element trailname}}" by 20 20 10
+        menu close
+      } else {
+        sound ENTITY_ITEM_BREAK by 1 0
+      }  
+  elements:
+    - Effect: 'largeExplode'
+      EffectName: '§aВзрыв'
+      # Без цвета для сортировки
+      EffectSort: 'Взрыв'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2FmNTk3NzZmMmYwMzQxMmM3YjU5NDdhNjNhMGNmMjgzZDUxZmU2NWFjNmRmN2YyZjg4MmUwODM0NDU2NWU5In19fQ=='
+      rarity: '&a[Обычная]'
+      isPriceSnapers: false
+      price: 21000
+    - Effect: 'flame'
+      EffectName: '§aЧастички огня'
+      # Без цвета для сортировки
+      EffectSort: 'Частички огня'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjkwMWYwNzg1ZDIyMmU5YWZhNTA1NmNkZGFmZGI3YTMzYTRhYTljODllOTEyZWU3MWYzM2I2ZDc2MzEwNTRkIn19fQ=='
+      rarity: '&9[Редкая]'
+      isPriceSnapers: false
+      price: 32000
+    - Effect: 'instant'
+      EffectName: '§aКонфетти'
+      # Без цвета для сортировки
+      EffectSort: 'Конфетти'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ3ZjVlMmU1MjM1YjY3OWY4ZGI5YzQyZTg1OWM4OGFhNzgyN2IxZmI1MTgyYzA3NzAzYzQ1NmU5MTI1Y2Y1ZiJ9fX0='
+      rarity: '&9[Редкая]'
+      isPriceSnapers: false
+      price: 32000
+    - Effect: 'spell'
+      EffectName: '§aМагия'
+      # Без цвета для сортировки
+      EffectSort: 'Магия'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDk0OGJhNzM5YWQyNWU3MDU5NGU2OTQ4YTQyOGE1Y2Q4MTljZDFhODBlYzBiZTllYWNiYmZhNzkxNWM0YzM4OCJ9fX0='
+      rarity: '&5[Эпическая]'
+      isPriceSnapers: false
+      price: 42000
+    - Effect: 'cloud'
+      EffectName: '§aОблако'
+      # Без цвета для сортировки
+      EffectSort: 'Облако'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDY2YjEwYmY2ZWUyY2Q3ZTNhYzk2ZDk3NDllYTYxNmFhOWM3MzAzMGJkY2FlZmZhZWQyNDllNTVjODQ5OTRhYyJ9fX0='
+      rarity: '&5[Эпическая]'
+      isPriceSnapers: false
+      price: 42000
+    - Effect: 'snow'
+      EffectName: '§aСнег'
+      # Без цвета для сортировки
+      EffectSort: 'Снег'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTExNWM3OTY4ZWMzNzcxZWU5ZmY2YWU2YmNhMmQ1YmEzOTYyYWE3MjdhNGZhOGQzNzYwOGU0YzliZjE1MTJiYiJ9fX0='
+      rarity: '&5[Эпическая]'
+      isPriceSnapers: false
+      price: 42000
+    - Effect: 'lava'
+      EffectName: '§aЛава'
+      # Без цвета для сортировки
+      EffectSort: 'Лава'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY3OTYzY2FiNjU3ZDI1NDlkZWE1MzRiZTIzODQ5OWQ2NGQ2MTY1YTU5MmNhMzYxNTEyNjg3YTk2ZWQ5NjAifX19'
+      rarity: '&6[Легендарная]'
+      isPriceSnapers: true
+      price: 74
+    - Effect: 'firework'
+      EffectName: '§aФейерверк'
+      # Без цвета для сортировки
+      EffectSort: 'Фейерверк'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzQ4N2ZmYWIxNWQ2MjhjYjBlZDQ5MzkxOWUxNTRkYTBiOTdiMDYxM2JiNDBmOGIzODc1N2RlNTA3YmJkNjA5NCJ9fX0='
+      rarity: '&6[Легендарная]'
+      isPriceSnapers: true
+      price: 79

@@ -1,0 +1,89 @@
+menu:
+  title: 'Test Updating & Relocating'
+  virtual: true
+
+layout: |-
+  #########
+  #       #
+  #  123  #
+  #   4   #
+  #       #
+  #########
+
+items:
+  '#':
+    material: gray stained glass pane
+  # It does not work properly because the update is too slow
+  1:
+    material: watch
+    update: 1
+    name: '&bUpdate Test'
+    lore: |-
+      &fPlaceholderAPI Time: &a%server_time_HH:mm:ss%
+      &fKether Time: &a{{inline "{{hour}}:{{minute}}:{{second}}"}}
+  # Works correctly
+  2:
+    material: watch
+    relocate: 1
+    name: '&dRelocate test'
+    lore: |-
+      1
+    action: ctx set value to 1
+    sub:
+      - rule: ctx has value
+        material: compass
+        lore: |-
+          2
+        action: ctx delete value
+  # Does not change the name of the item with animation, that is, as in the test update item is updated with a delay
+  3:
+    material: stone
+    frames-prop:
+      last: 3
+      type: reversable
+    frames:
+      - name: S
+      - name: St
+      - name: Sto
+      - name: Ston
+      - name: Stone
+  # It works correctly, perhaps because the item is changing, which means it is being updated.
+  4:
+    material: '160'
+    name: '0'
+    frames-prop:
+      last: 15
+      type: reversable
+    frames:
+      - material: '160'
+        name: '0'
+      - material: '160:1'
+        name: '1'
+      - material: '160:2'
+        name: '2'
+      - material: '160:3'
+        name: '3'
+      - material: '160:4'
+        name: '4'
+      - material: '160:5'
+        name: '5'
+      - material: '160:6'
+        name: '6'
+      - material: '160:7'
+        name: '7'
+      - material: '160:8'
+        name: '8'
+      - material: '160:9'
+        name: '9'
+      - material: '160:10'
+        name: '10'
+      - material: '160:11'
+        name: '11'
+      - material: '160:12'
+        name: '12'
+      - material: '160:13'
+        name: '13'
+      - material: '160:14'
+        name: '14'
+      - material: '160:15'
+        name: '15'

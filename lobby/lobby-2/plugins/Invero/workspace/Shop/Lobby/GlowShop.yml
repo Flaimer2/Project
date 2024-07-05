@@ -1,0 +1,317 @@
+title: '&0Меню следов от стрел'
+scale: [ 9, 6 ]
+virtual: true
+
+layout: |-
+  #########
+  #       #
+  #       #
+  #       #
+  #########
+  P#R#B###N
+
+items:
+  # Воздух
+  '#':
+    material: air
+  B:
+    material: air
+    sub:
+      - rule: 'check &profile == true'
+        material: arrow
+        name: '&aВернуться в магазин'
+        action: menu switch Shop
+  R:
+    update: 5
+    relocate: 5
+    material: air
+    sub:
+      - rule: 'check papi "%eglow_activeglow_raw%" != "none"'
+        material: barrier
+        name: '&aОтменить выбранное свечение'
+        lore: |-
+          &fНажмите, чтобы отменить
+          &fвыбранное свечение
+
+          &aНажмите, чтобы убрать!
+        action: |-
+          console "eglow unset %player_name%"
+          sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1  
+          icons update
+          icons relocate
+
+generator:
+  output:
+    material: air
+    flag: HIDE_ATTRIBUTES
+    name: '{{ element name }}'
+    lore: |-
+      &fЛКМ, чтобы установить:
+      {{ element name }}
+
+      &fПКМ, чтобы установить:
+      &6Медленно &eм&fи&eг&fа&eю&fщ&eе&fе {{ element lname }}
+
+      &fSHIFT + ПКМ, чтобы установить:
+      &aБыстро &eм&fи&eг&fа&eю&fщ&eе&fе {{ element lname }}
+    action:
+      left: |-
+        if check papi "%eglow_activeglow_raw%" == element sname then {
+          sound ENTITY_VILLAGER_NO by 1 1
+        } else if perm "snapix.glow" then {
+          console inline "eglow set %player_name% {{ element sname }}"
+          sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        } else {
+          sound ENTITY_ITEM_BREAK by 1 0
+        }
+        icons update
+        icons relocate
+      right: |-
+        if all [ check papi "%eglow_activeglow_raw%" == inline "{{element sname}}blink" check papi "%eglow_glowspeed_raw%" == "slow" ] then {
+          sound ENTITY_VILLAGER_NO by 1 1
+        } else if perm "snapix.glow" then {
+          console inline "eglow set %player_name% blink {{ element sname }} slow"
+          sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        } else {
+          sound ENTITY_ITEM_BREAK by 1 0
+        }
+        icons update
+            icons relocate
+      shift_right: |-
+        if all [ check papi "%eglow_activeglow_raw%" == inline "{{element sname}}blink" check papi "%eglow_glowspeed_raw%" == "fast" ] then {
+          sound ENTITY_VILLAGER_NO by 1 1
+        } else if perm "snapix.glow" then {
+          console inline "eglow set %player_name% blink {{ element sname }} fast"
+          sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        } else {
+          sound ENTITY_ITEM_BREAK by 1 0
+        }
+        icons update
+            icons relocate
+    sub:
+      - rule: 'check element id == 1'
+        json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":16733525}}}}'
+      - rule: 'check element id == 2'
+        json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":11546150}}}}'
+      - rule: 'check element id == 3'
+        json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":16755200}}}}'
+      - rule: 'check element id == 4'
+        json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":16701501}}}}'
+      - rule: 'check element id == 5'
+        json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":5635925}}}}'
+      - rule: 'check element id == 6'
+        json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":6192150}}}}'
+      - rule: 'check element id == 7'
+        json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":3847130}}}}'
+      - rule: 'check element id == 8'
+        json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":1481884}}}}'
+      - rule: 'check element id == 9'
+        json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":3949738}}}}'
+      - rule: 'check element id == 10'
+        json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":170}}}}'
+      - rule: 'check element id == 11'
+        json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":8991416}}}}'
+      - rule: 'check element id == 12'
+        json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":15961002}}}}'
+      - rule: 'check element id == 13'
+        json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":16383998}}}}'
+      - rule: 'check element id == 14'
+        json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":10329495}}}}'
+      - rule: 'check element id == 15'
+        json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":4673362}}}}'
+      - rule: 'check element id == 16'
+        frames-prop:
+          last: 1
+          type: reversable
+        frames:
+          - json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":16733525}}}}'
+          - json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":16755200}}}}'
+          - json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":16701501}}}}'
+          - json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":8439583}}}}'
+          - json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":3847130}}}}'
+          - json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":3949738}}}}'
+          - json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":15961002}}}}'
+        name: '{{ element name }}'
+        lore: |-
+          &fЛКМ, чтобы установить:
+          &6Медленную анимацию {{ element lname }}
+
+          &fПКМ, чтобы установить:
+          &aБыструю анимацию {{ element lname }}
+        action:
+          left: |-
+            if all [ check papi "%eglow_activeglow_raw%" == element sname check papi "%eglow_glowspeed_raw%" == "slow" ] then {
+              sound ENTITY_VILLAGER_NO by 1 1
+            } else if perm "snapix.glow" then {
+              console inline "eglow set %player_name% {{ element sname }} slow"
+              sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+            } else {
+              sound ENTITY_ITEM_BREAK by 1 0
+            }
+            icons update
+            icons relocate
+          right: |-
+            if all [ check papi "%eglow_activeglow_raw%" == element sname check papi "%eglow_glowspeed_raw%" == "fast" ] then {
+              sound ENTITY_VILLAGER_NO by 1 1
+            } else if perm "snapix.glow" then {
+              console inline "eglow set %player_name% {{ element sname }} fast"
+              sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+            } else {
+              sound ENTITY_ITEM_BREAK by 1 0
+            }
+            icons update
+            icons relocate
+      - rule: 'check element id == 17'
+        material: spruce_sapling
+        name: '{{ element name }}'
+        lore: |-
+          &fЛКМ, чтобы установить:
+          &6Медленную анимацию {{ element lname }}
+
+          &fПКМ, чтобы установить:
+          &aБыструю анимацию {{ element lname }}
+        action:
+          left: |-
+            if check papi "%eglow_activeglow_raw%" == element lsname then {
+              sound ENTITY_VILLAGER_NO by 1 1
+            } else if perm "snapix.glow" then {
+              console inline "eglow set %player_name% {{ element lsname }}"
+              sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+            } else {
+              sound ENTITY_ITEM_BREAK by 1 0
+            }
+            icons update
+            icons relocate
+          right: |-
+            if check papi "%eglow_activeglow_raw%" == element lfname then {
+              sound ENTITY_VILLAGER_NO by 1 1
+            } else if perm "snapix.glow" then {
+              console inline "eglow set %player_name% {{ element lfname }}"
+              sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+            } else {
+              sound ENTITY_ITEM_BREAK by 1 0
+            }
+            icons update
+            icons relocate
+      - rule: 'check element id == 18'
+        frames-prop:
+          last: 1
+          type: reversable
+        frames:
+          - json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":16383998}}}}'
+          - json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":3949738}}}}'
+        name: '{{ element name }}'
+        lore: |-
+          &fЛКМ, чтобы установить:
+          &6Медленную анимацию {{ element lname }}
+
+          &fПКМ, чтобы установить:
+          &aБыструю анимацию {{ element lname }}
+        action:
+          left: |-
+            if check papi "%eglow_activeglow_raw%" == element lsname then {
+              sound ENTITY_VILLAGER_NO by 1 1
+            } else if perm "snapix.glow" then {
+              console inline "eglow set %player_name% {{ element lsname }}"
+              sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+            } else {
+              sound ENTITY_ITEM_BREAK by 1 0
+            }
+            icons update
+            icons relocate
+          right: |-
+            if check papi "%eglow_activeglow_raw%" == element lfname then {
+              sound ENTITY_VILLAGER_NO by 1 1
+            } else if perm "snapix.glow" then {
+              console inline "eglow set %player_name% {{ element lfname }}"
+              sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+            } else {
+              sound ENTITY_ITEM_BREAK by 1 0
+            }
+            icons update
+            icons relocate
+  elements:
+    - id: '1'
+      name: '&cКрасное &fсвечение'
+      lname: '&cкрасное &fсвечение'
+      sname: 'red'
+    - id: '2'
+      name: '&4Тёмно-красное &fсвечение'
+      lname: '&4тёмно-красное &fсвечение'
+      sname: 'darkred'
+    - id: '3'
+      name: '&6Оранжевое &fсвечение'
+      lname: '&6оранжевое &fсвечение'
+      sname: 'gold'
+    - id: '4'
+      name: '&eЖёлтое &fсвечение'
+      lname: '&eжёлтое &fсвечение'
+      sname: 'yellow'
+    - id: '5'
+      name: '&aЗелёное &fсвечение'
+      lname: '&aзелёное &fсвечение'
+      sname: 'green'
+    - id: '6'
+      name: '&2Тёмно-зелёное &fсвечение'
+      lname: '&2тёмно-зелёное &fсвечение'
+      sname: 'darkgreen'
+    - id: '7'
+      name: '&bГолубое &fсвечение'
+      lname: '&bголубое &fсвечение'
+      sname: 'aqua'
+    - id: '8'
+      name: '&3Бирюзовое &fсвечение'
+      lname: '&3бирюзовое &fсвечение'
+      sname: 'darkaqua'
+    - id: '9'
+      name: '&9Синие &fсвечение'
+      lname: '&9синие &fсвечение'
+      sname: 'blue'
+    - id: '10'
+      name: '&1Тёмно-синие &fсвечение'
+      lname: '&1тёмно-синие &fсвечение'
+      sname: 'darkblue'
+    - id: '11'
+      name: '&5Фиолетовое &fсвечение'
+      lname: '&5фиолетовое &fсвечение'
+      sname: 'purple'
+    - id: '12'
+      name: '&dРозовое &fсвечение'
+      lname: '&dрозовое &fсвечение'
+      sname: 'pink'
+    - id: '13'
+      name: '&fБелое &fсвечение'
+      lname: '&fбелое &fсвечение'
+      sname: 'white'
+    - id: '14'
+      name: '&7Серое &fсвечение'
+      lname: '&7серое &fсвечение'
+      sname: 'gray'
+    - id: '15'
+      name: '&8Тёмно-серое &fсвечение'
+      lname: '&8тёмно-серое &fсвечение'
+      sname: 'darkgray'
+    - id: '16'
+      name: '&cР&6а&eд&aу&bж&9н&dое &fсвечение'
+      lname: '&cра&6д&eу&aж&bн&9о&dго &fсвечения'
+      sname: 'rainbow'
+    - id: '17'
+      name: '&cН&2о&cв&2о&cг&2о&cд&2н&cе&2е &fсвечение'
+      lname: '&cн&2о&cв&2о&cг&2о&cд&2н&cе&2г&cо &fсвечения'
+      sname: 'ChristmasS'
+      lsname: 'christmass'
+      fname: 'Christmas'
+      lfname: 'christmas'
+    - id: '18'
+      name: '&cSnapiX &fсвечение'
+      lname: '&cSnapiX &fсвечения'
+      sname: 'SnapiXs'
+      lsname: 'snapixs'
+      fname: 'SnapiX'
+      lfname: 'snapix'
+
+bindings:
+  command:
+    name: 'glow'
+    permission: 'snapix.glow'
+    permissionMessage: '§cУ вас нет разрешения'

@@ -1,0 +1,411 @@
+# К странице +1, так как люди ещё считаю с 1
+title: '&0Суффиксы (Страница {{math add [ page get 1 ]}}/{{math add [ page max 1 ]}})'
+scale: [ 9, 6 ]
+virtual: true
+
+layout: |-
+  #########
+  #       #
+  #       #
+  #       #
+  #########
+  P#R#B#S#N
+
+items:
+  P:
+    relocate: 5
+    material: arrow
+    name: '&aПредыдущая страница'
+    action: |-
+      page previous
+      menu title update
+    sub:
+      - rule: 'page isFirst'
+        inherit: false
+        material: air
+  S:
+    update: 1
+    relocate: 1
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWI3NzE3ZDlkMzNkNjlhZjg1NWQ4NGNmY2ExODExMTZhNzI1YzE5MTVmMDBmNTE0NzE2ZDliYmIwZWFlYTZiZiJ9fX0=
+    name: '§aСортировка'
+    lore: |-
+      &fПо редкости &a←
+      &fПо алфавиту
+
+      &aНажмите, чтобы изменить
+    action: |-
+      regenerate sort ssuffix
+      ctx set sort to 2
+    sub:
+      - rule: 'check ctx get sort == 2'
+        lore: |-
+          &fПо редкости
+          &fПо алфавиту &a←
+
+          &aНажмите, чтобы изменить
+        action: |-
+          regenerate sort
+          ctx set sort to 1
+
+  B:
+    material: arrow
+    name: '&aВернуться в магазин'
+    action: menu switch Shop
+  R:
+    update: 1
+    relocate: 5
+    material: air
+    sub:
+      - rule: 'check size papi "%vault_suffix%" != 0'
+        material: barrier
+        name: '&aОтменить выбранный суффикс'
+        lore: |-
+          &fУбирает суфикс, который
+          &fвы выбрали
+
+          &aНажмите, чтобы убрать!
+        action: |-
+          console "lp user %player_name% meta removesuffix 1"
+          sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+  N:
+    relocate: 5
+    material: arrow
+    name: '&aСледующая страница'
+    action: |-
+      page next
+      menu title update
+    sub:
+      - rule: 'page isLast'
+        inherit: false
+        material: air
+  # Воздух
+  '#':
+    material: air
+
+generator:
+  output:
+    update: 1
+    head: '{{ element head }}'
+    name: '{{ element suffix }}'
+    lore: |-
+
+      &fРедкость: {{ element rarity }}
+      &fЦена: &a{{ element price }}$
+      &fСтатус: {{ if perm element spermission then "&a&lРАЗБЛОКИРОВАНО" else "&c&lЗАБЛОКИРОВАНО" }}
+      
+      &fБудет выглядеть для всех так: 
+      %vault_prefix%%player_name% {{ element suffix }}
+
+      {{ if check papi "%vault_suffix%" == element suffix then "&cУ вас уже стоит этот суффикс" else if perm element spermission then "&aНажмите, чтобы включить" else if check money get >= element price then "&aНажмите, чтобы приобрести суффикс" else "&cУ вас не хватает денег для покупки" }}
+    action: |-
+      if check papi "%vault_suffix%" == element suffix then {
+        sound ENTITY_VILLAGER_NO by 1 1
+      } else if perm element spermission then {
+        console inline 'lp user %player_name% meta setsuffix 1 " {{element suffix}}"'
+        sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+      } else if check money get >= element price then {
+        console inline "money take %player_name% {{element price}}"
+        console inline 'lp user %player_name% meta setsuffix 1 " {{element suffix}}"'
+        console inline "lp user %player_name% permission set {{element spermission}}"
+        console inline "lp user %player_name% meta set suffix %math_{luckperms_meta_suffix}+1%"
+        msg "&6Суффиксы &7| &fВы успешно приобрели суффикс {{element suffix}}"
+        title "&fВы приобрели суффикс" subtitle element suffix by 20 20 10
+        sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        menu close
+      } else {
+        sound ENTITY_ITEM_BREAK by 1 0
+      }
+    sub:
+      - rule: 'element isPriceSuffix'
+        lore: |-
+
+          &fРедкость: {{ element rarity }}
+          &fЦена: &a{{ element price }} суффиксов
+          &fСтатус: {{ if perm element spermission then "&a&lРАЗБЛОКИРОВАНО" else "&c&lЗАБЛОКИРОВАНО" }}
+          
+          &fБудет выглядеть для всех так: 
+          %vault_prefix%%player_name% {{ element suffix }}
+
+          {{ if check papi "%vault_suffix%" == element suffix then "&cУ вас уже стоит этот суффикс" else if perm element spermission then "&aНажмите, чтобы включить" else if check papi "%luckperms_meta_suffix%" >= element price then "&aНажмите, чтобы получить суффикс" else "&cУ вас недостаточно суффиксов" }}       
+        action: |-
+          if check papi "%vault_suffix%" == element suffix then {
+            sound ENTITY_ITEM_BREAK by 1 1
+          } else if perm element spermission then {
+            console inline "lp user %player_name% meta setsuffix 1 {{element suffix}}"
+            sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+          } else if check papi "%luckperms_meta_suffix%" >= element price then {
+            console inline "lp user %player_name% meta setsuffix 1 {{element suffix}}"
+            console inline "lp user %player_name% permission set {{element spermission}}"
+            console inline "lp user %player_name% meta set suffix %math_{luckperms_meta_suffix}+1%"
+            msg "&6Суффиксы &7| &fВы успешно получили суффикс: {{element suffix}}"
+            title "&fВы получили суффикс" subtitle element suffix by 20 20 10
+            menu close
+          } else {
+            sound ENTITY_ITEM_BREAK by 1 1
+          }
+  elements:
+    - suffix: '§aСупермен'
+      ssuffix: 'Супермен'
+      rarity: '&a[Обычная]'
+      price: 35000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDU0MzVjMzdlZGFmZTE2NWM5MmFlMzczNmUxNWM0NjRhZDYyMWQ2MTIyMDQzNWQxYTM5YWRiNDcwNWZiODg2In19fQ=='
+      spermission: 'snapix.suffix.1'
+    - suffix: '§aКостыль'
+      ssuffix: 'Костыль'
+      rarity: '&a[Обычная]'
+      price: 35000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODc1ZWFlNjljOTQ5ZWQ0YzI3MWI5YmE1MDhlNTgxY2ExOTY4ZmFhZjliMjFkNzI1N2NkYTI3YzQ0MzVlNTZiOCJ9fX0='
+      spermission: 'snapix.suffix.2'
+    - suffix: '§aТелепузик'
+      ssuffix: 'Телепузик'
+      rarity: '&a[Обычная]'
+      price: 35000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzVmYzZjZTc0NDQxYmVhMDliOTBlZjM4ZDNkOWJlMzEyZmI2ZDg2NGY4OGZjYjZkYzMyNzY1MjVmMDhlODE2YiJ9fX0='
+      spermission: 'snapix.suffix.3'
+    - suffix: '§aНафаня'
+      ssuffix: 'Нафаня'
+      rarity: '&a[Обычная]'
+      price: 35000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Y3Y2RlZWZjNmQzN2ZlY2FiNjc2YzU4NGJmNjIwODMyYWFhYzg1Mzc1ZTlmY2JmZjI3MzcyNDkyZDY5ZiJ9fX0='
+      spermission: 'snapix.suffix.4'
+    - suffix: '§aСлон'
+      ssuffix: 'Слон'
+      rarity: '&a[Обычная]'
+      price: 35000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjZlMWMxYTY5MWMyNzgyOTUwMGNjNDQ2ZDViNWIwOWI1YTIwOTk1MWY3NmQ2Njc3N2U1YmMyM2YxMzIyMTZlOCJ9fX0='
+      spermission: 'snapix.suffix.5'
+    - suffix: '§aПластырь'
+      ssuffix: 'Пластырь'
+      rarity: '&a[Обычная]'
+      price: 35000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7ImlkIjoiNzUyM2U1YzViNWRiNDMwZjk4NDIwNTE0Y2VjN2ViYzEiLCJ0eXBlIjoiU0tJTiIsInVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTA5MzcxOTBjYzUyZjQzOGZlODU1MzZjM2Q0ZGRlOTAyMGFlZDBmMjdiYzU5NTU4YzRjODUyZGZmMGVjZTBiOCIsInByb2ZpbGVJZCI6IjliNjI5Y2JiMzBiNDQyYzI5Mjg5MmUyNGVlYTQ0NTdhIiwidGV4dHVyZUlkIjoiZTA5MzcxOTBjYzUyZjQzOGZlODU1MzZjM2Q0ZGRlOTAyMGFlZDBmMjdiYzU5NTU4YzRjODUyZGZmMGVjZTBiOCJ9fSwic2tpbiI6eyJpZCI6Ijc1MjNlNWM1YjVkYjQzMGY5ODQyMDUxNGNlYzdlYmMxIiwidHlwZSI6IlNLSU4iLCJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2UwOTM3MTkwY2M1MmY0MzhmZTg1NTM2YzNkNGRkZTkwMjBhZWQwZjI3YmM1OTU1OGM0Yzg1MmRmZjBlY2UwYjgiLCJwcm9maWxlSWQiOiI5YjYyOWNiYjMwYjQ0MmMyOTI4OTJlMjRlZWE0NDU3YSIsInRleHR1cmVJZCI6ImUwOTM3MTkwY2M1MmY0MzhmZTg1NTM2YzNkNGRkZTkwMjBhZWQwZjI3YmM1OTU1OGM0Yzg1MmRmZjBlY2UwYjgifSwiY2FwZSI6bnVsbH0='
+      spermission: 'snapix.suffix.6'
+    - suffix: '§aМолния'
+      ssuffix: 'Молния'
+      rarity: '&a[Обычная]'
+      price: 35000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODI5Y2EzY2VjODQwMWNhZmUyN2EzN2ZlNjAxZWUwZTMzM2IwZjUyMWI2NWI5YTczMWU0MjRmZjZhYTFhNGI0NCJ9fX0='
+      spermission: 'snapix.suffix.7'
+    - suffix: '§aКексик'
+      ssuffix: 'Кексик'
+      rarity: '&a[Обычная]'
+      price: 35000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWJmNDgxYmZlMDQ1NWM3NjdkZmQ3MGYxYzlmNjQ3ZGE0ZjhhZTQ1OWU0ZmU2NGVmOTQ3OTBiZDM3NGQ0NjE0In19fQ=='
+      spermission: 'snapix.suffix.8'
+    - suffix: '§aГрифер'
+      ssuffix: 'Грифер'
+      rarity: '&a[Обычная]'
+      price: 35000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOThiN2NhM2M3ZDMxNGE2MWFiZWQ4ZmMxOGQ3OTdmYzMwYjZlZmM4NDQ1NDI1YzRlMjUwOTk3ZTUyZTZjYiJ9fX0='
+      spermission: 'snapix.suffix.9'
+    - suffix: '§aБот'
+      ssuffix: 'Бот'
+      rarity: '&a[Обычная]'
+      price: 35000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTFhOGUxYjMxNjVhMzM5NWU3Yjk1MWRlYjc4YjU2ODgzN2IyYWI0NmZiMjRhOTJkMmMyMjEwN2Y0NTI2YWRlIn19fQ=='
+      spermission: 'snapix.suffix.10'
+    - suffix: '§aГений'
+      ssuffix: 'Гений'
+      rarity: '&a[Обычная]'
+      price: 35000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGFiNzc0NmE0MzA1MWQwN2Q0ZjNlMTMyODA4MDBmYjQwMTBkODcxYWVmOGZmZTE2ODJhMmJkNzUzYmZkZTRlMiJ9fX0='
+      spermission: 'snapix.suffix.11'
+    - suffix: '§9Киндер'
+      ssuffix: 'Киндер'
+      rarity: '&9[Редкая]'
+      price: 50000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTI0Y2RlMzBjMjNkOTMzNGVhOWJjMmVkMTU2MDZkNzBkY2NlYmQyZDZiMWZkYTlkYzlhMGQyNzUwMjZiZTdjNiJ9fX0='
+      spermission: 'snapix.suffix.12'
+    - suffix: '§9Чебурашка'
+      ssuffix: 'Чебурашка'
+      rarity: '&9[Редкая]'
+      price: 50000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjM4ZjMzYmQ3YTgyMmE2YTZjM2JkYzcyYzZhMDUwNGUzM2QwYjEzY2M4M2VlMWMxMGQxNTFjOGI0NDIyZDE1In19fQ=='
+      spermission: 'snapix.suffix.13'
+    - suffix: '§9Глаз'
+      ssuffix: 'Глаз'
+      rarity: '&9[Редкая]'
+      price: 50000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTBhYzkyZTdhYjc2OGM2ODc0NjA0NjY4Y2I3ODAzNDhkZmEwYjNmNzRhNDU3NjM4ZDZjZWZkMDQyYmM4ZTA0MCJ9fX0='
+      spermission: 'snapix.suffix.14'
+    - suffix: '§9Ребёнок'
+      ssuffix: 'Ребёнок'
+      rarity: '&9[Редкая]'
+      price: 50000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmFmMWVjZWE2NDZjODg2ODA4ZjBkYTdmNjk5OTk3MTU3OGVhYWU0YWJmMDM2ZTFmMmNlMjExMjNlYjEwZjhlMCJ9fX0='
+      spermission: 'snapix.suffix.15'
+    - suffix: '§9Зло'
+      ssuffix: 'Зло'
+      rarity: '&9[Редкая]'
+      price: 50000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTc2MWEzODMxNTkyZWU0YTA4ZmYwOWQ3NTdlZDgyZWM5YjBmZDhhZGI3ZWY4MmRhMmI2ODZjM2M5YzY2ZWEifX19'
+      spermission: 'snapix.suffix.16'
+    - suffix: '§9Кубач'
+      ssuffix: 'Кубач'
+      rarity: '&9[Редкая]'
+      price: 50000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ0OWI5MzE4ZTMzMTU4ZTY0YTQ2YWIwZGUxMjFjM2Q0MDAwMGUzMzMyYzE1NzQ5MzJiM2M4NDlkOGZhMGRjMiJ9fX0='
+      spermission: 'snapix.suffix.17'
+    - suffix: '§9Амогус'
+      ssuffix: 'Амогус'
+      rarity: '&9[Редкая]'
+      price: 50000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDZjODU1MGE3ODE2NmRhMWQ1YmIxNmJjZmQ2OTI2NTk3NWM5ZTk0NDg5YzU1MzI2NGI0Y2Y1ZWNjODE3MjcxMyJ9fX0='
+      spermission: 'snapix.suffix.18'
+    - suffix: '§9Кринж'
+      ssuffix: 'Кринж'
+      rarity: '&9[Редкая]'
+      price: 50000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGEyODRkOTc4MDViZTUzMWNhZGYwNjI3YzVjMjllOTAzNWUxNzEyMTU4MWRjYWJjZjk1MTBmZmQ5ZDQ2MDdmZiJ9fX0='
+      spermission: 'snapix.suffix.19'
+    - suffix: '§9Звезда'
+      ssuffix: 'Звезда'
+      rarity: '&9[Редкая]'
+      price: 50000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWM4ZTBjZmViYzdmOWM3ZTE2ZmJhYWFlMDI1ZDFiMWQxOWQ1ZWU2MzM2NjZiY2YyNWZhMGI0MGQ1YmQyMWJjZCJ9fX0='
+      spermission: 'snapix.suffix.20'
+    - suffix: '§9Котик'
+      ssuffix: 'Котик'
+      rarity: '&9[Редкая]'
+      price: 50000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmIyNTNmYzZiNjU2OTg4NDUzYTJkNzEzOGZjYTRkMWYyNzUyZjQ3NjkxZjBjNDM0ZTQzMjE4Mzc3MWNmZTEifX19'
+      spermission: 'snapix.suffix.21'
+    - suffix: '§9Курица'
+      ssuffix: 'Курица'
+      rarity: '&9[Редкая]'
+      price: 50000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjc3Njk1ZTY5N2EyMjQ3Mzc3MzQ5ZmU4MjcxZDhlNmI4ODhhZWYzNTRmOGNjNzUxZjczOWM2YjRjN2Y0OTJkMyJ9fX0='
+      spermission: 'snapix.suffix.22'
+    - suffix: '§5Ведьмак'
+      ssuffix: 'Ведьмак'
+      rarity: '&5[Эпическая]'
+      price: 65000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjhlMzU1NDlmYzMzYTJlZGU1OWNhOGU4NjgyMGYwNzU1MjM0OGFhOTk1ZGUyMzk2ZWU4Mjc4MGRiOTJkNzY1YyJ9fX0='
+      spermission: 'snapix.suffix.23'
+    - suffix: '§5Голод'
+      ssuffix: 'Голод'
+      rarity: '&5[Эпическая]'
+      price: 65000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWE5NzgwYjhiOWZjYjA4ZTgzNzhjNjVmOGY0MzJjYzJhOTM3YTllMGFiMmZkMTllMDE2ZTdiM2RlYWEwYmMwZSJ9fX0='
+      spermission: 'snapix.suffix.24'
+    - suffix: '§5Сокол'
+      ssuffix: 'Сокол'
+      rarity: '&5[Эпическая]'
+      price: 65000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjJkMjRjYjhkM2VmZWVlOWE5MmQyNzMxNmVjY2M3MTM3MmFhZmQ1YWY0NjIzYjA0MTNhOTFiZTRlODhhZDE1In19fQ=='
+      spermission: 'snapix.suffix.25'
+    - suffix: '§5Сталкер'
+      ssuffix: 'Сталкер'
+      rarity: '&5[Эпическая]'
+      price: 65000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTA0MGMzZjg4OWI4ZWE1NTVmMDQyMTJiMzk1MmIzZWU5ZGQ3ZTY3NTY5YWYzMWE2MWRmZjIxYWQyY2QxYzhlNiJ9fX0='
+      spermission: 'snapix.suffix.26'
+    - suffix: '§5Борода'
+      ssuffix: 'Борода'
+      rarity: '&5[Эпическая]'
+      price: 65000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjIyZTBiYzAxYjI3NDE4ZmQ5NmNhYzc5MGZkMWQxOTE4ODQzYmZiMGIxZjQyNjdjNTkzMzViNTVhNWVkOWEwIn19fQ=='
+      spermission: 'snapix.suffix.27'
+    - suffix: '§5Аим-бот'
+      ssuffix: 'Аим-бот'
+      rarity: '&5[Эпическая]'
+      price: 65000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTAzYjU0NGI0OTk4OGVhNzBkNzI2NmU0MjAyMzFmMDQ5MTIzY2E3YmY2NjBlYjA5NTU5ODA1NjU2NjE0ZGNlNSJ9fX0='
+      spermission: 'snapix.suffix.28'
+    - suffix: '§5Лжец'
+      ssuffix: 'Лжец'
+      rarity: '&5[Эпическая]'
+      price: 65000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2Q3ZjU0NzMxNzgwMjIyYWFmNjhhMGEyZDUyMmUzOWY0ZDczMjQzNDQ3YjczZjlkYTYyMTQxMTM2NWVlNGMifX19'
+      spermission: 'snapix.suffix.29'
+    - suffix: '§5Тащер'
+      ssuffix: 'Тащер'
+      rarity: '&5[Эпическая]'
+      price: 65000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjhjYTAzZDc4ZDE1N2RmMzRlOGM0Mjg4MWZmNTdlYTg5ODE4MzY3ZTQwZTI4OGRhN2Y4YjQxY2NhNWMxZDQwNiJ9fX0='
+      spermission: 'snapix.suffix.30'
+    - suffix: '§5Читак'
+      ssuffix: 'Читак'
+      rarity: '&5[Эпическая]'
+      price: 65000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjIzYzNhZDhjNDQxMDE0NTA5NTI4MDc3OTI5M2NjMWU3OTA0YjZmY2U5M2Q3MDM3OGFjNWYzMjAzMmJhMWQ4NiJ9fX0='
+      spermission: 'snapix.suffix.31'
+    - suffix: '§5Халявщик'
+      ssuffix: 'Халявщик'
+      rarity: '&5[Эпическая]'
+      price: 65000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2Y5YzMxOGU2OGRhNjM0ZWYyYmUwZDhiNDAyYjY2Y2U3YmExNjg2YTliYmU2NWNjODkxMDkzODlmN2I3YzNkNCJ9fX0='
+      spermission: 'snapix.suffix.32'
+    - suffix: '§5Элита'
+      ssuffix: 'Элита'
+      rarity: '&5[Эпическая]'
+      price: 65000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGZkMDZhYmEyYThlYWFhNGEyN2M3N2ZmODhlNWI3MzE5OGM1NThkMzgwMzVhZWJlZjllZTQyMDk4YTU5ZTQ5OCJ9fX0='
+      spermission: 'snapix.suffix.33'
+    - suffix: '§6Магия'
+      ssuffix: 'Магия'
+      rarity: '&6[Легендарная]'
+      price: 90000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzU2ZjJjODU1ZWE0YThjZWM0Yjc3YWE1MTY0NzA4ZTVlZmQ5NmIyYWMxNjhhNzA4ZTU2M2NmNGZiZTlmODk4NSJ9fX0='
+      spermission: 'snapix.suffix.34'
+    - suffix: '§6Меченый'
+      ssuffix: 'Меченый'
+      rarity: '&6[Легендарная]'
+      price: 90000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGM5ZmJlZDMxOGMwZmQ1MjE5YWYxY2U1NjZiNzQ5MmZkYTJkMzI2NDBkYWZlNThiMzMzMGE2NjU4MTI4ZDMifX19'
+      spermission: 'snapix.suffix.35'
+    - suffix: '§6Лучший'
+      ssuffix: 'Лучший'
+      rarity: '&6[Легендарная]'
+      price: 90000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTU2NGU1NTM4MGQzOTkwMDJlMDFjZjBiMTI3NzRjZGE2YTdhMjZkODZiNTliZjg2MjkyODRlZjFhMzg3ZDRkMCJ9fX0='
+      spermission: 'snapix.suffix.36'
+    - suffix: '§6Пиксель'
+      ssuffix: 'Пиксель'
+      rarity: '&6[Легендарная]'
+      price: 90000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGU5M2ViYWNiNjBiNzE3OTMzNTVmZGUwZDRiYmE0M2E5YzVlYzA5YzNmMzg4OTdjNDhjMWY4NTc1MjNhMGEyOSJ9fX0='
+      spermission: 'snapix.suffix.37'
+    - suffix: '§6Повелитель'
+      ssuffix: 'Повелитель'
+      rarity: '&6[Легендарная]'
+      price: 90000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2NjYTlkYmNlNmFlMTc5OTY4NzJhYmRkOTIzYmIyODA5NWQ2ZGRiODYwZmEyZGNjYmZmN2IxNWI4N2VhMWNkZSJ9fX0='
+      spermission: 'snapix.suffix.38'
+    - suffix: '§6Альфа'
+      ssuffix: 'Альфа'
+      rarity: '&6[Легендарная]'
+      price: 90000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzAxNTMwMDliZWNkNDQ5NjlhZDc1ZTkyMzQ4MjJmZTEzY2Q5NWRhZmRlNjBiMWQ5MGZlYTg0YTQ1Yjk1NTY2MiJ9fX0='
+      spermission: 'snapix.suffix.39'
+    - suffix: '§6Старик'
+      ssuffix: 'Старик'
+      rarity: '&6[Легендарная]'
+      price: 90000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjA2YjRmNTQyMTc2ZTgwMDI4M2RmODUzN2ZlOTNhMzU2MzUzZWE2NmQ0OTBhNDcwMWE0YjBjNjE5OWJiZDMyYyJ9fX0='
+      spermission: 'snapix.suffix.41'
+    - suffix: '§6Зумер'
+      ssuffix: 'Зумер'
+      rarity: '&6[Легендарная]'
+      price: 90000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjRjMDhiYzNlNGVkMzY4NjlhODRiOWMyMjI4OWIzM2E0MjA1MGJjY2JlNTQ5NDZlOTc1YjA4ZDc3MmFhNmUyIn19fQ=='
+      spermission: 'snapix.suffix.42'
+    - suffix: '§6Олд'
+      ssuffix: 'Олд'
+      rarity: '&6[Легендарная]'
+      price: 90000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTg5ZGI2NDlkOWQ5ZTMzYTkyYjUwMWNlOTg4MDE5ZTQ5NzgwODg2OWRhZjY1NzJiMjlmYTE1ZDM5MDhiZjZmNCJ9fX0='
+      spermission: 'snapix.suffix.43'
+    - suffix: '§6Анимешник'
+      ssuffix: 'Анимешник'
+      rarity: '&6[Легендарная]'
+      price: 90000
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWM1MWNlOWE2NjRkNThmN2JhOTM2NTIyOTQzMGMzMDNkMTYwMjM3NjFiNzBkZDExZTM3YWE5NjVjZGZmYjQ3YiJ9fX0='
+      spermission: 'snapix.suffix.44'
+    - suffix: '§cПервый'
+      ssuffix: 'Первый'
+      rarity: '&c[Уникальная]'
+      price: 10
+      isPriceSuffix: true
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWUwNTc5OTZjYmE0NzMyOGRmNzJmYmEzZWEyYjlhYTM1YzhhODIyN2YxY2VjODljMTg4NGRjYWRhYTgyNGQ4NSJ9fX0='
+      spermission: 'snapix.suffix.45'

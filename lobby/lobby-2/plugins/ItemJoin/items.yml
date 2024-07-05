@@ -23,11 +23,11 @@ items:
     slot: 1
     name: '&8★  &bВаш профиль &8★  &e&lПРАВЫЙ КЛИК'
     skull-owner: '%tab_placeholder_condition:getSkinName%'
-    itemflags: dynamic, item-store, hide-attributes, death-drops, self-drops, cancel-events
+    itemflags: item-store, hide-attributes, death-drops, self-drops, cancel-events
     triggers: join, respawn, world-switch
     enabled-worlds: lobby
     interact:
-      - 'player: invero menu open Profile %player%'
+      - 'player: profile'
   3:
     id: NETHER_STAR
     slot: 4
@@ -41,7 +41,7 @@ items:
     id: SKULL_ITEM:3
     slot: 7
     name: '&8★  &9Карманные игры &8★  &e&lПРАВЫЙ КЛИК'
-    skull-owner: '__Skippy__'
+    skull-texture: 'url-65dd1a64e529c90dd55d76733dfb58e3663a12472fb3c7657e2661ccf172fe64'
     itemflags: item-store, hide-attributes, death-drops, self-drops, cancel-events
     triggers: join, respawn, world-switch
     enabled-worlds: lobby

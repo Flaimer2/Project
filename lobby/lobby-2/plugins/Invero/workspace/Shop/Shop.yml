@@ -1,0 +1,121 @@
+menu:
+  title: '&0Магазин'
+  virtual: true
+
+layout:
+  - '         '
+  - '  1 2 3  '
+  - '         '
+  - '  4 5 6  '
+  - '         '
+  - '    B    '
+
+items:
+  1:
+    material: nametag
+    name: '&aСуффиксы'
+    lore: |-
+      &fЗдесь, Вы сможете приобрести
+      &fcуффиксы на свой вкус
+
+      &aНажмите, чтобы открыть меню
+    action: menu switch SuffixShop
+
+  2:
+    material: arrow
+    name: '&aСледы от метания предметов'
+    lore: |-
+      &fВ данном меню, Вы сможете приобрести
+      &fследы от стрел, снежков и яиц. Вы сможете
+      &fнаслаждаться ими по всему серверу!
+
+      &aНажмите, чтобы открыть меню
+    action: menu switch BowTrailsShop
+
+  3:
+    update: 160
+    relocate: 160
+    material: prismarine_crystals
+    name: '&aСвечение'
+    lore: |-
+      &fДает вашему игровому персонажу
+      &fсилуэт в цветовой гамме,
+      &fкоторую вы выберите.
+
+      &fПримечание: &aСвечение &fбудет
+      &fвидно только игрокам, играющие в
+      &aMinecraft 1.9 &fили более новую версию
+      
+      &aНажмите, чтобы открыть меню
+    action: |-
+      ctx set 'shop' to 'true'
+      menu switch GlowShop
+    sub:
+      - rule: 'not perm "snapix.glow"'
+        material: prismarine_crystals
+        name: '&aСвечение'
+        inherit: false
+        lore: |-
+          &fДает вашему игровому персонажу
+          &fсилуэт в цветовой гамме,
+          &fкоторую вы выберите.
+
+          &fПримечание: &aСвечение &fбудет
+          &fвидно только игрокам, играющие в
+          &aMinecraft 1.9 &fили более новую версию
+
+          &fТолько игроки с §f⌜§9SnapiX§f⌟ &fмогут
+          &fиспользовать &aсвечения
+  4:
+    material: ender_chest
+    name: '&aАнимации Мистических коробок'
+    lore: |-
+      &fЗдесь, Вы сможете приобрести
+      &fанимации мистических коробок
+
+      &aНажмите, чтобы открыть меню
+    action: menu switch AnimationBoxShop
+
+  5:
+    material: ender_pearl
+    name: '&aMiniGames магазин'
+    lore: |-
+      &fПокупайте различные настройки 
+      &fпочти для всех мини-игр!
+      
+      &aНажмите, чтобы открыть меню
+    action: menu switch GameShop
+    frames-prop:
+      last: 15
+      type: reversable
+    frames:
+    - material: ender_pearl
+    - material: red_bed
+    - material: iron_sword
+      flag: HIDE_ATTRIBUTES
+    - material: gold_ingot
+    - material: red_terracotta
+    - material: 45
+
+  6:
+    material: comparator
+    name: '&aМагазин настроек'
+    lore: |-
+      &fВ этом меню, Вы сможете приобрести
+      &fна время различные донат-настройки
+
+      &aНажмите, чтобы открыть меню
+    action: menu switch SettingsShop
+
+  B:
+    update: 1
+    relocate: 1
+    material: air
+    sub:
+      - rule: 'check &profile == true'
+        material: arrow
+        name: '&aВернуться в профиль'
+        action: command "profile"
+
+bindings:
+  command: 'shop'

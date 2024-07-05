@@ -1,0 +1,210 @@
+title: '&0Меню следов от предметов'
+scale: [ 9, 6 ]
+virtual: true
+
+layout: |-
+  #########
+  #       #
+  #       #
+  #       #
+  #########
+  P#R#B#S#N
+
+items:  
+  P:
+    relocate: 5
+    material: arrow
+    name: '&aПредыдущая страница'
+    action: |-
+      page previous
+      menu title update
+    sub:
+      - rule: 'page isFirst'
+        inherit: false
+        material: air
+  S:
+    update: 1
+    relocate: 1
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWI3NzE3ZDlkMzNkNjlhZjg1NWQ4NGNmY2ExODExMTZhNzI1YzE5MTVmMDBmNTE0NzE2ZDliYmIwZWFlYTZiZiJ9fX0=
+    name: '§aСортировка'
+    lore: |-
+      &fПо редкости &a←
+      &fПо алфавиту
+
+      &aНажмите, чтобы изменить
+    action: |-
+      regenerate sort strailname
+      ctx set sort to 2
+    sub:
+      - rule: 'check ctx get sort == 2'
+        lore: |-
+          &fПо редкости
+          &fПо алфавиту &a←
+
+          &aНажмите, чтобы изменить
+        action: |-
+          regenerate sort
+          ctx set sort to 1
+  B:
+    material: arrow
+    name: '&aВернуться в магазин'
+    action: menu switch Shop
+  R:
+    update: 5
+    relocate: 5
+    material: air
+    sub:
+      - rule: 'check papi "%ma_selected_bt%" != "§aNone"'
+        material: barrier
+        name: '&aОтменить выбранный след от метания'
+        lore: |-
+          &fНажмите, чтобы отменить
+          &fвыбранный след от предметов
+
+          &aНажмите, чтобы убрать!
+        action: |-
+          console "ma setBowTrail None %player_name%"
+          sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1   
+  N:
+    relocate: 5
+    material: arrow
+    name: '&aСледующая страница'
+    action: |-
+      page next
+      menu title update
+    sub:
+      - rule: 'page isLast'
+        inherit: false
+        material: air
+  # Воздух
+  '#':
+    material: air
+
+generator:
+  output:
+    update: 1
+    head: '{{ element head }}'
+    name: '{{ element trailname }}'
+    lore: |-
+
+      &fРедкость: {{ element rarity }}
+      &fЦена: &a{{ element price }}$
+
+      {{ if check papi "%ma_selected_bt%" == element trailname then "&a&cУ вас уже стоит этот след!" else if perm inline "ma.bt.{{element traileffect}}" then "&aНажмите, чтобы включить" else if check money get >= element price then "&aНажмите, чтобы приобрести след" else "&cУ вас не хватает денег для покупки" }}
+    action: |-
+      if check papi "%ma_selected_bt%" == element trailname then {
+        sound ENTITY_VILLAGER_NO by 1 1
+      } else if perm inline "ma.bt.{{element traileffect}}" then {
+        sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        console inline "ma setBowTrail {{element traileffect}} %player_name%"
+      } else if check money get >= element price then {
+        console inline "money take %player_name% {{element price}}"
+        console inline "lp user %player_name% perm set ma.bt.{{element traileffect}}"
+        console inline "ma setBowTrail {{element traileffect}} %player_name%"
+        console "lp user %player_name% meta set bowtrail %math_{luckperms_meta_bowtrail}+1%"
+        sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        msg inline "&6Следы &7| &fВы успешно приобрели след от метания предметов {{element trailname}}"
+        title "&fВы приобрели" subtitle inline "след от предмета {{element trailname}}" by 20 20 10
+        menu close
+      } else {
+        sound ENTITY_ITEM_BREAK by 1 0
+      }
+    sub:
+      - rule: 'element isPriceTrails'
+        lore: |-
+
+          &fРедкость: {{ element rarity }}
+          &fЦена: &aВсе следы
+
+          {{ if check papi "%ma_selected_bt%" == element trailname then "&a&cУ вас уже стоит этот след!" else if perm inline "ma.bt.{{element traileffect}}" then "&aНажмите, чтобы включить" else if check papi "%luckperms_meta_bowtrail%" >= element price then "&aВы можете получить этот след!" else "&cУ вас не хватает следов!" }}  
+        action: |-
+          if check papi "%ma_selected_bt%" == element trailname then {
+            sound ENTITY_ITEM_BREAK by 1 0
+          } else if perm inline "ma.bt.{{element traileffect}}" then {
+            sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+            console inline "ma setBowTrail {{element traileffect}} %player_name%"
+          } else if check papi "%luckperms_meta_bowtrail%" >= element price then {
+            menu close
+            console inline "lp user %player_name% perm set ma.bt.{{element traileffect}}"
+            console inline "ma setBowTrail {{element traileffect}} %player_name%"
+            console "lp user %player_name% meta set bowtrail %math_{luckperms_meta_bowtrail}+1%"
+            sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+            msg inline "&6Следы &7| &fВы успешно получили след {{element trailname}}"
+            title "&fВы получили" subtitle inline "след {{element trailname}}" by 20 20 10
+          } else {
+            sound ENTITY_ITEM_BREAK by 1 0
+          }   
+  elements:
+    - trailname: '§aОблака'
+      strailname: 'Облака'
+      traileffect: 'Cloud'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDY2YjEwYmY2ZWUyY2Q3ZTNhYzk2ZDk3NDllYTYxNmFhOWM3MzAzMGJkY2FlZmZhZWQyNDllNTVjODQ5OTRhYyJ9fX0='
+      rarity: '&a[Обычная]'
+      price: 35000
+    - trailname: '§aЗлой житель'
+      strailname: 'Злой житель'
+      traileffect: 'VILLAGER_ANGRY'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGFlZTZiYjM3Y2JmYzkyYjBkODZkYjVhZGE0NzkwYzY0ZmY0NDY4ZDY4Yjg0OTQyZmRlMDQ0MDVlOGVmNTMzMyJ9fX0='
+      rarity: '&a[Обычная]'
+      price: 35000
+    - trailname: '§aКапельки лавы'
+      strailname: 'Капельки лавы'
+      traileffect: 'DRIP_LAVA'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODkxMTgzZWZiOTQxYzU3YzZhMzdmNjFjOTRlMjViNDRiNjdhODA0NDUyZTAyYTBkMjk5NmRlZGE2ZDIwZDdjNiJ9fX0='
+      rarity: '&a[Обычная]'
+      price: 35000
+    - trailname: '§aКапельки воды'
+      strailname: 'Капельки воды'
+      traileffect: 'DRIP_WATER'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQ0MjE3ODJmYTllMDQxY2E4Y2NlNmFhYzNhMGIzMzdlY2MxYjk3MWIxNjhlY2JlZWY2OGI4ODEzZWUzOTZkYiJ9fX0='
+      rarity: '&a[Обычная]'
+      price: 35000
+    - trailname: '§aФейерверк'
+      strailname: 'Фейерверк'
+      traileffect: 'FIREWORKS_SPARK'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODNkNDlkZGU3NWUxMmI2MGViZTZlODk4MWVhNGZiMjY2YjIwNzUyYzJmNTVlOTZhZjExM2MyODdlZWQ2M2U4MSJ9fX0='
+      rarity: '&9[Редкая]'
+      price: 55000
+    - trailname: '§aЧастички огня'
+      strailname: 'Частички огня'
+      traileffect: 'FLAME'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjE3MDg1NzRlN2U5YTZhNzZjOWFhODIxNDc5N2IxYWMzODk1MDY4OWVmOWNkZGExOGQ1MDM2MjM5OGI2MTAxZCJ9fX0='
+      rarity: '&9[Редкая]'
+      price: 55000
+    - trailname: '§aЛава'
+      strailname: 'Лава'
+      traileffect: 'LAVA'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjY5NjVlNmE1ODY4NGMyNzdkMTg3MTdjZWM5NTlmMjgzM2E3MmRmYTk1NjYxMDE5ZGJjZGYzZGJmNjZiMDQ4In19fQ=='
+      rarity: '&9[Редкая]'
+      price: 55000
+    - trailname: '§aСердца'
+      strailname: 'Сердца'
+      traileffect: 'HEART'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQzNmMzMjkxZmUwMmQxNDJjNGFmMjhkZjJmNTViYjAzOTdlMTk4NTU0ZTgzNDU5OTBkYmJjZDRjMTQwMzE2YiJ9fX0='
+      rarity: '&5[Эпическая]'
+      price: 70000
+    - trailname: '§aРадостный житель'
+      strailname: 'Радостный житель'
+      traileffect: 'VILLAGER_HAPPY'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjk5N2Y5ZjIzMDA4YjYxNDhkNWQzYjM2MWUxMzI4ZmMxMGUxN2RhZjI4Yjk5YWVjNTZmMWRjMDRhMzE2NzA2In19fQ=='
+      rarity: '&5[Эпическая]'
+      price: 70000
+    - trailname: '§aНоты'
+      strailname: 'Ноты'
+      traileffect: 'NOTE'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNlZWI3N2Q0ZDI1NzI0YTljYWYyYzdjZGYyZDg4Mzk5YjE0MTdjNmI5ZmY1MjEzNjU5YjY1M2JlNDM3NmUzIn19fQ=='
+      rarity: '&6[Легендарная]'
+      price: 80000
+    - trailname: '§aКонфетти'
+      strailname: 'Конфетти'
+      traileffect: 'SPELL_INSTANT'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFkNWQ3YWE1YmU2YWE5ZjU4NDQ5ZTJiZDk0YjY0MzgzMmMyMDQyOWE1NTUxYWVkOTBjMzkwYTQzN2I0N2QzMiJ9fX0='
+      rarity: '&6[Легендарная]'
+      price: 80000
+    - trailname: '§aЗаклинание'
+      strailname: 'Заклинание'
+      traileffect: 'SPELL_WITCH'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjBlMTNkMTg0NzRmYzk0ZWQ1NWFlYjcwNjk1NjZlNDY4N2Q3NzNkYWMxNmY0YzNmODcyMmZjOTViZjlmMmRmYSJ9fX0='
+      rarity: '&c[Уникальная]'
+      isPriceTrails: true
+      price: 11

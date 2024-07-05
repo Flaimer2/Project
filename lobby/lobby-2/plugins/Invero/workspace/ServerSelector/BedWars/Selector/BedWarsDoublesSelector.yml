@@ -1,0 +1,140 @@
+title: '&0Выбор сервера Doubles'
+virtual: true
+
+layout: |-
+  #########
+  #       #
+  #       #
+  #       #
+  #########
+  P#G#B#S#N
+
+items:
+  # Воздух
+  '#':
+    material: air
+  P:
+    relocate: 5
+    material: arrow
+    name: '&aПредыдущая страница'
+    action: |-
+      page previous
+      menu title update
+    sub:
+      - rule: 'page isFirst'
+        inherit: false
+        material: air
+  S:
+    update: 1
+    relocate: 1
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWI3NzE3ZDlkMzNkNjlhZjg1NWQ4NGNmY2ExODExMTZhNzI1YzE5MTVmMDBmNTE0NzE2ZDliYmIwZWFlYTZiZiJ9fX0=
+    name: '§aСортировка'
+    lore: |-
+      
+      &fПо номеру сервера &a←
+      &fПо названию карты
+
+      &aНажмите, чтобы изменить
+    action: |-
+      regenerate sort map
+      ctx set sort to 2
+    sub:
+      - rule: 'check ctx get sort == 2'
+        lore: |-
+          
+          &fПо номеру сервера
+          &fПо названию карты &a←
+
+          &aНажмите, чтобы изменить
+        action: |-
+          regenerate sort
+          ctx set sort to 1
+  B:
+    material: arrow
+    name: '&aВернуться в выбор режима'
+    action: menu switch BedWarsSelector
+  G:
+    update: 25
+    material: ender_pearl
+    name: '&aСкоро начнётся игра'
+    lore: |-
+
+      &fНа данный момент это:
+      &fСервер: &a%minigames_bedwars_mode:doubles_id:ServerName%
+      &fИгроков: &a%minigames_bedwars_mode:doubles_id:OnlinePlayers%/%minigames_bedwars_mode:doubles_id:MaxPlayers%
+      &fСтатус: {{ node Status with array [ papi "%minigames_bedwars_mode:doubles_id:ServerName%" ] }}
+
+      &aНажмите, чтобы присоединиться!
+    action: |-
+      if check size papi "%minigames_bedwars_mode:doubles_id:ServerName%" != 0 then {
+        connect inline "{{papi %minigames_bedwars_mode:doubles_id:ServerName%}}"
+        menu close
+      } else {
+        msg "&cНет доступных серверов"
+      }
+    sub:
+      - rule: 'check size papi "%minigames_bedwars_mode:doubles_id:ServerName%" == 0'
+        lore: |-
+          &fСписок серверов:
+          &c  Нет доступных серверов
+  N:
+    relocate: 5
+    material: arrow
+    name: '&aСледующая страница'
+    action: |-
+      page next
+      menu title update
+    sub:
+      - rule: 'page isLast'
+        inherit: false
+        material: air
+
+
+generator:
+  output:
+    update: 15
+    material: '{{ if check papi inline "%minigames_bedwars_server:{{element server}}_id:Status%" == "STARTING" then "ORANGE_STAINED_GLASS_PANEL" else if papi inline "%minigames_bedwars_server:{{element server}}_id:CanJoin%" then "LIME_STAINED_GLASS_PANEL" else "RED_STAINED_GLASS_PANEL" }}'
+    name: '{{ if papi inline "%minigames_bedwars_server:{{element server}}_id:CanJoin%" then "&a" else "&c" }}{{ element map }}'
+    lore: |-
+
+      &fСервер: &a{{ element server }}
+      &fИгроков: &a{{ papi inline "%minigames_bedwars_server:{{ element server }}_id:OnlinePlayers%"}}/{{ papi inline "%minigames_bedwars_server:{{ element server }}_id:MaxPlayers%" }}
+      &fСтатус: {{ node Status with array [ element server ] }}
+
+      {{ if papi inline "%minigames_bedwars_server:{{ element server }}_id:CanJoin%" then "&aНажмите, чтобы присоединиться!" else "&cСервер не доступен для подключения" }}
+    action: |-
+      if papi inline "%minigames_bedwars_server:{{ element server }}_id:CanJoin%" then {
+        connect {{ element server }}
+        menu close
+      } else {
+        sound ENTITY_ITEM_BREAK by 1 1
+      }
+  elements:
+    - server: 'BW-9'
+      map: 'Chivalry'
+    - server: 'BW-10'
+      map: 'Chivalry'
+    - server: 'BW-11'
+      map: 'Cowboys'
+    - server: 'BW-12'
+      map: 'Cowboys'
+    - server: 'BW-13'
+      map: 'Jellyfish'
+    - server: 'BW-14'
+      map: 'Jellyfish'
+
+nodes:
+  Status:
+    type: kether
+    value: |-
+      set server to &invokeArgs[0]
+      set Status to papi inline "%minigames_bedwars_server:{{&server}}_id:Status%"
+
+      case &Status [
+        when "WAITING" -> "§aПоиск игроков..."
+        when "STARTING" -> "§6Начинается..."
+        when "GAME" -> "§eВ игре..."
+        when "END" -> "§bЗавершается..."
+        when "LOADING" -> "§cПерезагрузка..."
+        else "§cВыключен"
+      ]

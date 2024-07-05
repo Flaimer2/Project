@@ -1,0 +1,131 @@
+menu:
+  title: '&0Настройки'
+
+layout: |-
+  #########
+  #q#b#e#d#
+  # # # # #
+  ##c###r##
+  ## ### ##
+  ####B####
+
+items:
+  # Воздух
+  '#':
+    material: air
+  q:
+    name: '&aРежим полёта'
+    material: feather
+    lore: |-
+      &fВключает и выключает
+      &fрежим полёта
+
+      &aНажмите ниже, чтобы изменить
+  e:
+    name: '&aУвеличенный Прыжок'
+    material: diamond_boots
+    lore: |-
+      &fПереключает возможность
+      &fувеличенный прыжок
+
+      &aНажмите ниже, чтобы изменить
+    flag: 'HIDE_ATTRIBUTES'
+  b:
+    name: '&aУвеличение Скорости'
+    material: sugar
+    lore: |-
+      &fПереключает возможность
+      &fувеличить скорость
+
+      &aНажмите ниже, чтобы изменить
+  c:
+    name: '&aЧат'
+    material: paper
+    lore: |-
+      &fПереключает возможность
+      &fполучать сообщения от игроков
+
+      &aНажмите ниже, чтобы изменить
+  w:
+    name: '&aСтакинг'
+    material: magma_cream
+    lore: |-
+      &fПереключает возможность
+      &fстакинга игроков
+
+      &aНажмите ниже, чтобы изменить
+  d:
+    name: '&aДвойной прыжок'
+    material: chainmail_boots
+    lore: |-
+      &fПереключает возможность
+      &fдвойного прыжка &7(2x ПРОБЕЛ)
+
+      &aНажмите ниже, чтобы изменить
+  r:
+    name: '&aВидимость игроков'
+    material: ender_eye
+    lore: |-
+      &fПереключает видимость
+      &fдругих игроков
+
+      &aНажмите ниже, чтобы изменить
+  B:
+    material: air
+    sub:
+      - rule: 'check &profile == true'
+        material: arrow
+        name: '&aВернуться в профиль'
+        action: command "profile"
+
+generator:
+  output:
+    material: gray_dye
+    name: '{{ element FormattedName }}'
+    lore: |-
+
+      &cДанную функцию может использовать {{ element Prefix }}
+      &cи выше. Также данную возможность можно
+      &cприобрести в игровом магазине &7(/shop)
+    sub:
+      - rule: 'perm element Permission'
+        material: '{{ if check papi inline "%deluxeplayeroptions_{{ element Name }}%" == "§aOn" then "lime_dye" else "rose_red" }}'
+        lore: |-
+          &fСостояние: {{ if check papi inline "%deluxeplayeroptions_{{ element Name }}%" == "§aOn" then "&aВключено" else "&cВыключено" }}
+
+          &aНажмите, чтобы переключить
+    action: |-
+      if perm element Permission then {
+        command element Name
+        icon refresh
+      } else {
+        sound ENTITY_ITEM_BREAK by 1 0
+      }
+  elements:
+    - FormattedName: '&aРежим полёта'
+      Name: 'fly'
+      Permission: 'playeroptions.fly'
+      Prefix: '§f⌜§6Premium§f⌟'
+    - FormattedName: '&aУвеличение Скорости'
+      Name: 'speed'
+      Permission: 'playeroptions.speed'
+      Prefix: '§f⌜§6Premium§f⌟'
+    - FormattedName: '&aУвеличенный Прыжок'
+      Name: 'jump'
+      Permission: 'playeroptions.jump'
+      Prefix: '§f⌜§6Premium§f⌟'
+    - FormattedName: '&aДвойной прыжок'
+      Name: 'doublejump'
+      Permission: 'playeroptions.doublejump'
+      Prefix: '§f⌜§6Premium§f⌟'
+    - FormattedName: '&aЧат'
+      Name: 'chat'
+      Permission: 'playeroptions.chat'
+      Prefix: '§f⌜§bLegend§f⌟'
+    - FormattedName: '&aВидимость игроков'
+      Name: 'visibility'
+      Permission: 'playeroptions.visibility'
+      Prefix: '§f⌜§6Premium§f⌟'
+
+bindings:
+  command: 'settings'

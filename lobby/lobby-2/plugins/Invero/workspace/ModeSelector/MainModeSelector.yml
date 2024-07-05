@@ -1,0 +1,199 @@
+menu:
+  title: '&0Режимы'
+scale: [ 9, 6 ]
+
+pages:
+  - layout:
+    - '#########'
+    - '# # # # #'
+    - '#########'
+    - '#56#R#78#'
+    - '#########'
+    - '####L####'
+    generator:
+      output:
+        update: 160
+        material: '{{ element Material }}'
+        flag: HIDE_ATTRIBUTES
+        name: '{{ element FormattedName }}'
+        enhancedLore: true
+        lore: |-
+          &eОписание:
+          {{ element Description }}
+
+          &eИнформация
+          {{ if check papi inline "%balancer_server:{{element Name}}_state%" == "WAITING" then inline "&fИгроков онлайн: &a{{papi inline "%balancer_count:{{element Name}}%"}}\\n&fСтатус: &aОнлайн" else "&fСтатус: &cОффлайн" }}
+
+          {{ if check papi inline "%balancer_server:{{element Name}}_state%" == "WAITING" then "&aНажмите, чтобы присоединиться к серверу" else "&cНельзя подключиться к серверу" }}
+        actions: |-
+          if check papi inline "%balancer_server:{{element Name}}_state%" == "WAITING" then {
+            command inline "connect server {{element Name}}"
+            menu close
+          } else {
+            tell "Нельзя подключить к серверу"
+          }
+      elements:
+        - Material: 'stone'
+          FormattedName: '&e&lClassic'
+          Name: 'classic'
+          Description: '&fКлассический режим для выживания\\n&fв одиночку или с друзьями. Есть PvP\\n&fарена, магазин и многое другое для\\n&fкомфортной игры на режиме'
+        - Material: 'tnt'
+          FormattedName: '&c&lАнархия'
+          Name: 'anarchy'
+          Description: '&fАнархия – режим, где вы можете\\n&fделать всё, что вам захочется!\\n&fРазрушайте базы, убивайте,\\n&fграбьте. Всё это без последствий'
+        - Material: 'grass_block'
+          FormattedName: '&a&lSkyBlock'
+          Name: 'skyblock'
+          Description: '&fВы начнёте свою игру на острове,\\n&fпарящем в небе. Выживайте, развивайтесь,\\n&fторгуйте предметами с другими игроками.\\n&fСделайте самый лучший остров!'
+        - Material: 'diamond_boots'
+          FormattedName: '&cСкоро...'
+          Name: 'soon'
+          Description: '&fНовый интересный режим'
+    items:
+      '#':
+        material: air
+      5:
+        material: ender_pearl
+        update: 160
+        name: '&b&lSkyWars'
+        lore: |-
+          &eОписание:
+          &fЭто мини-игра, основанная на стратегии,
+          &fв которой Вы появляетесь на острове
+          &fокружённым пустотой и другими островами,
+          &fцель игры - выжить и убить других игроков
+
+          &eИнформация
+          &fИгроков онлайн: &a%minigames_skywars_online:total%
+
+          &aНажмите, чтобы выбрать режим 
+        action: menu open SkyWarsSelector
+      6:
+        material: red_bed
+        update: 160
+        name: '&c&lBedWars'
+        lore: |-
+          &eОписание:
+          &fВ этой мини-игре Вы будете
+          &fсражаться против других команд.
+          &fЗащищайте свою кровать, и ломайте
+          &fкровати других команд!
+
+          &eИнформация
+          &fИгроков онлайн: &a%minigames_bedwars_online:total%
+
+          &aНажмите, чтобы выбрать режим 
+        action: menu open BedWarsSelector
+      R:
+        material: ender_pearl
+        name: '&b&lРандомная Мини-Игра'
+        lore: |-
+          &eОписание:
+          &fЭта кнопка телепортирует вас
+          &fна рандомную мини-игру!
+
+          &aНажмите, чтобы начать игру
+        action: command "randomgame"
+        frames-prop:
+          last: 15
+          type: reversable
+        frames:
+          - material: ender_pearl
+          - material: red_bed
+          - material: iron_sword
+            flag: HIDE_ATTRIBUTES
+          - material: gold_ingot
+      7:
+        material: iron_sword
+        flag: HIDE_ATTRIBUTES
+        update: 160
+        name: '&e&lMurderMystery'
+        lore: |-
+          &eОписание:
+          &fЭто простая мини-игра, в которой
+          &fмирные жители и детектив должны
+          &fвычислить и уничтожить маньяка,
+          &fкоторый убивает всех на своём пути
+
+          &eИнформация
+          &fИгроков онлайн: &a%minigames_murdermystery_online:total%
+
+          &aНажмите, чтобы выбрать режим 
+        action: menu open MurderMysterySelector
+      8:
+        material: red_terracotta
+        update: 160
+        name: '&9&lTheBridge'
+        lore: |-
+          &eОписание:
+          &fНа карте есть всего один мост,
+          &fкоторый соединяет два острова
+          &fвражеских команд. Ваша цель –
+          &fзапрыгнуть в портал другой команды
+
+          &eИнформация
+          &fИгроков онлайн: &a%minigames_thebridge_online:total%
+
+          &aНажмите, чтобы выбрать режим 
+        action: menu open TheBridgeSelector
+      L:
+        material: book_shelf
+        name: '&a&lВыбор Лобби'
+        lore: |-
+          &fНа сервере есть несколько
+          &fЛобби. Вы можете перемещаться
+          &fмежду ними с помощью этого меню
+
+          &aНажмите для выбора лобби
+        action: page next
+  - layout:
+    - '         '
+    - '         '
+    - '  1 2 3  '
+    - '         '
+    - '         '
+    - '    R    '
+    items:
+      1:
+        material: slime_ball
+        glow: '{{ check papi "%server_name%" == "L-1" }}'
+        name: '&aLobby-1'
+        lore: |-
+
+          &fСейчас в этом Лобби: &a%balancer_server:lobby-2_online%/200
+
+          {{ if check papi "%server_name%" == "L-1" then "&cВы находитесь в данном Лобби" else "&aНажмите, чтобы телепортироваться" }}
+        action: connect Lobby-1
+      2:
+        material: slime_ball
+        glow: '{{ check papi "%server_name%" == "L-2" }}'
+        name: '&aLobby-2'
+        lore: |-
+
+          &fСейчас в этом Лобби: &a%balancer_server:lobby-2_online%/200
+
+          {{ if check papi "%server_name%" == "L-2" then "&cВы находитесь в данном Лобби" else "&aНажмите, чтобы телепортироваться" }}
+        action: connect Lobby-2
+      3:
+        material: slime_ball
+        glow: '{{ check papi "%server_name%" == "L-3" }}'
+        name: '&aLobby-2'
+        lore: |-
+
+          &fСейчас в этом Лобби: &a%bungee_Lobby-3%/200
+
+          {{ if check papi "%server_name%" == "L-3" then "&cВы находитесь в данном Лобби" else "&aНажмите, чтобы телепортироваться" }}
+        action: connect Lobby-3
+      R:
+        material: arrow
+        name: '&aВернуться'
+        action: page prev
+
+bindings:
+  command:
+    name: 'serverselect'
+    aliases:
+    - servers
+    - server
+    - mode
+    - modeselect

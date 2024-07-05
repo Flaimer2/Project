@@ -16,121 +16,145 @@ disable-daylight-sensor-interaction:
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 disable-dropper-interaction:
   enable: true
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 disable-hopper-interaction:
   enable: true
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 disable-fence-gate-interaction:
   enable: true
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 disable-trapdoor-interaction:
   enable: true
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 disable-button-interaction:
   enable: true
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 disable-dispenser-interaction:
   enable: true
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 disable-noteblock-interaction:
   enable: true
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 disable-armorstands-interaction:
   enable: true
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 disable-door-interaction:
   enable: true
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 disable-rain:
   enable: true
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 disable-block-break:
   enable: true
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 disable-block-place:
   enable: true
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 disable-block-burn:
   enable: true
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 disable-drop-item:
   enable: true
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 disable-item-move:
   enable: true
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 disable-item-damage:
   enable: true
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 disable-pick-up-items:
   enable: true
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 disable-entity-explode:
   enable: true
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 disable-damage:
   enable: true
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 disable-hunger:
   enable: true
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 disable-death-message:
   enable: true
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 disable-creature-spawn:
   enable: true
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 clear-drops-on-death:
   enable: true
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 lobby-items:
   enable: false
   join-server: false
@@ -138,6 +162,7 @@ lobby-items:
   join-world: false
   world:
   - lobby
+  use-spawn-radius: false
 void-tp:
   enable: true
   level: 3
@@ -154,11 +179,13 @@ frame-protect:
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 farm-protect:
   enable: true
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 jump-pads:
   enable: true
   plate-block: HEAVY_WEIGHTED_PRESSURE_PLATE
@@ -168,6 +195,7 @@ jump-pads:
   world:
   - lobby
   - auth
+  use-spawn-radius: false
 join-boss-bar:
   enable: false
   message: '&3Welcome to mundopixels!'
@@ -263,3 +291,6 @@ always-night:
   world:
   - lobby
   - auth
+join-clear-inventory-bypass: false
+join-clear-chat-bypass: false
+disable-achievements: true

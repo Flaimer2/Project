@@ -1,0 +1,199 @@
+title: '&0Звук гола'
+scale: [ 9, 6 ]
+virtual: true
+
+layout: |-
+  #########
+  #       #
+  #       #
+  #       #
+  #########
+  P#R#B#S#N
+
+items:  
+  P:
+    relocate: 5
+    material: arrow
+    name: '&aПредыдущая страница'
+    action: |-
+      page previous
+      menu title update
+    sub:
+      - rule: 'page isFirst'
+        inherit: false
+        material: air
+  S:
+    update: 1
+    relocate: 1
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWI3NzE3ZDlkMzNkNjlhZjg1NWQ4NGNmY2ExODExMTZhNzI1YzE5MTVmMDBmNTE0NzE2ZDliYmIwZWFlYTZiZiJ9fX0=
+    name: '§aСортировка'
+    lore: |-
+      &fПо редкости &a←
+      &fПо алфавиту
+
+      &aНажмите, чтобы изменить
+    action: |-
+      regenerate sort SoundSort
+      ctx set sort to 2
+    sub:
+      - rule: 'check ctx get sort == 2'
+        lore: |-
+          &fПо редкости
+          &fПо алфавиту &a←
+
+          &aНажмите, чтобы изменить
+        action: |-
+          regenerate sort
+          ctx set sort to 1
+  B:
+    material: arrow
+    name: '&aВернуться в магазин'
+    action: menu switch TheBridgeShop
+  R:
+    update: 5
+    relocate: 5
+    material: air
+    sub:
+      - rule: 'check size papi "%luckperms_meta_snapithebridge.cosmetics.sound%" != 0'
+        material: barrier
+        name: '&aОтменить выбранный звук гола'
+        lore: |-
+          &fНажмите, чтобы отменить
+          &fвыбранный звук гола
+
+          &aНажмите, чтобы убрать!
+        action: |-
+          console inline "lp user %player_name% perm unset snapithebridge.cosmetics.sound.{{papi "%luckperms_meta_snapithebridge.cosmetics.sound%"}}"
+          console "lp user %player_name% meta unset snapithebridge.cosmetics.sound"
+          console "lp user %player_name% meta unset snapithebridge.cosmetics.sound.name"
+          sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1   
+  N:
+    relocate: 5
+    material: arrow
+    name: '&aСледующая страница'
+    action: |-
+      page next
+      menu title update
+    sub:
+      - rule: 'page isLast'
+        inherit: false
+        material: air
+  # Воздух
+  '#':
+    material: air
+
+generator:
+  output:
+    update: 1
+    head: '{{ element head }}'
+    name: '{{ element SoundName }}'
+    lore: |-
+
+      &fРедкость: {{ element rarity }}
+      &fЦена: &a{{ element price }}{{ if element isPriceSnapers then "₵ " else "$ " }}
+      
+      {{ if perm inline "snapithebridge.cosmetics.sound.{{element Sound}}" then "&a&cУ вас уже стоит этот звук!" else if perm inline "snapithebridge.cosmetics.sound.{{element Sound}}.shop" then "&aНажмите, чтобы включить" else if all [ check money get >= element price not isPriceSnapers ] then "&aНажмите, чтобы приобрести звук" else if all [ check papi "%coin_amount%" >= element price isPriceSnapers ] then "&aНажмите, чтобы приобрести звук" else "&cУ вас не хватает денег для покупки" }}
+    action: |-
+      if perm inline "snapithebridge.cosmetics.sound.{{element Sound}}" then {
+        sound ENTITY_VILLAGER_NO by 1 1
+      } else if perm inline "snapithebridge.cosmetics.sound.{{element Sound}}.shop" then {
+        sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        console inline "lp user %player_name% perm set snapithebridge.cosmetics.sound.{{element Sound}}"
+      } else if all [ check money get >= element price not isPriceSnapers ] then {
+        console inline "money take %player_name% {{element price}}"
+        console inline "lp user %player_name% perm set snapithebridge.cosmetics.sound.{{element Sound}}"
+        console inline "lp user %player_name% perm set snapithebridge.cosmetics.sound.{{element Sound}}.shop"
+        console "lp user %player_name% meta set snapithebridge.cosmetics.sound.amount %math_{luckperms_meta_snapithebridge.cosmetics.sound.amount}+1%"
+        console inline "lp user %player_name% meta set snapithebridge.cosmetics.sound {{element Sound}}"
+        console inline "lp user %player_name% meta set snapithebridge.cosmetics.sound.name {{element SoundName}}"
+        sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        msg inline "&aМагазин &7| &fВы успешно приобрели звук гола {{element trailname}}"
+        title "&fВы приобрели" subtitle inline "звук гола {{element trailname}}" by 20 20 10
+        menu close
+      } else if all [ check papi "%coin_amount%" >= element price isPriceSnapers ] then {
+        console inline "snapicoin remove %player_name% {{element price}} -s"
+        console inline "lp user %player_name% perm set snapithebridge.cosmetics.sound.{{element Sound}}"
+        console inline "lp user %player_name% perm set snapithebridge.cosmetics.sound.{{element Sound}}.shop"
+        console "lp user %player_name% meta set snapithebridge.cosmetics.sound.amount %math_{luckperms_meta_snapithebridge.cosmetics.sound.amount}+1%"
+        console inline "lp user %player_name% meta set snapithebridge.cosmetics.sound {{element Sound}}"
+        console inline "lp user %player_name% meta set snapithebridge.cosmetics.sound.name {{element SoundName}}"
+        sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        msg inline "&aМагазин &7| &fВы успешно приобрели звук гола {{element trailname}}"
+        title "&fВы приобрели" subtitle inline "звук гола {{element trailname}}" by 20 20 10
+        menu close
+      } else {
+        sound ENTITY_ITEM_BREAK by 1 0
+      }  
+  elements:
+    - Sound: 'anvilBreak'
+      SoundName: '§aНаковальня'
+      # Без цвета для сортировки
+      SoundSort: 'Наковальня'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTkwMDcyNWU2OWY2YWQ0NDdhMzFmYjM0ZmY2ZmE1YWE4NWNlNjNiYWVhZTQzNzliN2U4MmU3MjVhNmIxMjUxNSJ9fX0='
+      rarity: '&a[Обычная]'
+      isPriceSnapers: false
+      price: 14000
+    - Sound: 'LevelUP'
+      SoundName: '§aОпыт'
+      # Без цвета для сортировки
+      SoundSort: 'Опыт'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODdkODg1YjMyYjBkZDJkNmI3ZjFiNTgyYTM0MTg2ZjhhNTM3M2M0NjU4OWEyNzM0MjMxMzJiNDQ4YjgwMzQ2MiJ9fX0='
+      rarity: '&9[Редкая]'
+      isPriceSnapers: false
+      price: 21000
+    - Sound: 'EndermanIdle'
+      SoundName: '§aЭндермен'
+      # Без цвета для сортировки
+      SoundSort: 'Эндермен'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzUxY2NiNGNlZDZiZjc1YWEzNzNmYzI3NDBiMjM3ODIzNDY3NTZmZjY2ODIwMWYyMzE0NWI2N2YxZWNhZGE3NSJ9fX0='
+      rarity: '&9[Редкая]'
+      isPriceSnapers: false
+      price: 21000
+    - Sound: 'EndermanTP'
+      SoundName: '§aТелепорт'
+      # Без цвета для сортировки
+      SoundSort: 'Телепорт'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDVmZGEzOTQ2NmM3NjhkOTNmMTgwMzZkNzc1ODQxMTEwNzJhYTVmOWJiNTU5MmRkNGIzY2RhN2QzYjc3ODhmNiJ9fX0='
+      rarity: '&9[Редкая]'
+      isPriceSnapers: false
+      price: 21000
+    - Sound: 'fireworkLaunch'
+      SoundName: '§aЗапуск фейерверка'
+      # Без цвета для сортировки
+      SoundSort: 'Запуск фейерверка'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjU1ZWE0M2U1OTI3ODVkMDE2YWNkZWVhOWE0YTZmOWNmMjJjMjc1M2U2OTU0MDVlOGM4M2QyZTA5ZWJjZjY0NyJ9fX0='
+      rarity: '&5[Эпическая]'
+      isPriceSnapers: false
+      price: 32000
+    - Sound: 'fireworkTwinkle'
+      SoundName: '§aВзрыв фейерверка'
+      # Без цвета для сортировки
+      SoundSort: 'Взрыв фейерверка'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzQ4N2ZmYWIxNWQ2MjhjYjBlZDQ5MzkxOWUxNTRkYTBiOTdiMDYxM2JiNDBmOGIzODc1N2RlNTA3YmJkNjA5NCJ9fX0='
+      rarity: '&5[Эпическая]'
+      isPriceSnapers: false
+      price: 32000
+    - Sound: 'villagerYes'
+      SoundName: '§aЖитель'
+      # Без цвета для сортировки
+      SoundSort: 'Житель'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTRlNTUwOTc5ZWJmOTk1MGJiZjU3MTVlZDc3OTYyNmEzY2VjNzZhYzkxMGI0YmRkYjVkNzU4MWZhY2FmZWY2NyJ9fX0='
+      rarity: '&5[Эпическая]'
+      isPriceSnapers: false
+      price: 32000
+    - Sound: 'blazeBreath'
+      SoundName: '§aИфрит'
+      # Без цвета для сортировки
+      SoundSort: 'Ифрит'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmViYjRkOTNmZWI0OWQ5MDRjNjFhOGZhMGVhZWFjNDFmZTM0NDQyY2FmZWE3ODAxMDM4ZWJmN2MzODFjODM5NyJ9fX0='
+      rarity: '&6[Легендарная]'
+      isPriceSnapers: true
+      price: 39
+    - Sound: 'EnderdragonWings'
+      SoundName: '§aДракон Края'
+      # Без цвета для сортировки
+      SoundSort: 'Дракон Края'
+      head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjY4YzFjMDc5YTdmZmIzNmY0OGRkNzE1MDM1NWUzZTBiN2Y2OGRkNjA1ZTZmODg0NzMxM2MzNjBjZjYxZTBjIn19fQ=='
+      rarity: '&6[Легендарная]'
+      isPriceSnapers: true
+      price: 44

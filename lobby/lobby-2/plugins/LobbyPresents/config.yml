@@ -16,8 +16,8 @@ Effect:
   click: REDSTONE
 Messages:
   found: '&fВы нашли один из &aподарков&f! &7(&a%found%&7/&b%total%&7)'
-  alreadyfound: '&fВы уже &aнашли&f этот подарок&f.'
-  completed: '&aОтлично&f! Найдены все подарки. &7(&a%found%&7/&b%total%&7)'
+  alreadyfound: '&fВы уже &aнашли&f этот подарок&f!'
+  completed: '&aОтлично&f! Найдены все подарки &7(&a%found%&7/&b%total%&7)'
   actionbar: '&b&lПодарочки &c(&a%found%&f/&a%total%&c)'
   actionbar-completed: '&b&lПодарочки &a&lCompleted!&f &c(&a%found%&f/&a%total%&c)'
 Actionbar:

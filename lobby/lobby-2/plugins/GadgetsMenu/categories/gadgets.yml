@@ -853,7 +853,8 @@ Gadgets:
         Purchasable: true
         Lore:
           Locked: &id037
-          - '&fСоздает дождь вокруг Вас!'
+          - '&fСоздает дождь из'
+          - '&fпеченья вокруг вас!'
           Unlocked: *id037
         Material: COOKIE
       Pyromaniac:
@@ -866,8 +867,8 @@ Gadgets:
         Purchasable: true
         Lore:
           Locked: &id038
-          - '&fЗажигает возле вас огненный шар'
-          - '&fна 10 секунд.'
+          - '&fПоджигает вас... Опасно'
+          - '&fдля жизни! Не повторять :)'
           Unlocked: *id038
         Material: FLINT_AND_STEEL
       Diamond Shower:
@@ -880,7 +881,7 @@ Gadgets:
         Purchasable: true
         Lore:
           Locked: &id039
-          - '&fАлмазы вам в душ для'
+          - '&fАлмазов вам в душ для'
           - '&fдемонстрации вашего'
           - '&fудивительного богатства.'
           Unlocked: *id039
@@ -896,8 +897,8 @@ Gadgets:
         Lore:
           Locked: &id040
           - '&fЧто лучше всего'
-          - '&fделать с Золтом?'
-          - '&fЗолотой дождь!'
+          - '&fделать с золтом?'
+          - '&fСделать золотой фонтан!'
           Unlocked: *id040
         Material: GOLD_NUGGET
       Kawarimi No Jutsu:

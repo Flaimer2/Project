@@ -85,7 +85,7 @@ chats:
   global:
     enable: true
     display-name: 'Global'
-    format: '&r{prefix}{player}&r%tab_placeholder_condition:suffix% &7> &f{message}'
+    format: '&r{prefix}{player}&r{suffix} &7> &f{message}'
     range: -2
     cooldown: -1
     permission: false

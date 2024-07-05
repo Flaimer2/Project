@@ -1,30 +1,30 @@
 commands:
   admin:
     deposit-coin:
-      use: 'Используйте'
-      not-found: '&fНет игрока %name%'
-      successfully-sender: '&fВы успешно отправили %sender% %receiver% %amount% %coin% %coin_before%'
-      error-amount: '&fНе правильное количество %amount%'
-      successfully-receiver: '&fВы успешно получили %sender% %receiver% %amount% %coin% %coin_before%'
+      use: '&bКоины &7| &fИспользуйте: &a/coin deposit игрок количество'
+      not-found: '&bКоины &7| &fИгрок с ником &a%name% &fне найден!'
+      successfully-sender: '&bКоины &7| &fВы отправили &a%amount%₵ &fигроку &a%receiver%'
+      error-amount: '&bКоины &7| &fВведено &cнекорректное &fзначение! Количество Снаперов должно быть целым'
+      successfully-receiver: '&bКоины &7| &fНа ваш счёт было начислено &a%amount%₵'
 
     set-coin:
-      use: 'Используйте'
-      not-found: '&fНет игрока %name%'
-      successfully-sender: '&fВы успешно установили %sender% %receiver% %amount% %coin% %coin_before%'
-      error-amount: '&fНе правильное количество %amount%'
-      successfully-receiver: '&fВам успешно установили %sender% %receiver% %amount% %coin% %coin_before%'
+      use: '&bКоины &7| &fИспользуйте: &a/coin set игрок количество'
+      not-found: '&bКоины &7| &fИгрок с ником &a%name% &fне найден!'
+      successfully-sender: '&bКоины &7| &fВы установили баланс у игрока &a%receiver% &fна &a%amount%₵'
+      error-amount: '&bКоины &7| &fВведено &cнекорректное &fзначение! Количество Снаперов должно быть целым'
+      successfully-receiver: '&bКоины &7| &a%sender% &fустановила вам баланс на &a%amount%₵'
 
     withdraw-coin:
-      use: 'Используйте'
-      not-found: '&fНет игрока %name%'
-      successfully-sender: '&fВы успешно украли %sender% %receiver% %amount% %coin% %coin_before%'
-      error-amount: '&fНе правильное количество %amount%'
-      successfully-receiver: '&fВас успешно обокрали %sender% %receiver% %amount% %coin% %coin_before%'
+      use: '&bКоины &7| &fИспользуйте: &a/coin withdraw игрок количество'
+      not-found: '&bКоины &7| &fИгрок с ником &a%name% &fне найден!'
+      successfully-sender: '&bКоины &7| &fВы отобрали &a%amount%₵ &fу игрока &a%receiver%'
+      error-amount: '&bКоины &7| &fВведено &cнекорректное &fзначение! Количество Снаперов должно быть целым'
+      successfully-receiver: '&bКоины &7| &fВы потратили &a%amount%₵'
 
 
   coin:
-    not-found: 'Не найден %name%'
-    success-other: 'Монет %coin% %name%'
-    success-self: 'Монет %name% %coin%'
+    not-found: '&bКоины &7| &fИгрок с ником &a%name% &fне найден!'
+    success-other: '&bКоины &7| &fИгрок &a%name% &fимеет &a%coin%₵'
+    success-self: '&bКоины &7| &fБаланс: &a%coin%₵'
 
 

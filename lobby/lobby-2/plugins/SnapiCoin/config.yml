@@ -1,7 +1,7 @@
 alias:
-  set-command: 'admin set'
+  set-command: 'set'
   main-command: 'snapers|coin|coins'
-  withdraw-command: 'admin withdraw'
-  deposit-command: 'admin deposit'
+  withdraw-command: 'withdraw'
+  deposit-command: 'deposit'
 
-console-name-for-sender: 'console'
+console-name-for-sender: 'Администрация'

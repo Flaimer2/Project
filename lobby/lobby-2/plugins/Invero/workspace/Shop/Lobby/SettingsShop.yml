@@ -1,0 +1,72 @@
+title: '&0Магазин настроек'
+scale: [ 9, 6 ]
+virtual: true
+
+layout: |-
+  #########
+  #########
+  ## # # ##
+  #### ####
+  #########
+  ####B####
+
+items:
+  # Воздух
+  '#':
+    material: air
+  B:
+    material: arrow
+    name: '&aВернуться в магазин'
+    action: menu switch Shop
+
+generator:
+  output:
+    refresh: 20
+    material: '{{ element smaterial }}'
+    name: '{{ element name }}'
+    lore: |-
+      &fЭта функция приобретается на сутки
+      &fи работает только в Лобби
+
+      &fЦена: &a{{ element price }}₵
+
+      {{ if perm element spermission then inline "&aВы уже приобрели эту функцию. Она действует до {{ papi inline "%luckperms_meta_{{element stime}}%" }}" else if check papi "%coin_amount%" >= element price then "&aНажмите, чтобы приобрести функцию" else "&cУ вас не хватает снаперов для покупки" }}
+    action: |-
+      if perm element spermission then {
+        sound ENTITY_VILLAGER_NO by 1 1
+      } else if check papi "%coin_amount%" >= element price then {
+        console inline "lp user %player_name% meta set {{ element stime }} %localtime_timezone_GMT+3,HH:mm%"
+        console inline "lp user %player_name% permission settemp {{ element spermission }} true 24h"
+        console inline "snapicoin remove %player_name% {{ element price }} -s"
+        msg "&cФункция &7| &fВы успешно приобрели функцию {{ element name }} на 24 часа"
+        sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        title "&fВы приобрели функцию на 24ч" subtitle element name by 20 20 10
+        menu close
+      } else {
+        sound ENTITY_ITEM_BREAK by 1 0
+      }
+  elements:
+    - name: '&aПолёт'
+      sname: 'Полёт'
+      smaterial: 'feather'
+      spermission: 'playeroptions.fly'
+      stime: 'flytime'
+      price: 40
+    - name: '&aУвеличенный прыжок'
+      sname: 'Увеличенный прыжок'
+      smaterial: 'diamond_boots'
+      spermission: 'playeroptions.jump'
+      stime: 'jumptime'
+      price: 25
+    - name: '&aУвеличение скорости'
+      sname: 'Увеличение скорости'
+      smaterial: 'sugar'
+      spermission: 'playeroptions.speed'
+      stime: 'speedtime'
+      price: 25
+    - name: '&aСообщение о входе в Лобби'
+      sname: 'Сообщение о входе в Лобби'
+      smaterial: 'sign'
+      spermission: 'playeroptions.joinmessage'
+      stime: 'joinmessagetime'
+      price: 35

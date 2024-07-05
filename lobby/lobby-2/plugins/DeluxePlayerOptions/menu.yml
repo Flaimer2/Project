@@ -1,0 +1,155 @@
+# ###################################################################################################
+#  +----------------------------------------------------------------------------------------------+ #
+#  |              _____  _                        ____        _   _                               | #
+#  |             |  __ \| |                      / __ \      | | (_)                              | #
+#  |             | |__) | | __ _ _   _  ___ _ __| |  | |_ __ | |_ _  ___  _ __  ___               | #
+#  |             |  ___/| |/ _` | | | |/ _ \ '__| |  | | '_ \| __| |/ _ \| '_ \/ __|              | #
+#  |             | |    | | (_| | |_| |  __/ |  | |__| | |_) | |_| | (_) | | | \__ \              | #
+#  |             |_|    |_|\__,_|\__, |\___|_|   \____/| .__/ \__|_|\___/|_| |_|___/              | #
+#  |                              __/ |                | |                                        | #
+#  |                             |___/                 |_|                                        | #
+#  |                                                                                              | #
+#  |                                                                                              | #
+#  |                                                                                              | #
+#  |                                                                                              | #
+#  |  WIKI:        http://en.wiki.pedrojm96.com/wiki/DeluxePlayerOptions                          | #
+#  |  BUG REPORTS: https://www.spigotmc.org/resources/deluxeplayeroptions.33033/                  | #
+#  |  AUTHOR: PedroJM96 (pedrojm96.com)                                                           | #
+#  |  OFFICIAL SERVER: pronto...                                                                  | #
+#  |                                                                                              | #
+#  +----------------------------------------------------------------------------------------------+ #
+# ###################################################################################################
+# 
+#  +----------------------------------------------------------------------------------------------+ #
+#  |                                          Items Nodes                                         | #
+#  +----------------------------------------------------------------------------------------------+ #
+#  |                                                                                              | #
+#  |  enable: To show it in the menu.                                                             | #
+#  |  name: The name of the item.                                                                 | #
+#  |  lore: The description of the item.                                                          | #
+#  |  id: The id of the item material (https://www.minecraftinfo.com/idlist.htm).                 | #
+#  |  data: Value of the material type of the item.                                               | #
+#  |  slot: Location in the inventory of the item.                                                | #
+#  |  itemuse-enable: To show the secondary item that shows the status of the characteristic.     | #
+#  |  itemuse-slot: Position in the inventory of the secondary item that shows the state.         | #
+#  |                 of the characteristics.                                                      | #
+#  |                                                                                              | #
+#  +----------------------------------------------------------------------------------------------+ #
+# 
+#  +----------------------------------------------------------------------------------------------+ #
+#  | For a detailed explanation of the configuration see this page.                               | #
+#  | http://en.wiki.pedrojm96.com/wiki/DeluxePlayerOptions:menu.yml                               | #
+#  +----------------------------------------------------------------------------------------------+ #
+Name: '&b&lPlayer Options'
+Command: Options
+Row: 6
+Glass-Enable: true
+Glass-Color: 3
+ItemOn:
+  name: '&a&lOn'
+  id: 351
+  data: 10
+  lore:
+  - '&7Click to &cdisable'
+ItemOff:
+  name: '&c&lOff'
+  id: 351
+  data: 8
+  lore:
+  - '&7Click to &aenable'
+Speed:
+  enable: true
+  name: '&3&lSpeed <status>'
+  id: 353
+  data: 0
+  slot: 10
+  itemuse-enable: true
+  itemuse-slot: 19
+  lore:
+  - '&7Change the player''s '
+  - '&7movement speed'
+Jump:
+  enable: true
+  name: '&3&lJump <status>'
+  id: 313
+  data: 0
+  slot: 29
+  itemuse-enable: true
+  itemuse-slot: 38
+  lore:
+  - '&7Change the player''s '
+  - '&7jumping height'
+DoubleJump:
+  enable: true
+  name: '&3&lDoubleJump <status>'
+  id: 305
+  data: 0
+  slot: 27
+  itemuse-enable: true
+  itemuse-slot: 36
+  lore:
+  - '&7Change the player''s '
+  - '&7ability to DoubleJump'
+Fly:
+  enable: true
+  name: '&3&lFly <status>'
+  id: 288
+  data: 0
+  slot: 12
+  itemuse-enable: true
+  itemuse-slot: 21
+  lore:
+  - '&7Change the player''s '
+  - '&7ability to fly'
+Stacker:
+  enable: true
+  name: '&3&lStacker <status>'
+  id: 378
+  data: 0
+  slot: 14
+  itemuse-enable: true
+  itemuse-slot: 23
+  lore:
+  - '&7Allows to mount  '
+  - '&7on the head of a player'
+Visibility:
+  enable: false
+  name: '&3&lVisibility <status>'
+  id: 381
+  data: 0
+  slot: 33
+  itemuse-enable: false
+  itemuse-slot: 42
+  lore:
+  - '&7Changes the visibility '
+  - '&7to see players'
+Chat:
+  enable: true
+  name: '&3&lChat <status>'
+  id: 339
+  data: 0
+  slot: 16
+  itemuse-enable: true
+  itemuse-slot: 25
+  lore:
+  - '&7Change the ability '
+  - '&7to see and use chat'
+Radio:
+  enable: true
+  name: '&3&lRadio <status>'
+  id: 84
+  data: 0
+  slot: 35
+  itemuse-enable: true
+  itemuse-slot: 44
+  lore:
+  - '&7Enables or disables '
+  - '&7the radio player'
+Close:
+  enable: true
+  name: '&3&lClose'
+  id: 399
+  data: 0
+  slot: 40
+  lore:
+  - '&7Click to close menu'
