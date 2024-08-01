@@ -1,0 +1,48 @@
+menu:
+  title: '&0Магазин'
+
+layout: |-
+  #########
+  ## # # ##
+  #########
+  #########
+  ## # # ##
+  #########
+
+items:
+  # Воздух
+  '#':
+    material: air
+
+generator:
+  output:
+    material: '{{ element Material }}'
+    flag: HIDE_ATTRIBUTES
+    name: '{{ element FormattedName }}'
+    action: menu switch element Name
+  elements:
+    - Name: 'Shop-Blocks'
+      FormattedName: '&aБлоки'
+      Material: 'GRASS_BLOCK'
+    - Name: 'Shop-Foods'
+      FormattedName: '&aЕда'
+      Material: 'COOKED_CHICKEN'
+    - Name: 'Shop-Ores'
+      FormattedName: '&aРуды'
+      Material: 'IRON_INGOT'
+    - Name: 'Shop-Tools'
+      FormattedName: '&aИнструменты'
+      Material: 'IRON_PICKAXE'
+    - Name: 'Shop-Armor'
+      FormattedName: '&aБроня и оружие'
+      Material: 'DIAMOND_CHESTPLATE'
+    - Name: 'Shop-Drops'
+      FormattedName: '&aДроп с мобов'
+      Material: 'SPIDER_EYE'
+
+bindings:
+  command:
+    name: 'shop'
+    aliases:
+    - shops
+    - magazin

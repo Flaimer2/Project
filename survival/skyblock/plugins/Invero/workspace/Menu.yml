@@ -1,0 +1,112 @@
+title: '&0Игровое меню'
+scale: [ 9, 5 ]
+layout: |-
+  #########
+  ###1#8###
+  #########
+  ##6#2#8##
+  #########
+items:
+  1:
+    head: '%tab_placeholder_condition:getSkinName%'
+    name: '§aВаш профиль'
+    lore: |-
+      §fНажмите, либо используйте
+      §fкоманду – §a/profile§f, чтобы 
+      §fоткрыть ваш общеигровой профиль
+
+      §aНажмите, чтобы открыть
+    action: |-
+      menu close
+      command "profile"
+  2:
+    head: eyJ0aW1lc3RhbXAiOjE1MzMzNzIzOTE2NzEsInByb2ZpbGVJZCI6IjYwNmUyZmYwZWQ3NzQ4NDI5ZDZjZTFkMzMyMWM3ODM4IiwicHJvZmlsZU5hbWUiOiJNSEZfUXVlc3Rpb24iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2QzNGUwNjNjYWZiNDY3YTVjOGRlNDNlYzc4NjE5Mzk5ZjM2OWY0YTUyNDM0ZGE4MDE3YTk4M2NkZDkyNTE2YTAifX19
+    name: '&aВозникли вопросы?'
+    lore: |-
+      &fЕсли у Вас возникли вопросы, то Вы всегда
+      &fможете написать администраторам в сообществе
+      &fнашего проекта, где Вам обязательно ответят.
+
+      &fСообщество - &avk.com/mcsnapix.ru
+
+      &aНажмите, чтобы получить ссылку в чате
+    action: |-
+      menu close
+      msg "&fСообщество VK: &avk.com/mcsnapix"
+  3:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2EzYmI4NWRlYzEzMjlmZTgyOWNjNmNkY2QzNGUxYmQ2MGVlODMyZjU3MjYyOTY1MWYxNGI1ZTE0NTU1ZGJiMSJ9fX0
+    name: '&aГенератор острова'
+    lore:
+      - '&fУлучшайте генератор острова,'
+      - '&fчтобы получать новую руду'
+      - ''
+      - '&aНажмите, чтобы открыть'
+    action: |-
+      menu open Generators
+  4:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTNjMTUzYzM5MWMzNGUyZDMyOGE2MDgzOWU2ODNhOWY4MmFkMzA0ODI5OWQ4YmM2YTM5ZTZmOTE1Y2M1YSJ9fX0
+    name: '&aНаборы'
+    lore: |-
+      &fЗдесь Вы сможете получить
+      &fнабор с ценными предметами
+
+      &fДоступные наборы:
+        &fНабор &6Premium&r
+        &fНабор &aElite&r
+        &fНабор &bLegend&r
+        &fНабор &9SnapiX&r
+
+      &aНажмите, чтобы открыть
+    action: |-
+      menu open Kits
+  5:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzZjMGQwNDU5YzY3ZjJiZTgyZmJlNTQwNmFiOGQxMzc4ZGExZjI4ZjdhM2Y4MmYxZGZjNDc2MTVhOTU1YTcifX19
+    name: '&aПанель управления островом'
+    lore: |-
+      &fВозьмите под полный контроль ваш остров!
+      &fУправление настройками, уровнем, участниками,
+      &fбанами, погодой и т.д. на вам острове
+
+      &aНажмите, чтобы открыть
+    action: |-
+      command "is"
+  6:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdjMGQwMTBkZDBlNTEyZmZlYTEwOGQ3YzVmZTY5ZDU3NmMzMWVjMjY2Yzg4NGI1MWVjMGIyOGNjNDU3In19fQ==
+    name: '&aВарпы сервера'
+    lore: |-
+      &fВ этом разделе собраны все самые
+      &fважные места SkyBlock!
+
+      &aНажмите, чтобы открыть
+    action: |-
+      menu open Warps
+  7:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGFhOWNiZDk3MDYzMTI3Njc1OWQ1ZDc2MjljYWFjYTUwYTI2ZmM3YjJkYjc4NjVlZjQ3MDllNWRkMmM2YjgwMCJ9fX0=
+    name: '&aРынок'
+    lore: |-
+      &fНа нашем проекте реализована система магазина,
+      &fблагодаря которой, можно покупать блоки, слитки,
+      &fеду и множество других предметов
+
+      &fТекущий баланс: &a%vault_eco_balance_fixed%$
+
+      &aНажмите, чтобы открыть
+    action: |-
+      command "warp shop"
+  8:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTM2ZTk0ZjZjMzRhMzU0NjVmY2U0YTkwZjJlMjU5NzYzODllYjk3MDlhMTIyNzM1NzRmZjcwZmQ0ZGFhNjg1MiJ9fX0=
+    name: '&aДонат'
+    lore: |-
+      &fЕсли вы хотите поддержать наш проект, вы можете
+      &fприобрести привилегию. Покупка привилегии откроет
+      &fвам доступ к огромному списку возможностей
+      &fкоторые не доступны обычным игрокам
+
+      &7Полученные деньги идут на развитие нашего проекта
+
+      &aНажмите, чтобы открыть
+    action: |-
+      menu open donate
+bindings:
+  command:
+    name: menu

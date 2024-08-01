@@ -1,0 +1,28 @@
+menu:
+  title: 'Start'
+
+layout:
+- '12345    '
+- '         '
+- '         '
+- '         '
+- 'R        '
+
+items:
+  R:
+    material: 'barrier'
+    name: '&cВернуться в меню наборов'
+    action: menu switch Kit
+  1:
+    material: 'wood_sword'
+  2:
+    material: 'wood_pickaxe'
+  3:
+    material: 'coal'
+    amount: 4
+  4:
+    material: 'log'
+    amount: 16
+  5:
+    material: 'apple'
+    amount: 8

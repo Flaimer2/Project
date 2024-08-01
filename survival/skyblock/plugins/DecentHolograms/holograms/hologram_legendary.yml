@@ -1,0 +1,22 @@
+location: world:-23,500:89,500:75,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&b&lЛегендарный Кейс'
+    height: 0.3
+  - content: '&aУровень III'
+    height: 0.3
+  - content: '&fКлючей: &a%crazycrates_legendary_total%'
+    height: 0.3   
+  - content: ''
+    height: 0.3    
+  - content: §aНажмите ЛКМ для предосмотра
+    height: 0.3
+  - content: §aНажмите ПКМ для открытия
+    height: 0.3
+  actions: {}

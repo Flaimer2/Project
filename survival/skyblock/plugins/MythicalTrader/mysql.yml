@@ -1,0 +1,4 @@
+database: 'server_skyblock'
+host: 'localhost:3306'
+password: 'root'
+username: 'root'

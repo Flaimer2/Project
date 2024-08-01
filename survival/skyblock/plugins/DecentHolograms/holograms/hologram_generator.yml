@@ -1,0 +1,20 @@
+location: world:55,5:88,5:62,5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&6&lКак построить генератор'
+    height: 0.6
+  - content: '&fДля установки генератора Вам необходимы'
+    height: 0.3
+  - content: '&fодно &aведро лавы &fи одно &aведро воды&f.'
+    height: 0.3
+  - content: '&fКогда у Вас будут эти предметы, то просто'
+    height: 0.3
+  - content: '&fустановите их таким образом'
+    height: 0.3
+  actions: {}

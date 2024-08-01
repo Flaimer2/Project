@@ -1,0 +1,8 @@
+Events:
+  join:
+    type: player_join
+    conditions:
+    - '%player_has_permission_lobby.join.message% == yes'
+    actions:
+      default:
+      - 'message: &f[&a+&f] %vault_prefix%%player% &aвошёл &fна сервер'

@@ -1,0 +1,63 @@
+menu:
+  title: 'SnapiX'
+
+layout:
+- '123456789'
+- '`10``11``12``13``14``15`   '
+- '         '
+- '         '
+- 'R    `16``17``18``19`'
+
+items:
+  R:
+    material: 'barrier'
+    name: '&cВернуться в меню наборов'
+    action: menu switch Kit
+  1:
+    json: '{"type":"DIAMOND_SWORD","meta":{"ench":[{"lvl":{"type":"SHORT","data":1},"id":{"type":"SHORT","data":16}}]}}'
+  2:
+    json: '{"type":"DIAMOND_PICKAXE","meta":{"ench":[{"lvl":{"type":"SHORT","data":2},"id":{"type":"SHORT","data":32}}]}}'
+  3:
+    material: 'diamond_axe'
+  4:
+    material: 'diamond_shovel'
+  5:
+    json: '{"type":"BOW","meta":{"ench":[{"lvl":{"type":"SHORT","data":4},"id":{"type":"SHORT","data":48}}]}}'
+  6:
+    material: 'arrow'
+    amount: 64
+  7:
+    material: 'diamond'
+    amount: 8
+  8:
+    material: 'log'
+    amount: 64
+  9:
+    material: 'golden_apple'
+    amount: 32
+  10:
+    material: 'sapling'
+    amount: 12
+  11:
+    material: 'sapling:1'
+    amount: 12
+  12:
+    material: 'sapling:2'
+    amount: 12
+  13:
+    material: 'sapling:3'
+    amount: 12
+  14:
+    material: 'sapling:4'
+    amount: 12
+  15:
+    material: 'sapling:5'
+    amount: 12
+  16:
+    material: 'diamond_helmet'
+  17:
+    material: 'diamond_chestplate'
+  18:
+    material: 'diamond_leggings'
+  19:
+    material: 'diamond_boots'

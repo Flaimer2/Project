@@ -1,0 +1,172 @@
+Spawners:
+  ELDER_GUARDIAN:
+    Max Stack Size: -1
+    Display Name: Древнего стража
+  WITHER_SKELETON:
+    Max Stack Size: -1
+    Display Name: Скелет-иссушителей
+  STRAY:
+    Max Stack Size: -1
+    Display Name: Зимогоров
+  HUSK:
+    Max Stack Size: -1
+    Display Name: Кадавров
+  ZOMBIE_VILLAGER:
+    Max Stack Size: -1
+    Display Name: Зомби жителей
+  SKELETON_HORSE:
+    Max Stack Size: -1
+    Display Name: Лошадь-скелетов
+  ZOMBIE_HORSE:
+    Max Stack Size: -1
+    Display Name: Лошадь-зомби
+  DONKEY:
+    Max Stack Size: -1
+    Display Name: Осла
+  MULE:
+    Max Stack Size: -1
+    Display Name: Мула
+  EVOKER:
+    Max Stack Size: -1
+    Display Name: Заклинателя
+  VEX:
+    Max Stack Size: -1
+    Display Name: Вредины
+  VINDICATOR:
+    Max Stack Size: -1
+    Display Name: Поборника
+  ILLUSIONER:
+    Max Stack Size: -1
+    Display Name: Иллюзианиста
+  CREEPER:
+    Max Stack Size: -1
+    Display Name: Крипера
+  SKELETON:
+    Max Stack Size: -1
+    Display Name: Скелета
+  SPIDER:
+    Max Stack Size: -1
+    Display Name: Паука
+  GIANT:
+    Max Stack Size: -1
+    Display Name: Гиганта
+  ZOMBIE:
+    Max Stack Size: -1
+    Display Name: Зомби
+  SLIME:
+    Max Stack Size: -1
+    Display Name: Слизня
+  GHAST:
+    Max Stack Size: -1
+    Display Name: Гаста
+  PIG_ZOMBIE:
+    Max Stack Size: -1
+    Display Name: Свинозомби
+  ENDERMAN:
+    Max Stack Size: -1
+    Display Name: Эндермена
+  CAVE_SPIDER:
+    Max Stack Size: -1
+    Display Name: Пещерного паука
+  SILVERFISH:
+    Max Stack Size: -1
+    Display Name: Чешуйницы
+  BLAZE:
+    Max Stack Size: -1
+    Display Name: Ифрита
+  MAGMA_CUBE:
+    Max Stack Size: -1
+    Display Name: Адского слизня
+  ENDER_DRAGON:
+    Max Stack Size: -1
+    Display Name: Дракона края
+  WITHER:
+    Max Stack Size: -1
+    Display Name: Иссушителя
+  BAT:
+    Max Stack Size: -1
+    Display Name: Летучей мыши
+  WITCH:
+    Max Stack Size: -1
+    Display Name: Ведьмы
+  ENDERMITE:
+    Max Stack Size: -1
+    Display Name: Чешуйницы края
+  GUARDIAN:
+    Max Stack Size: -1
+    Display Name: Стража
+  SHULKER:
+    Max Stack Size: -1
+    Display Name: Шалкера
+  PIG:
+    Max Stack Size: -1
+    Display Name: Свиньи
+  SHEEP:
+    Max Stack Size: -1
+    Display Name: Овцы
+  COW:
+    Max Stack Size: -1
+    Display Name: Коровы
+  CHICKEN:
+    Max Stack Size: -1
+    Display Name: Курицы
+  SQUID:
+    Max Stack Size: -1
+    Display Name: Спрута
+  WOLF:
+    Max Stack Size: -1
+    Display Name: Волка
+  MUSHROOM_COW:
+    Max Stack Size: -1
+    Display Name: Грибной коровы
+  SNOWMAN:
+    Max Stack Size: -1
+    Display Name: Снеговика
+  OCELOT:
+    Max Stack Size: -1
+    Display Name: Оцелота
+  IRON_GOLEM:
+    Max Stack Size: -1
+    Display Name: Железного голема
+  HORSE:
+    Max Stack Size: -1
+    Display Name: Лошади
+  RABBIT:
+    Max Stack Size: -1
+    Display Name: Кролика
+  POLAR_BEAR:
+    Max Stack Size: -1
+    Display Name: Полярного медведя
+  LLAMA:
+    Max Stack Size: -1
+    Display Name: Ламы
+  PARROT:
+    Max Stack Size: -1
+    Display Name: Попугая
+  VILLAGER:
+    Max Stack Size: -1
+    Display Name: Жителя
+  TURTLE:
+    Max Stack Size: -1
+    Display Name: Черепахи
+  PHANTOM:
+    Max Stack Size: -1
+    Display Name: Фантома
+  COD:
+    Max Stack Size: -1
+    Display Name: Трески
+  SALMON:
+    Max Stack Size: -1
+    Display Name: Лосося
+  PUFFERFISH:
+    Max Stack Size: -1
+    Display Name: Иглобрюха
+  TROPICAL_FISH:
+    Max Stack Size: -1
+    Display Name: Тропической рыбы
+  DROWNED:
+    Max Stack Size: -1
+    Display Name: Утопленника
+  DOLPHIN:
+    Max Stack Size: -1
+    Display Name: Дельфина

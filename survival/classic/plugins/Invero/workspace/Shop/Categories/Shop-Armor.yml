@@ -1,0 +1,163 @@
+menu:
+  title: '&0Броня и оружие'
+  virtual: true
+layout: |-
+  #########
+  #    #  #
+  #    #  #
+  #    #  #
+  #    #  #
+  P#M#B###N
+
+items:
+  P:
+    material: arrow
+    name: '&aПредыдущая страница'
+    action: |-
+      page previous
+      menu title update
+      icons refresh
+    sub:
+      - rule: 'page isFirst'
+        inherit: false
+        material: air
+  M:
+    material: GOLD_INGOT
+    update: 60
+    name: '&fВаш баланс'
+    lore: '&a%vault_eco_balance_fixed%$'
+  B:
+    material: arrow
+    name: '&aВернуться в магазин'
+    action: menu switch Shop
+  N:
+    material: arrow
+    name: '&aСледующая страница'
+    action: |-
+      page next
+      menu title update
+      icons refresh
+    sub:
+      - rule: 'page isLast'
+        inherit: false
+        material: air
+  # Воздух
+  '#':
+    material: air
+
+generator:
+  output:
+    name: '{{ element Name }}'
+    material: '{{ element Material }}'
+    flag: HIDE_ATTRIBUTES
+    lore: |-
+
+      &fПокупка: &a${{ element BuyPrice }}
+
+      &aНажмите, чтобы купить!
+    action: |-
+      ctx set 'fromMenu' to 'Shop-Armor'
+      ctx set 'itemName' to element Name
+      ctx set 'itemMaterial' to element Material
+      ctx set 'price' to element BuyPrice
+      ctx set 'amount' to 1
+      ctx set 'minAmount' to 1
+      ctx set 'maxAmount' to element MaxAmount
+      menu switch Shop-Purchase
+  elements:
+    - BuyPrice: 250
+      Material: 'LEATHER_HELMET'
+      Name: '&aКожаный шлем'
+      MaxAmount: 1
+    - BuyPrice: 150
+      Material: 'GOLD_HELMET'
+      Name: '&aЗолотой шлем'
+      MaxAmount: 1
+    - BuyPrice: 150
+      Material: 'IRON_HELMET'
+      Name: '&aЖелезный шлем'
+      MaxAmount: 1
+    - BuyPrice: 1875
+      Material: 'DIAMOND_HELMET'
+      Name: '&aАлмазный шлем'
+      MaxAmount: 1
+    - BuyPrice: 20
+      Material: 'WOOD_SWORD'
+      Name: '&aДеревянный меч'
+      MaxAmount: 1
+    - BuyPrice: 100
+      Material: 'BOW'
+      Name: '&aЛук'
+      MaxAmount: 1
+    - BuyPrice: 400
+      Material: 'LEATHER_CHESTPLATE'
+      Name: '&aКожаный нагрудник'
+      MaxAmount: 1
+    - BuyPrice: 240
+      Material: 'GOLD_CHESTPLATE'
+      Name: '&aЗолотой нагрудник'
+      MaxAmount: 1
+    - BuyPrice: 240
+      Material: 'IRON_CHESTPLATE'
+      Name: '&aЖелезный нагрудник'
+      MaxAmount: 1
+    - BuyPrice: 3000
+      Material: 'DIAMOND_CHESTPLATE'
+      Name: '&aАлмазный нагрудник'
+      MaxAmount: 1
+    - BuyPrice: 60
+      Material: 'GOLD_SWORD'
+      Name: '&aЗолотой меч'
+      MaxAmount: 1
+    - BuyPrice: 5
+      Material: 'ARROW'
+      Name: '&aСтрелы'
+      MaxAmount: 64
+    - BuyPrice: 350
+      Material: 'LEATHER_LEGGINGS'
+      Name: '&aКожаные поножи'
+      MaxAmount: 1
+    - BuyPrice: 210
+      Material: 'GOLD_LEGGINGS'
+      Name: '&aЗолотые поножи'
+      MaxAmount: 1
+    - BuyPrice: 210
+      Material: 'IRON_LEGGINGS'
+      Name: '&aЖелезные поножи'
+      MaxAmount: 1
+    - BuyPrice: 2625
+      Material: 'DIAMOND_LEGGINGS'
+      Name: '&aАлмазные поножи'
+      MaxAmount: 1
+    - BuyPrice: 60
+      Material: 'IRON_SWORD'
+      Name: '&aЖелезный меч'
+      MaxAmount: 1
+    - BuyPrice: 10
+      Material: 'SNOW_BALL'
+      Name: '&aСнежок'
+      MaxAmount: 16
+    - BuyPrice: 50
+      Material: 'LEATHER_BOOTS'
+      Name: '&aКожаные ботинки'
+      MaxAmount: 1
+    - BuyPrice: 120
+      Material: 'GOLD_BOOTS'
+      Name: '&aЗолотые ботинки'
+      MaxAmount: 1
+    - BuyPrice: 120
+      Material: 'IRON_BOOTS'
+      Name: '&aЖелезные ботинки'
+      MaxAmount: 1
+    - BuyPrice: 1500
+      Material: 'DIAMOND_BOOTS'
+      Name: '&aАлмазные ботинки'
+      MaxAmount: 1
+    - BuyPrice: 750
+      Material: 'DIAMOND_SWORD'
+      Name: '&aАлмазный меч'
+      MaxAmount: 1
+    - BuyPrice: 50
+      Material: 'FIREBALL'
+      Name: '&aОгненный шар'
+      MaxAmount: 64

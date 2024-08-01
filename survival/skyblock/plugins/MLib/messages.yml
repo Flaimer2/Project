@@ -1,0 +1,60 @@
+messages:
+  MTBackpack:
+    prefix: ''
+    messages:
+      slot-locked-lore:
+      - ''
+      - '&8Upgrade your backpack to'
+      - '&8unlock this slot.'
+      given-sack: '&7Given sack to %player%'
+      help-message:
+      - '&7&m---------------&c MTBackpack &7&m---------------'
+      - '&c/bp help &7&o - Shows the help menu for the plugin'
+      - '&c/bp reload&7&o - Reloads the plugin'
+      - '&c/bp types &7&o - Lists all types of backpacks'
+      - '&c/bp give <type> [target] [size]&7&o - Gives a backpack to a target'
+      - '&c/bp setsize <player> <size>&7&o - Sets the size of the held backpack'
+      - '&7&m---------------&c MTBackpack &7&m---------------'
+      plugin-reloaded: '&7Reloaded the plugin!'
+      autosell-toggle-off: '&cToggled backpack AutoSelling off'
+      invalid-target: '&cThat player doesn''t exist!'
+      types-list: '&7Backpacks: &c%types%'
+      sack-empty: '&cThis sack is empty!'
+      given-backpack: '&7Given backpack to %player%'
+      sack-contents:
+      - '&8---------------------'
+      - '&7 This sack contains: '
+      - '&a   %item% &ex%amount%'
+      - '&8---------------------'
+      autosell-toggle-on: '&aToggled backpack AutoSelling on'
+      slot-locked-name: '&cThis slot is locked'
+      no-permission: '&cYou are not allowed to do that!'
+      autosell-no-backpack: '&cYou don''t have a backpack!'
+      invalid-size: '&cThat size is invalid!'
+      invalid-backpack: '&cYou are not holding a backpack!'
+      invalid-type: '&cThat type is invalid!'
+      changed-backpack-size: '&7Changed the size of that backpack!'
+      only-player: '&cYou need to be a player to do that!'
+      cant-open-storage: '&cYou cannot open that right now!'
+      backpack-cooldown: '&fВы делаете это слишком &cбыстро&f. Подождите немного!'
+      space-required: '&cThis backpack will not be able to hold all the items and
+        some will be lost! Click again to confirm!'
+      update-done: '&7Update has &acompleted! &7%backpack% backpacks modified and
+        %items% items lost.'
+      item-not-allowed: '&fВы &cне можете &fположить этот предмет в свой рюкзак!'
+      invalid-default: '&cThat default is invalid!'
+      sack-unable: '&cYour sack is either full or you are using the wrong item!'
+      no-recipe-backpack: '&cThat backpack doesn''t have a recipe!'
+      sack-creative: '&cYou seem to be using Sacks in creative mode. This won''t work!'
+      no-recipes-available: '&cThere are no recipes available!'
+      update-cannot-open: '&7Please wait a bit before opening your backpack! An update
+        is going on!'
+      update-command:
+      - '&7This command will modify the size of &call &7backpacks of a certain type.
+        If &cdefault &7is set to &cfalse &7then backpacks which are not the size in
+        the config will also be updated, which will cause players to &close any upgrades
+        &7they have on their backpacks. If no size is specified the one from the config
+        will be used. Using a smaller size than the previous one will cause item loss.
+        This command will not impact the config'
+      update-running: '&7Updating backpacks. This might take a while!'
+      cannot-open-permission: '&cYou don''t have permission to open this backpack!'

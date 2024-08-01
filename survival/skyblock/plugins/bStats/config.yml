@@ -1,0 +1,10 @@
+serverUUID: 6f65c08a-3b60-470a-b825-c9b5d64557ea
+serverUuid: 39950496-ca2d-46bf-9998-d964d82c8167
+logFailedRequests: false
+logResponseStatusText: false
+logSentData: false
+# bStats collects some data for plugin authors like how many servers are using their plugins.
+# To honor their work, you should not disable it.
+# This has nearly no effect on the server performance!
+# Check out https://bStats.org/ to learn more :)
+enabled: true

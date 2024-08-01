@@ -1,0 +1,134 @@
+title: '&0Дроп с мобов'
+
+layout: |-
+  #########
+  #       #
+  #       #
+  #       #
+  #########
+  P#M#B###N
+
+items:
+  P:
+    material: arrow
+    name: '&aПредыдущая страница'
+    action: |-
+      page previous
+      menu title update
+      icons refresh
+    sub:
+      - rule: 'page isFirst'
+        inherit: false
+        material: air
+  M:
+    material: GOLD_INGOT
+    update: 60
+    name: '&fВаш баланс'
+    lore: '&a%vault_eco_balance_fixed%$'
+  B:
+    material: arrow
+    name: '&aВернуться в магазин'
+    action: menu switch Shop
+  N:
+    material: arrow
+    name: '&aСледующая страница'
+    action: |-
+      page next
+      menu title update
+      icons refresh
+    sub:
+      - rule: 'page isLast'
+        inherit: false
+        material: air
+  # Воздух
+  '#':
+    material: air
+
+generator:
+  output:
+    name: '{{ element Name }}'
+    material: '{{ element Material }}'
+    flag: HIDE_ATTRIBUTES
+    lore: |-
+
+      &fПокупка: &a${{ element BuyPrice }}
+
+      &aНажмите, чтобы купить!
+    action: |-
+      ctx set 'fromMenu' to 'Shop-Drops'
+      ctx set 'itemName' to element Name
+      ctx set 'itemMaterial' to element Material
+      ctx set 'price' to element BuyPrice
+      ctx set 'amount' to 1
+      ctx set 'minAmount' to 1
+      ctx set 'maxAmount' to element MaxAmount
+      menu switch Shop-Purchase
+  elements:
+    - BuyPrice: 20
+      Material: 'ROTTEN_FLESH'
+      Name: '&aГнилая плоть'
+      MaxAmount: 64
+    - BuyPrice: 30
+      Material: 'BONE'
+      Name: '&aКость'
+      MaxAmount: 64
+    - BuyPrice: 30
+      Material: 'SULPHUR'
+      Name: '&aПорох'
+      MaxAmount: 64
+    - BuyPrice: 30
+      Material: 'STRING'
+      Name: '&aНить'
+      MaxAmount: 64
+    - BuyPrice: 50
+      Material: 'SPIDER_EYE'
+      Name: '&aПаучий глаз'
+      MaxAmount: 64
+    - BuyPrice: 50
+      Material: 'ENDER_PEARL'
+      Name: '&aЭндер-жемчуг'
+      MaxAmount: 16
+    - BuyPrice: 40
+      Material: 'SLIME_BALL'
+      Name: '&aСгусток слизи'
+      MaxAmount: 64
+    - BuyPrice: 50
+      Material: 'PRISMARINE_CRYSTALS'
+      Name: '&aКристал призмарина'
+      MaxAmount: 64
+    - BuyPrice: 30
+      Material: 'PRISMARINE_SHARD'
+      Name: '&aОсколок призмарина'
+      MaxAmount: 64
+    - BuyPrice: 50
+      Material: 'BLAZE_ROD'
+      Name: '&aОгненный стержень'
+      MaxAmount: 64
+    - BuyPrice: 40
+      Material: 'MAGMA_CREAM'
+      Name: '&aСгусток магмы'
+      MaxAmount: 64
+    - BuyPrice: 50
+      Material: 'GHAST_TEAR'
+      Name: '&aСлеза гаста'
+      MaxAmount: 64
+    - BuyPrice: 50
+      Material: 'LEATHER'
+      Name: '&aКожа'
+      MaxAmount: 64
+    - BuyPrice: 20
+      Material: 'RABBIT_HIDE'
+      Name: '&aКроличья шкурка'
+      MaxAmount: 64
+    - BuyPrice: 50
+      Material: 'RABBIT_FOOT'
+      Name: '&aКроличья лапка'
+      MaxAmount: 64
+    - BuyPrice: 20
+      Material: 'FEATHER'
+      Name: '&aПеро'
+      MaxAmount: 64
+    - BuyPrice: 20
+      Material: 'EGG'
+      Name: '&aЯйцо'
+      MaxAmount: 16

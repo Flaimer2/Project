@@ -1,0 +1,69 @@
+menu:
+  title: '&0Варпы'
+
+layout:
+  - '         '
+  - '         '
+  - ' 1 2 3 4 '
+  - '         '
+  - '    B    '
+
+items:
+  1:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDZjYzZiODM3NjNhNjdmY2FkYTFlYTE4NGMyZDE3NTJhZDI0MDc0NmM2YmUyNThhNzM5ODNkOGI2NTdmNGJiNSJ9fX0=
+    name: '§aPvP'
+    lore:
+      - '&fСразитесь, в PvP битве с другими'
+      - '&fигроками режима и узнайте лучшего'
+      - ''
+      - '&aНажмите, чтобы телепортироваться'
+    action: |-
+      menu close
+      command "cmi warp PvP-арена"
+  2:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmY3ZGZmNTM5ZGE3NGMxMmI3ZTFiOGQyYzA3MzQ5OGM0ZThmNzc2ZWEyYzBkM2Y2ZDEyZmUwMmNmNDc1ZTUxMiJ9fX0=
+    name: '§aНижний мир'
+    lore:
+      - '&fЗдесь вам нужен будет опыт'
+      - '&fPvP и хорошая броня. Удачи!'
+      - ''
+      - '&aНажмите, чтобы телепортироваться'
+    action: |-
+      menu close
+      command "cmi warp Nether"
+  3:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTFiZTRiNWI1OTJmZWUyMWE2NWUwZjkwMzAzOGM1MzMzYmUzODgyMzRhNDM3MzFkNGFkZmU1ZDU3ZDM2NDRlNSJ9fX0=
+    name: '§aМагазин'
+    lore:
+      - '&fЭто отличное место, чтобы'
+      - '&fчто-то купить или продать'
+      - ''
+      - '&aНажмите, чтобы телепортироваться'
+    action: |-
+      menu close
+      command "cmi warp Shop"
+  4:
+    head: Legit_Canc3r
+    name: '§aЧародей'
+    lore:
+      - '&fЧародей может зачаровать'
+      - '&fлюбое оружие или броню!'
+      - ''
+      - '&aНажмите, чтобы телепортироваться'
+    action: |-
+      menu close
+      command "cmi warp Enchantment"
+
+  B:
+    material: air
+    sub:
+      - rule: 'check &menu == true'
+        material: arrow
+        name: '&aВернуться в меню'
+        action: menu open Menu
+
+bindings:
+  command:
+    name: 'warps'
+    aliases:
+    - warp

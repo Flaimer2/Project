@@ -1,0 +1,77 @@
+# ##############################################################################
+# Enchantment: 'PROTECTION_PROJECTILE' # Do not change this!
+# name: Projectile Protection
+# enable: true
+# multiply:
+#   enable: false
+#   money: 0.1
+#   level: 0.1
+#   lapis: 0.1
+# 
+# # Projectile Protection will not be available for all of the items in the blacklist
+# blacklisted-items:
+#   - 'DIAMOND_SWORD'
+#   - 'BOW'
+# 
+# # Player will not able to enchant Projectile Protection if their item has below enchantments
+# blacklisted-enchantments:
+#   - 'DAMAGE_ALL'
+# 
+# # Ignore the enchantment conflict set by minecraft or other custom enchantment plugin
+# ignore-conflict:
+#   - 'DEPTH_STRIDER'
+# 
+# # Ignore the item conflict set by minecraft or other custom enchantment plugin
+# ignore-item-conflict:
+#   - 'DIAMOND_SWORD'
+# 
+#  levels:
+#    1: #level 1 
+#      money: 1000.0 #Set to 0 as taking no money to enchant
+#      level: 3 # Set to 0 as taking no level to enchant
+#      exp: 0 # Set to 0 as taking no exp to enchant
+#      lapis: 22 # Set to 0 as taking no lapis to enchant
+# ##############################################################################
+config-version: 2.1
+Enchantment: PROTECTION_PROJECTILE
+name: '§aЗащита от снарядов'
+enable: true
+multiply:
+  enable: false
+  money: 0.1
+  level: 0.1
+  lapis: 0.1
+  exp: 0.1
+blacklisted-items: []
+blacklisted-enchantments: []
+ignore-conflict:
+- PROTECTION_ENVIRONMENTAL
+- PROTECTION_FIRE
+- PROTECTION_EXPLOSIONS
+- PROTECTION_PROJECTILE
+ignore-item-conflict: []
+levels:
+  '1':
+    money: 1000.0
+    level: 3
+    exp: 0
+    lapis: 10
+    minimum_level: 2
+  '2':
+    money: 2000
+    level: 2
+    exp: 0
+    lapis: 3
+    minimum_level: 0
+  '3':
+    money: 3000
+    level: 3
+    exp: 0
+    lapis: 5
+    minimum_level: 2
+  '4':
+    money: 4000
+    level: 4
+    exp: 0
+    lapis: 7
+    minimum_level: 4

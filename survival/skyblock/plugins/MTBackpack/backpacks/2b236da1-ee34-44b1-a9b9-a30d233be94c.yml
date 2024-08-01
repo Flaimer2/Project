@@ -1,0 +1,25 @@
+backpack_data:
+  classname: teammt.mtbackpack.classes.Backpack
+  fields:
+    items:
+      classname: java.util.HashMap
+      entries:
+        entry0:
+          key: 1
+          value:
+            classname: org.bukkit.inventory.ItemStack
+            properties:
+              classname: java.util.LinkedHashMap
+              entries:
+                entry0:
+                  key: type
+                  value: CARPET
+                entry1:
+                  key: damage
+                  value: 12
+    requiresRerender: false
+    type: blue
+    id:
+      classname: java.util.UUID
+      value: 2b236da1-ee34-44b1-a9b9-a30d233be94c
+    size: 18

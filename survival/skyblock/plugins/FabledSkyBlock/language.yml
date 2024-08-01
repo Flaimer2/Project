@@ -1,0 +1,3369 @@
+# 
+# RUS by DarkFort | Томатный админ
+# vk.com/darkfortmc | t.me/darkfort 
+# Хотите готовую сборочку? - https://vk.com/moonstudio_mc
+Command:
+  Island:
+    Argument:
+      Unrecognised:
+        Message: '&fЭтот аргумент недействительный'
+    Help:
+      Lines:
+      - '&aSkyBlock &f- &f%type Commands&f:'
+      - '&c[&f!&c] &fНаведите курсор на команды для информации'
+      - '&8&l* &f%commands &f- &f%info'
+      Word:
+        Next: '&eСледующая страница'
+        Previous: '&eПредыдущая страница'
+        Pipe: '&f|'
+      Integer:
+        Message: '&fПожалуйста, укажите числовое значение'
+      Page:
+        Message: '&fТам не так много страниц'
+    Bank:
+      Info:
+        Message: '&fПозволяет получить доступ к вашему банку острова'
+      Unknown:
+        Message: '&fВы в настоящее время не на острове'
+      Perm:
+        Message: '&fУ вас нет разрешения на доступ к этому банку острова'
+      Balance:
+        Message: '&fБаланс вашего острова ''&a%balance%$&f'''
+      Deposit:
+        Message: '&fВы успешно внесли ''&a%amount%$&f'''
+      Withdraw:
+        Message: '&fВы успешно сняли ''&a%amount%$&f'''
+      Short:
+        Message: '&fУ вас &cнедостаточно &fденег, чтобы сделать это!'
+      Short2:
+        Message: '&fНедостаточно денег для вывода'
+      Short3:
+        Message: '&fВы не указали сумму'
+      Invalid:
+        Message: '&fИспользование: &a/island bank [<Deposit|Withdraw|Balance>]'
+      Short5:
+        Message: '&fУказанная вами сумма является отрицательной, она должна быть положительной'
+      Short6:
+        Message: '&fВы должны указать сумму, которая не содержит десятичной дроби'
+      Short4:
+        Message: '&fУказанная вами сумма недействительна'
+      Disabled:
+        Message: '&fБанк был отключен администратором сервера'
+    Unlock:
+      Owner:
+        Message: '&fУ вас &cнет &fострова'
+      Finish:
+        Message: '&fВы &aуспешно &fразблокировали &a%type%&f'
+      Unlocked:
+        Message: '&fВы &aуже &fразблокировали &a%type%&f'
+      Money:
+        Message: '&fУ вас &cнедостаточно &fденег, чтобы разблокировать это. Стоимость
+          разблокировки составляет &a%cost%$&f'
+      Info:
+        Message: '&fРазблокирует либо ад, либо энд'
+      Invalid:
+        Message: '&fИспользование: &a/island unlock [<Nether|End>]'
+    ControlPanel:
+      Info:
+        Message: '&fОткрытие меню панели управления острова'
+      Owner:
+        Message: '&fВы не являетесь владельцем острова'
+    Upgrade:
+      Info:
+        Message: '&fОткрытие меню обновления острова'
+      Owner:
+        Message: '&fВы не являетесь владельцем острова'
+      Disabled:
+        Message: '&fВы не можете сделать это, потому что обновления острова были отключены'
+    Border:
+      Info:
+        Message: '&fОткрытие меню границы острова'
+      Owner:
+        Message: '&fВы не являетесь владельцем острова'
+      Permission:
+        Message: '&fУ вас нет разрешения просматривать меню границы острова'
+      Disabled:
+        Message: '&fВы не можете сделать это, потому что граница острова была отключена'
+    Leaderboard:
+      Info:
+        Message: '&fОткрытие меню лидеров из 10 лучших островов'
+      Invalid:
+        Message: '&fИспользование: &a/island leaderboard [<Level|Bank|Votes>]'
+      Disabled:
+        Message: '&fВы не можете просмотреть эту таблицу лидеров, потому что она отключена'
+    Create:
+      Info:
+        Message: '&fОткрытие меню создания острова'
+      Owner:
+        Message: '&fВы уже владелец острова'
+    Reset:
+      Info:
+        Message: '&fСброс вашего острова'
+      Owner:
+        Message: '&fВы не владелец острова'
+      Permission:
+        Message: '&fУ вас нет разрешения сбросить свой остров'
+      Confirmation:
+        Pending:
+          Message: '&fВ настоящее время у вас есть ожидающее подтверждение. Пожалуйста,
+            попробуйте снова через несколько секунд!'
+        Confirm:
+          Word:
+            Confirm: подтвердить
+            Tutorial: '&fНажмите, чтобы &aподтвердить &fсброс острова!'
+          Message: '&fВы хотите сбросить свой остров? У вас есть &c%time &fсекунд
+            для подтверждения'
+    Delete:
+      Info:
+        Message: '&fУдаление вашего острова'
+      Owner:
+        Message: '&fВы не владелец острова'
+      Permission:
+        Message: '&fУ вас нет разрешения удалять свой остров'
+      Confirmation:
+        Pending:
+          Message: '&fВ настоящее время у вас есть ожидающее подтверждение. Пожалуйста,
+            попробуйте снова через несколько секунд!'
+        Confirm:
+          Word:
+            Confirm: подтвердить
+            Tutorial: '&fНажмите, чтобы &aподтвердить &fудаление острова!'
+          Message: '&fВы хотите удалить свой остров? У вас есть &c%time &fсекунд для
+            подтверждения. %confirm'
+    Teleport:
+      Info:
+        Message: '&fТелепортация на ваший остров'
+      Invalid:
+        Message: '&fИспользование: &a/island teleport [<player>]'
+      Permission:
+        Message: '&fУ вас нет разрешения телепортироваться к другим островам игроков'
+      Owner:
+        Message: '&fВы не владелец острова'
+      Teleported:
+        Yourself:
+          Message: '&fВы были телепортированы на ваш остров'
+        Other:
+          Message: '&fВы были телепортированы на остров игрока &a%player&f'
+      Island:
+        None:
+          Message: '&fЭтот игрок не является участником или владеет островом'
+        Closed:
+          Message: '&fЭтот игровой остров не открыт для посетителей'
+    SetSpawn:
+      Info:
+        Message: '&fУстановка главную точку появления и посетителей'
+      Invalid:
+        Message: '&fИспользование: &a/island setspawn <Main|Visitor>'
+      Owner:
+        Message: '&fВы не владелец острова'
+      Role:
+        Message: '&fУ вас нет необходимой роли для установки точки возрождения %spawn
+          для вашего острова'
+      Permission:
+        Message: '&fУ вас нет разрешения устанавливать точки возрождения %spawn для
+          вашего острова'
+      Island:
+        Message: '&fВы должны быть на вашем острове, чтобы установить точку спавна
+          %spawn'
+      Spawn:
+        Message: '&fЭто не правильный тип спавна'
+      Protection:
+        Block:
+          Message: '&fВы должны стоять на вершине блока для защиты спавна'
+        Ground:
+          Message: '&fВы должны стоять на земле для защиты спавна'
+        Liquid:
+          Message: '&fВы не должны стоять в источнике жидкости для защиты спавна'
+        Portal:
+          Message: '&fВы не должны стоять на портале для защиты спавна'
+        Centre:
+          Message: '&fВы должны стоять близко к центру блока для защиты спавна'
+      Set:
+        Message: '&fТочка спавна %spawn для вашего острова была установлена в вашем
+          местоположении'
+    Invite:
+      Info:
+        Message: '&fПригласить игрока присоединиться к вашему острову'
+      Invalid:
+        Message: '&fИспользование: &a/island invite <player>'
+      Owner:
+        Message: '&fВы не владелец острова'
+      Permission:
+        Message: '&fУ вас нет разрешения приглашать игроков на свой остров'
+      Capacity:
+        Message: '&fВы не можете приглашать больше игроков на свой остров, потому
+          что ваш остров достиг своего максимального количества игроков'
+      Offline:
+        Message: '&fЭтот игрок не может быть найден'
+      Yourself:
+        Message: '&fВы не можете пригласить себя'
+      Member:
+        Message: '&fЭтот игрок уже является участником острова'
+      Already:
+        Other:
+          Message: '&fДругой остров пригласил этого игрока присоединиться к ним'
+        Own:
+          Message: '&fПриглашение уже было отправлено этому игроку'
+      Invited:
+        Word:
+          Second: сек.
+          Minute: м.
+          Cancel: отменить
+          Accept: принять
+          Deny: отклонить
+          Resend: сбросить
+          Tutorial: '&fНажмите, чтобы &a%action &fприглашение!'
+        Sender:
+          Sent:
+            Message: '&fВы пригласили игрока &a%player &fприсоединиться к вашему острову.
+              У него есть &c%time&f, чтобы ответить.   %cancel'
+          Expired:
+            Message: '&fИгрок &c%player &fне ответил на ваше приглашение вовремя'
+          Disconnected:
+            Message: '&fИгрок &c%player &fвышел и не ответил на ваше приглашение'
+        Target:
+          Received:
+            Message: '&fВы были приглашены присоединиться на остров игрока &a%player&f.
+              У вас есть &c%time&f, чтобы ответить.    '
+          Expired:
+            Message: '&fВы не ответили на приглашение игрока &c%player &fвовремя'
+    Accept:
+      Info:
+        Message: '&fПринять приглашение на остров'
+      Invalid:
+        Message: '&fИспользование: &a/island accept <игрок>'
+      Owner:
+        Message: '&fВы должны покинуть свой остров, чтобы присоединиться к другому'
+      Invite:
+        Message: '&fВы не получили приглашение'
+      Invited:
+        Message: '&fЭтот игрок не пригласил вас на свой остров'
+      Capacity:
+        Broadcast:
+          Message: '&fВаше недавнее приглашение от игрока &a%player &fбыло автоматически
+            отменено, потому что остров достиг максимального количества игроков'
+      Accepted:
+        Target:
+          Message: '&fИгрок &a%player &fпринял ваше приглашение'
+        Sender:
+          Message: '&fВы приняли приглашение игрока &a%player&f'
+        Broadcast:
+          Message: '&fИгрок &6%player &fприсоединился к вашему острову!'
+    Deny:
+      Info:
+        Message: '&fЗапретить приглашение на остров'
+      Invalid:
+        Message: '&fИспользование: &a/island deny <player>'
+      Invited:
+        Message: '&fЭтот игрок не пригласил вас на свой остров'
+      Denied:
+        Target:
+          Message: '&fИгрок &c%player &fотклонил ваше приглашение'
+        Sender:
+          Message: '&fВы отклонили приглашение игрока &c%player&f'
+    Cancel:
+      Info:
+        Message: '&fОтменить приглашение игрока'
+      Invalid:
+        Message: '&fИспользование: &a/island cancel <player>'
+      Owner:
+        Message: '&fВы не владелец острова'
+      Permission:
+        Message: '&fУ вас нет разрешения отменять приглашения на ваш остров'
+      Offline:
+        Message: '&fЭтот игрок не может быть найден'
+      Member:
+        Message: '&fЭтот игрок является участником острова'
+      Invited:
+        Message: '&fЭтот игрок не был приглашен на ваш остров'
+      Cancelled:
+        Message: '&fВы отменили приглашение игрока &c%player&f'
+    Leave:
+      Info:
+        Message: '&fПокинуть остров другого игрока'
+      Member:
+        Message: '&fВы не являетесь участником острова'
+      Owner:
+        Message: '&fВы не можете покинуть свой остров'
+      Left:
+        Sender:
+          Message: '&fВы покинули остров'
+        Broadcast:
+          Message: '&fИгрок &c%player &fпокинул ваш остров'
+    Promote:
+      Info:
+        Message: '&fПовышение &aучастника до &aвладельца'
+      Invalid:
+        Message: '&fИспользование: &a/island promote <player>'
+      Owner:
+        Message: '&fВы не владелец острова'
+      Permission:
+        Message: '&fУ вас нет разрешения повышать участников острова'
+      Member:
+        Message: '&fЭтот игрок не является участником вашего острова'
+      Operator:
+        Message: '&fЭтот игрок уже является оператором'
+      Promoted:
+        Sender:
+          Message: '&fВы повысили игрока &a%player &fдо &aвладельца&f'
+        Target:
+          Message: '&fВы были повышены до &aвладельца&f'
+        Broadcast:
+          Message: '&fИгрок &a%player &fбыл повышен до &aвладельца&f'
+    Demote:
+      Info:
+        Message: '&fПонижение владельца до участника'
+      Invalid:
+        Message: '&fИспользование: &a/island demote <player>'
+      Owner:
+        Message: '&fВы не владелец острова'
+      Permission:
+        Message: '&fУ вас нет разрешения понижать в должности участников острова'
+      Member:
+        Message: '&fЭтот игрок не является участником вашего острова'
+      Role:
+        Message: '&fЭтот игрок уже является участником'
+      Demoted:
+        Sender:
+          Message: '&fВы понизили игрока &a%player &fдо &aУчастника&f'
+        Target:
+          Message: '&fВы были понижены в должности до &aУчастника&f'
+    Vote:
+      Info:
+        Message: Добавить/удалить голос с игрового острова.
+      Invalid:
+        Message: '&fИспользование: &a/island vote <player>'
+      Disabled:
+        Message: '&fВы не можете голосовать за этот остров, потому что голосование
+          отключено'
+      Island:
+        None:
+          Message: '&fЭтот игрок не является участником или владеет островом'
+        Unloaded:
+          Message: '&fНет участников этого острова онлайн'
+        Closed:
+          Message: '&fВы не можете голосовать за этот остров, потому что он закрыт'
+        Member:
+          Message: '&fВы не можете голосовать за этот остров, потому что вы являетесь
+            его участником'
+        Location:
+          Message: '&fВы должны быть на том игровом острове, чтобы голосовать'
+      Vote:
+        Added:
+          Message: '&fВаш голос был &a&lДОБАВЛЕН &fострову игрока &a%player&f'
+        Removed:
+          Message: '&fВаш голос был &c&lУДАЛЕН &fс острова игрока &a%player&f'
+    Kick:
+      Info:
+        Message: '&fКикнуть участника или посетителя с вашего острова'
+      Invalid:
+        Message: '&fИспользование: &a/island kick <игрок>'
+      Owner:
+        Message: '&fВы не владелец острова'
+      Permission:
+        Visit:
+          Open:
+            Message: '&fУ вас нет разрешения кикнуть участников или посетителей острова'
+          Closed:
+            Message: '&fУ вас нет разрешения кикнуть участников острова'
+      Occupant:
+        Visit:
+          Open:
+            Message: '&fЭтот игрок не является участником или посетителем вашего острова'
+          Closed:
+            Message: '&fЭтот игрок не является участником вашего острова'
+      Yourself:
+        Message: '&fВы не можете кикнуть себя с острова'
+      Cooped:
+        Message: '&fВы не можете кикнуть игрока в совместной игре'
+      Role:
+        Operator:
+          Message: '&fВы не можете кикнуть участника острова той же роли, что и вы'
+        Owner:
+          Message: '&fВы не можете кикнуть владельца с собственного острова'
+      Kicked:
+        Sender:
+          Message: '&fВы кикнули игрока &c%player &fиз острова'
+        Target:
+          Message: '&fВас кикнули с острова'
+    Ban:
+      Info:
+        Message: '&fЗабанить игрока на вашем острове'
+      Invalid:
+        Message: '&fИспользование: &a/island ban <player>'
+      Owner:
+        Message: '&fВы не владелец острова'
+      Disabled:
+        Message: '&fВы не можете выполнить эту команду, потому что бан острова был
+          отключен'
+      Permission:
+        Message: '&fУ вас нет разрешения забанить участников острова'
+      Found:
+        Message: '&fИгрок с таким ником не был найден'
+      Yourself:
+        Message: '&fВы не можете забанить себя на острове'
+      Member:
+        Message: '&fВы не можете забанить этого игрока на острове, потому что он является
+          его участником'
+      Already:
+        Message: '&fЭтот игрок уже забанен на острове'
+      Banned:
+        Sender:
+          Message: '&fВы забанили игрока &c%player &fна острове'
+        Target:
+          Message: '&fВы были забанены на острове'
+    Unban:
+      Info:
+        Message: '&fРазбанить игрока на острове'
+      Invalid:
+        Message: '&fИспользование: &a/island unban <player>'
+      Owner:
+        Message: '&fВы не владелец острова'
+      Disabled:
+        Message: '&fВы не можете выполнить эту команду, потому что бан на острове
+          был отключен'
+      Permission:
+        Message: '&fУ вас нет разрешения разбанить участников острова'
+      Found:
+        Message: '&fИгрок с таким ником не был найден'
+      Yourself:
+        Message: '&fВы не забанены на острове, потому что вы являетесь его участником'
+      Member:
+        Message: '&fЭтот игрок не забанен на острове, потому что он является его участником'
+      Banned:
+        Message: '&fЭтот игрок не был забанен на острове'
+      Unbanned:
+        Message: '&fВы разбанили игрока &c%player &fна острове'
+    Bans:
+      Info:
+        Message: '&fОткрытие меню банов острова'
+      Owner:
+        Message: '&fВы не владелец острова'
+      Permission:
+        Message: '&fУ вас нет разрешения просматривать баны на острове'
+      Bans:
+        Message: '&fНет никаких забаненых игроков на вашем острове'
+    Biome:
+      Info:
+        Message: '&fОткрытие меню биомов острова'
+      Permission:
+        Message: '&fУ вас нет разрешения изменять биом вашего острова'
+      Owner:
+        Message: '&fВы не владелец острова'
+    Weather:
+      Info:
+        Message: '&fОткрытие меню погоды на острове'
+      Permission:
+        Message: '&fУ вас нет разрешения изменять погоду вашего острова'
+      Owner:
+        Message: '&fВы не владелец острова'
+    Rollback:
+      Info:
+        Message: '&fОткрытие меню откатов острова'
+      Role:
+        Message: '&fУ вас нет необходимой роли для доступа к меню Откат острова'
+      Owner:
+        Message: '&fВы не владелец острова'
+    Level:
+      Invalid:
+        Message: '&fИспользование: &a/island level [<player>]'
+      Permission:
+        Message: '&fУ вас нет разрешения на получение уровня других игроков острова'
+      Info:
+        Message: '&fОткрытие меню уровня острова'
+      Processing:
+        Message: '&fОбработка запроса на уровень острова... Пожалуйста, подождите!'
+      Loading:
+        Message: '&fЗагрузка островных материалов... Пожалуйста, подождите!'
+      Owner:
+        Yourself:
+          Message: '&fВы не владелец острова'
+        Other:
+          Message: '&fЭтот игрок не является участником или владеет островом'
+      Level:
+        Message: '&fУровень острова игрока &a%player &f- &6%level&f'
+      Materials:
+        Message: '&fНа вашем острове нет значимых материалов'
+      Cooldown:
+        Word:
+          Hour: ч.
+          Minute: м.
+          Second: сек.
+        Message: '&fВы должны подождать &a%time &fперед обработкой запроса уровня
+          острова'
+    Value:
+      Info:
+        Message: '&fПолучение ценности материала в вашей руке'
+      Permission:
+        Message: '&fУ вас нет разрешения на получение стоимости предмета'
+      Hand:
+        Message: '&fВы должны держать предмет в руке'
+      None:
+        Message: '&fНе удалось получить значение этого материала'
+      Value:
+        Message: '&fЦенность материала ''&a%material&f'' - &a%points &fочков и &a%level
+          &fповышение уровня'
+    Settings:
+      Info:
+        Message: '&fОткрытие меню настроек острова'
+      Owner:
+        Message: '&fВы не владелец острова'
+      Role:
+        Message: '&fВы не имеете необходимой роли для доступа к настройкам острова.'
+      Permission:
+        Default:
+          Message: '&fУ вас нет разрешения изменять или получать доступ к настройкам
+            вашего острова.'
+        Access:
+          Message: '&fУ вас нет разрешения на доступ к этому параметру'
+        Change:
+          Message: '&fУ вас нет разрешения изменять этот параметр'
+    Information:
+      Info:
+        Message: '&fОткрытие информационного меню острова'
+      Invalid:
+        Message: '&fИспользование: &a/island information [<player>]'
+      Permission:
+        Message: '&fУ вас нет разрешения на просмотр информации об островах других
+          игроков'
+      Owner:
+        Message: '&fВы не владелец острова'
+      Island:
+        Message: '&fЭтот игрок не является участником или владеет островом'
+    Coop:
+      Info:
+        Message: '&fОткрытие меню совместной игры на острове или добавляет/удаляет
+          игроков совместной игры'
+      Permission:
+        Message: '&fУ вас нет разрешения делать это'
+      Invalid:
+        Message: '&fИспользование: &a/island coop [<player>]'
+      Owner:
+        Message: '&fВы не владелец острова'
+      Disabled:
+        Message: '&fВы не можете выполнить эту команду, потому что совместная игра
+          на острове был отключена'
+      Found:
+        Message: '&fИгрок с таким ником не был найден'
+      Yourself:
+        Message: '&fВы не можете соединить с собой, потому что вы участник острова'
+      Member:
+        Message: '&fЭтот игрок не может быть с вами в совместной игре, потому что
+          он является участником острова'
+      Banned:
+        Message: '&fВы не можете соединить забаненного игрока'
+      Added:
+        Message: '&fВы перехватили игрока &a%player&f'
+      Removed:
+        Sender:
+          Message: '&fВы удалили игрока &a%player &fиз совместной игры'
+        Target:
+          Message: '&fВы больше не являетесь участником совместной игры на этом острове'
+    Members:
+      Info:
+        Message: '&fОткрытие меню участников острова'
+      Owner:
+        Message: '&fВы не владелец острова'
+    Ownership:
+      Info:
+        Message: '&fОткрытие меню владения островом'
+      Invalid:
+        Message: '&fИспользование: &a/island ownership / (<player> / <password>)'
+      Owner:
+        Message: '&fВы не владелец острова'
+      Member:
+        Message: '&fЭтот игрок не является участником вашего острова'
+      Yourself:
+        Message: '&fВы не можете назначить владение себе. Вы уже являетесь владельцем'
+      Confirmation:
+        Pending:
+          Message: '&fВ настоящее время у вас есть ожидающее подтверждение. Пожалуйста,
+            попробуйте снова через несколько секунд!'
+        Confirm:
+          Word:
+            Confirm: подтвердить
+            Tutorial: '&fНажмите, чтобы &aподтвердить &fназначение владения!'
+          Message: '&fВы хотите назначить владение острова игроку &a%player&f. У вас
+            есть &c%time &fсекунд для подтверждения.   %confirm'
+      Password:
+        Unset:
+          Message: '&fВладелец острова не установил пароль'
+        Incorrect:
+          Message: '&fВы ввели неверный пароль'
+      Assigned:
+        Sender:
+          Message: '&fВы назначили себя владельцем острова'
+        Broadcast:
+          Message: '&fВладение островом было назначено игроку &f%player&f!'
+      Cooldown:
+        Word:
+          Hour: ч.
+          Minute: м.
+          Second: сек.
+        Message: '&fВы должны подождать &a%time &fперед передачей владения островом'
+    Confirmation:
+      Info:
+        Message: '&fПодтверждение для постоянных операций'
+      Pending:
+        Message: '&fУ вас нет ожидающего подтверждения'
+      Owner:
+        Message: '&fВы не можете подтвердить ожидающее подтверждение, потому что вы
+          не владелец острова'
+      Specified:
+        Message: '&fПричина подтверждения не указана. Этого не должно было случиться'
+      Role:
+        Message: '&fВы не можете подтвердить ожидающее подтверждение, так как вы больше
+          не являетесь владельцем острова'
+      Ownership:
+        Member:
+          Message: '&fВы не можете подтвердить ожидающее подтверждение, потому что
+            игрок, которому вы присвоили владение, больше не является участником острова'
+        Assigned:
+          Message: '&fВы получили владение островом'
+      Deletion:
+        Sender:
+          Message: '&fВы больше не являетесь владельцем острова'
+        Open:
+          Message: '&fВы должны &cзакрыть &fсвой остров перед удалением'
+        Spawn:
+          Message: '&fВы не можете удалить свой остров, потому что там установлена
+            ​​главная точка спавна'
+        Money:
+          Message: '&fУ вас не достаточно денег для удаления вашего острова. Стоимость
+            удаления вашего острова составляет &c%cost&f'
+        Broadcast:
+          Message: '&fВладелец острова &cудалил&f остров'
+      Confirmed:
+        Message: ''
+    Chat:
+      Info:
+        Message: '&fОбщайтесь приватно с участниками острова'
+      Owner:
+        Message: '&fВы не владелец острова'
+      Team:
+        Message: '&fВы не можете переключать чат на острове, потому что ваш остров
+          не является командным'
+      Offline:
+        Message: '&fВы не можете переключать чат на острове, потому что ни один участник
+          не находится в сети'
+      Toggled:
+        Message: '&fВы переключили чат на острове. Сообщения чата будут видны только
+          участникам острова'
+      Untoggled:
+        Message: '&fВы отключили чат на острове. Сообщения чата теперь будут видны
+          всем игрокам'
+    Visitors:
+      Info:
+        Message: '&fОткрытие меню посетителей острова'
+      Owner:
+        Message: '&fВы не владелец острова'
+      Closed:
+        Message: '&fВы не можете открыть меню посетителей, потому что ваш остров закрыт'
+      Visitors:
+        Message: '&fНа вашем острове нет посетителей'
+    KickAll:
+      Info:
+        Message: '&fКикнуть всех посетителей с вашего острова'
+      Owner:
+        Message: '&fВы не владелец острова'
+      Role:
+        Message: '&fВы не умеете правильную роль, чтобы кикнуть посетителей'
+      Closed:
+        Message: '&fВы не можете кикнуть посетителей, потому что ваш остров закрыт'
+      Visitors:
+        Message: '&fНа вашем острове нет посетителей'
+      Kicked:
+        Target:
+          Message: '&fВас кикнули с острова'
+        Sender:
+          Message: '&fВы кикнули &c%visitors &fпосетителей с вашего острова'
+    Current:
+      Info:
+        Message: '&fПоказать текущий остров, на котором вы находитесь'
+      Invalid:
+        Message: '&fИспользование: &a/island current <player>'
+      Permission:
+        Message: '&fУ вас нет разрешения видеть, на каком острове находятся другие
+          игроки'
+      Offline:
+        Message: '&fЭтот игрок не подключен к серверу'
+      Island:
+        Owner:
+          Yourself:
+            Message: '&fВы находитесь на острове игрока &a%player&f'
+          Other:
+            Message: '&fИгрок &f%target &fна острове игрока &a%owner&f'
+        None:
+          Yourself:
+            Message: '&fВы не на острове'
+          Other:
+            Message: '&fЭтот игрок не на острове'
+    Visit:
+      Info:
+        Message: '&fОткрытие меню публичных островов для посещения'
+      Invalid:
+        Message: '&fИспользование: &a/island visit [<player>]'
+    Open:
+      Info:
+        Message: '&fОткрытие вашего острова для посетителей'
+      Owner:
+        Message: '&fЭтот игрок не является владельцем острова'
+      Permission:
+        Message: '&fУ вас нет разрешения открывать остров для посетителей'
+      Already:
+        Message: '&fВаш остров уже открыт'
+      Opened:
+        Message: '&fВаш остров был открыт'
+    Close:
+      Info:
+        Message: '&fЗакрытие вашего острова для посетителей'
+      Owner:
+        Message: '&fЭтот игрок не является владельцем острова'
+      Permission:
+        Message: '&fУ вас нет разрешения закрывать остров'
+      Already:
+        Message: '&fВаш остров уже закрыт'
+      Closed:
+        Message: '&fВаш остров был закрыт'
+    Public:
+      Info:
+        Message: '&fСделать свой остров частным или публичным'
+      Owner:
+        Message: '&fЭтот игрок не является владельцем острова'
+      Permission:
+        Message: '&fУ вас нет разрешение делать остров публичным или частным'
+      Public:
+        Message: '&fВаш остров теперь &fПубличный&f'
+      Private:
+        Message: '&fВаш остров теперь &cПриватный&f'
+    Admin:
+      Create:
+        Info:
+          Message: '&fУправление структурами в меню создания острова'
+      Upgrade:
+        Info:
+          Message: '&fОбновления менеджера в меню обновления острова'
+        Disabled:
+          Message: '&fВы не можете выполнить эту команду, потому что обновления были
+            отключены'
+      Generator:
+        Info:
+          Message: '&fМенеджер генераторов булыжника'
+        Disabled:
+          Message: '&fВы не можете выполнить эту команду, потому что генератор был
+            отключен'
+      Level:
+        Info:
+          Message: '&fИзменить материалы и очки уровня острова'
+      Settings:
+        Info:
+          Message: '&fИзменить настройки по умолчанию, когда создается остров'
+      Structure:
+        Info:
+          Message: '&fСоздание структуры островов'
+        Tool:
+          Info:
+            Message: '&fВыдача игроку предмета инструмент структур'
+          Inventory:
+            Message: '&fУ вас уже есть инструмент структур в вашем инвентаре'
+          Equiped:
+            Message: '&fВам дали инструмент структур'
+        Save:
+          Info:
+            Message: '&fСохранение выбранной структуры'
+          Invalid:
+            Message: '&fИспользование: &a/island admin structure save <имя>'
+          Position:
+            Message: '&fПожалуйста, используйте инструмент структур, чтобы выбрать
+              две позиции области'
+          Complete:
+            Message: '&fПожалуйста, завершите выделение области, используя инструмент
+              структур и выделив две позиции области'
+          Selection:
+            World:
+              Message: '&fОбе выделенные позиции должны быть в одном мире'
+          Player:
+            World:
+              Message: '&fВы должны быть в том же мире, что и выделенные позиции'
+            Area:
+              Message: '&fВы должны быть внутри выделенной области'
+          Saved:
+            Successful:
+              Message: '&fСтруктура с названием ''&a%name&f'' была сохранена!'
+            Failed:
+              Message: '&fПроизошла ошибка при попытке сохранить структуру'
+      SetSpawn:
+        Info:
+          Message: '&fУстанавливает точку спавна в вашем местоположении'
+        Set:
+          Message: '&fТочка спавна была установлена ​​в вашем местоположении'
+      SetHologram:
+        Info:
+          Message: '&fУстановка расположения голограммы'
+        Invalid:
+          Message: '&fИспользование: &a/island admin sethologram <Level|Votes>'
+        Set:
+          Message: '&fГолограмма ''&b%type&f'' была установлена в вашем местоположении'
+      RemoveHologram:
+        Info:
+          Message: '&fУдаление существующей голограммы'
+        Invalid:
+          Message: '&fИспользование: &a/island admin removehologram <Level|Votes>'
+        Set:
+          Message: '&fМесто для этой голограммы не было установлено'
+        Removed:
+          Message: '&fВы удалили голограмму ''&b%type&f'''
+      SetSize:
+        Info:
+          Message: '&fУстановка размера игрового острова'
+        Invalid:
+          Message: '&fИспользование: &a/island admin setsize <игрок> <размер>'
+        Numerical:
+          Message: '&fВы должны ввести числовое значение'
+        Size:
+          Greater:
+            Message: '&fРазмер острова должен быть больше 50'
+          Less:
+            Message: '&fРазмер острова должен быть менее 1000'
+        Island:
+          Owner:
+            Message: '&fЭтот игрок не является участником или владеет островом'
+          Data:
+            Message: '&fДанные острова для этого игрового острова не существует'
+        Set:
+          Message: '&fВы установили размер острова игрока &a%player &f- &a%size&f'
+      AddUpgrade:
+        Info:
+          Message: '&fДобавить обновление на игровой остров'
+        Invalid:
+          Message: '&fИспользование: &a/island admin addupgrade <игрок> <обновление>'
+        Island:
+          Owner:
+            Message: '&fЭтот игрок не является участником или владеет островом'
+          Data:
+            Message: '&fДанные острова для этого игрового острова не существует'
+        Upgrade:
+          Exist:
+            Message: '&fОбновление с таким именем не существует'
+          Already:
+            Message: '&fЭтот игровой остров уже имеет это обновление'
+        Added:
+          Message: '&fВы &f&lДОБАВИЛИ обновление ''&a%upgrade&f'' острову игрока &a%player&f'
+      RemoveUpgrade:
+        Info:
+          Message: '&fУдаление обновления с игрового острова'
+        Invalid:
+          Message: '&fИспользование: &a/island admin removeupgrade <игрок> <обновление>'
+        Island:
+          Owner:
+            Message: '&fЭтот игрок не является участником или владеет островом'
+          Data:
+            Message: '&fДанные острова для этого игрового острова не существует'
+        Upgrade:
+          Exist:
+            Message: '&fОбновление с таким именем не существует'
+          Missing:
+            Message: '&fЭтот остров игроков не имеет этого обновления'
+        Removed:
+          Message: '&fВы &c&lУДАЛИЛИ &fобновление ''&a%upgrade&f'' из острова игрока
+            &a%player&f'
+      Delete:
+        Info:
+          Message: '&fУдаление игрока с острова навсегда'
+        Invalid:
+          Message: '&fИспользование: &a/island admin delete <имя игрока>'
+        Owner:
+          Message: '&fЭтот игрок не является владельцем острова'
+        Spawn:
+          Message: '&fВы не можете удалить этот остров, потому что там установлена
+            ​​главная точка спавна'
+        Deleted:
+          Message: '&fВы удалили остров игрока &c%player&f'
+      Owner:
+        Info:
+          Message: '&fПолучение владельца игрового острова'
+        Invalid:
+          Message: '&fИспользование: &a/island admin owner <имя игрока>'
+        Island:
+          None:
+            Message: '&fЭтот игрок не является участником или владеет островом'
+          Member:
+            Message: '&fИгрок &a%player владелец острова игрока &a%player&f'
+          Owner:
+            Message: '&fИгрок &a%player &fвладелец острова'
+      Reload:
+        Info:
+          Message: '&fПерезагрузка конфигурации'
+        Reloaded:
+          Message: '&fВсе загруженные файлы были перезагружены'
+  PermissionDenied:
+    Admin:
+      Message: '&fУ вас нет разрешения на выполнение этой команды'
+    Island:
+      Message: '&fУ вас нет разрешения на выполнение этой команды'
+Island:
+  Creator:
+    Selector:
+      Created:
+        Message: '&fТеперь вы владелец острова'
+      None:
+        Message: '&fНет доступных структур для использования'
+      Permission:
+        Message: '&fУ вас нет разрешения на использование этой структуры'
+      File:
+        Overworld:
+          Message: '&fФайл структуры для верхнего мира не существует'
+        Nether:
+          Message: '&fФайл структуры для ада не существует'
+      Cooldown:
+        Word:
+          Minute: м.
+          Second: сек.
+        Message: '&fВы должны подождать &a%time &fперед созданием острова'
+    Error:
+      Message: '&fОсновная точка спавна должна быть установлена ​​до того, как вы
+        сможете создать остров, выполнив команду ''&f/island admin setspawn&f'''
+  Unlock:
+    Nether:
+      Message: '&fВам нужно заплатить, чтобы разблокировать мир в ад. Для этого используйте
+        команду &a/island unlock nether&f Это будет стоить &a$%cost%&f'
+    End:
+      Message: '&fВам нужно заплатить, чтобы разблокировать Эндер мир. Для этого используйте
+        &a/island unlock end&f Это будет стоить &a$%cost%&f'
+  Upgrade:
+    Disabled:
+      Message: '&fВы не можете сделать это, потому что обновления острова были отключены'
+    Owner:
+      Message: '&fВы не владелец острова'
+    Exist:
+      Message: '&fЭто обновление не существует'
+    Money:
+      Message: '&fУ вас не достаточно денег для этого обновления'
+    Bought:
+      Message: '&fВы купили улучшение &f%upgrade&f'
+    Claimed:
+      Message: '&fВы уже купили это обновление'
+  Biome:
+    Cooldown:
+      Word:
+        Minute: м.
+        Second: сек.
+      Message: '&fВы должны подождать &a%time &fперед изменением биома вашего острова'
+  Information:
+    Island:
+      Message: '&fУ выбранного вами игрока больше нет острова'
+    Visitors:
+      Message: '&fНа выбранном острове нет посетителей'
+    Closed:
+      Message: '&fВыбранный остров закрыт для посетителей'
+  Settings:
+    Permission:
+      Message: '&fУ вас &cнет &fразрешения делать это на этом острове'
+    Visitor:
+      Welcome:
+        Disabled:
+          Message: '&fУ вас нет разрешения на использование этой функции'
+      Signature:
+        Disabled:
+          Message: '&fУ вас нет разрешения на использование этой функции'
+  Portal:
+    Destination:
+      Message: '&fНет никакого места назначения, чтобы пройти через этот портал'
+    Stuck:
+      Message: '&fВы были телепортированы в безопасное место из вашего застрявшего
+        положения'
+  World:
+    Word:
+      Nether: ад
+      End: эндер
+    Message: '&fВы были телепортированы из ада, потому что он отключен'
+  WorldBorder:
+    Outside:
+      Message: '&fВы зашли слишком далеко за пределы острова'
+    Disappeared:
+      Message: '&fОстров, на котором вы были, внезапно исчез'
+  Visit:
+    Already:
+      Message: '&fВы уже на острове этого игрока'
+    Exist:
+      Message: '&fЭтот остров больше не существует'
+    Closed:
+      Menu:
+        Message: '&fЭтот остров больше не открыт для посетителей'
+      Island:
+        Message: '&fОстров, на котором вы были, больше не открыт для посетителей'
+      Plugin:
+        Message: '&fВы не можете телепортироваться к месту назначения, потому что
+          остров не открыт для посетителей'
+    Banned:
+      Island:
+        Message: '&fВы были забанены на острове, на котором вы были'
+      Teleport:
+        Message: '&fВы не можете телепортироваться в место назначения, потому что
+          вас забанили на этом острове'
+    Teleported:
+      Message: '&fВы были телепортированы на остров игрока &a%player&f'
+    Unloaded:
+      Message: '&fНет участников острова онлайн. Вас кикнули из острова'
+    Deleted:
+      Message: '&fВладелец острова удалил свой остров. Вас кикнули с острова'
+    Vote:
+      Island:
+        Message: '&fВы должны быть на &aэтом &fострове, чтобы голосовать'
+      Added:
+        Message: '&fВаш голос был &a&lДОБАВЛЕН &fострову игрока &a%player&f'
+      Removed:
+        Message: '&fВаш голос был &c&lУДАЛЕН &fс острова игрока &a%player&f'
+  Structure:
+    Tool:
+      Position:
+        Message: '&fПозиция &b%position &fбыла выделена!'
+      Material:
+        Message: '&fОпределенный материал в файле конфигурации для инструмента выделения
+          структуры не найден'
+      Item:
+        Displayname: '&bСтруктурный инструмент'
+        Lore:
+        - '&fВыберите две позиции'
+        - '&fобласти'
+  Chat:
+    Format:
+      Role:
+        Member: '&f[Участник]'
+        Operator: '&b[Оператор]'
+        Owner: '&c[Владелец]'
+      Message: '&8[&aЧат&8] %role &f%player&f: &a%message'
+    Untoggled:
+      Message: '&fЧат на острове был отключен, потому что в сети нет участников острова.
+        Сообщения чата теперь будут видны всем игрокам'
+  Coop:
+    Removed:
+      Owner:
+        Message: '&fВы были удалены с острова, потому что владелец ушел в оффлайн'
+      Operator:
+        Message: '&fВы были удалены с острова, потому что владелец и операторы острова
+          в оффлайн'
+  Admin:
+    Creator:
+      Permission:
+        Message: '&fУ вас нет разрешения на это'
+      Already:
+        Message: '&fСтруктура с таким именем уже существует'
+      Exist:
+        Message: '&fЭта структура не существует'
+      Selected:
+        Message: '&fВы не выбрали структуру'
+      Numerical:
+        Message: '&fВы должны ввести числовое значение'
+      File:
+        Message: '&fЭтот файл не существует в директории структур'
+      Characters:
+        Message: '&fНазвание структуры может содержать только буквы и цифры'
+      Item:
+        Added:
+          Message: '&fВыберите предмет в инвентаре'
+        Removed:
+          Message: '&fВы были удалены из списка предметов'
+        Cancelled:
+          Message: '&fВы отменили выбор предмета'
+      Created:
+        Message: '&fВы создали структуру с именем ''&a%structure&f'''
+      Removed:
+        Message: '&fВы удалили структуру с именем ''&a%structure&f'''
+    Upgrade:
+      Permission:
+        Message: '&fУ вас нет разрешения на это'
+      Numerical:
+        Message: '&fВы должны ввести числовое значение'
+      Tier:
+        Exist:
+          Message: '&fУровень для этого обновления уже существует'
+        Limit:
+          Message: '&fВы достигли предела уровней для этого обновления'
+        Selected:
+          Message: '&fВы не можете сделать это, потому что выбранный уровень был удален'
+        Size:
+          Message: '&fРазмер уровня должен быть менее 1000'
+    Generator:
+      Permission:
+        Message: '&fУ вас нет разрешения на это'
+      Disabled:
+        Message: '&fВы не можете сделать это, потому что генераторы были отключены'
+      Already:
+        Message: '&fГенератор с таким именем уже существует'
+      Exist:
+        Message: '&fЭтот генератор не существует'
+      Selected:
+        Message: '&fВы не выбрали генератор'
+      Characters:
+        Message: '&fИмя генератора может содержать только буквы и цифры'
+      Chance:
+        Numerical:
+          Message: '&fВы должны ввести числовое значение'
+        Over:
+          Message: '&fВы не можете установить шанс для этого материала, потому что
+            общая вероятность материала для этого генератора превышает 100'
+      Material:
+        Limit:
+          Message: '&fВы достигли предела материалов для этого генератора'
+        Already:
+          Message: '&fЭтот тип материала уже добавлен в этот генератор'
+        Added:
+          Message: '&fВы добавили материал ''&a%material&f'' к генератору ''&a%generator&f'''
+      Created:
+        Message: '&fВы создали генератор с именем ''&a%generator&f'''
+      Removed:
+        Message: '&fВы удалили генератор с именем ''&a%generator&f'''
+    Levelling:
+      Permission:
+        Message: '&fУ вас нет разрешения на это'
+      Already:
+        Message: '&fЭтот тип материала уже был добавлен'
+      Exist:
+        Message: '&fЭтот тип материала не был добавлен'
+      Numerical:
+        Message: '&fПожалуйста, укажите числовое значение'
+      Added:
+        Message: '&fВы добавили материал ''&a%material&f'''
+      Removed:
+        Message: '&fВы удалили материал ''&a%material&f'''
+      Points:
+        Message: '&fВы установили материал ''&a%material&f'' очков на ''&6%points&8'''
+      Division:
+        Message: '&fВы установили деление очков на ''&f%division&f'''
+  SpawnProtection:
+    Break:
+      Message: '&fВы не можете сломать точку спавна острова'
+    Place:
+      Message: '&fВы не можете помешать точке спавна острова'
+Placeholder:
+  fabledskyblock_leaderboard_level:
+    Empty:
+      Message: '&fПустота'
+    Non-empty:
+      Message: '&f[%position] %player [%level]'
+  fabledskyblock_leaderboard_votes:
+    Empty:
+      Message: '&fПустота'
+    Non-empty:
+      Message: '&f[%position] %player [%votes]'
+  fabledskyblock_island_size:
+    Empty:
+      Message: '0'
+    Non-empty:
+      Message: '%placeholder'
+  fabledskyblock_island_radius:
+    Empty:
+      Message: '0'
+    Non-empty:
+      Message: '%placeholder'
+  fabledskyblock_island_level:
+    Empty:
+      Message: '0'
+    Non-empty:
+      Message: '%placeholder'
+  fabledskyblock_island_level_formatted:
+    Empty:
+      Message: '0'
+    Non-empty:
+      Message: '%placeholder'
+  fabledskyblock_island_points:
+    Empty:
+      Message: '0'
+    Non-empty:
+      Message: '%placeholder'
+  fabledskyblock_island_role:
+    Empty:
+      Message: '&fНикто'
+    Non-empty:
+      Message: '&f%placeholder'
+  fabledskyblock_island_owner:
+    Empty:
+      Message: '&fНикто'
+    Non-empty:
+      Yourself:
+        Message: '&fВы'
+      Other:
+        Message: '&f%placeholder'
+  fabledskyblock_island_biome:
+    Empty:
+      Message: '&fНикто'
+    Non-empty:
+      Message: '&f%placeholder'
+  fabledskyblock_island_time:
+    Empty:
+      Message: '0'
+    Non-empty:
+      Message: '%placeholder'
+  fabledskyblock_island_weather:
+    Empty:
+      Message: '0'
+    Non-empty:
+      Message: '%placeholder'
+  fabledskyblock_island_bans:
+    Empty:
+      Message: '0'
+    Non-empty:
+      Message: '%placeholder'
+  fabledskyblock_island_members_total:
+    Empty:
+      Message: '0'
+    Non-empty:
+      Message: '%placeholder'
+  fabledskyblock_island_members:
+    Empty:
+      Message: '0'
+    Non-empty:
+      Message: '%placeholder'
+  fabledskyblock_island_operators:
+    Empty:
+      Message: '0'
+    Non-empty:
+      Message: '%placeholder'
+  fabledskyblock_island_coops:
+    Empty:
+      Message: '0'
+    Non-empty:
+      Message: '%placeholder'
+  fabledskyblock_island_coops_total:
+    Empty:
+      Message: '0'
+    Non-empty:
+      Message: '%placeholder'
+  fabledskyblock_island_visitors:
+    Empty:
+      Message: '0'
+    Non-empty:
+      Message: '%placeholder'
+  fabledskyblock_island_invites:
+    Empty:
+      Message: '0'
+    Non-empty:
+      Message: '%placeholder'
+  fabledskyblock_island_bank_balance:
+    Empty:
+      Message: '0'
+    Non-empty:
+      Message: '%placeholder'
+Hologram:
+  Leaderboard:
+    Level:
+      Header: '&b&lРейтинг по уровню острова&r'
+      Claimed: '&e%position. &f%player &7- &e%level'
+      Unclaimed: '&e%position. &f--- &7- &e---'
+      Footer: ''
+    Votes:
+      Header: '&b&lРейтинг по голосам&r'
+      Claimed: '&e%position. &f%player &7- &e%votes'
+      Unclaimed: '&e%position. &f--- &7- &e---'
+      Footer: ''
+Scoreboard:
+  Tutorial:
+    Displayname: '&a&lSkyBlock'
+    Displaylines:
+    - '&7%localtime_timezone_GMT+3% &8(%server_name%)'
+    - ''
+    - '&cУ вас нет острова'
+    - '&fНапишите &a/is create'
+    - ''
+    - '&f▼ Профиль:'
+    - '&fБаланс: &a%vault_eco_balance_fixed%$'
+    - '&fСнаперов: &a%coin_amount%₵'
+    - ''
+    - '&b&lmcsnapix.ru'
+  Island:
+    Solo:
+      Displayname: '&a&lSkyBlock'
+      Occupied:
+        Displaylines:
+        - '&7%localtime_timezone_GMT+3% &8(%server_name%)'
+        - ''
+        - '&f▼ Остров:'
+        - '&fУровень: &a%island_level'
+        - '&fПосетителей: &a%island_visitors'
+        - '&fРазмер: &a%island_size&7x&a%island_size'
+        - ''
+        - '&f▼ Профиль:'
+        - '&fБаланс: &a%vault_eco_balance_fixed%$'
+        - '&fСнаперов: &a%coin_amount%₵'
+        - ''
+        - '&b&lmcsnapix.ru'
+      Empty:
+        Displaylines:
+        - '&7%localtime_timezone_GMT+3% &8(%server_name%)'
+        - ''
+        - '&f▼ Остров:'
+        - '&fУровень: &a%island_level'
+        - '&fРазмер: &a%island_size&7x&a%island_size'
+        - ''
+        - '&f▼ Профиль:'
+        - '&fБаланс: &a%vault_eco_balance_fixed%$'
+        - '&fСнаперов: &a%coin_amount%₵'
+        - ''
+        - '&b&lmcsnapix.ru'
+    Team:
+      Word:
+        Owner: Владелец
+        Operator: Оператор
+        Member: Участник
+      Displayname: '&a&lSkyBlock'
+      Occupied:
+        Displaylines:
+        - '&7%localtime_timezone_GMT+3% &8(%server_name%)'
+        - ''
+        - '&f▼ Остров:'
+        - '&fРоль: &a%island_role'
+        - '&fУчастников: &a%island_members'
+        - '&fУровень: &a%island_level'
+        - '&fПосетителей: &a%island_visitors'
+        - '&fРазмер: &a%island_size&7x&a%island_size'
+        - ''
+        - '&f▼ Профиль:'
+        - '&fБаланс: &a%vault_eco_balance_fixed%$'
+        - '&fСнаперов: &a%coin_amount%₵'
+        - ''
+        - '&b&lmcsnapix.ru'
+      Empty:
+        Displaylines:
+        - '&7%localtime_timezone_GMT+3% &8(%server_name%)'
+        - ''
+        - '&f▼ Остров:'
+        - '&fРоль: &a%island_role'
+        - '&fУчастников: &a%island_members'
+        - '&fУровень: &a%island_level'
+        - '&fРазмер: &a%island_size&7x&a%island_size'
+        - ''
+        - '&f▼ Профиль:'
+        - '&fБаланс: &a%vault_eco_balance_fixed%$'
+        - '&fСнаперов: &a%coin_amount%₵'
+        - ''
+        - '&b&lmcsnapix.ru'
+Menu:
+  Creator:
+    Selector:
+      Title: '&8Создание острова'
+      Item:
+        Island:
+          Word:
+            Empty: '&fЗдесь ничего нет'
+          Displayname: '%displayname остров'
+          Lore:
+          - ''
+          - '%description'
+          - ''
+          - '&aНажмите, чтобы создать остров!'
+  ControlPanel:
+    Title: '&8Панель управления островом'
+    Item:
+      Teleport:
+        Displayname: '&aТелепортация на остров'
+        Lore:
+        - '&f[&f!&f] Телепортирует вас на главную'
+        - '    &fточку спавна на вашем острове'
+        - ''
+        - '&aНажмите, чтобы телепортироваться на ваш остров!'
+      Barrier:
+        Displayname: '&cПанель управления островом'
+      Level:
+        Displayname: '&aУровень острова'
+        Lore:
+        - '&f[&f!&f] Получайте уровни, расширяя'
+        - '    &fсвой остров и размещая редкие'
+        - '    &fблоки'
+        - ''
+        - '&aНажмите, чтобы рассчитать уровень острова!'
+      Settings:
+        Displayname: '&aНастройки острова'
+        Lore:
+        - '&f[&f!&f] Управляйте настройками своего'
+        - '    &fострова и решайте, какие разрешения'
+        - '    &fвы хотите предоставить'
+        - ''
+        - '&aНажмите, чтобы посмотреть настройки острова!'
+      Members:
+        Displayname: '&aУчастники острова'
+        Lore:
+        - '&f[&f!&f] Посмотрите, какие игроки'
+        - '    &fявляются участниками вашего'
+        - '    &fострова, и посмотрите их'
+        - '    &fроль и статистику'
+        - ''
+        - '&aНажмите, чтобы посмотреть участников острова!'
+      Biome:
+        Displayname: '&aБиом острова'
+        Lore:
+        - '&f[&f!&f] Выберите несколько биомов для'
+        - '    &fвашего острова и решите, какой'
+        - '    &fиз них лучше всего подходит'
+        - ''
+        - '&aНажмите, чтобы изменить биом острова!'
+      Weather:
+        Displayname: '&aПогода на острове'
+        Lore:
+        - '&f[&f!&f] Измените погоду и время'
+        - '    &fна своем острове'
+        - ''
+        - '&aНажмите, чтобы изменить погоду острова!'
+      Bans:
+        Displayname: '&aБаны острова'
+        Lore:
+        - '&f[&f!&f] Посмотрите, каким игрокам'
+        - '    &fзапрещено входить на ваш остров'
+        - ''
+        - '&aНажмите, чтобы посмотреть баны острова!'
+      Visitors:
+        Displayname: '&aПосетители острова'
+        Lore:
+        - '&f[&f!&f] Посмотрите, какие игроки посещают'
+        - '    &fваш остров и как долго они его посещают'
+        - ''
+        - '&aНажмите, чтобы посмотреть посетителей острова!'
+  Upgrade:
+    Title: '&8Улучшение острова'
+    Item:
+      Word:
+        Enable: '&aвключить&a'
+        Disable: '&cвыключить&a'
+      Speed:
+        Displayname: '&aУвеличение скорости'
+        Claimable:
+          Lore:
+          - '&fДает скорость 2 игрокам на'
+          - '&fвашем острове'
+          - ''
+          - '&fСкорость: &aII'
+          - '&fСтоимость: &a$%cost'
+          - ''
+          - '&fСтатус: &c&lЗАБЛОКИРОВАНО'
+          - ''
+          - '&aНажмите, чтобы разблокировать это обновление!'
+        Unclaimable:
+          Lore:
+          - '&fДает скорость 2 игрокам на'
+          - '&fвашем острове'
+          - ''
+          - '&fСкорость: &aII'
+          - '&fСтоимость: &a$%cost'
+          - ''
+          - '&fСтатус: &c&lЗАБЛОКИРОВАНО'
+          - ''
+          - '&cУ вас не достаточно денег!'
+        Claimed:
+          Lore:
+          - '&fДает скорость 2 игрокам на'
+          - '&fвашем острове'
+          - ''
+          - '&fСкорость: &aII'
+          - '&fСтоимость: &a$%cost'
+          - ''
+          - '&fСтатус: &a&lРАЗБЛОКИРОВАНО'
+          - ''
+          - '&aНажмите, чтобы %status!'
+      Jump:
+        Displayname: '&bУсиление прыгучести'
+        Claimable:
+          Lore:
+          - '&fДает прыгучесть 2 игрокам на'
+          - '&fвашем острове'
+          - ''
+          - '&fПрыгучесть: &aII'
+          - '&fСтоимость: &a$%cost'
+          - ''
+          - '&fСтатус: &c&lЗАБЛОКИРОВАНО'
+          - ''
+          - '&aНажмите, чтобы разблокировать это обновление!'
+        Unclaimable:
+          Lore:
+          - '&fДает прыгучесть 2 игрокам на'
+          - '&fвашем острове'
+          - ''
+          - '&fПрыгучесть: &aII'
+          - '&fСтоимость: &a$%cost'
+          - ''
+          - '&fСтатус: &c&lЗАБЛОКИРОВАНО'
+          - ''
+          - '&cУ вас не достаточно денег!'
+        Claimed:
+          Lore:
+          - '&fДает прыгучесть 2 игрокам на'
+          - '&fвашем острове'
+          - ''
+          - '&fПрыгучесть: &aII'
+          - '&fСтоимость: &a$%cost'
+          - ''
+          - '&fСтатус: &a&lРАЗБЛОКИРОВАНО'
+          - ''
+          - '&aНажмите, чтобы %status!'
+      Crop:
+        Displayname: '&aУскорение роста урожая'
+        Claimable:
+          Lore:
+          - '&fУвеличивает рост урожая в два раза'
+          - '&fна вашем острове'
+          - ''
+          - '&fРост: &a2x'
+          - '&fСтоимость: &a$%cost'
+          - ''
+          - '&fСтатус: &c&lЗАБЛОКИРОВАНО'
+          - ''
+          - '&aНажмите, чтобы разблокировать это обновление!'
+        Unclaimable:
+          Lore:
+          - '&fУвеличивает рост урожая в два раза'
+          - '&fна вашем острове'
+          - ''
+          - '&fРост: &a2x'
+          - '&fСтоимость: &a$%cost'
+          - ''
+          - '&fСтатус: &c&lЗАБЛОКИРОВАНО'
+          - ''
+          - '&cУ вас не достаточно денег!'
+        Claimed:
+          Lore:
+          - '&fУвеличивает рост урожая в два раза'
+          - '&fна вашем острове'
+          - ''
+          - '&fРост: &a2x'
+          - '&fСтоимость: &a$%cost'
+          - ''
+          - '&fСтатус: &a&lРАЗБЛОКИРОВАНО'
+          - ''
+          - '&aНажмите, чтобы %status!'
+      Fly:
+        Displayname: '&aПолет'
+        Claimable:
+          Lore:
+          - '&fВозможность полета для игроков на'
+          - '&fвашем острове'
+          - ''
+          - '&fСтоимость: &a$%cost'
+          - ''
+          - '&fСтатус: &c&lЗАБЛОКИРОВАНО'
+          - ''
+          - '&aНажмите, чтобы разблокировать это обновление!'
+        Unclaimable:
+          Lore:
+          - '&fВозможность полета для игроков на'
+          - '&fвашем острове'
+          - ''
+          - '&fСтоимость: &a$%cost'
+          - ''
+          - '&fСтатус: &c&lЗАБЛОКИРОВАНО'
+          - ''
+          - '&cУ вас не достаточно денег!'
+        Claimed:
+          Lore:
+          - '&fВозможность полета для игроков на'
+          - '&fвашем острове'
+          - ''
+          - '&fСтоимость: &a$%cost'
+          - ''
+          - '&fСтатус: &a&lРАЗБЛОКИРОВАНО'
+          - ''
+          - '&aНажмите, чтобы %status!'
+      Drops:
+        Displayname: '&aУскорение добычи'
+        Claimable:
+          Lore:
+          - '&fУвеличивает добычу в два раза'
+          - '&fна вашем острове'
+          - ''
+          - '&fДобыча: &a2x'
+          - '&fСтоимость: &a$%cost'
+          - ''
+          - '&fСтатус: &c&lЗАБЛОКИРОВАНО'
+          - ''
+          - '&aНажмите, чтобы разблокировать это обновление!'
+        Unclaimable:
+          Lore:
+          - '&fУвеличивает добычу в два раза'
+          - '&fна вашем острове'
+          - ''
+          - '&fДобыча: &a2x'
+          - '&fСтоимость: &a$%cost'
+          - ''
+          - '&fСтатус: &c&lЗАБЛОКИРОВАНО'
+          - ''
+          - '&cУ вас не достаточно денег!'
+        Claimed:
+          Lore:
+          - '&fУвеличивает добычу в два раза'
+          - '&fна вашем острове'
+          - ''
+          - '&fДобыча: &a2x'
+          - '&fСтоимость: &a$%cost'
+          - ''
+          - '&fСтатус: &a&lРАЗБЛОКИРОВАНО'
+          - ''
+          - '&aНажмите, чтобы %status!'
+      Size:
+        Displayname: '&aРазмер границы острова &7(Уровень #%tier)'
+        Claimable:
+          Lore:
+          - '&fУвеличивает размер границы'
+          - '&fвашего острова'
+          - ''
+          - '&fГраница: &a%sizex%size'
+          - '&fСтоимость: &a$%cost'
+          - ''
+          - '&fСтатус: &c&lЗАБЛОКИРОВАНО'
+          - ''
+          - '&aНажмите, чтобы разблокировать это обновление!'
+        Unclaimable:
+          Lore:
+          - '&fУвеличивает размер границы'
+          - '&fвашего острова'
+          - ''
+          - '&fГраница: &a%sizex%size'
+          - '&fСтоимость: &a$%cost'
+          - ''
+          - '&fСтатус: &c&lЗАБЛОКИРОВАНО'
+          - ''
+          - '&cУ вас не достаточно денег!'
+        Claimed:
+          Lore:
+          - '&fУвеличивает размер границы'
+          - '&fвашего острова'
+          - ''
+          - '&fГраница: &a%sizex%size'
+          - '&fСтоимость: &a$%cost'
+          - ''
+          - '&fСтатус: &a&lРАЗБЛОКИРОВАНО'
+          - ''
+          - '&cВы разблокировали это обновление!'
+      Spawner:
+        Displayname: '&aУскорение спавнеров'
+        Claimable:
+          Lore:
+          - '&fУвеличивает скорость спавна'
+          - '&fиз спавнеров в два раза быстрее'
+          - '&fна вашем острове'
+          - ''
+          - '&fСкорость: &a2x'
+          - '&fСтоимость: &a$%cost'
+          - ''
+          - '&fСтатус: &c&lЗАБЛОКИРОВАНО'
+          - ''
+          - '&aНажмите, чтобы разблокировать это обновление!'
+        Unclaimable:
+          Lore:
+          - '&fУвеличивает скорость спавна'
+          - '&fиз спавнеров в два раза быстрее'
+          - '&fна вашем острове'
+          - ''
+          - '&fСкорость: &a2x'
+          - '&fСтоимость: &a$%cost'
+          - ''
+          - '&fСтатус: &c&lЗАБЛОКИРОВАНО'
+          - ''
+          - '&cУ вас не достаточно денег!'
+        Claimed:
+          Lore:
+          - '&fУвеличивает скорость спавна'
+          - '&fиз спавнеров в два раза быстрее'
+          - '&fна вашем острове'
+          - ''
+          - '&fСкорость: &a2x'
+          - '&fСтоимость: &a$%cost'
+          - ''
+          - '&fСтатус: &a&lРАЗБЛОКИРОВАНО'
+          - ''
+          - '&aНажмите, чтобы %status!'
+  Leaderboard:
+    Browse:
+      Title: '&8Выберите таблицу лидеров'
+      Item:
+        Leaderboard:
+          Displayname: '&aТоп островов %leaderboard'
+          Lore:
+          - '&fПосмотреть 10 лучших островов'
+          - ''
+          - '&aНажмите, чтобы посмотреть таблицу лидеров!'
+        Exit:
+          Displayname: '&cВыйти'
+    Leaderboard:
+      Title: '&8Топ островов %leaderboard'
+      Item:
+        Exit:
+          Displayname: '&cВыйти'
+        Return:
+          Displayname: '&cВернуться к категориям'
+        Island:
+          Word:
+            Empty: '&a&oПусто'
+          Displayname: '&a&lТоп %position'
+          Level:
+            Lore:
+            - '&fВладелец: &a%owner'
+            - '&fУровень: &a%level'
+            - '&fУчастники: &a%members'
+            - ''
+            - '&fНазвание острова:'
+            - '%signature'
+          Votes:
+            Lore:
+            - '&fВладелец: &a%owner'
+            - '&fГолосов: &a%votes'
+            - ''
+            - '&fНазвание острова:'
+            - '%signature'
+        Empty:
+          Displayname: '&a&lТоп %position'
+          Lore:
+          - '&a&oПусто'
+  Border:
+    Title: '&8Граница острова'
+    Item:
+      Word:
+        Enable: '&aвключить&a'
+        Disable: '&cвыключить&a'
+        Blue: '&bСиняя'
+        Green: '&aЗеленая'
+        Red: '&cКрасная'
+      Exit:
+        Displayname: '&cВыйти'
+      Toggle:
+        Displayname: '&aПереключение границы'
+        Lore:
+        - '&fРешите, видна ли граница'
+        - '&fна вашем острове игрокам'
+        - ''
+        - '&aНажмите, чтобы %toggle!'
+      Color:
+        Displayname: '%color граница'
+        Selected:
+          Lore:
+          - '&fУстанавливает цвет границы'
+          - '&fвашего острова на %color'
+          - ''
+          - '&aЭтот цвет уже выбран'
+        Unselected:
+          Lore:
+          - '&fУстанавливает цвет границы'
+          - '&fвашего острова на %color'
+          - ''
+          - '&aНажмите, чтобы выбрать!'
+  Biome:
+    Title: '&8Выберите биом'
+    Item:
+      Info:
+        Displayname: '&aТекущий биом'
+        Lore:
+        - '&fТип: &a%biome_type'
+      Barrier:
+        Displayname: '&aВыберите биом >'
+      Biome:
+        Current:
+          Displayname: '&fБиом: &a%biome_type'
+          Lore:
+          - '&cВ настоящее время установлено'
+        Select:
+          Displayname: '&aБиом: &a%biome_type'
+          Lore:
+          - '&aНажмите, чтобы установить!'
+      Exit:
+        Displayname: '&cВыйти'
+  Weather:
+    Title: '&8Погода на острове'
+    Item:
+      Info:
+        Displayname: '&aНастройка погоды и времени'
+        Synchronised:
+          Enabled: '&aДа'
+          Disabled: '&cНет'
+        Time:
+          Dawn: рассвет/восход
+          Day: день
+          Noon: полдень
+          Dusk: сумрак/закат
+          Night: ночь
+          Midnight: полночь
+        Lore: {}
+      Barrier:
+        Displayname: '&aОпции погоды на острове >'
+      Time:
+        Displayname: '&aВремя'
+        Choice:
+          Dawn: рассвет/восход
+          Day: день
+          Noon: полдень
+          Dusk: сумрак/закат
+          Night: ночь
+          Midnight: полночь
+        Lore:
+        - '&fСменить на: &b%choice'
+        - ''
+        - '&aНажмите, чтобы изменить время!'
+      Weather:
+        Displayname: '&aПогода'
+        Choice:
+          Clear: ясно
+          Downfall: дождь
+        Lore:
+        - '&fСменить на: &b%choice'
+        - ''
+        - '&aНажмите, чтобы изменить погоду!'
+      Synchronised:
+        Displayname: '&aСинхронизация'
+        Choice:
+          Enable: '&aвключить&a'
+          Disable: '&cвыключить&a'
+        Lore:
+        - '&fКогда включено, погода и время'
+        - '&fбудут такими же, как в мире'
+        - '&fКогда отключено, погода и'
+        - '&fвремя будут зафиксированы'
+        - ''
+        - '&aНажмите, чтобы %choice!'
+  Rollback:
+    Title: '&8Откат острова'
+    Item:
+      Info:
+        Displayname: '&bИнформация об откате'
+      Barrier:
+        Displayname: '&cОпции отката острова >'
+      Save:
+        Displayname: '&aСохранить откат'
+        Lore:
+        - '&fСохранить текущее состояние'
+        - '&fострова как для нормального,'
+        - '&fтак и для нижнего мира'
+        - ''
+        - '&aНажмите, чтобы сохранить откат!'
+      Load:
+        Displayname: '&aЗагрузить откат'
+        Lore:
+        - '&fЗагрузить сохраненный откат'
+        - ''
+        - '&c&oПредупреждение: Вы не сможете'
+        - '&c&oвосстановить текущее состояние'
+        - '&c&oвашего острова'
+        - ''
+        - '&aНажмите, чтобы загрузить откат!'
+      Reset:
+        Displayname: '&aСбросить остров'
+        Lore:
+        - '&fСбросить остров обратно'
+        - '&fв начальное состояние'
+        - ''
+        - '&c&oПредупреждение: Вы не сможете'
+        - '&c&oвосстановить текущее состояние'
+        - '&c&oвашего острова'
+        - ''
+        - '&aНажмите, чтобы сбросить остров!'
+  Levelling:
+    Title: '&8Уровень острова'
+    Item:
+      Exit:
+        Displayname: '&cВыйти'
+      Previous:
+        Displayname: '&a< Предыдущая страница'
+      Next:
+        Displayname: '&aСледующая Страница >'
+      Barrier:
+        Displayname: '&cОстровные материалы ниже'
+      Rescan:
+        Displayname: '&aПересканировать блоки на острове'
+        Lore:
+        - '&fНажмите, чтобы повторно сканировать'
+        - '&fматериалы вашего острова, чтобы'
+        - '&fсобрать общие очки и ваш уровень'
+        - ''
+        - '&cПредупреждение: Вы должны подождать'
+        - '&cчас после повторного сканирования,'
+        - '&cчтобы выполнить еще один!'
+      Statistics:
+        Displayname: '&aСтатистика материалов острова'
+        Lore:
+        - '&fУровень острова рассчитывается'
+        - '&fна основании количества и'
+        - '&fценности блоков на вашем острове'
+        - ''
+        - '&fУровень острова: &a%level'
+        - ''
+        - '&fОчков: &a%level_points'
+      Nothing:
+        Displayname: '&fЗдесь ничего нет...'
+      Material:
+        Displayname: '&a%material &7(+%points очков&8)'
+  Settings:
+    Categories:
+      Title: '&8Настройки острова'
+      Item:
+        Exit:
+          Displayname: '&cВыйти'
+        Coop:
+          Displayname: '&aНастройки совместной игры'
+          Lore:
+          - '&fНастраивайте разрешения,'
+          - '&fкоторые должны быть у игроков'
+          - '&fпри совместной игре'
+          - ''
+          - '&aНажмите, чтобы изменить настройки!'
+        Visitor:
+          Displayname: '&aНастройки посетителей'
+          Lore:
+          - '&fКонтролируйте разрешения'
+          - '&fу посетителей острова'
+          - '&fс помощью этого меню'
+          - ''
+          - '&aНажмите, чтобы изменить настройки!'
+        Member:
+          Displayname: '&aНастройки участника'
+          Lore:
+          - '&fВ этом меню вы можете'
+          - '&fредактировать разрешения'
+          - '&fучастников вашего острова'
+          - ''
+          - '&aНажмите, чтобы изменить настройки!'
+        Operator:
+          Displayname: '&aНастройки владельца'
+          Lore:
+          - '&fМеняйте разрешения у'
+          - '&fдобавленных владельцев'
+          - '&fвашего острова в этом меню'
+          - ''
+          - '&aНажмите, чтобы изменить настройки!'
+        Owner:
+          Displayname: '&aНастройки острова'
+          Lore:
+          - '&fВы можете изменять настройки,'
+          - '&fкоторые повлияют на игровой'
+          - '&fопыт на вашем острове'
+          - ''
+          - '&aНажмите, чтобы изменить настройки!'
+    Visitor:
+      Title: '&8Настройки посетителя'
+      Item:
+        Return:
+          Displayname: '&cНажмите, чтобы вернуться'
+        Statistics:
+          Displayname: '&aСтатистика посещения острова'
+          Vote:
+            Enabled:
+              Open:
+                Lore:
+                - '&fПосещений острова&f: &a%visits'
+                - '&fГолоса острова&f: &a%votes'
+                - ''
+                - '&fТекущие посетители&f: &a%visitors'
+                - ''
+                - '&aНажмите, чтобы &cзакрыть &aостров!'
+              Closed:
+                Lore:
+                - '&fПосещений острова&f: &a%visitors'
+                - '&fГолоса острова&f: &a%votes'
+                - ''
+                - '&aНажмите, чтобы открыть остров!'
+            Disabled:
+              Open:
+                Lore:
+                - '&fПосещений острова&f: &a%visits'
+                - ''
+                - '&fТекущие посетители&f: &a%visitors'
+                - ''
+                - '&aНажмите, чтобы &cзакрыть &aостров!'
+              Closed:
+                Lore:
+                - '&fПосещений острова&f: &a%visitors'
+                - ''
+                - '&aНажмите, чтобы открыть остров!'
+        Signature:
+          Displayname: '&aНазвание острова'
+          Lore:
+          - '&fУстановите название для острова,'
+          - '&fкоторое будет отображаться в меню'
+          - '&fпосещения острова'
+          - ''
+          - '&aНажмите, чтобы открыть панель!'
+        Welcome:
+          Displayname: '&aПриветственное сообщение острова'
+          Lore:
+          - '&fУстановите приветственное'
+          - '&fсообщение, которое будет'
+          - '&fотображаться у посетителей'
+          - ''
+          - '&aНажмите, чтобы открыть панель!'
+      Panel:
+        Signature:
+          Title: '&8Установить название'
+          Item:
+            Return:
+              Displayname: '&cНажмите, чтобы вернуться'
+            Message:
+              Displayname: '&aНазвание острова:'
+              Word:
+                Empty: '&fЗдесь ничего нет'
+            Line:
+              Add:
+                Displayname: '&aДобавить строку'
+                More:
+                  Lore:
+                  - ''
+                  - '&aНажмите, чтобы добавить строку!'
+                Limit:
+                  Lore:
+                  - ''
+                  - '&cВы достигли предела!'
+                Word:
+                  Enter: Введите текст
+              Remove:
+                Displayname: '&cУдалить строку'
+                Lines:
+                  Lore:
+                  - ''
+                  - '&aНажмите, чтобы удалить нижнюю строку!'
+                None:
+                  Lore:
+                  - ''
+                  - '&cНет строк для удаления!'
+        Welcome:
+          Title: '&8Установить приветственное сообщение'
+          Item:
+            Return:
+              Displayname: '&cНажмите, чтобы вернуться'
+            Message:
+              Displayname: '&aПриветственное сообщение:'
+              Word:
+                Empty: '&fЗдесь ничего нет'
+            Line:
+              Add:
+                Displayname: '&aДобавить линию'
+                More:
+                  Lore:
+                  - ''
+                  - '&aНажмите, чтобы добавить линию!'
+                Limit:
+                  Lore:
+                  - ''
+                  - '&cВы достигли предела!'
+                Word:
+                  Enter: Введите текст
+              Remove:
+                Displayname: '&cУдалить строку'
+                Lines:
+                  Lore:
+                  - ''
+                  - '&aНажмите, чтобы удалить нижнюю строку!'
+                None:
+                  Lore:
+                  - ''
+                  - '&cНет строк для удаления!'
+    Member:
+      Title: '&8Настройки участника'
+      Item:
+        Return:
+          Displayname: '&cНажмите, чтобы вернуться'
+    Operator:
+      Title: '&8Настройки владельца'
+      Item:
+        Return:
+          Displayname: '&cНажмите, чтобы вернуться'
+        Setting:
+          Status:
+            Enabled:
+              Lore:
+              - '&f'
+              - '&fСтатус&f: &aДа'
+              - '&f'
+              - '&aНажмите, чтобы изменить'
+            Disabled:
+              Lore:
+              - '&f'
+              - '&fСтатус&f: &cНет'
+              - '&f'
+              - '&aНажмите, чтобы изменить'
+          Invite:
+            Displayname: '&aОтправить приглашения'
+          Kick:
+            Displayname: '&aКикнуть участников & посетителей'
+          Ban:
+            Displayname: '&aЗабанить посетителей'
+          Unban:
+            Displayname: '&aРазбанить посетителей'
+          Visitor:
+            Displayname: '&aИзменить настройки посетителя'
+          Member:
+            Displayname: '&aИзменить настройки участника'
+          Island:
+            Displayname: '&aИзменить настройки острова'
+          Coop:
+            Displayname: '&aИзменить настройки совместной игры'
+          CoopPlayers:
+            Displayname: '&aСовместная игра'
+          MainSpawn:
+            Displayname: '&aУстановить главную точку спавна острова'
+          VisitorSpawn:
+            Displayname: '&aУстановить точку спавна посетителей'
+          Border:
+            Displayname: '&aУстановить границу'
+          Biome:
+            Displayname: '&aУстановить биом'
+          Weather:
+            Displayname: '&aУстановить погоду'
+    Coop:
+      Title: '&8Настройки совместной игры'
+      Item:
+        Return:
+          Displayname: '&cНажмите, чтобы вернуться'
+    Owner:
+      Title: '&8Настройки острова'
+      Item:
+        Return:
+          Displayname: '&cНажмите, чтобы вернуться'
+        Setting:
+          Status:
+            Enabled:
+              Lore:
+              - '&f'
+              - '&fСтатус&f: &aДа'
+              - '&f'
+              - '&aНажмите, чтобы изменить'
+            Disabled:
+              Lore:
+              - '&f'
+              - '&fСтатус&f: &cНет'
+              - '&f'
+              - '&aНажмите, чтобы изменить'
+          NaturalMobSpawning:
+            Displayname: '&aЕстественный спавн мобов'
+          MobGriefing:
+            Displayname: '&aГриферство мобов'
+          PvP:
+            Displayname: '&aPvP'
+          Explosions:
+            Displayname: '&aВзрывы'
+          FireSpread:
+            Displayname: '&aРаспространение огня'
+          LeafDecay:
+            Displayname: '&aПадение листьев'
+          KeepItemsOnDeath:
+            Displayname: '&aХранить предметы при смерти'
+          Damage:
+            Displayname: '&aУрон'
+          Hunger:
+            Displayname: '&aГолод'
+    Default:
+      Item:
+        Setting:
+          Status:
+            Enabled:
+              Lore:
+              - '&f'
+              - '&fСтатус&f: &aДа'
+              - '&f'
+              - '&aНажмите, чтобы изменить'
+            Disabled:
+              Lore:
+              - '&f'
+              - '&fСтатус&f: &cНет'
+              - '&f'
+              - '&aНажмите, чтобы изменить'
+          Destroy:
+            Displayname: '&aРазрушение блоков'
+          Place:
+            Displayname: '&aРазмещение блоков'
+          Anvil:
+            Displayname: '&aИспользование наковальни'
+          ArmorStandUse:
+            Displayname: '&aИспользование стойки для брони'
+          Beacon:
+            Displayname: '&aИспользование маяка'
+          Bed:
+            Displayname: '&aИспользование кровати'
+          AnimalBreeding:
+            Displayname: '&aЖивотноводство'
+          Brewing:
+            Displayname: '&aИспользование варочной стойки'
+          Bucket:
+            Displayname: '&aИспользование ведра'
+          WaterCollection:
+            Displayname: '&aСбор воды'
+          Storage:
+            Displayname: '&aДоступ к хранилищу'
+          Workbench:
+            Displayname: '&aИспользование верстака'
+          Crop:
+            Displayname: '&aРастоптывание культур'
+          Door:
+            Displayname: '&aИспользование дверей'
+          Gate:
+            Displayname: '&aИспользование ворот'
+          Projectile:
+            Displayname: '&aЗапуск снаряда'
+          Enchant:
+            Displayname: '&aИспользование стола зачарований'
+          Fire:
+            Displayname: '&aПожаротушение'
+          Furnace:
+            Displayname: '&aИспользование печи'
+          HorseInventory:
+            Displayname: '&aДоступ к инвентарю лошади'
+          MobRiding:
+            Displayname: '&aЕзда на мобах'
+          MobHurting:
+            Displayname: '&aУрон мобам'
+          MobTaming:
+            Displayname: '&aПриручение мобов'
+          Leash:
+            Displayname: '&aИспользование поводка'
+          LeverButton:
+            Displayname: '&aИспользование рычагов/кнопок'
+          Milking:
+            Displayname: '&aДоение'
+          Jukebox:
+            Displayname: '&aИспользование проигрывателя'
+          PressurePlate:
+            Displayname: '&aАктивация нажимных пластин'
+          Redstone:
+            Displayname: '&aИспользование редстоуна'
+          Shearing:
+            Displayname: '&aСтрижка мобов'
+          Trading:
+            Displayname: '&aТорговля с жителями'
+          ItemDrop:
+            Displayname: '&aВыбрасывание предметов'
+          ItemPickup:
+            Displayname: '&aПоднятие предметов'
+          Fishing:
+            Displayname: '&aЛовля рыбы'
+          DropperDispenser:
+            Displayname: '&aИспользование раздатчика/выбрасывателя'
+          SpawnEgg:
+            Displayname: '&aЯйца мобов'
+          HangingDestroy:
+            Displayname: '&aРазрушение падающих блоков'
+          Cake:
+            Displayname: '&aПотребление торта'
+          DragonEggUse:
+            Displayname: '&aИспользование яйца Дракона Края'
+          MinecartBoat:
+            Displayname: '&aИспользование вагонетки/лодки'
+          Portal:
+            Displayname: '&aИспользование портала'
+          Hopper:
+            Displayname: '&aИспользование воронки'
+          EntityPlacement:
+            Displayname: '&aРазмещение сущностей'
+          ExperienceOrbPickup:
+            Displayname: '&aПоднятие опыта'
+  Information:
+    Categories:
+      Title: '&8Информация об острове'
+      Item:
+        Exit:
+          Displayname: '&cВыйти'
+        Members:
+          Displayname: '&aУчастники'
+          Lore:
+          - '&fПросмотр участников острова'
+          - '&fи их роли'
+          - ''
+          - '&aНажмите, чтобы просмотреть участников!'
+        Visitors:
+          Displayname: '&aПосетители'
+          Lore:
+          - '&fПросмотр игроков, которые в'
+          - '&fнастоящее время посещают'
+          - '&fостров'
+          - ''
+          - '&aНажмите, чтобы посмотреть посетителей!'
+        Information:
+          Displayname: '&aИнформация'
+          Vote:
+            Word:
+              Empty: '&fЗдесь ничего нет'
+              Safe: '&f[Безопасно]'
+              Unsafe: '&c[Небезопасно]'
+            Enabled:
+              Signature:
+                Word:
+                  Add: добавить
+                  Remove: удалить
+                Enabled:
+                  Lore:
+                  - '&fВладелец&f: &a%owner'
+                  - ''
+                  - '&fНазвание острова&f:'
+                  - '&a%signature'
+                  - ''
+                  - '&fИгроков на острове&f: &a%players/%player_capacity'
+                  - ''
+                  - '&fУровень&f: &a%level'
+                  - '&fУчастники&f: &a%members'
+                  - '&fПосетители&f: &a%visits'
+                  - '&fГолосов&f: &a%votes'
+                  - ''
+                  - '&fБезопасность&f: %safety'
+                Disabled:
+                  Lore:
+                  - '&fВладелец&f: &a%owner'
+                  - ''
+                  - '&fИгроков на острове&f: &a%players/%player_capacity'
+                  - ''
+                  - '&fУровень&f: &a%level'
+                  - '&fУчастники&f: &a%members'
+                  - '&fПосетители&f: &a%visits'
+                  - '&fГолосов&f: &a%votes'
+                  - ''
+                  - '&fБезопасность&f: %safety'
+            Disabled:
+              Signature:
+                Enabled:
+                  Lore:
+                  - '&fВладелец&f: &a%owner'
+                  - ''
+                  - '&fНазвание острова&f:'
+                  - '&a%signature'
+                  - ''
+                  - '&fИгроков на острове&f: &a%players/%player_capacity'
+                  - ''
+                  - '&fУровень&f: &a%level'
+                  - '&fУчастники&f: &a%members'
+                  - '&fПосетители&f: &a%visits'
+                  - ''
+                  - '&fБезопасность&f: %safety'
+                Disabled:
+                  Lore:
+                  - '&fВладелец&f: &a%owner'
+                  - ''
+                  - '&fИгроков на острове&f: &a%players/%player_capacity'
+                  - ''
+                  - '&fУровень&f: &a%level'
+                  - '&fУчастники&f: &a%members'
+                  - '&fПосетители&f: &a%visits'
+                  - ''
+                  - '&fБезопасность&f: %safety'
+    Members:
+      Title: '&8Информация об острове - Участники'
+      Item:
+        Return:
+          Displayname: '&cВернуться к информации об острове'
+        Previous:
+          Displayname: '&a< Предыдущая страница'
+        Next:
+          Displayname: '&aСледующая Страница >'
+        Barrier:
+          Displayname: '&cУчастники острова ниже'
+        Statistics:
+          Displayname: '&3&nСтатистика'
+          Lore:
+          - '&bЧлены острова:'
+          - '&f%island_members/%island_capacity'
+          - ''
+          - '&bУчастники:'
+          - '&f%members'
+          - ''
+          - '&bОператоры:'
+          - '&f%operators'
+        Member:
+          Word:
+            Member: '&fУчастник'
+            Operator: '&bОператор'
+            Owner: '&6Владелец'
+          Displayname: '&b%player'
+          Lore:
+          - '&fРоль&f:'
+          - '%role'
+    Visitors:
+      Title: '&8Информация об острове - Посетители'
+      Item:
+        Return:
+          Displayname: '&cВернуться к информации об острове'
+        Previous:
+          Displayname: '&a< Предыдущая страница'
+        Next:
+          Displayname: '&aСледующая страница >'
+        Barrier:
+          Displayname: '&cПосетители острова ниже'
+        Statistics:
+          Displayname: '&3&nСтатистика'
+          Lore:
+          - '&bПосетители острова:'
+          - '&f%island_visitors'
+        Visitor:
+          Displayname: '&b%player'
+  Coop:
+    Title: '&8Кооператив островов'
+    Item:
+      Word:
+        Enter: Введите игрока
+      Exit:
+        Displayname: '&cВыйти'
+      Previous:
+        Displayname: '&a< Предыдущая страница'
+      Next:
+        Displayname: '&aСледующая cтраница >'
+      Barrier:
+        Displayname: '&cКооператив игроков ниже'
+      Information:
+        Displayname: '&bИнформация'
+        Lore:
+        - '&fРазрешить некоторым игрокам'
+        - '&fвходить на ваш остров, пока'
+        - '&fоператор или владелец находится'
+        - '&fонлайн, даже если остров'
+        - '&fзакрыт для посетителей'
+        - ''
+        - '&aНажмите, чтобы объединить игрока!'
+      Nothing:
+        Displayname: '&cЗдесь нет ни одного игрока'
+      Coop:
+        Displayname: '&a%player'
+        Lore:
+        - ''
+        - '&aНажмите, чтобы удалить игрока!'
+  Members:
+    Title: '&8Участники острова'
+    Item:
+      Exit:
+        Displayname: '&cВыйти'
+      Previous:
+        Displayname: '&a< Предыдущая страница'
+      Next:
+        Displayname: '&aСледующая страница >'
+      Barrier:
+        Displayname: '&cУчастники острова ниже'
+      Type:
+        Displayname: '&aТип участника'
+        Lore:
+        - ''
+        - '&fТекущий тип: &a%type'
+        - ''
+        - '&aDefault &7(показать всех участников)'
+        - '&aMembers &7(показывать только участников)'
+        - '&aOperators &7(показывать только владельцев)'
+        - '&aOwner &7(показать только создателя)'
+        - ''
+        - '&aНажмите, для смены типа'
+      Statistics:
+        Displayname: '&aСтатистика участников острова'
+        Lore:
+        - ''
+        - '&fУчастников острова: &a%island_members/%island_capacity'
+        - '&fУчастники: &a%members'
+        - '&fВладельцы: &a%operators'
+      Sort:
+        Displayname: '&aИзменить сортировку'
+        Lore:
+        - ''
+        - '&fТекущая сортировка: &a%sort'
+        - ''
+        - '&aDefault &7(показать участников острова,'
+        - '&7упорядоченых от самой низкой роли)'
+        - '&aPlaytime &7(показать участников'
+        - '&7острова, упорядоченых от самого большого'
+        - '&7наигранного времени)'
+        - '&aMember Since &7(показать участников острова,'
+        - '&7упорядоченых по присоединению к острову)'
+        - '&aLast Online &7(показать участников острова,'
+        - '&7упорядоченых по последнему онлайну)'
+        - ''
+        - '&aНажмите, чтобы изменить сортировку'
+      Nothing:
+        Displayname: '&cЗдесь ничего нет...'
+      Member:
+        Displayname: '&a%player'
+        Word:
+          Days: д.
+          Hours: ч.
+          Minutes: м.
+          Seconds: сек.
+          Click: Клик
+          Left-Click: ЛКМ
+          Right-Click: ПКМ
+        Role:
+          Word:
+            Member: '&aУчастник'
+            Operator: '&aВладелец (добавлен)'
+            Owner: '&aВладелец'
+          Lore:
+          - ''
+          - '&fРоль игрока&f: %role'
+        Playtime:
+          Lore:
+          - '&fНаигранное время&f: &a%playtime'
+        Since:
+          Lore:
+          - '&fУчастник острова: &a%since'
+        LastOnline:
+          Lore:
+          - '&fПоследний онлайн&f: &a%last_online'
+        Action:
+          Word:
+            Promote: повысить
+            Demote: понизить
+            Kick: кикнуть
+          Lore: '&a%click, чтобы %action игрока!'
+  Ownership:
+    Title: '&8Владение островом'
+    Item:
+      Exit:
+        Displayname: '&cВыход'
+      Original:
+        Displayname: '&bОригинальный владелец'
+        Lore:
+        - '&fИгрок&f: &a%player'
+      Barrier:
+        Displayname: '&cВарианты владения островом >'
+      Assign:
+        Word:
+          Enter: Введите игрока
+        Displayname: '&aНазначить владельца'
+        Lore:
+        - '&fНазначьте владение участнику'
+        - '&fвашего острова'
+        - ''
+        - '&aНажмите, чтобы ввести имя игрока!'
+      Password:
+        Displayname: '&aПароль владельца'
+        Unset:
+          Lore:
+          - '&fУстановите пароль, который может'
+          - '&fиспользоваться любым участником'
+          - '&fвашего острова, чтобы'
+          - '&fавтоматически назначить'
+          - '&fему владение'
+          - ''
+          - '&fПароль&f:'
+          - '&cНе установлен'
+          - ''
+          - '&aНажмите, чтобы установить пароль!'
+        Visible:
+          Lore:
+          - '&fУстановите пароль, который может'
+          - '&fиспользоваться любым участником'
+          - '&fвашего острова, чтобы'
+          - '&fавтоматически назначить'
+          - '&fему владение'
+          - ''
+          - '&fПароль&f:'
+          - '&f%password'
+          - ''
+          - '&aЛКМ, чтобы установить пароль!'
+          - '&aСКМ, чтобы показать пароль!'
+          - '&aПКМ, чтобы сбросить пароль!'
+        Hidden:
+          Word:
+            Enter: Введите пароль
+          Lore:
+          - '&fУстановите пароль, который может'
+          - '&fиспользоваться любым участником'
+          - '&fвашего острова, чтобы'
+          - '&fавтоматически назначить'
+          - '&fему владение'
+          - ''
+          - '&fПароль&f:'
+          - '&fСкрыт'
+          - ''
+          - '&aЛКМ, чтобы установить пароль!'
+          - '&aСКМ, чтобы показать пароль!'
+          - '&aПКМ, чтобы сбросить пароль!'
+  Visit:
+    Title: '&8Посещение острова'
+    Item:
+      Exit:
+        Displayname: '&cВыйти'
+      Previous:
+        Displayname: '&a< Предыдущая страница'
+      Next:
+        Displayname: '&aСледующая страница >'
+      Barrier:
+        Displayname: '&cОткрытые острова ниже'
+      Type:
+        Displayname: '&aТип острова'
+        Lore:
+        - ''
+        - '&fТекущий тип: &a%type'
+        - ''
+        - '&fСортировать по:'
+        - '&aDefault &7(показать все открытые острова)'
+        - '&aSolo &7(показать только сольные острова)'
+        - '&aTeam &7(показывать только командные острова)'
+        - ''
+        - '&aНажмите, для смены типа'
+      Statistics:
+        Displayname: '&aОстрова'
+        Lore:
+        - ''
+        - '&fОткрытые острова&f: &a%islands_open/%islands'
+      Sort:
+        Displayname: '&aИзменить сортировку'
+        Lore:
+        - ''
+        - '&fТекущая сортировка&f: &a%sort'
+        - ''
+        - '&aDefault &7(показать острова в случайном порядке)'
+        - '&aPlayers &7(показать острова, упорядоченные'
+        - '&7от самых малоимущих игроков на острове)'
+        - '&aLevel &7(показать острова, упорядоченные'
+        - '&7от самого высокого до самого низкого'
+        - '&7уровня острова)'
+        - '&aMembers &7(показать острова, упорядоченные'
+        - '&7от самого наименьшего количества участников'
+        - '&7острова)'
+        - '&aVisits &7(показать острова, упорядоченные'
+        - '&7по наиболее посещаемым островам)'
+        - '&aVotes &7(показать острова, упорядоченные по'
+        - '&7большинству голосов островов)'
+        - ''
+        - '&aНажмите, чтобы изменить сортировку'
+      Nothing:
+        Displayname: '&cОстровов не найдено...'
+      Island:
+        Displayname: '&a%player'
+        Vote:
+          Word:
+            Empty: '&fЗдесь ничего нет'
+            Safe: '&f[Безопасно]'
+            Unsafe: '&c[Небезопасно]'
+          Enabled:
+            Signature:
+              Word:
+                Add: добавить
+                Remove: удалить
+              Enabled:
+                Member:
+                  Lore:
+                  - '&fНазвание острова&f:'
+                  - '&a%signature'
+                  - ''
+                  - '&fИгроков на острове&f: &a%players/%player_capacity'
+                  - ''
+                  - '&fУровень&f: &a%level'
+                  - '&fУчастники&f: &a%members'
+                  - '&fПосетители&f: &a%visits'
+                  - '&fГолосов&f: &a%votes'
+                  - ''
+                  - '&fБезопасность&f: %safety'
+                  - ''
+                  - '&aНажмите, чтобы посетить остров!'
+                Visitor:
+                  Lore:
+                  - '&fНазвание острова&f:'
+                  - '&a%signature'
+                  - ''
+                  - '&fИгроков на острове&f: &a%players/%player_capacity'
+                  - ''
+                  - '&fУровень&f: &a%level'
+                  - '&fУчастники&f: &a%members'
+                  - '&fПосетители&f: &a%visits'
+                  - '&fГолосов&f: &a%votes'
+                  - ''
+                  - '&fБезопасность&f: %safety'
+                  - ''
+                  - '&aЛКМ, чтобы посетить остров!'
+                  - '&aПКМ, чтобы %action голос!'
+              Disabled:
+                Member:
+                  Lore:
+                  - '&fИгроков на острове&f: &a%players/%player_capacity'
+                  - ''
+                  - '&fУровень&f: &a%level'
+                  - '&fУчастники&f: &a%members'
+                  - '&fПосетители&f: &a%visits'
+                  - '&fГолосов&f: &a%votes'
+                  - ''
+                  - '&fБезопасность&f: %safety'
+                  - ''
+                  - '&aНажмите, чтобы посетить остров!'
+                Visitor:
+                  Lore:
+                  - '&fИгроков на острове&f: &a%players/%player_capacity'
+                  - ''
+                  - '&fУровень&f: &a%level'
+                  - '&fУчастники&f: &a%members'
+                  - '&fПосетители&f: &a%visits'
+                  - '&fГолосов&f: &a%votes'
+                  - ''
+                  - '&fБезопасность&f: %safety'
+                  - ''
+                  - '&aЛКМ, чтобы посетить остров!'
+                  - '&aПКМ, чтобы %action голос!'
+          Disabled:
+            Signature:
+              Enabled:
+                Lore:
+                - ''
+                - '&fНазвание острова&f:'
+                - '&a%signature'
+                - ''
+                - '&fИгроков на острове&f: &a%players/%player_capacity'
+                - ''
+                - '&fУровень&f: &a%level'
+                - '&fУчастники&f: &a%members'
+                - '&fПосетители&f: &a%visits'
+                - ''
+                - '&fБезопасность&f: %safety'
+                - ''
+                - '&aНажмите, чтобы посетить остров!'
+              Disabled:
+                Lore:
+                - '&fИгроков на острове&f: &a%players/%player_capacity'
+                - ''
+                - '&fУровень&f: &a%level'
+                - '&fУчастники&f: &a%members'
+                - '&fПосетители&f: &a%visits'
+                - ''
+                - '&fБезопасность&f: %safety'
+                - ''
+                - '&aНажмите, чтобы посетить остров!'
+  Visitors:
+    Title: '&8Посетители острова'
+    Item:
+      Exit:
+        Displayname: '&cВыйти'
+      Previous:
+        Displayname: '&a< Предыдущая страница'
+      Next:
+        Displayname: '&aСледующая страница >'
+      Barrier:
+        Displayname: '&cПосетители острова ниже'
+      Statistics:
+        Displayname: '&bПосетители острова'
+        Lore:
+        - '&fПосетители&f: &a%visitors'
+      Nothing:
+        Displayname: '&cНа вашем острове нет посетителей'
+      Visitor:
+        Displayname: '&a%player'
+        Word:
+          Days: д.
+          Hours: ч.
+          Minutes: м.
+          Seconds: сек.
+        Kick:
+          Permission:
+            Ban:
+              Permission:
+                Lore:
+                - '&fВремя посещения&f:'
+                - '&a%time'
+                - ''
+                - '&aЛКМ, чтобы кикнуть игрока!'
+                - '&aПКМ, чтобы забанить игрока!'
+              NoPermission:
+                Lore:
+                - '&fВремя посещения&f:'
+                - '&a%time'
+                - ''
+                - '&aНажмите, чтобы кикнуть игрока!'
+          NoPermission:
+            Ban:
+              Permission:
+                Lore:
+                - '&fВремя посещения&f:'
+                - '&a%time'
+                - ''
+                - '&aНажмите, чтобы забанить игрока!'
+              NoPermission:
+                Lore:
+                - '&fВремя посещения&f:'
+                - '&a%time'
+  Bans:
+    Title: '&8Баны острова'
+    Item:
+      Word:
+        Enter: Введите игрока
+      Exit:
+        Displayname: '&cВыход'
+      Previous:
+        Displayname: '&a< Предыдущая страница'
+      Next:
+        Displayname: '&aСледующая Страница >'
+      Barrier:
+        Displayname: '&cОстров банов ниже'
+      Information:
+        Displayname: '&bИнформация'
+        Lore:
+        - '&fЗапретить некоторым игрокам'
+        - '&fвход на ваш остров, забанив их'
+        - ''
+        - '&aНажмите, чтобы забанить игрока!'
+      Nothing:
+        Displayname: '&cНа вашем острове нет банов'
+      Ban:
+        Displayname: '&a%player'
+        Lore:
+        - ''
+        - '&aНажмите, чтобы разбанить игрока!'
+  Admin:
+    Creator:
+      Title: '&8Редактор структур'
+      Browse:
+        Item:
+          Exit:
+            Displayname: '&cВыход'
+          Previous:
+            Displayname: '&a< Предыдущая страница'
+          Next:
+            Displayname: '&aСледующая страница >'
+          Barrier:
+            Displayname: '&cСтруктуры ниже'
+          Nothing:
+            Displayname: '&cЗдесь ничего нет...'
+          Information:
+            Word:
+              Enter: Введите имя
+            Displayname: '&bИнформация'
+            Lore:
+            - '&fСтруктуры&f: &a%structures'
+            - ''
+            - '&aНажмите, чтобы создать структуру!'
+          Structure:
+            Displayname: '&a%structure'
+            Lore:
+            - '&aЛКМ, чтобы просмотреть варианты!'
+            - '&aПКМ, чтобы удалить структуру!'
+      Options:
+        Item:
+          Return:
+            Displayname: '&cВернуться к просмотру'
+          Word:
+            Unset: '&fНе установлено'
+          Displayname:
+            Word:
+              Enter: Введите отображаемое имя
+            Displayname: '&aОтображаемое имя'
+            Lore:
+            - '&fОтображаемое имя&f:'
+            - '&f%displayname'
+            - ''
+            - '&aНажмите, чтобы установить отображаемое имя!'
+          Description:
+            Word:
+              Enter: Введите строку
+            Displayname: '&aОписание'
+            Unset:
+              Lore:
+              - '&fОписание&f:'
+              - '%description'
+              - ''
+              - '&aНажмите, чтобы добавить строку!'
+            Set:
+              Lore:
+              - '&fОписание&f:'
+              - '%description'
+              - ''
+              - '&aЛКМ, чтобы добавить строку!'
+              - '&aПКМ, чтобы удалить строку!'
+          Permission:
+            Displayname: '&aРазрешение'
+            Enable:
+              Lore:
+              - '&fРазрешение&f:'
+              - '&f%permission'
+              - ''
+              - '&aНажмите, чтобы включить!'
+            Disable:
+              Lore:
+              - '&fРазрешение&f:'
+              - '&f%permission'
+              - ''
+              - '&aНажмите, чтобы отключить!'
+          File:
+            Word:
+              Enter: Введите имя файла
+            Displayname: '&aФайл структуры'
+            Lore:
+            - '&fФайл Верхнего мира&f:'
+            - '&f%overworld_file'
+            - ''
+            - '&fФайл АДА&f:'
+            - '&f%nether_file'
+            - ''
+            - '&fФайл Энда&f:'
+            - '&f%end_file'
+            - ''
+            - '&c[!] Файл структуры должен быть'
+            - '&cустановлен для всех миров'
+            - ''
+            - '&aЛКМ, чтобы установить файл Верхний мир!'
+            - '&aСКМ, чтобы установить файл АДА!'
+            - '&aПКМ, чтобы установить файл Энда!'
+          Item:
+            Displayname: '&aItem'
+            Lore:
+            - '&fМатериал&f:'
+            - '&f%material'
+            - ''
+            - '&c[!] При нажатии выберите'
+            - '&cпредмет в инвентаре или'
+            - '&cнажмите этот предмет еще'
+            - '&cраз, чтобы отменить'
+            - ''
+            - '&aНажмите, чтобы установить предмет!'
+          Commands:
+            Word:
+              Enter: Введите команду
+            Displayname: '&aКоманды'
+            Unset:
+              Lore:
+              - '&fКоманды&f:'
+              - '%commands'
+              - ''
+              - '&c[!] Команды, выполняемые'
+              - '&cконсолью при создании'
+              - '&cострова'
+              - ''
+              - '&c[!] Используйте %player'
+              - '&cдля имени игрока'
+              - ''
+              - '&aНажмите, чтобы добавить команду!'
+            Set:
+              Lore:
+              - '&fКоманды&f:'
+              - '%commands'
+              - ''
+              - '&c[!] Команды, выполняемые'
+              - '&cконсолью при создании'
+              - '&cострова'
+              - ''
+              - '&c[!] Используйте %player'
+              - '&cдля имени игрока'
+              - ''
+              - '&aЛКМ, чтобы добавить команду!'
+              - '&aПКМ, чтобы удалить команду!'
+          DeletionCost:
+            Word:
+              Enter: Введите стоимость
+            Displayname: '&aСтоимость удаления'
+            Lore:
+            - '&fСтоимость&f: &a%cost'
+            - ''
+            - '&c[!] Без стоимости'
+            - '&cудаления, введите 0.0'
+            - ''
+            - '&aНажмите, чтобы установить стоимость!'
+    Upgrade:
+      Upgrades:
+        Title: '&8Редактор обновлений'
+        Item:
+          Word:
+            Enable: '&aвключить&f'
+            Disable: '&cвыключить&f'
+            Enter: Введите стоимость
+          Exit:
+            Displayname: '&cВыход'
+          Speed:
+            Displayname: '&aУвеличение скорости'
+            Lore:
+            - '&fДает скорость 2 игрокам на'
+            - '&fвашем острове'
+            - ''
+            - '&fСтоимость&f: &a$%cost'
+            - ''
+            - '&aЛКМ, чтобы %status!'
+            - '&aПКМ, чтобы установить стоимость!'
+          Crop:
+            Displayname: '&aУскорение роста урожая'
+            Lore:
+            - '&fУвеличивает рост урожая в два раза'
+            - '&fна вашем острове'
+            - ''
+            - '&fСтоимость&f: &a$%cost'
+            - ''
+            - '&aЛКМ, чтобы %status!'
+            - '&aПКМ, чтобы установить стоимость!'
+          Jump:
+            Displayname: '&aУсиление прыгучести'
+            Lore:
+            - '&fДает прыгучесть 2 игрокам на'
+            - '&fвашем острове'
+            - ''
+            - '&fСтоимость&f: &a$%cost'
+            - ''
+            - '&aЛКМ, чтобы %status!'
+            - '&aПКМ, чтобы установить стоимость!'
+          Fly:
+            Displayname: '&aПолет'
+            Lore:
+            - '&fВозможность полета для игроков на'
+            - '&fвашем острове'
+            - ''
+            - '&fСтоимость&f: &a$%cost'
+            - ''
+            - '&aЛКМ, чтобы %status!'
+            - '&aПКМ, чтобы установить стоимость!'
+          Drops:
+            Displayname: '&aУскорение добычи'
+            Lore:
+            - '&fУвеличивает добычу в два раза'
+            - '&fна вашем острове'
+            - ''
+            - '&fСтоимость&f: &a$%cost'
+            - ''
+            - '&aЛКМ, чтобы %status!'
+            - '&aПКМ, чтобы установить стоимость!'
+          Size:
+            Displayname: '&aРазмер границы острова'
+            Lore:
+            - '&fУвеличивает размер границы'
+            - '&fвашего острова'
+            - ''
+            - '&fУровень&f: &a%tiers'
+            - ''
+            - '&aНажмите, чтобы управлять уровнями!'
+          Spawner:
+            Displayname: '&aУскорение спавнеров'
+            Lore:
+            - '&fУвеличивает скорость спавна'
+            - '&fиз спавнеров в два раза быстрее'
+            - '&fна вашем острове'
+            - ''
+            - '&fСтоимость&f: &a$%cost'
+            - ''
+            - '&aЛКМ, чтобы %status!'
+            - '&aПКМ, чтобы установить стоимость!'
+      Size:
+        Title: '&8Редактор обновлений - Размер'
+        Item:
+          Word:
+            Size:
+              Enter: Введите размер
+            Cost:
+              Enter: Введите стоимость
+          Return:
+            Displayname: '&cВернуться в редактор обновлений'
+          Barrier:
+            Displayname: '&cРазмеры уровней'
+          Information:
+            Displayname: '&aИнформация'
+            Lore:
+            - '&fСоздайте уровни и определите их'
+            - '&fстоимость и какие обновления'
+            - '&fострова получат от них'
+            - ''
+            - '&aНажмите, чтобы создать уровень!'
+          Tier:
+            Displayname: '&bУровень #%tier'
+            Lore:
+            - '&fРазмер&f: &a%size'
+            - '&fСтоимость&f: &a$%cost'
+            - ''
+            - '&aЛКМ, чтобы установить размер!'
+            - '&aСКМ, чтобы удалить!'
+            - '&aПКМ, чтобы установить стоимость!'
+    Generator:
+      Title: '&8Редактор генераторов'
+      Browse:
+        Item:
+          Exit:
+            Displayname: '&cВыйти'
+          Previous:
+            Displayname: '&a< Предыдущая страница'
+          Next:
+            Displayname: '&aСледующая страница >'
+          Barrier:
+            Displayname: '&cГенераторы ниже'
+          Nothing:
+            Displayname: '&cЗдесь ничего нет...'
+          Information:
+            Word:
+              Enter: Введите имя
+            Displayname: '&bИнформация'
+            Lore:
+            - '&fГенераторы&f: &a%generators'
+            - ''
+            - '&aНажмите, чтобы создать генератор!'
+          Generator:
+            Displayname: '&a%generator'
+            Lore:
+            - '&aЛКМ для управления генераторами!'
+            - '&aПКМ для удаления генераторами!'
+      Generator:
+        Item:
+          Return:
+            Displayname: '&cВернуться к просмотру'
+          Barrier:
+            Displayname: '&cМатериалы ниже'
+          Information:
+            Displayname: '&bИнформация'
+            Permission:
+              Enable:
+                Lore:
+                - '&fИмя&f: &a%name'
+                - '&fРазрешение&f:'
+                - '&f%permission'
+                - ''
+                - '&aНажмите, чтобы включить разрешение!'
+              Disable:
+                Lore:
+                - '&fИмя&f: &a%name'
+                - '&fРазрешение&f:'
+                - '&f%permission'
+                - ''
+                - '&aНажмите, чтобы отключить разрешение!'
+          Nothing:
+            Displayname: '&cЗдесь ничего нет...'
+          Material:
+            Word:
+              Enter: Введите шанс
+            Displayname: '&a%material'
+            Lore:
+            - '&fШанс&f: &a%chance'
+            - ''
+            - '&aЛКМ, чтобы установить шанс!'
+            - '&aПКМ, чтобы удалить материал!'
+    Levelling:
+      Title: '&8Уровневый редактор'
+      Item:
+        Exit:
+          Displayname: '&cВыйти'
+        Previous:
+          Displayname: '&a< Предыдущая страница'
+        Next:
+          Displayname: '&aСледующая страница >'
+        Barrier:
+          Displayname: '&cУровневые материалы ниже'
+        Nothing:
+          Displayname: '&cЗдесь ничего нет...'
+        Information:
+          Word:
+            Enter: Введите разделение
+          Displayname: '&bИнформация'
+          Lore:
+          - '&fМатериалы&f: &a%materials'
+          - '&fРазделение&f: &a%division'
+          - ''
+          - '&aНажмите, чтобы установить разделение!'
+        Material:
+          Word:
+            Enter: Введите очки
+          Displayname: '&a%material'
+          Lore:
+          - '&fОчки&f: &6%points'
+          - ''
+          - '&aЛКМ, чтобы изменить очки!'
+          - '&aПКМ, чтобы удалить материал!'
+    Settings:
+      Categories:
+        Title: '&8Редактор настроек - Категории'
+        Item:
+          Exit:
+            Displayname: '&cВыйти'
+          Visitor:
+            Displayname: '&aНастройки посетителя'
+            Lore:
+            - '&fОтредактируйте и определите, какими'
+            - '&fдолжны быть разрешения посетителя'
+            - '&fпо умолчанию при создании острова'
+            - ''
+            - '&aНажмите, чтобы изменить настройки!'
+          Member:
+            Displayname: '&aMember Settings'
+            Lore:
+            - '&fОтредактируйте и определите, какими'
+            - '&fдолжны быть разрешения участника'
+            - '&fпо умолчанию при создании острова'
+            - ''
+            - '&aНажмите, чтобы изменить настройки!'
+          Operator:
+            Displayname: '&aНастройки владельца'
+            Lore:
+            - '&fОтредактируйте и определите, какими'
+            - '&fдолжны быть разрешения владельца'
+            - '&fпо умолчанию при создании острова'
+            - ''
+            - '&aНажмите, чтобы изменить настройки!'
+          Coop:
+            Displayname: '&aНастройки совместной игры'
+            Lore:
+            - '&fВыберите разрешения, которые'
+            - '&fдолжны быть у игроков в совместной игре'
+            - '&fпо умолчанию при создании острова'
+            - ''
+            - '&aНажмите, чтобы изменить настройки!'
+          Owner:
+            Displayname: '&aНастройки острова'
+            Lore:
+            - '&fОтредактируйте и определите, какими'
+            - '&fдолжны быть разрешения для островов'
+            - '&fпо умолчанию при создании острова'
+            - ''
+            - '&aНажмите, чтобы изменить настройки!'
+      Visitor:
+        Title: '&8Редактор настроек - Посетитель'
+        Item:
+          Return:
+            Displayname: '&cНажмите, чтобы вернуться'
+      Member:
+        Title: '&8Редактор настроек - Участник'
+        Item:
+          Return:
+            Displayname: '&cНажмите, чтобы вернуться'
+      Coop:
+        Title: '&8Редактор настроек - Совместная игра'
+        Item:
+          Return:
+            Displayname: '&cНажмите, чтобы вернуться'
+      Operator:
+        Title: '&8Редактор настроек - Оператор'
+        Item:
+          Return:
+            Displayname: '&cНажмите, чтобы вернуться'
+          Setting:
+            Status:
+              Enabled:
+                Lore:
+                - '&fСтатус&f: &aДа'
+              Disabled:
+                Lore:
+                - '&fСтатус&f: &cНет'
+            Invite:
+              Displayname: '&aОтправить приглашения'
+            Kick:
+              Displayname: '&aКикнуть участников & посетителей'
+            Ban:
+              Displayname: '&aЗабанить посетителей'
+            Unban:
+              Displayname: '&aРазбанить посетителей'
+            Visitor:
+              Displayname: '&aИзменить настройки посетителя'
+            Member:
+              Displayname: '&aИзменить настройки участника'
+            Coop:
+              Displayname: '&aИзменить настройки совместной игры'
+            Island:
+              Displayname: '&aИзменить настройки острова'
+            MainSpawn:
+              Displayname: '&aУстановить основную точку спавна на острове'
+            VisitorSpawn:
+              Displayname: '&aУстановить точку спавна посетителей'
+            Border:
+              Displayname: '&aУстановить границу'
+            Biome:
+              Displayname: '&aУстановить Биом'
+            Weather:
+              Displayname: '&aУстановить погоду'
+            CoopPlayers:
+              Displayname: '&aСовместная игра'
+      Owner:
+        Title: '&8Редактор настроек - Остров'
+        Item:
+          Return:
+            Displayname: '&cНажмите, чтобы вернуться'
+          Setting:
+            Status:
+              Enabled:
+                Lore:
+                - '&fСтатус&f: &aДа'
+              Disabled:
+                Lore:
+                - '&fСтатус&f: &cНет'
+            NaturalMobSpawning:
+              Displayname: '&aЕстественный спавн мобов'
+            MobGriefing:
+              Displayname: '&aГриферство мобов'
+            PvP:
+              Displayname: '&aPvP'
+            Explosions:
+              Displayname: '&aВзрывы'
+            FireSpread:
+              Displayname: '&aРаспространение огня'
+            LeafDecay:
+              Displayname: '&aПадение листьев'
+            KeepItemsOnDeath:
+              Displayname: '&aХранить предметы при смерти'
+            Damage:
+              Displayname: '&aУрон'
+            Hunger:
+              Displayname: '&aГолод'
+      Default:
+        Item:
+          Setting:
+            Status:
+              Enabled:
+                Lore:
+                - '&fСтатус&f: &aДа'
+              Disabled:
+                Lore:
+                - '&fСтатус&f: &cНет'
+            Destroy:
+              Displayname: '&aРазрушение блоков'
+            Place:
+              Displayname: '&aРазмещение блоков'
+            Anvil:
+              Displayname: '&aИспользование наковальни'
+            ArmorStandUse:
+              Displayname: '&aИспользование стойки для брони'
+            Beacon:
+              Displayname: '&aИспользование маяка'
+            Bed:
+              Displayname: '&aИспользование кровати'
+            AnimalBreeding:
+              Displayname: '&aЖивотноводство'
+            Brewing:
+              Displayname: '&aИспользование варочной стойки'
+            Bucket:
+              Displayname: '&aИспользование ведра'
+            WaterCollection:
+              Displayname: '&aСбор воды'
+            Storage:
+              Displayname: '&aДоступ к хранилищу'
+            Workbench:
+              Displayname: '&aИспользование верстака'
+            Crop:
+              Displayname: '&aРастоптывание культур'
+            Door:
+              Displayname: '&aИспользование дверей'
+            Gate:
+              Displayname: '&aИспользование ворот'
+            Projectile:
+              Displayname: '&aЗапуск снаряда'
+            Enchant:
+              Displayname: '&aИспользование стола зачарований'
+            Fire:
+              Displayname: '&aПожаротушение'
+            Furnace:
+              Displayname: '&aИспользование печи'
+            HorseInventory:
+              Displayname: '&aДоступ к инвентарю лошади'
+            MobRiding:
+              Displayname: '&aЕзда на мобах'
+            MobHurting:
+              Displayname: '&aУрон мобам'
+            MobTaming:
+              Displayname: '&aПриручение мобов'
+            Leash:
+              Displayname: '&aИспользование поводка'
+            LeverButton:
+              Displayname: '&aИспользование рычагов/кнопок'
+            Milking:
+              Displayname: '&aДоение'
+            Jukebox:
+              Displayname: '&aИспользование проигрывателя'
+            PressurePlate:
+              Displayname: '&aАктивация нажимных пластин'
+            Redstone:
+              Displayname: '&aИспользование редстоуна'
+            Shearing:
+              Displayname: '&aСтрижка мобов'
+            Trading:
+              Displayname: '&aТорговля с жителями'
+            ItemDrop:
+              Displayname: '&aВыбрасывание предметов'
+            ItemPickup:
+              Displayname: '&aПоднятие предметов'
+            Fishing:
+              Displayname: '&aЛовля рыбы'
+            DropperDispenser:
+              Displayname: '&aИспользование раздатчика/выбрасывателя'
+            SpawnEgg:
+              Displayname: '&aЯйца мобов'
+            HangingDestroy:
+              Displayname: '&aРазрушение падающих блоков'
+            Cake:
+              Displayname: '&aПотребление торта'
+            DragonEggUse:
+              Displayname: '&aИспользование яйца Дракона Края'
+            MinecartBoat:
+              Displayname: '&aИспользование вагонетки/лодки'
+            Portal:
+              Displayname: '&aИспользование портала'
+            Hopper:
+              Displayname: '&aИспользование воронки'
+            EntityPlacement:
+              Displayname: '&aРазмещение сущностей'
+            ExperienceOrbPickup:
+              Displayname: '&aПоднятие опыта'

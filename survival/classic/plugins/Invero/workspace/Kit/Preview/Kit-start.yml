@@ -1,0 +1,36 @@
+menu:
+  title: 'Start'
+
+layout:
+- '12345    '
+- '         '
+- '         '
+- '         '
+- 'R    6789'
+
+items:
+  R:
+    material: 'barrier'
+    name: '&cВернуться в меню наборов'
+    action: menu switch Kit
+  1:
+    material: 'stone_sword'
+  2:
+    material: 'stone_pickaxe'
+  3:
+    material: 'coal'
+    amount: 8
+  4:
+    material: 'log'
+    amount: 8
+  5:
+    material: 'apple'
+    amount: 16
+  6:
+    material: 'leather_helmet'
+  7:
+    material: 'leather_chestplate'
+  8:
+    material: 'leather_leggings'
+  9:
+    material: 'leather_boots'

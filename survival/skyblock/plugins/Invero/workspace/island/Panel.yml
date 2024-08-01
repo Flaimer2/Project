@@ -1,0 +1,175 @@
+title: '&0Панель управления островом'
+scale: [ 9, 5 ]
+
+layout: |-
+  #########
+  ##18345##
+  ##67f29##
+  ##bacde##
+  #########
+
+items:
+  1:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzk1ZDM3OTkzZTU5NDA4MjY3ODQ3MmJmOWQ4NjgyMzQxM2MyNTBkNDMzMmEyYzdkOGM1MmRlNDk3NmIzNjIifX19
+    name: '&aТелепортация на остров'
+    lore: |-
+      &fТелепортирует вас на главную
+      &fточку спавна на вашем острове.
+
+      &7Данную точку телепортации можно
+      &7редактировать с помощью &a/is sethome&8
+
+      &aНажмите, чтобы телепортироваться
+    action: |-
+      menu close
+      command "is home"
+  2:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGE2YWU1YjM0YzRmNzlhNWY5ZWQ2Y2NjMzNiYzk4MWZjNDBhY2YyYmZjZDk1MjI2NjRmZTFjNTI0ZDJlYjAifX19
+    name: '&aПогода и время на острове'
+    lore: |-
+      &fВы можете изменить погоду
+      &fи время на острове
+
+      &aНажмите, чтобы изменить
+    action: |-
+      menu close
+      command "is weather"
+  3:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTc2MmExNWIwNDY5MmEyZTRiM2ZiMzY2M2JkNGI3ODQzNGRjZTE3MzJiOGViMWM3YTlmN2MwZmJmNmYifX19
+    name: '&aЗадания'
+    lore: |-
+      &fВыполняйте задания,
+      &fчтобы получать разные награды
+
+      &aНажмите, чтобы открыть
+    action: |-
+      command "quest"
+  4:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWZkMjQwMDAwMmFkOWZiYmJkMDA2Njk0MWViNWIxYTM4NGFiOWIwZTQ4YTE3OGVlOTZlNGQxMjlhNTIwODY1NCJ9fX0=
+    name: '&aБаны острова'
+    lore: |-
+      &fВы можете посмотреть, каким игрокам
+      &fзапрещено входить на остров
+
+      &aНажмите, чтобы открыть
+    action: |-
+      menu close
+      command "is bans"
+  5:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWE2OTZlMTUyMzYzYWQ0NzdlZDZjYjVhNTE4YmZlYTg0YjAzNjE0OGZlY2FjMDU4MWYzMmM1YjUzOTY5NTgifX19
+    name: '&aТопы островов'
+    lore: |-
+      &fТелепортироваться к топам
+      &fостровов по уровню и посетителям
+
+      &aНажмите, чтобы телепортироваться
+    action: |-
+      menu close
+      command "warp Top"
+  6:
+    update: 10
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTZlMGQ1ZmU4N2QyZDIxZTJiZGU2Mzc0NDI1YTM0MWE3NTczYjM3NWQ1YmI3ZDQ3ZjRiOGRhZTM1Mjk3ZWE0In19fQ==
+    name: '&aУровень острова'
+    lore: |-
+      &fВы можете узнать свой текущий 
+      &fуровень острова, ценности блоков
+
+      &fУровень острова: &a%fabledskyblock_island_level%
+
+      &aНажмите, чтобы посмотреть
+    action: |-
+      menu close
+      command "is level"
+  7:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzY1ZmMwNDI2MjMwYTJlODhkZjI5ZDJkOGVjNDUxMmU2ZGJkYmMwNzc3YjRiODNjZGRhMmVkZTgxODY0ZDYifX19
+    name: '&aУлучшения'
+    lore: |-
+      &fВы можете улучшить различные
+      &fхарактеристики вашего острова
+      &fдля более комфортной игры!
+
+      &aНажмите, чтобы открыть
+    action: |-
+      menu close  
+      command "is upgrade"
+  8:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWMyZmYyNDRkZmM5ZGQzYTJjZWY2MzExMmU3NTAyZGM2MzY3YjBkMDIxMzI5NTAzNDdiMmI0NzlhNzIzNjZkZCJ9fX0=
+    name: '&aНастройки острова'  
+    lore: |-
+      &fУправляйте настройками своего
+      &fострова и решайте, какие разрешения
+      &fвы хотите предоставить
+
+      &aНажмите, чтобы открыть
+    action: |-
+      menu close
+      command "is settings"
+  9:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzc5NWVkZWViNmI3ZWQ0MWMyNjhjZWZlYWZiZTk2MGI3YzQ5NTUwZGFlYjYzMWI1NjE1NmJmNWZlYjk4NDcifX19
+    name: '&aБиом острова'
+    lore: |-
+      &fВы можете сменить биом острова
+      &fв данном меню
+
+      &aНажмите, чтобы открыть
+    action: |-  
+      menu close
+      command "is biome"
+  a:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWNiN2MyMWNjNDNkYzE3Njc4ZWU2ZjE2NTkxZmZhYWIxZjYzN2MzN2Y0ZjZiYmQ4Y2VhNDk3NDUxZDc2ZGI2ZCJ9fX0=
+    name: '&aПосетить остров'
+    lore: |-
+      &fТелепортация на острова 
+      &fдругих игроков
+
+      &aНажмите, чтобы открыть
+    action: |-  
+      menu close
+      command "is visit"
+  b:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDM4Y2YzZjhlNTRhZmMzYjNmOTFkMjBhNDlmMzI0ZGNhMTQ4NjAwN2ZlNTQ1Mzk5MDU1NTI0YzE3OTQxZjRkYyJ9fX0=
+    name: '&aНастройка вида границ острова'
+    lore: |-
+      &fВы можете настроить отображение
+      &fграниц острова
+
+      &aНажмите, чтобы открыть
+    action: |-  
+      menu close
+      command "is border"
+  c:
+    update: 10
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTljMzJhYThiZDc1YTQ5YmZkMWE1YjRhYzIyZGJhNGU3NDUwNDc1NTkxOTNlNGJhOTJjMTc3MzhmMzQ5MjQ5ZCJ9fX0=
+    name: '&aУчастники острова'
+    lore: |-
+      &fПосмотрите, какие игроки являются
+      &fучастниками вашего острова
+
+      &fКоличество участников: &a%fabledskyblock_island_members_total%
+
+      &aНажмите, чтобы открыть
+    action: |-  
+      menu close
+      command "is members"
+  d:
+    update: 10
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU0YjhiOGQyMzYyYzg2NGUwNjIzMDE0ODdkOTRkMzI3MmE2YjU3MGFmYmY4MGMyYzViMTQ4Yzk1NDU3OWQ0NiJ9fX0=
+    name: '{{if check papi %fabledskyblock_island_radius% != 0 then "&a" else "&c"}}Удалить остров'
+    enhancedLore: true
+    lore: |-
+      &fВы {{if check papi %fabledskyblock_island_radius% == 0 then "не можете" else "можете"}} удалить остров
+
+      &aНажмите, чтобы удалить остров
+    action: |-  
+      menu close
+      command "is reset"
+  f:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2EzYmI4NWRlYzEzMjlmZTgyOWNjNmNkY2QzNGUxYmQ2MGVlODMyZjU3MjYyOTY1MWYxNGI1ZTE0NTU1ZGJiMSJ9fX0
+    name: '&aГенератор острова'
+    lore:
+      - '&fУлучшайте генератор острова,'
+      - '&fчтобы получать новую руду'
+      - ''
+      - '&aНажмите, чтобы открыть'
+    action: |-
+      menu open Generators

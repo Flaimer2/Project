@@ -1,0 +1,81 @@
+# ---------------------------------------------------------- #
+# @ powered by Томатный админ (DarkFort) | vk.com/darkfortmc #
+# ---------------------------------------------------------- #
+
+General:
+  UseSigns: true
+  CloseInvAfterStop: false
+SlotMachines:
+  default:
+    Name: '&cСтандартная'
+    Title: '&4Слот машина #1'
+    Template: default
+    Currency:
+      Name: $
+      Type: VAULT
+      Amount: 100
+      Item: null
+    Sounds:
+      Spin: ENTITY_EXPERIENCE_ORB_PICKUP
+      Stop: BLOCK_ANVIL_PLACE
+      Lose: ENTITY_VILLAGER_HURT
+      Win: ENTITY_PLAYER_LEVELUP
+    Elements:
+      apple:
+        Material: APPLE:0
+        Name: '&cЯблоко'
+        SkullHash: nothing
+        Enchanted: false
+        Chance: 45.0
+      carrot:
+        Material: CARROT_ITEM:0
+        Name: '&6Морковь'
+        SkullHash: nothing
+        Enchanted: false
+        Chance: 30.0
+      bread:
+        Material: BREAD:0
+        Name: '&eХлеб'
+        SkullHash: nothing
+        Enchanted: false
+        Chance: 25.0
+      melon:
+        Material: MELON:0
+        Name: '&aАрбуз'
+        SkullHash: nothing
+        Enchanted: false
+        Chance: 20.0
+      cake:
+        Material: CAKE:0
+        Name: '&fТорт'
+        SkullHash: nothing
+        Enchanted: false
+        Chance: 5.0
+    Combinations:
+    - apple:apple:apple-x10
+    - apple:ANY:ANY-x2
+    - ANY:apple:ANY-x2
+    - ANY:ANY:apple-x2
+    - carrot:carrot:carrot-x20
+    - bread:bread:bread-x30
+    - melon:melon:melon-x40
+    - cake:cake:cake-x50
+    Rewards:
+      x10:
+        cmds:
+        - money give %p 2000
+      x2:
+        cmds:
+        - money give %p 50
+      x20:
+        cmds:
+        - money give %p 4000
+      x30:
+        cmds:
+        - money give %p 6000
+      x40:
+        cmds:
+        - money give %p 8000
+      x50:
+        cmds:
+        - money give %p 10000

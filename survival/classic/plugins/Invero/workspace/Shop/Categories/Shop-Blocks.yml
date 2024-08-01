@@ -1,0 +1,138 @@
+title: '&0Блоки (Страница {{math add [ page get 1 ]}}/2)'
+
+layout: |-
+  #########
+  #       #
+  #       #
+  #       #
+  #########
+  P#M#B###N
+
+items:
+  P:
+    material: arrow
+    name: '&aПредыдущая страница'
+    action: |-
+      page previous
+      menu title update
+      icons refresh
+    sub:
+      - rule: 'page isFirst'
+        inherit: false
+        material: air
+  M:
+    material: GOLD_INGOT
+    update: 60
+    name: '&fВаш баланс'
+    lore: '&a%vault_eco_balance_fixed%$'
+  B:
+    material: arrow
+    name: '&aВернуться в магазин'
+    action: menu switch Shop
+  N:
+    material: arrow
+    name: '&aСледующая страница'
+    action: |-
+      page next
+      menu title update
+      icons refresh
+    sub:
+      - rule: 'page isLast'
+        inherit: false
+        material: air
+  # Воздух
+  '#':
+    material: air
+
+generator:
+  output:
+    name: '{{ element Name }}'
+    material: '{{ element Material }}'
+    flag: HIDE_ATTRIBUTES
+    lore: |-
+
+      &fПокупка: &a${{ element BuyPrice }}
+
+      &aНажмите, чтобы купить!
+    action: |-
+      ctx set 'fromMenu' to 'Shop-Blocks'
+      ctx set 'itemName' to element Name
+      ctx set 'itemMaterial' to element Material
+      ctx set 'price' to element BuyPrice
+      ctx set 'amount' to 1
+      ctx set 'minAmount' to 1
+      ctx set 'maxAmount' to 64
+      menu switch Shop-Purchase
+  elements:
+    - BuyPrice: 50
+      Material: 'GRASS_BLOCK'
+      Name: '&aДёрн'
+    - BuyPrice: 30
+      Material: 'DIRT'
+      Name: '&aЗемля'
+    - BuyPrice: 50
+      Material: 'GRAVEL'
+      Name: '&aГравий'
+    - BuyPrice: 30
+      Material: 'COBBLESTONE'
+      Name: '&aБулыжник'
+    - BuyPrice: 50
+      Material: 'MOSSY_COBBLESTONE'
+      Name: '&aЗамшелый булыжник'
+    - BuyPrice: 50
+      Material: 'STONE'
+      Name: '&aКамень'
+    - BuyPrice: 100
+      Material: 'OAK_LOG'
+      Name: '&aДуб'
+    - BuyPrice: 20
+      Material: 'SNOW_BLOCK'
+      Name: '&aСнег'
+    - BuyPrice: 30
+      Material: 'ICE'
+      Name: '&aЛёд'
+    - BuyPrice: 30
+      Material: 'PACKED_ICE'
+      Name: '&aПлотный лёд'
+    - BuyPrice: 100
+      Material: 'SPONGE'
+      Name: '&aГубка'
+    - BuyPrice: 30
+      Material: 'SAND'
+      Name: '&aПесок'
+    - BuyPrice: 30
+      Material: 'SANDSTONE'
+      Name: '&aПесчаник'
+    - BuyPrice: 20
+      Material: 'GLASS'
+      Name: '&aСтекло'
+    - BuyPrice: 40
+      Material: 'CLAY'
+      Name: '&aГлина'
+    - BuyPrice: 50
+      Material: 'TERRACOTTA'
+      Name: '&aТерракота'
+    - BuyPrice: 70
+      Material: 'BRICKS'
+      Name: '&aКирпич'
+    - BuyPrice: 30
+      Material: 'OBSIDIAN'
+      Name: '&aОбсидиан'
+    - BuyPrice: 30
+      Material: 'NETHERRACK'
+      Name: '&aНезерит'
+    - BuyPrice: 50
+      Material: 'GLOWSTONE'
+      Name: '&aСветокамень'
+    - BuyPrice: 30
+      Material: 'SOUL_SAND'
+      Name: '&aПесок душ'
+    - BuyPrice: 50
+      Material: 'NETHER_BRICKS'
+      Name: '&aНезеритовые кирпичи'
+    - BuyPrice: 50
+      Material: 'PRISMARINE'
+      Name: '&aПризмарин'
+    - BuyPrice: 30
+      Material: 'BOOKSHELF'
+      Name: '&aКнижная полка'

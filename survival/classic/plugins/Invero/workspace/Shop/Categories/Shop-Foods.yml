@@ -1,0 +1,108 @@
+title: '&0Еда'
+
+layout: |-
+  #########
+  #       #
+  #       #
+  #       #
+  #########
+  P#M#B###N
+
+items:
+  P:
+    material: arrow
+    name: '&aПредыдущая страница'
+    action: |-
+      page previous
+      menu title update
+      icons refresh
+    sub:
+      - rule: 'page isFirst'
+        inherit: false
+        material: air
+  M:
+    material: GOLD_INGOT
+    update: 60
+    name: '&fВаш баланс'
+    lore: '&a%vault_eco_balance_fixed%$'
+  B:
+    material: arrow
+    name: '&aВернуться в магазин'
+    action: menu switch Shop
+  N:
+    material: arrow
+    name: '&aСледующая страница'
+    action: |-
+      page next
+      menu title update
+      icons refresh
+    sub:
+      - rule: 'page isLast'
+        inherit: false
+        material: air
+  # Воздух
+  '#':
+    material: air
+
+generator:
+  output:
+    name: '{{ element Name }}'
+    material: '{{ element Material }}'
+    flag: HIDE_ATTRIBUTES
+    lore: |-
+
+      &fПокупка: &a${{ element BuyPrice }}
+
+      &aНажмите, чтобы купить!
+    action: |-
+      ctx set 'fromMenu' to 'Shop-Foods'
+      ctx set 'itemName' to element Name
+      ctx set 'itemMaterial' to element Material
+      ctx set 'price' to element BuyPrice
+      ctx set 'amount' to 1
+      ctx set 'minAmount' to 1
+      ctx set 'maxAmount' to 64
+      menu switch Shop-Purchase
+  elements:
+    - BuyPrice: 30
+      Material: 'MELON_SLICE'
+      Name: '&aАрбуз'
+    - BuyPrice: 20
+      Material: 'APPLE'
+      Name: '&aЯблоко'
+    - BuyPrice: 100
+      Material: 'GOLDEN_APPLE'
+      Name: '&aЗолотое яблоко'
+    - BuyPrice: 30
+      Material: 'CARROT_ITEM'
+      Name: '&aМорковь'
+    - BuyPrice: 20
+      Material: 'PUMPKIN_PIE'
+      Name: '&aТыквенный пирог'
+    - BuyPrice: 25
+      Material: 'BREAD'
+      Name: '&aХлеб'
+    - BuyPrice: 25
+      Material: 'COOKED_CHICKEN'
+      Name: '&aКурица'
+    - BuyPrice: 30
+      Material: 'BAKED_POTATO'
+      Name: '&aКартофель'
+    - BuyPrice: 20
+      Material: 'COOKED_FISH'
+      Name: '&aРыба'
+    - BuyPrice: 20
+      Material: 'COOKED_RABBIT'
+      Name: '&aКрольчатина'
+    - BuyPrice: 30
+      Material: 'GRILLED_PORK'
+      Name: '&aСвинина'
+    - BuyPrice: 30
+      Material: 'COOKED_BEEF'
+      Name: '&aСтейк'
+    - BuyPrice: 25
+      Material: 'COOKED_MUTTON'
+      Name: '&aБаранина'
+    - BuyPrice: 30
+      Material: 'COOKIE'
+      Name: '&aПеченье'

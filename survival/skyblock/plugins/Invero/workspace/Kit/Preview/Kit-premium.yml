@@ -1,0 +1,39 @@
+menu:
+  title: 'Premium'
+
+layout:
+- '123456   '
+- '         '
+- '         '
+- '         '
+- 'R    789`10`'
+
+items:
+  R:
+    material: 'barrier'
+    name: '&cВернуться в меню наборов'
+    action: menu switch Kit
+  1:
+    material: 'stone_sword'
+  2:
+    material: 'stone_pickaxe'
+  3:
+    material: 'coal'
+    amount: 8
+  4:
+    material: 'log'
+    amount: 32
+  5:
+    material: 'cobblestone'
+    amount: 32
+  6:
+    material: 'golden_apple'
+    amount: 2
+  7:
+    material: 'leather_helmet'
+  8:
+    material: 'leather_chestplate'
+  9:
+    material: 'leather_leggings'
+  10:
+    material: 'leather_boots'

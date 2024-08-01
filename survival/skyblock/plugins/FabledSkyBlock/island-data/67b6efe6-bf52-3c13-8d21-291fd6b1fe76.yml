@@ -1,0 +1,85 @@
+Visitor:
+  Open: false
+Border:
+  Enable: true
+  Color: Blue
+Biome:
+  Type: PLAINS
+Weather:
+  Synchronised: true
+  Time: 6000
+  Weather: CLEAR
+Ownership:
+  Original: 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
+Structure: Double
+Location:
+  Normal:
+    Island:
+      world: island_normal
+      x: 1200.0
+      y: 72.0
+      z: 333600.0
+      yaw: 0.0
+      pitch: 0.0
+    Spawn:
+      Visitor:
+        world: island_normal
+        x: 1200.5
+        y: 72.0
+        z: 333600.5
+        yaw: 153.98407
+        pitch: -5.896785
+      Main:
+        world: island_normal
+        x: 1200.5
+        y: 72.0
+        z: 333600.5
+        yaw: 153.98407
+        pitch: -5.896785
+  Nether:
+    Island:
+      world: island_nether
+      x: 1200.0
+      y: 72.0
+      z: 333600.0
+      yaw: 0.0
+      pitch: 0.0
+    Spawn:
+      Visitor:
+        world: island_nether
+        x: 1200.5
+        y: 72.0
+        z: 333600.5
+        yaw: -249.58313
+        pitch: 3.1981878
+      Main:
+        world: island_nether
+        x: 1200.5
+        y: 72.0
+        z: 333600.5
+        yaw: -249.58313
+        pitch: 3.1981878
+  End:
+    Island:
+      world: island_end
+      x: 1200.0
+      y: 72.0
+      z: 333600.0
+      yaw: 0.0
+      pitch: 0.0
+    Spawn:
+      Visitor:
+        world: island_end
+        x: 1200.5
+        y: 72.0
+        z: 333600.5
+        yaw: -216.69272
+        pitch: 3.1471763
+      Main:
+        world: island_end
+        x: 1200.5
+        y: 72.0
+        z: 333600.5
+        yaw: -216.69272
+        pitch: 3.1471763
+Size: 200

@@ -1,0 +1,10 @@
+levels:
+  1:
+    discount: 0.0
+    requiredSnapiCoin: 0
+  2:
+    discount: 0.1
+    requiredSnapiCoin: 30
+  3:
+    discount: 0.2
+    requiredSnapiCoin: 60

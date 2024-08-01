@@ -1,0 +1,71 @@
+config-version: 2.3
+
+# If the plugin is not up-to-date, you will get a notification when you join the server.
+check-update: true
+
+prefix: '&dЧародей &7| '
+
+#Player are only allowed to open the "EnchantGui" only if the enchanting table was placed by an admin.
+Only-Admin-EnchantTable: true
+
+# If set to false, plugin wont open the gui for player if they don't have any item can be enchanted.
+# Also the plugin will send No-Available-Item message to player
+OpenGuiWhenNoAvailableItem: false
+
+# If enabled, the GUI will be closed when player is trying to enchant but they don't have enough money/level.
+CloseInventoryWhenNotEnoughCurrency: true
+
+# If enabled, player requires every single enchantment permission (such as enchantgui.enchantment.DAMAGE_ALL) to enchant.
+# Note: enchantgui.enchantment.ALL to access all the enchantments.
+# the permission above only player can access to all enchantments but not level. (If PermissionForEachEnchantmentLevel is enabled).
+# If you want to give player the permission that access to all Enchantments and level , give "enchantgui.enchantment.*" permission to them.
+PermissionForEachEnchantment: false
+
+# If enabled, player requires every single enchantments level (such as enchantgui.enchantment.DAMAGE_ALL.<level>) to enchant.
+PermissionForEachEnchantmentLevel: false
+
+# Only set this to false if the custom enchantment plugin you are using already display the enchantment name
+ShowCustomEnchantmentNameOnLore: true
+
+# Award enchanting advancement to player after they enchant their tools
+AwardAdvancement: false
+
+stacked-item:
+  allow: false
+  price-multiply: false
+
+sounds:
+  open_gui:
+    enable: true
+    sound: BLOCK_ENCHANTMENT_TABLE_USE
+    volume: 1.0
+    pitch: 1.0
+  success_enchant:
+    enable: true
+    sound: BLOCK_ENCHANTMENT_TABLE_USE
+    volume: 1.0
+    pitch: 1.0
+  fail_enchant:
+    enable: true
+    sound: BLOCK_ANVIL_PLACE
+    volume: 1.0
+    pitch: 1.0
+
+# A server restart is required if enable/disable this
+alias-commands:
+  enable: false
+  commands:
+    - upgrade
+
+Message:
+  No-Available-Item: '&fУ вас &cнет &fпредметов, которые можно зачаровать'
+  Successful-Enchant-Item: '&fВы зачаровали &a{ITEM} &fна &a{ENCHANTMENT}'
+  Not-Enough-Money: '&fУ вас не хватает &cденег &fна зачарование!'
+  Not-Enough-Level: '&fУ вас недостаточно &cуровня &fдля зачарования!'
+  Not-Enough-Custom-Economy: '&fУ вас недостаточно &c{NAME} &fдля зачарования!'
+  Does-Not-Reach-Minimum-Level: '&fУ вас должен быть &a{MINIMUM_LEVEL} &fLvL, чтобы зачаровать это!'
+  Not-Enough-Lapis: '&fУ вас недостаточно &cлазурита &fдля зачарования!'
+  No-Enchantment-Permission: '&fУ вас нет &cразрешения&f, чтобы зачаровать это!'
+  No-Enchantment-Level-Permission: '&fУ вас нет &cразрешения&f, чтобы зачаровать до этого уровня!'
+  No-Permission: '&fУ вас нет на это &cразрешения&f!'
+  Inventory-Full: '&fВаш инвентарь &cпереполнен&f! Пожалуйста, освободите немного места перед зачарованием!'

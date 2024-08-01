@@ -1,0 +1,87 @@
+title: '&0Руды'
+
+layout: |-
+  #########
+  #       #
+  #       #
+  #       #
+  #########
+  P#M#B###N
+
+items:
+  P:
+    material: arrow
+    name: '&aПредыдущая страница'
+    action: |-
+      page previous
+      menu title update
+      icons refresh
+    sub:
+      - rule: 'page isFirst'
+        inherit: false
+        material: air
+  M:
+    material: GOLD_INGOT
+    update: 60
+    name: '&fВаш баланс'
+    lore: '&a%vault_eco_balance_fixed%$'
+  B:
+    material: arrow
+    name: '&aВернуться в магазин'
+    action: menu switch Shop
+  N:
+    material: arrow
+    name: '&aСледующая страница'
+    action: |-
+      page next
+      menu title update
+      icons refresh
+    sub:
+      - rule: 'page isLast'
+        inherit: false
+        material: air
+  # Воздух
+  '#':
+    material: air
+
+generator:
+  output:
+    name: '{{ element Name }}'
+    material: '{{ element Material }}'
+    flag: HIDE_ATTRIBUTES
+    lore: |-
+
+      &fПокупка: &a${{ element BuyPrice }}
+
+      &aНажмите, чтобы купить!
+    action: |-
+      ctx set 'fromMenu' to 'Shop-Ores'
+      ctx set 'itemName' to element Name
+      ctx set 'itemMaterial' to element Material
+      ctx set 'price' to element BuyPrice
+      ctx set 'amount' to 1
+      ctx set 'minAmount' to 1
+      ctx set 'maxAmount' to 64
+      menu switch Shop-Purchase
+  elements:
+    - BuyPrice: 4
+      Material: 'COAL'
+      Name: '&aУголь'
+    - BuyPrice: 8
+      Material: 'IRON_INGOT'
+      Name: '&aЖелезо'
+    - BuyPrice: 30
+      Material: 'GOLD_INGOT'
+      Name: '&aЗолото'
+    - BuyPrice: 375
+      Material: 'DIAMOND'
+      Name: '&aАлмаз'
+    - BuyPrice: 150
+      Material: 'EMERALD'
+      Name: '&aИзумруд'
+    - BuyPrice: 8
+      Material: 'QUARTZ'
+      Name: '&aКварц'
+    - BuyPrice: 15
+      Material: 'LAPIS_LAZULI'
+      Name: '&aЛазурит'

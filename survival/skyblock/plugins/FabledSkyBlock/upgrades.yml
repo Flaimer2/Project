@@ -1,0 +1,41 @@
+Upgrades:
+    Speed:
+        Enable: true
+        Cost: 10000
+    Jump:
+        Enable: false
+        Cost: 10000
+    Crop:
+        Enable: true
+        Cost: 25000
+    Fly:
+        Enable: true
+        Cost: 50000
+    Drops:
+        Enable: true
+        Cost: 50000
+    Size:
+        0:
+            Value: 50
+            Cost: 10000
+        1:
+            Value: 100
+            Cost: 20000
+        2:
+            Value: 150
+            Cost: 50000
+        3:
+            Value: 200
+            Cost: 70000
+        4:
+            Value: 250
+            Cost: 110000
+        5:
+            Value: 300
+            Cost: 140000
+        6:
+            Value: 350
+            Cost: 180000
+    Spawner:
+        Enable: true
+        Cost: 100000

@@ -1,0 +1,10 @@
+ # Нужно писать в этом формате: X;Y;Z;World;Yaw;Pitch
+spawnpointArena:
+  - '792.5;64.0;-408.5;world;90.0;0.0'
+  - '783.5;64.0;-407.5;world;-90.0;0.0'
+  - '794.5;64.0;-410.5;world;0.0;0.0'
+ # Нужно писать в этом формате: X;Y;Z;World;Yaw;Pitch
+backLocation: '788.5;64.0;-395.5;world;-180.0;0.0'
+pvpRegion:
+  - 'pvp'
+delaySeconds: 3

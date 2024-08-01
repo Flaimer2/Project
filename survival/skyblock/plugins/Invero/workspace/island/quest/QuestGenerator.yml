@@ -1,0 +1,347 @@
+title: '&0{{if check page max > 0 then inline "{{&Title}} (страница {{math add [ page get 1 ]}}/{{math add [ page max 1 ]}})" else &Title}}'
+scale: [ 9, 6 ]
+virtual: true
+layout: |-
+  #########
+  ##     ##
+  ##     ##
+  ##     ##
+  #########
+  P###B###N
+items:
+  '#':
+    material: air
+  P:
+    material: arrow
+    name: '&aПредыдущая страница'
+    action: |-
+      page previous
+      menu title update
+      icons refresh
+    sub:
+      - rule: 'page isFirst'
+        inherit: false
+        material: air
+  N:
+    material: arrow
+    name: '&aСледующая страница'
+    action: |-
+      page next
+      menu title update
+      icons refresh
+    sub:
+      - rule: 'page isLast'
+        inherit: false
+        material: air
+  B:
+    material: arrow
+    name: '&aВернуться в задания'
+    action: menu switch Quest
+generator:
+  filter: 'check element Category == &Category'
+  output:
+    material: '{{if check papi inline "%luckperms_meta_skyblock.quest.done.{{element ID}}%" >= element Requirement then element Material else "RED_STAINED_GLASS"}}'
+    flag: 'HIDE_ATTRIBUTES'
+    name: '&a{{element Quest}}'
+    lore: |-
+
+      &fНаграда: &a{{element Money}}$
+      &fВыполнено: &a{{papi inline "%luckperms_meta_skyblock.quest.done.{{element ID}}%"}}/{{element Requirement}}
+      &fПрогресс: &a{{papi inline "%math_{{papi inline "%luckperms_meta_skyblock.quest.done.{{element ID}}%"}}/{{element Requirement}}*100%"}}%
+
+      {{if check papi inline "%luckperms_meta_skyblock.quest.done.{{element ID}}%" >= element Requirement then "&aВы выполнили это задание!" else "&cВам предстоит выполнить это задание!"}}
+  elements:
+    - ID: 1
+      Quest: 'Создайте верстак'
+      Material: 'crafting_table'
+      Requirement: 1
+      Category: 1
+      Money: 300
+    - ID: 2
+      Quest: 'Создайте деревянную кирку'
+      Material: 'wooden_pickaxe'
+      Requirement: 1
+      Category: 1
+      Money: 200
+    - ID: 3
+      Quest: 'Создайте угольный блок'
+      Material: 'coal_block'
+      Requirement: 1
+      Category: 1
+      Money: 300
+    - ID: 4
+      Quest: 'Создайте железный блок'
+      Material: 'iron_block'
+      Requirement: 1
+      Category: 1
+      Money: 400
+    - ID: 5
+      Quest: 'Создайте алмазный блок'
+      Material: 'diamond_block'
+      Requirement: 1
+      Category: 1
+      Money: 500
+    - ID: 6
+      Quest: 'Создайте золотой топор'
+      Material: 'golden_axe'
+      Requirement: 1
+      Category: 1
+      Money: 500
+    - ID: 7
+      Quest: 'Создайте факел'
+      Material: 'torch'
+      Requirement: 1
+      Category: 1
+      Money: 200
+    - ID: 8
+      Quest: 'Создайте пузырёк'
+      Material: 'glass_bottle'
+      Requirement: 1
+      Category: 1
+      Money: 1000
+    - ID: 9
+      Quest: 'Создайте чародейский стол'
+      Material: 'enchanting_table'
+      Requirement: 1
+      Category: 1
+      Money: 4000
+    - ID: 10
+      Quest: 'Создайте око эндера'
+      Material: 'ender_eye'
+      Requirement: 1
+      Category: 1
+      Money: 5000
+    - ID: 11
+      Quest: 'Создайте золотой нагрудник'
+      Material: 'golden_chestplate'
+      Requirement: 1
+      Category: 1
+      Money: 700
+    - ID: 12
+      Quest: 'Создайте компаратор'
+      Material: 'comparator'
+      Requirement: 1
+      Category: 1
+      Money: 2000
+    - ID: 13
+      Quest: 'Создайте железную мотыгу'
+      Material: 'iron_hoe'
+      Requirement: 1
+      Category: 1
+      Money: 500
+    - ID: 14
+      Quest: 'Создайте сундук'
+      Material: 'chest'
+      Requirement: 1
+      Category: 1
+      Money: 300
+    - ID: 15
+      Quest: 'Создайте алмазные ботинки'
+      Material: 'diamond_boots'
+      Requirement: 1
+      Category: 1
+      Money: 1200
+    - ID: 16
+      Quest: 'Создайте железные прутья'
+      Material: 'iron_bars'
+      Requirement: 1
+      Category: 1
+      Money: 600
+    - ID: 17
+      Quest: 'Создайте алмазный меч'
+      Material: 'diamond_sword'
+      Requirement: 1
+      Category: 1
+      Money: 600
+    - ID: 18
+      Quest: 'Создайте алмазную кирку'
+      Material: 'diamond_pickaxe'
+      Requirement: 1
+      Category: 1
+      Money: 500
+    - ID: 19
+      Quest: 'Создайте каменную кирку'
+      Material: 'stone_pickaxe'
+      Requirement: 1
+      Category: 1
+      Money: 300
+    - ID: 20
+      Quest: 'Создайте табличку'
+      Material: 'sign'
+      Requirement: 1
+      Category: 1
+      Money: 200
+    - ID: 21
+      Quest: 'Создайте золотой самородок'
+      Material: 'gold_nugget'
+      Requirement: 1
+      Category: 1
+      Money: 300
+    - ID: 22
+      Quest: 'Создайте железную кирку'
+      Material: 'iron_pickaxe'
+      Requirement: 1
+      Category: 1
+      Money: 400
+    - ID: 23
+      Quest: 'Создайте компас'
+      Material: 'compass'
+      Requirement: 1
+      Category: 1
+      Money: 1000
+    - ID: 24
+      Quest: 'Создайте железный топор'
+      Material: 'iron_axe'
+      Requirement: 1
+      Category: 1
+      Money: 500
+    - ID: 25
+      Quest: 'Создайте редстоуновый блок'
+      Material: 'redstone_block'
+      Requirement: 1
+      Category: 1
+      Money: 400
+    - ID: 26
+      Quest: 'Создайте золотой блок'
+      Material: 'gold_block'
+      Requirement: 1
+      Category: 1
+      Money: 500
+    - ID: 27
+      Quest: 'Создайте лазуритный блок'
+      Material: 'lapis_block'
+      Requirement: 1
+      Category: 1
+      Money: 600
+    - ID: 28
+      Quest: 'Создайте книжные полки'
+      Material: 'bookshelf'
+      Requirement: 1
+      Category: 1
+      Money: 500
+    - ID: 29
+      Quest: 'Создайте кварцевый блок'
+      Material: 'quartz_block'
+      Requirement: 1
+      Category: 1
+      Money: 400
+    - ID: 30
+      Quest: 'Создайте алмазный нагрудник'
+      Material: 'diamond_chestplate'
+      Requirement: 1
+      Category: 1
+      Money: 700
+    - ID: 31
+      Quest: 'Создайте железный меч'
+      Material: 'iron_sword'
+      Requirement: 1
+      Category: 1
+      Money: 500
+    - ID: 32
+      Quest: 'Создайте железный нагрудник'
+      Material: 'iron_chestplate'
+      Requirement: 1
+      Category: 1
+      Money: 500
+    - ID: 33
+      Quest: 'Создайте изумрудный блок'
+      Material: 'emerald_block'
+      Requirement: 1
+      Category: 1
+      Money: 1000
+    - ID: 34
+      Quest: 'Создайте печку'
+      Material: 'furnace'
+      Requirement: 1
+      Category: 1
+      Money: 400
+    - ID: 35
+      Quest: 'Сломайте 10 блоков'
+      Material: 'cobblestone'
+      Requirement: 10
+      Category: 2
+      Money: 500
+    - ID: 36
+      Quest: 'Сломайте 100 блоков'
+      Material: 'cobblestone'
+      Requirement: 100
+      Category: 2
+      Money: 3000
+    - ID: 37
+      Quest: 'Сломайте 1000 блоков'
+      Material: 'cobblestone'
+      Requirement: 1000
+      Category: 2
+      Money: 6000
+    - ID: 38
+      Quest: 'Убейте 10 монстров'
+      Material: 'zombie_spawn_egg'
+      Requirement: 10
+      Category: 3
+      Money: 3000
+    - ID: 39
+      Quest: 'Убейте 100 монстров'
+      Material: 'zombie_spawn_egg'
+      Requirement: 100
+      Category: 3
+      Money: 10000
+    - ID: 40
+      Quest: 'Убейте 1000 монстров'
+      Material: 'zombie_spawn_egg'
+      Requirement: 1000
+      Category: 3
+      Money: 30000
+    - ID: 41
+      Quest: 'Убейте 1 игрока'
+      Material: 'iron_sword'
+      Requirement: 1
+      Category: 4
+      Money: 100
+    - ID: 42
+      Quest: 'Убейте 10 игроков'
+      Material: 'iron_sword'
+      Requirement: 10
+      Category: 4
+      Money: 500
+    - ID: 43
+      Quest: 'Убейте 100 игроков'
+      Material: 'iron_sword'
+      Requirement: 100
+      Category: 4
+      Money: 5000
+    - ID: 44
+      Quest: 'Убейте 1000 игроков'
+      Material: 'iron_sword'
+      Requirement: 1000
+      Category: 4
+      Money: 15000
+    - ID: 45
+      Quest: 'Убейте 2000 игроков'
+      Material: 'iron_sword'
+      Requirement: 2000
+      Category: 4
+      Money: 30000
+    - ID: 46
+      Quest: 'Создайте свой первый остров'
+      Material: 'GRASS_BLOCK'
+      Requirement: 1
+      Category: 5
+      Money: 500
+    - ID: 47
+      Quest: 'Улучшить генератор до максимального'
+      Material: 'EMERALD_ORE'
+      Requirement: 1
+      Category: 5
+      Money: 15000
+    - ID: 48
+      Quest: 'Расширьте границы до максимального'
+      Material: 'EMERALD_BLOCK'
+      Requirement: 1
+      Category: 5
+      Money: 20000
+    - ID: 49
+      Quest: 'Умрите'
+      Material: 'SKELETON_SKULL'
+      Requirement: 1
+      Category: 5
+      Money: 666

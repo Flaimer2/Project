@@ -1,0 +1,32 @@
+FillItem:
+  enable: false
+  item:
+    material: STAINED_GLASS_PANE
+    damage: 11
+    amount: 1
+    display_name: ' '
+Gui-Settings:
+  size: 54
+  name: Выберите предмет
+  player-items:
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  next-page-item:
+    item:
+      material: ARROW
+      damage: 0
+      amount: 1
+      display_name: '&eСледующая страница'
+    slot: 30
+  previous-page-item:
+    item:
+      material: ARROW
+      damage: 0
+      amount: 1
+      display_name: Предыдущая страница
+    slot: 32

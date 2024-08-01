@@ -1,0 +1,171 @@
+menu:
+  title: '&0Виды работ (Страница {{math add [ page get 1 ]}}/{{math add [ page max 1 ]}})'
+
+layout: |-
+  #########
+  #1234567#
+  #       #
+  #1234567#
+  P###B###N
+
+items:
+  # Воздух
+  '#':
+    material: air
+  B:
+    material: arrow
+    name: '&aВернуться назад'
+    action: |-
+      menu switch Jobs
+  P:
+    relocate: 5
+    material: arrow
+    name: '&aПредыдущая страница'
+    action: |-
+      page previous
+      menu title update
+      icons refresh
+    sub:
+      - rule: 'page isFirst'
+        inherit: false
+        material: air
+  N:
+    relocate: 5
+    material: arrow
+    name: '&aСледующая страница'
+    action: |-
+      page next
+      menu title update
+      icons refresh
+    sub:
+      - rule: 'page isLast'
+        inherit: false
+        material: air
+  1:
+    update: 5
+    material: '{{if check papi inline %jobsr_user_isin_Дровосек% == §2True then "lime_stained_glass_pane" else "red_stained_glass_pane"}}'
+    name: '{{if check papi inline %jobsr_user_isin_Дровосек% == §2True then "&aВы работаете" else "&cВы не работаете"}}'
+    sub:
+      - rule: 'check page get == 1'
+        material: '{{if check papi inline %jobsr_user_isin_Крафтер% == §2True then "lime_stained_glass_pane" else "red_stained_glass_pane"}}'
+        name: '{{if check papi inline %jobsr_user_isin_Крафтер% == §2True then "&aВы работаете" else "&cВы не работаете"}}'
+  2:
+    update: 5
+    material: '{{if check papi inline %jobsr_user_isin_Шахтер% == §2True then "lime_stained_glass_pane" else "red_stained_glass_pane"}}'
+    name: '{{if check papi inline %jobsr_user_isin_Шахтер% == §2True then "&aВы работаете" else "&cВы не работаете"}}'
+    sub:
+      - rule: 'check page get == 1'
+        material: '{{if check papi inline %jobsr_user_isin_Рыбак% == §2True then "lime_stained_glass_pane" else "red_stained_glass_pane"}}'
+        name: '{{if check papi inline %jobsr_user_isin_Рыбак% == §2True then "&aВы работаете" else "&cВы не работаете"}}'
+  3:
+    update: 5
+    material: '{{if check papi inline %jobsr_user_isin_Строитель% == §2True then "lime_stained_glass_pane" else "red_stained_glass_pane"}}'
+    name: '{{if check papi inline %jobsr_user_isin_Строитель% == §2True then "&aВы работаете" else "&cВы не работаете"}}'
+    sub:
+      - rule: 'check page get == 1'
+        material: '{{if check papi inline %jobsr_user_isin_Оружейник% == §2True then "lime_stained_glass_pane" else "red_stained_glass_pane"}}'
+        name: '{{if check papi inline %jobsr_user_isin_Оружейник% == §2True then "&aВы работаете" else "&cВы не работаете"}}'
+  4:
+    update: 5
+    material: '{{if check papi inline %jobsr_user_isin_Копатель% == §2True then "lime_stained_glass_pane" else "red_stained_glass_pane"}}'
+    name: '{{if check papi inline %jobsr_user_isin_Копатель% == §2True then "&aВы работаете" else "&cВы не работаете"}}'
+    sub:
+      - rule: 'check page get == 1'
+        material: '{{if check papi inline %jobsr_user_isin_Зельевар% == §2True then "lime_stained_glass_pane" else "red_stained_glass_pane"}}'
+        name: '{{if check papi inline %jobsr_user_isin_Зельевар% == §2True then "&aВы работаете" else "&cВы не работаете"}}'
+  5:
+    update: 5
+    material: '{{if check papi inline %jobsr_user_isin_Фермер% == §2True then "lime_stained_glass_pane" else "red_stained_glass_pane"}}'
+    name: '{{if check papi inline %jobsr_user_isin_Фермер% == §2True then "&aВы работаете" else "&cВы не работаете"}}'
+    sub:
+      - rule: 'check page get == 1'
+        material: '{{if check papi inline %jobsr_user_isin_Чародей% == §2True then "lime_stained_glass_pane" else "red_stained_glass_pane"}}'
+        name: '{{if check papi inline %jobsr_user_isin_Чародей% == §2True then "&aВы работаете" else "&cВы не работаете"}}'
+  6:
+    update: 5
+    material: '{{if check papi inline %jobsr_user_isin_Охотник% == §2True then "lime_stained_glass_pane" else "red_stained_glass_pane"}}'
+    name: '{{if check papi inline %jobsr_user_isin_Охотник% == §2True then "&aВы работаете" else "&cВы не работаете"}}'
+    sub:
+      - rule: 'check page get == 1'
+        material: 'air'
+  7:
+    update: 5
+    material: '{{if check papi inline %jobsr_user_isin_Исследователь% == §2True then "lime_stained_glass_pane" else "red_stained_glass_pane"}}'
+    name: '{{if check papi inline %jobsr_user_isin_Исследователь% == §2True then "&aВы работаете" else "&cВы не работаете"}}'
+    sub:
+      - rule: 'check page get == 1'
+        material: 'air'
+
+generator:
+  output:
+    update: 5
+    name: '&a{{ element Name }} &7({{papi inline %jobsr_totalplayers_{{element Name}}%}} работников)'
+    material: '{{ element Material }}'
+    flag: HIDE_ATTRIBUTES
+    enhancedLore: true
+    lore: |-
+      {{if all [ check papi inline %jobsr_user_isin_{{element Name}}% == §cFalse check papi %jobsr_user_joinedjobcount% >= 3 ] then "&cВнимание! У вас может быть только 3 работы.\\n&cПожалуйста, покиньте работу, чтобы\\n&cприсоединиться к другой\\n" else " "}}
+      &aОписание:
+      {{element Description}}
+
+      &a{{if check papi inline %jobsr_user_isin_{{element Name}}% == §2True then "&cНажмите для выхода с этой работы" else if all [ check papi inline %jobsr_user_isin_{{element Name}}% == §cFalse check papi %jobsr_user_joinedjobcount% >= 3 ] then "&cВы достигли максимального количества работ" else "Нажмите для присоединения к этой работе"}}
+    action: |-
+      if check papi inline "%jobsr_user_isin_{{element Name}}%" == §2True then {
+        command inline "jobs:jobs leave {{element Name}}" as player
+        sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+      } else if all [ check papi inline "%jobsr_user_isin_{{element Name}}%" == §cFalse check papi %jobsr_user_joinedjobcount% >= 3 ] then {
+        sound ENTITY_VILLAGER_NO by 1 1
+      } else {
+        command inline "jobs:jobs join {{element Name}}" as player
+        sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+      }
+  elements:
+    - Name: 'Дровосек'
+      FormattedName: '&aДровосек'
+      Material: 'gold_axe'
+      Description: '&fНа этой работе вам нужно рубить\\n&fи сажать деревья, чтобы заработать'
+    - Name: 'Шахтер'
+      FormattedName: '&bШахтер'
+      Material: 'gold_pickaxe'
+      Description: '&fНа этой работе вам нужно добывать\\n&fматериалы и руды, чтобы заработать деньги'
+    - Name: 'Строитель'
+      FormattedName: '&2Строитель'
+      Material: 'QUARTZ_BLOCK'
+      Description: '&fНа этой работе вам нужно строить\\n&fлюбые строения, чтобы заработать деньги'
+    - Name: 'Копатель'
+      FormattedName: '&6Копатель'
+      Material: 'gold_spade'
+      Description: '&fНа этой работе вам нужно терраформировать\\n&fмир, чтобы заработать деньги'
+    - Name: 'Фермер'
+      FormattedName: '&dФермер'
+      Material: 'gold_hoe'
+      Description: '&fНа этой работе вам нужно заниматься\\n&fфермерской работой, чтобы заработать деньги'
+    - Name: 'Охотник'
+      FormattedName: '&cОхотник'
+      Material: 'gold_sword'
+      Description: '&fНа этой работе вам нужно убивать\\n&fживотных и монстров, чтобы заработать деньги'
+    - Name: 'Исследователь'
+      FormattedName: '&3Исследователь'
+      Material: 'gold_boots'
+      Description: '&fНа этой работе вам нужно исследовать\\n&fкарту, чтобы заработать деньги'
+    - Name: 'Крафтер'
+      FormattedName: '&fКрафтер'
+      Material: 'WORKBENCH'
+      Description: '&fНа этой работе вам нужно создавать\\n&fпредметы, чтобы заработать деньги'
+    - Name: 'Рыбак'
+      FormattedName: '&9Рыбак'
+      Material: 'FISHING_ROD'
+      Description: '&fНа этой работе вам нужно ловить\\n&fрыбу, чтобы заработать деньги'
+    - Name: 'Оружейник'
+      FormattedName: '&4Оружейник'
+      Material: 'ANVIL'
+      Description: '&fНа этой работе вам нужно ремонтировать\\n&fоружие, чтобы заработать деньги'
+    - Name: 'Зельевар'
+      FormattedName: '&eЗельевар'
+      Material: 'BREWING_STAND_ITEM'
+      Description: '&fНа этой работе вам нужно варит\\n&fзелья, чтобы заработать деньги'
+    - Name: 'Чародей'
+      FormattedName: '&5Чародей'
+      Material: 'ENCHANTMENT_TABLE'
+      Description: '&fНа этой работе вам нужно зачаровывать\\n&fпредметы, чтобы заработать деньги'
+

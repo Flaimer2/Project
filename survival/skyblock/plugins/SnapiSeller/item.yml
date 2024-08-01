@@ -1,0 +1,694 @@
+item:
+  stone-block:
+    category: 'BLOCKS'
+    material: 'STONE'
+    maxAmount: 64
+    name: '&aКамень'
+    sellAmount: 64
+    sellPrice: 11
+  stone-block2:
+    category: 'BLOCKS'
+    material: 'GRASS'
+    maxAmount: 64
+    name: '&aДёрн'
+    sellAmount: 64
+    sellPrice: 8
+  stone-block3:
+    category: 'BLOCKS'
+    material: 'DIRT'
+    maxAmount: 64
+    name: '&aГрязь'
+    sellAmount: 64
+    sellPrice: 5
+  stone-block4:
+    category: 'BLOCKS'
+    material: 'COBBLESTONE'
+    maxAmount: 64
+    name: '&aБулыжник'
+    sellAmount: 64
+    sellPrice: 4
+  stone-block5:
+    category: 'BLOCKS'
+    material: 'WOOD'
+    maxAmount: 64
+    name: '&aДоски'
+    sellAmount: 64
+    sellPrice: 8
+  stone-block7:
+    category: 'BLOCKS'
+    material: 'SAND'
+    maxAmount: 64
+    name: '&aПесок'
+    sellAmount: 64
+    sellPrice: 8
+  stone-block8:
+    category: 'BLOCKS'
+    material: 'GRAVEL'
+    maxAmount: 64
+    name: '&aГравий'
+    sellAmount: 64
+    sellPrice: 9
+  stone-block9:
+    category: 'BLOCKS'
+    material: 'GOLD_ORE'
+    maxAmount: 32
+    name: '&aЗолотая руда'
+    sellAmount: 32
+    sellPrice: 27
+  stone-block10:
+    category: 'BLOCKS'
+    material: 'IRON_ORE'
+    maxAmount: 48
+    name: '&aЖелезная руда'
+    sellAmount: 48
+    sellPrice: 19
+  stone-block11:
+    category: 'BLOCKS'
+    material: 'COAL_ORE'
+    maxAmount: 48
+    name: '&aУгольная руда'
+    sellAmount: 48
+    sellPrice: 11
+  stone-block12:
+    category: 'BLOCKS'
+    material: 'LOG'
+    maxAmount: 64
+    name: '&aДуб'
+    sellAmount: 64
+    sellPrice: 11
+  stone-block13:
+    category: 'BLOCKS'
+    material: 'LEAVES'
+    maxAmount: 64
+    name: '&aЛиства дуба'
+    sellAmount: 64
+    sellPrice: 5
+  stone-block14:
+    category: 'BLOCKS'
+    material: 'GLASS'
+    maxAmount: 64
+    name: '&aСтекло'
+    sellAmount: 64
+    sellPrice: 11
+  stone-block15:
+    category: 'BLOCKS'
+    material: 'LAPIS_ORE'
+    maxAmount: 64
+    name: '&aЛазуритовая руда'
+    sellAmount: 64
+    sellPrice: 25
+  stone-block16:
+    category: 'BLOCKS'
+    material: 'WOOL'
+    maxAmount: 64
+    name: '&aШерсть'
+    sellAmount: 64
+    sellPrice: 11
+  stone-block17:
+    category: 'BLOCKS'
+    material: 'DIAMOND_ORE'
+    maxAmount: 32
+    name: '&aАлмазная руда'
+    sellAmount: 32
+    sellPrice: 43
+  stone-block18:
+    category: 'BLOCKS'
+    material: 'OBSIDIAN'
+    maxAmount: 64
+    name: '&aОбсидиан'
+    sellAmount: 64
+    sellPrice: 11
+  stone-block19:
+    category: 'BLOCKS'
+    material: 'REDSTONE_ORE'
+    maxAmount: 32
+    name: '&aРедстоуновая руда'
+    sellAmount: 32
+    sellPrice: 25
+  stone-block20:
+    category: 'BLOCKS'
+    material: 'SNOW_BLOCK'
+    maxAmount: 64
+    name: '&aБлок снега'
+    sellAmount: 64
+    sellPrice: 14
+  stone-block21:
+    category: 'BLOCKS'
+    material: 'NETHERRACK'
+    maxAmount: 64
+    name: '&aАдский камень'
+    sellAmount: 64
+    sellPrice: 14
+  stone-block22:
+    category: 'BLOCKS'
+    material: 'SOUL_SAND'
+    maxAmount: 64
+    name: '&aПесок душ'
+    sellAmount: 64
+    sellPrice: 25
+  stone-block23:
+    category: 'BLOCKS'
+    material: 'GLOWSTONE'
+    maxAmount: 64
+    name: '&aСветокамень'
+    sellAmount: 64
+    sellPrice: 35
+  stone-block24:
+    category: 'BLOCKS'
+    material: 'QUARTZ_BLOCK'
+    maxAmount: 64
+    name: '&aБлок кварца'
+    sellAmount: 64
+    sellPrice: 60
+  precious-items-stone-sword:
+    category: 'PRECIOUS-ITEMS'
+    material: 'WOOD_SWORD'
+    maxAmount: 1
+    name: '&aДеревянный меч'
+    sellAmount: 8
+    sellPrice: 10
+  precious-items-stone-sword2:
+    category: 'PRECIOUS-ITEMS'
+    material: 'WOOD_SPADE'
+    maxAmount: 1
+    name: '&aДеревянная лопата'
+    sellAmount: 8
+    sellPrice: 8
+  precious-items-stone-sword3:
+    category: 'PRECIOUS-ITEMS'
+    material: 'WOOD_PICKAXE'
+    maxAmount: 1
+    name: '&aДеревянная кирка'
+    sellAmount: 8
+    sellPrice: 11
+  precious-items-stone-sword4:
+    category: 'PRECIOUS-ITEMS'
+    material: 'WOOD_AXE'
+    maxAmount: 1
+    name: '&aДеревянный топор'
+    sellAmount: 8
+    sellPrice: 11
+  precious-items-stone-sword5:
+    category: 'PRECIOUS-ITEMS'
+    material: 'STONE_SWORD'
+    maxAmount: 1
+    name: '&aКаменный меч'
+    sellAmount: 8
+    sellPrice: 15
+  precious-items-stone-sword6:
+    category: 'PRECIOUS-ITEMS'
+    material: 'STONE_SPADE'
+    maxAmount: 1
+    name: '&aКаменная лопата'
+    sellAmount: 8
+    sellPrice: 12
+  precious-items-stone-sword7:
+    category: 'PRECIOUS-ITEMS'
+    material: 'STONE_PICKAXE'
+    maxAmount: 1
+    name: '&aКаменная кирка'
+    sellAmount: 8
+    sellPrice: 17
+  precious-items-stone-sword8:
+    category: 'PRECIOUS-ITEMS'
+    material: 'STONE_AXE'
+    maxAmount: 1
+    name: '&aКаменный топор'
+    sellAmount: 8
+    sellPrice: 17
+  precious-items-stone-sword9:
+    category: 'PRECIOUS-ITEMS'
+    material: 'IRON_SWORD'
+    maxAmount: 1
+    name: '&aЖелезный меч'
+    sellAmount: 8
+    sellPrice: 50
+  precious-items-stone-sword10:
+    category: 'PRECIOUS-ITEMS'
+    material: 'IRON_SPADE'
+    maxAmount: 1
+    name: '&aЖелезная лопата'
+    sellAmount: 8
+    sellPrice: 45
+  precious-items-stone-sword11:
+    category: 'PRECIOUS-ITEMS'
+    material: 'IRON_PICKAXE'
+    maxAmount: 1
+    name: '&aЖелезная кирка'
+    sellAmount: 8
+    sellPrice: 55
+  precious-items-stone-sword12:
+    category: 'PRECIOUS-ITEMS'
+    material: 'IRON_AXE'
+    maxAmount: 1
+    name: '&aЖелезный топор'
+    sellAmount: 8
+    sellPrice: 55
+  precious-items-stone-sword13:
+    category: 'PRECIOUS-ITEMS'
+    material: 'DIAMOND_SWORD'
+    maxAmount: 1
+    name: '&aАлмазный меч'
+    sellAmount: 8
+    sellPrice: 155
+  precious-items-stone-sword14:
+    category: 'PRECIOUS-ITEMS'
+    material: 'DIAMOND_SPADE'
+    maxAmount: 1
+    name: '&aАлмазная лопата'
+    sellAmount: 8
+    sellPrice: 145
+  precious-items-stone-sword15:
+    category: 'PRECIOUS-ITEMS'
+    material: 'DIAMOND_PICKAXE'
+    maxAmount: 1
+    name: '&aАлмазная кирка'
+    sellAmount: 8
+    sellPrice: 165
+  precious-items-stone-sword16:
+    category: 'PRECIOUS-ITEMS'
+    material: 'DIAMOND_AXE'
+    maxAmount: 1
+    name: '&aАлмазный топор'
+    sellAmount: 8
+    sellPrice: 165
+  precious-items-stone-sword17:
+    category: 'PRECIOUS-ITEMS'
+    material: 'GOLD_SWORD'
+    maxAmount: 1
+    name: '&aЗолотой меч'
+    sellAmount: 8
+    sellPrice: 113
+  precious-items-stone-sword18:
+    category: 'PRECIOUS-ITEMS'
+    material: 'GOLD_SPADE'
+    maxAmount: 1
+    name: '&aЗолотая лопата'
+    sellAmount: 8
+    sellPrice: 105
+  precious-items-stone-sword19:
+    category: 'PRECIOUS-ITEMS'
+    material: 'GOLD_PICKAXE'
+    maxAmount: 1
+    name: '&aЗолотая кирка'
+    sellAmount: 8
+    sellPrice: 120
+  precious-items-stone-sword20:
+    category: 'PRECIOUS-ITEMS'
+    material: 'GOLD_AXE'
+    maxAmount: 1
+    name: '&aЗолотой топор'
+    sellAmount: 8
+    sellPrice: 120
+  precious-items-stone-sword21:
+    category: 'PRECIOUS-ITEMS'
+    material: 'BOW'
+    maxAmount: 1
+    name: '&aЛук'
+    sellAmount: 8
+    sellPrice: 50
+  precious-items-stone-sword22:
+    category: 'PRECIOUS-ITEMS'
+    material: 'BOW'
+    maxAmount: 1
+    name: '&aЛук'
+    sellAmount: 16
+    sellPrice: 40
+  precious-items-stone-sword23:
+    category: 'PRECIOUS-ITEMS'
+    material: 'ARROW'
+    maxAmount: 64
+    name: '&aСтрелы'
+    sellAmount: 64
+    sellPrice: 25
+  precious-items-stone-sword24:
+    category: 'PRECIOUS-ITEMS'
+    material: 'IRON_HOE'
+    maxAmount: 1
+    name: '&aЖелезная мотыга'
+    sellAmount: 8
+    sellPrice: 50
+  precious-items-stone-sword25:
+    category: 'PRECIOUS-ITEMS'
+    material: 'DIAMOND_HOE'
+    maxAmount: 1
+    name: '&aАлмазная мотыга'
+    sellAmount: 8
+    sellPrice: 145
+  precious-items-stone-sword26:
+    category: 'PRECIOUS-ITEMS'
+    material: 'GOLD_HOE'
+    maxAmount: 1
+    name: '&aЗолотая мотыга'
+    sellAmount: 8
+    sellPrice: 105
+  precious-items-stone-sword27:
+    category: 'PRECIOUS-ITEMS'
+    material: 'SNOWBALL'
+    maxAmount: 16
+    name: '&aСнежок'
+    sellAmount: 64
+    sellPrice: 15
+  precious-items-stone-sword28:
+    category: 'PRECIOUS-ITEMS'
+    material: 'FISHING_ROD'
+    maxAmount: 1
+    name: '&aУдочка'
+    sellAmount: 8
+    sellPrice: 40
+  precious-items-stone-sword29:
+    category: 'PRECIOUS-ITEMS'
+    material: 'IRON_HELMET'
+    maxAmount: 1
+    name: '&aЖелезный шлем'
+    sellAmount: 8
+    sellPrice: 100
+  precious-items-stone-sword30:
+    category: 'PRECIOUS-ITEMS'
+    material: 'IRON_CHESTPLATE'
+    maxAmount: 1
+    name: '&aЖелезный нагрудник'
+    sellAmount: 8
+    sellPrice: 150
+  precious-items-stone-sword31:
+    category: 'PRECIOUS-ITEMS'
+    material: 'IRON_LEGGINGS'
+    maxAmount: 1
+    name: '&aЖелезные поножи'
+    sellAmount: 8
+    sellPrice: 125
+  precious-items-stone-sword32:
+    category: 'PRECIOUS-ITEMS'
+    material: 'IRON_BOOTS'
+    maxAmount: 1
+    name: '&aЖелезные ботинки'
+    sellAmount: 8
+    sellPrice: 95
+  precious-items-stone-sword33:
+    category: 'PRECIOUS-ITEMS'
+    material: 'DIAMOND_HELMET'
+    maxAmount: 1
+    name: '&aАлмазный шлем'
+    sellAmount: 8
+    sellPrice: 250
+  precious-items-stone-sword34:
+    category: 'PRECIOUS-ITEMS'
+    material: 'DIAMOND_CHESTPLATE'
+    maxAmount: 1
+    name: '&aАлмазный нагрудник'
+    sellAmount: 8
+    sellPrice: 320
+  precious-items-stone-sword35:
+    category: 'PRECIOUS-ITEMS'
+    material: 'DIAMOND_LEGGINGS'
+    maxAmount: 1
+    name: '&aАлмазные поножи'
+    sellAmount: 8
+    sellPrice: 300
+  precious-items-stone-sword36:
+    category: 'PRECIOUS-ITEMS'
+    material: 'DIAMOND_BOOTS'
+    maxAmount: 1
+    name: '&aАлмазные ботинки'
+    sellAmount: 8
+    sellPrice: 240
+  precious-items-stone-sword37:
+    category: 'PRECIOUS-ITEMS'
+    material: 'GOLD_HELMET'
+    maxAmount: 1
+    name: '&aЗолотой шлем'
+    sellAmount: 8
+    sellPrice: 170
+  precious-items-stone-sword38:
+    category: 'PRECIOUS-ITEMS'
+    material: 'GOLD_CHESTPLATE'
+    maxAmount: 1
+    name: '&aЗолотой нагрудник'
+    sellAmount: 8
+    sellPrice: 220
+  precious-items-stone-sword39:
+    category: 'PRECIOUS-ITEMS'
+    material: 'GOLD_LEGGINGS'
+    maxAmount: 1
+    name: '&aЗолотые поножи'
+    sellAmount: 8
+    sellPrice: 200
+  precious-items-stone-sword40:
+    category: 'PRECIOUS-ITEMS'
+    material: 'GOLD_BOOTS'
+    maxAmount: 1
+    name: '&aЗолотые ботинки'
+    sellAmount: 8
+    sellPrice: 140
+  diamond-chestplate-armor:
+    category: 'ARMOR'
+    material: 'POWERED_RAIL'
+    maxAmount: 64
+    name: '&aЭнергорельсы'
+    sellAmount: 64
+    sellPrice: 25
+  diamond-chestplate-armor2:
+    category: 'ARMOR'
+    material: 'ANVIL'
+    maxAmount: 64
+    name: '&aНаковальня'
+    sellAmount: 64
+    sellPrice: 60
+  diamond-chestplate-armor3:
+    category: 'ARMOR'
+    material: 'HOPPER'
+    maxAmount: 64
+    name: '&aВоронка'
+    sellAmount: 64
+    sellPrice: 45
+  diamond-chestplate-armor4:
+    category: 'ARMOR'
+    material: 'SAPLING'
+    maxAmount: 64
+    name: '&aСажанец дуба'
+    sellAmount: 64
+    sellPrice: 18
+  diamond-chestplate-armor5:
+    category: 'ARMOR'
+    material: 'COAL'
+    maxAmount: 64
+    name: '&aУголь'
+    sellAmount: 64
+    sellPrice: 7
+  diamond-chestplate-armor6:
+    category: 'ARMOR'
+    material: 'DIAMOND'
+    maxAmount: 64
+    name: '&aАлмазы'
+    sellAmount: 64
+    sellPrice: 29
+  diamond-chestplate-armor7:
+    category: 'ARMOR'
+    material: 'IRON_INGOT'
+    maxAmount: 64
+    name: '&aЖелезо'
+    sellAmount: 64
+    sellPrice: 22
+  diamond-chestplate-armor8:
+    category: 'ARMOR'
+    material: 'GOLD_INGOT'
+    maxAmount: 64
+    name: '&aЗолото'
+    sellAmount: 64
+    sellPrice: 24
+  diamond-chestplate-armor9:
+    category: 'ARMOR'
+    material: 'FLINT'
+    maxAmount: 64
+    name: '&aКремень'
+    sellAmount: 64
+    sellPrice: 19
+  diamond-chestplate-armor10:
+    category: 'ARMOR'
+    material: 'REDSTONE'
+    maxAmount: 64
+    name: '&aРедстоун'
+    sellAmount: 64
+    sellPrice: 9
+  diamond-chestplate-armor11:
+    category: 'ARMOR'
+    material: 'BRICK'
+    maxAmount: 64
+    name: '&aКирпич'
+    sellAmount: 64
+    sellPrice: 11
+  diamond-chestplate-armor12:
+    category: 'ARMOR'
+    material: 'GLOWSTONE_DUST'
+    maxAmount: 64
+    name: '&aСветокаменная пыль'
+    sellAmount: 64
+    sellPrice: 18
+  diamond-chestplate-armor13:
+    category: 'ARMOR'
+    material: 'ENDER_PEARL'
+    maxAmount: 64
+    name: '&aЭндер-жемчуг'
+    sellAmount: 64
+    sellPrice: 60
+  diamond-chestplate-armor14:
+    category: 'ARMOR'
+    material: 'BLAZE_ROD'
+    maxAmount: 64
+    name: '&aОгненный стержень'
+    sellAmount: 64
+    sellPrice: 35
+  diamond-chestplate-armor15:
+    category: 'ARMOR'
+    material: 'EYE_OF_ENDER'
+    maxAmount: 64
+    name: '&aОко Края'
+    sellAmount: 64
+    sellPrice: 90
+  diamond-chestplate-armor16:
+    category: 'ARMOR'
+    material: 'EXP_BOTTLE'
+    maxAmount: 64
+    name: '&aПузырёк опыта'
+    sellAmount: 64
+    sellPrice: 40
+  diamond-chestplate-armor17:
+    category: 'ARMOR'
+    material: 'FIREBALL'
+    maxAmount: 64
+    name: '&aОгненный шар'
+    sellAmount: 64
+    sellPrice: 30
+  diamond-chestplate-armor18:
+    category: 'ARMOR'
+    material: 'EMERALD'
+    maxAmount: 64
+    name: '&aИзумруд'
+    sellAmount: 64
+    sellPrice: 35
+  diamond-chestplate-armor19:
+    category: 'ARMOR'
+    material: 'NETHER_STAR'
+    maxAmount: 10
+    name: '&aЗвезда Нижнего мира'
+    sellAmount: 10
+    sellPrice: 7000
+  apple-food:
+    category: 'FOOD'
+    material: 'APPLE'
+    maxAmount: 64
+    name: '&aЯблоко'
+    sellAmount: 64
+    sellPrice: 10
+  apple-food3:
+    category: 'FOOD'
+    material: 'MUSHROOM_SOUP'
+    maxAmount: 1
+    name: '&aТушённые грибы'
+    sellAmount: 10
+    sellPrice: 35
+  apple-food4:
+    category: 'FOOD'
+    material: 'GRILLED_PORK'
+    maxAmount: 64
+    name: '&aЖареная свинина'
+    sellAmount: 64
+    sellPrice: 20
+  apple-food5:
+    category: 'FOOD'
+    material: 'PORK'
+    maxAmount: 64
+    name: '&aСырая свинина'
+    sellAmount: 64
+    sellPrice: 14
+  apple-food6:
+    category: 'FOOD'
+    material: 'GOLDEN_APPLE'
+    maxAmount: 64
+    name: '&aЗолотое яблоко'
+    sellAmount: 64
+    sellPrice: 35
+  apple-food7:
+    category: 'FOOD'
+    material: 'RAW_FISH'
+    maxAmount: 64
+    name: '&aСырая треска'
+    sellAmount: 64
+    sellPrice: 15
+  apple-food8:
+    category: 'FOOD'
+    material: 'COOKED_FISH'
+    maxAmount: 64
+    name: '&aЖареная треска'
+    sellAmount: 64
+    sellPrice: 21
+  apple-food9:
+    category: 'FOOD'
+    material: 'CAKE'
+    maxAmount: 1
+    name: '&aТорт'
+    sellAmount: 10
+    sellPrice: 100
+  apple-food10:
+    category: 'FOOD'
+    material: 'COOKIE'
+    maxAmount: 64
+    name: '&aПеченье'
+    sellAmount: 64
+    sellPrice: 15
+  apple-food11:
+    category: 'FOOD'
+    material: 'RAW_BEEF'
+    maxAmount: 64
+    name: '&aСырая говядина'
+    sellAmount: 64
+    sellPrice: 15
+  apple-food12:
+    category: 'FOOD'
+    material: 'COOKED_BEEF'
+    maxAmount: 64
+    name: '&aЖареная говядина'
+    sellAmount: 64
+    sellPrice: 20
+  apple-food13:
+    category: 'FOOD'
+    material: 'RAW_CHICKEN'
+    maxAmount: 64
+    name: '&aСырая курица'
+    sellAmount: 64
+    sellPrice: 15
+  apple-food14:
+    category: 'FOOD'
+    material: 'COOKED_CHICKEN'
+    maxAmount: 64
+    name: '&aЖареная курица'
+    sellAmount: 64
+    sellPrice: 20
+  apple-food15:
+    category: 'FOOD'
+    material: 'ROTTEN_FLESH'
+    maxAmount: 64
+    name: '&aГнилая плоть'
+    sellAmount: 64
+    sellPrice: 10
+  apple-food16:
+    category: 'FOOD'
+    material: 'BAKED_POTATO'
+    maxAmount: 64
+    name: '&aПечёный картофель'
+    sellAmount: 64
+    sellPrice: 17
+  # apple-food17:
+  #   category: 'FOOD'
+  #   material: 'CARROT'
+  #   maxAmount: 64
+  #   name: '&aМорковь'
+  #   sellAmount: 64
+  #   sellPrice: 12
+  apple-food18:
+    category: 'FOOD'
+    material: 'GOLDEN_CARROT'
+    maxAmount: 64
+    name: '&aЗолотая морковка'
+    sellAmount: 64
+    sellPrice: 25

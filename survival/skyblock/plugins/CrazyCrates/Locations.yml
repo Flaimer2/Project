@@ -1,0 +1,25 @@
+Locations:
+  '1':
+    Crate: mystery
+    World: world
+    X: -16
+    Y: 87
+    Z: 75
+  '2':
+    Crate: elite
+    World: world
+    X: -20
+    Y: 87
+    Z: 77
+  '3':
+    Crate: legendary
+    World: world
+    X: -24
+    Y: 86
+    Z: 75
+  '4':
+    Crate: legendary
+    World: world
+    X: -24
+    Y: 87
+    Z: 75

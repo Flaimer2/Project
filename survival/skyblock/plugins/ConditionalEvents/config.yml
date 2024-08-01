@@ -1,0 +1,1240 @@
+Config:
+  update_notification: true
+Messages:
+  prefix: '&4[&bConditionalEvents&4] '
+  commandReload: '&aConfig Reloaded.'
+  commandNoPermissions: '&cYou don''t have permissions to use this command.'
+  commandResetError: '&cUse &7/ce reset <player> <event>'
+  eventDoesNotExists: '&cThat event doesn''t exists on the config.'
+  cooldownReset: '&aCooldown was reset for player &e%player% &aon event &e%event%&a!'
+  seconds: s
+  minutes: m
+  hours: h
+  days: d
+  eventEnableError: '&cUse &7/ce enable <event>'
+  eventDisableError: '&cUse &7/ce disable <event>'
+  eventEnabled: '&aEvent &7%event% &aenabled.'
+  eventDisabled: '&aEvent &7%event% &adisabled.'
+Events:
+  hologram_npc_island:
+    type: repetitive
+    repetitive_time: 100
+    conditions:
+    - '%fabledskyblock_island_radius% != 0 execute action'
+    actions:
+      default:
+      - 'console_command: dh page switch npc_island 1 %player%'
+      action:
+      - 'console_command: dh page switch npc_island 2 %player%'
+  event1:
+    type: repetitive
+    repetitive_time: 100
+    conditions:
+    - '%fabledskyblock_islands% == 1'
+    - '%player_world% equals island_normal'
+    - '%luckperms_has_permission_skyblock.welcome.island% equals no'
+    actions:
+      default:
+      - 'console_command: lp user %player% permission set skyblock.welcome.island'
+      - 'message: '
+      - 'message: &a&l  SkyBlock'
+      - 'message: '
+      - 'message: &f  Суть данного режима - выживание на'
+      - 'message: &f  &aострове&f, парящем в &bнебе&f!'
+      - 'message: &f  Стройте, планируйте, выживайте на'
+      - 'message: &f  небольшом острове. Это будет не просто...'
+      - 'message: &f  Вы можете собрать команду и выживать вместе!'
+      - 'message: '
+      - 'message: &b  Полезная информация:'
+      - 'message: &f  1. Нажмите ведром ПКМ по &aобсидиану&f,'
+      - 'message: &f  чтобы выкачать из него лаву.'
+      - 'message: &f  2. С помощью генератора булыжника можно'
+      - 'message: &f  добыть различные полезные &aископаемые&f!'
+      - 'message: '
+      - 'console_command: lp user %player% meta set skyblock.quest.done.46 %math_{luckperms_meta_skyblock.quest.done.46}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.other %math_{luckperms_meta_skyblock.quest.done.other}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.46'
+      - 'console_command: money give %player% 500'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте свой первый остров'
+      - 'message: &f  Ваша награда &a500$'
+      - 'message: '
+  kills:
+    type: player_kill
+    conditions:
+    - '%victim% equals PLAYER execute player'
+    actions:
+      default:
+      - 'console_command: alonsolevels addrandomexp %player_name% 30 100 false true'
+      player:
+      - 'console_command: alonsolevels addrandomexp %player_name% 50 150 false true'
+  questdeath:
+    type: player_death
+    condition:
+    - '%luckperms_has_permission_skyblock.quest.done.49% equals no execute action2'
+    action:
+      action2:
+      - 'console_command: alonsolevels addrandomexp %player_name% 1 10 false true'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.49 %math_{luckperms_meta_skyblock.quest.done.49}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.other %math_{luckperms_meta_skyblock.quest.done.other}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.49'
+      - 'console_command: money give %player% 666'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aумрите'
+      - 'message: &f  Ваша награда &a666$'
+      - 'message: '
+  questpj:
+    type: player_join
+    conditions:
+    - '%luckperms_has_permission_snapix.firstjoin.skyblock% equals no'
+    actions:
+      default:
+      - 'console_command: lp user %player% perm set snapix.firstjoin.skyblock'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.1 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.2 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.3 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.4 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.5 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.6 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.7 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.8 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.9 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.10 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.11 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.12 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.13 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.14 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.15 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.16 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.17 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.18 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.19 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.20 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.21 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.22 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.23 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.24 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.25 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.26 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.27 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.28 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.29 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.30 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.31 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.32 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.33 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.34 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.35 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.36 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.37 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.38 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.39 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.40 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.41 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.42 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.43 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.44 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.45 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.46 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.47 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.48 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.49 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.blockbreak 0'  
+      - 'console_command: lp user %player% meta set skyblock.quest.done.kill 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.pkill 0'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.other 0'
+  is:
+    type: player_command
+    conditions:
+    - '%command% equals /is or %command% equals /is cp or %command% equals /island
+      panel or %command% equals /is control or %command% equals /is controlpanel or
+      %command% equals /island or %command% equals /island cp or %command% equals
+      /island panel or %command% equals /island control or %command% equals /is controlpanel'
+    - '%fabledskyblock_island_radius% != 0 execute action'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'player_command: is create'
+      action:
+      - 'cancel_event: true'
+      - 'console_command: invero menu open Panel %player%'
+  itemcraft_craftingtable:
+    type: item_craft
+    conditions:
+    - '%item% equals WORKBENCH'
+    - '%luckperms_has_permission_skyblock.quest.done.1% equals no'
+    - '%luckperms_meta_skyblock.quest.done.1% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.1% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.1 %math_{luckperms_meta_skyblock.quest.done.1}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.1 %math_{luckperms_meta_skyblock.quest.done.1}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.1'
+      - 'console_command: money give %player% 300'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте верстак'
+      - 'message: &f  Ваша награда &a300$'
+      - 'message: '
+  itemcraft_woodenpickaxe:
+    type: item_craft
+    conditions:
+    - '%item% equals WOOD_PICKAXE'
+    - '%luckperms_has_permission_skyblock.quest.done.2% equals no'
+    - '%luckperms_meta_skyblock.quest.done.2% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.2% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.2 %math_{luckperms_meta_skyblock.quest.done.2}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.2 %math_{luckperms_meta_skyblock.quest.done.2}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.2'
+      - 'console_command: money give %player% 200'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте деревянную кирку'
+      - 'message: &f  Ваша награда &a200$'
+      - 'message: '
+  itemcraft_coalblock:
+    type: item_craft
+    conditions:
+    - '%item% equals COAL_BLOCK'
+    - '%luckperms_has_permission_skyblock.quest.done.3% equals no'
+    - '%luckperms_meta_skyblock.quest.done.3% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.3% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.3 %math_{luckperms_meta_skyblock.quest.done.3}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.3 %math_{luckperms_meta_skyblock.quest.done.3}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.3'
+      - 'console_command: money give %player% 300'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте угольный блок'
+      - 'message: &f  Ваша награда &a300$'
+      - 'message: '
+  itemcraft_ironblock:
+    type: item_craft
+    conditions:
+    - '%item% equals IRON_BLOCK'
+    - '%luckperms_has_permission_skyblock.quest.done.4% equals no'
+    - '%luckperms_meta_skyblock.quest.done.4% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.4% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.4 %math_{luckperms_meta_skyblock.quest.done.4}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.4 %math_{luckperms_meta_skyblock.quest.done.4}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.4'
+      - 'console_command: money give %player% 400'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте железный блок'
+      - 'message: &f  Ваша награда &a400$'
+      - 'message: '
+  itemcraft_diamondblock:
+    type: item_craft
+    conditions:
+    - '%item% equals DIAMOND_BLOCK'
+    - '%luckperms_has_permission_skyblock.quest.done.5% equals no'
+    - '%luckperms_meta_skyblock.quest.done.5% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.5% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.5 %math_{luckperms_meta_skyblock.quest.done.5}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.5 %math_{luckperms_meta_skyblock.quest.done.5}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.5'
+      - 'console_command: money give %player% 500'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте алмазный блок'
+      - 'message: &f  Ваша награда &a500$'
+      - 'message: '
+  itemcraft_goldenaxe:
+    type: item_craft
+    conditions:
+    - '%item% equals GOLD_AXE'
+    - '%luckperms_has_permission_skyblock.quest.done.6% equals no'
+    - '%luckperms_meta_skyblock.quest.done.6% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.6% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.6 %math_{luckperms_meta_skyblock.quest.done.6}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.6 %math_{luckperms_meta_skyblock.quest.done.6}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.6'
+      - 'console_command: money give %player% 500'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте золотой топор'
+      - 'message: &f  Ваша награда &a500$'
+      - 'message: '
+  itemcraft_torch:
+    type: item_craft
+    conditions:
+    - '%item% equals TORCH'
+    - '%luckperms_has_permission_skyblock.quest.done.7% equals no'
+    - '%luckperms_meta_skyblock.quest.done.7% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.7% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.7 %math_{luckperms_meta_skyblock.quest.done.7}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.7 %math_{luckperms_meta_skyblock.quest.done.7}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.7'
+      - 'console_command: money give %player% 200'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте факел'
+      - 'message: &f  Ваша награда &a200$'
+      - 'message: '
+  itemcraft_glassbottle:
+    type: item_craft
+    conditions:
+    - '%item% equals GLASS_BOTTLE'
+    - '%luckperms_has_permission_skyblock.quest.done.8% equals no'
+    - '%luckperms_meta_skyblock.quest.done.8% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.8% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.8 %math_{luckperms_meta_skyblock.quest.done.8}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.8 %math_{luckperms_meta_skyblock.quest.done.8}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.8'
+      - 'console_command: money give %player% 1000'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте пузырёк'
+      - 'message: &f  Ваша награда &a1000$'
+      - 'message: '
+  itemcraft_enchantingtable:
+    type: item_craft
+    conditions:
+    - '%item% equals ENCHANTING_TABLE'
+    - '%luckperms_has_permission_skyblock.quest.done.9% equals no'
+    - '%luckperms_meta_skyblock.quest.done.9% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.9% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.9 %math_{luckperms_meta_skyblock.quest.done.9}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.9 %math_{luckperms_meta_skyblock.quest.done.9}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.9'
+      - 'console_command: money give %player% 4000'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте чародейский стол'
+      - 'message: &f  Ваша награда &a4000$'
+      - 'message: '
+  itemcraft_endereye:
+    type: item_craft
+    conditions:
+    - '%item% equals ENDER_EYE'
+    - '%luckperms_has_permission_skyblock.quest.done.10% equals no'
+    - '%luckperms_meta_skyblock.quest.done.10% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.10% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.10 %math_{luckperms_meta_skyblock.quest.done.10}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.10 %math_{luckperms_meta_skyblock.quest.done.10}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.10'
+      - 'console_command: money give %player% 5000'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте око эндера'
+      - 'message: &f  Ваша награда &a5000$'
+      - 'message: '
+  itemcraft_goldenchestplate:
+    type: item_craft
+    conditions:
+    - '%item% equals GOLD_CHESTPLATE'
+    - '%luckperms_has_permission_skyblock.quest.done.11% equals no'
+    - '%luckperms_meta_skyblock.quest.done.11% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.11% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.11 %math_{luckperms_meta_skyblock.quest.done.11}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.11 %math_{luckperms_meta_skyblock.quest.done.11}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.11'
+      - 'console_command: money give %player% 700'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте золотой нагрудник'
+      - 'message: &f  Ваша награда &a700$'
+      - 'message: '
+  itemcraft_comparator:
+    type: item_craft
+    conditions:
+    - '%item% equals REDSTONE_COMPARATOR'
+    - '%luckperms_has_permission_skyblock.quest.done.12% equals no'
+    - '%luckperms_meta_skyblock.quest.done.12% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.12% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.12 %math_{luckperms_meta_skyblock.quest.done.12}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.12 %math_{luckperms_meta_skyblock.quest.done.12}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.12'
+      - 'console_command: money give %player% 2000'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте компаратор'
+      - 'message: &f  Ваша награда &a2000$'
+      - 'message: '
+  itemcraft_ironhoe:
+    type: item_craft
+    conditions:
+    - '%item% equals IRON_HOE'
+    - '%luckperms_has_permission_skyblock.quest.done.13% equals no'
+    - '%luckperms_meta_skyblock.quest.done.13% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.13% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.13 %math_{luckperms_meta_skyblock.quest.done.13}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.13 %math_{luckperms_meta_skyblock.quest.done.13}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.13'
+      - 'console_command: money give %player% 500'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте железную мотыгу'
+      - 'message: &f  Ваша награда &a500$'
+      - 'message: '
+  itemcraft_chest:
+    type: item_craft
+    conditions:
+    - '%item% equals CHEST'
+    - '%luckperms_has_permission_skyblock.quest.done.14% equals no'
+    - '%luckperms_meta_skyblock.quest.done.14% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.14% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.14 %math_{luckperms_meta_skyblock.quest.done.14}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.14 %math_{luckperms_meta_skyblock.quest.done.14}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.14'
+      - 'console_command: money give %player% 300'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте сундук'
+      - 'message: &f  Ваша награда &a300$'
+      - 'message: '
+  itemcraft_diamondboots:
+    type: item_craft
+    conditions:
+    - '%item% equals DIAMOND_BOOTS'
+    - '%luckperms_has_permission_skyblock.quest.done.15% equals no'
+    - '%luckperms_meta_skyblock.quest.done.15% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.15% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.15 %math_{luckperms_meta_skyblock.quest.done.15}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.15 %math_{luckperms_meta_skyblock.quest.done.15}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.15'
+      - 'console_command: money give %player% 1200'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте алмазные ботинки'
+      - 'message: &f  Ваша награда &a1200$'
+      - 'message: '
+  itemcraft_ironbars:
+    type: item_craft
+    conditions:
+    - '%item% equals IRON_BARS'
+    - '%luckperms_has_permission_skyblock.quest.done.16% equals no'
+    - '%luckperms_meta_skyblock.quest.done.16% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.16% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.16 %math_{luckperms_meta_skyblock.quest.done.16}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.16 %math_{luckperms_meta_skyblock.quest.done.16}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.16'
+      - 'console_command: money give %player% 600'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте железные прутья'
+      - 'message: &f  Ваша награда &a600$'
+      - 'message: '
+  itemcraft_diamondsword:
+    type: item_craft
+    conditions:
+    - '%item% equals DIAMOND_SWORD'
+    - '%luckperms_has_permission_skyblock.quest.done.17% equals no'
+    - '%luckperms_meta_skyblock.quest.done.17% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.17% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.17 %math_{luckperms_meta_skyblock.quest.done.17}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.17 %math_{luckperms_meta_skyblock.quest.done.17}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.17'
+      - 'console_command: money give %player% 600'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте алмазный меч'
+      - 'message: &f  Ваша награда &a600$'
+      - 'message: '
+  itemcraft_diamondpickaxe:
+    type: item_craft
+    conditions:
+    - '%item% equals DIAMOND_PICKAXE'
+    - '%luckperms_has_permission_skyblock.quest.done.18% equals no'
+    - '%luckperms_meta_skyblock.quest.done.18% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.18% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.18 %math_{luckperms_meta_skyblock.quest.done.18}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.18 %math_{luckperms_meta_skyblock.quest.done.18}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.18'
+      - 'console_command: money give %player% 500'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте алмазную кирку'
+      - 'message: &f  Ваша награда &a500$'
+      - 'message: '
+  itemcraft_stonepickaxe:
+    type: item_craft
+    conditions:
+    - '%item% equals STONE_PICKAXE'
+    - '%luckperms_has_permission_skyblock.quest.done.19% equals no'
+    - '%luckperms_meta_skyblock.quest.done.19% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.19% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.19 %math_{luckperms_meta_skyblock.quest.done.19}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.19 %math_{luckperms_meta_skyblock.quest.done.19}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.19'
+      - 'console_command: money give %player% 300'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте каменную кирку'
+      - 'message: &f  Ваша награда &a300$'
+      - 'message: '
+  itemcraft_sign:
+    type: item_craft
+    conditions:
+    - '%item% equals SIGN'
+    - '%luckperms_has_permission_skyblock.quest.done.20% equals no'
+    - '%luckperms_meta_skyblock.quest.done.20% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.20% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.20 %math_{luckperms_meta_skyblock.quest.done.20}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.20 %math_{luckperms_meta_skyblock.quest.done.20}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.20'
+      - 'console_command: money give %player% 200'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте табличку'
+      - 'message: &f  Ваша награда &a200$'
+      - 'message: '
+  itemcraft_goldnugget:
+    type: item_craft
+    conditions:
+    - '%item% equals GOLD_NUGGET'
+    - '%luckperms_has_permission_skyblock.quest.done.21% equals no'
+    - '%luckperms_meta_skyblock.quest.done.21% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.21% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.21 %math_{luckperms_meta_skyblock.quest.done.21}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.21 %math_{luckperms_meta_skyblock.quest.done.21}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.21'
+      - 'console_command: money give %player% 300'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте золотой самородок'
+      - 'message: &f  Ваша награда &a300$'
+      - 'message: '
+  itemcraft_ironpickaxe:
+    type: item_craft
+    conditions:
+    - '%item% equals IRON_PICKAXE'
+    - '%luckperms_has_permission_skyblock.quest.done.22% equals no'
+    - '%luckperms_meta_skyblock.quest.done.22% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.22% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.22 %math_{luckperms_meta_skyblock.quest.done.22}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.22 %math_{luckperms_meta_skyblock.quest.done.22}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.22'
+      - 'console_command: money give %player% 400'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте железную кирку'
+      - 'message: &f  Ваша награда &a400$'
+      - 'message: '
+  itemcraft_compass:
+    type: item_craft
+    conditions:
+    - '%item% equals COMPASS'
+    - '%luckperms_has_permission_skyblock.quest.done.23% equals no'
+    - '%luckperms_meta_skyblock.quest.done.23% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.23% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.23 %math_{luckperms_meta_skyblock.quest.done.23}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.23 %math_{luckperms_meta_skyblock.quest.done.23}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.23'
+      - 'console_command: money give %player% 1000'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте компас'
+      - 'message: &f  Ваша награда &a1000$'
+      - 'message: '
+  itemcraft_ironaxe:
+    type: item_craft
+    conditions:
+    - '%item% equals IRON_AXE'
+    - '%luckperms_has_permission_skyblock.quest.done.24% equals no'
+    - '%luckperms_meta_skyblock.quest.done.24% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.24% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.24 %math_{luckperms_meta_skyblock.quest.done.24}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.24 %math_{luckperms_meta_skyblock.quest.done.24}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.24'
+      - 'console_command: money give %player% 500'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте железный топор'
+      - 'message: &f  Ваша награда &a500$'
+      - 'message: '
+  itemcraft_redstoneblock:
+    type: item_craft
+    conditions:
+    - '%item% equals REDSTONE_BLOCK'
+    - '%luckperms_has_permission_skyblock.quest.done.25% equals no'
+    - '%luckperms_meta_skyblock.quest.done.25% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.25% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.25 %math_{luckperms_meta_skyblock.quest.done.25}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.25 %math_{luckperms_meta_skyblock.quest.done.25}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.25'
+      - 'console_command: money give %player% 400'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте редстоуновый блок'
+      - 'message: &f  Ваша награда &a400$'
+      - 'message: '
+  itemcraft_goldblock:
+    type: item_craft
+    conditions:
+    - '%item% equals GOLD_BLOCK'
+    - '%luckperms_has_permission_skyblock.quest.done.26% equals no'
+    - '%luckperms_meta_skyblock.quest.done.26% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.26% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.26 %math_{luckperms_meta_skyblock.quest.done.26}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.26 %math_{luckperms_meta_skyblock.quest.done.26}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.26'
+      - 'console_command: money give %player% 500'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте золотой блок'
+      - 'message: &f  Ваша награда &a500$'
+      - 'message: '
+  itemcraft_lapisblock:
+    type: item_craft
+    conditions:
+    - '%item% equals LAPIS_BLOCK'
+    - '%luckperms_has_permission_skyblock.quest.done.27% equals no'
+    - '%luckperms_meta_skyblock.quest.done.27% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.27% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.27 %math_{luckperms_meta_skyblock.quest.done.27}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.27 %math_{luckperms_meta_skyblock.quest.done.27}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.27'
+      - 'console_command: money give %player% 600'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте золотой блок'
+      - 'message: &f  Ваша награда &a600$'
+      - 'message: '
+  itemcraft_bookshelf:
+    type: item_craft
+    conditions:
+    - '%item% equals BOOKSHELF'
+    - '%luckperms_has_permission_skyblock.quest.done.28% equals no'
+    - '%luckperms_meta_skyblock.quest.done.28% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.28% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.28 %math_{luckperms_meta_skyblock.quest.done.28}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.28 %math_{luckperms_meta_skyblock.quest.done.28}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.28'
+      - 'console_command: money give %player% 500'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте книжные полки'
+      - 'message: &f  Ваша награда &a500$'
+      - 'message: '
+  itemcraft_quartzblock:
+    type: item_craft
+    conditions:
+    - '%item% equals QUARTZ_BLOCK'
+    - '%luckperms_has_permission_skyblock.quest.done.29% equals no'
+    - '%luckperms_meta_skyblock.quest.done.29% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.29% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.29 %math_{luckperms_meta_skyblock.quest.done.29}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.29 %math_{luckperms_meta_skyblock.quest.done.29}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.29'
+      - 'console_command: money give %player% 400'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте кварцевый блок'
+      - 'message: &f  Ваша награда &a400$'
+      - 'message: '
+  itemcraft_diamondchestplate:
+    type: item_craft
+    conditions:
+    - '%item% equals DIAMOND_CHESTPLATE'
+    - '%luckperms_has_permission_skyblock.quest.done.30% equals no'
+    - '%luckperms_meta_skyblock.quest.done.30% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.30% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.30 %math_{luckperms_meta_skyblock.quest.done.30}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.30 %math_{luckperms_meta_skyblock.quest.done.30}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.30'
+      - 'console_command: money give %player% 700'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте алмазный нагрудник'
+      - 'message: &f  Ваша награда &a700$'
+      - 'message: '
+  itemcraft_ironsword:
+    type: item_craft
+    conditions:
+    - '%item% equals IRON_SWORD'
+    - '%luckperms_has_permission_skyblock.quest.done.31% equals no'
+    - '%luckperms_meta_skyblock.quest.done.31% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.31% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.31 %math_{luckperms_meta_skyblock.quest.done.31}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.31 %math_{luckperms_meta_skyblock.quest.done.31}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.31'
+      - 'console_command: money give %player% 500'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте железный меч'
+      - 'message: &f  Ваша награда &a500$'
+      - 'message: '
+  itemcraft_ironchestplate:
+    type: item_craft
+    conditions:
+    - '%item% equals IRON_CHESTPLATE'
+    - '%luckperms_has_permission_skyblock.quest.done.32% equals no'
+    - '%luckperms_meta_skyblock.quest.done.32% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.32% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.32 %math_{luckperms_meta_skyblock.quest.done.32}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.32 %math_{luckperms_meta_skyblock.quest.done.32}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.32'
+      - 'console_command: money give %player% 500'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте железный нагрудник'
+      - 'message: &f  Ваша награда &a500$'
+      - 'message: '
+  itemcraft_emeraldblock:
+    type: item_craft
+    conditions:
+    - '%item% equals EMERALD_BLOCK'
+    - '%luckperms_has_permission_skyblock.quest.done.33% equals no'
+    - '%luckperms_meta_skyblock.quest.done.33% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.33% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.33 %math_{luckperms_meta_skyblock.quest.done.33}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.33 %math_{luckperms_meta_skyblock.quest.done.33}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.33'
+      - 'console_command: money give %player% 1000'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте изумрудный блок'
+      - 'message: &f  Ваша награда &a1000$'
+      - 'message: '
+  itemcraft_furnace:
+    type: item_craft
+    conditions:
+    - '%item% equals FURNACE'
+    - '%luckperms_has_permission_skyblock.quest.done.34% equals no'
+    - '%luckperms_meta_skyblock.quest.done.34% < 1 execute action2'
+    - '%luckperms_meta_skyblock.quest.done.34% < 0 execute action'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.34 %math_{luckperms_meta_skyblock.quest.done.34}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.34 %math_{luckperms_meta_skyblock.quest.done.34}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.craft %math_{luckperms_meta_skyblock.quest.done.craft}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.34'
+      - 'console_command: money give %player% 400'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсоздайте изумрудный блок'
+      - 'message: &f  Ваша награда &a400$'
+      - 'message: '
+  blockbreak_1:
+    type: block_break
+    conditions:
+    - '%luckperms_has_permission_skyblock.quest.done.35% equals no'
+    - '%luckperms_meta_skyblock.quest.done.35% < 9 execute action'
+    - '%luckperms_meta_skyblock.quest.done.35% < 10 execute action2'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.35 %math_{luckperms_meta_skyblock.quest.done.35}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.35 %math_{luckperms_meta_skyblock.quest.done.35}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.blockbreak %math_{luckperms_meta_skyblock.quest.done.blockbreak}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.35'
+      - 'console_command: money give %player% 500'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсломайте 10 блоков'
+      - 'message: &f  Ваша награда &a500$'
+      - 'message: '
+  blockbreak_2:
+    type: block_break
+    conditions:
+    - '%luckperms_has_permission_skyblock.quest.done.36% equals no'
+    - '%luckperms_meta_skyblock.quest.done.36% < 99 execute action'
+    - '%luckperms_meta_skyblock.quest.done.36% < 100 execute action2'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.36 %math_{luckperms_meta_skyblock.quest.done.36}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.36 %math_{luckperms_meta_skyblock.quest.done.36}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.blockbreak %math_{luckperms_meta_skyblock.quest.done.blockbreak}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.36'
+      - 'console_command: money give %player% 3000'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсломайте 100 блоков'
+      - 'message: &f  Ваша награда &a3000$'
+      - 'message: '
+  blockbreak_3:
+    type: block_break
+    conditions:
+    - '%luckperms_has_permission_skyblock.quest.done.37% equals no'
+    - '%luckperms_meta_skyblock.quest.done.37% < 999 execute action'
+    - '%luckperms_meta_skyblock.quest.done.37% < 1000 execute action2'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.37 %math_{luckperms_meta_skyblock.quest.done.37}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.37 %math_{luckperms_meta_skyblock.quest.done.37}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.blockbreak %math_{luckperms_meta_skyblock.quest.done.blockbreak}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.37'
+      - 'console_command: money give %player% 6000'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aсломайте 1000 блоков'
+      - 'message: &f  Ваша награда &a6000$'
+      - 'message: '
+  playerkill_1:
+    type: player_kill
+    conditions:
+    - '%victim% equals ZOMBIE or %victim% equals ZOMBIEVILLAGER or %victim% equals
+      WITCH or %victim% equals GHAST or %victim% equals STRAY or %victim% equals BLAZE
+      or %victim% equals HUSK or %victim% equals CREEPER or %victim% equals MAGMACUBE
+      or %victim% equals SPIDER or %victim% equals CAVESPIDER or %victim% equals SKELETON
+      or %victim% equals WITHERSKELETON or %victim% equals SLIME or %victim% equals
+      GUARDIAN or %victim% equals ELDERGUARDIAN or %victim% equals DROWNED or %victim%
+      equals SILVERFISH or %victim% equals ENDERMITE'
+    - '%luckperms_has_permission_skyblock.quest.done.38% equals no'
+    - '%luckperms_meta_skyblock.quest.done.38% < 9 execute action'
+    - '%luckperms_meta_skyblock.quest.done.38% < 10 execute action2'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.38 %math_{luckperms_meta_skyblock.quest.done.38}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.38 %math_{luckperms_meta_skyblock.quest.done.38}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.kill %math_{luckperms_meta_skyblock.quest.done.kill}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.38'
+      - 'console_command: money give %player% 3000'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aубейте 10 монстров'
+      - 'message: &f  Ваша награда &a3000$'
+      - 'message: '
+  playerkill_2:
+    type: player_kill
+    conditions:
+    - '%victim% equals ZOMBIE or %victim% equals ZOMBIEVILLAGER or %victim% equals
+      WITCH or %victim% equals GHAST or %victim% equals STRAY or %victim% equals BLAZE
+      or %victim% equals HUSK or %victim% equals CREEPER or %victim% equals MAGMACUBE
+      or %victim% equals SPIDER or %victim% equals CAVESPIDER or %victim% equals SKELETON
+      or %victim% equals WITHERSKELETON or %victim% equals SLIME or %victim% equals
+      GUARDIAN or %victim% equals ELDERGUARDIAN or %victim% equals DROWNED or %victim%
+      equals SILVERFISH or %victim% equals ENDERMITE'
+    - '%luckperms_has_permission_skyblock.quest.done.39% equals no'
+    - '%luckperms_meta_skyblock.quest.done.39% < 99 execute action'
+    - '%luckperms_meta_skyblock.quest.done.39% < 100 execute action2'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.39 %math_{luckperms_meta_skyblock.quest.done.39}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.39 %math_{luckperms_meta_skyblock.quest.done.39}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.kill %math_{luckperms_meta_skyblock.quest.done.kill}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.39'
+      - 'console_command: money give %player% 10000'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aубейте 100 монстров'
+      - 'message: &f  Ваша награда &a10000$'
+      - 'message: '
+  playerkill_3:
+    type: player_kill
+    conditions:
+    - '%victim% equals ZOMBIE or %victim% equals ZOMBIEVILLAGER or %victim% equals
+      WITCH or %victim% equals GHAST or %victim% equals STRAY or %victim% equals BLAZE
+      or %victim% equals HUSK or %victim% equals CREEPER or %victim% equals MAGMACUBE
+      or %victim% equals SPIDER or %victim% equals CAVESPIDER or %victim% equals SKELETON
+      or %victim% equals WITHERSKELETON or %victim% equals SLIME or %victim% equals
+      GUARDIAN or %victim% equals ELDERGUARDIAN or %victim% equals DROWNED or %victim%
+      equals SILVERFISH or %victim% equals ENDERMITE'
+    - '%luckperms_has_permission_skyblock.quest.done.40% equals no'
+    - '%luckperms_meta_skyblock.quest.done.40% < 999 execute action'
+    - '%luckperms_meta_skyblock.quest.done.40% < 1000 execute action2'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.40 %math_{luckperms_meta_skyblock.quest.done.40}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.40 %math_{luckperms_meta_skyblock.quest.done.40}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.kill %math_{luckperms_meta_skyblock.quest.done.kill}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.40'
+      - 'console_command: money give %player% 30000'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aубейте 1000 монстров'
+      - 'message: &f  Ваша награда &a30000$'
+      - 'message: '
+  playerkillplayer_1:
+    type: player_kill
+    conditions:
+    - '%victim% equals PLAYER'
+    - '%luckperms_has_permission_skyblock.quest.done.41% equals no'
+    - '%luckperms_meta_skyblock.quest.done.41% < 0 execute action'
+    - '%luckperms_meta_skyblock.quest.done.41% < 1 execute action2'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.41 %math_{luckperms_meta_skyblock.quest.done.41}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.41 %math_{luckperms_meta_skyblock.quest.done.41}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.pkill %math_{luckperms_meta_skyblock.quest.done.pkill}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.41'
+      - 'console_command: money give %player% 100'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aубейте 1 игрока'
+      - 'message: &f  Ваша награда &a100$'
+      - 'message: '
+  playerkillplayer_2:
+    type: player_kill
+    conditions:
+    - '%victim% equals PLAYER'
+    - '%luckperms_has_permission_skyblock.quest.done.42% equals no'
+    - '%luckperms_meta_skyblock.quest.done.42% < 9 execute action'
+    - '%luckperms_meta_skyblock.quest.done.42% < 10 execute action2'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.42 %math_{luckperms_meta_skyblock.quest.done.42}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.42 %math_{luckperms_meta_skyblock.quest.done.42}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.pkill %math_{luckperms_meta_skyblock.quest.done.pkill}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.42'
+      - 'console_command: money give %player% 500'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aубейте 10 игроков'
+      - 'message: &f  Ваша награда &a500$'
+      - 'message: '
+  playerkillplayer_3:
+    type: player_kill
+    conditions:
+    - '%victim% equals PLAYER'
+    - '%luckperms_has_permission_skyblock.quest.done.43% equals no'
+    - '%luckperms_meta_skyblock.quest.done.43% < 99 execute action'
+    - '%luckperms_meta_skyblock.quest.done.43% < 100 execute action2'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.43 %math_{luckperms_meta_skyblock.quest.done.43}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.43 %math_{luckperms_meta_skyblock.quest.done.43}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.pkill %math_{luckperms_meta_skyblock.quest.done.pkill}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.43'
+      - 'console_command: money give %player% 5000'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aубейте 100 игроков'
+      - 'message: &f  Ваша награда &a5000$'
+      - 'message: '
+  playerkillplayer_4:
+    type: player_kill
+    conditions:
+    - '%victim% equals PLAYER'
+    - '%luckperms_has_permission_skyblock.quest.done.44% equals no'
+    - '%luckperms_meta_skyblock.quest.done.44% < 999 execute action'
+    - '%luckperms_meta_skyblock.quest.done.44% < 1000 execute action2'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.44 %math_{luckperms_meta_skyblock.quest.done.44}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.44 %math_{luckperms_meta_skyblock.quest.done.44}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.pkill %math_{luckperms_meta_skyblock.quest.done.pkill}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.44'
+      - 'console_command: money give %player% 15000'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aубейте 1000 игроков'
+      - 'message: &f  Ваша награда &a15000$'
+      - 'message: '
+  playerkillplayer_5:
+    type: player_kill
+    conditions:
+    - '%victim% equals PLAYER'
+    - '%luckperms_has_permission_skyblock.quest.done.45% equals no'
+    - '%luckperms_meta_skyblock.quest.done.45% < 1999 execute action'
+    - '%luckperms_meta_skyblock.quest.done.45% < 2000 execute action2'
+    actions:
+      action:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.45 %math_{luckperms_meta_skyblock.quest.done.45}+1%'
+      action2:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.45 %math_{luckperms_meta_skyblock.quest.done.45}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.pkill %math_{luckperms_meta_skyblock.quest.done.pkill}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.45'
+      - 'console_command: money give %player% 30000'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aубейте 2000 игроков'
+      - 'message: &f  Ваша награда &a30000$'
+      - 'message: '
+  repetitivesizeisland:
+    type: repetitive
+    repetitive_time: 10
+    conditions:
+    - '%luckperms_has_permission_skyblock.quest.done.48% equals no'
+    - '%fabledskyblock_island_size% == 350'
+    actions:
+      default:
+      - 'console_command: lp user %player% meta set skyblock.quest.done.48 %math_{luckperms_meta_skyblock.quest.done.48}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%'
+      - 'console_command: lp user %player% meta set skyblock.quest.done.other %math_{luckperms_meta_skyblock.quest.done.other}+1%'
+      - 'console_command: lp user %player% meta set quest.done %math_{luckperms_meta_quest.done}+1%'
+      - 'console_command: lp user %player% perm set skyblock.quest.done.48'
+      - 'console_command: money give %player% 20000'
+      - 'message: '
+      - 'message: &e&l  Задание выполнено!'
+      - 'message: '
+      - 'message: &f  Вы выполнили задание &aрасширьте границы до максимального'
+      - 'message: &f  Ваша награда &a20000$'
+      - 'message: '
+

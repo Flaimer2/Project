@@ -1,0 +1,259 @@
+menu:
+  title: '&0Особое оружие и броня (Страница {{math add [ page get 1 ]}}/{{math add [ page max 1 ]}})'
+  virtual: true
+
+layout: |-
+  #########
+  #       #
+  #       #
+  #       #
+  #########
+  P#M#B###N
+
+items:
+  P:
+    material: arrow
+    name: '&aПредыдущая страница'
+    action: |-
+      page previous
+      menu title update
+      icons refresh
+    sub:
+      - rule: 'page isFirst'
+        inherit: false
+        material: air
+  N:
+    material: arrow
+    name: '&aСледующая страница'
+    action: |-
+      page next
+      menu title update
+      icons refresh
+    sub:
+      - rule: 'page isLast'
+        inherit: false
+        material: air
+  # Воздух
+  '#':
+    material: air
+  M:
+    material: GOLD_INGOT
+    update: 60
+    name: '&fВаш баланс'
+    lore: '&a%vault_eco_balance_fixed%₵'
+  B:
+    material: arrow
+    name: '&aВернуться в главное меню'
+    action: menu switch MythicalTrader
+
+generator:
+  output:
+    name: '{{ element Name }}'
+    json: '{{ element Material }}'
+    flag: HIDE_ATTRIBUTES
+    lore: |-
+      {{if check element Description == null then " " else element Description}}
+      &fПокупка: &a{{ type int math mul [ element Price math sub [ 1 papi "%mythicaltrader_current_discount%" ] ] }}₵ &7{{if check papi "%mythicaltrader_current_level%" == 1 then " " else inline "&m({{ element Price }}₵)" }}
+
+      &aНажмите, чтобы купить!
+    enhancedLore: true
+    action: |-
+      ctx set 'fromMenu' to 'Trader-Armor'
+      ctx set 'itemName' to element Name
+      ctx set 'itemMaterial' to element Material
+      ctx set 'giveCommand' to element GiveCommand
+      ctx set 'price' to element Price
+      ctx set 'amount' to 1
+      ctx set 'minAmount' to 1
+      ctx set 'maxAmount' to element MaxAmount
+      menu switch Shop-PurchaseWithJson
+  elements:
+    - Material: '{"type":"DIAMOND_SWORD","meta":{"ench":[{"lvl":{"type":"SHORT","data":5},"id":{"type":"SHORT","data":19}}],"display":{"Name":{"type":"STRING","data":"§dВышибала"}}}}'
+      Name: '&aВышибала'
+      Description: "\\n&fС этим мечом вы будете\\n&fоткидывать врагов очень далеко!\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% diamond_sword {{&amount}} 0 {display:{Name:"&dВышибала"},ench:[{id:19,lvl:5}]}'
+      Price: 39
+      MaxAmount: 1
+    - Material: '{"type":"DIAMOND_SWORD","meta":{"Unbreakable":{"type":"BYTE","data":1},"display":{"Name":{"type":"STRING","data":"§dНесокрушимый меч"}}}}'
+      Name: '&aНесокрушимый меч'
+      Description: "&fЭтот меч сделан из очень редких\\n&fматериалов. Его невозможно сломать!\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% diamond_sword {{&amount}} 0 {Unbreakable:1,display:{Name:"&dНесокрушимый меч"}}'
+      Price: 69
+      MaxAmount: 1
+    - Material: '{"type":"DIAMOND_SWORD","meta":{"ench":[{"lvl":{"type":"SHORT","data":6},"id":{"type":"SHORT","data":16}}],"display":{"Name":{"type":"STRING","data":"§dПожиратель душ"}}}}'
+      Name: '&aПожиратель душ'
+      Description: "\\n&fПожиратель душ был найден в\\n&fсундуке грабницы. Он очень острый!\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% diamond_sword {{&amount}} 0 {display:{Name:"&dПожиратель душ"},ench:[{id:16,lvl:6}]}'
+      Price: 99
+      MaxAmount: 1
+    - Material: '{"type":"DIAMOND_SWORD","meta":{"ench":[{"lvl":{"type":"SHORT","data":5},"id":{"type":"SHORT","data":21}}],"display":{"Name":{"type":"STRING","data":"§dМеч неизвестного охотника"}}}}'
+      Name: '&aМеч неизвестного охотника'
+      Description: "\\n&fДанный меч был найден в лесу\\n&fпри странных обстоятельствах\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% diamond_sword {{&amount}} 0 {display:{Name:"&dМеч неизвестного охотника"},ench:[{id:21,lvl:5}]}'
+      Price: 89
+      MaxAmount: 1
+    - Material: '{"type":"IRON_SWORD","meta":{"ench":[{"lvl":{"type":"INT","data":3},"id":{"type":"INT","data":20}}],"display":{"Name":{"type":"STRING","data":"§dМеч дьявола"}}}}'
+      Name: '&aМеч дьявола'
+      Description: "\\n&fОчень хорошо подходит,\\n&fчтобы кого-то поджечь!\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% iron_sword {{&amount}} 0 {display:{Name:"&dМеч дьявола"},ench:[{id:20,lvl:3}]}'
+      Price: 81
+      MaxAmount: 1
+    - Material: '{"type":"FISHING_ROD","meta":{"ench":[{"lvl":{"type":"SHORT","data":5},"id":{"type":"SHORT","data":61}}],"display":{"Name":{"type":"STRING","data":"§dУдочка Посейдона"}}}}'
+      Name: '&aУдочка Посейдона'
+      Description: "\\n&fДанная удочка была найдена во\\n&fвремя экспедиции. Она странная...\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% fishing_rod {{&amount}} 0 {display:{Name:"&dУдочка Посейдона"},ench:[{id:61,lvl:5}]}'
+      Price: 54
+      MaxAmount: 1
+    - Material: '{"type":"FISHING_ROD","meta":{"ench":[{"lvl":{"type":"SHORT","data":5},"id":{"type":"SHORT","data":62}}],"display":{"Name":{"type":"STRING","data":"§dУдочка с особой приманкой"}}}}'
+      Name: '&aУдочка с особой приманкой'
+      Description: "&fНа эту удочку приплывают\\n&fвсе рыбы в воде!\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% fishing_rod {{&amount}} 0 {display:{Name:"&dУдочка с особой приманкой"},ench:[{id:62,lvl:5}]}'
+      Price: 46
+      MaxAmount: 1
+    - Material: '{"type":"FISHING_ROD","meta":{"ench":[],"Unbreakable":{"type":"BYTE","data":1},"display":{"Name":{"type":"STRING","data":"§dНесокрушимая удочка"}}}}'
+      Name: '&aНесокрушимая удочка'
+      Description: "&fЭта удочка сделана из очень редких\\n&fматериалов. Её невозможно сломать!\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% fishing_rod {{&amount}} 0 {Unbreakable:1,display:{Name:"&dНесокрушимая удочка"},ench:[]}'
+      Price: 41
+      MaxAmount: 1
+    - Material: '{"type":"DIAMOND_AXE","meta":{"ench":[{"lvl":{"type":"SHORT","data":4},"id":{"type":"SHORT","data":35}}],"display":{"Name":{"type":"STRING","data":"§dТопор удачи"}}}}'
+      Name: '&aТопор удачи'
+      Description: "\\n&fЭтот топор приносит удачу\\n&fвладельцу. Он очень полезный!\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% diamond_axe {{&amount}} 0 {display:{Name:"&dТопор удачи"},ench:[{id:35,lvl:4}]}'
+      Price: 61
+      MaxAmount: 1
+    - Material: '{"type":"GOLD_AXE","meta":{"ench":[{"lvl":{"type":"SHORT","data":5},"id":{"type":"SHORT","data":32}},{"lvl":{"type":"SHORT","data":5},"id":{"type":"SHORT","data":34}}],"display":{"Name":{"type":"STRING","data":"§dТопор дровосека"}}}}'
+      Name: '&aТопор дровосека'
+      Description: "\\n&fДровосек одолжил мне свой\\n&fтопор... А теперь он здесь, хах\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% golden_axe {{&amount}} 0 {display:{Name:"&dТопор дровосека"},ench:[{id:32,lvl:5},{id:34,lvl:5}]}'
+      Price: 49
+      MaxAmount: 1
+    - Material: '{"type":"IRON_AXE","meta":{"ench":[],"Unbreakable":{"type":"BYTE","data":1},"display":{"Name":{"type":"STRING","data":"§dНесокрушимый топор"}}}}'
+      Name: '&aНесокрушимый топор'
+      Description: "&fЭтот топор сделан из очень редких\\n&fматериалов. Его невозможно сломать!\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% iron_axe {{&amount}} 0 {Unbreakable:1,display:{Name:"&dНесокрушимый топор"},ench:[]}'
+      Price: 50
+      MaxAmount: 1
+    - Material: '{"type":"DIAMOND_PICKAXE","meta":{"ench":[{"lvl":{"type":"SHORT","data":4},"id":{"type":"SHORT","data":35}}],"display":{"Name":{"type":"STRING","data":"§dКирка удачи"}}}}'
+      Name: '&aКирка удачи'
+      Description: "\\n&fЭта кирка приносит удачу\\n&fвладельцу. Она очень полезная!\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% diamond_pickaxe {{&amount}} 0 {display:{Name:"&dКирка удачи"},ench:[{id:35,lvl:4}]}'
+      Price: 149
+      MaxAmount: 1
+    - Material: '{"type":"GOLD_PICKAXE","meta":{"ench":[{"lvl":{"type":"SHORT","data":5},"id":{"type":"SHORT","data":32}},{"lvl":{"type":"SHORT","data":5},"id":{"type":"SHORT","data":34}}],"display":{"Name":{"type":"STRING","data":"§dКирка шахтёра"}}}}'
+      Name: '&aКирка шахтёра'
+      Description: "\\n&fЭта кирка была найдена в шахте.\\n&fНаверное, это кирка шахтёра\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% golden_pickaxe {{&amount}} 0 {display:{Name:"&dКирка шахтёра"},ench:[{id:32,lvl:5},{id:34,lvl:5}]}'
+      Price: 104
+      MaxAmount: 1
+    - Material: '{"type":"IRON_PICKAXE","meta":{"ench":[],"Unbreakable":{"type":"BYTE","data":1},"display":{"Name":{"type":"STRING","data":"§dНесокрушимая кирка"}}}}'
+      Name: '&aНесокрушимая кирка'
+      Description: "&fЭта кирка сделана из очень редких\\n&fматериалов. Её невозможно сломать!\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% iron_pickaxe {{&amount}} 0 {Unbreakable:1,display:{Name:"&dНесокрушимая кирка"},ench:[]}'
+      Price: 45
+      MaxAmount: 1
+    - Material: '{"type":"BOW","meta":{"ench":[{"lvl":{"type":"INT","data":6},"id":{"type":"INT","data":48}}],"display":{"Name":{"type":"STRING","data":"§dНебесная ярость"}}}}'
+      Name: '&aНебесная ярость'
+      Description: "\\n&fУ этого лука очень странная тетива...\\n&fЭтот лук наносит значительный урон!\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% bow {{&amount}} 0 {display:{Name:"&dНебесная ярость"},ench:[{id:48,lvl:6}]}'
+      Price: 89
+      MaxAmount: 1
+    - Material: '{"type":"BOW","meta":{"ench":[{"lvl":{"type":"INT","data":4},"id":{"type":"INT","data":34}},{"lvl":{"type":"INT","data":1},"id":{"type":"INT","data":50}},{"lvl":{"type":"INT","data":1},"id":{"type":"INT","data":51}}],"display":{"Name":{"type":"STRING","data":"§dЛук Феникса"}}}}'
+      Name: '&aЛук Феникса'
+      Description: "\\n&fДанный лук способен поджигать\\n&fврага и имеет бесконечные стрелы\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% bow {{&amount}} 0 {display:{Name:"&dЛук Феникса"},ench:[{id:50,lvl:1},{id:51,lvl:1},{id:34,lvl:4}]}'
+      Price: 81
+      MaxAmount: 1
+    - Material: '{"type":"BOW","meta":{"ench":[{"lvl":{"type":"INT","data":4},"id":{"type":"INT","data":34}},{"lvl":{"type":"INT","data":3},"id":{"type":"INT","data":49}}],"display":{"Name":{"type":"STRING","data":"§dУдар тени"}}}}'
+      Name: '&aУдар тени'
+      Description: "\\n&fС этим луком вы сможете\\n&fочень сильно откинуть врага!\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% bow {{&amount}} 0 {display:{Name:"&dУдар тени"},ench:[{id:49,lvl:3},{id:34,lvl:4}]}'
+      Price: 74
+      MaxAmount: 1
+    - Material: '{"type":"FLINT_AND_STEEL","meta":{"ench":[],"Unbreakable":{"type":"BYTE","data":1},"display":{"Name":{"type":"STRING","data":"§dНесокрушимое огниво"}}}}'
+      Name: '&aНесокрушимое огниво'
+      Description: "&fЭто огниво сделано из очень редких\\n&fматериалов. Его невозможно сломать!\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% flint_and_steel {{&amount}} 0 {Unbreakable:1,display:{Name:"&dНесокрушимое огниво"},ench:[]}'
+      Price: 19
+      MaxAmount: 1
+    - Material: '{"type":"IRON_CHESTPLATE","meta":{"ench":[{"lvl":{"type":"SHORT","data":5},"id":{"type":"SHORT","data":0}}],"display":{"Name":{"type":"STRING","data":"§dКак за каменной стеной"}}}}'
+      Name: '&aКак за каменной стеной'
+      Description: "\\n&fНагрудник выкован из особого\\n&fматериала. Он хорошо защищает!\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% iron_chestplate {{&amount}} 0 {display:{Name:"&dКак за каменной стеной"},ench:[{id:0,lvl:5}]}'
+      Price: 55
+      MaxAmount: 1
+    - Material: '{"type":"DIAMOND_HELMET","meta":{"ench":[{"lvl":{"type":"INT","data":4},"id":{"type":"INT","data":7}}],"display":{"Name":{"type":"STRING","data":"§dКолючий, как ёж"}}}}'
+      Name: '&aКолючий, как ёж'
+      Description: "\\n&fВ этой броне вас все\\n&fбудут бояться трогать!\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% diamond_helmet {{&amount}} 0 {display:{Name:"&dКолючий, как ёж"},ench:[{id:7,lvl:4}]}'
+      Price: 31
+      MaxAmount: 1
+    - Material: '{"type":"DIAMOND_CHESTPLATE","meta":{"ench":[{"lvl":{"type":"INT","data":4},"id":{"type":"INT","data":7}}],"display":{"Name":{"type":"STRING","data":"§dКолючий, как ёж"}}}}'
+      Name: '&aКолючий, как ёж'
+      Description: "\\n&fВ этой броне вас все\\n&fбудут бояться трогать!\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% diamond_chestplate {{&amount}} 0 {display:{Name:"&dКолючий, как ёж"},ench:[{id:7,lvl:4}]}'
+      Price: 57
+      MaxAmount: 1
+    - Material: '{"type":"DIAMOND_LEGGINGS","meta":{"ench":[{"lvl":{"type":"INT","data":4},"id":{"type":"INT","data":7}}],"display":{"Name":{"type":"STRING","data":"§dКолючий, как ёж"}}}}'
+      Name: '&aКолючий, как ёж'
+      Description: "\\n&fВ этой броне вас все\\n&fбудут бояться трогать!\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% diamond_leggings {{&amount}} 0 {display:{Name:"&dКолючий, как ёж"},ench:[{id:7,lvl:4}]}'
+      Price: 45
+      MaxAmount: 1
+    - Material: '{"type":"DIAMOND_BOOTS","meta":{"ench":[{"lvl":{"type":"INT","data":4},"id":{"type":"INT","data":7}}],"display":{"Name":{"type":"STRING","data":"§dКолючий, как ёж"}}}}'
+      Name: '&aКолючий, как ёж'
+      Description: "\\n&fВ этой броне вас все\\n&fбудут бояться трогать!\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% diamond_boots {{&amount}} 0 {display:{Name:"&dКолючий, как ёж"},ench:[{id:7,lvl:4}]}'
+      Price: 36
+      MaxAmount: 1
+    - Material: '{"type":"IRON_HELMET","meta":{"ench":[],"Unbreakable":{"type":"BYTE","data":1},"display":{"Name":{"type":"STRING","data":"§dНесокрушимый шлем"}}}}'
+      Name: '&aНесокрушимый шлем'
+      Description: "&fЭта броня сделана из очень редких\\n&fматериалов. Её невозможно сломать!\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% iron_helmet {{&amount}} 0 {Unbreakable:1,display:{Name:"&dНесокрушимый шлем"},ench:[]}'
+      Price: 27
+      MaxAmount: 1
+    - Material: '{"type":"IRON_CHESTPLATE","meta":{"ench":[],"Unbreakable":{"type":"INT","data":1},"display":{"Name":{"type":"STRING","data":"§dНесокрушимый нагрудник"}}}}'
+      Name: '&aНесокрушимый нагрудник'
+      Description: "&fЭта броня сделана из очень редких\\n&fматериалов. Её невозможно сломать!\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% iron_chestplate {{&amount}} 0 {Unbreakable:1,display:{Name:"&dНесокрушимый нагрудник"},ench:[]}'
+      Price: 53
+      MaxAmount: 1
+    - Material: '{"type":"IRON_LEGGINGS","meta":{"ench":[],"Unbreakable":{"type":"INT","data":1},"display":{"Name":{"type":"STRING","data":"§dНесокрушимые поножи"}}}}'
+      Name: '&aНесокрушимые поножи'
+      Description: "&fЭта броня сделана из очень редких\\n&fматериалов. Её невозможно сломать!\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% iron_leggings {{&amount}} 0  {Unbreakable:1,display:{Name:"&dНесокрушимые поножи"},ench:[]}'
+      Price: 41
+      MaxAmount: 1
+    - Material: '{"type":"IRON_BOOTS","meta":{"ench":[],"Unbreakable":{"type":"INT","data":1},"display":{"Name":{"type":"STRING","data":"§dНесокрушимые ботинки"}}}}'
+      Name: '&aНесокрушимые ботинки'
+      Description: "&fЭта броня сделана из очень редких\\n&fматериалов. Её невозможно сломать!\\n"
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% iron_boots {{&amount}} 0 {Unbreakable:1,display:{Name:"&dНесокрушимые ботинки"},ench:[]}'
+      Price: 32
+      MaxAmount: 1

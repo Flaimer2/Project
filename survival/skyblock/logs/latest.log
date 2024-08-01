@@ -1,0 +1,1351 @@
+[23:28:41] [Server thread/INFO]: Starting minecraft server version 1.12.2
+[23:28:41] [Server thread/INFO]: Loading properties
+[23:28:41] [Server thread/WARN]: resource-pack-hash is deprecated and found along side resource-pack-sha1. resource-pack-hash will be ignored.
+[23:28:41] [Server thread/INFO]: Default game type: SURVIVAL
+[23:28:41] [Server thread/INFO]: This server is running Paper version git-Paper-4466fe0 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
+[23:28:41] [Server thread/INFO]: Using 4 threads for Netty based IO
+[23:28:41] [Server thread/INFO]: Debug logging is disabled
+[23:28:41] [Server thread/INFO]: Generating keypair
+[23:28:41] [Server thread/INFO]: Starting Minecraft server on 127.0.0.1:21501
+[23:28:43] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[23:28:44] [Server thread/INFO]: Loading library org.jetbrains.kotlin:kotlin-stdlib-common:1.8.20
+[23:28:44] [Server thread/INFO]: Loading library org.jetbrains.kotlin:kotlin-stdlib:1.8.20
+[23:28:44] [Server thread/INFO]: Loading library org.jetbrains:annotations:13.0
+[23:28:46] [ForkJoinPool.commonPool-worker-9/INFO]: Loading library org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.5.0-RC
+[23:28:46] [ForkJoinPool.commonPool-worker-15/INFO]: Loading library org.apache.commons:commons-jexl3:3.2.1
+[23:28:46] [ForkJoinPool.commonPool-worker-5/INFO]: Loading library org.yaml:snakeyaml:1.32
+[23:28:46] [ForkJoinPool.commonPool-worker-9/INFO]: Loading library org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.5.0-RC
+[23:28:46] [ForkJoinPool.commonPool-worker-11/INFO]: Loading library com.zaxxer:HikariCP:4.0.3
+[23:28:46] [ForkJoinPool.commonPool-worker-11/INFO]: Loading library org.slf4j:slf4j-api:2.1.0-alpha1
+[23:28:46] [ForkJoinPool.commonPool-worker-5/INFO]: Loading library com.typesafe:config:1.4.2
+[23:28:46] [ForkJoinPool.commonPool-worker-15/INFO]: Loading library com.mojang:datafixerupper:4.0.26
+[23:28:46] [ForkJoinPool.commonPool-worker-5/INFO]: Loading library com.electronwill.night-config:core:3.6.6
+[23:28:47] [ForkJoinPool.commonPool-worker-5/INFO]: Loading library com.electronwill.night-config:toml:3.6.6
+[23:28:47] [ForkJoinPool.commonPool-worker-5/INFO]: Loading library com.electronwill.night-config:json:3.6.6
+[23:28:47] [ForkJoinPool.commonPool-worker-5/INFO]: Loading library com.electronwill.night-config:hocon:3.6.6
+[23:28:48] [Server thread/INFO]: [VoidTeleport] Loading VoidTeleport v2.4.1
+[23:28:48] [Server thread/INFO]: [LocaleLib] Loading LocaleLib v2.1
+[23:28:48] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.10.10
+[23:28:48] [Server thread/INFO]: [MTBackpack] Loading MTBackpack v1.18.0
+[23:28:48] [Server thread/INFO]: [AntiRelog] Loading AntiRelog v2.1
+[23:28:48] [Server thread/INFO]: [OldCombatMechanics] Loading OldCombatMechanics v1.11.0
+[23:28:48] [Server thread/INFO]: [ServerUtils] Loading ServerUtils v3.5.3
+[23:28:48] [Server thread/INFO]: [MythicalTrader] Loading MythicalTrader v1.0-alpha
+[23:28:48] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.0.1
+[23:28:48] [Server thread/INFO]: [ViaVersion] ViaVersion 5.0.1 is now loaded. Waiting for boot (late-bind).
+[23:28:48] [Server thread/INFO]: [NBTAPI] Loading NBTAPI v2.8.0
+[23:28:48] [Server thread/INFO]: [NBTAPI] bStats disabled
+[23:28:48] [Server thread/INFO]: [NBTAPI] Update check disabled
+[23:28:48] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Spigot: v1_12_R1! Trying to find NMS support
+[23:28:48] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_12_R1' loaded!
+[23:28:48] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Gson: class com.google.gson.Gson
+[23:28:48] [Server thread/INFO]: [TimeLock] Loading TimeLock v0.5
+[23:28:48] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.0.1
+[23:28:48] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.117
+[23:28:49] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1.9-SNAPSHOT;
+[23:28:49] [Server thread/INFO]: [DisableJoinMessage] Loading DisableJoinMessage v1.0
+[23:28:49] [Server thread/INFO]: [ConditionalEvents] Loading ConditionalEvents v3.14.2
+[23:28:49] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v5.0.0-SNAPSHOT-b587
+[23:28:51] [Server thread/INFO]: [CommandForward] Loading CommandForward v0.5.0
+[23:28:51] [Server thread/INFO]: [Vault] Loading Vault v1.7.3-b131
+[23:28:51] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v4.0.0
+[23:28:51] [Server thread/INFO]: [BetterSocial] Loading BetterSocial v1.3-BETA
+[23:28:51] [Server thread/INFO]: [LastLoginAPI] Loading LastLoginAPI v1.7.4
+[23:28:51] [Server thread/INFO]: [LastLoginAPI] Loading libraries of LastLoginAPI v1.7.4, this may take a while
+[23:28:51] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for jar-relocator
+[23:28:51] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for asm
+[23:28:51] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for asm-commons
+[23:28:51] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for gson
+[23:28:51] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for jdbi3-core
+[23:28:51] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for geantyref
+[23:28:51] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for caffeine
+[23:28:51] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for jdbi3-stringtemplate4
+[23:28:51] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for ST4
+[23:28:51] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for antlr-runtime
+[23:28:51] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for jdbi3-sqlobject
+[23:28:51] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for slf4j-api
+[23:28:52] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for slf4j-simple
+[23:28:52] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for HikariCP
+[23:28:52] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for mariadb-java-client
+[23:28:52] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for mysql-connector-j
+[23:28:52] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for postgresql
+[23:28:52] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for h2
+[23:28:52] [Server thread/INFO]: [AlonsoLevels] Loading AlonsoLevels v2.2.3-BETA-PRO
+[23:28:52] [Server thread/INFO]: [InteractiveBoard] Loading InteractiveBoard v14.4
+[23:28:52] [Server thread/INFO]: [TigerReports] Loading TigerReports v4.13.1
+[23:28:52] [Server thread/INFO]: [Chatty] Loading Chatty v2.19.14
+[23:28:52] [Server thread/INFO]: [SlotMachineGUI] Loading SlotMachineGUI v1.0.7
+[23:28:52] [Server thread/INFO]: [FabledSkyBlock] Loading FabledSkyBlock vBuild-71
+[23:28:52] [Server thread/INFO]: [HeadDatabase] Loading HeadDatabase v4.13.4
+[23:28:52] [Server thread/INFO]: [XConomy] Loading XConomy v2.25.15
+[23:28:52] [Server thread/INFO]: [SnapiLibrary] Loading SnapiLibrary v2.0.0
+[23:28:53] [Server thread/INFO]: [SuperLobby] Loading SuperLobby v4.7.5
+[23:28:53] [Server thread/INFO]: [SnapiSeller] Loading SnapiSeller v1.0-alpha
+[23:28:53] [Server thread/INFO]: [ajLeaderboards] Loading ajLeaderboards v2.3.0-mysqlfix
+[23:28:53] [Server thread/INFO]: [CrazyAuctions] Loading CrazyAuctions v1.2.7
+[23:28:53] [Server thread/INFO]: [TAB] Loading TAB v4.0.3
+[23:28:53] [Server thread/INFO]: [SnapiClans] Loading SnapiClans v3.0.0
+[23:28:53] [Server thread/INFO]: [SnapiCooperation] Loading SnapiCooperation v1.0.0
+[23:28:53] [Server thread/INFO]: [Invero] Loading Invero v1.0.8-pre-1
+[23:28:53] [Server thread/INFO]: [SnapiProfile] Loading SnapiProfile v1.0.0
+[23:28:53] [Server thread/INFO]: [SnapiBalancer] Loading SnapiBalancer v1.5
+[23:28:53] [Server thread/INFO]: [SnapiCoin] Loading SnapiCoin v1.0.0
+[23:28:53] [Server thread/INFO]: [DecentHolograms] Loading DecentHolograms v2.8.6
+[23:28:53] [Server thread/INFO]: [CrazyCrates] Loading CrazyCrates v1.10.2.2
+[23:28:53] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v6.2.2-SNAPSHOT
+[23:28:53] [Server thread/INFO]: [Citizens] Loading Citizens v2.0.30-SNAPSHOT (build 2881)
+[23:28:53] [Server thread/INFO]: [WGRegionEvents] Loading WGRegionEvents v1.1
+[23:28:53] [Server thread/INFO]: [ItemJoin] Loading ItemJoin v6.0.7-RELEASE-b995
+[23:28:53] [Server thread/INFO]: [SnapiArena] Loading SnapiArena v1.0.0
+[23:28:53] [Server thread/INFO]: [CMILib] Loading CMILib v1.0.2.13
+[23:28:53] [Server thread/INFO]: [CMI] Loading CMI v9.0.0.4
+[23:28:53] [Server thread/INFO]: [UltimateStacker] Loading UltimateStacker v2.1.7
+[23:28:53] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[23:28:53] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.117
+[23:28:54] [Server thread/INFO]:         __    
+[23:28:54] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.117
+[23:28:54] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[23:28:54] [Server thread/INFO]: 
+[23:28:54] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[23:28:55] [Server thread/INFO]: [LuckPerms] Loading storage provider... [MARIADB]
+[23:28:55] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Starting...
+[23:28:55] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Start completed.
+[23:28:55] [Server thread/INFO]: [LuckPerms] Loading messaging service... [REDIS]
+[23:28:56] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[23:28:56] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[23:28:56] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 2455ms)
+[23:28:56] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.0.0-SNAPSHOT-b587
+[23:28:56] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[23:28:56] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[23:28:56] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[23:28:56] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[23:28:56] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.0
+[23:28:56] [Server thread/INFO]: [XConomy] Enabling XConomy v2.25.15
+[23:28:56] [Server thread/INFO]: [XConomy] UUID-Mode: Default
+[23:28:56] [Server thread/INFO]: [XConomy] Language: RUSSIAN
+[23:28:56] [Server thread/INFO]: [XConomy] Метод сохранения - MySQL
+[23:28:57] [Server thread/INFO]: [XConomy] Успешное подключение к MySQL
+[23:28:57] [Server thread/INFO]: [XConomy] Успешное подключение к Redis
+[23:28:57] [XConomyRedisSub/INFO]: [XConomy] Creating Redis listening thread
+[23:28:57] [Server thread/INFO]: [XConomy] XConomy успешно включен
+[23:28:57] [Server thread/INFO]: [XConomy] Found PlaceholderAPI
+[23:28:57] [XConomyRedisSub/INFO]: [XConomy] Subscribe redis channel success, channel XConomy_Sync
+[23:28:57] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: xconomy
+[23:28:57] [Server thread/INFO]: [XConomy] PlaceholderAPI successfully hooked
+[23:28:57] [Server thread/INFO]: [XConomy] ===== YiC =====
+[23:28:57] [Server thread/INFO]: [ItemJoin] Enabling ItemJoin v6.0.7-RELEASE-b995
+[23:28:57] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[23:28:57] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[23:28:57] [Server thread/WARN]: Whilst this makes it possible to use BungeeCord, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
+[23:28:57] [Server thread/WARN]: Please see http://www.spigotmc.org/wiki/firewall-guide/ for further information.
+[23:28:57] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[23:28:57] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[23:28:57] [Server thread/INFO]: Preparing level "world"
+[23:28:57] [Server thread/INFO]: -------- World Settings For [world] --------
+[23:28:57] [Server thread/INFO]: Mob Spawn Range: 3
+[23:28:57] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[23:28:57] [Server thread/INFO]: Cane Growth Modifier: 100%
+[23:28:57] [Server thread/INFO]: Melon Growth Modifier: 100%
+[23:28:57] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[23:28:57] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[23:28:57] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[23:28:57] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[23:28:57] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[23:28:57] [Server thread/INFO]: Vine Growth Modifier: 100%
+[23:28:57] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[23:28:57] [Server thread/INFO]: Structure Info Saving: true
+[23:28:57] [Server thread/INFO]: Max TNT Explosions: 100
+[23:28:57] [Server thread/INFO]: Tile Max Tick Time: 1000ms Entity max Tick Time: 1000ms
+[23:28:57] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[23:28:57] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[23:28:57] [Server thread/INFO]: Entity Activation Range: An 12 / Mo 20 / Mi 3 / Tiv false
+[23:28:57] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 500 / Other 500
+[23:28:57] [Server thread/INFO]: Random Lighting Updates: false
+[23:28:57] [Server thread/INFO]: Nerfing mobs spawned from spawners: true
+[23:28:57] [Server thread/INFO]: View Distance: 4
+[23:28:57] [Server thread/INFO]: Item Despawn Rate: 6000
+[23:28:57] [Server thread/INFO]: Item Merge Radius: 4.0
+[23:28:57] [Server thread/INFO]: Arrow Despawn Rate: 100
+[23:28:57] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[23:28:57] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[23:28:57] [Server thread/INFO]: Experience Merge Radius: 6.0
+[23:28:57] [Server thread/INFO]: Preparing start region for level 0 (Seed: 0)
+[23:28:58] [Server thread/INFO]: [VoidTeleport] Enabling VoidTeleport v2.4.1
+[23:28:58] [Server thread/INFO]: 
+
+                ====================================================================
+                                            VoidTeleport
+                ====================================================================
+
+                                       Current version: 2.4.1
+                                        Latest version: 2.4.5
+                             A new version is available! Download it at:
+                       https://www.spigotmc.org/resources/voidteleport.47718/
+
+                ====================================================================
+
+[23:28:58] [Server thread/INFO]: [VoidTeleport] Developed by EndlessGames.
+[23:28:58] [Server thread/INFO]: [LocaleLib] Enabling LocaleLib v2.1
+[23:28:58] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.10.10
+[23:28:58] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[23:28:58] [Server thread/INFO]: [MTBackpack] Enabling MTBackpack v1.18.0
+[23:28:58] [Server thread/INFO]: LOGGER [MTBackpack] | INFO: Found PlaceholderAPI, hooking into it.
+[23:28:58] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: MTBackpackPAPI
+[23:28:59] [Server thread/INFO]: LOGGER [MTBackpack] | INFO: Server version is most likely 1.12.2 (7, v1_12_R1 :: unkn)
+[23:28:59] [Server thread/INFO]: LOGGER [MTBackpack] | INFO: Executed setup for config: data.yml
+[23:28:59] [Server thread/INFO]: LOGGER [MTBackpack] | INFO: Executed setup for config: config.yml
+[23:28:59] [Server thread/INFO]: LOGGER [MTBackpack] | INFO: Crafting is disabled!
+[23:28:59] [Server thread/INFO]: LOGGER [MTBackpack] | INFO: Registered placeholder %mtbackpackpapi_bpsize% (class teammt.mtbackpack.placeholders.BackpackSizePlaceholder)
+[23:28:59] [Server thread/INFO]: LOGGER [MTBackpack] | INFO: Registered placeholder %mtbackpackpapi_bptype% (class teammt.mtbackpack.placeholders.BackpackTypePlaceholder)
+[23:28:59] [Server thread/INFO]: LOGGER [MTBackpack] | INFO: Registered placeholder %mtbackpackpapi_holding% (class teammt.mtbackpack.placeholders.HoldingBackpackPlaceholder)
+[23:28:59] [Server thread/INFO]: LOGGER [MTBackpack] | INFO: Registered placeholder %mtbackpackpapi_bpadmitssize% (class teammt.mtbackpack.placeholders.BackpackWillTakePlaceholder)
+[23:28:59] [Server thread/INFO]: [AntiRelog] Enabling AntiRelog v2.1
+[23:28:59] [Server thread/INFO]: [OldCombatMechanics] Enabling OldCombatMechanics v1.11.0
+[23:28:59] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: ocm
+[23:28:59] [Server thread/INFO]: [OldCombatMechanics] OldCombatMechanics v1.11.0 has been enabled
+[23:28:59] [Server thread/INFO]: [ServerUtils] Enabling ServerUtils v3.5.3
+[23:28:59] [Server thread/INFO]: [MythicalTrader] Enabling MythicalTrader v1.0-alpha
+[23:28:59] [Server thread/INFO]: [DB] Connecting to Database: mariadb://localhost:3306/server_skyblock
+[23:28:59] [Server thread/INFO]: [com.zaxxer.hikari.HikariDataSource] DB - is starting.
+[23:29:00] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: mythicaltrader
+[23:29:00] [Server thread/INFO]: [MythicalTrader] [ACF] Enabled Asynchronous Tab Completion Support!
+[23:29:00] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.0.1
+[23:29:00] [Server thread/INFO]: [ViaVersion] Registering protocol transformers and injecting...
+[23:29:00] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[23:29:00] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[23:29:00] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[23:29:00] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[23:29:01] [Server thread/INFO]: [ViaRewind] Registering protocols...
+[23:29:01] [Server thread/INFO]: [NBTAPI] Enabling NBTAPI v2.8.0
+[23:29:01] [Server thread/INFO]: [NBTAPI] Adding listeners...
+[23:29:01] [Server thread/INFO]: [NBTAPI] Gson:
+[23:29:01] [Server thread/INFO]: [NBTAPI] Checking bindings...
+[23:29:01] [Server thread/INFO]: [NBTAPI] All Classes were able to link!
+[23:29:01] [Server thread/INFO]: [NBTAPI] All Methods were able to link!
+[23:29:01] [Server thread/INFO]: [NBTAPI] Running NBT reflection test...
+[23:29:01] [Server thread/INFO]: [NBTAPI] MergeTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] ItemMergingTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] TypeTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] RemovingKeys: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] DirectApplyTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] MergeTileSubCompoundTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] ItemConvertionTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] TilesCustomNBTPersistentTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] NBTFileTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] SubCompoundsTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] EqualsTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] TileTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] GetterSetterTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] StreamTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] EntityCustomNbtPersistentTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] EntityTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] BlockNBTTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] ChunkNBTPersistentTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] SpawnEntityCustomNbtInjectorTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] WorldDataTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] ForEachTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] TilesCustomNBTInjectorTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] GameprofileTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] EmptyItemTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] EntityCustomNbtInjectorTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] IteratorTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] ListTest: Ok
+[23:29:01] [Server thread/INFO]: [NBTAPI] Success! This version of NBT-API is compatible with your server.
+[23:29:01] [Server thread/INFO]: [TimeLock] Enabling TimeLock v0.5
+[23:29:01] [Server thread/INFO]: [TimeLock] Enabled
+[23:29:01] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.0.1
+[23:29:01] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1.9-SNAPSHOT;
+[23:29:02] [Server thread/INFO]: WEPIF: Использование Bukkit Permissions API.
+[23:29:02] [Server thread/INFO]: [WorldEdit] Использую com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_12_R2 для Bukkit адаптеров
+[23:29:02] [Server thread/INFO]: [DisableJoinMessage] Enabling DisableJoinMessage v1.0
+[23:29:02] [Server thread/INFO]: [ConditionalEvents] Enabling ConditionalEvents v3.14.2
+[23:29:02] [Server thread/INFO]: [ConditionalEvents] Has been enabled! Version: 3.14.2
+[23:29:02] [Server thread/INFO]: [ConditionalEvents] Thanks for using my plugin!  ~Ajneb97
+[23:29:02] [Server thread/INFO]: There is a new version available. (4.56.1)
+[23:29:02] [Server thread/INFO]: You can download it at: https://www.spigotmc.org/resources/82271/
+[23:29:02] [Server thread/INFO]: [CommandForward] Enabling CommandForward v0.5.0
+[23:29:02] [Server thread/INFO]: [BetterSocial] Enabling BetterSocial v1.3-BETA
+[23:29:02] [Server thread/INFO]: [BetterSocial] Inventory title with support for more than 32 characters. Skipping..
+[23:29:02] [Server thread/INFO]: [BetterSocial] Hex colors are not available! Ignoring..
+[23:29:02] [Server thread/INFO]: [BetterSocial] Old constructor for HoverEvent found! Using it..
+[23:29:02] [Server thread/INFO]: [BetterSocial] New sendTitle method found! Using it..
+[23:29:02] [Server thread/INFO]: [BetterSocial] New setUnbreakable method found! Using it..
+[23:29:02] [Server thread/INFO]: [BetterSocial] New isUnbreakable method found! Using it..
+[23:29:02] [Server thread/INFO]:   ___      _   _           ___          _      _ 
+[23:29:02] [Server thread/INFO]:  | _ ) ___| |_| |_ ___ _ _/ __| ___  __(_)__ _| |
+[23:29:02] [Server thread/INFO]:  | _ \/ -_)  _|  _/ -_) '_\__ \/ _ \/ _| / _` | |
+[23:29:02] [Server thread/INFO]:  |___/\___|\__|\__\___|_| |___/\___/\__|_\__,_|_|
+[23:29:02] [Server thread/INFO]: 
+[23:29:02] [Server thread/INFO]:    Running plugin BetterSocial v1.3-BETA
+[23:29:02] [Server thread/INFO]:    Server running Paper version git-Paper-4466fe0 (MC: 1.12.2)
+[23:29:02] [Server thread/INFO]:    (Implementing API version git-Paper-4466fe0 (MC: 1.12.2))
+[23:29:02] [Server thread/INFO]:    (Developed by  AlonsoAliaga - Thanks for using my plugin ❤)
+[23:29:02] [Server thread/INFO]:    (If you loved the plugin consider leaving a review and mentioning your server IP in it!
+[23:29:02] [Server thread/INFO]: 
+[23:29:02] [Server thread/INFO]: ===================================================================================
+[23:29:02] [Server thread/INFO]: [BetterSocial] You are using a Paper fork (Paper). Plugin might have errors
+[23:29:02] [Server thread/INFO]: [BetterSocial] and not work properly. Consider using SPIGOT!
+[23:29:02] [Server thread/INFO]: [BetterSocial] This is not an error! This is just a warning to let you know that this
+[23:29:02] [Server thread/INFO]: [BetterSocial] plugin has not been tested on paper forks. This plugin was made for spigot
+[23:29:02] [Server thread/INFO]: [BetterSocial] and has been tested on spigot only. If you have issues report them to the
+[23:29:02] [Server thread/INFO]: [BetterSocial] developer instead of reviewing 1 star. Thanks in advanced!
+[23:29:02] [Server thread/INFO]: [BetterSocial] Join our official support server on alonsoaliaga.com/discord
+[23:29:02] [Server thread/INFO]: ===================================================================================
+[23:29:02] [Server thread/INFO]: 
+[23:29:02] [Server thread/INFO]: [BetterSocial] BungeeCord action bar available. Hooking..
+[23:29:02] [Server thread/INFO]: [BetterSocial] ProtocolLib found! Checking..
+[23:29:02] [Server thread/INFO]: [BetterSocial] Configuration auto-update is not enabled!
+[23:29:02] [Server thread/INFO]: [BetterSocial] [HikariCP] Using com.mysql.jdbc.jdbc2.optional.MysqlDataSource for source class name..
+[23:29:02] [Server thread/INFO]: [com.alonsoaliaga.bettersocial.libraries.hikari.HikariDataSource] HikariPool-1 - Starting...
+[23:29:02] [Server thread/INFO]: [com.alonsoaliaga.bettersocial.libraries.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[23:29:02] [Server thread/INFO]: [BetterSocial] [MySQL] Attempting to create 'bettersocial' table..
+[23:29:02] [Server thread/INFO]: [BetterSocial] [MySQL] Table 'bettersocial' has been created if didn't exist.
+[23:29:02] [Server thread/INFO]: [BetterSocial] Media 'twitter' is enabled in config. Loading..
+[23:29:02] [Server thread/INFO]: [BetterSocial] GameProfile field is available for heads. Hooking..
+[23:29:02] [Server thread/INFO]: [BetterSocial] Media 'twitter' successfully enabled! Slot: 20
+[23:29:02] [Server thread/INFO]: [BetterSocial] Media 'youtube' is enabled in config. Loading..
+[23:29:02] [Server thread/INFO]: [BetterSocial] Media 'youtube' successfully enabled! Slot: 21
+[23:29:02] [Server thread/INFO]: [BetterSocial] Media 'instagram' is enabled in config. Loading..
+[23:29:02] [Server thread/INFO]: [BetterSocial] Media 'instagram' successfully enabled! Slot: 22
+[23:29:02] [Server thread/INFO]: [BetterSocial] Media 'twitch' is enabled in config. Loading..
+[23:29:02] [Server thread/INFO]: [BetterSocial] Media 'twitch' successfully enabled! Slot: 23
+[23:29:02] [Server thread/INFO]: [BetterSocial] Media 'facebook' is enabled in config. Loading..
+[23:29:02] [Server thread/INFO]: [BetterSocial] Media 'facebook' successfully enabled! Slot: 24
+[23:29:02] [Server thread/INFO]: [BetterSocial] Media 'discord' is enabled in config. Loading..
+[23:29:02] [Server thread/INFO]: [BetterSocial] Media 'discord' successfully enabled! Slot: 29
+[23:29:02] [Server thread/INFO]: [BetterSocial] Media 'vk' is enabled in config. Loading..
+[23:29:02] [Server thread/INFO]: [BetterSocial] Media 'vk' successfully enabled! Slot: 30
+[23:29:02] [Server thread/INFO]: [BetterSocial] Media 'Reddit' is disabled in config. Skipping..
+[23:29:02] [Server thread/INFO]: [BetterSocial] Media 'TikTok' is enabled in config. Loading..
+[23:29:02] [Server thread/INFO]: [BetterSocial] Media 'TikTok' successfully enabled! Slot: 31
+[23:29:02] [Server thread/INFO]: [BetterSocial] Media 'snapixforum' is disabled in config. Skipping..
+[23:29:02] [Server thread/INFO]: [BetterSocial] Social media 'youtube' column already registered in database!
+[23:29:02] [Server thread/INFO]: [BetterSocial] Social media 'twitter' column already registered in database!
+[23:29:02] [Server thread/INFO]: [BetterSocial] Social media 'twitch' column already registered in database!
+[23:29:02] [Server thread/INFO]: [BetterSocial] Social media 'discord' column already registered in database!
+[23:29:02] [Server thread/INFO]: [BetterSocial] Social media 'vk' column already registered in database!
+[23:29:02] [Server thread/INFO]: [BetterSocial] Social media 'tiktok' column already registered in database!
+[23:29:02] [Server thread/INFO]: [BetterSocial] Social media 'facebook' column already registered in database!
+[23:29:02] [Server thread/INFO]: [BetterSocial] Social media 'instagram' column already registered in database!
+[23:29:02] [Server thread/INFO]: [BetterSocial] PlaceholderAPI found! Hooking..
+[23:29:02] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: bettersocial
+[23:29:02] [Server thread/INFO]: [LastLoginAPI] Enabling LastLoginAPI v1.7.4
+[23:29:02] [Server thread/INFO]: [LastLoginAPI] Initializing LastLoginAPI v1.7.4
+[23:29:02] [Server thread/WARN]: [Server thread] INFO com.alessiodp.lastloginapi.libs.hikari.HikariDataSource - HikariPool-1 - Starting...
+[23:29:03] [Server thread/WARN]: [Server thread] INFO com.alessiodp.lastloginapi.libs.hikari.pool.HikariPool - HikariPool-1 - Added connection com.alessiodp.lastloginapi.libs.mysql.cj.jdbc.ConnectionImpl@74c2cb97
+[23:29:03] [Server thread/WARN]: [Server thread] INFO com.alessiodp.lastloginapi.libs.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[23:29:03] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: lastloginapi
+[23:29:03] [Server thread/INFO]: [LastLoginAPI] Hooked into PlaceholderAPI
+[23:29:03] [Server thread/INFO]: [LastLoginAPI] LastLoginAPI v1.7.4 enabled
+[23:29:03] [Server thread/INFO]: [AlonsoLevels] Enabling AlonsoLevels v2.2.3-BETA-PRO
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] Max health Attribute check found. Using it..
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] Inventory title with support for more than 32 characters. Skipping..
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] Hex colors are not available! Ignoring..
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] Old constructor for HoverEvent found! Using it..
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] New sendTitle method found! Using it..
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] New setUnbreakable method found! Using it..
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] New isUnbreakable method found! Using it..
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] Damageable interface is not available! Using old method for durability..
+[23:29:04] [Server thread/INFO]:     _   _                  _                _      ___         
+[23:29:04] [Server thread/INFO]:    /_\ | |___ _ _  ___ ___| |   _____ _____| |___ | _ \_ _ ___ 
+[23:29:04] [Server thread/INFO]:   / _ \| / _ \ ' \(_-</ _ \ |__/ -_) V / -_) (_-< |  _/ '_/ _ \
+[23:29:04] [Server thread/INFO]:  /_/ \_\_\___/_||_/__/\___/____\___|\_/\___|_/__/ |_| |_| \___/
+[23:29:04] [Server thread/INFO]: 
+[23:29:04] [Server thread/INFO]:    Running plugin AlonsoLevels v2.2.3-BETA-PRO (v1_12)
+[23:29:04] [Server thread/INFO]:    Server running Paper version git-Paper-4466fe0 (MC: 1.12.2)
+[23:29:04] [Server thread/INFO]:    (Implementing API version git-Paper-4466fe0 (MC: 1.12.2))
+[23:29:04] [Server thread/INFO]:    (Developed by  AlonsoAliaga - Thanks for using my plugin ❤!)
+[23:29:04] [Server thread/INFO]:    (Thanks for purchasing my plugin Unknown! If you didn't, do it or you won't receive support :D
+[23:29:04] [Server thread/INFO]:    Join our official discord server to receive support in alonsoaliaga.com/discord
+[23:29:04] [Server thread/INFO]:    If you loved the plugin consider leaving a 5-stars review and mentioning your server IP in it!
+[23:29:04] [Server thread/INFO]: 
+[23:29:04] [Server thread/INFO]: ==============================================================================================
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] This is not a error! This is just a warning to keep in mind if you have issues!
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] You are using a Paper fork (Paper). This plugin was made for Spigot
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] but was (in most cases) tested with different builds of Paper and Purpur.
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] Spigot and forks API are really similar and should be compatible, however there are
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] some cases in which they aren't compatible. If you have issues report them to the
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] developer instead of reviewing 1 star. Thanks in advanced!
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] Join us in our official support server on alonsoaliaga.com/discord
+[23:29:04] [Server thread/INFO]: ==============================================================================================
+[23:29:04] [Server thread/INFO]: 
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] BungeeCord action bar available. Hooking..
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] ProtocolLib found! Checking..
+[23:29:04] [Server thread/INFO]: [Auto-update] Configuration is up-to-date!
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] Vault found! Hooking..
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] Cost type 'VAULT' has been enabled!
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] Successfully hooked economy with VAULT mode!
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] [HikariCP] Using com.mysql.jdbc.jdbc2.optional.MysqlDataSource for source class name..
+[23:29:04] [Server thread/INFO]: [com.alonsoaliaga.alonsolevels.libraries.hikari.HikariDataSource] HikariPool-1 - Starting...
+[23:29:04] [Server thread/INFO]: [com.alonsoaliaga.alonsolevels.libraries.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] [MySQL] Attempting to create 'account_levels' table..
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] [MySQL] Table 'account_levels' has been created if didn't exist.
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] Column called 'auto_claim' already exists. Skipping..
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] GameProfile field is available for heads. Hooking..
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] Server name has been selected as 'Lobby-2'
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] Formula for experience is enabled! Loading..
+[23:29:04] [Server thread/INFO]: ===========================================================================================
+[23:29:04] [Server thread/WARN]: Warning: Nashorn engine is planned to be removed from a future JDK release
+[23:29:04] [Server thread/INFO]: [AlonsoLevels] Engine 'JavaScript' (1) recognized: jdk.nashorn.api.scripting.NashornScriptEngine@9ce0631
+[23:29:06] [Server thread/INFO]: [AlonsoLevels] Successfully loaded 300 levels!
+[23:29:06] [Server thread/INFO]: [AlonsoLevels] Successfully loaded 9 colors!
+[23:29:06] [Server thread/INFO]: [AlonsoLevels] Loaded 100 normal rewards in 4 pages.
+[23:29:06] [Server thread/INFO]: [AlonsoLevels] Loaded 10 veteran rewards.
+[23:29:06] [Server thread/INFO]: [AlonsoLevels] Section for 'Normal multipliers' called 'Normal' in multipliers.yml is invalid. Skipping..
+[23:29:06] [Server thread/INFO]: [AlonsoLevels] Loaded 0 normal multipliers.
+[23:29:06] [Server thread/INFO]: [AlonsoLevels] Veteran section is not enabled in configuration. Skipping veteran multipliers..
+[23:29:06] [Server thread/INFO]: [AlonsoLevels] =========================== IMPORTANT WARNING! ===========================
+[23:29:06] [Server thread/INFO]: [AlonsoLevels] Seems that you just updated the plugin to 2.2-BETA-PRO version or higher!
+[23:29:06] [Server thread/INFO]: [AlonsoLevels] To enable slot customization make sure you edit 'Options.Normal-rewards.Rows'
+[23:29:06] [Server thread/INFO]: [AlonsoLevels] and 'Options.Veteran-rewards.Rows' to a number between 1 and 6. If it's 0 custom
+[23:29:06] [Server thread/INFO]: [AlonsoLevels] slots will be ignored as you probably just updated to this version.
+[23:29:06] [Server thread/INFO]: [AlonsoLevels] After updating those values, custom slots will take effect. This is a BETA feature,
+[23:29:06] [Server thread/INFO]: [AlonsoLevels] please report bugs in our discord server: https://alonsoaliaga.com/discord
+[23:29:06] [Server thread/INFO]: [AlonsoLevels] ============================ END OF WARNING! ============================
+[23:29:06] [Server thread/INFO]: [AlonsoLevels] Rewards command shortcut is disabled! To enable you must edit config and RESTART the server.
+[23:29:06] [Server thread/INFO]: [AlonsoLevels] Leaderboard is disabled! Skipping..
+[23:29:06] [Server thread/INFO]: [AlonsoLevels] PlaceholderAPI found! Hooking..
+[23:29:06] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: alonsolevels
+[23:29:06] [Server thread/INFO]: [AlonsoLevels] VaultMultiplier wasn't found! Skipping..
+[23:29:06] [Server thread/INFO]: (*) Downloaded from Https://diREctlEakS.tO
+[23:29:06] [Server thread/INFO]: [InteractiveBoard] Enabling InteractiveBoard v14.4
+[23:29:06] [Server thread/INFO]: [TigerReports] Enabling TigerReports v4.13.1
+[23:29:06] [Server thread/INFO]: [TigerReports] Le plugin utilise BungeeCord.
+[23:29:06] [Server thread/INFO]: [TigerReports] Le plugin utilise les prefixes et suffixes du chat du plugin Vault pour afficher les noms des joueurs.
+[23:29:06] [Server thread/INFO]: [Chatty] Enabling Chatty v2.19.14
+[23:29:06] [Server thread/INFO]: [Chatty] Vault has successful hooked.
+[23:29:06] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: chatty
+[23:29:06] [Server thread/INFO]: [Chatty] PlaceholderAPI has successful hooked.
+[23:29:06] [Server thread/INFO]: [SlotMachineGUI] Enabling SlotMachineGUI v1.0.7
+[23:29:07] [Server thread/INFO]: ---------[ Plugin Initializing ]---------
+[23:29:07] [Server thread/INFO]: > Plugin name: SlotMachineGUI
+[23:29:07] [Server thread/INFO]: > Author: NightExpress
+[23:29:07] [Server thread/INFO]: > Version: 1.0.7
+[23:29:07] [Server thread/INFO]: ---------[ Hooks Initializing ]---------
+[23:29:07] [Server thread/INFO]: > Coins: Not found / Error.
+[23:29:07] [Server thread/INFO]: > Vault: Success!
+[23:29:07] [Server thread/INFO]: ---------[ Settings Initializing ]---------
+[23:29:07] [Server thread/INFO]: [FabledSkyBlock] Enabling FabledSkyBlock vBuild-71
+[23:29:07] [Server thread/INFO]: =============================
+[23:29:07] [Server thread/INFO]: FabledSkyBlock Build-71 by Songoda <3!
+[23:29:07] [Server thread/INFO]: Action: Enabling...
+[23:29:07] [Server thread/INFO]: =============================
+[23:29:07] [Server thread/INFO]: SkyBlock | Info: Generating VoidWorld 'island_normal'.
+[23:29:07] [Server thread/INFO]: -------- World Settings For [island_normal] --------
+[23:29:07] [Server thread/INFO]: Mob Spawn Range: 3
+[23:29:07] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Cane Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Melon Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Vine Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Structure Info Saving: true
+[23:29:07] [Server thread/INFO]: Max TNT Explosions: 100
+[23:29:07] [Server thread/INFO]: Tile Max Tick Time: 1000ms Entity max Tick Time: 1000ms
+[23:29:07] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[23:29:07] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[23:29:07] [Server thread/INFO]: Entity Activation Range: An 12 / Mo 20 / Mi 3 / Tiv false
+[23:29:07] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 500 / Other 500
+[23:29:07] [Server thread/INFO]: Random Lighting Updates: false
+[23:29:07] [Server thread/INFO]: Nerfing mobs spawned from spawners: true
+[23:29:07] [Server thread/INFO]: View Distance: 4
+[23:29:07] [Server thread/INFO]: Item Despawn Rate: 6000
+[23:29:07] [Server thread/INFO]: Item Merge Radius: 4.0
+[23:29:07] [Server thread/INFO]: Arrow Despawn Rate: 100
+[23:29:07] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[23:29:07] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[23:29:07] [Server thread/INFO]: Experience Merge Radius: 6.0
+[23:29:07] [Server thread/INFO]: Preparing start region for level 1 (Seed: -3490887352878505010)
+[23:29:07] [Server thread/INFO]: SkyBlock | Info: Generating VoidWorld 'island_nether'.
+[23:29:07] [Server thread/INFO]: -------- World Settings For [island_nether] --------
+[23:29:07] [Server thread/INFO]: Mob Spawn Range: 3
+[23:29:07] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Cane Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Melon Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Vine Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Structure Info Saving: true
+[23:29:07] [Server thread/INFO]: Max TNT Explosions: 100
+[23:29:07] [Server thread/INFO]: Tile Max Tick Time: 1000ms Entity max Tick Time: 1000ms
+[23:29:07] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[23:29:07] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[23:29:07] [Server thread/INFO]: Entity Activation Range: An 12 / Mo 20 / Mi 3 / Tiv false
+[23:29:07] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 500 / Other 500
+[23:29:07] [Server thread/INFO]: Random Lighting Updates: false
+[23:29:07] [Server thread/INFO]: Nerfing mobs spawned from spawners: true
+[23:29:07] [Server thread/INFO]: View Distance: 4
+[23:29:07] [Server thread/INFO]: Item Despawn Rate: 6000
+[23:29:07] [Server thread/INFO]: Item Merge Radius: 4.0
+[23:29:07] [Server thread/INFO]: Arrow Despawn Rate: 100
+[23:29:07] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[23:29:07] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[23:29:07] [Server thread/INFO]: Experience Merge Radius: 6.0
+[23:29:07] [Server thread/INFO]: Preparing start region for level 2 (Seed: 2052177531208377935)
+[23:29:07] [Server thread/INFO]: SkyBlock | Info: Generating VoidWorld 'island_end'.
+[23:29:07] [Server thread/INFO]: -------- World Settings For [island_end] --------
+[23:29:07] [Server thread/INFO]: Mob Spawn Range: 3
+[23:29:07] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Cane Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Melon Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Vine Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[23:29:07] [Server thread/INFO]: Structure Info Saving: true
+[23:29:07] [Server thread/INFO]: Max TNT Explosions: 100
+[23:29:07] [Server thread/INFO]: Tile Max Tick Time: 1000ms Entity max Tick Time: 1000ms
+[23:29:07] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[23:29:07] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[23:29:07] [Server thread/INFO]: Entity Activation Range: An 12 / Mo 20 / Mi 3 / Tiv false
+[23:29:07] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 500 / Other 500
+[23:29:07] [Server thread/INFO]: Random Lighting Updates: false
+[23:29:07] [Server thread/INFO]: Nerfing mobs spawned from spawners: true
+[23:29:07] [Server thread/INFO]: View Distance: 4
+[23:29:07] [Server thread/INFO]: Item Despawn Rate: 6000
+[23:29:07] [Server thread/INFO]: Item Merge Radius: 4.0
+[23:29:07] [Server thread/INFO]: Arrow Despawn Rate: 100
+[23:29:07] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[23:29:07] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[23:29:07] [Server thread/INFO]: Experience Merge Radius: 6.0
+[23:29:08] [Server thread/INFO]: Preparing start region for level 3 (Seed: -6915847656884287322)
+[23:29:08] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: fabledskyblock
+[23:29:08] [Server thread/INFO]: [HeadDatabase] Enabling HeadDatabase v4.13.4
+[23:29:08] [Server thread/INFO]: [HeadDatabase] Using "ru_Ru.lang" translated by MenaR
+[23:29:09] [Server thread/INFO]: [HeadDatabase] Economy successfully setup using CURRENCY!
+[23:29:09] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: hdb
+[23:29:09] [Server thread/INFO]: [SnapiLibrary] Enabling SnapiLibrary v2.0.0
+[23:29:09] [Server thread/INFO]: [SuperLobby] Enabling SuperLobby v4.7.5
+[23:29:09] [Server thread/INFO]: -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[23:29:09] [Server thread/INFO]:    _____                       _           _     _           
+[23:29:09] [Server thread/INFO]:   / ____|                     | |         | |   | |          
+[23:29:09] [Server thread/INFO]:  | (___  _   _ _ __   ___ _ __| |     ___ | |__ | |__  _   _ 
+[23:29:09] [Server thread/INFO]:   \___ \| | | | '_ \ / _ \ '__| |    / _ \| '_ \| '_ \| | | |
+[23:29:09] [Server thread/INFO]:   ____) | |_| | |_) |  __/ |  | |___| (_) | |_) | |_) | |_| |
+[23:29:09] [Server thread/INFO]:  |_____/ \__,_| .__/ \___|_|  |______\___/|_.__/|_.__/ \__, |
+[23:29:09] [Server thread/INFO]:               | |                                       __/ |
+[23:29:09] [Server thread/INFO]:               |_|                                      |___/ 
+[23:29:09] [Server thread/INFO]:     
+[23:29:09] [Server thread/INFO]: -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[23:29:09] [Server thread/INFO]: [SuperLobby] Deluxe Version: V4.7.5
+[23:29:09] [Server thread/INFO]: [SuperLobby] Plugin Create by PedroJM96.
+[23:29:09] [Server thread/INFO]: [SuperLobby] Loading Libraries...
+[23:29:09] [Server thread/INFO]: [SuperLobby] Loading library commons-lang-commons-lang-2.6
+[23:29:09] [Server thread/INFO]: [SuperLobby] commons-lang-commons-lang-2.6 library loaded successfully.
+[23:29:09] [Server thread/INFO]: [SuperLobby] Loading library commons-codec-commons-codec-1.15
+[23:29:09] [Server thread/INFO]: [SuperLobby] commons-codec-commons-codec-1.15 library loaded successfully.
+[23:29:09] [Server thread/INFO]: [SuperLobby] Loading library com.google.code.gson-gson-2.9.0
+[23:29:09] [Server thread/INFO]: [SuperLobby] com.google.code.gson-gson-2.9.0 library loaded successfully.
+[23:29:10] [Server thread/INFO]: [SuperLobby] Loading configuration...
+[23:29:10] [Server thread/INFO]: [SuperLobby] Load config.yml
+[23:29:10] [Server thread/INFO]: [SuperLobby] config.yml loaded.
+[23:29:10] [Server thread/INFO]: [SuperLobby] Load messages_EN.yml
+[23:29:10] [Server thread/INFO]: [SuperLobby] messages_EN.yml loaded.
+[23:29:10] [Server thread/INFO]: [SuperLobby] Load spawn.yml
+[23:29:10] [Server thread/INFO]: [SuperLobby] spawn.yml loaded.
+[23:29:10] [Server thread/INFO]: [SuperLobby] Load chat.yml
+[23:29:10] [Server thread/INFO]: [SuperLobby] chat.yml loaded.
+[23:29:10] [Server thread/INFO]: [SuperLobby] Load infocommands.yml
+[23:29:10] [Server thread/INFO]: [SuperLobby] infocommands.yml loaded.
+[23:29:10] [Server thread/INFO]: [SuperLobby] Load customevents.yml
+[23:29:10] [Server thread/INFO]: [SuperLobby] customevents.yml loaded.
+[23:29:10] [Server thread/INFO]: [SuperLobby] Load items.yml
+[23:29:10] [Server thread/INFO]: [SuperLobby] items.yml loaded.
+[23:29:10] [Server thread/INFO]: [SuperLobby] Load menus.yml
+[23:29:10] [Server thread/INFO]: [SuperLobby] menus.yml loaded.
+[23:29:10] [Server thread/INFO]: [SuperLobby] Load board.yml
+[23:29:10] [Server thread/INFO]: [SuperLobby] board.yml loaded.
+[23:29:10] [Server thread/INFO]: [SuperLobby] Load announcer.yml
+[23:29:10] [Server thread/INFO]: [SuperLobby] announcer.yml loaded.
+[23:29:10] [Server thread/INFO]: [SuperLobby] Load firstjoin.yml
+[23:29:10] [Server thread/INFO]: [SuperLobby] firstjoin.yml loaded.
+[23:29:10] [Server thread/INFO]: [SuperLobby] Register commands...
+[23:29:10] [Server thread/INFO]: [SuperLobby] Register main command superlobby
+[23:29:10] [Server thread/INFO]: [SuperLobby] Register sub-command setspawn
+[23:29:10] [Server thread/INFO]: [SuperLobby] Register sub-command setspawnpermission
+[23:29:10] [Server thread/INFO]: [SuperLobby] Register sub-command setspawnradius
+[23:29:10] [Server thread/INFO]: [SuperLobby] Register sub-command remspawn
+[23:29:10] [Server thread/INFO]: [SuperLobby] Register sub-command reload
+[23:29:10] [Server thread/INFO]: [SuperLobby] Register sub-command help
+[23:29:10] [Server thread/INFO]: [SuperLobby] Register sub-command openmenu
+[23:29:10] [Server thread/INFO]: [SuperLobby] Hooked Vault Permissions
+[23:29:10] [Server thread/INFO]: [SuperLobby] Hooked Vault Chat
+[23:29:10] [Server thread/INFO]: [SuperLobby] Hooked Vault economy
+[23:29:10] [Server thread/INFO]: [SuperLobby] Achievements are now hidden.
+[23:29:10] [Server thread/INFO]: [SuperLobby] Hooked PlaceholderAPI
+[23:29:10] [Server thread/INFO]: [SuperLobby] Hooked ViaVersion
+[23:29:10] [Server thread/INFO]: [SuperLobby] A total of 4 menus were loaded.
+[23:29:10] [Server thread/INFO]: -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[23:29:10] [Server thread/INFO]: [SnapiSeller] Enabling SnapiSeller v1.0-alpha
+[23:29:11] [Server thread/INFO]: [DB] Connecting to Database: mariadb://localhost:3306/server_skyblock
+[23:29:11] [Server thread/INFO]: [com.zaxxer.hikari.HikariDataSource] DB - is starting.
+[23:29:11] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: snapiseller
+[23:29:11] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: snapiselleritem
+[23:29:11] [Server thread/INFO]: [SnapiSeller] [ACF] Enabled Asynchronous Tab Completion Support!
+[23:29:11] [DefaultDispatcher-worker-2/INFO]: Success subscribed to channel: events-messenger
+[23:29:11] [Server thread/INFO]: [ajLeaderboards] Enabling ajLeaderboards v2.3.0-mysqlfix
+[23:29:11] [Server thread/INFO]: [ajLeaderboards] Using SQLite for board cache. (sqlite)
+[23:29:11] [Server thread/INFO]: [ajLeaderboards] Loaded 2 boards
+[23:29:11] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: ajlb
+[23:29:11] [Server thread/INFO]: [ajLeaderboards] PAPI placeholders successfully registered!
+[23:29:11] [Server thread/INFO]: [ajLeaderboards] ajLeaderboards v2.3.0-mysqlfix by ajgeiss0702 enabled!
+[23:29:11] [Server thread/INFO]: [CrazyAuctions] Enabling CrazyAuctions v1.2.7
+[23:29:11] [Server thread/INFO]: [CrazyAuctions] Loading the config.yml
+[23:29:11] [Server thread/INFO]: [CrazyAuctions] Successfully loaded config.yml
+[23:29:11] [Server thread/INFO]: [CrazyAuctions] Loading the Data.yml
+[23:29:11] [Server thread/INFO]: [CrazyAuctions] Successfully loaded Data.yml
+[23:29:11] [Server thread/INFO]: [CrazyAuctions] Loading the Messages.yml
+[23:29:11] [Server thread/INFO]: [CrazyAuctions] Successfully loaded Messages.yml
+[23:29:11] [Server thread/INFO]: [TAB] Enabling TAB v4.0.3
+[23:29:11] [Server thread/INFO]: [TAB] Server version: 1.12.2 (v1_12_R1)
+[23:29:11] [Server thread/INFO]: [TAB] Loaded NMS hook in 32ms
+[23:29:12] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: tab
+[23:29:12] [Server thread/INFO]: [TAB] Enabled in 363ms
+[23:29:12] [Server thread/INFO]: [SnapiClans] Enabling SnapiClans v3.0.0
+[23:29:13] [Server thread/INFO]: [SnapiClans] [ACF] Enabled Asynchronous Tab Completion Support!
+[23:29:13] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: clan
+[23:29:13] [Server thread/INFO]: [SnapiCooperation] Enabling SnapiCooperation v1.0.0
+[23:29:13] [Server thread/INFO]: [SnapiCooperation] [ACF] Enabled Asynchronous Tab Completion Support!
+[23:29:13] [Server thread/INFO]: [Invero] Enabling Invero v1.0.8-pre-1
+[23:29:13] [Server thread/WARN]: [Invero] ink.ptms.adyeshach.core.event.AdyeshachEntityInteractEvent not found, use @Ghost to turn off this warning
+[23:29:13] [Server thread/INFO]: [SnapiProfile] Enabling SnapiProfile v1.0.0
+[23:29:13] [Server thread/INFO]: [SnapiProfile] [ACF] Enabled Asynchronous Tab Completion Support!
+[23:29:13] [Server thread/INFO]: [SnapiBalancer] Enabling SnapiBalancer v1.5
+[23:29:13] [Server thread/INFO]: [SnapiBalancer] [ACF] Enabled Asynchronous Tab Completion Support!
+[23:29:13] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: balancer
+[23:29:13] [Server thread/INFO]: [SnapiCoin] Enabling SnapiCoin v1.0.0
+[23:29:13] [Server thread/INFO]: [SnapiCoin] [ACF] Enabled Asynchronous Tab Completion Support!
+[23:29:13] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: coin
+[23:29:13] [Server thread/INFO]: [DecentHolograms] Enabling DecentHolograms v2.8.6
+[23:29:14] [Server thread/INFO]: [CrazyCrates] Enabling CrazyCrates v1.10.2.2
+[23:29:14] [Server thread/INFO]: [CrazyCrates] Loading the config.yml
+[23:29:14] [Server thread/INFO]: [CrazyCrates] Successfully loaded config.yml
+[23:29:14] [Server thread/INFO]: [CrazyCrates] Loading the Messages.yml
+[23:29:14] [Server thread/INFO]: [CrazyCrates] Successfully loaded Messages.yml
+[23:29:14] [Server thread/INFO]: [CrazyCrates] Loading the Locations.yml
+[23:29:14] [Server thread/INFO]: [CrazyCrates] Successfully loaded Locations.yml
+[23:29:14] [Server thread/INFO]: [CrazyCrates] Loading the data.yml
+[23:29:14] [Server thread/INFO]: [CrazyCrates] Successfully loaded data.yml
+[23:29:14] [Server thread/INFO]: [CrazyCrates] Loading custom files.
+[23:29:14] [Server thread/INFO]: [CrazyCrates] Loaded new custom file: /Crates/elite.yml.
+[23:29:14] [Server thread/INFO]: [CrazyCrates] Loaded new custom file: /Crates/legendary.yml.
+[23:29:14] [Server thread/INFO]: [CrazyCrates] Loaded new custom file: /Crates/mystery.yml.
+[23:29:14] [Server thread/INFO]: [CrazyCrates] Finished loading custom files.
+[23:29:14] [Server thread/INFO]: [CrazyCrates] Loading all crate information...
+[23:29:14] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Spigot: v1_12_R1! Trying to find NMS support
+[23:29:14] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_12_R1' loaded!
+[23:29:14] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Gson: class com.google.gson.Gson
+[23:29:14] [Server thread/INFO]: [CrazyCrates] All crate information has been loaded.
+[23:29:14] [Server thread/INFO]: [CrazyCrates] Loading all the physical crate locations.
+[23:29:14] [Server thread/INFO]: [CrazyCrates] All physical crate locations have been loaded.
+[23:29:14] [Server thread/INFO]: [CrazyCrates] Searching for schematics to load.
+[23:29:14] [Server thread/INFO]: [CrazyCrates] classic.schematic was successfully found and loaded.
+[23:29:14] [Server thread/INFO]: [CrazyCrates] nether.schematic was successfully found and loaded.
+[23:29:14] [Server thread/INFO]: [CrazyCrates] outdoors.schematic was successfully found and loaded.
+[23:29:14] [Server thread/INFO]: [CrazyCrates] sea.schematic was successfully found and loaded.
+[23:29:14] [Server thread/INFO]: [CrazyCrates] soul.schematic was successfully found and loaded.
+[23:29:14] [Server thread/INFO]: [CrazyCrates] wooden.schematic was successfully found and loaded.
+[23:29:14] [Server thread/INFO]: [CrazyCrates] All schematics were found and loaded.
+[23:29:14] [Server thread/INFO]: [CrazyCrates] Cleaning up the data.yml file.
+[23:29:14] [Server thread/INFO]: [CrazyCrates] The data.yml file has been cleaned.
+[23:29:14] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: CrazyCrates
+[23:29:14] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v6.2.2-SNAPSHOT
+[23:29:14] [Server thread/INFO]: [WorldGuard] (world) Поджигание TNT отключено.
+[23:29:14] [Server thread/INFO]: [WorldGuard] (world) Зажигалки РАЗРЕШЕНЫ.
+[23:29:14] [Server thread/INFO]: [WorldGuard] (world) Огонь лавы отключен.
+[23:29:14] [Server thread/INFO]: [WorldGuard] (world) Все распространение огня отключено.
+[23:29:14] [Server thread/INFO]: [WorldGuard] Загрузка конфигурации для мира 'world'
+[23:29:14] [Server thread/INFO]: [WorldGuard] (island_normal) Поджигание TNT отключено.
+[23:29:14] [Server thread/INFO]: [WorldGuard] (island_normal) Зажигалки РАЗРЕШЕНЫ.
+[23:29:14] [Server thread/INFO]: [WorldGuard] (island_normal) Огонь лавы отключен.
+[23:29:14] [Server thread/INFO]: [WorldGuard] (island_normal) Все распространение огня отключено.
+[23:29:14] [Server thread/INFO]: [WorldGuard] Загрузка конфигурации для мира 'island_normal'
+[23:29:14] [Server thread/INFO]: [WorldGuard] (island_nether) Поджигание TNT отключено.
+[23:29:14] [Server thread/INFO]: [WorldGuard] (island_nether) Зажигалки РАЗРЕШЕНЫ.
+[23:29:14] [Server thread/INFO]: [WorldGuard] (island_nether) Огонь лавы отключен.
+[23:29:14] [Server thread/INFO]: [WorldGuard] (island_nether) Все распространение огня отключено.
+[23:29:14] [Server thread/INFO]: [WorldGuard] Загрузка конфигурации для мира 'island_nether'
+[23:29:14] [Server thread/INFO]: [WorldGuard] (island_end) Поджигание TNT отключено.
+[23:29:14] [Server thread/INFO]: [WorldGuard] (island_end) Зажигалки РАЗРЕШЕНЫ.
+[23:29:14] [Server thread/INFO]: [WorldGuard] (island_end) Огонь лавы отключен.
+[23:29:14] [Server thread/INFO]: [WorldGuard] (island_end) Все распространение огня отключено.
+[23:29:14] [Server thread/INFO]: [WorldGuard] Загрузка конфигурации для мира 'island_end'
+[23:29:14] [Server thread/INFO]: [WorldGuard] Загрузка данных региона...
+[23:29:14] [Thread-14/WARN]: [NBTAPI] [NBTAPI] The NBT-API located at 'package me.badbones69.crazycrates.plugin.lib.de.tr7zw.changeme.nbtapi' seems to be outdated!
+[23:29:14] [Thread-14/WARN]: [NBTAPI] [NBTAPI] Current Version: '2.11.1' Newest Version: 2.13.1'
+[23:29:14] [Thread-14/WARN]: [NBTAPI] [NBTAPI] Please update the NBTAPI or the plugin that contains the api(nag the mod author when the newest release has an old version, not the NBTAPI dev)!
+[23:29:14] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.30-SNAPSHOT (build 2881)
+[23:29:14] [Server thread/INFO]: [Citizens] Loading external libraries
+[23:29:17] [Server thread/INFO]: [Citizens] No translation for system language (ru_RU): defaulting to English
+[23:29:17] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: citizensplaceholder
+[23:29:17] [Server thread/INFO]: [Citizens] Loaded economy handling via Vault.
+[23:29:17] [Server thread/INFO]: [WGRegionEvents] Enabling WGRegionEvents v1.1
+[23:29:17] [Server thread/INFO]: [SnapiArena] Enabling SnapiArena v1.0.0
+[23:29:17] [Server thread/INFO]: [SnapiArena] [ACF] Enabled Asynchronous Tab Completion Support!
+[23:29:17] [Server thread/INFO]: [CMILib] Enabling CMILib v1.0.2.13
+[23:29:19] [Server thread/INFO]: Server version: v1_12_R1 - 1.12.2 - paper
+[23:29:19] [Server thread/INFO]: CMI hooked.
+[23:29:19] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: cmil
+[23:29:19] [Server thread/INFO]: PlaceholderAPI hooked.
+[23:29:19] [Server thread/WARN]: org.bukkit.configuration.InvalidConfigurationException: while scanning a quoted scalar
+[23:29:19] [Server thread/WARN]:  in 'string', line 2878, column 16:
+[23:29:19] [Server thread/WARN]:           confirm: '&eKlikni sem pro potvrzení odes ... 
+[23:29:19] [Server thread/WARN]:                    ^
+[23:29:19] [Server thread/WARN]: found unexpected end of stream
+[23:29:19] [Server thread/WARN]:  in 'string', line 2879, column 1:
+[23:29:19] [Server thread/WARN]:     
+[23:29:19] [Server thread/WARN]:     ^
+[23:29:19] [Server thread/WARN]: 
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:55)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:162)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.FileHandler.ConfigReader.getyml(ConfigReader.java:247)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.FileHandler.ConfigReader.<init>(ConfigReader.java:48)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.CMILibConfig.importFromCMI(CMILibConfig.java:158)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.CMILibConfig.LoadLang(CMILibConfig.java:290)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.CMILibConfig.LoadLang(CMILibConfig.java:123)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.CMILib.onEnable(CMILib.java:222)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:316)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:405)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:396)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:345)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.t(MinecraftServer.java:447)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.l(MinecraftServer.java:408)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.a(MinecraftServer.java:346)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:293)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:621)
+[23:29:19] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:829)
+[23:29:19] [Server thread/WARN]: Caused by: while scanning a quoted scalar
+[23:29:19] [Server thread/WARN]:  in 'string', line 2878, column 16:
+[23:29:19] [Server thread/WARN]:           confirm: '&eKlikni sem pro potvrzení odes ... 
+[23:29:19] [Server thread/WARN]:                    ^
+[23:29:19] [Server thread/WARN]: found unexpected end of stream
+[23:29:19] [Server thread/WARN]:  in 'string', line 2879, column 1:
+[23:29:19] [Server thread/WARN]:     
+[23:29:19] [Server thread/WARN]:     ^
+[23:29:19] [Server thread/WARN]: 
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.scanFlowScalarSpaces(ScannerImpl.java:1933)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.scanFlowScalar(ScannerImpl.java:1847)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchFlowScalar(ScannerImpl.java:1029)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchSingle(ScannerImpl.java:1004)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:392)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:226)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingValue.produce(ParserImpl.java:585)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:157)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:147)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:133)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeDocument(Composer.java:122)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:105)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:140)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:524)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.Yaml.load(Yaml.java:437)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:53)
+[23:29:19] [Server thread/WARN]: 	... 18 more
+[23:29:19] [Server thread/INFO]: Failed to load Locale_CZ.yml! Backup have been saved into plugins\CMILib\FileBackups\2024-07-31 23-29-19 Locale_CZ.yml
+[23:29:19] [Server thread/WARN]: org.bukkit.configuration.InvalidConfigurationException: while scanning a quoted scalar
+[23:29:19] [Server thread/WARN]:  in 'string', line 2878, column 16:
+[23:29:19] [Server thread/WARN]:           confirm: '&eKlikni sem pro potvrzení odes ... 
+[23:29:19] [Server thread/WARN]:                    ^
+[23:29:19] [Server thread/WARN]: found unexpected end of stream
+[23:29:19] [Server thread/WARN]:  in 'string', line 2879, column 1:
+[23:29:19] [Server thread/WARN]:     
+[23:29:19] [Server thread/WARN]:     ^
+[23:29:19] [Server thread/WARN]: 
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:55)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:162)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.FileHandler.ConfigReader.getyml(ConfigReader.java:247)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.FileHandler.ConfigReader.<init>(ConfigReader.java:48)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.CMILibConfig.importFromCMI(CMILibConfig.java:158)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.CMILibConfig.LoadLang(CMILibConfig.java:290)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.CMILibConfig.LoadLang(CMILibConfig.java:123)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.CMILib.onEnable(CMILib.java:222)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:316)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:405)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:396)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:345)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.t(MinecraftServer.java:447)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.l(MinecraftServer.java:408)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.a(MinecraftServer.java:346)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:293)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:621)
+[23:29:19] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:829)
+[23:29:19] [Server thread/WARN]: Caused by: while scanning a quoted scalar
+[23:29:19] [Server thread/WARN]:  in 'string', line 2878, column 16:
+[23:29:19] [Server thread/WARN]:           confirm: '&eKlikni sem pro potvrzení odes ... 
+[23:29:19] [Server thread/WARN]:                    ^
+[23:29:19] [Server thread/WARN]: found unexpected end of stream
+[23:29:19] [Server thread/WARN]:  in 'string', line 2879, column 1:
+[23:29:19] [Server thread/WARN]:     
+[23:29:19] [Server thread/WARN]:     ^
+[23:29:19] [Server thread/WARN]: 
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.scanFlowScalarSpaces(ScannerImpl.java:1933)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.scanFlowScalar(ScannerImpl.java:1847)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchFlowScalar(ScannerImpl.java:1029)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchSingle(ScannerImpl.java:1004)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:392)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:226)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingValue.produce(ParserImpl.java:585)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:157)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:147)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:133)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeDocument(Composer.java:122)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:105)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:140)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:524)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.Yaml.load(Yaml.java:437)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:53)
+[23:29:19] [Server thread/WARN]: 	... 18 more
+[23:29:19] [Server thread/WARN]: org.bukkit.configuration.InvalidConfigurationException: while scanning a quoted scalar
+[23:29:19] [Server thread/WARN]:  in 'string', line 3908, column 17:
+[23:29:19] [Server thread/WARN]:           notInUse: '&7Utilizado principalmente para ... 
+[23:29:19] [Server thread/WARN]:                     ^
+[23:29:19] [Server thread/WARN]: found unexpected end of stream
+[23:29:19] [Server thread/WARN]:  in 'string', line 3910, column 1:
+[23:29:19] [Server thread/WARN]:     
+[23:29:19] [Server thread/WARN]:     ^
+[23:29:19] [Server thread/WARN]: 
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:55)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:162)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.FileHandler.ConfigReader.getyml(ConfigReader.java:247)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.FileHandler.ConfigReader.<init>(ConfigReader.java:48)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.CMILibConfig.importFromCMI(CMILibConfig.java:158)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.CMILibConfig.LoadLang(CMILibConfig.java:290)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.CMILibConfig.LoadLang(CMILibConfig.java:123)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.CMILib.onEnable(CMILib.java:222)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:316)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:405)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:396)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:345)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.t(MinecraftServer.java:447)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.l(MinecraftServer.java:408)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.a(MinecraftServer.java:346)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:293)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:621)
+[23:29:19] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:829)
+[23:29:19] [Server thread/WARN]: Caused by: while scanning a quoted scalar
+[23:29:19] [Server thread/WARN]:  in 'string', line 3908, column 17:
+[23:29:19] [Server thread/WARN]:           notInUse: '&7Utilizado principalmente para ... 
+[23:29:19] [Server thread/WARN]:                     ^
+[23:29:19] [Server thread/WARN]: found unexpected end of stream
+[23:29:19] [Server thread/WARN]:  in 'string', line 3910, column 1:
+[23:29:19] [Server thread/WARN]:     
+[23:29:19] [Server thread/WARN]:     ^
+[23:29:19] [Server thread/WARN]: 
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.scanFlowScalarSpaces(ScannerImpl.java:1933)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.scanFlowScalar(ScannerImpl.java:1847)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchFlowScalar(ScannerImpl.java:1029)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchSingle(ScannerImpl.java:1004)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:392)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:226)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingValue.produce(ParserImpl.java:585)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:157)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:147)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:133)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeDocument(Composer.java:122)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:105)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:140)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:524)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.Yaml.load(Yaml.java:437)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:53)
+[23:29:19] [Server thread/WARN]: 	... 18 more
+[23:29:19] [Server thread/INFO]: Failed to load Locale_ES.yml! Backup have been saved into plugins\CMILib\FileBackups\2024-07-31 23-29-19 Locale_ES.yml
+[23:29:19] [Server thread/WARN]: org.bukkit.configuration.InvalidConfigurationException: while scanning a quoted scalar
+[23:29:19] [Server thread/WARN]:  in 'string', line 3908, column 17:
+[23:29:19] [Server thread/WARN]:           notInUse: '&7Utilizado principalmente para ... 
+[23:29:19] [Server thread/WARN]:                     ^
+[23:29:19] [Server thread/WARN]: found unexpected end of stream
+[23:29:19] [Server thread/WARN]:  in 'string', line 3910, column 1:
+[23:29:19] [Server thread/WARN]:     
+[23:29:19] [Server thread/WARN]:     ^
+[23:29:19] [Server thread/WARN]: 
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:55)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:162)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.FileHandler.ConfigReader.getyml(ConfigReader.java:247)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.FileHandler.ConfigReader.<init>(ConfigReader.java:48)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.CMILibConfig.importFromCMI(CMILibConfig.java:158)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.CMILibConfig.LoadLang(CMILibConfig.java:290)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.CMILibConfig.LoadLang(CMILibConfig.java:123)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.CMILib.onEnable(CMILib.java:222)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:316)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:405)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:396)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:345)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.t(MinecraftServer.java:447)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.l(MinecraftServer.java:408)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.a(MinecraftServer.java:346)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:293)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:621)
+[23:29:19] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:829)
+[23:29:19] [Server thread/WARN]: Caused by: while scanning a quoted scalar
+[23:29:19] [Server thread/WARN]:  in 'string', line 3908, column 17:
+[23:29:19] [Server thread/WARN]:           notInUse: '&7Utilizado principalmente para ... 
+[23:29:19] [Server thread/WARN]:                     ^
+[23:29:19] [Server thread/WARN]: found unexpected end of stream
+[23:29:19] [Server thread/WARN]:  in 'string', line 3910, column 1:
+[23:29:19] [Server thread/WARN]:     
+[23:29:19] [Server thread/WARN]:     ^
+[23:29:19] [Server thread/WARN]: 
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.scanFlowScalarSpaces(ScannerImpl.java:1933)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.scanFlowScalar(ScannerImpl.java:1847)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchFlowScalar(ScannerImpl.java:1029)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchSingle(ScannerImpl.java:1004)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:392)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:226)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingValue.produce(ParserImpl.java:585)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:157)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:147)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:133)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeDocument(Composer.java:122)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:105)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:140)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:524)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.Yaml.load(Yaml.java:437)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:53)
+[23:29:19] [Server thread/WARN]: 	... 18 more
+[23:29:19] [Server thread/WARN]: org.bukkit.configuration.InvalidConfigurationException: while scanning a quoted scalar
+[23:29:19] [Server thread/WARN]:  in 'string', line 2641, column 18:
+[23:29:19] [Server thread/WARN]:             group10: '&2
+[23:29:19] [Server thread/WARN]:                      ^
+[23:29:19] [Server thread/WARN]: found unexpected end of stream
+[23:29:19] [Server thread/WARN]:  in 'string', line 2642, column 1:
+[23:29:19] [Server thread/WARN]:     
+[23:29:19] [Server thread/WARN]:     ^
+[23:29:19] [Server thread/WARN]: 
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:55)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:162)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.FileHandler.ConfigReader.getyml(ConfigReader.java:247)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.FileHandler.ConfigReader.<init>(ConfigReader.java:48)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.CMILibConfig.importFromCMI(CMILibConfig.java:158)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.CMILibConfig.LoadLang(CMILibConfig.java:290)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.CMILibConfig.LoadLang(CMILibConfig.java:123)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.CMILib.onEnable(CMILib.java:222)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:316)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:405)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:396)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:345)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.t(MinecraftServer.java:447)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.l(MinecraftServer.java:408)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.a(MinecraftServer.java:346)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:293)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:621)
+[23:29:19] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:829)
+[23:29:19] [Server thread/WARN]: Caused by: while scanning a quoted scalar
+[23:29:19] [Server thread/WARN]:  in 'string', line 2641, column 18:
+[23:29:19] [Server thread/WARN]:             group10: '&2
+[23:29:19] [Server thread/WARN]:                      ^
+[23:29:19] [Server thread/WARN]: found unexpected end of stream
+[23:29:19] [Server thread/WARN]:  in 'string', line 2642, column 1:
+[23:29:19] [Server thread/WARN]:     
+[23:29:19] [Server thread/WARN]:     ^
+[23:29:19] [Server thread/WARN]: 
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.scanFlowScalarSpaces(ScannerImpl.java:1933)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.scanFlowScalar(ScannerImpl.java:1847)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchFlowScalar(ScannerImpl.java:1029)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchSingle(ScannerImpl.java:1004)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:392)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:226)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingValue.produce(ParserImpl.java:585)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:157)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:147)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:133)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeDocument(Composer.java:122)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:105)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:140)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:524)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.Yaml.load(Yaml.java:437)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:53)
+[23:29:19] [Server thread/WARN]: 	... 18 more
+[23:29:19] [Server thread/INFO]: Failed to load Locale_SK.yml! Backup have been saved into plugins\CMILib\FileBackups\2024-07-31 23-29-19 Locale_SK.yml
+[23:29:19] [Server thread/WARN]: org.bukkit.configuration.InvalidConfigurationException: while scanning a quoted scalar
+[23:29:19] [Server thread/WARN]:  in 'string', line 2641, column 18:
+[23:29:19] [Server thread/WARN]:             group10: '&2
+[23:29:19] [Server thread/WARN]:                      ^
+[23:29:19] [Server thread/WARN]: found unexpected end of stream
+[23:29:19] [Server thread/WARN]:  in 'string', line 2642, column 1:
+[23:29:19] [Server thread/WARN]:     
+[23:29:19] [Server thread/WARN]:     ^
+[23:29:19] [Server thread/WARN]: 
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:55)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:162)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.FileHandler.ConfigReader.getyml(ConfigReader.java:247)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.FileHandler.ConfigReader.<init>(ConfigReader.java:48)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.CMILibConfig.importFromCMI(CMILibConfig.java:158)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.CMILibConfig.LoadLang(CMILibConfig.java:290)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.CMILibConfig.LoadLang(CMILibConfig.java:123)
+[23:29:19] [Server thread/WARN]: 	at net.Zrips.CMILib.CMILib.onEnable(CMILib.java:222)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:316)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:405)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:396)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:345)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.t(MinecraftServer.java:447)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.l(MinecraftServer.java:408)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.a(MinecraftServer.java:346)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:293)
+[23:29:19] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:621)
+[23:29:19] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:829)
+[23:29:19] [Server thread/WARN]: Caused by: while scanning a quoted scalar
+[23:29:19] [Server thread/WARN]:  in 'string', line 2641, column 18:
+[23:29:19] [Server thread/WARN]:             group10: '&2
+[23:29:19] [Server thread/WARN]:                      ^
+[23:29:19] [Server thread/WARN]: found unexpected end of stream
+[23:29:19] [Server thread/WARN]:  in 'string', line 2642, column 1:
+[23:29:19] [Server thread/WARN]:     
+[23:29:19] [Server thread/WARN]:     ^
+[23:29:19] [Server thread/WARN]: 
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.scanFlowScalarSpaces(ScannerImpl.java:1933)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.scanFlowScalar(ScannerImpl.java:1847)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchFlowScalar(ScannerImpl.java:1029)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchSingle(ScannerImpl.java:1004)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:392)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:226)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingValue.produce(ParserImpl.java:585)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:157)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:147)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:133)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.composeDocument(Composer.java:122)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:105)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:140)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:524)
+[23:29:19] [Server thread/WARN]: 	at org.yaml.snakeyaml.Yaml.load(Yaml.java:437)
+[23:29:19] [Server thread/WARN]: 	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:53)
+[23:29:19] [Server thread/WARN]: 	... 18 more
+[23:29:19] [Server thread/INFO]: Updated (EN) language file. Took 78ms
+[23:29:20] [Server thread/INFO]: Updated (RU) language file. Took 47ms
+[23:29:20] [Server thread/INFO]: [CMI] Enabling CMI v9.0.0.4
+[23:29:20] [Server thread/INFO]: ┏━━━┓ ┏━┓┏━┓ ┏━━┓
+[23:29:20] [Server thread/INFO]: ┃┏━┓┃ ┃ ┗┛ ┃ ┗┫┣┛
+[23:29:20] [Server thread/INFO]: ┃┃ ┗┛ ┃┏┓┏┓┃  ┃┃ 
+[23:29:20] [Server thread/INFO]: ┃┃ ┏┓ ┃┃┃┃┃┃  ┃┃ 
+[23:29:20] [Server thread/INFO]: ┃┗━┛┃ ┃┃┃┃┃┃ ┏┫┣┓
+[23:29:20] [Server thread/INFO]: ┗━━━┛ ┗┛┗┛┗┛ ┗━━┛
+[23:29:20] [Server thread/INFO]: _______________________________________________________
+[23:29:20] [Server thread/INFO]:   Integrating PaperSpigot async methods
+[23:29:20] [Server thread/INFO]:   Citizens found.
+[23:29:20] [Server thread/INFO]:   27 Enabled and 29 Disabled modules
+[23:29:20] [Server thread/INFO]:   Permission plugin: LuckPerms5.4.117
+[23:29:20] [Server thread/INFO]:   Initialized Cipher256 AES
+[23:29:20] [Server thread/INFO]:   Loaded (56) regular alias into memory. Took 48ms
+[23:29:20] [Server thread/INFO]:   Loaded (1) custom text's into memory. Took 0ms
+[23:29:20] [Server thread/INFO]:   3.21.0 data base type detected
+[23:29:21] [Server thread/INFO]:   Started SqLite data base. Took 251ms
+[23:29:21] [Server thread/INFO]:   Vault was found - Enabling capabilities. Economy: XConomy
+[23:29:21] [Server thread/INFO]:   Loaded (5) warning categories into memory. Took 0ms
+[23:29:21] [Server thread/INFO]:   Loaded (3) warning commands into memory. Took 0ms
+[23:29:21] [Server thread/INFO]:   Loaded (95) custom mob heads into memory. Took 15ms
+[23:29:21] [Server thread/INFO]:   Loaded (0) cooldowns into memory. Took 30ms
+[23:29:21] [Server thread/INFO]:   (RandomTeleportation) Can't find world with (world_the_end) name
+[23:29:21] [Server thread/INFO]:   (RandomTeleportation) Can't find world with (world_nether) name
+[23:29:21] [Server thread/INFO]:   Enabling BungeeCord Support
+[23:29:21] [Server thread/INFO]:   Loaded (5) player data into memory. Took 16ms
+[23:29:21] [Server thread/INFO]:   Loaded (0) playtime records into memory. Took 0ms
+[23:29:21] [Server thread/INFO]:   Loaded (0) playtime reward records into memory. Took 0ms
+[23:29:21] [Server thread/INFO]:   Registered events. Took 141ms
+[23:29:21] [Server thread/INFO]:   Loaded (0) event action commands into memory. Took 16ms
+[23:29:21] [Server thread/INFO]:   Updated (EN) language file. Took 111ms
+[23:29:21] [Server thread/INFO]:   Updated (RU) language file. Took 126ms
+[23:29:21] [Server thread/INFO]:   Loaded (245) worth values into memory. Took 48ms
+[23:29:22] [Server thread/INFO]:   Loaded (6) warps into memory. Took 16ms
+[23:29:22] [Server thread/INFO]:   Vault permissions was found - Enabling capabilities.
+[23:29:22] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: cmi
+[23:29:22] [Server thread/INFO]:   PlaceholderAPI hooked.
+[23:29:22] [Server thread/INFO]:   PlaceholderAPI was found - Enabling capabilities.
+[23:29:22] [Server thread/INFO]:   Starting world timer.
+[23:29:22] [Server thread/INFO]:   Initializing world manager.
+[23:29:22] [Server thread/INFO]:   Loaded GeoIP
+[23:29:22] [Server thread/INFO]:   Loaded (0) skin cache entries into memory. Took 0ms
+[23:29:22] [Server thread/INFO]:   Version 9.0.0.4 has been enabled
+[23:29:22] [Server thread/INFO]: ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+[23:29:22] [Server thread/INFO]: [CMI] Downloaded from https://directleaks.net
+[23:29:22] [Server thread/INFO]: [UltimateStacker] Enabling UltimateStacker v2.1.7
+[23:29:22] [Server thread/INFO]:  
+[23:29:22] [Server thread/INFO]: =============================
+[23:29:22] [Server thread/INFO]: UltimateStacker 2.1.7 by Songoda <3!
+[23:29:22] [Server thread/INFO]: Action: Enabling...
+[23:29:22] [Server thread/INFO]: [UltimateStacker] Loaded locale "en_US"
+[23:29:22] [Server thread/INFO]: [SongodaCore] Hooked UltimateStacker.
+[23:29:22] [Server thread/INFO]: [UltimateStacker] Loaded locale "ru_RU"
+[23:29:23] [Server thread/INFO]: [UltimateStacker] Data handler connected using SQLite.
+[23:29:23] [Server thread/INFO]: =============================
+[23:29:23] [Server thread/INFO]:  
+[23:29:23] [Server thread/INFO]: Done (26,111s)! For help, type "help" or "?"
+[23:29:23] [Server thread/INFO]: Using default channel type
+[23:29:23] [Server thread/INFO]: Timings Reset
+[23:29:23] [Craft Scheduler Thread - 11/INFO]: SkyBlock | Info: Fetching user information from island data. This may take a while...
+[23:29:23] [Craft Scheduler Thread - 9/INFO]: [ServerUtils] Checking for updates...
+[23:29:23] [Craft Scheduler Thread - 7/INFO]: [ItemJoin] Checking for updates...
+[23:29:23] [Craft Scheduler Thread - 5/INFO]: [ItemJoin] Hooked into { WorldGuard, HeadDatabase, PlaceholderAPI, ProtocolLib, Citizens, Vault }
+[23:29:23] [Craft Scheduler Thread - 11/INFO]: SkyBlock | Info: Finished fetching user information from island data.
+[23:29:23] [Craft Scheduler Thread - 18/INFO]: [DecentHolograms] Loading holograms... 
+[23:29:23] [Craft Scheduler Thread - 4/INFO]: [TigerReports] Le plugin utilise une base de donnees MySQL.
+[23:29:23] [Craft Scheduler Thread - 6/INFO]: [ItemJoin] 0/2 Custom item(s) loaded!
+[23:29:23] [Craft Scheduler Thread - 10/WARN]: ------------------------------------------------------
+[23:29:23] [Craft Scheduler Thread - 10/WARN]: [TigerReports] Le plugin a ete mis a jour.
+[23:29:23] [Craft Scheduler Thread - 10/WARN]: La nouvelle version 5.3.4 est disponible ici:
+[23:29:23] [Craft Scheduler Thread - 10/WARN]: https://www.spigotmc.org/resources/tigerreports.25773/
+[23:29:23] [Craft Scheduler Thread - 10/WARN]: ------------------------------------------------------
+[23:29:23] [Craft Scheduler Thread - 20/INFO]: New version of CMILib was detected. Please update it
+[23:29:23] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.12.2 (340)
+[23:29:23] [Craft Scheduler Thread - 19/INFO]: 
+A newer version of DecentHolograms is available. Download it from: https://www.spigotmc.org/resources/96927/
+[23:29:23] [Server thread/WARN]: [ViaVersion] This version of Minecraft is extremely outdated and support for it has reached its end of life. You will still be able to run Via on this Minecraft version, but we are unlikely to provide any further fixes or help with problems specific to legacy Minecraft versions. Please consider updating to give your players a better experience and to avoid issues that have long been fixed.
+[23:29:23] [Server thread/WARN]: [ViaVersion] You are running an outdated Java version, please update it to at least Java 17 (your version is 11.0.22).
+[23:29:23] [Server thread/WARN]: [ViaVersion] Starting with Minecraft 1.21, ViaVersion will no longer officially be compatible with this version of Java, only offering unsupported compatibility builds.
+[23:29:24] [Craft Scheduler Thread - 18/INFO]: [DecentHolograms] Loaded 11 holograms!
+[23:29:24] [Craft Scheduler Thread - 7/INFO]: [ItemJoin] You are up to date!
+[23:29:24] [Craft Scheduler Thread - 9/INFO]: [ServerUtils] ServerUtils 3.5.4 is available!
+[23:29:24] [Craft Scheduler Thread - 9/INFO]: [ServerUtils] Release info: https://modrinth.com/plugin/serverutils/version/3.5.4
+[23:29:24] [Server thread/INFO]: [I] 已成功载入对 HeadDatabase 插件的支持
+[23:29:24] [Server thread/INFO]: [com.zaxxer.hikari_4_0_3.HikariDataSource] HikariPool-1 - Starting...
+[23:29:24] [Server thread/INFO]: [com.zaxxer.hikari_4_0_3.HikariDataSource] HikariPool-1 - Start completed.
+[23:29:24] [Server thread/INFO]: [I] 已成功连接 SQLITE 数据库
+[23:29:24] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[23:29:25] [Server thread/INFO]: [Citizens] Loaded 10 NPCs.
+[23:29:25] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: bungee
+[23:29:25] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: localtime
+[23:29:25] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: luckperms
+[23:29:25] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: math
+[23:29:25] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: player
+[23:29:25] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: progress
+[23:29:25] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: server
+[23:29:25] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: statistic
+[23:29:25] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: vault
+[23:29:25] [Server thread/INFO]: 9 placeholder hooks successfully registered!
+[23:29:25] [Craft Scheduler Thread - 20/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor!
+[23:29:25] [Craft Scheduler Thread - 17/INFO]: [HeadDatabase] Succesfully loaded 46004 heads!
+[23:29:25] [Server thread/WARN]: [ViaVersion] There is a newer plugin version available: 5.0.2, you're on: 5.0.1
+[23:29:25] [Craft Scheduler Thread - 17/INFO]: [HeadDatabase] Successfully loaded 15 featured tags!
+[23:29:25] [Server thread/INFO]: [I] 初始化 1 个工作空间... 开始加载菜单
+[23:29:26] [Server thread/INFO]: [I] 已成功载入了 23 个有效菜单... (0.707 secs)
+[23:29:26] [Craft Scheduler Thread - 17/WARN]: [HeadDatabase] You are using an outdated version!
+[23:29:26] [Craft Scheduler Thread - 17/WARN]: [HeadDatabase] Latest version: 4.19.8. You are on version: 4.13.4.
+[23:29:26] [Craft Scheduler Thread - 17/WARN]: [HeadDatabase] Update here: https://www.spigotmc.org/resources/head-database.14280/
+[23:29:27] [Craft Scheduler Thread - 9/INFO]: Connection with Songoda servers failed: Server returned HTTP response code: 525 for URL
+[23:30:58] [Server thread/INFO]: Stopping server
+[23:30:58] [Server thread/INFO]: [UltimateStacker] Disabling UltimateStacker v2.1.7
+[23:30:58] [Server thread/INFO]:  
+[23:30:58] [Server thread/INFO]: =============================
+[23:30:58] [Server thread/INFO]: UltimateStacker 2.1.7 by Songoda <3!
+[23:30:58] [Server thread/INFO]: Action: Disabling...
+[23:30:58] [Server thread/INFO]: =============================
+[23:30:58] [Server thread/INFO]:  
+[23:30:58] [Server thread/INFO]: [CMI] Disabling CMI v9.0.0.4
+[23:30:58] [Server thread/INFO]: [CMI] Closed db connections
+[23:30:58] [Server thread/INFO]: [CMILib] Disabling CMILib v1.0.2.13
+[23:30:58] [Server thread/INFO]: [SnapiArena] Disabling SnapiArena v1.0.0
+[23:30:58] [Server thread/INFO]: [ItemJoin] Disabling ItemJoin v6.0.7-RELEASE-b995
+[23:30:58] [Server thread/INFO]: [WGRegionEvents] Disabling WGRegionEvents v1.1
+[23:30:58] [Server thread/INFO]: [Citizens] Disabling Citizens v2.0.30-SNAPSHOT (build 2881)
+[23:30:59] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v6.2.2-SNAPSHOT
+[23:30:59] [Server thread/INFO]: [WorldGuard] Завершение работы исполнителя и ожидание каких-либо незавершенных задач...
+[23:30:59] [Server thread/INFO]: [CrazyCrates] Disabling CrazyCrates v1.10.2.2
+[23:30:59] [Server thread/INFO]: [DecentHolograms] Disabling DecentHolograms v2.8.6
+[23:30:59] [Server thread/INFO]: [SnapiCoin] Disabling SnapiCoin v1.0.0
+[23:30:59] [Server thread/INFO]: [SnapiBalancer] Disabling SnapiBalancer v1.5
+[23:30:59] [Server thread/INFO]: [SnapiProfile] Disabling SnapiProfile v1.0.0
+[23:30:59] [Server thread/INFO]: [Invero] Disabling Invero v1.0.8-pre-1
+[23:30:59] [Server thread/INFO]: [com.zaxxer.hikari_4_0_3.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[23:30:59] [Server thread/INFO]: [com.zaxxer.hikari_4_0_3.HikariDataSource] HikariPool-1 - Shutdown completed.
+[23:30:59] [Server thread/INFO]: [SnapiCooperation] Disabling SnapiCooperation v1.0.0
+[23:30:59] [Server thread/INFO]: [SnapiClans] Disabling SnapiClans v3.0.0
+[23:30:59] [Server thread/INFO]: [TAB] Disabling TAB v4.0.3
+[23:30:59] [Server thread/INFO]: [TAB] Disabled in 0ms
+[23:30:59] [Server thread/INFO]: [CrazyAuctions] Disabling CrazyAuctions v1.2.7
+[23:30:59] [Server thread/INFO]: [ajLeaderboards] Disabling ajLeaderboards v2.3.0-mysqlfix
+[23:30:59] [Server thread/INFO]: [ajLeaderboards] ajLeaderboards v2.3.0-mysqlfix disabled.
+[23:30:59] [Server thread/INFO]: [SnapiSeller] Disabling SnapiSeller v1.0-alpha
+[23:30:59] [Server thread/INFO]: [com.zaxxer.hikari.pool.HikariPool] DB - is closing down.
+[23:30:59] [Server thread/INFO]: [SuperLobby] Disabling SuperLobby v4.7.5
+[23:30:59] [Server thread/INFO]: [SnapiLibrary] Disabling SnapiLibrary v2.0.0
+[23:30:59] [Server thread/INFO]: [XConomy] Disabling XConomy v2.25.15
+[23:30:59] [XConomyRedisSub/INFO]: [XConomy] Unsubscribe redis channel
+[23:30:59] [Server thread/INFO]: [XConomy] XConomy успешно выключен
+[23:30:59] [Server thread/INFO]: [HeadDatabase] Disabling HeadDatabase v4.13.4
+[23:30:59] [Server thread/INFO]: [FabledSkyBlock] Disabling FabledSkyBlock vBuild-71
+[23:30:59] [Server thread/INFO]: =============================
+[23:30:59] [Server thread/INFO]: FabledSkyBlock Build-71 by Songoda <3!
+[23:30:59] [Server thread/INFO]: Action: Disabling...
+[23:30:59] [Server thread/INFO]: =============================
+[23:30:59] [Server thread/INFO]: [SlotMachineGUI] Disabling SlotMachineGUI v1.0.7
+[23:30:59] [Server thread/INFO]: [Chatty] Disabling Chatty v2.19.14
+[23:30:59] [Server thread/INFO]: [TigerReports] Disabling TigerReports v4.13.1
+[23:30:59] [Server thread/INFO]: [InteractiveBoard] Disabling InteractiveBoard v14.4
+[23:30:59] [Server thread/INFO]: [AlonsoLevels] Disabling AlonsoLevels v2.2.3-BETA-PRO
+[23:30:59] [Server thread/INFO]: [AlonsoLevels] [MySQL] Forcing connection close..
+[23:30:59] [Server thread/INFO]: [com.alonsoaliaga.alonsolevels.libraries.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[23:30:59] [Server thread/INFO]: [com.alonsoaliaga.alonsolevels.libraries.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[23:30:59] [Server thread/INFO]:  
+[23:30:59] [Server thread/INFO]: [AlonsoLevels] Plugin has been disabled!
+[23:30:59] [Server thread/INFO]: [AlonsoLevels] Thank you for using my plugin!
+[23:30:59] [Server thread/INFO]:  
+[23:30:59] [Server thread/INFO]: [LastLoginAPI] Disabling LastLoginAPI v1.7.4
+[23:30:59] [Server thread/INFO]: [LastLoginAPI] Disabling LastLoginAPI
+[23:30:59] [Server thread/WARN]: [Server thread] INFO com.alessiodp.lastloginapi.libs.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[23:30:59] [Server thread/WARN]: [Server thread] INFO com.alessiodp.lastloginapi.libs.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[23:30:59] [Server thread/INFO]: [LastLoginAPI] LastLoginAPI disabled
+[23:30:59] [Server thread/INFO]: [BetterSocial] Disabling BetterSocial v1.3-BETA
+[23:30:59] [Server thread/INFO]: [BetterSocial] [MySQL] Forcing connection close..
+[23:30:59] [Server thread/INFO]: [com.alonsoaliaga.bettersocial.libraries.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[23:30:59] [Server thread/INFO]: [com.alonsoaliaga.bettersocial.libraries.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[23:30:59] [Server thread/INFO]:  
+[23:30:59] [Server thread/INFO]: [BetterSocial] Plugin has been disabled!
+[23:30:59] [Server thread/INFO]: [BetterSocial] Thank you for using my plugin!
+[23:30:59] [Server thread/INFO]:  
+[23:30:59] [Server thread/INFO]: [ViaRewind] Disabling ViaRewind v4.0.0
+[23:30:59] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
+[23:30:59] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion: vault
+[23:30:59] [Server thread/INFO]: [CommandForward] Disabling CommandForward v0.5.0
+[23:30:59] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.0.0-SNAPSHOT-b587
+[23:30:59] [Server thread/INFO]: [ConditionalEvents] Disabling ConditionalEvents v3.14.2
+[23:30:59] [Server thread/INFO]: [ConditionalEvents] Has been disabled! Version: 3.14.2
+[23:30:59] [Server thread/INFO]: [DisableJoinMessage] Disabling DisableJoinMessage v1.0
+[23:30:59] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v6.1.9-SNAPSHOT;
+[23:30:59] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.117
+[23:30:59] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion: luckperms
+[23:30:59] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[23:30:59] [Server thread/INFO]: [LuckPerms] Closing messaging service...
+[23:30:59] [Server thread/INFO]: [LuckPerms] Closing storage...
+[23:30:59] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Shutdown initiated...
+[23:30:59] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Shutdown completed.
+[23:30:59] [Server thread/INFO]: [LuckPerms] Goodbye!
+[23:30:59] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.0.1
+[23:30:59] [Server thread/INFO]: [TimeLock] Disabling TimeLock v0.5
+[23:30:59] [Server thread/INFO]: [TimeLock] Disabled
+[23:30:59] [Server thread/INFO]: [NBTAPI] Disabling NBTAPI v2.8.0
+[23:30:59] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.0.1
+[23:30:59] [Server thread/INFO]: [ViaVersion] ViaVersion is disabling, if this is a reload and you experience issues consider rebooting.
+[23:30:59] [Server thread/INFO]: [MythicalTrader] Disabling MythicalTrader v1.0-alpha
+[23:30:59] [Server thread/INFO]: [ServerUtils] Disabling ServerUtils v3.5.3
+[23:30:59] [Server thread/INFO]: [OldCombatMechanics] Disabling OldCombatMechanics v1.11.0
+[23:30:59] [Server thread/INFO]: [OldCombatMechanics] OldCombatMechanics v1.11.0 has been disabled
+[23:30:59] [Server thread/INFO]: [AntiRelog] Disabling AntiRelog v2.1
+[23:30:59] [Server thread/INFO]: [MTBackpack] Disabling MTBackpack v1.18.0
+[23:30:59] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.10.10
+[23:30:59] [Server thread/INFO]: [LocaleLib] Disabling LocaleLib v2.1
+[23:30:59] [Server thread/INFO]: [VoidTeleport] Disabling VoidTeleport v2.4.1
+[23:30:59] [Server thread/INFO]: Saving players
+[23:30:59] [Server thread/INFO]: Saving worlds
+[23:30:59] [Server thread/INFO]: Saving chunks for level 'world'/overworld
+[23:30:59] [Server thread/INFO]: Saving chunks for level 'island_normal'/overworld
+[23:30:59] [Server thread/INFO]: Saving chunks for level 'island_nether'/the_nether
+[23:30:59] [Server thread/INFO]: Saving chunks for level 'island_end'/the_end
+[23:30:59] [Server thread/INFO]: Saving usercache.json

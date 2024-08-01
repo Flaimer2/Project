@@ -1,0 +1,18 @@
+Shop:
+  Location: world;-45.5;85.0;76.5;0.0;0.0
+  Creator: b8a47f4c-108e-33dd-a551-34497268b20f
+Top:
+  Location: world;26.5;84.0;51.5;-90.0;0.0
+  Creator: b8a47f4c-108e-33dd-a551-34497268b20f
+Crates:
+  Location: world;-19.5;84.0;68.5;0.0;0.0
+  Creator: b8a47f4c-108e-33dd-a551-34497268b20f
+Island:
+  Location: world;-14.5;84.0;24.5;90.0;0.0
+  Creator: b8a47f4c-108e-33dd-a551-34497268b20f
+Training:
+  Location: world;52.5;86.0;56.5;-45.0;0.0
+  Creator: b8a47f4c-108e-33dd-a551-34497268b20f
+PvP:
+  Location: world;9.5;84.0;71.5;0.0;0.0
+  Creator: b8a47f4c-108e-33dd-a551-34497268b20f

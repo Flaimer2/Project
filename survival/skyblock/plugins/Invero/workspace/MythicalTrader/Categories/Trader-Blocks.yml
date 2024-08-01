@@ -1,0 +1,66 @@
+menu:
+  title: '&0Ключи для кейсов'
+  virtual: true
+  
+layout: |-
+  #########
+  #       #
+  #       #
+  #       #
+  #########
+  ##M#B####
+
+items:
+  # Воздух
+  '#':
+    material: air
+  M:
+    material: GOLD_INGOT
+    update: 60
+    name: '&fВаш баланс'
+    lore: '&a%coin_amount%₵'
+  B:
+    material: arrow
+    name: '&aВернуться в главное меню'
+    action: menu switch MythicalTrader
+
+generator:
+  output:
+    name: '{{ element Name }}'
+    json: '{{ element Material }}'
+    flag: HIDE_ATTRIBUTES
+    lore: |-
+      {{if check element Description == null then " " else element Description}}
+      &fПокупка: &a{{ type int math mul [ element Price math sub [ 1 papi "%mythicaltrader_current_discount%" ] ] }}₵ &7{{if check papi "%mythicaltrader_current_level%" == 1 then " " else inline "&m({{ element Price }}₵)" }}
+
+      &aНажмите, чтобы купить!
+    enhancedLore: true
+    action: |-
+      ctx set 'fromMenu' to 'Trader-Blocks'
+      ctx set 'itemName' to element Name
+      ctx set 'itemMaterial' to element Material
+      ctx set 'giveCommand' to element GiveCommand
+      ctx set 'price' to element Price
+      ctx set 'amount' to 1
+      ctx set 'minAmount' to 1
+      ctx set 'maxAmount' to element MaxAmount
+      menu switch Shop-PurchaseWithJson
+  elements:
+    - Material: '{"type":"SKULL_ITEM","data":3,"meta":{"SkullOwner":{"Properties":{"textures":[{"Value":{"type":"STRING","data":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmM3NjI4ZTg5N2NiNGM5MzEyZjgwMmYyOGMyZWM0NjZkN2U3MjFlYzM3MDEwMzc4Y2M0NWRkMmRjNjg4MTBjMyJ9fX0="}}]},"Id":{"type":"STRING","data":"04049c90-d3e9-4621-9caf-0000aaa51469"}}}}'
+      Name: '&aКлюч для мистического кейса'
+      Description: "&fВ этом кейсе, вы сможете найти\\n&fдостаточно редкие предметы\\n"
+      GiveCommand: 'crazycrates give virtual mystery 1 %player_name%'
+      Price: 9
+      MaxAmount: 1
+    - Material: '{"type":"SKULL_ITEM","data":3,"meta":{"SkullOwner":{"Properties":{"textures":[{"Value":{"type":"STRING","data":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmQ1YTQ3ZmIxNjc1OTQ1MGE4MDY4MDZmNGQ4N2QxYzQyYjVlMzg5OTQ5MDM5MTNhNzBjYmZhM2EwNTdhNjI1YyJ9fX0="}}]},"Id":{"type":"STRING","data":"04049c90-d3e9-4621-9caf-0000aaa51470"}}}}'
+      Name: '&aКлюч для элитного кейса'
+      Description: "&fЭтот кейс содержит в себе\\n&fмного хороших предметов\\n"
+      GiveCommand: 'crazycrates give virtual elite 1 %player_name%'
+      Price: 21
+      MaxAmount: 1
+    - Material: '{"type":"SKULL_ITEM","data":3,"meta":{"SkullOwner":{"Properties":{"textures":[{"Value":{"type":"STRING","data":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDFlYjNhOWMyYTY0N2M2ODA4YTg4YzY5Mjg5NmY0ODI5NGQzYjU5YzljYTllOGNhNjI2NWI4NDg0MGQxZmU5YSJ9fX0="}}]},"Id":{"type":"STRING","data":"04049c90-d3e9-4621-9caf-0000aaa51467"}}}}'
+      Name: '&aКлюч для легендарного кейса'
+      Description: "&fИз этого кейса вам может выпасть\\n&fразличные легендарные предметы!\\n"
+      GiveCommand: 'crazycrates give virtual legendary 1 %player_name%'
+      Price: 32
+      MaxAmount: 1

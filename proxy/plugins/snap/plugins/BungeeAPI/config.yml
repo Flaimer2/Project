@@ -1,0 +1,8 @@
+hub_servers:
+- lobby-2
+mysql:
+  auth:
+    host: localhost
+    database: server_proxy?useSSL=false
+    user: root
+    password: 'root'

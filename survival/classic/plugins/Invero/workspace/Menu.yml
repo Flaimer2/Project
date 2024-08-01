@@ -1,0 +1,95 @@
+menu:
+  title: '&0Меню'
+
+layout:
+  - '         '
+  - '   4 3   '
+  - '         '
+  - '  2 5 6  '
+  - '         '
+
+items:
+  2:
+    head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTNjMTUzYzM5MWMzNGUyZDMyOGE2MDgzOWU2ODNhOWY4MmFkMzA0ODI5OWQ4YmM2YTM5ZTZmOTE1Y2M1YSJ9fX0'
+    flag: HIDE_ATTRIBUTES
+    name: '§aНаборы'
+    lore: |-
+      &fЗдесь Вы сможете получить
+      &fнабор с ценными предметами
+      
+      §fДоступные наборы: §a{{ node AvailableKits }}
+
+      §aНажмите, чтобы открыть
+    action: |-
+      ctx set 'menu' to 'true'
+      menu switch Kit
+  3:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTM2ZTk0ZjZjMzRhMzU0NjVmY2U0YTkwZjJlMjU5NzYzODllYjk3MDlhMTIyNzM1NzRmZjcwZmQ0ZGFhNjg1MiJ9fX0=
+    name: '&aДонат'
+    lore: |-
+      &fЕсли вы хотите поддержать наш проект, вы можете
+      &fприобрести привилегию. Покупка привилегии откроет
+      &fвам доступ к огромному списку возможностей
+      &fкоторые не доступны обычным игрокам
+
+      &7Полученные деньги идут на развитие нашего проекта
+
+      &aНажмите, чтобы открыть
+    action: |-
+      ctx set 'menu' to 'true'
+      menu switch Donate
+  4:
+    name: '&aВарпы сервера'
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdjMGQwMTBkZDBlNTEyZmZlYTEwOGQ3YzVmZTY5ZDU3NmMzMWVjMjY2Yzg4NGI1MWVjMGIyOGNjNDU3In19fQ
+    lore: |-
+      §fВарпы используются в качестве
+      §fперемещения по спавну режима
+
+      §aНажмите, чтобы открыть
+    action: |-
+      ctx set 'menu' to 'true'
+      menu switch Warp
+  6:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjRjYzEzMWE2NDY5NzUxMzhkNWQ1ZmNiZDlkNGYzYTk3ZGMzN2QxYmI2ZDQyYTdjNTNhZDMwMmFlMTdiNmViYiJ9fX0=
+    name: '&aРандомная телепортация'
+    lore: |-
+      §fНажмите, либо используйте
+      §fкоманду - §a/rtp&f, чтобы
+      §fначать играть в обычном мире
+
+      §aНажмите, для телепортации
+    action: |-
+      command "rtp"
+  5:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZhNmZkNDAzNGM3ZDY5MGMxODdmYzA2NjBmY2U0ZWM5MGMwZGJhOWE2N2ExNGUxNGMzMjhkNmYzNGY1MmZhZSJ9fX0=
+    name: '&aРаботы'
+    lore: |-
+      §fУ вас есть возможность начать
+      §fзарабатывать &a$ &fна той работе,
+      §fкоторая вам больше нравится!
+
+      §aНажмите, чтобы открыть
+    action: |-
+      ctx set 'menu' to 'true'
+      menu switch Jobs
+
+nodes:
+  AvailableKits:
+    type: kether
+    value: |-
+      if perm "snapix.classic.legend" then {
+        "Start, Premium, Elite, Legend"
+      } else if perm "snapix.classic.elite" then {
+        "Start, Premium, Elite"
+      } else if perm "snapix.classic.premium" then {
+        "Start, Premium"
+      } else {
+        "Start"
+      }
+
+bindings:
+  command:
+    name: menu
+    aliases:
+    - menu-gui
+    - menu-guis

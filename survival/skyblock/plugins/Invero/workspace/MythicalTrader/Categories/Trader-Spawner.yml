@@ -1,0 +1,180 @@
+menu:
+  title: '&0Яйца и спавнеры'
+  virtual: true
+layout: |-
+  #########
+  #       #
+  #       #
+  #       #
+  #########
+  ##M#B####
+
+items:
+  # Воздух
+  '#':
+    material: air
+  M:
+    material: GOLD_INGOT
+    update: 60
+    name: '&fВаш баланс'
+    lore: '&a%coin_amount%₵'
+  B:
+    material: arrow
+    name: '&aВернуться в главное меню'
+    action: menu switch MythicalTrader
+
+generator:
+  output:
+    name: '{{ element Name }}'
+    json: '{{ element Material }}'
+    flag: HIDE_ATTRIBUTES
+    lore: |-
+      {{if check element Description == null then " " else element Description}}
+      &fПокупка: &a{{ type int math mul [ element Price math sub [ 1 papi "%mythicaltrader_current_discount%" ] ] }}₵ &7{{if check papi "%mythicaltrader_current_level%" == 1 then " " else inline "&m({{ element Price }}₵)" }}
+
+      &aНажмите, чтобы купить!
+    enhancedLore: true
+    action: |-
+      ctx set 'fromMenu' to 'Trader-Spawner'
+      ctx set 'itemName' to element Name
+      ctx set 'itemMaterial' to element Material
+      ctx set 'giveCommand' to element GiveCommand
+      ctx set 'price' to element Price
+      ctx set 'amount' to 1
+      ctx set 'minAmount' to 1
+      ctx set 'maxAmount' to element MaxAmount
+      menu switch Shop-PurchaseWithJson
+  elements:
+    - Material: '{"type":"MOB_SPAWNER"}'
+      Name: '&aСпавнер'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'cmi give mob_spawner %player_name%'
+      Price: 49
+      MaxAmount: 1
+    - Material: '{"type":"MONSTER_EGG","meta":{"EntityTag":{"id":{"type":"STRING","data":"minecraft:chicken"}}}}'
+      Name: '&aЯйцо курицы'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'cmi give chicken_spawn_egg %player_name%'
+      Price: 24
+      MaxAmount: 1
+    - Material: '{"type":"MONSTER_EGG","meta":{"EntityTag":{"id":{"type":"STRING","data":"minecraft:cow"}}}}'
+      Name: '&aЯйцо коровы'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'cmi give cow_spawn_egg %player_name%'
+      Price: 24
+      MaxAmount: 1
+    - Material: '{"type":"MONSTER_EGG","meta":{"EntityTag":{"id":{"type":"STRING","data":"minecraft:creeper"}}}}'
+      Name: '&aЯйцо крипера'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'cmi give creeper_spawn_egg %player_name%'
+      Price: 24
+      MaxAmount: 1
+    - Material: '{"type":"MONSTER_EGG","meta":{"EntityTag":{"id":{"type":"STRING","data":"minecraft:horse"}}}}'
+      Name: '&aЯйцо лошади'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'cmi give horse_spawn_egg %player_name%'
+      Price: 21
+      MaxAmount: 1
+    - Material: '{"type":"MONSTER_EGG","meta":{"EntityTag":{"id":{"type":"STRING","data":"minecraft:magma_cube"}}}}'
+      Name: '&aЯйцо магмового куба'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'cmi give magma_cube %player_name%'
+      Price: 24
+      MaxAmount: 1
+    - Material: '{"type":"MONSTER_EGG","meta":{"EntityTag":{"id":{"type":"STRING","data":"minecraft:mooshroom"}}}}'
+      Name: '&aЯйцо муухомор'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'cmi give mooshroom_spawn_egg %player_name%'
+      Price: 28
+      MaxAmount: 1
+    - Material: '{"type":"MONSTER_EGG","meta":{"EntityTag":{"id":{"type":"STRING","data":"minecraft:ocelot"}}}}'
+      Name: '&aЯйцо оцелота'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'cmi give ocelot_spawn_egg %player_name%'
+      Price: 19
+      MaxAmount: 1
+    - Material: '{"type":"MONSTER_EGG","meta":{"EntityTag":{"id":{"type":"STRING","data":"minecraft:pig"}}}}'
+      Name: '&aЯйцо свиньи'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'cmi give pig_spawn_egg %player_name%'
+      Price: 24
+      MaxAmount: 1
+    - Material: '{"type":"MONSTER_EGG","meta":{"EntityTag":{"id":{"type":"STRING","data":"minecraft:rabbit"}}}}'
+      Name: '&aЯйцо кролика'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'cmi give rabbit_spawn_egg %player_name%'
+      Price: 24
+      MaxAmount: 1
+    - Material: '{"type":"MONSTER_EGG","meta":{"EntityTag":{"id":{"type":"STRING","data":"minecraft:sheep"}}}}'
+      Name: '&aЯйцо овцы'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'cmi give sheep_spawn_egg %player_name%'
+      Price: 24
+      MaxAmount: 1
+    - Material: '{"type":"MONSTER_EGG","meta":{"EntityTag":{"id":{"type":"STRING","data":"minecraft:skeleton"}}}}'
+      Name: '&aЯйцо скелета'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'cmi give skeleton_spawn_egg %player_name%'
+      Price: 24
+      MaxAmount: 1
+    - Material: '{"type":"MONSTER_EGG","meta":{"EntityTag":{"id":{"type":"STRING","data":"minecraft:slime"}}}}'
+      Name: '&aЯйцо слизня'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'cmi give slime_spawn_egg %player_name%'
+      Price: 24
+      MaxAmount: 1
+    - Material: '{"type":"MONSTER_EGG","meta":{"EntityTag":{"id":{"type":"STRING","data":"minecraft:spider"}}}}'
+      Name: '&aЯйцо паука'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'cmi give spider_spawn_egg %player_name%'
+      Price: 24
+      MaxAmount: 1
+    - Material: '{"type":"MONSTER_EGG","meta":{"EntityTag":{"id":{"type":"STRING","data":"minecraft:villager"}}}}'
+      Name: '&aЯйцо жителя &7:p'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'cmi give villager_spawn_egg %player_name%'
+      Price: 26
+      MaxAmount: 1
+    - Material: '{"type":"MONSTER_EGG","meta":{"EntityTag":{"id":{"type":"STRING","data":"minecraft:witch"}}}}'
+      Name: '&aЯйцо ведьмы'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'cmi give witch_spawn_egg %player_name%'
+      Price: 29
+      MaxAmount: 1
+    - Material: '{"type":"MONSTER_EGG","meta":{"EntityTag":{"id":{"type":"STRING","data":"minecraft:wolf"}}}}'
+      Name: '&aЯйцо волка'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'cmi give wolf_spawn_egg %player_name%'
+      Price: 19
+      MaxAmount: 1
+    - Material: '{"type":"MONSTER_EGG","meta":{"EntityTag":{"id":{"type":"STRING","data":"minecraft:zombie"}}}}'
+      Name: '&aЯйцо зомби'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'cmi give zombie_spawn_egg %player_name%'
+      Price: 24
+      MaxAmount: 1
+    - Material: '{"type":"MONSTER_EGG","meta":{"EntityTag":{"id":{"type":"STRING","data":"minecraft:zombie_pigman"}}}}'
+      Name: '&aЯйцо зомби-свиньи'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'cmi give zombie_pigman_spawn_egg %player_name%'
+      Price: 24
+      MaxAmount: 1

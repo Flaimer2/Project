@@ -1,0 +1,27 @@
+######################################################
+# New messages added for UltimateStacker v2.1.7.     #
+#                                                    #
+# These translations were found untranslated, join   #
+# our translation Discord https://discord.gg/f7fpZEf #
+# to request an official update!                     #
+#                                                    #
+# event.egg.needmore                                 #
+# event.egg.sametype                                 #
+######################################################
+
+general:
+  nametag:
+    prefix: ''
+command:
+  give:
+
+    # Ñîîáùåíèÿ êîìàíä
+    success: '&fВы получили &a%type% &fиз кейса!'
+event:
+  general:
+
+    # Ñîîáùåíèÿ ñîáûòèé
+    nopermission: '&cÓ âàñ íåò ðàçðåøåíèÿ íà ýòî.'
+  egg:
+    needmore: '&7Вам нужно &6%amount% &7яиц для создания этого спавнера.'
+    sametype: '&7Этот тип моба &6%type% &7уже спавнится.'

@@ -1,0 +1,69 @@
+Generators:
+    generator1:
+        Name: generator1
+        Permission: true
+        Materials:
+            STONE:
+                Chance: 75
+            COAL_ORE:
+                Chance: 15
+            IRON_ORE:
+                Chance: 10
+    generator2:
+        Name: generator2
+        Permission: true
+        Materials:
+            STONE:
+                Chance: 70
+            COAL_ORE:
+                Chance: 15
+            IRON_ORE:
+                Chance: 10
+            GOLD_ORE:
+                Chance: 5
+    generator3:
+        Name: generator3
+        Permission: true
+        Materials:
+            STONE:
+                Chance: 65
+            COAL_ORE:
+                Chance: 15
+            IRON_ORE:
+                Chance: 10
+            GOLD_ORE:
+                Chance: 5
+            DIAMOND_ORE:
+                Chance: 5
+    generator4:
+        Name: generator4
+        Permission: true
+        Materials:
+            STONE:
+                Chance: 50
+            COAL_ORE:
+                Chance: 15
+            IRON_ORE:
+                Chance: 10
+            GOLD_ORE:
+                Chance: 10
+            DIAMOND_ORE:
+                Chance: 10
+            EMERALD_ORE:
+                Chance: 5
+    generator5:
+        Name: generator5
+        Permission: true
+        Materials:
+            STONE:
+                Chance: 25
+            COAL_ORE:
+                Chance: 20
+            IRON_ORE:
+                Chance: 20
+            GOLD_ORE:
+                Chance: 20
+            DIAMOND_ORE:
+                Chance: 15
+            EMERALD_ORE:
+                Chance: 10

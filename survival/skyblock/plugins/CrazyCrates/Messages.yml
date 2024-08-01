@@ -1,0 +1,90 @@
+Messages:
+  No-Teleporting: '&fВы &cне можете &fтелепортироваться при открытии кейса'
+  No-Commands-While-In-Crate: '&fВы &cне можете &fиспользовать команды при открытии кейса'
+  No-Key: '&fВам нужен &aключ&f, чтобы открыть этот кейс!'
+  No-Virtual-Key: '&fВам нужен &aключ&f, чтобы открыть этот кейс!'
+  Already-Opening-Crate: '&fВы уже &aоткрываете &fэтот кейс'
+  Quick-Crate-In-Use: '&fЭтот кейс уже &cиспользуется&f. Подождите, пока кейс откроется'
+  World-Disabled: '&cКейсы отключены в мире %World%'
+  Reload: '&aКонфигурация перезагружена'
+  Not-Online: '&cЭтот игрок не в сети'
+  No-Permission: '&fУ вас &cнет &fразрешения использовать эту команду!'
+  Crate-Already-Opened: '&fВы уже &aоткрываете &fэтот кейс'
+  Cant-Be-A-Virtual-Crate: '&cЭтот тип кейса нельзя использовать в качестве виртуального
+    кейса'
+  Inventory-Full: '&fВаш инвентарь &cзаполнен&f, пожалуйста, освободите место, прежде
+    чем открывать кейс'
+  To-Close-To-Another-Player: '&cВы должны закрыть игроку, который открывает свой
+    кейс'
+  Needs-More-Room: '&cНедостаточно места, чтобы открыть его здесь'
+  Out-Of-Time: '&fВы очень &cдолго &fоткрывали кейс, поэтому он закрыт'
+  Must-Be-A-Player: '&cВы должны быть игроком, чтобы использовать эту команду'
+  Must-Be-Looking-At-A-Block: '&cВы должны смотреть на блок'
+  Not-A-Crate: '&fКейса с именем &a%crate% &fне найдено'
+  Not-A-Number: '&6%number%&c не число'
+  Given-A-Player-Keys: '&fВы выдали &a%amount% &fключей игроку &a%player%&7'
+  Given-Everyone-Keys: '&fВы выдали &a%amount% &fключей всем игрокам'
+  Given-Offline-Player-Keys: '&fВы выдали &a%amount% &fключ(ей) оффлайн игроку
+    &a%player%&f'
+  Take-A-Player-Keys: '&fВы взяли &a%amount% &fключ(ей) у &a%player%&7'
+  Take-Offline-Player-Keys: '&fВы взяли &a%amount% &fключ(ей) у оффлайн игроков
+    &a%player%&7'
+  Opened-A-Crate: '&fВы только что открыли кейс &6%crate% &7для &6%player%&7'
+  Internal-Error: '&fПроизошла внутренняя &cошибка&f. Пожалуйста, проверьте консоль
+    на предмет полной ошибки'
+  No-Item-In-Hand: '&cУ вас должен быть предмет в руке, чтобы добавить его в кейс'
+  Added-Item-With-Editor: '&7Предмет был добавлен в кейс %crate% в приз #%prize%'
+  Created-Physical-Crate:
+  - '%prefix%&7Вы только что установили этот блок для %crate%'
+  - '&7Для удаления кейса нажмите SHIFT + ЛКМ в креативе по блоку'
+  Keys:
+    Personal:
+      No-Virtual-Keys: '&8&l(&4&l!&8&l) &7В настоящее время у вас нет виртуальных
+        ключей'
+      Header:
+      - '&8&l(&6&l!&8&l) &7Список вашего текущего количества ключей'
+    Other-Player:
+      No-Virtual-Keys: '&8&l(&4&l!&8&l) &7Игрок %player% не имеет ключей'
+      Header:
+      - '&8&l(&6&l!&8&l) &7Список текущего количества  ключей игрока %player%'
+    Per-Crate: '%crate% &7&l>&8&l> &6%keys% ключей'
+  Help:
+  - '&b>> &3&lПомощь по кейсам'
+  - '&6/key [player] &7- Проверить количество ключей у игрока'
+  - '&6/crates &7- Открыть GUI'
+  - '&6/crates additem <crate> <prize> &7- Добавить предметы в игре к призу в кейсе'
+  - '&6/crates admin &7- Открыть Admin Keys GUI'
+  - '&6/crates list &7- Список всех кейсов'
+  - '&6/crates open <Crate> [Player] &7- Открыть кейc для игрока'
+  - '&6/crates tp <Location> &7- Телепортироваться к кейсу'
+  - '&6/crates give <Physical/Virtual> <Crate> [Amount] [Player] &7- Выдать игроку
+    ключи к кейсу'
+  - '&6/crates giveall <Physical/Virtual> <Crate> [Amount] &7- Выдать всем онлайн
+    игрокам ключи к кейсу'
+  - '&6/crates take <Physical/Virtual> <Crate> [Amount] [Player] &7- Взять ключи у
+    игрока'
+  - '&6/crates set <Crate> &7- Установить блок на который вы смотрите в качестве кейса'
+  - '&6/crates set Menu &7- Установить блок на который вы смотрите в качестве открытия
+    меню /crates GUI'
+  - '&6/crates reload &7- Перезагрузить конфигурацию и данные'
+  Not-On-Block: '&cYou must be standing on a block to use this crate'
+  Obtaining-Keys: ''
+  Removed-Physical-Crate: '%prefix% &7You have just removed &6%id%&7'
+  Quad-Crate-Disabled: '&cQuad crate type is currently disabled in this build of Crazy
+    Crates due to 1.13+ changing code'
+  Preview-Disabled: '&cThe preview for that crate is currently disabled'
+  No-Schematics-Found: '&cNo schematic were found, if using 1.13+ make sure the schematics
+    folder has the new .nbt schematics, if not regenerate the folder'
+  No-Prizes-Found: '&cThis crate contains no prizes that you can win'
+  Same-Player: '&cYou can''t use this command on yourself'
+  Not-Enough-Keys: '&cYou do not have enough keys to transfer'
+  Transferred-Keys: '&7You have transferred %amount% %crate% keys to %player%'
+  Received-Transferred-Keys: '&7You have received %amount% %crate% keys from %player%'
+  Files-Converted:
+    Crates-Plus:
+    - '%prefix%&7Successfully converted CratesPlus config.yml into crate files with
+      no errors'
+    - '&7Please do &6/cc reload &7to register the new crates'
+    No-Files-To-Convert: '&cNo plugins that can be converted were found'
+    Error-Converting-Files: '&cThere was an error while trying to convert files. Please
+      check console for the error log'

@@ -1,0 +1,8 @@
+# InteractiveBoard by Joiubas
+
+settings:
+  connection:
+    use-simple-video-compression: true
+  language:
+    defaultlanguage: en_lang.yml
+configversion: '14.4'

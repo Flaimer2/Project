@@ -1,0 +1,250 @@
+Crate:
+  CrateType: CSGO
+  CrateName: '&0Элитный кейс'
+  Preview-Name: '&0Элитный кейс'
+  StartingKeys: 0
+  InGUI: true
+  Slot: 14
+  OpeningBroadCast: false
+  BroadCast: '%Prefix%&6&l%Player% &7is opening a &a&lClassic Chest&7.'
+  Item: 'CHEST'
+  Glowing: false
+  Name: '&fЭлитный кейс'
+  Lore:
+    - '&7Этот кейс содержит предметы.'
+    - '&7У вас &6%Keys% ключей.'
+    - '&7[&6&li&r&7] &b>> &6ПКМ для просмотра наград.'
+  PhysicalKey:
+    Name: '&fключ для &eЭлитного кейса'
+    Lore:
+      - '&7Специальный ключ'
+      - '&7для открытия кейса.'
+    Item: 'TRIPWIRE_HOOK'
+    Glowing: false
+  Prizes:
+    1:
+      DisplayName: '&aСпавнер коров'
+      DisplayItem: 'mob_spawner'
+      DisplayAmount: 1
+      Lore:
+        - '&7'
+        - '&fШанс выпадения: &a6%'
+      DisplayEnchantments: {}
+      Commands:
+        - 'us givespawner %Player% cow 1'
+      MaxRange: 100
+      Chance: 6
+      Firework: true
+      Glowing: false
+      Items: {}
+      Messages: {}
+      Alternative-Prize:
+        Toggle: false
+        Messages: {}
+        Commands: {}
+        Items: {}
+    2:
+      DisplayName: '&aСпавнер ифритов'
+      DisplayItem: 'mob_spawner'
+      DisplayAmount: 1
+      Lore:
+        - '&7'
+        - '&fШанс выпадения: &a6%'
+      DisplayEnchantments: {}
+      Commands:
+        - 'us givespawner %Player% blaze 1'
+      MaxRange: 100
+      Chance: 6
+      Firework: true
+      Glowing: false
+      Items: {}
+      Messages: {}
+      Alternative-Prize:
+        Toggle: false
+        Messages: {}
+        Commands: {}
+        Items: {}
+    3:
+      DisplayName: '&aЗачарованное золотое яблоко x8'
+      DisplayItem: 'GOLDEN_APPLE:1'
+      DisplayAmount: 8
+      Lore:
+        - '&7'
+        - '&fШанс выпадения: &a10%'
+      DisplayEnchantments: {}
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Glowing: false
+      Items:
+        - 'Item:GOLDEN_APPLE:1, Amount:8'
+      Messages: {}
+      Alternative-Prize:
+        Toggle: false
+        Messages: {}
+        Commands: {}
+        Items: {}
+    4:
+      DisplayName: '&aАлмазный блок x16'
+      DisplayItem: 'DIAMOND_BLOCK'
+      DisplayAmount: 16
+      Lore:
+        - '&7'
+        - '&fШанс выпадения: &a12%'
+      DisplayEnchantments: {}
+      MaxRange: 100
+      Chance: 12
+      Firework: true
+      Glowing: false
+      Items:
+        - 'Item:DIAMOND_BLOCK, Amount:16'
+      Messages: {}
+      Alternative-Prize:
+        Toggle: false
+        Messages: {}
+        Commands: {}
+        Items: {}
+    5:
+      DisplayName: '&aИзумрудный блок x16'
+      DisplayItem: 'EMERALD_BLOCK'
+      DisplayAmount: 16
+      Lore:
+        - '&7'
+        - '&fШанс выпадения: &a7%'
+      DisplayEnchantments: {}
+      MaxRange: 100
+      Chance: 7
+      Firework: true
+      Glowing: false
+      Items:
+        - 'Item:EMERALD_BLOCK, Amount:16'
+      Messages: {}
+      Alternative-Prize:
+        Toggle: false
+        Messages: {}
+        Commands: {}
+        Items: {}
+    6:
+      DisplayName: '&aЖелезный блок x48'
+      DisplayItem: 'IRON_BLOCK'
+      DisplayAmount: 48
+      Lore:
+        - '&7'
+        - '&fШанс выпадения: &a18%'
+      DisplayEnchantments: {}
+      MaxRange: 100
+      Chance: 18
+      Firework: true
+      Glowing: false
+      Items:
+        - 'Item:IRON_BLOCK, Amount:48'
+      Messages: {}
+      Alternative-Prize:
+        Toggle: false
+        Messages: {}
+        Commands: {}
+        Items: {}
+    7:
+      DisplayName: '&aКлюч к Мистическому кейсу x2'
+      DisplayItem: 'TRIPWIRE_HOOK'
+      DisplayAmount: 2
+      Lore:
+        - '&7'
+        - '&fШанс выпадения: &a6%'
+      DisplayEnchantments: {}
+      Commands:
+        - 'crates give v mystery 2 %Player%'
+      MaxRange: 100
+      Chance: 6
+      Firework: true
+      Glowing: false
+      Items: {}
+      Messages: {}
+      Alternative-Prize:
+        Toggle: false
+        Messages: {}
+        Commands: {}
+        Items: {}
+    8:
+      DisplayName: '&aКлюч к Элитному кейсу'
+      DisplayItem: 'TRIPWIRE_HOOK'
+      DisplayAmount: 1
+      Lore:
+        - '&7'
+        - '&fШанс выпадения: &a5%'
+      DisplayEnchantments: {}
+      Commands:
+        - 'crates give v elite 1 %Player%'
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Glowing: false
+      Items: {}
+      Messages: {}
+      Alternative-Prize:
+        Toggle: false
+        Messages: {}
+        Commands: {}
+        Items: {}
+    9:
+      DisplayName: '&aЖемчуг эндера x16'
+      DisplayItem: 'ENDER_PEARL'
+      DisplayAmount: 16
+      Lore:
+        - '&7'
+        - '&fШанс выпадения: &a20%'
+      DisplayEnchantments: {}
+      MaxRange: 100
+      Chance: 20
+      Firework: true
+      Glowing: false
+      Items:
+        - 'Item:ENDER_PEARL, Amount:16'
+      Messages: {}
+      Alternative-Prize:
+        Toggle: false
+        Messages: {}
+        Commands: {}
+        Items: {}
+    10:
+      DisplayName: '&a7000$'
+      DisplayItem: 'double_plant'
+      DisplayAmount: 1
+      Lore:
+        - '&7'
+        - '&fШанс выпадения: &a8%'
+      DisplayEnchantments: {}
+      Commands:
+        - 'money give %Player% 7000'
+      MaxRange: 100
+      Chance: 8
+      Firework: true
+      Glowing: false
+      Items: {}
+      Messages: {}
+      Alternative-Prize:
+        Toggle: false
+        Messages: {}
+        Commands: {}
+        Items: {}
+    11:
+      DisplayName: '&a5000$'
+      DisplayItem: 'double_plant'
+      DisplayAmount: 1
+      Lore:
+        - '&7'
+        - '&fШанс выпадения: &a10%'
+      DisplayEnchantments: {}
+      Commands:
+        - 'money give %Player% 5000'
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Glowing: false
+      Items: {}
+      Messages: {}
+      Alternative-Prize:
+        Toggle: false
+        Messages: {}
+        Commands: {}
+        Items: {}

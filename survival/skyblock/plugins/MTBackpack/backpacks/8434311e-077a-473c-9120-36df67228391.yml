@@ -1,0 +1,144 @@
+backpack_data:
+  classname: teammt.mtbackpack.classes.Backpack
+  fields:
+    items:
+      classname: java.util.HashMap
+      entries:
+        entry0:
+          key: 0
+          value:
+            classname: org.bukkit.inventory.ItemStack
+            properties:
+              classname: java.util.LinkedHashMap
+              entries:
+                entry0:
+                  key: type
+                  value: INK_SACK
+                entry1:
+                  key: damage
+                  value: 1
+                entry2:
+                  key: amount
+                  value: 64
+        entry1:
+          key: 1
+          value:
+            classname: org.bukkit.inventory.ItemStack
+            properties:
+              classname: java.util.LinkedHashMap
+              entries:
+                entry0:
+                  key: type
+                  value: CLAY_BRICK
+                entry1:
+                  key: amount
+                  value: 64
+        entry2:
+          key: 2
+          value:
+            classname: org.bukkit.inventory.ItemStack
+            properties:
+              classname: java.util.LinkedHashMap
+              entries:
+                entry0:
+                  key: type
+                  value: INK_SACK
+                entry1:
+                  key: damage
+                  value: 2
+                entry2:
+                  key: amount
+                  value: 64
+        entry3:
+          key: 3
+          value:
+            classname: org.bukkit.inventory.ItemStack
+            properties:
+              classname: java.util.LinkedHashMap
+              entries:
+                entry0:
+                  key: type
+                  value: CLAY_BRICK
+                entry1:
+                  key: amount
+                  value: 64
+        entry4:
+          key: 4
+          value:
+            classname: org.bukkit.inventory.ItemStack
+            properties:
+              classname: java.util.LinkedHashMap
+              entries:
+                entry0:
+                  key: type
+                  value: CLAY_BRICK
+                entry1:
+                  key: amount
+                  value: 64
+        entry5:
+          key: 5
+          value:
+            classname: org.bukkit.inventory.ItemStack
+            properties:
+              classname: java.util.LinkedHashMap
+              entries:
+                entry0:
+                  key: type
+                  value: CLAY_BRICK
+                entry1:
+                  key: amount
+                  value: 64
+        entry6:
+          key: 6
+          value:
+            classname: org.bukkit.inventory.ItemStack
+            properties:
+              classname: java.util.LinkedHashMap
+              entries:
+                entry0:
+                  key: type
+                  value: INK_SACK
+                entry1:
+                  key: damage
+                  value: 1
+                entry2:
+                  key: amount
+                  value: 64
+        entry7:
+          key: 7
+          value:
+            classname: org.bukkit.inventory.ItemStack
+            properties:
+              classname: java.util.LinkedHashMap
+              entries:
+                entry0:
+                  key: type
+                  value: INK_SACK
+                entry1:
+                  key: damage
+                  value: 4
+                entry2:
+                  key: amount
+                  value: 64
+        entry8:
+          key: 8
+          value:
+            classname: org.bukkit.inventory.ItemStack
+            properties:
+              classname: java.util.LinkedHashMap
+              entries:
+                entry0:
+                  key: type
+                  value: INK_SACK
+                entry1:
+                  key: damage
+                  value: 2
+                entry2:
+                  key: amount
+                  value: 64
+    requiresRerender: false
+    type: green
+    id:
+      classname: java.util.UUID
+      value: 8434311e-077a-473c-9120-36df67228391
+    size: 9

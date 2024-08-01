@@ -1,0 +1,55 @@
+menu:
+  title: '&0Ваша статистика'
+
+layout:
+  - '    1    '
+  - '         '
+  - '  2   3  '
+  - '         '
+  - '    B    '
+
+items:
+  1:
+    head: '%tab_placeholder_condition:getSkinName%'
+    name: '&aМеню'
+    lore: |-
+      &fЭто меню по статистике работ.
+      &fЗдесь вы можете найти:
+
+      &a▪ &fСтатистику по каждой работе
+      &a▪ &fНаграды за уровень для каждой работы  
+  2:
+    material: 'emerald'
+    name: '&aСтатистика по каждой работе'
+    lore: |-
+      &fВ следующем меню вы можете просмотреть:
+
+      &a▪ &fНа каких работах вы сейчас заняты
+      &a▪ &fСколько рабочих мест вы занимаете в настоящее время
+      &a▪ &fУровень, Exp, Очки за каждое задание
+      &a▪ &fСколько времени вы проработали на всех работах
+
+      &aНажмите, чтобы открыть это меню
+    action: |-
+      ctx set 'jobsyourstats' to 'true'
+      menu switch JobsGeneralStats
+  3:
+    material: 'SIGN'
+    name: '&aНаграды за уровень'
+    lore: |-
+      &fВ следующем меню вы можете
+      &fпросмотреть уровень у каждой работы,
+      &fа также награды, которые вы можете получить
+      &fза каждый пройденный уровень
+
+      &aНажмите, чтобы открыть это меню
+    action: |-
+      ctx set 'jobsyourstats' to 'true'
+      menu switch LevelSelectJob
+  B:
+    material: air
+    sub:
+      - rule: 'check &jobs == true'
+        material: arrow
+        name: '&aВернуться в главное меню работ'
+        action: menu switch Jobs

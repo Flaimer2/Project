@@ -1,0 +1,165 @@
+menu:
+  title: '&0Награды за уровни {{ &PName }}'
+
+layout: |-
+  ####I####
+
+
+
+
+  ####B####
+
+items:
+  # Воздух
+  '#':
+    material: air
+  B:
+    material: air
+    sub:
+      - rule: 'check &levelselectjob == true'
+        material: arrow
+        name: '&aВернуться в выбор работ'
+        action: menu switch LevelSelectJob
+  I:
+    material: '{{ &Material }}'
+    flag: HIDE_ATTRIBUTES
+    name: '{{ &FormattedName }}'
+    lore: |-
+      &fВ этом меню вы можете увидеть,
+      &fкак повышается ваш уровень у
+      &fработы {{ &PName }}
+
+generator:
+  output:
+    material: 'stained_glass_pane<data-value:14>'
+    name: '&4Уровень {{element Level}}'
+    lore: |-
+      &cНаграду можно получить только
+      &cпосле того, как вы достигнете указанного уровня
+
+      &aНаграды:
+      &fВид награды: {{ element FormattedType }}
+      &fНаграда: &a{{ element Amount }}{{ if check element Type == "Money" then "&a$" else " exp" }}
+    sub:
+      - rule: 'perm inline "jobs.{{&Name}}.level{{element Level}}"'
+        material: 'stained_glass_pane<data-value:5>'
+        name: '&aУровень {{element Level}}'
+        lore: |-
+          &7Награда была получена
+
+          &aНаграды:
+          &fВид награды: {{ element FormattedType }}
+          &fНаграда: &a{{ element Amount }}{{ if check element Type == "Money" then "&a$" else " exp" }}
+      - rule: 'check papi inline "%jobsr_user_jlevel_{{&Name}}%" >= 1'
+        material: 'stained_glass_pane<data-value:13>'
+        name: '&2Уровень {{element Level}}'
+        lore: |-
+          &aНажмите, чтобы получить награду!
+
+          &aНаграды:
+          &fВид награды: {{ element FormattedType }}
+          &fНаграда: &a{{ element Amount }}{{ if check element Type == "Money" then "&a$" else " exp" }}
+        action: |-
+          console inline "lp user %player_name% permission set {{inline "jobs.{{&Name}}.level{{element Level}}"}}"
+          if check element Type == "Money" then {
+            console inline "money give %player_name% {{ element Amount}}"
+          } else {
+            console inline "alonsolevels addexp %player_name% {{ element Amount}} true true"
+          }
+  elements:
+    - Level: 1
+      Type: 'Money'
+      FormattedType: '&aДеньги'
+      Amount: 100
+    - Level: 2
+      Type: 'Money'
+      FormattedType: '&aДеньги'
+      Amount: 500
+    - Level: 3
+      Type: 'Money'
+      FormattedType: '&aДеньги'
+      Amount: 1000
+    - Level: 4
+      Type: 'Money'
+      FormattedType: '&aДеньги'
+      Amount: 1250
+    - Level: 5
+      Type: 'Money'
+      FormattedType: '&aДеньги'
+      Amount: 1500
+    - Level: 6
+      Type: 'Money'
+      FormattedType: '&aДеньги'
+      Amount: 1750
+    - Level: 7
+      Type: 'Exp'
+      FormattedType: '&aexp'
+      Amount: 500
+    - Level: 8
+      Type: 'Exp'
+      FormattedType: '&aexp'
+      Amount: 1000
+    - Level: 9
+      Type: 'Exp'
+      FormattedType: '&aexp'
+      Amount: 1250
+    - Level: 10
+      Type: 'Exp'
+      FormattedType: '&aexp'
+      Amount: 1500
+    - Level: 11
+      Type: 'Exp'
+      FormattedType: '&aexp'
+      Amount: 1700
+    - Level: 12
+      Type: 'Exp'
+      FormattedType: '&aexp'
+      Amount: 2000
+    - Level: 13
+      Type: 'Exp'
+      FormattedType: '&aexp'
+      Amount: 2400
+    - Level: 14
+      Type: 'Exp'
+      FormattedType: '&aexp'
+      Amount: 2700
+    - Level: 15
+      Type: 'Exp'
+      FormattedType: '&aexp'
+      Amount: 3000
+    - Level: 16
+      Type: 'Exp'
+      FormattedType: '&aexp'
+      Amount: 3400
+    - Level: 17
+      Type: 'Exp'
+      FormattedType: '&aexp'
+      Amount: 3600
+    - Level: 18
+      Type: 'Exp'
+      FormattedType: '&aexp'
+      Amount: 4000
+    - Level: 19
+      Type: 'Exp'
+      FormattedType: '&aexp'
+      Amount: 4200
+    - Level: 20
+      Type: 'Money'
+      FormattedType: '&aДеньги'
+      Amount: 3000
+    - Level: 21
+      Type: 'Money'
+      FormattedType: '&aДеньги'
+      Amount: 3200
+    - Level: 22
+      Type: 'Money'
+      FormattedType: '&aДеньги'
+      Amount: 3400
+    - Level: 23
+      Type: 'Money'
+      FormattedType: '&aДеньги'
+      Amount: 4000
+    - Level: 24
+      Type: 'Money'
+      FormattedType: '&aДеньги'
+      Amount: 4200

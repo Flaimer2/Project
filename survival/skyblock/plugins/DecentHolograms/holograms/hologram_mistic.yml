@@ -1,0 +1,22 @@
+location: world:-15,500:89,500:75,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&7&lМистический Кейс'
+    height: 0.3
+  - content: '&aУровень I'
+    height: 0.3
+  - content: '&fКлючей: &a%crazycrates_mystery_total%'
+    height: 0.3
+  - content: ''
+    height: 0.3    
+  - content: §aНажмите ЛКМ для предосмотра
+    height: 0.3
+  - content: §aНажмите ПКМ для открытия
+    height: 0.3
+  actions: {}

@@ -1,0 +1,87 @@
+menu:
+  title: '&0Выбор работы'
+
+layout: |-
+  #########
+  ## # # ##
+  ## # # ##
+  ## # # ##
+  ## # # ##
+  ####B####
+
+items:
+  # Воздух
+  '#':
+    material: air
+  B:
+    material: air
+    sub:
+      - rule: 'check &jobsyourstats == true'
+        material: arrow
+        name: '&aВернуться в вашу статистику'
+        action: menu switch JobsYourStats
+
+generator:
+  output:
+    material: '{{ element Material }}'
+    flag: HIDE_ATTRIBUTES
+    name: '{{ element FormattedName }}'
+    lore: |-
+
+      &aНажмите, чтобы открыть меню наград
+    action: |-
+      ctx set 'levelselectjob' to 'true'
+      ctx set 'Material' to element Material
+      ctx set 'Name' to element Name
+      ctx set 'PName' to element PName
+      ctx set 'FormattedName' to element FormattedName
+      menu switch LevelJob
+  elements:
+    - Material: 'gold_axe'
+      Name: 'Дровосек'
+      PName: 'дровосека'
+      FormattedName: '&aДровосек'
+    - Material: 'gold_pickaxe'
+      Name: 'Шахтер'
+      PName: 'шахтера'
+      FormattedName: '&bШахтер'
+    - Material: 'QUARTZ_BLOCK'
+      Name: 'Строитель'
+      PName: 'строителя'
+      FormattedName: '&2Строитель'
+    - Material: 'gold_spade'
+      Name: 'Копатель'
+      PName: 'копателя'
+      FormattedName: '&6Копатель'
+    - Material: 'gold_hoe'
+      Name: 'Фермер'
+      PName: 'фермера'
+      FormattedName: '&dФермер'
+    - Material: 'gold_sword'
+      Name: 'Охотник'
+      PName: 'охотника'
+      FormattedName: '&cОхотник'
+    - Material: 'gold_boots'
+      Name: 'Исследователь'
+      PName: 'исследователя'
+      FormattedName: '&3Исследователь'
+    - Material: 'WORKBENCH'
+      Name: 'Крафтер'
+      PName: 'крафтера'
+      FormattedName: '&fКрафтер'
+    - Material: 'FISHING_ROD'
+      Name: 'Рыбак'
+      PName: 'рыбака'
+      FormattedName: '&9Рыбак'
+    - Material: 'ANVIL'
+      Name: 'Оружейник'
+      PName: 'оружейника'
+      FormattedName: '&4Оружейник'
+    - Material: 'BREWING_STAND_ITEM'
+      Name: 'Зельевар'
+      PName: 'зельевара'
+      FormattedName: '&eЗельевар'
+    - Material: 'ENCHANTMENT_TABLE'
+      Name: 'Чародей'
+      PName: 'чародея'
+      FormattedName: '&5Чародей'

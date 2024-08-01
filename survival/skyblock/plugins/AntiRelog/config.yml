@@ -1,0 +1,39 @@
+settings:
+  enable-golden-apple-cooldown: true
+  apple-cooldown: 60
+  #GM, Fly, God, Vanish(Essentials)
+  enable-player-checks: true
+  enable-pvp-mode: true
+  pvp-mode-time: 10
+  kill-player-on-leave: true
+  kill-player-on-command: false
+  kill-player-on-kick: false
+  ban-player-on-leave: false
+  ban-command: "tempban %Player% 10 min &cВышел во время PvP"
+  broadcast-leave-kill-message: true
+  remove-death-message: true
+  remove-kick-message: false
+  remove-leave-message: true
+  remove-join-message: true
+messages:
+  pvp-mode:
+    action: "&fВы находитесь в режиме &cPVP&f, не выходите из игры! &fОсталось &a%time% &fсек."
+    title-start: "&cВы вошли в PVP режим!"
+    chat-start: "&6AntiRelog &7| &fВы вошли в режим &cPVP! &fНе выходите из игры и не используйте команды!"
+    chat-disabled: "&fВы не можете использовать команды в &cPvP&f. &6Осталось &a%time% &fсек."
+    commandkill: "&fВы были убиты, т.к пытались использовать команду во время &cPVP"
+    pvpleave: "&f%player% &fПокинул игру во время ПВП и был наказан"
+  pvp-stopped:
+    action: "&fPVP окончено, Вы снова можете использовать команды и выходить из игры!"
+    title: "&fВы вышли из режима PvP"
+    chat: "&6AntiRelog &7| &fВы вышли из режима &cPVP! &fВы снова можете использовать команды и выходить из игры!"
+  other:
+    apple: "&6AntiRelog &7| &fОсталось &a%time% &fсек. перед следующим использованием золотого яблока!"
+    fly-enabled: "&fВыключите полёт для атаки игроков"
+    god-enabled: "&fВыключите режим бога для атаки игроков"
+    gamemode-enabled: "&fВыключите творческий режим для атаки игроков"
+    vanish-enabled: "&fВыключите невидимость для атаки игроков"
+disabled-worlds:
+  - "world1"
+  #- "world"
+  #- "world_nether"

@@ -1,0 +1,16 @@
+25.06.2024 - 12:39:39 - [TAB v4.0.3] Tried to modify non-existing objective TAB-Scoreboard for player Danuk16
+31.07.2024 - 22:31:35 - [TAB v4.0.3] Failed to disable
+31.07.2024 - 22:31:35 - java.lang.NullPointerException: null
+31.07.2024 - 22:31:35 - 	at me.clip.placeholderapi.expansion.PlaceholderExpansion.unregister(PlaceholderExpansion.java:147)
+31.07.2024 - 22:31:35 - 	at me.neznamy.tab.shared.FeatureManager.unload(FeatureManager.java:72)
+31.07.2024 - 22:31:35 - 	at me.neznamy.tab.shared.TAB.unload(TAB.java:185)
+31.07.2024 - 22:31:35 - 	at me.neznamy.tab.platforms.bukkit.BukkitTAB.onDisable(BukkitTAB.java:54)
+31.07.2024 - 22:31:35 - 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:266)
+31.07.2024 - 22:31:35 - 	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoader.java:350)
+31.07.2024 - 22:31:35 - 	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:437)
+31.07.2024 - 22:31:35 - 	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:424)
+31.07.2024 - 22:31:35 - 	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:417)
+31.07.2024 - 22:31:35 - 	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.disablePlugins(CraftServer.java:364)
+31.07.2024 - 22:31:35 - 	at net.minecraft.server.v1_12_R1.MinecraftServer.stop(MinecraftServer.java:491)
+31.07.2024 - 22:31:35 - 	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:720)
+31.07.2024 - 22:31:35 - 	at java.base/java.lang.Thread.run(Thread.java:829)

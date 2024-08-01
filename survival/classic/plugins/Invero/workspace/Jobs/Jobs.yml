@@ -1,0 +1,54 @@
+menu:
+  title: '&0Работы'
+
+layout:
+  - '         '
+  - '         '
+  - '  1 3 2  '
+  - '         '
+  - '    B    '
+
+items:
+  1:
+    head: 'steve'
+    name: '&aВаша статистика'
+    lore: |-
+      &fУзнайте, уровень ваших работ,
+      &fзанимаемые рабочие места и
+      &fмногое другое!
+
+      &aНажмите, чтобы открыть меню
+    action: |-
+      ctx set 'jobs' to 'true'
+      menu switch JobsYourStats
+  2:
+    material: 'BOOK_AND_QUILL'
+    name: '&aПосмотреть работы'
+    lore: |-
+      &fТрудоустройтесь на работу
+      &fсвоей мечты! Также узнайте, самые
+      &fпопулярные виды работ сервера
+
+      &fКоличество работ: &a12
+              
+      &aНажмите, чтобы открыть меню
+    action: menu switch JobsBrowse
+  3:
+    material: 'SIGN'
+    name: '&aСтатистика сервера'
+    lore: |-
+      &fОбщая статистика по работам
+      &fсервера, например, общее
+      &fколичество работников на
+      &fвсех работах и многое другое...
+
+      &aСтатистика
+      &fВсего работников: &a%jobsr_total_workers%
+      &fМаксимальное кол. рабочих мест: &a%jobsr_maxjobs%
+  B:
+    material: air
+    sub:
+      - rule: 'check &menu == true'
+        material: arrow
+        name: '&aВернуться в меню'
+        action: menu open Menu

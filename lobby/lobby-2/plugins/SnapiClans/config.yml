@@ -1,52 +1,60 @@
 regex:
+  tag: '[A-z0-9-<>]{3,5}'
   clan-name: '[A-z0-9]{3,16}'
 
 alias:
+  remove-command: 'remove'
+  main-command: 'clan|guild'
+  leave-command: 'leave'
+  info-command: 'info'
+  chat-command: 'chat'
+  disband-command: 'disband'
+  create-command: 'create'
+  tag-command: 'tag'
+  accept-command: 'accept'
+  invite-command: 'invite'
+  decline-command: 'deny'
+  help-command: 'help'
   role-increase-command: 'role increase'
   role-decrease-command: 'role decrease'
-  help-command: 'help'
-  create-command: 'create'
-  members-command: 'members'
-  leave-command: 'leave'
-  tag-command: 'tag'
-  invite-command: 'invite'
-  accept-command: 'accept'
-  decline-command: 'deny'
-  disband-command: 'disband'
-  chat-command: 'chat'
-  main-command: 'clan|guild'
-  info-command: 'info'
-  remove-command: 'remove'
+  list-command: 'list'
 
 level:
   create-clan: 14
   join-clan: 7
 
 date-format: 'dd/MM/yy HH:mm'
+economy:
+  tag: 35000
+  create-clan: 50000
+
+chat-format: '&f[&eКлан&f] %vault_prefix%%player_name%%tab_placeholder_condition:suffix% > %message%'
+limit-invite-for-clan: 5
+max-members: 10
 roles:
-  other-roles:
-    - name: 'veteran'
-      display_name: 'Ветеран'
-      weight: 2
-      permissions:
-        - 'INVITE'
-        - 'KICK'
-
-    - name: 'vice'
-      display_name: 'Заместитель'
-      weight: 3
-      permissions:
-        - 'ROLE_DECREASE'
-        - 'INVITE'
-        - 'KICK'
-        - 'ROLE_INCREASE'
-
   owner-role:
     name: 'owner'
     display_name: 'Владелец'
     weight: 4
     permissions:
       - '*'
+
+  other-roles:
+    - name: 'veteran'
+      display_name: 'Ветеран'
+      weight: 2
+      permissions:
+        - 'KICK'
+        - 'INVITE'
+
+    - name: 'vice'
+      display_name: 'Заместитель'
+      weight: 3
+      permissions:
+        - 'ROLE_INCREASE'
+        - 'ROLE_DECREASE'
+        - 'KICK'
+        - 'INVITE'
 
   default-role:
     name: 'default'
@@ -55,10 +63,4 @@ roles:
     permissions: []
 
 
-max-members: 10
-chat-format: '&f[&eКлан&f] %vault_prefix%%player_name%%tab_placeholder_condition:suffix% > %message%'
 invite-reply-seconds: 60
-economy:
-  tag: 1000
-  create-clan: 50000
-

@@ -1,0 +1,143 @@
+menu:
+  title: 'Меню наборов'
+  virtual: true
+
+layout: |-
+  #########
+  #########
+  # # # # #
+  #########
+  ####B####
+
+items:
+  # Воздух
+  '#':
+    material: air
+  B:
+    material: air
+    sub:
+      - rule: 'check &menu == true'
+        material: arrow
+        name: '&aВернуться в меню'
+        action: menu open Menu
+
+
+generator:
+  output:
+    update: 10
+    refresh: 10
+    material: '{{ if perm inline "classic.kit.{{element Name}}" then element Material else "barrier"}}'
+    flag: HIDE_ATTRIBUTES
+    name: '{{ element FormattedName }}'
+    lore: |-
+      
+      &aИнформация:
+      &fТип: &a{{ if check element Type == "free" then "Бесплатный" else "Донатерский"}}
+      &fЗадержка: &a1 день
+      &fДоступно: &cНет
+
+      &aНажмите ПКМ, чтобы посмотреть содержимое набора
+    action:
+      right: menu switch inline "Kit-{{element Name}}"
+    sub:
+      # Нельзя взять
+      - rule: 'all [ perm inline "classic.kit.{{element Name}}" perm inline "classic.kit.{{element Name}}.daily" ]'
+        lore: |-
+
+          &aИнформация:
+          &fТип: &a{{ if check element Type == "free" then "Бесплатный" else "Донатерский"}}
+          &fЗадержка: &a1 день
+          &fДоступно: &aНет
+          &fОсталось ждать: &a{{ papi inline "%luckperms_expiry_time_classic.kit.{{element Name}}.daily%" }}
+
+          &aНажмите ПКМ, чтобы посмотреть содержимое набора
+        action:
+          right: menu switch inline "Kit-{{element Name}}"
+      - rule: 'all [ perm inline "classic.kit.{{element Name}}" not perm inline "classic.kit.{{element Name}}.daily" ]'
+        lore: |-
+
+          &aИнформация:
+          &fТип: &a{{ if check element Type == "free" then "Бесплатный" else "Донатерский"}}
+          &fЗадержка: &a1 день
+          &fДоступно: &aДа
+          
+          &aНажмите ЛКМ, чтобы взять набор
+          &aНажмите ПКМ, чтобы посмотреть содержимое набора
+        action:
+          right: menu switch inline "Kit-{{element Name}}"
+          left: |-
+            console inline "lp user %player_name% permission settemp classic.kit.{{element Name}}.daily true 1d"
+            title "&a&lВы получили набор:" subtitle element FormattedName by 20 20 10
+            msg inline "&cНаборы &7| &fВы получили набор: {{element FormattedName}}"
+            case element Name [
+              when "start" -> {
+                console "minecraft:give %player_name% minecraft:stone_sword"
+                console "minecraft:give %player_name% minecraft:stone_pickaxe"
+                console "minecraft:give %player_name% minecraft:coal 8"
+                console "minecraft:give %player_name% minecraft:log 8"
+                console "minecraft:give %player_name% minecraft:apple 16"
+                console "minecraft:give %player_name% minecraft:leather_helmet"
+                console "minecraft:give %player_name% minecraft:leather_chestplate"
+                console "minecraft:give %player_name% minecraft:leather_leggings"
+                console "minecraft:give %player_name% minecraft:leather_boots"
+              }
+              when "premium" -> {
+                console "minecraft:give %player_name% minecraft:iron_sword"
+                console "minecraft:give %player_name% minecraft:diamond_pickaxe"
+                console "minecraft:give %player_name% minecraft:diamond 8"
+                console "minecraft:give %player_name% minecraft:log 16"
+                console "minecraft:give %player_name% minecraft:golden_apple 4"
+                console "minecraft:give %player_name% minecraft:iron_helmet"
+                console "minecraft:give %player_name% minecraft:iron_chestplate"
+                console "minecraft:give %player_name% minecraft:iron_leggings"
+                console "minecraft:give %player_name% minecraft:iron_boots"
+              }
+              when "elite" -> {
+                console "minecraft:give %player_name% minecraft:iron_sword"
+                console "minecraft:give %player_name% minecraft:diamond_pickaxe"
+                console "minecraft:give %player_name% minecraft:diamond 32"
+                console "minecraft:give %player_name% minecraft:log 64"
+                console "minecraft:give %player_name% minecraft:golden_apple 64"
+                console "minecraft:give %player_name% minecraft:iron_helmet"
+                console "minecraft:give %player_name% minecraft:iron_chestplate"
+                console "minecraft:give %player_name% minecraft:iron_leggings"
+                console "minecraft:give %player_name% minecraft:iron_boots"
+              }
+              when "legend" -> {
+                console "minecraft:give %player_name% minecraft:diamond_sword"
+                console "minecraft:give %player_name% minecraft:diamond_pickaxe"
+                console "minecraft:give %player_name% minecraft:diamond 64"
+                console "minecraft:give %player_name% minecraft:log 64"
+                console "minecraft:give %player_name% minecraft:golden_apple 64"
+                console "minecraft:give %player_name% minecraft:diamond_helmet"
+                console "minecraft:give %player_name% minecraft:diamond_chestplate"
+                console "minecraft:give %player_name% minecraft:diamond_leggings"
+                console "minecraft:give %player_name% minecraft:diamond_boots"
+              }
+            ]
+            menu close
+  elements:
+    - FormattedName: '&aStart'
+      Name: 'start'
+      Material: 'wooden_pickaxe'
+      Type: 'free'
+    - FormattedName: '&aPremium'
+      Name: 'premium'
+      Material: 'gold_ingot'
+      Type: 'donate'
+    - FormattedName: '&aElite'
+      Name: 'elite'
+      Material: 'emerald'
+      Type: 'donate'
+    - FormattedName: '&aLegend'
+      Name: 'legend'
+      Material: 'diamond'
+      Type: 'donate'
+
+bindings:
+  command:
+    name: kit
+    aliases:
+    - kits
+    - kitprev
+    - kitpreview

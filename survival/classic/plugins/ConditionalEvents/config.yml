@@ -1,0 +1,52 @@
+Config:
+  update_notification: true
+Messages:
+  prefix: '&4[&bConditionalEvents&4] '
+  commandReload: '&aConfig Reloaded.'
+  commandNoPermissions: '&cYou don''t have permissions to use this command.'
+  commandResetError: '&cUse &7/ce reset <player> <event>'
+  eventDoesNotExists: '&cThat event doesn''t exists on the config.'
+  cooldownReset: '&aCooldown was reset for player &e%player% &aon event &e%event%&a!'
+  seconds: s
+  minutes: m
+  hours: h
+  days: d
+Events:
+  # event21:
+  #   type: repetitive
+  #   repetitive_time: 400
+  #   actions:
+  #     default:
+  #     - 'console_command: lp user %player_name% meta set c_playerkills %statistic_player_kills%'
+  #     - 'console_command: lp user %player_name% meta set c_deaths %statistic_deaths%'
+  #     - 'console_command: lp user %player_name% meta set c_walkonem %math_({statistic_walk_one_cm}+{statistic_sprint_one_cm})/100%'
+  #     - 'console_command: lp user %player_name% meta set c_played %javascript_statistic_time_played%'
+  kills:
+    type: player_kill
+    actions:
+      default:
+      - 'console_command: alonsolevels addrandomexp %player_name% 10 20 false true'
+  respawn:
+    type: player_respawn
+    actions:
+      default:
+      - 'console_command: alonsolevels addrandomexp %player_name% 1 10 false true'
+  break:
+    type: block_break
+    conditions:
+    - '%player_gamemode% !equals CREATIVE'
+    - '%block% equals DIAMOND_ORE or %block% equals EMERALD_ORE execute action2'
+    - '%block% equals GOLD_ORE or %block% equals REDSTONE_ORE execute action3'
+    - '%block% equals IRON_ORE execute action4'
+    - '%block% equals COAL_ORE execute action5'
+    actions:
+      default:
+      - 'console_command: alonsolevels addexp %player_name% 1 false true'
+      action2:
+      - 'console_command: alonsolevels addexp %player_name% 5 false true'
+      action3:
+      - 'console_command: alonsolevels addexp %player_name% 4 false true'
+      action4:
+      - 'console_command: alonsolevels addexp %player_name% 3 false true'
+      action5:
+      - 'console_command: alonsolevels addexp %player_name% 2 false true'

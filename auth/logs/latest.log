@@ -1,231 +1,40 @@
-[16:00:40] [Server thread/INFO]: Starting minecraft server version 1.8.8
-[16:00:40] [Server thread/INFO]: Loading properties
-[16:00:40] [Server thread/INFO]: Default game type: SURVIVAL
-[16:00:40] [Server thread/INFO]: This server is running FoxSpigot version 1.8.8-R0.1-SNAPSHOT (MC: 1.8.8) (Implementing API version 1.8.8-R0.1-SNAPSHOT)
-[16:00:41] [Server thread/INFO]: Debug logging is disabled
-[16:00:41] [Server thread/INFO]: Spigot Timings: false - Verbose: false - Interval: 5m - Length: 60m
-[16:00:41] [Server thread/INFO]: Server Ping Player Sample Count: 0
-[16:00:41] [Server thread/INFO]: Using 4 threads for Netty based IO
-[16:00:41] [Server thread/INFO]: Data value allowed items: 
-[16:00:41] [Server thread/INFO]: Generating keypair
-[16:00:41] [Server thread/INFO]: Starting Minecraft server on 127.0.0.1:21001
-[16:00:41] [Server thread/INFO]: Set PluginClassLoader as parallel capable
-[16:00:41] [Server thread/INFO]: [TpLogin] Loading TpLogin v4.1.1
-[16:00:41] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v4.7.1-SNAPSHOT
-[16:00:41] [Server thread/INFO]: [ViaVersion] ViaVersion 4.7.1-SNAPSHOT is now loaded. Waiting for boot (late-bind).
-[16:00:41] [Server thread/INFO]: [HolographicDisplays] Loading HolographicDisplays v2.3.3-SNAPSHOT
-[16:00:41] [Server thread/INFO]: [RunDisable] Loading RunDisable v0.1
-[16:00:41] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v2.0.4-SNAPSHOT
-[16:00:41] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v2.0.4-SNAPSHOT
-[16:00:41] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[16:00:41] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[16:00:41] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[16:00:41] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[16:00:41] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
-[16:00:42] [Server thread/INFO]: Preparing level "auth"
-[16:00:42] [Server thread/INFO]: -------- World Settings For [auth] --------
-[16:00:42] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[16:00:42] [Server thread/INFO]: Arrow Despawn Rate: 100
-[16:00:42] [Server thread/INFO]: View Distance: 16
-[16:00:42] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[16:00:42] [Server thread/INFO]: Item Despawn Rate: 6000
-[16:00:42] [Server thread/INFO]: Item Merge Radius: 4.0
-[16:00:42] [Server thread/INFO]: Anti X-Ray: false
-[16:00:42] [Server thread/INFO]: 	Engine Mode: 1
-[16:00:42] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
-[16:00:42] [Server thread/INFO]: 	Replace Blocks: [1, 5]
-[16:00:42] [Server thread/INFO]: Nerfing mobs spawned from spawners: true
-[16:00:42] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[16:00:42] [Server thread/INFO]: Cane Growth Modifier: 100%
-[16:00:42] [Server thread/INFO]: Melon Growth Modifier: 100%
-[16:00:42] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[16:00:42] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[16:00:42] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[16:00:42] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[16:00:42] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[16:00:42] [Server thread/INFO]: Mob Spawn Range: 3
-[16:00:42] [Server thread/INFO]: Max Entity Collisions: 2
-[16:00:42] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
-[16:00:42] [Server thread/INFO]: Structure Info Saving: true
-[16:00:42] [Server thread/INFO]: Max TNT Explosions: 100
-[16:00:42] [Server thread/INFO]: Sending up to 10 chunks per packet
-[16:00:42] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[16:00:42] [Server thread/INFO]: Random Lighting Updates: false
-[16:00:42] [Server thread/INFO]: Entity Activation Range: An 12 / Mo 20 / Mi 3
-[16:00:42] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[16:00:42] [Server thread/INFO]: Tile Max Tick Time: 1000ms Entity max Tick Time: 1000ms
-[16:00:42] [Server thread/INFO]: Chunks to Grow per Tick: 650
-[16:00:42] [Server thread/INFO]: Clear tick list: false
-[16:00:42] [Server thread/INFO]: Experience Merge Radius: 6.0
-[16:00:42] [Server thread/INFO]: -------- World Settings For [auth] --------
-[16:00:42] [Server thread/INFO]: WorldServer TickNextTick cap set at 10000
-[16:00:42] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
-[16:00:42] [Server thread/INFO]: Fix TNT cannons: false
-[16:00:42] [Server thread/INFO]: Water over lava flow speed: 5
-[16:00:42] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
-[16:00:42] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
-[16:00:42] [Server thread/INFO]: Allow undead horse types to be leashed: false
-[16:00:42] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 32 Hard: 128
-[16:00:42] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
-[16:00:42] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
-[16:00:42] [Server thread/INFO]: Keep spawn chunk loaded: true
-[16:00:42] [Server thread/INFO]: World async lighting: false
-[16:00:42] [Server thread/INFO]: Preparing start region for level 0 (Seed: 0)
-[16:00:42] [Server thread/INFO]: [TpLogin] Enabling TpLogin v4.1.1
-[16:00:42] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v4.7.1-SNAPSHOT
-[16:00:42] [Server thread/INFO]: [ViaVersion] Registering protocol transformers and injecting...
-[16:00:43] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
-[16:00:43] [Server thread/INFO]: [HolographicDisplays] Enabling HolographicDisplays v2.3.3-SNAPSHOT
-[16:00:43] [Server thread/INFO]: [RunDisable] Enabling RunDisable v0.1
-[16:00:44] [Server thread/INFO]: [RunDisable] Plugin enabled
-[16:00:44] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[16:00:44] [Server thread/INFO]: Done (2,096s)! For help, type "help" or "?"
-[16:00:44] [Server thread/INFO]: Using default channel type
-[16:00:44] [Server thread/INFO]: Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
-[16:00:45] [Server thread/INFO]: Timings Reset
-[16:00:45] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.8.x (47)
-[16:00:45] [Server thread/WARN]: [ViaVersion] This version of Minecraft is extremely outdated and support for it has reached its end of life. You will still be able to run Via on this Minecraft version, but we are unlikely to provide any further fixes or help with problems specific to legacy Minecraft versions. Please consider updating to give your players a better experience and to avoid issues that have long been fixed.
-[16:00:45] [Server thread/WARN]: [ViaVersion] You are running an outdated Java version, please consider updating it to at least Java 17 (your version is 11.0.22). At some point in the future, ViaVersion will no longer be compatible with this version of Java.
-[16:00:45] [Server thread/INFO]: [HolographicDisplays] Found a new version available: v3.0.4
-[16:00:45] [Server thread/INFO]: [HolographicDisplays] Download it on Bukkit Dev:
-[16:00:45] [Server thread/INFO]: [HolographicDisplays] dev.bukkit.org/bukkit-plugins/holographic-displays
-[16:00:45] [Craft Scheduler Thread - 3/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor!
-[16:01:19] [Thread-9/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[16:01:19] [Server thread/INFO]: FlaimerPro[/127.0.0.1:54648] logged in with entity id 9 at ([auth]0.5, 50.0, 0.5)
-[16:01:25] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[16:03:16] [Thread-10/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[16:03:16] [Server thread/INFO]: FlaimerPro[/127.0.0.1:54709] logged in with entity id 10 at ([auth]0.5, 50.0, 0.5)
-[16:04:28] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[16:04:35] [Thread-11/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[16:04:36] [Server thread/INFO]: FlaimerPro[/127.0.0.1:54804] logged in with entity id 11 at ([auth]0.5, 50.0, 0.5)
-[16:07:21] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[16:08:02] [Thread-13/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[16:08:02] [Server thread/INFO]: FlaimerPro[/127.0.0.1:55013] logged in with entity id 12 at ([auth]0.5, 50.0, 0.5)
-[16:08:58] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[16:09:27] [Thread-14/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[16:09:27] [Server thread/INFO]: FlaimerPro[/127.0.0.1:55108] logged in with entity id 13 at ([auth]0.5, 50.0, 0.5)
-[16:11:49] [Server thread/INFO]: FlaimerPro lost connection: Internal Exception: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение
-[18:02:33] [Thread-18/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[18:02:33] [Server thread/INFO]: FlaimerPro[/127.0.0.1:56292] logged in with entity id 14 at ([auth]0.5, 50.0, 0.5)
-[18:02:38] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[18:49:00] [Thread-21/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[18:49:00] [Server thread/INFO]: FlaimerPro[/127.0.0.1:57039] logged in with entity id 15 at ([auth]0.5, 50.0, 0.5)
-[18:49:05] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[18:49:19] [Thread-22/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[18:49:19] [Server thread/INFO]: FlaimerPro[/127.0.0.1:57055] logged in with entity id 16 at ([auth]0.5, 50.0, 0.5)
-[18:49:24] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[18:51:20] [Thread-23/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[18:51:20] [Server thread/INFO]: FlaimerPro[/127.0.0.1:57159] logged in with entity id 17 at ([auth]0.5, 50.0, 0.5)
-[18:54:45] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[18:55:08] [Thread-24/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[18:55:08] [Server thread/INFO]: FlaimerPro[/127.0.0.1:57349] logged in with entity id 18 at ([auth]0.5, 50.0, 0.5)
-[18:58:02] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[18:59:14] [Thread-25/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[18:59:14] [Server thread/INFO]: FlaimerPro[/127.0.0.1:57500] logged in with entity id 19 at ([auth]0.5, 50.0, 0.5)
-[19:00:47] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[19:04:58] [Thread-26/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[19:04:58] [Server thread/INFO]: FlaimerPro[/127.0.0.1:57813] logged in with entity id 20 at ([auth]0.5, 50.0, 0.5)
-[19:07:52] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[19:08:35] [Thread-28/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[19:08:35] [Server thread/INFO]: FlaimerPro[/127.0.0.1:58069] logged in with entity id 21 at ([auth]0.5, 50.0, 0.5)
-[19:08:41] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[19:11:44] [Thread-29/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[19:11:44] [Server thread/INFO]: FlaimerPro[/127.0.0.1:58188] logged in with entity id 22 at ([auth]0.5, 50.0, 0.5)
-[19:11:49] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[19:13:26] [Thread-30/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[19:13:27] [Server thread/INFO]: FlaimerPro[/127.0.0.1:58327] logged in with entity id 23 at ([auth]0.5, 50.0, 0.5)
-[19:13:32] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[19:25:03] [Thread-31/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[19:25:03] [Server thread/INFO]: FlaimerPro[/127.0.0.1:58738] logged in with entity id 24 at ([auth]0.5, 50.0, 0.5)
-[19:28:46] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[19:32:23] [Thread-32/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[19:32:23] [Server thread/INFO]: FlaimerPro[/127.0.0.1:59057] logged in with entity id 25 at ([auth]0.5, 50.0, 0.5)
-[19:33:21] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[19:39:37] [Thread-34/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[19:39:37] [Server thread/INFO]: FlaimerPro[/127.0.0.1:59341] logged in with entity id 26 at ([auth]0.5, 50.0, 0.5)
-[19:39:43] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[19:40:04] [Thread-35/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[19:40:04] [Server thread/INFO]: FlaimerPro[/127.0.0.1:59360] logged in with entity id 27 at ([auth]0.5, 50.0, 0.5)
-[19:40:11] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[19:40:19] [Thread-36/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[19:40:19] [Server thread/INFO]: FlaimerPro[/127.0.0.1:59375] logged in with entity id 28 at ([auth]0.5, 50.0, 0.5)
-[19:40:25] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[21:53:52] [Thread-41/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[21:53:52] [Server thread/INFO]: FlaimerPro[/127.0.0.1:51500] logged in with entity id 29 at ([auth]0.5, 50.0, 0.5)
-[21:56:17] [Thread-42/INFO]: UUID of player Danuk16 is b8a47f4c-108e-33dd-a551-34497268b20f
-[21:56:18] [Server thread/INFO]: Danuk16[/127.0.0.1:62122] logged in with entity id 30 at ([auth]0.5, 50.0, 0.5)
-[21:56:27] [Server thread/INFO]: Danuk16 lost connection: Disconnected
-[22:07:01] [Thread-44/INFO]: UUID of player Danuk16 is b8a47f4c-108e-33dd-a551-34497268b20f
-[22:07:01] [Server thread/INFO]: Danuk16[/127.0.0.1:63049] logged in with entity id 31 at ([auth]0.5, 50.0, 0.5)
-[22:08:12] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[22:08:12] [Server thread/INFO]: Danuk16 lost connection: Disconnected
-[22:13:04] [Thread-45/INFO]: UUID of player Danuk16 is b8a47f4c-108e-33dd-a551-34497268b20f
-[22:13:04] [Server thread/INFO]: Danuk16[/127.0.0.1:55636] logged in with entity id 32 at ([auth]0.5, 50.0, 0.5)
-[22:13:26] [Server thread/INFO]: Danuk16 lost connection: Disconnected
-[22:14:07] [Thread-46/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[22:14:07] [Server thread/INFO]: FlaimerPro[/127.0.0.1:56964] logged in with entity id 33 at ([auth]0.5, 50.0, 0.5)
-[22:14:23] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[22:14:29] [Thread-47/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[22:14:29] [Server thread/INFO]: FlaimerPro[/127.0.0.1:56984] logged in with entity id 34 at ([auth]0.5, 50.0, 0.5)
-[22:14:34] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[22:14:45] [Thread-48/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[22:14:45] [Server thread/INFO]: FlaimerPro[/127.0.0.1:57017] logged in with entity id 35 at ([auth]0.5, 50.0, 0.5)
-[22:14:51] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[22:16:37] [Thread-49/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[22:16:37] [Server thread/INFO]: FlaimerPro[/127.0.0.1:59783] logged in with entity id 36 at ([auth]0.5, 50.0, 0.5)
-[22:16:43] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[22:18:36] [Thread-50/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[22:18:36] [Server thread/INFO]: FlaimerPro[/127.0.0.1:63177] logged in with entity id 37 at ([auth]0.5, 50.0, 0.5)
-[22:18:41] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[22:20:12] [Thread-51/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[22:20:12] [Server thread/INFO]: FlaimerPro[/127.0.0.1:63471] logged in with entity id 38 at ([auth]0.5, 50.0, 0.5)
-[22:20:41] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[22:21:14] [Thread-52/INFO]: UUID of player Danuk16 is b8a47f4c-108e-33dd-a551-34497268b20f
-[22:21:14] [Server thread/INFO]: Danuk16[/127.0.0.1:58417] logged in with entity id 39 at ([auth]0.5, 50.0, 0.5)
-[22:21:30] [Server thread/INFO]: Danuk16 lost connection: Disconnected
-[22:21:41] [Thread-53/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[22:21:41] [Server thread/INFO]: FlaimerPro[/127.0.0.1:58465] logged in with entity id 40 at ([auth]0.5, 50.0, 0.5)
-[22:21:45] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[22:22:07] [Thread-54/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[22:22:07] [Server thread/INFO]: FlaimerPro[/127.0.0.1:58486] logged in with entity id 41 at ([auth]0.5, 50.0, 0.5)
-[22:22:15] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[22:22:45] [Thread-55/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[22:22:45] [Server thread/INFO]: FlaimerPro[/127.0.0.1:58518] logged in with entity id 42 at ([auth]0.5, 50.0, 0.5)
-[22:22:55] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[22:28:02] [Thread-56/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[22:28:02] [Server thread/INFO]: FlaimerPro[/127.0.0.1:58756] logged in with entity id 43 at ([auth]0.5, 50.0, 0.5)
-[22:28:06] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[22:31:04] [Thread-57/INFO]: UUID of player Danuk16 is b8a47f4c-108e-33dd-a551-34497268b20f
-[22:31:04] [Server thread/INFO]: Danuk16[/127.0.0.1:53863] logged in with entity id 44 at ([auth]0.5, 50.0, 0.5)
-[22:31:10] [Server thread/INFO]: Danuk16 lost connection: Disconnected
-[22:31:39] [Thread-58/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[22:31:40] [Server thread/INFO]: FlaimerPro[/127.0.0.1:53885] logged in with entity id 45 at ([auth]0.5, 50.0, 0.5)
-[22:31:40] [Thread-59/INFO]: UUID of player Danuk16 is b8a47f4c-108e-33dd-a551-34497268b20f
-[22:31:40] [Server thread/INFO]: Danuk16[/127.0.0.1:53886] logged in with entity id 46 at ([auth]0.5, 50.0, 0.5)
-[22:34:16] [Server thread/INFO]: Danuk16 lost connection: Disconnected
-[22:34:42] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[22:37:45] [Thread-61/INFO]: UUID of player Danuk16 is b8a47f4c-108e-33dd-a551-34497268b20f
-[22:37:45] [Thread-62/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[22:37:45] [Server thread/INFO]: Danuk16[/127.0.0.1:49513] logged in with entity id 47 at ([auth]0.5, 50.0, 0.5)
-[22:37:45] [Server thread/INFO]: FlaimerPro[/127.0.0.1:49514] logged in with entity id 48 at ([auth]0.5, 50.0, 0.5)
-[22:38:18] [Server thread/INFO]: Danuk16 lost connection: Disconnected
-[22:39:48] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[22:40:55] [Thread-63/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[22:40:55] [Server thread/INFO]: FlaimerPro[/127.0.0.1:57733] logged in with entity id 49 at ([auth]0.5, 50.0, 0.5)
-[22:40:59] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[22:43:46] [Thread-64/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[22:43:46] [Server thread/INFO]: FlaimerPro[/127.0.0.1:65400] logged in with entity id 50 at ([auth]0.5, 50.0, 0.5)
-[22:43:47] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[22:43:50] [Server thread/INFO]: Stopping the server
-[22:43:50] [Server thread/INFO]: Stopping server
-[22:43:50] [Server thread/INFO]: [ViaRewind] Disabling ViaRewind v2.0.4-SNAPSHOT
-[22:43:50] [Server thread/INFO]: [RunDisable] Disabling RunDisable v0.1
-[22:43:50] [Server thread/INFO]: [RunDisable] Plugin disabled
-[22:43:50] [Server thread/INFO]: [HolographicDisplays] Disabling HolographicDisplays v2.3.3-SNAPSHOT
-[22:43:50] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v4.7.1-SNAPSHOT
-[22:43:50] [Server thread/INFO]: [ViaVersion] ViaVersion is disabling, if this is a reload and you experience issues consider rebooting.
-[22:43:50] [Server thread/INFO]: [TpLogin] Disabling TpLogin v4.1.1
-[22:43:50] [Server thread/INFO]: Saving players
-[22:43:50] [Server thread/INFO]: Saving worlds
-[22:43:50] [Server thread/INFO]: Saving chunks for level 'auth'/Overworld
-[22:43:50] [Server thread/INFO]: Saving usercache.json
+[14:04:24] [Thread-1263/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
+[14:04:24] [Server thread/INFO]: FlaimerPro[/127.0.0.1:59866] logged in with entity id 9 at ([auth]0.5, 50.0, 0.5)
+[14:06:08] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
+[15:34:30] [Thread-1268/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
+[15:34:30] [Server thread/INFO]: FlaimerPro[/127.0.0.1:63641] logged in with entity id 10 at ([auth]0.5, 50.0, 0.5)
+[17:02:38] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
+[17:08:32] [Thread-1272/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
+[17:08:32] [Server thread/INFO]: FlaimerPro[/127.0.0.1:49639] logged in with entity id 11 at ([auth]0.5, 50.0, 0.5)
+[17:09:40] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
+[18:13:09] [Thread-1276/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
+[18:13:09] [Server thread/INFO]: FlaimerPro[/127.0.0.1:50115] logged in with entity id 12 at ([auth]0.5, 50.0, 0.5)
+[18:14:29] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
+[22:31:37] [Thread-1285/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
+[22:31:37] [Thread-1286/INFO]: UUID of player Danuk16 is b8a47f4c-108e-33dd-a551-34497268b20f
+[22:31:37] [Server thread/INFO]: FlaimerPro[/127.0.0.1:63189] logged in with entity id 13 at ([auth]0.5, 50.0, 0.5)
+[22:31:37] [Server thread/INFO]: Danuk16[/127.0.0.1:63190] logged in with entity id 14 at ([auth]0.5, 50.0, 0.5)
+[22:35:44] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
+[22:41:24] [Server thread/INFO]: Danuk16 lost connection: Disconnected
+[22:50:39] [Thread-1288/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
+[22:50:39] [Server thread/INFO]: FlaimerPro[/127.0.0.1:54611] logged in with entity id 15 at ([auth]0.5, 50.0, 0.5)
+[22:50:50] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
+[23:22:44] [Thread-1290/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
+[23:22:44] [Server thread/INFO]: FlaimerPro[/127.0.0.1:58386] logged in with entity id 16 at ([auth]0.5, 50.0, 0.5)
+[23:22:54] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
+[23:28:32] [Thread-1291/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
+[23:28:32] [Server thread/INFO]: FlaimerPro[/127.0.0.1:60604] logged in with entity id 17 at ([auth]0.5, 50.0, 0.5)
+[23:30:48] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
+[23:31:05] [Server thread/INFO]: Stopping the server
+[23:31:05] [Server thread/INFO]: Stopping server
+[23:31:05] [Server thread/INFO]: [ViaRewind] Disabling ViaRewind v2.0.4-SNAPSHOT
+[23:31:05] [Server thread/INFO]: [RunDisable] Disabling RunDisable v0.1
+[23:31:05] [Server thread/INFO]: [RunDisable] Plugin disabled
+[23:31:05] [Server thread/INFO]: [HolographicDisplays] Disabling HolographicDisplays v2.3.3-SNAPSHOT
+[23:31:05] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v4.7.1-SNAPSHOT
+[23:31:05] [Server thread/INFO]: [ViaVersion] ViaVersion is disabling, if this is a reload and you experience issues consider rebooting.
+[23:31:05] [Server thread/INFO]: [TpLogin] Disabling TpLogin v4.1.1
+[23:31:05] [Server thread/INFO]: Saving players
+[23:31:05] [Server thread/INFO]: Saving worlds
+[23:31:05] [Server thread/INFO]: Saving chunks for level 'auth'/Overworld
+[23:31:05] [Server thread/INFO]: Saving usercache.json

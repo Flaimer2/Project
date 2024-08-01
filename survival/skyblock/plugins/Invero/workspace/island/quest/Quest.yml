@@ -1,0 +1,66 @@
+title: '&0Задания'
+scale: [ 9, 5 ]
+
+layout: |-
+  #########
+  #########
+  ##     ##
+  #########
+  #########
+items:
+  "#":
+    material: air
+
+generator:
+  output:
+    update: 5
+    material: '{{ element Material }}'
+    flag: HIDE_ATTRIBUTES
+    name: '{{ element Name }}'
+    enhancedLore: true
+    lore: |-
+
+      &fВыполнено: &a{{ papi inline "%luckperms_meta_{{element MetaName}}%" }}/{{ element Amount }}
+      &fПрогресс: &a{{papi inline "%math_{{papi inline "%luckperms_meta_{{element MetaName}}%"}}/{{element Amount}}*100%"}}%
+
+      &aНажмите, чтобы открыть
+    action: |-
+      context set Title to element Title
+      context set Category to element Category
+      menu switch QuestGenerator
+  elements:
+    - Material: 'crafting_table'
+      Name: '&aРемесленник'
+      MetaName: 'skyblock.quest.done.craft'
+      Amount: 34
+      Title: '&0Задания ремесленника'
+      Category: 1
+    - Material: 'cobblestone'
+      Name: '&aКопай, шахтёр!'
+      MetaName: 'skyblock.quest.done.blockbreak'
+      Amount: 3
+      Title: '&0Задания шахтёра'
+      Category: 2
+    - Material: 'zombie_spawn_egg'
+      Name: '&aРыцарь'
+      MetaName: 'skyblock.quest.done.kill'
+      Amount: 3
+      Title: '&0Задания рыцаря'
+      Category: 3
+    - Material: 'iron_sword'
+      Name: '&aКиллер'
+      MetaName: 'skyblock.quest.done.pkill'
+      Amount: 5
+      Title: '&0Задания киллера'
+      Category: 4
+    - Material: 'redstone'
+      Name: '&aПрочее'
+      MetaName: 'skyblock.quest.done.other'
+      Amount: 4
+      Title: '&0Другие задания'
+      Category: 5
+bindings:
+  command:
+    name: quest
+    aliases:
+    - achievement

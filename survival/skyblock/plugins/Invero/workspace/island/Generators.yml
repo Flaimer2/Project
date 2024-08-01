@@ -1,0 +1,87 @@
+title: '&0Обновление генераторов'
+virtual: true
+scale: [ 9, 5 ]
+
+layout: |-
+  #########
+  #########
+  ##     ##
+  #########
+  #########
+
+items:
+  # Воздух
+  '#':
+    material: air
+
+generator:
+  output:
+    update: 5
+    refresh: 5
+    head: '{{ element Head }}'
+    flag: HIDE_ATTRIBUTES
+    name: '&aГенератор #{{ element Number }}'
+    enhancedLore: true
+    lore: |-
+      &fОбновите свой генератор,
+      &fчтобы получить следующие
+      &fпроценты:
+      {{ element Percentages }}
+      
+      &fСтатус: {{ if perm inline "fabledskyblock.generator.generator{{element Number}}" then "&a&lРАЗБЛОКИРОВАНО" else "&c&lЗАБЛОКИРОВАНО" }}
+      &fСтоимость: &a{{ element Price }}$
+
+      {{ if perm inline "fabledskyblock.generator.generator{{element Number}}" then "&aУ вас уже есть этот генератор" else if all [ perm inline "fabledskyblock.generator.generator{{math sub [ type int element Number 1 ]}}" check math sub [ type int element Number 1 ] != 0 ] then "&cПриобретите предыдущие улучшения" else if check money get >= element Price then "&aНажмите, чтобы приобрести генератор" else "&cУ вас не хватает денег для покупки" }}
+    action: |-
+      if perm inline "fabledskyblock.generator.generator{{element Number}}" then {
+        sound ENTITY_VILLAGER_NO by 1 1
+      } else if all [ perm inline "fabledskyblock.generator.generator{{math sub [ element Number 1 ]}}" check math sub [ element Number 1 ] != 0 ] then {
+        menu close
+        sound ENTITY_ITEM_BREAK by 1 0
+        msg "&aSkyBlock &7| &cОшибка! Сначала приобретите предыдущие улучшения"
+      } else if check money get >= element Price then {
+        console inline "money take %player_name% {{element Price}}"
+        console inline "lp user %player_name% permission set fabledskyblock.generator.generator{{element Number}}"
+        msg "&aSkyBlock &7| &fВы приобрели улучшение &aГенератора #{{ element Number }}"
+        menu close
+      }
+      if check element Number == 5 then {
+        console "lp user %player_name% meta set skyblock.quest.done.47 1"
+        console "lp user %player_name% meta set skyblock.quest.done %math_{luckperms_meta_skyblock.quest.done}+1%"
+        console "lp user %player_name% meta set skyblock.quest.done.other %math_{luckperms_meta_skyblock.quest.done.other}+1%'
+        console "lp user %player_name% meta set quest.done %math_{luckperms_meta_quest.done}+1%"
+        msg "&r"
+        msg "&e&l  Задание выполнено!"
+        msg "&r"
+        msg "&f  Вы выполнили задание &aулучшить генератор до максимального"
+        msg "&f  Ваша награда &a15000$"
+        msg "&r"
+        console "money give %player_name% 15000"
+      }
+  elements:
+    - Number: 1
+      Head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzYxYzU3OTc0ZjEwMmQzZGViM2M1M2Q0MmZkZTkwOWU5YjM5Y2NiYzdmNzc2ZTI3NzU3NWEwMmQ1MWExOTk5ZSJ9fX0='
+      Percentages: '&f Камень: &a75%\\n&f Угольная руда: &a15%\\n&f Железная руда: &a10%'
+      Price: 20000
+    - Number: 2
+      Head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTAxODQzZWM0M2YwODhjOTYzZmZjM2UyZjcxYzY2ZTMxNTU5NDNiMTc3YTFhMzU5ODJiMTIwZjZmNjQ4MjJiYyJ9fX0='
+      Percentages: '&f Камень: &a70%\\n&f Угольная руда: &a15%\\n&f Железная руда: &a10%\\n&f Золотая руда: &a5%'
+      Price: 50000
+    - Number: 3
+      Head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzNiYzk2NWQ1NzljM2M2MDM5ZjBhMTdlYjdjMmU2ZmFmNTM4YzdhNWRlOGU2MGVjN2E3MTkzNjBkMGE4NTdhOSJ9fX0='
+      Percentages: '&f Камень: &a65%\\n&f Угольная руда: &a15%\\n&f Железная руда: &a10%\\n&f Золотая руда: &a5%\\n&f Алмазная руда: &a5%'
+      Price: 75000
+    - Number: 4
+      Head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTFlZDlhYmY1MWZlNGVhODRjZmNiMjcyOTdmMWJjNTRjZDM4MmVkZjg1ZTdiZDZlNzVlY2NhMmI4MDY2MTEifX19='
+      Percentages: '&f Камень: &a50%\\n&f Угольная руда: &a15%\\n&f Железная руда: &a10%\\n&f Золотая руда: &a10%\\n&f Алмазная руда: &a10%\\n&f Изумрудная руда: &a5%'
+      Price: 100000
+    - Number: 5
+      Head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDA1Mzg1MTUyN2M0YzllZjMwYTYxZmIwNjdlYmNlOTU3YzcyNmUxNjg3ZjhiNTMwZmI0YTZiZWViYTQzOGJkIn19fQ=='
+      Percentages: '&f Камень: &a25%\\n&f Угольная руда: &a20%\\n&f Железная руда: &a20%\\n&f Золотая руда: &a20%\\n&f Алмазная руда: &a15%\\n&f Изумрудная руда: &a10%'
+      Price: 150000
+
+bindings:
+  command:
+    name: generators
+    aliases:
+    - generator

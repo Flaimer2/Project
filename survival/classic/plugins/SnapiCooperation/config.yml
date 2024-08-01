@@ -1,0 +1,30 @@
+alias:
+  accept-party-command: 'accept'
+  main-party-command: 'party|p'
+  remove-party-command: 'remove'
+  lead-party-command: 'lead'
+  leave-party-command: 'leave'
+  deny-party-command: 'deny'
+  help-party-command: 'help'
+  main-friend-command: 'friend|friends|f'
+  invite-party-command: 'invite'
+  help-friend-command: 'help'
+  add-friend-command: 'add'
+  disband-party-command: 'disband'
+  accept-friend-command: 'accept'
+  decline-friend-command: 'deny'
+  remove-friend-command: 'remove'
+  chat-party-command: 'chat'
+
+chat-format: '&f[&aГруппа&f] %vault_prefix%%player_name%%vault_suffix% &7> &f%message%'
+disable-servers:
+  - 'Auth'
+chat-prefix:
+  prefix:
+    - '*'
+    - '@'
+  enable: true
+
+default-max-size: 10
+invitation-delay: 60
+limit-invite-friend: 4

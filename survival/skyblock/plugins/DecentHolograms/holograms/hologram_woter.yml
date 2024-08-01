@@ -1,0 +1,14 @@
+location: world:65.5:88,5:70.5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&b&lПример бесконечного источника воды'
+    height: 0.6
+  - content: '&fНалейте воду в &aпротивоположные &fуглы'
+    height: 0.3
+  actions: {}

@@ -1,0 +1,79 @@
+menu:
+  title: '&0Рюкзаки'
+  virtual: true
+layout: |-
+  #########
+  #       #
+  #       #
+  #       #
+  #########
+  ##M#B####
+
+items:
+  # Воздух
+  '#':
+    material: air
+  M:
+    material: GOLD_INGOT
+    update: 60
+    name: '&fВаш баланс'
+    lore: '&a%coin_amount%₵'
+  B:
+    material: arrow
+    name: '&aВернуться в главное меню'
+    action: menu switch MythicalTrader
+
+generator:
+  output:
+    name: '{{ element Name }}'
+    json: '{{ element Material }}'
+    flag: HIDE_ATTRIBUTES
+    lore: |-
+      {{if check element Description == null then " " else element Description}}
+      &fПокупка: &a{{ type int math mul [ element Price math sub [ 1 papi "%mythicaltrader_current_discount%" ] ] }}₵ &7{{if check papi "%mythicaltrader_current_level%" == 1 then " " else inline "&m({{ element Price }}₵)" }}
+
+      &aНажмите, чтобы купить!
+    enhancedLore: true
+    action: |-
+      ctx set 'fromMenu' to 'Trader-RushItem'
+      ctx set 'itemName' to element Name
+      ctx set 'itemMaterial' to element Material
+      ctx set 'giveCommand' to element GiveCommand
+      ctx set 'price' to element Price
+      ctx set 'amount' to 1
+      ctx set 'minAmount' to element MinAmount
+      ctx set 'maxAmount' to element MaxAmount
+      menu switch Shop-PurchaseWithJson
+  elements:
+    - Material: '{"type":"SKULL_ITEM","data":3,"meta":{"SkullOwner":{"Properties":{"textures":[{"Value":{"type":"STRING","data":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTk5MDlhOTc3OWI5NDZiOTc4NzQ0MmZhNDgzYWY0ZGU0YjJmMTlmZDQwZGMyMzcwZjdhOWI4ZjUyMWYyMWRkYyJ9fX0="}}]},"Id":{"type":"STRING","data":"04049c90-d3e9-4621-9caf-00000aaa1892"}}}}'
+      Name: '&aЗелёный рюкзак'
+      Description: '&fЭтот рюкзак позволяет переносить\\n&fв себе немного предметов\\n\\n&fВместимость: &a9 слотов\\n'
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: ' bp give green %player_name% 9'
+      Price: 9
+      MinAmount: 1
+      MaxAmount: 1
+    - Material: '{"type":"SKULL_ITEM","data":3,"meta":{"SkullOwner":{"Properties":{"textures":[{"Value":{"type":"STRING","data":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTNjMTUzYzM5MWMzNGUyZDMyOGE2MDgzOWU2ODNhOWY4MmFkMzA0ODI5OWQ4YmM2YTM5ZTZmOTE1Y2M1YSJ9fX0="}}]},"Id":{"type":"STRING","data":"04049c90-d3e9-4621-9caf-00000aaa1894"}}}}'
+      Name: '&9Синий рюкзак'
+      Description: '&fНеплохой рюкзак. Может вмещать в\\n&fсебя достаточное количество предметов\\n\\n&fВместимость: &a18 слотов\\n'
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'bp give blue %player_name% 18'
+      Price: 17
+      MinAmount: 1
+      MaxAmount: 1
+    - Material: '{"type":"SKULL_ITEM","data":3,"meta":{"SkullOwner":{"Properties":{"textures":[{"Value":{"type":"STRING","data":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWViNjViYmU3NDQ5NDU4NDFlOTIzNGEzM2I1Y2U1Y2MyMzZmNmEyZmM5M2ExYTNhZTQyZGY3N2M5MDg0ZGYxZSJ9fX0="}}]},"Id":{"type":"STRING","data":"04049c90-d3e9-4621-9caf-00000aaa1888"}}}}'
+      Name: '&5Фиолетовый рюкзак'
+      Description: '&fВместительный рюкзак, который\\n&fможет перемещать много предметов\\n\\n&fВместимость: &a27 слотов\\n'
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'bp give purple %player_name% 27'
+      Price: 24
+      MinAmount: 1
+      MaxAmount: 1
+    - Material: '{"type":"SKULL_ITEM","data":3,"meta":{"SkullOwner":{"Properties":{"textures":[{"Value":{"type":"STRING","data":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTM3YTM1NTIyZjY3YjJhZjkyMzQ1NTkyODQ2YjcwMmI5YWZiOWQ3YzhkYmFkNWVhMTUwNjczYzllNDRkZTMifX19"}}]},"Id":{"type":"STRING","data":"04049c90-d3e9-4621-9caf-00000aaa1890"}}}}'
+      Name: '&6Оранжевый рюкзак'
+      Description: '&fОгромный рюкзак! Вмещает\\n&fочень много предметов\\n\\n&fВместимость: &a36 слотов\\n'
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'bp give orange %player_name% 36'
+      Price: 30
+      MinAmount: 1
+      MaxAmount: 1

@@ -1,0 +1,326 @@
+# Citizens NPC Storage
+
+last-created-npc-id: 7
+npc:
+  '0':
+    metadata:
+      cached-skin-uuid: 0e26ee81-a807-467b-a24b-0e46ddabd8db
+      cached-skin-uuid-name: legit_canc3r
+      nameplate-visible: 'false'
+    name: Enchant
+    uuid: 055544ad-ccd1-4921-ad98-530ca0853886
+    traits:
+      age:
+        age: 0
+        locked: true
+      location:
+        bodyYaw: 269.97327
+        world: world
+        x: '780.5'
+        y: '63.0'
+        z: '-384.5'
+        yaw: '-90.0267'
+        pitch: '0.0369'
+      type: PLAYER
+      skintrait:
+        fetchDefaultSkin: true
+        signature: etOpbZ3AMKzPq0/CwoRp44/ZHSCKQMVOrksxSkp0Nj0at8/SC2vZ2KRpHA1rVoh8hD8B9HDMFe8JHyUmjmyVeNyQYS7NjS5+ssgjVDx69SbO9ch+lgGqbQ63G28XrcfDmeWdeeIEuE/qjfG1YlwNXjkCpjeE+XMyeIgPs5OrFcSFUPKNRqvApBP5DMA5+NUBKzDgywraEYnNHOVDHku0k7Yc+t5cY0O0YFPxQQ7jqcnbs38791zXCd4fEpm30MKhdcEA89X7VNYvbXG9RdBx+YVFmOrw4Qn9cDbwcnQOyfLuWt7TELE6GxMtHeYUD8jxy6uH5S536iCLQtgwYJnXb0nj/cSgs8huE14TCjgBFdKVsIN7f0jRxDhwajgwKkWislZOOOj033+FT3YCwP3A35GYPi8+Jhl9iEb+2wV1JYeD5F20hr0/kWW2EswOQDXGIKUhobygVeVRdYspRLBtjG3ObnziuoNRGtjzmos+RqYSsDq0imJF9i2fw9EreMyqIvLxzJe+TrluPLWA+1egrOCHVkkKY+pCWMRPVu1nYIAxhtNmAOQTCshOL7P6gaNnFWGvmVkV2I0P26/v/kmrweFvmAIFCrQoavJJ+qqiaKIThVpu1QvRthihgqw7GqVU6x3YnChO+mo4cNM0C0hLVDc2BrxJc0NXEwuhNSxf7jc=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY4ODY2OTIxNDg3OSwKICAicHJvZmlsZUlkIiA6ICIwZTI2ZWU4MWE4MDc0NjdiYTI0YjBlNDZkZGFiZDhkYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJMZWdpdF9DYW5jM3IiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjk1NjIwNzc2MzU4MjU5OGM1ZTIyNTQxNzAwZjY4ZTZiMDI0NmViNTUxNmFmNDA0MDMzZTk4OTY2NDQ4M2M2ZSIKICAgIH0KICB9Cn0=
+        updateSkins: false
+        skinName: Legit_Canc3r
+      spawned: true
+      owner:
+        uuid: b8a47f4c-108e-33dd-a551-34497268b20f
+      commandtrait:
+        cost: -1.0
+        executionMode: LINEAR
+        experienceCost: -1.0
+        hideErrorMessages: false
+        persistSequence: false
+        commands:
+          '0':
+            command: enchant
+            hand: BOTH
+            player: true
+            op: false
+            cooldown: -1
+            globalcooldown: -1
+            n: -1
+            delay: -1
+      hologramtrait:
+        direction: BOTTOM_UP
+        lineHeight: -1.0
+        lines:
+          '0': '&aНажмите, чтобы открыть меню'
+          '1': '&d&lЧародей'
+    traitnames: owner,scoreboardtrait,type,hologramtrait,inventory,spawned,location,age,mounttrait,skintrait,commandtrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '6':
+    name: SnapiPass
+    uuid: e6f05a0c-daaf-4dda-bafd-30050ad667ab
+    traits:
+      age:
+        age: 0
+        locked: true
+      location:
+        bodyYaw: 225.02715
+        world: world
+        x: '795.5'
+        y: '64.0'
+        z: '-381.5'
+        yaw: '-134.9729'
+        pitch: '-0.0137'
+      type: PLAYER
+      skintrait:
+        fetchDefaultSkin: true
+        updateSkins: false
+        signature: IL8HHKn0seUZj/CCoplYQEZbPZTsxeeEJXhMisuvTYwilCBfUKE/6/F8aozyDPoQJfHpB8m/oQrfQulwC5Pskqh4cXl4Bn+hdYkkxtf/h1ca6+6AIsKYD+BJGfB6kfGkavdkB9xx+YnEoJuz5bNTdWDz0ga1Tj/yru80TEnCeB6BRszj7F4FzOppF8w0GOzXiP5AvPTJA1samNRYAkRY82o/lCsCxXAkERQBTXqax8RhgkN5AFevY/D0o2TDtjrcLuCwB1YauTaJH4rFuwG3xLNZjMbl6nPQVYtYX3T1damIO6cuT1Alr+fDssa/T1ODdy1erpqTs9+J0eXcilvFIgZe3N+bDPBayVbue6uTPicVretA8lt4hXDdga3SI9MySz0rGMoV4imUtFoirZ97Yy892Zd9ARfIl43njV18btlvUZa+3nj5HyVDiq7fq03S7cNxF+jROUUhoUJRukTlOgN1F2TIFoa40alMgastglxTG/bZ4iFncp/bkbRSu/GAZPt49tuGKrev54UxiPRyCyTCRXnIGYEn5fwZcC+JG5u7PQsZZHOY+VXscehQcY671njuX+0/Hu0/HmqdnbmqBadp6wqb6IXcSkPhlRVhH5jHbRs9Nff9P04sCEBFTps7ZKPUE06JygGEyeb/d6bV7KW9c5IOZzy8pV1CM5ILP60=
+        skinName: Quantavius_Jr
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY4ODY3MzA5MDE1NSwKICAicHJvZmlsZUlkIiA6ICJmOWUyZTJhMDE4MDE0OGY0OTkzNTg0ZmUyMzdhNTMwOSIsCiAgInByb2ZpbGVOYW1lIiA6ICJRdWFudGF2aXVzX0pyIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzI1OWU4ZDQxOTZmZWE4MjcwMjVjMjkyN2E2ZmNkNmU5OGQwMzAwNTczNzEyMzhhNzdhZTRjZGRlYmNlODY0NzciCiAgICB9LAogICAgIkNBUEUiIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzIzNDBjMGUwM2RkMjRhMTFiMTVhOGIzM2MyYTdlOWUzMmFiYjIwNTFiMjQ4MWQwYmE3ZGVmZDYzNWNhN2E5MzMiCiAgICB9CiAgfQp9
+      spawned: true
+      owner:
+        uuid: b8a47f4c-108e-33dd-a551-34497268b20f
+      hologramtrait:
+        direction: BOTTOM_UP
+        lineHeight: 0.3
+        lines:
+          '0': '&aЖдите в следующем сезоне!'
+          '1': '&fУ вас &6&lОбычный &fуровень'
+          '2': '&b&lSnapi&b&lPass'
+    traitnames: owner,scoreboardtrait,type,hologramtrait,inventory,spawned,location,age,mounttrait,skintrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    metadata:
+      nameplate-visible: 'false'
+      cached-skin-uuid: f9e2e2a0-1801-48f4-9935-84fe237a5309
+      cached-skin-uuid-name: quantavius_jr
+  '4':
+    metadata:
+      cached-skin-uuid: 690636b4-e9f0-47af-8e23-7eb67aefe39a
+      cached-skin-uuid-name: zampakt
+      nameplate-visible: 'false'
+    name: Seller
+    uuid: b3b31107-717d-4716-8290-d3195797a5aa
+    traits:
+      commandtrait:
+        cost: -1.0
+        executionMode: LINEAR
+        experienceCost: -1.0
+        hideErrorMessages: false
+        persistSequence: false
+        commands:
+          '0':
+            command: Ah
+            hand: BOTH
+            player: true
+            op: false
+            cooldown: -1
+            globalcooldown: -1
+            n: -1
+            delay: -1
+      age:
+        age: 0
+        locked: true
+      location:
+        bodyYaw: 179.98679
+        world: world
+        x: '789.5'
+        y: '64.0'
+        z: '-353.5'
+        yaw: '179.9868'
+        pitch: '0.0314'
+      type: PLAYER
+      skintrait:
+        fetchDefaultSkin: true
+        signature: hEXuSBDVARJcZOX0g2UB6NPIRDVTfoytNsIgWjsDqZhoPGNtDLjp53I5IvmxM4wFe6WfPg1GI5yEuKRXtwEzioRW3/MEgrtAugfJ2BVbspqG6pHlNZebhUfCaKPIV2Oj2xJKpJU1AfnWBNkcfpJ6Rmb378IvbvY3TSOxK0QXJ3QHm9FXqgJMCc9AI5j38j+hd7cJscDYdtaOmGF2ZYQCn1O4klsBX4PjcIMtLHvaEQTKPp8r9gXwrQwM+s6W982MB7f8y+YN/mvSQNr5+0QQ84mO+p3Xgg93H3oNzYOYAoPS/1rbVsbLh+o2CUp/1/F+MoXyC3oC/3OmaDrO+yu5tLGVu/gmgmJoZT3pQHSRBXicA/+paYxGjGb5F5f2WEfQSAcuT0uv3gkqzewsdo8+mYl4tTKPMuuHcPeC2s9JT4UqAssdFAQqtNh7iIw5iBhq3PbqAepp3uQ/uJ7az2oPxUuncZIySikqbv633bXFrKlf2f+nA3ciqQ22I/qy9sMG/UKcmdmt4ZBj1FsADFhKOa38PkSK+c7r62dtNzAWo0wNZt52qv1iwwZfC1tTaz7n/M2A3U4sUWqdICetGEGqSRCYnvm3Mrz6LtuqwcNg74bxy7gWdMKLnjoVym3SeSoFOCP2kJQb+W9LvGB9mecSsul/9o7WPF4xRwJm5eo3xpk=
+        skinName: zampakt
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY4ODY3MTM3MzkyMSwKICAicHJvZmlsZUlkIiA6ICI2OTA2MzZiNGU5ZjA0N2FmOGUyMzdlYjY3YWVmZTM5YSIsCiAgInByb2ZpbGVOYW1lIiA6ICJ6YW1wYWt0IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2M3Y2Y4YjEzMzkzNTEzOTRjMTMwNjM1NDFhMDNkM2FkMzI1YWI4NjgwMTBhZmZkMTUyYTg2MTE1ZmY1NWVkNmIiCiAgICB9CiAgfQp9
+        updateSkins: false
+      spawned: true
+      owner:
+        uuid: b8a47f4c-108e-33dd-a551-34497268b20f
+      hologramtrait:
+        direction: BOTTOM_UP
+        lineHeight: -1.0
+        lines:
+          '0': '&aНажмите, чтобы открыть меню'
+          '1': '&9&lАукционер'
+    traitnames: owner,scoreboardtrait,type,hologramtrait,spawned,inventory,location,age,mounttrait,skintrait,commandtrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '3':
+    metadata:
+      cached-skin-uuid: e8aba165-b662-4c20-955e-2b79b09ace4f
+      cached-skin-uuid-name: shash1456
+      nameplate-visible: 'false'
+    name: Shop
+    uuid: 8d7f24fa-f08b-43c8-bef8-a777b9900b89
+    traits:
+      commandtrait:
+        cost: -1.0
+        executionMode: LINEAR
+        experienceCost: -1.0
+        hideErrorMessages: false
+        persistSequence: false
+        commands:
+          '1':
+            command: Shop
+            hand: BOTH
+            player: true
+            op: false
+            cooldown: -1
+            globalcooldown: -1
+            n: -1
+            delay: -1
+      age:
+        age: 0
+        locked: true
+      location:
+        bodyYaw: 179.98679
+        world: world
+        x: '786.5'
+        y: '64.0'
+        z: '-353.5'
+        yaw: '179.9868'
+        pitch: '0.0314'
+      type: PLAYER
+      skintrait:
+        fetchDefaultSkin: true
+        signature: oRj8W2J2WVVubw0JYVRulPPML3mrSGrL6Bmtd2nnE/iZDemawd9tL2lwCSlK7FBolQupur6B2NPUMq3oxNMKloBfKBput0r22MPfNIQm88Tt4sdz65RwzCCQsTxMH9BlUrRHF6FDjpuooxaM+jK7GZHBAeHGBoGolcgZs7IHCPkuFRCNYDqAYult7QuCkTLF0XWsBR0EXF1bt3aE4ppW5XWk2Di1fJ72xK2GyR3pg0Wjcgbd6jcPpKC0iGtUGIReTq/j79Ew5iZ9btYwU2b/yzxk7WD6OR7yOXktqne4H8k7syeFhH3zv/yzEeCHhqP+aEcTmx42Qzobx/sng73oA1uwwiZSIcR1/uyj173r1T5fbFAofLiFYAwwoo5lUyu8T1aEAKIvEotWkYhMEAdehj9+vYYVTiNLd0hrpLrvgZiBcdLxow3F0pahgV/x3w7uveYZNW2QOCOVyX3Yw+2i1ORzYizSgy5Ub+q7RbIucHbS5/fRB2QKX0h241vnCK8v9cHns/hDgN2+mPb6cFBuhbBFb2/Abs1evy9EBw43Lra6lZ/Ocx48V9VfDBemPX1+aPz8xYZte8sgslEH0FENGWvZy/cwMVUmH1U71MWk3PgyZdqoOi1l1pubZaNAaB4iKMipFbnKaxO5YTnsVOR2ZX3bph8E4u1gVACjuqsu87Y=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY4ODY3MTgwNTAwNSwKICAicHJvZmlsZUlkIiA6ICJlOGFiYTE2NWI2NjI0YzIwOTU1ZTJiNzliMDlhY2U0ZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJTaGFzaDE0NTYiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2RiODJiNDRmYzU4ZjFmNjcwMjRhYjE2ZDcwNjNmMjViYmE2ZTJkMGZmOGYwMzk0ZDcwZDFkNjMzYjYyMTllMyIKICAgIH0KICB9Cn0=
+        updateSkins: false
+        skinName: Shash1456
+      spawned: true
+      owner:
+        uuid: b8a47f4c-108e-33dd-a551-34497268b20f
+      hologramtrait:
+        direction: BOTTOM_UP
+        lineHeight: -1.0
+        lines:
+          '0': '&aНажмите, чтобы открыть меню'
+          '1': '&e&lПродавец'
+    traitnames: owner,scoreboardtrait,type,hologramtrait,spawned,inventory,location,age,mounttrait,skintrait,commandtrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '2':
+    metadata:
+      cached-skin-uuid: 52c7adb3-d43d-426b-bf39-7f5c20bd3b40
+      cached-skin-uuid-name: darkstnight
+      nameplate-visible: 'false'
+    name: Warps
+    uuid: 453854c4-efc8-45d6-b580-688b30c4f13f
+    traits:
+      commandtrait:
+        cost: -1.0
+        executionMode: LINEAR
+        experienceCost: -1.0
+        hideErrorMessages: false
+        persistSequence: false
+        commands:
+          '0':
+            command: invero menu open Warp <p>
+            hand: BOTH
+            player: false
+            op: false
+            cooldown: -1
+            globalcooldown: -1
+            n: -1
+            delay: -1
+      age:
+        age: 0
+        locked: true
+      location:
+        bodyYaw: 315.049
+        world: world
+        x: '795.5'
+        y: '64.0'
+        z: '-388.5'
+        yaw: '-44.951'
+        pitch: '0.0026'
+      type: PLAYER
+      skintrait:
+        fetchDefaultSkin: true
+        signature: hlfFx396gT9mG44kGjpSm3Y5qtSK9mxac/fKW4UdXpr2wWRaX8K4gd58mullnWB+ctJqizHW3aYDvD21NDsssc+F2kBxD+OLHrnod1+smwsXB7A8/b7uIb9PfldubaTqbM/Ve+3RY992paOwJLU8LerhoEcPC6IVu7E2TsQ1rhxMwdzMYcSmnTkgclprwe1RSVSFwgJWlLN4QlSbc0hk7NhdEFfX6nwhE8YD+oRE4+ibq5Gt+PpEUqbWtv03XfNZEk6R9gzcj3zHZ4N55v77p6HLdHXj1rNJ7smGg2lsF3uaIC0M2NcJ3ms1XpVVzP+S8cBWkmyBp8z6qxKq18BuWisjzWNGzh9fvy3SqgrHkxsJNjGmt+aytTR5tCd0ZbfmrVGUMQqWNp/53Y+xPBepjDE81LDq4/LY6XaDlBNXslIfd0qounXwuQaTAqutOZ7wxEat5vv+I/SdAyxVuuWxiMoFuQ1IGCq6Y32rvWnOtP5x7Q+rGgcKGymebc6SPDNQf5jvWDQCEc8dCd3ftNnZbjLi4kAtD3KsqlK5xebievRKdxvaEvQm42Z0J9aFWJFcAI/f5qcwRRnpMQ1wCxk9x8Msy0b8inBdJJZ5cl2rFmMijVby0+bj61UUEGCQT8Q8wzntJm5cELmTGTE3ce+sygo5EqiKJWVb2ow5X90HPYE=
+        skinName: DarkstNight
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY4ODY3MzY2MjA5MCwKICAicHJvZmlsZUlkIiA6ICI1MmM3YWRiM2Q0M2Q0MjZiYmYzOTdmNWMyMGJkM2I0MCIsCiAgInByb2ZpbGVOYW1lIiA6ICJEYXJrc3ROaWdodCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS83ZmFhN2ViNjdhNjM4N2U4NGRmOThiNzZjZDlmOGY4YTFiNmI4ZDQ0MGFjNjg3MjBmYmExMjRlMzdhMzE4MzQxIgogICAgfQogIH0KfQ==
+        updateSkins: false
+      spawned: true
+      owner:
+        uuid: b8a47f4c-108e-33dd-a551-34497268b20f
+      hologramtrait:
+        direction: BOTTOM_UP
+        lineHeight: 0.3
+        lines:
+          '0': '&aНажмите, чтобы открыть меню'
+          '1': '&fИли напишите &b/warps'
+          '2': '&c&lВарпы'
+    traitnames: owner,scoreboardtrait,type,hologramtrait,inventory,spawned,location,age,mounttrait,skintrait,commandtrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '7':
+    metadata:
+      cached-skin-uuid: 366b8a4b-a349-4e8d-86f4-c0ac4b6a3d08
+      cached-skin-uuid-name: muitkl
+      nameplate-visible: 'false'
+    name: Heads
+    uuid: a3e0c97c-5eec-4c97-9da8-bcdb44fd3dec
+    traits:
+      commandtrait:
+        cost: -1.0
+        executionMode: LINEAR
+        experienceCost: -1.0
+        hideErrorMessages: false
+        persistSequence: false
+        commands:
+          '0':
+            command: Heads
+            hand: BOTH
+            player: true
+            op: false
+            cooldown: -1
+            globalcooldown: -1
+            n: -1
+            delay: -1
+      hologramtrait:
+        direction: BOTTOM_UP
+        lineHeight: -1.0
+        lines:
+          '0': '&aНажмите, чтобы открыть меню'
+          '1': '&6&lПродавец голов'
+      age:
+        age: 0
+        locked: true
+      location:
+        bodyYaw: 179.9632
+        world: world
+        x: '783.5'
+        y: '64.0'
+        z: '-353.5'
+        yaw: '179.9632'
+        pitch: '0.0285'
+      type: PLAYER
+      skintrait:
+        fetchDefaultSkin: true
+        signature: lCwF8CqVKFyU0tNkhjD3xBP2sWf+/rH2v8V8/3/d5ciK04WPX/3w7EvV9kAM8VQyLmEFhkECzn9XQuHYb/dCJFXaEfJtlw26BWNy1+tLTgwzVSoeMWgqXFv43tVF5Qu1qEM6xRz96MtUM2z5v9ap9nrV+pTqnJlOubY0Taj6v3mV35R5aq4gXA8nJzUOeo7/RkBZceCIjCMI/WUETdguTNFyjenj2D6vzjzM/NWxRRyX6wKJWOELIyD1KDUHTsCVpOUWJ8Wj9MZoQV6asjaEyjiQ2daDi9fOSt5jB9XDNFQ00niMUBdyzdvFIhLD8aHLChiY6OtjGCDNo+RLSlRLKGL4oFblF0/jIt4gaWE8H9qySn9W9Hggn0M5JgMe1xroQTsQtQ0uceM3svHELug3oYY3ZXufDLUhcKC8nx+6VN5BS6ns3gS0lw1s4mn6ztGRA794Q2XodaQ/4pZgCtUm+1E0TeU+B76jPVgMuhEqXG5X4oPAH4cxl1LD5n8di1vyV3dR88kPuEbSwbOzGQ5ucR7PWBGnqUoXA2XkSxogiycpmKmPbIa3bbIiqynsu2Y83pkFdfS7IroVelPnHaEvS3ehCNAYzzGEhuiwCzB1l2lxHv9Td79eailprpNUpIlJ4wRG/whybMJt5rdej4svlCa83BBstUUdO0uWE7xBDTA=
+        skinName: MuiTKL
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY4ODY3MTkyMTgxOSwKICAicHJvZmlsZUlkIiA6ICIzNjZiOGE0YmEzNDk0ZThkODZmNGMwYWM0YjZhM2QwOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJNdWlUS0wiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjEwMWRjMDM3MmI2NmViNjc1MjczZDkxYjAwOGVlM2I0MTdmNDUzZGEzYWJmNzMxYTI5ZTRhYmRhNWFlNDQ5MSIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9
+        updateSkins: false
+      spawned: true
+      owner:
+        uuid: b8a47f4c-108e-33dd-a551-34497268b20f
+    traitnames: owner,scoreboardtrait,type,hologramtrait,spawned,inventory,location,age,mounttrait,skintrait,commandtrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true

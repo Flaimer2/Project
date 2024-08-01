@@ -1,0 +1,20 @@
+location: world:-45,500:88,500:79,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: "&a&lРынок"
+    height: 0.6
+  - content: "&fЗдесь, вы можете &aпокупать &fи"
+    height: 0.3
+  - content: "&cпродавать &fразличные предметы!"
+    height: 0.6
+  - content: "&fИ ещё: не забудьте посетить &d&lМифического торговца"
+    height: 0.3
+  - content: "&fУ него есть для вас &bнеобычные &fпредметы"
+    height: 0.3
+  actions: {}

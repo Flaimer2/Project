@@ -1,0 +1,40 @@
+# Template Config 1.0.0
+# You can modify it as you want
+# But be careful. Some changes may break the plugin.
+Templates:
+  default:
+    default: true
+    Size: 27
+    ItemSlots: '12,13,14'
+    Content:
+      Filler:
+        Material: 'STAINED_GLASS_PANE:15'
+        Name: '&r'
+        Lore: []
+        Slots: '0,1,2,6,7,8,9,11,15,17,18,19,20,24,25,26'
+        Extra:
+          Type: 'RAINBOW'
+          Value: 15
+      Spin:
+        Material: 'LEVER:0'
+        Name: '&e&lВРАЩЕНИЕ!'
+        Lore:
+        - '&e> &7Стоимость вращения: &e&l100$'
+        Slots: '16'
+        Extra:
+          Type: 'SPIN'
+          Value: 'none'
+      Prizes:
+        Material: 'EMPTY_MAP:0'
+        Name: '&6&lПризы'
+        Lore:
+        - '&7- &cЯблоко &7> &c50$'
+        - '&7- &cЯблоко &7- &cЯблоко &7- &cЯблоко &7> &cx20'
+        - '&7- &6Морковь &7- &6Морковь &7- &6Морковь &7> &6x40'
+        - '&7- &eХлеб &7- &eХлеб &7- &eХлеб &7> &ex60'
+        - '&7- &aАрбуз &7- &aАрбуз &7- &aАрбуз &7> &ax80'
+        - '&7- &fТорт &7- &fТорт &7- &fТорт &7> &fx100'
+        Slots: '10'
+        Extra:
+          Type: 'NONE'
+          Value: 'none'

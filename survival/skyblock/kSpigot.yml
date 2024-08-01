@@ -1,0 +1,7 @@
+knockback:
+  y: 0.93
+  z: 0.97
+  x: 0.97
+ping: true
+mobAi: false
+doLeafDecay: true

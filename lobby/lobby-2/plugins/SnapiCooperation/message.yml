@@ -1,32 +1,40 @@
 party:
+  leave-user:
+    message-for-members: '&fИгрок &a%name% &fпокинул группу'
+    message-for-removed-player: '&fВы &cпокинули &fгруппу игрока &a%party_leader%'
+
+  create-user:
+    message-for-members: '&fИгрок &a%name% &fприсоединился к группе!'
+    message-for-added-player: ''
+
   commands:
     remove:
       use: '&fИспользуйте: &a/party remove игрок'
-      not-found: '&fИгрок с ником &a%name% &fне найден'
       offline: '&fИгрок &a%name% &fсейчас оффлайн'
-      not-leader: '&fВы &cне можете &fсделать это, потому что вы не лидер группы'
+      not-found: '&fИгрок с ником &a%name% &fне найден'
       not-party: '&fГруппа &cне найдена&f!'
+      not-leader: '&fВы &cне можете &fсделать это, потому что вы не лидер группы'
       error-yourself: '&fВы &cне можете &fудалить себя'
       not-in-party: '&fИгрок &a%name% &fне находится в вашей группе'
 
     accept:
       use: '&fИспользуйте: &a/party accept игрок'
-      not-found: '&fИгрок с ником &a%name% &fне найден'
       offline: '&fИгрок &a%name% &fсейчас оффлайн'
-      not-found-party: '&fУ игрока &a%name% &fсейчас нет группы!'
-      not-invite: '&fИгрок &a%party_leader% &fне приглашал вас в группу!'
+      not-found: '&fИгрок с ником &a%name% &fне найден'
       not-leader: '&fВы &cне можете &fсделать это, потому что вы не лидер группы'
+      not-found-party: '&fУ игрока &a%name% &fсейчас нет группы!'
       error-yourself: '&fВы &cне можете &fпринять свой же запрос'
+      not-invite: '&fИгрок &a%party_leader% &fне приглашал вас в группу!'
       already-in-party: '&fВы уже &aсостоите &fв группе игрока &a%party_leader%'
 
     deny:
       use: '&fИспользуйте: &a/party deny игрок'
-      not-found: '&fИгрок с ником &a%name% &fне найден'
       offline: '&fИгрок &a%name% &fсейчас оффлайн'
-      not-found-party: '&fУ игрока &a%name% &fсейчас нет группы!'
-      not-invite: '&fИгрок &a%party_leader% &fне приглашал вас в группу!'
+      not-found: '&fИгрок с ником &a%name% &fне найден'
       not-leader: '&fВы &cне можете &fсделать это, потому что вы не лидер группы'
+      not-found-party: '&fУ игрока &a%name% &fсейчас нет группы!'
       error-yourself: '&fВы &cне можете &fотклонить себя'
+      not-invite: '&fИгрок &a%party_leader% &fне приглашал вас в группу!'
       already-in-party: '&fВы уже &aсостоите &fв группе игрока &a%party_leader%'
 
     help:
@@ -46,22 +54,22 @@ party:
       - '&r'
       - '&f  Сокращённая команда &7– &a/p команда'
       - '&r'
-    lead:
-      use: '&fИспользуйте: &a/party lead игрок'
-      not-found: '&fИгрок с ником &a%name% &fне найден'
-      offline: '&fИгрок &a%name% &fсейчас оффлайн'
-      not-leader: '&fВы &cне можете &fсделать это, потому что вы не лидер группы'
-      not-party: '&fГруппа &cне найдена&f!'
-      error-yourself: '&fВы &cне можете &fсделать себя лидером'
-      not-in-party: '&fИгрок &a%name% &fне находится в вашей группе'
+    leave:
+      leader: '&fВы являетесь &aлидером &fгруппы, поэтому, не можете выйти из неё. Чтобы удалить группу, используйте: &a/party disband'
+      not-party: '&fВы сейчас &cне состоите &fв группе!'
 
     chat:
       use: '&fИспользуйте: &a/party chat сообщение&f, или &f*сообщение&f, или &a@сообщение'
       not-party: '&fВы сейчас &cне состоите &fв группе!'
 
-    leave:
-      leader: '&fВы являетесь &aлидером &fгруппы, поэтому, не можете выйти из неё. Чтобы удалить группу, используйте: &a/party disband'
-      not-party: '&fВы сейчас &cне состоите &fв группе!'
+    lead:
+      use: '&fИспользуйте: &a/party lead игрок'
+      offline: '&fИгрок &a%name% &fсейчас оффлайн'
+      not-found: '&fИгрок с ником &a%name% &fне найден'
+      not-party: '&fГруппа &cне найдена&f!'
+      not-leader: '&fВы &cне можете &fсделать это, потому что вы не лидер группы'
+      error-yourself: '&fВы &cне можете &fсделать себя лидером'
+      not-in-party: '&fИгрок &a%name% &fне находится в вашей группе'
 
     disband:
       only-leave: '&fВы &cне можете &fудалить группу, потому что вы не лидер! Чтобы покинуть группу, используйте: &a/party leave'
@@ -69,20 +77,16 @@ party:
 
     invite:
       use: '&fИспользуйте: &a/party invite игрок'
-      not-found: '&fИгрок с ником &a%name% &fне найден'
       offline: '&fИгрок &a%name% &fсейчас оффлайн'
-      already-in-you-party: '&fИгрок с ником &a%name% &fуже состоит в вашей группе'
+      not-found: '&fИгрок с ником &a%name% &fне найден'
       not-leader: '&fВы &cне можете &fсделать это, потому что вы не лидер группы'
-      error-yourself: '&fВы &cне можете &fпригласить себя же'
-      already-in-party: '&fИгрок &a%name% &fуже состоит в другой группе &a%party_leader% &fв качестве участника'
-      full-party: '&fГруппа игрока &a%party_leader% &fуже &aполная'
       already-invite: '&fВы уже пригласили &a%name% &fв группу &a%party_leader%'
+      full-party: '&fГруппа игрока &a%party_leader% &fуже &aполная'
+      error-yourself: '&fВы &cне можете &fпригласить себя же'
+      already-in-you-party: '&fИгрок с ником &a%name% &fуже состоит в вашей группе'
+      already-in-party: '&fИгрок &a%name% &fуже состоит в другой группе &a%party_leader% &fв качестве участника'
       already-in-party-leader: '&fИгрок &a%name% &fявляется &aлидером &fдругой группы'
 
-
-  leave-user:
-    message-for-members: '&fИгрок &a%name% &fпокинул группу'
-    message-for-removed-player: '&fВы &cпокинули &fгруппу игрока &a%party_leader%'
 
   disband:
     leader-disband-for-leader: '&fВы &cудалили &fвашу группу'
@@ -91,6 +95,11 @@ party:
   send-invitation:
     message-for-sender: '&fВы &aотправили &fприглашение игроку &a%name%&f! У него есть &a60 сек. &fчтобы принять его'
     message-for-invited: '<mm><white>Вы <green>получили</green> приглашение в группу от игрока <green>%party_leader%</green>. У вас есть <green>60 сек.</green> чтобы ответить. Нажмите на</white> <click:run_command:"/party accept %party_leader%"><green><hover:show_text:"<green>Нажмите, чтобы принять!</green>">Принять</hover></green></click> <white>или</white> <click:run_command:"/party deny %party_leader%"><red><hover:show_text:"<red>Нажмите, чтобы отклонить!</red>">Отклонить</hover></red></click><white>!</white>'
+
+  change-leader:
+    message-for-members: '&fЛидер &a%name% &fпередал свои права игроку &a%party_leader%'
+    message-for-new-leader: '&fВы &aполучили &fлидерство от игрока &a%name%'
+    message-for-old-leader: '&fВы &aпередали &fлидерство игроку &a%party_leader%'
 
   response-invitation:
     accept:
@@ -109,32 +118,27 @@ party:
       message-for-invited: '&fВы &cотклонили &fприглашение в группу от игрока &a%party_leader%'
 
 
-  change-leader:
-    message-for-members: '&fЛидер &a%name% &fпередал свои права игроку &a%party_leader%'
-    message-for-old-leader: '&fВы &aпередали &fлидерство игроку &a%party_leader%'
-    message-for-new-leader: '&fВы &aполучили &fлидерство от игрока &a%name%'
-
   remove-user:
     message-for-members: '&fИгрок &a%name% &fбыл удален из группы'
     message-for-removed-player: '&fВас исключили из группы &a%party_leader%'
 
-  create-user:
-    message-for-members: '&fИгрок &a%name% &fприсоединился к группе!'
-    message-for-added-player: ''
-
 
 friend:
+  create-user:
+    message-for-sender: '&fВы теперь &aдружите &fс игроком &a%receiver%'
+
   commands:
     add:
       use: '&fИспользуйте: &a/friend add игрок'
-      not-found: '&fИгрок с ником &a%name% &fне найден'
       offline: '&fИгрок &a%name% &fсейчас оффлайн'
-      error-yourself: '&fВы &cне можете &fдобавить себя в друзья. Не будьте таким интровертом!'
+      not-found: '&fИгрок с ником &a%name% &fне найден'
       already-invite: '&fВы уже &aпригласили &fигрока &a%name% &fв друзья'
-      full-friend-by-other: '&fУ игрока &a%name% &fуже &aмаксимальное &fколичество друзей!'
-      already-in-you-friend: '&fИгрок &a%name% &fуже ваш друг!'
+      error-yourself: '&fВы &cне можете &fдобавить себя в друзья. Не будьте таким интровертом!'
       full-friend: '&fУ вас &aмаксимальное &fколичество друзей &7(%max_size%)'
+      already-in-you-friend: '&fИгрок &a%name% &fуже ваш друг!'
+      full-friend-by-other: '&fУ игрока &a%name% &fуже &aмаксимальное &fколичество друзей!'
       already-invite-by-other: '&fИгрок &a%name% &fуже пригласил вас в друзья. Чтобы принять его приглашение, используйте: &a/friend accept игрок'
+      limit-invite-friend: '&fВы &cне можете &fотправить запрос на дружбу игроку, так как вы пригласили больше &a5 &fигроков. &aДождитесь ответа &fна предыдущие запросы, чтобы отправить новые'
 
     remove:
       use: '&fИспользуйте: &a/friend remove игрок'
@@ -144,18 +148,18 @@ friend:
 
     accept:
       use: '&fИспользуйте: &a/friend accept игрок'
-      not-found: '&fИгрок с ником &a%name% &fне найден'
       offline: '&fИгрок &a%name% &fсейчас оффлайн'
-      not-invite: '&fИгрок &a%name% &fне отправлял вам запрос на дружбу!'
+      not-found: '&fИгрок с ником &a%name% &fне найден'
       error-yourself: '&fВы &cне можете &fпринять свой же запрос'
+      not-invite: '&fИгрок &a%name% &fне отправлял вам запрос на дружбу!'
       already-in-friend: '&fИгрок с ником &a%name% &fуже ваш друг!'
 
     deny:
       use: '&aИспользуйте: &f/friend deny игрок'
-      not-found: '&fИгрок с ником &a%name% &fне найден'
       offline: '&fИгрок &a%name% &fсейчас оффлайн'
-      not-invite: '&fИгрок &a%name% &fне отправлял вам запрос на дружбу!'
+      not-found: '&fИгрок с ником &a%name% &fне найден'
       error-yourself: '&fВы &cне можете &fотклонить свой же запрос'
+      not-invite: '&fИгрок &a%name% &fне отправлял вам запрос на дружбу!'
       already-in-friend: '&fИгрок с ником &a%name% &fуже ваш друг!'
 
     help:
@@ -183,17 +187,16 @@ friend:
       message-for-sender: '&fИгрок &a%receiver% &fпроигнорировал ваш запрос на дружбу :('
       message-for-invited: '&fВы &eпроигнорировали &fзапрос на дружбу от игрока &a%sender%'
 
-    decline:
-      message-for-sender: '&fИгрок &a%receiver% &fотклонил ваш запрос на дружбу'
-      message-for-invited: '&fВы &cотклонили &fзапрос на дружбу от игрока &a%sender%'
-
     remove-by-user:
       message-for-sender: '&fВы &cотменили &fзапрос на дружбу с игроком &a%receiver%'
       message-for-invited: '&fИгрок &a%sender% &fотменил запрос на дружбу'
 
+    decline:
+      message-for-sender: '&fИгрок &a%receiver% &fотклонил ваш запрос на дружбу'
+      message-for-invited: '&fВы &cотклонили &fзапрос на дружбу от игрока &a%sender%'
 
-  create-user:
-    message-for-sender: '&fВы теперь &aдружите &fс игроком &a%receiver%'
 
   remove-friend:
     message-for-sender: '&fВы &cудалили &fигрока &a%receiver% &fиз друзей'
+
+

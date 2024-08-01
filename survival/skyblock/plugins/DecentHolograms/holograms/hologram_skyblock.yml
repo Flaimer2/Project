@@ -1,0 +1,34 @@
+location: world:0.5:88.5:27.5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&a&lSKYBLOCK'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&eДобро пожаловать на SkyBlock, &6{player}&e!'
+    height: 0.3
+  - content: '&fСписок варпов на режиме - &a/warps'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fЧто здесь есть:'
+    height: 0.3
+  - content: '- &eРазличные варианты островов на Ваш вкус'
+    height: 0.3
+  - content: '- &eвозможность улучшить свой генератор руды'
+    height: 0.3
+  - content: '- &eвозможность изменить биом вашего острова'
+    height: 0.3
+  - content: '- &eи многое другое...'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fКупить донат можно на нашем сайте - &bmcsnapix.ru'
+    height: 0.3
+  actions: {}

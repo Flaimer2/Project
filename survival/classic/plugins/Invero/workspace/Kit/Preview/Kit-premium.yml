@@ -1,0 +1,36 @@
+menu:
+  title: 'Premium'
+
+layout:
+- '12345    '
+- '         '
+- '         '
+- '         '
+- 'R    6789'
+
+items:
+  R:
+    material: 'barrier'
+    name: '&cВернуться в меню наборов'
+    action: menu switch Kit
+  1:
+    material: 'iron_sword'
+  2:
+    material: 'diamond_pickaxe'
+  3:
+    material: 'diamond'
+    amount: 8
+  4:
+    material: 'log'
+    amount: 16
+  5:
+    material: 'golden_apple'
+    amount: 4
+  6:
+    material: 'iron_helmet'
+  7:
+    material: 'iron_chestplate'
+  8:
+    material: 'iron_leggings'
+  9:
+    material: 'iron_boots'

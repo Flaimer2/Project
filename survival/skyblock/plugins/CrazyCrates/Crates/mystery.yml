@@ -1,0 +1,207 @@
+Crate:
+  CrateType: CSGO
+  CrateName: '&0Мистический кейс'
+  Preview-Name: '&0Мистический кейс'
+  StartingKeys: 0
+  InGUI: true
+  Slot: 14
+  OpeningBroadCast: false
+  BroadCast: '%Prefix%&6&l%Player% &7is opening a &a&lClassic Chest&7.'
+  Item: 'CHEST'
+  Glowing: false
+  Name: '&fМистический кейс'
+  Lore:
+    - '&7Этот кейс содержит предметы.'
+    - '&7У вас &6%Keys% ключей.'
+    - '&7[&6&li&r&7] &b>> &6ПКМ для просмотра наград.'
+  PhysicalKey:
+    Name: '&fключ для &7Мистического кейса'
+    Lore:
+      - '&7Специальный ключ'
+      - '&7для открытия кейса.'
+    Item: 'TRIPWIRE_HOOK'
+    Glowing: false
+  Prizes:
+    1:
+      DisplayName: '&aЗачарованное золотое яблоко'
+      DisplayItem: 'golden_apple:1'
+      DisplayAmount: 1
+      Lore:
+        - '&7'
+        - '&fШанс выпадения: &a3%'
+      DisplayEnchantments: {}
+      MaxRange: 100
+      Chance: 3
+      Firework: true
+      Glowing: false
+      Items:
+        - 'Item:golden_apple:1, Amount:1'
+      Messages: {}
+      Alternative-Prize:
+        Toggle: false
+        Messages: {}
+        Commands: {}
+        Items: {}
+    2:
+      DisplayName: '&aАлмазный блок x4'
+      DisplayItem: 'DIAMOND_BLOCK'
+      DisplayAmount: 4
+      Lore:
+        - '&7'
+        - '&fШанс выпадения: &a3%'
+      DisplayEnchantments: {}
+      MaxRange: 100
+      Chance: 3
+      Firework: true
+      Glowing: false
+      Items:
+        - 'Item:DIAMOND_BLOCK, Amount:4'
+      Messages: {}
+      Alternative-Prize:
+        Toggle: false
+        Messages: {}
+        Commands: {}
+        Items: {}
+    3:
+      DisplayName: '&aЖелезный блок x8'
+      DisplayItem: 'IRON_BLOCK'
+      DisplayAmount: 8
+      Lore:
+        - '&7'
+        - '&fШанс выпадения: &a5%'
+      DisplayEnchantments: {}
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Glowing: false
+      Items:
+        - 'Item:IRON_BLOCK, Amount:8'
+      Messages: {}
+      Alternative-Prize:
+        Toggle: false
+        Messages: {}
+        Commands: {}
+        Items: {}
+    4:
+      DisplayName: '&aКлюч к Элитному кейсу x2'
+      DisplayItem: 'TRIPWIRE_HOOK'
+      DisplayAmount: 1
+      Lore:
+        - '&7'
+        - '&fШанс выпадения: &a1%'
+      DisplayEnchantments: {}
+      Commands:
+        - 'crates give v elite 2 %Player%'
+      MaxRange: 100
+      Chance: 1
+      Firework: true
+      Glowing: false
+      Items: {}
+      Messages: {}
+      Alternative-Prize:
+        Toggle: false
+        Messages: {}
+        Commands: {}
+        Items: {}
+    5:
+      DisplayName: '&aЖемчуг эндера x8'
+      DisplayItem: 'ENDER_PEARL'
+      DisplayAmount: 8
+      Lore:
+        - '&7'
+        - '&fШанс выпадения: &a20%'
+      DisplayEnchantments: {}
+      MaxRange: 100
+      Chance: 20
+      Firework: true
+      Glowing: false
+      Items:
+        - 'Item:ENDER_PEARL, Amount:8'
+      Messages: {}
+      Alternative-Prize:
+        Toggle: false
+        Messages: {}
+        Commands: {}
+        Items: {}
+    6:
+      DisplayName: '&a500$'
+      DisplayItem: 'double_plant'
+      DisplayAmount: 1
+      Lore:
+        - '&7'
+        - '&fШанс выпадения: &a18%'
+      DisplayEnchantments: {}
+      Commands:
+        - 'eco give %Player% 500'
+      MaxRange: 100
+      Chance: 18
+      Firework: true
+      Glowing: false
+      Items: {}
+      Messages: {}
+      Alternative-Prize:
+        Toggle: false
+        Messages: {}
+        Commands: {}
+        Items: {}
+    7:
+      DisplayName: '&a1200$'
+      DisplayItem: 'double_plant'
+      DisplayAmount: 1
+      Lore:
+        - '&7'
+        - '&fШанс выпадения: &a14%'
+      DisplayEnchantments: {}
+      Commands:
+        - 'eco give %Player% 1200'
+      MaxRange: 100
+      Chance: 14
+      Firework: true
+      Glowing: false
+      Items: {}
+      Messages: {}
+      Alternative-Prize:
+        Toggle: false
+        Messages: {}
+        Commands: {}
+        Items: {}
+    8:
+      DisplayName: '&aМаяк'
+      DisplayItem: 'BEACON'
+      DisplayAmount: 1
+      Lore:
+        - '&7'
+        - '&fШанс выпадения: &a2%'
+      DisplayEnchantments: {}
+      MaxRange: 100
+      Chance: 2
+      Firework: true
+      Glowing: false
+      Items:
+        - 'Item:BEACON, Amount:1'
+      Messages: {}
+      Alternative-Prize:
+        Toggle: false
+        Messages: {}
+        Commands: {}
+        Items: {}
+    9:
+      DisplayName: '&aКактус x3'
+      DisplayItem: 'CACTUS'
+      DisplayAmount: 3
+      Lore:
+        - '&7'
+        - '&fШанс выпадения: &a11%'
+      DisplayEnchantments: {}
+      MaxRange: 100
+      Chance: 11
+      Firework: true
+      Glowing: false
+      Items:
+        - 'Item:CACTUS, Amount:3'
+      Messages: {}
+      Alternative-Prize:
+        Toggle: false
+        Messages: {}
+        Commands: {}
+        Items: {}

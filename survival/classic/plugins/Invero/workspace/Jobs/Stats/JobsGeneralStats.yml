@@ -1,0 +1,99 @@
+menu:
+  title: '&0Статистика по каждой работе'
+
+layout: |-
+  #########
+  ## # # ##
+  ## # # ##
+  ## # # ##
+  ## # # ##
+  ####B####
+
+items:
+  # Воздух
+  '#':
+    material: air
+  B:
+    material: air
+    sub:
+      - rule: 'check &jobsyourstats == true'
+        material: arrow
+        name: '&aВернуться в главное меню работ'
+        action: menu switch JobsYourStats
+
+generator:
+  output:
+    material: '{{ element Material }}'
+    flag: HIDE_ATTRIBUTES
+    name: '{{ element FormattedName }} &8▪ {{ if check papi inline "%jobsr_user_isin_{{element Name}}%" == "§2True" then "&aРаботаете" else "&cНе работаете"}}'
+    lore: |-
+        {{ element Lore1 }}
+        {{ element Lore2 }}
+
+        &aВаша статистика:
+        &fВаш уровень: &a{{ papi inline "%jobsr_user_jlevel_{{element Name}}%" }}&7/&a{{ papi inline "%jobsr_user_jmaxlvl_{{element Name}}%" }}
+        &fВаш Exp: &a{{ papi inline "%jobsr_user_jexp_{{element Name}}%" }}&7/&a{{ papi inline "%jobsr_user_jmaxexp_{{element Name}}%" }}
+        &fОчки: &a%jobsr_user_points%
+
+        &fУ вас профессий: &a%jobsr_user_joinedjobcount%/%jobsr_maxjobs%
+  elements:
+    - Material: 'gold_axe'
+      Name: 'Дровосек'
+      FormattedName: '&aДровосек'
+      Lore1: '&fНа этой работе вам нужно рубить'
+      Lore2: '&fи сажать деревья, чтобы заработать'
+    - Material: 'gold_pickaxe'
+      Name: 'Шахтер'
+      FormattedName: '&bШахтер'
+      Lore1: '&fНа этой работе вам нужно добывать'
+      Lore2: '&fматериалы и руды, чтобы заработать деньги'
+    - Material: 'QUARTZ_BLOCK'
+      Name: 'Строитель'
+      FormattedName: '&2Строитель'
+      Lore1: '&fНа этой работе вам нужно строить'
+      Lore2: '&fлюбые строения, чтобы заработать деньги'
+    - Material: 'gold_spade'
+      Name: 'Копатель'
+      FormattedName: '&6Копатель'
+      Lore1: '&fНа этой работе вам нужно терраформировать'
+      Lore2: '&fмир, чтобы заработать деньги'
+    - Material: 'gold_hoe'
+      Name: 'Фермер'
+      FormattedName: '&dФермер'
+      Lore1: '&fНа этой работе вам нужно заниматься'
+      Lore2: '&fфермерской работой, чтобы заработать деньги'
+    - Material: 'gold_sword'
+      Name: 'Охотник'
+      FormattedName: '&cОхотник'
+      Lore1: '&fНа этой работе вам нужно убивать'
+      Lore2: '&fживотных и монстров, чтобы заработать деньги'
+    - Material: 'gold_boots'
+      Name: 'Исследователь'
+      FormattedName: '&3Исследователь'
+      Lore1: '&fНа этой работе вам нужно исследовать'
+      Lore2: '&fкарту, чтобы заработать деньги'
+    - Material: 'WORKBENCH'
+      Name: 'Крафтер'
+      FormattedName: '&fКрафтер'
+      Lore1: '&fНа этой работе вам нужно создавать'
+      Lore2: '&fпредметы, чтобы заработать деньги'
+    - Material: 'FISHING_ROD'
+      Name: 'Рыбак'
+      FormattedName: '&9Рыбак'
+      Lore1: '&fНа этой работе вам нужно ловить'
+      Lore2: '&fрыбу, чтобы заработать деньги'
+    - Material: 'ANVIL'
+      Name: 'Оружейник'
+      FormattedName: '&4Оружейник'
+      Lore1: '&fНа этой работе вам нужно ремонтировать'
+      Lore2: '&fоружие, чтобы заработать деньги'
+    - Material: 'BREWING_STAND_ITEM'
+      Name: 'Зельевар'
+      FormattedName: '&eЗельевар'
+      Lore1: '&fНа этой работе вам нужно варить'
+      Lore2: '&fзелья, чтобы заработать деньги'
+    - Material: 'ENCHANTMENT_TABLE'
+      Name: 'Чародей'
+      FormattedName: '&5Чародей'
+      Lore1: '&fНа этой работе вам нужно зачаровывать'
+      Lore2: '&fпредметы, чтобы заработать деньги'

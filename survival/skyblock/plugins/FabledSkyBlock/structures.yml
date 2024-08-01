@@ -1,0 +1,148 @@
+Structures:
+  Normal:
+    File:
+      Overworld: normal.structure
+      Nether: nether.structure
+      End: end.structure
+    Name: Normal
+    Displayname: '&aПростенький'
+    Description:
+    - '&fСложность: &aНизкая'
+    - ''
+    - '&fСпециально для новых'
+    - '&fигроков на SkyWars'
+    Permission: false
+    Item:
+      Material: GRASS_BLOCK
+  Default:
+    Name: Default
+    Displayname: '&aКлассический'
+    Description:
+    - '&fСложность: &6Средняя'
+    - ''
+    - '&fСпециально для игроков,'
+    - '&fкоторые любят хардкор'
+    Permission: false
+    File:
+      Overworld: default.structure
+      End: end.structure
+      Nether: nether.structure
+    Item:
+      Material: DIRT
+  Double:
+    File:
+      Overworld: double.structure
+      Nether: nether.structure
+      End: end.structure
+    Name: Double
+    Displayname: '&aДвойной'
+    Description:
+    - '&fСложность: &6Средняя'
+    - ''
+    - '&fЭти два острова полностью'
+    - '&fв вашем распоряжении'
+    Permission: false
+    Item:
+      Material: DARK_OAK_FENCE
+  Farmer:
+    File:
+      Overworld: farmer.structure
+      Nether: nether.structure
+      End: end.structure
+    Name: Farmer
+    Displayname: '&aФермерский'
+    Description:
+    - '&fСложность: &6Средняя'
+    - ''
+    - '&fЭто специальный остров для'
+    - '&fфермеров. Даже с мельницей'
+    Item:
+      Material: LEATHER
+  Ice:
+    File:
+      Overworld: ice.structure
+      Nether: nether.structure
+      End: end.structure
+    Name: Ice
+    Displayname: '&aЛедниковый'
+    Description:
+    - '&fСложность: &6Средняя'
+    - ''
+    - '&fЗдесь очень холодно!'
+    Permission: false
+    Item:
+      Material: PACKED_ICE
+  Volcano:
+    File:
+      Overworld: volcano.structure
+      Nether: nether.structure
+      End: end.structure
+    Name: Volcano
+    Displayname: '&aВулканичный'
+    Description:
+    - '&fСложность: &4Высокая'
+    - ''
+    - '&fВам прийдётся выживать'
+    - '&fвозле извергающегося вулкана'
+    Permission: false
+    Item:
+      Material: LAVA_BUCKET
+  Premium:
+    File:
+      Overworld: Premium.structure
+      Nether: nether.structure
+      End: end.structure
+    Name: Premium
+    Displayname: '&aPremium'
+    Description:
+    - '&fСложность: &aНизкая'
+    - ''
+    - '&fЭто красивый песчаный остров.'
+    - '&fОтлично подойдёт для выживания'
+    Permission: true
+    Item:
+      Material: IRON_BLOCK
+  Elite:
+    File:
+      Overworld: Elite.structure
+      Nether: nether.structure
+      End: end.structure
+    Name: Elite
+    Displayname: '&aElite'
+    Description:
+    - '&fСложность: &4Средняя'
+    - ''
+    - '&fЭтот остров окутан магиииией'
+    Permission: true
+    Item:
+      Material: GOLD_BLOCK
+  Legend:
+    File:
+      Overworld: Legend.structure
+      Nether: nether.structure
+      End: end.structure
+    Name: Legend
+    Displayname: '&aLegend'
+    Description:
+    - '&fСложность: &4Высокая'
+    - ''
+    - '&fНа острове мало места'
+    - '&fи камня... Будет сложно'
+    Permission: true
+    Item:
+      Material: DIAMOND_BLOCK
+  SnapiX:
+    File:
+      Overworld: SnapiX.structure
+      Nether: nether.structure
+      End: end.structure
+    Name: SnapiX
+    Displayname: '&aSnapiX'
+    Description:
+    - '&fСложность: &4Средняя'
+    - ''
+    - '&fОчень большой и красивый остров!'
+    - '&fИдиально для приятной игры'
+    Permission: true
+    Item:
+      Material: EMERALD_BLOCK

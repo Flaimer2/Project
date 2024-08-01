@@ -1,0 +1,13 @@
+World:
+  Normal:
+    nextAvailableLocation:
+      x: 1200.0
+      z: 334800.0
+  Nether:
+    nextAvailableLocation:
+      x: 1200.0
+      z: 334800.0
+  End:
+    nextAvailableLocation:
+      x: 1200.0
+      z: 334800.0
