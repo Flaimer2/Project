@@ -77,11 +77,11 @@ nodes:
   AvailableKits:
     type: kether
     value: |-
-      if perm "snapix.classic.legend" then {
+      if perm "classic.kit.legend" then {
         "Start, Premium, Elite, Legend"
-      } else if perm "snapix.classic.elite" then {
+      } else if perm "classic.kit.elite" then {
         "Start, Premium, Elite"
-      } else if perm "snapix.classic.premium" then {
+      } else if perm "classic.kit.premium" then {
         "Start, Premium"
       } else {
         "Start"

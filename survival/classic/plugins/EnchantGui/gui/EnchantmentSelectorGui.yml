@@ -21,32 +21,32 @@ Gui-Settings:
   name: Зачарование предмета
   player-item: 13
   enchantments-slot:
-  - 20
-  - 21
-  - 22
-  - 23
-  - 24
+  - 29
+  - 30
+  - 31
+  - 32
+  - 33
   next-page-item:
     item:
       material: ARROW
       damage: 0
       amount: 1
       display_name: '&eСледующая страница'
-    slot: 25
+    slot: 53
   previous-page-item:
     item:
       material: ARROW
       damage: 0
       amount: 1
       display_name: '&eПредыдущая страница'
-    slot: 19
+    slot: 45
   back-item:
     item:
-      material: WOODEN_DOOR
+      material: ARROW
       damage: 0
       amount: 1
       display_name: '&eНазад'
-    slot: 45
+    slot: 49
   enchantments-lore:
   - '&fСтоимость: &a${MONEY} &f+ &a{LEVEL}LvL &f+ &a{EXP}exp &f+ &a{LAPIS} лазурита'
   - '&fМинимальный уровень: &a{MINIMUM_LEVEL}'
@@ -64,11 +64,11 @@ Gui:
       damage: 1
       amount: 1
       display_name: ' '
-    slot: 12
+    slot: 55
   '2':
     item:
       material: STAINED_GLASS_PANE
       damage: 1
       amount: 1
       display_name: ' '
-    slot: 14
+    slot: 56

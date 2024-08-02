@@ -71,4 +71,4 @@ messages:
     &a/ib &7name - get name of a board
     &a/ib &7reset - reload a specific board
     &a/ib &7coordinates - get x and y coordinates of a pixel
-version: '19.8'
+version: '19.3'

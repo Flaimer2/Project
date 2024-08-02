@@ -22,7 +22,7 @@ items:
     id: SKULL_ITEM:3
     slot: 1
     name: '&8★  &bВаш профиль &8★  &e&lПРАВЫЙ КЛИК'
-    skull-owner: '%tab_placeholder_condition:getSkinName%'
+    skull-owner: '%player_name%'
     itemflags: item-store, hide-attributes, death-drops, self-drops, cancel-events
     triggers: join, respawn, world-switch
     enabled-worlds: lobby

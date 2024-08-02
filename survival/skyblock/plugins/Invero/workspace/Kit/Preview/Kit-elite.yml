@@ -1,17 +1,17 @@
 menu:
-  title: 'Elite'
+  title: 'Набор Elite'
 
 layout:
-- '12345678 '
 - '         '
+- ' 1234567 '
+- ' 89`10``11``12`   '
 - '         '
-- '         '
-- 'R    9`10``11``12`'
+- '    R    '
 
 items:
   R:
-    material: 'barrier'
-    name: '&cВернуться в меню наборов'
+    material: 'ARROW'
+    name: '&aВернуться назад'
     action: menu switch Kit
   1:
     material: 'iron_sword'

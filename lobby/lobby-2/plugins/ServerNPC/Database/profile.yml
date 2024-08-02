@@ -3,7 +3,8 @@ NPC:
   name: profile
   skin: '%player_name%'
   uuid: cd91a218-2242-bb76-0000-000000000000
-  Actions: []
+  Actions:
+  - false|none|SPIGOT_CMD:/profile
   Click Delay: 1
   isSeated: false
   NameTag: false
@@ -21,27 +22,39 @@ NPC:
     HEAD:
       ==: org.bukkit.inventory.ItemStack
       type: AIR
+      damage: -1
+      amount: 0
     CHEST:
       ==: org.bukkit.inventory.ItemStack
       type: AIR
+      damage: -1
+      amount: 0
     LEGS:
       ==: org.bukkit.inventory.ItemStack
       type: AIR
+      damage: -1
+      amount: 0
     FEET:
       ==: org.bukkit.inventory.ItemStack
       type: AIR
+      damage: -1
+      amount: 0
     MAINHAND:
       ==: org.bukkit.inventory.ItemStack
       type: AIR
+      damage: -1
+      amount: 0
     OFFHAND:
       ==: org.bukkit.inventory.ItemStack
       type: AIR
+      damage: -1
+      amount: 0
   Hologram:
     ==: com.isnakebuzz.npcapi.settings.sub.HologramSettings
     Height: 2.5
     Lines:
-      - '&bПрофиль'
-      - '&e&lПРАВЫЙ КЛИК'
+    - '&bПрофиль'
+    - '&e&lПРАВЫЙ КЛИК'
   Render:
     ==: com.isnakebuzz.npcapi.settings.sub.RenderSettings
     Distance: 60.0

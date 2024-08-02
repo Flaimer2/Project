@@ -1,7 +1,8 @@
 # К странице +1, так как люди ещё считаю с 1
-title: '&0Суффиксы (Страница {{math add [ page get 1 ]}}/{{math add [ page max 1 ]}})'
+menu:
+  title: '&0Суффиксы (Страница {{math add [ page get 1 ]}}/{{math add [ page max 1 ]}})'
+  virtual: true
 scale: [ 9, 6 ]
-virtual: true
 
 layout: |-
   #########
@@ -13,19 +14,17 @@ layout: |-
 
 items:
   P:
-    relocate: 5
     material: arrow
     name: '&aПредыдущая страница'
     action: |-
       page previous
       menu title update
+      icons refresh
     sub:
       - rule: 'page isFirst'
         inherit: false
         material: air
   S:
-    update: 1
-    relocate: 1
     head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWI3NzE3ZDlkMzNkNjlhZjg1NWQ4NGNmY2ExODExMTZhNzI1YzE5MTVmMDBmNTE0NzE2ZDliYmIwZWFlYTZiZiJ9fX0=
     name: '§aСортировка'
     lore: |-
@@ -35,6 +34,7 @@ items:
       &aНажмите, чтобы изменить
     action: |-
       regenerate sort ssuffix
+      icons refresh
       ctx set sort to 2
     sub:
       - rule: 'check ctx get sort == 2'
@@ -45,6 +45,7 @@ items:
           &aНажмите, чтобы изменить
         action: |-
           regenerate sort
+          icons refresh
           ctx set sort to 1
 
   B:
@@ -52,8 +53,6 @@ items:
     name: '&aВернуться в магазин'
     action: menu switch Shop
   R:
-    update: 1
-    relocate: 5
     material: air
     sub:
       - rule: 'check size papi "%vault_suffix%" != 0'
@@ -66,14 +65,15 @@ items:
           &aНажмите, чтобы убрать!
         action: |-
           console "lp user %player_name% meta removesuffix 1"
+          icons refresh
           sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
   N:
-    relocate: 5
     material: arrow
     name: '&aСледующая страница'
     action: |-
       page next
       menu title update
+      icons refresh
     sub:
       - rule: 'page isLast'
         inherit: false
@@ -84,7 +84,6 @@ items:
 
 generator:
   output:
-    update: 1
     head: '{{ element head }}'
     name: '{{ element suffix }}'
     lore: |-
@@ -96,12 +95,13 @@ generator:
       &fБудет выглядеть для всех так: 
       %vault_prefix%%player_name% {{ element suffix }}
 
-      {{ if check papi "%vault_suffix%" == element suffix then "&cУ вас уже стоит этот суффикс" else if perm element spermission then "&aНажмите, чтобы включить" else if check money get >= element price then "&aНажмите, чтобы приобрести суффикс" else "&cУ вас не хватает денег для покупки" }}
+      {{ if check papi "%vault_suffix%" == inline " {{element suffix}}" then "&cУ вас уже стоит этот суффикс" else if perm element spermission then "&aНажмите, чтобы включить" else if check money get >= element price then "&aНажмите, чтобы приобрести суффикс" else "&cУ вас не хватает денег для покупки" }}
     action: |-
       if check papi "%vault_suffix%" == element suffix then {
         sound ENTITY_VILLAGER_NO by 1 1
       } else if perm element spermission then {
         console inline 'lp user %player_name% meta setsuffix 1 " {{element suffix}}"'
+        icons refresh
         sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
       } else if check money get >= element price then {
         console inline "money take %player_name% {{element price}}"
@@ -126,15 +126,16 @@ generator:
           &fБудет выглядеть для всех так: 
           %vault_prefix%%player_name% {{ element suffix }}
 
-          {{ if check papi "%vault_suffix%" == element suffix then "&cУ вас уже стоит этот суффикс" else if perm element spermission then "&aНажмите, чтобы включить" else if check papi "%luckperms_meta_suffix%" >= element price then "&aНажмите, чтобы получить суффикс" else "&cУ вас недостаточно суффиксов" }}       
+          {{ if check papi "%vault_suffix%" == inline " {{element suffix}}" then "&cУ вас уже стоит этот суффикс" else if perm element spermission then "&aНажмите, чтобы включить" else if check papi "%luckperms_meta_suffix%" >= element price then "&aНажмите, чтобы получить суффикс" else "&cУ вас недостаточно суффиксов" }}       
         action: |-
           if check papi "%vault_suffix%" == element suffix then {
             sound ENTITY_ITEM_BREAK by 1 1
           } else if perm element spermission then {
-            console inline "lp user %player_name% meta setsuffix 1 {{element suffix}}"
+            console inline "lp user %player_name% meta setsuffix 1 " {{element suffix}}""
+            icons refresh
             sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
           } else if check papi "%luckperms_meta_suffix%" >= element price then {
-            console inline "lp user %player_name% meta setsuffix 1 {{element suffix}}"
+            console inline "lp user %player_name% meta setsuffix 1 " {{element suffix}}""
             console inline "lp user %player_name% permission set {{element spermission}}"
             console inline "lp user %player_name% meta set suffix %math_{luckperms_meta_suffix}+1%"
             msg "&6Суффиксы &7| &fВы успешно получили суффикс: {{element suffix}}"

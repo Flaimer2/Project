@@ -1,17 +1,17 @@
 menu:
-  title: 'Premium'
+  title: 'Набор Premium'
 
 layout:
-- '123456   '
 - '         '
+- ' 1234567 '
+- ' 89`10`   '
 - '         '
-- '         '
-- 'R    789`10`'
+- '    R    '
 
 items:
   R:
-    material: 'barrier'
-    name: '&cВернуться в меню наборов'
+    material: 'ARROW'
+    name: '&aВернуться назад'
     action: menu switch Kit
   1:
     material: 'stone_sword'

@@ -21,7 +21,6 @@ items:
 
 generator:
   output:
-    refresh: 20
     material: '{{ element smaterial }}'
     name: '{{ element name }}'
     lore: |-
@@ -37,7 +36,7 @@ generator:
       } else if check papi "%coin_amount%" >= element price then {
         console inline "lp user %player_name% meta set {{ element stime }} %localtime_timezone_GMT+3,HH:mm%"
         console inline "lp user %player_name% permission settemp {{ element spermission }} true 24h"
-        console inline "snapicoin remove %player_name% {{ element price }} -s"
+        console inline "coin withdraw %player_name% {{ element price }} -s"
         msg "&cФункция &7| &fВы успешно приобрели функцию {{ element name }} на 24 часа"
         sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
         title "&fВы приобрели функцию на 24ч" subtitle element name by 20 20 10

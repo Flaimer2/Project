@@ -32,7 +32,7 @@ generator:
         sound ENTITY_VILLAGER_NO by 1 1
       } else if check papi "%coin_amount%" >= element price then {
         console inline "lp user %player_name% permission set {{ element spermission }}"
-        console inline "snapicoin remove %player_name% {{ element price }} -s"
+        console inline "coin withdraw %player_name% {{ element price }} -s"
         msg "&aАнимация &7| &fВы успешно приобрели анимацию {{ element name }}"
         sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
         title "&fВы приобрели анимацию" subtitle element name by 20 20 10

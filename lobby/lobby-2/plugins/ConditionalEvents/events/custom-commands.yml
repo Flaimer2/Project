@@ -18,7 +18,7 @@ Events:
       - 'player_command: gadgetsmenu main'
       action4:
       - 'cancel_event: true'
-      - 'player_command: alonsolevels rewards %player%'
+      - 'player_command: alonsolevels rewards'
   parkour:
     type: player_command
     conditions:

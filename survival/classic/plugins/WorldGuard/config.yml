@@ -41,10 +41,10 @@ regions:
     claim-only-inside-existing-regions: false
     max-region-count-per-player:
         default: 3
-        premium: 8
-        elite: 12
-        legend: 29
-        snapix: 37
+        premium: 5
+        elite: 9
+        legend: 15
+        snapix: 21
 auto-invincible: false
 auto-invincible-group: false
 auto-no-drowning-group: false

@@ -394,7 +394,7 @@ ExploitPatcher:
   NoCommandsInBed: false
   # Due to major exploit relating to oversized books this is recomended to be enabled
   # While this is set to true players will be limited in how many pages they can create
-  # Limitation is determined by cmi.book.pages.§f[20to100]§6 permission node and by default players can create 20 pages
+  # Limitation is determined by cmi.book.pages.§a[20to100]§a permission node and by default players can create 20 pages
   LimitBooks: true
 Vault:
   # If your having issues with vault grabbing correct players' group or balance, consider to turn this to false
@@ -1812,17 +1812,13 @@ Enchanting:
       water_worker: 1
       mending: 1
       thorns: 3
-      vanishing_curse: 1
       depth_strider: 3
-      frost_walker: 2
-      binding_curse: 1
       damage_all: 5
       damage_undead: 5
       damage_arthropods: 5
       knockback: 2
       fire_aspect: 2
       loot_bonus_mobs: 3
-      sweeping_edge: 3
       dig_speed: 5
       silk_touch: 1
       durability: 3

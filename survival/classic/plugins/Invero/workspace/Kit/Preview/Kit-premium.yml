@@ -1,25 +1,28 @@
 menu:
-  title: 'Premium'
+  title: 'Набор Premium'
 
 layout:
-- '12345    '
 - '         '
+- ' 12C3456 '
+- ' 6789    '
 - '         '
-- '         '
-- 'R    6789'
+- '    R    '
 
 items:
   R:
-    material: 'barrier'
-    name: '&cВернуться в меню наборов'
+    material: 'ARROW'
+    name: '&aВернуться назад'
     action: menu switch Kit
   1:
     material: 'iron_sword'
   2:
-    material: 'diamond_pickaxe'
-  3:
-    material: 'diamond'
+    material: 'iron_pickaxe'
+  C:
+    material: 'coal'
     amount: 8
+  3:
+    material: 'iron_ingot'
+    amount: 4
   4:
     material: 'log'
     amount: 16

@@ -15,8 +15,8 @@ scenes:
 displays:
   default:
     invisible: true
-    glow: false
-    distance: 100.0
+    glow: true
+    distance: 30.0
     world: lobby
     direction: west
     down: down
@@ -29,4 +29,4 @@ displays:
       y: 33.0
       z: -151.0
 internal:
-  pluginversion: '19.8'
+  pluginversion: '19.3'

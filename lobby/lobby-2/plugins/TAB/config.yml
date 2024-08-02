@@ -33,7 +33,7 @@ scoreboard-teams:
   can-see-friendly-invisibles: false
   disable-condition: '%world%=disabledworld'
   unlimited-nametag-mode:
-    enabled: false
+    enabled: true
     disable-on-boats: true
     disable-condition: '%world%=disabledworld'
     dynamic-lines:
@@ -124,11 +124,7 @@ placeholders:
   time-format: '[HH:mm:ss / h:mm a]'
   time-offset: 0
   register-tab-expansion: true
-placeholder-output-replacements:
-  '%ajlb_position_hubparkour_besttime_1_alltime%':
-    0-10: '&a&oВы в рейтинге! Поздравляем!'
-    else: '&e%ajlb_position_hubparkour_besttime_1_alltime%. %vault_prefix%%player_name%
-      &7- &e%ajlb_time_hubparkour_besttime_1_alltime%'
+placeholder-output-replacements: {}
 conditions:
   smile:
     conditions:

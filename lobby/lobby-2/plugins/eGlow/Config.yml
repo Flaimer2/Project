@@ -1,0 +1,70 @@
+Command-alias:
+  enable: false
+  alias: glow
+World:
+  enable: false
+  action: BLOCK
+  worlds:
+  - worldname1
+  - worldname2
+MySQL:
+  DBName: server_lobby
+  enable: true
+  host: localhost
+  port: 3306
+  username: root
+  password: root
+Delays:
+  NPC:
+    Slow: 2.0
+    Fast: 1.0
+  slow: 2.0
+  fast: 1.0
+Actionbars:
+  enable: true
+  use-in-GUI: false
+Formatting:
+  tablist:
+    enable: false
+    format: '%prefix% &r%name% %suffix%'
+  tagname:
+    enable: false
+    prefix: '%prefix%'
+    suffix: '%suffix%'
+Settings:
+  disable-glow-when-invisible: true
+  smart-TAB-nametag-handler: true
+  gui:
+    render-skulls: true
+    add-glass-panes: true
+    add-prefix-to-title: true
+    custom-effects-in-gui: true
+    use-gui-color-for-messages: false
+    max-personal-effect-size: 10
+  join:
+    check-glow-permission: false
+    default-glow-on-join-value: true
+    mention-glow-state: false
+    force-glows:
+      enable: false
+      bypass-blocked-worlds: false
+      glows:
+        Owner: red
+        Example: rainbowfast
+  notifications:
+    plugin-update: false
+    invisibility-change: true
+    target-set-unset-command: true
+Advanced:
+  glow-visibility:
+    enable: false
+    delay: 0.5
+  MySQL:
+    useSSL: true
+  teams:
+    entity-collision: true
+    nametag-visibility: true
+    remove-teams-on-join: true
+    send-eGlow-team-packets: true
+  packets:
+    smart-packet-blocker: true

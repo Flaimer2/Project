@@ -18,10 +18,10 @@ settings:
   permissions-file: permissions.yml
   update-folder: update
   plugin-profiling: false
-  connection-throttle: false
+  connection-throttle: 4000
   query-plugins: true
   deprecated-verbose: default
-  shutdown-message: §aСервер перезагружается
+  shutdown-message: Server closed
 spawn-limits:
   monsters: 15
   animals: 5
@@ -35,9 +35,3 @@ ticks-per:
   monster-spawns: 4
   autosave: 6000
 aliases: now-in-commands.yml
-database:
-  username: bukkit
-  isolation: SERIALIZABLE
-  driver: org.sqlite.JDBC
-  password: walrus
-  url: jdbc:sqlite:{DIR}{NAME}.db

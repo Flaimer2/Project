@@ -4,8 +4,8 @@ menu:
 
 layout: |-
   #########
-  ###   ###
-  ### # ###
+  #########
+  # ##    #
   #########
   ####B####
 
@@ -66,10 +66,13 @@ generator:
         action:
           right: menu switch inline "Kit-{{element Name}}"
           left: |-
-            console inline "lp user %player_name% permission settemp skyblock.kit.{{element Name}}.daily true 1d"
-            title "&a&lВы получили набор:" subtitle element FormattedName by 20 20 10
-            msg inline "&cНаборы &7| &fВы получили набор: {{element FormattedName}}"
-            case element Name [
+            set Name to element Name
+            set FormattedName to element FormattedName
+            menu close
+            console inline "lp user %player_name% permission settemp skyblock.kit.{{&Name}}.daily true 1d"
+            title "&a&lВы получили набор:" subtitle &FormattedName by 20 20 10
+            msg inline "&cНаборы &7| &fВы получили набор: {{&FormattedName}}"
+            case &Name [
               when "start" -> {
                 console "minecraft:give %player_name% minecraft:wooden_sword"
                 console "minecraft:give %player_name% minecraft:wooden_pickaxe"
@@ -147,27 +150,26 @@ generator:
                 console "minecraft:give %player_name% diamond_boots 1 0"
               }
             ]
-            menu close
   elements:
-    - FormattedName: '&aStart'
+    - FormattedName: '&eStart'
       Name: 'start'
-      Material: 'wooden_pickaxe'
+      Material: 'log'
       Type: 'free'
-    - FormattedName: '&aPremium'
+    - FormattedName: '&6Premium'
       Name: 'premium'
-      Material: 'iron_ingot'
+      Material: 'iron_block'
       Type: 'donate'
     - FormattedName: '&aElite'
       Name: 'elite'
-      Material: 'gold_ingot'
+      Material: 'gold_block'
       Type: 'donate'
-    - FormattedName: '&aLegend'
+    - FormattedName: '&bLegend'
       Name: 'legend'
-      Material: 'diamond'
+      Material: 'diamond_block'
       Type: 'donate'
-    - FormattedName: '&aSnapiX'
+    - FormattedName: '&9SnapiX'
       Name: 'snapix'
-      Material: 'emerald'
+      Material: 'emerald_block'
       Type: 'donate'
 
 bindings:

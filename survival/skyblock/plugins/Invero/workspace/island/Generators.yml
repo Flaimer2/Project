@@ -7,13 +7,19 @@ layout: |-
   #########
   ##     ##
   #########
-  #########
+  ####B####
 
 items:
   # Воздух
   '#':
     material: air
-
+  B:
+    material: air
+    sub:
+      - rule: 'check &menu == true'
+        material: arrow
+        name: '&aВернуться в меню'
+        action: menu open Menu
 generator:
   output:
     update: 5

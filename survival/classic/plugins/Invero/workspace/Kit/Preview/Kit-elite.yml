@@ -1,31 +1,37 @@
 menu:
-  title: 'Elite'
+  title: 'Набор Elite'
 
 layout:
-- '12345    '
 - '         '
+- ' 12I345E '
+- ' 6789    '
 - '         '
-- '         '
-- 'R    6789'
+- '    R    '
 
 items:
   R:
-    material: 'barrier'
-    name: '&cВернуться в меню наборов'
+    material: 'ARROW'
+    name: '&aВернуться назад'
     action: menu switch Kit
   1:
     material: 'IRON_SWORD'
   2:
     material: 'DIAMOND_PICKAXE'
+  I:
+    material: 'iron_ingot'
+    amount: 8
   3:
     material: 'diamond'
-    amount: 32
+    amount: 4
   4:
     material: 'log'
-    amount: 64
+    amount: 32
   5:
     material: 'golden_apple'
-    amount: 64
+    amount: 8
+  E:
+    material: 'experience_bottle'
+    amount: 32
   6:
     material: 'IRON_HELMET'
   7:

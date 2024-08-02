@@ -5,7 +5,7 @@ menu:
 layout: |-
   #########
   #########
-  # # # # #
+  # ##    #
   #########
   ####B####
 
@@ -66,16 +66,20 @@ generator:
         action:
           right: menu switch inline "Kit-{{element Name}}"
           left: |-
-            console inline "lp user %player_name% permission settemp classic.kit.{{element Name}}.daily true 1d"
-            title "&a&lВы получили набор:" subtitle element FormattedName by 20 20 10
-            msg inline "&cНаборы &7| &fВы получили набор: {{element FormattedName}}"
-            case element Name [
+            set Name to element Name
+            set FormattedName to element FormattedName
+            menu close
+            console inline "lp user %player_name% permission settemp classic.kit.{{&Name}}.daily true 1d"
+            title "&a&lВы получили набор:" subtitle &FormattedName by 20 20 10
+            msg inline "&cНаборы &7| &fВы получили набор: {{&FormattedName}}"
+            case &Name [
               when "start" -> {
                 console "minecraft:give %player_name% minecraft:stone_sword"
                 console "minecraft:give %player_name% minecraft:stone_pickaxe"
-                console "minecraft:give %player_name% minecraft:coal 8"
+                console "minecraft:give %player_name% minecraft:coal 4"
                 console "minecraft:give %player_name% minecraft:log 8"
                 console "minecraft:give %player_name% minecraft:apple 16"
+                console "minecraft:give %player_name% minecraft:experience_bottle 16"
                 console "minecraft:give %player_name% minecraft:leather_helmet"
                 console "minecraft:give %player_name% minecraft:leather_chestplate"
                 console "minecraft:give %player_name% minecraft:leather_leggings"
@@ -83,8 +87,9 @@ generator:
               }
               when "premium" -> {
                 console "minecraft:give %player_name% minecraft:iron_sword"
-                console "minecraft:give %player_name% minecraft:diamond_pickaxe"
-                console "minecraft:give %player_name% minecraft:diamond 8"
+                console "minecraft:give %player_name% minecraft:iron_pickaxe"
+                console "minecraft:give %player_name% minecraft:coal 8"
+                console "minecraft:give %player_name% minecraft:iron_ingot 4"
                 console "minecraft:give %player_name% minecraft:log 16"
                 console "minecraft:give %player_name% minecraft:golden_apple 4"
                 console "minecraft:give %player_name% minecraft:iron_helmet"
@@ -95,43 +100,63 @@ generator:
               when "elite" -> {
                 console "minecraft:give %player_name% minecraft:iron_sword"
                 console "minecraft:give %player_name% minecraft:diamond_pickaxe"
-                console "minecraft:give %player_name% minecraft:diamond 32"
-                console "minecraft:give %player_name% minecraft:log 64"
-                console "minecraft:give %player_name% minecraft:golden_apple 64"
+                console "minecraft:give %player_name% minecraft:iron_ingot 8"
+                console "minecraft:give %player_name% minecraft:diamond 4"
+                console "minecraft:give %player_name% minecraft:log 32"
+                console "minecraft:give %player_name% minecraft:golden_apple 8"
                 console "minecraft:give %player_name% minecraft:iron_helmet"
                 console "minecraft:give %player_name% minecraft:iron_chestplate"
                 console "minecraft:give %player_name% minecraft:iron_leggings"
                 console "minecraft:give %player_name% minecraft:iron_boots"
               }
               when "legend" -> {
-                console "minecraft:give %player_name% minecraft:diamond_sword"
+                console "minecraft:give %player_name% minecraft:iron_sword"
                 console "minecraft:give %player_name% minecraft:diamond_pickaxe"
-                console "minecraft:give %player_name% minecraft:diamond 64"
+                console "minecraft:give %player_name% minecraft:diamond_axe"
+                console "minecraft:give %player_name% minecraft:iron_ingot 16"
+                console "minecraft:give %player_name% minecraft:diamond 8"
+                console "minecraft:give %player_name% minecraft:log 48"
+                console "minecraft:give %player_name% minecraft:golden_apple 16"
+                console "minecraft:give %player_name% minecraft:diamond_helmet"
+                console "minecraft:give %player_name% minecraft:diamond_chestplate"
+                console "minecraft:give %player_name% minecraft:diamond_leggings"
+                console "minecraft:give %player_name% minecraft:diamond_boots"
+              }
+              when "snapix" -> {
+                console "minecraft:give %player_name% minecraft:diamond_sword 1 0 {ench:[{lvl:1,id:16}]}"
+                console "minecraft:give %player_name% minecraft:diamond_pickaxe 1 0 {ench:[{lvl:2,id:32}]}"
+                console "minecraft:give %player_name% minecraft:diamond_axe 1 0 {ench:[{lvl:2,id:32}]}"
+                console "minecraft:give %player_name% minecraft:iron_ingot 32"
+                console "minecraft:give %player_name% minecraft:diamond 16"
                 console "minecraft:give %player_name% minecraft:log 64"
-                console "minecraft:give %player_name% minecraft:golden_apple 64"
+                console "minecraft:give %player_name% minecraft:golden_apple 24"
+                console "minecraft:give %player_name% minecraft:enchanted_golden_apple 2"
                 console "minecraft:give %player_name% minecraft:diamond_helmet"
                 console "minecraft:give %player_name% minecraft:diamond_chestplate"
                 console "minecraft:give %player_name% minecraft:diamond_leggings"
                 console "minecraft:give %player_name% minecraft:diamond_boots"
               }
             ]
-            menu close
   elements:
-    - FormattedName: '&aStart'
+    - FormattedName: '&eStart'
       Name: 'start'
-      Material: 'wooden_pickaxe'
+      Material: 'log'
       Type: 'free'
-    - FormattedName: '&aPremium'
+    - FormattedName: '&6Premium'
       Name: 'premium'
-      Material: 'gold_ingot'
+      Material: 'iron_block'
       Type: 'donate'
     - FormattedName: '&aElite'
       Name: 'elite'
-      Material: 'emerald'
+      Material: 'gold_block'
       Type: 'donate'
-    - FormattedName: '&aLegend'
+    - FormattedName: '&bLegend'
       Name: 'legend'
-      Material: 'diamond'
+      Material: 'diamond_block'
+      Type: 'donate'
+    - FormattedName: '&9SnapiX'
+      Name: 'snapix'
+      Material: 'emerald_block'
       Type: 'donate'
 
 bindings:

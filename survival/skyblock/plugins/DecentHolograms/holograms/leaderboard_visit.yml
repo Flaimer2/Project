@@ -29,6 +29,6 @@ pages:
     height: 0.23
   - content: '&e10. &f%ajlb_lb_fabledskyblock_island_visitors_10_alltime_prefix%%ajlb_lb_fabledskyblock_island_visitors_10_alltime_name% &7- &e%ajlb_lb_fabledskyblock_island_visitors_10_alltime_value%'
     height: 0.5
-  - content: '%tab_replace_ajlb_position_fabledskyblock_island_visitors_alltime%'
+  - content: '%ajlbplus_current_position_fabledskyblock_island_visitors%'
     height: 0.23
   actions: {}

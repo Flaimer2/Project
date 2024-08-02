@@ -1,6 +1,7 @@
-title: '&0Меню следов от стрел'
+menu:
+  title: '&0Свечения'
+  virtual: true
 scale: [ 9, 6 ]
-virtual: true
 
 layout: |-
   #########
@@ -22,8 +23,6 @@ items:
         name: '&aВернуться в магазин'
         action: menu switch Shop
   R:
-    update: 5
-    relocate: 5
     material: air
     sub:
       - rule: 'check papi "%eglow_activeglow_raw%" != "none"'
@@ -37,8 +36,7 @@ items:
         action: |-
           console "eglow unset %player_name%"
           sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1  
-          icons update
-          icons relocate
+          icons refresh
 
 generator:
   output:
@@ -60,34 +58,31 @@ generator:
           sound ENTITY_VILLAGER_NO by 1 1
         } else if perm "snapix.glow" then {
           console inline "eglow set %player_name% {{ element sname }}"
+          icons refresh
           sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
         } else {
           sound ENTITY_ITEM_BREAK by 1 0
         }
-        icons update
-        icons relocate
       right: |-
-        if all [ check papi "%eglow_activeglow_raw%" == inline "{{element sname}}blink" check papi "%eglow_glowspeed_raw%" == "slow" ] then {
+        if all [ check papi "%eglow_activeglow_raw%" == inline "{{element sname}}blink" check papi "%eglow_glow_speed_raw%" == "slow" ] then {
           sound ENTITY_VILLAGER_NO by 1 1
         } else if perm "snapix.glow" then {
-          console inline "eglow set %player_name% blink {{ element sname }} slow"
+          console inline "eglow set %player_name% blink {{element sname}} slow"
+          icons refresh
           sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
         } else {
           sound ENTITY_ITEM_BREAK by 1 0
         }
-        icons update
-            icons relocate
       shift_right: |-
-        if all [ check papi "%eglow_activeglow_raw%" == inline "{{element sname}}blink" check papi "%eglow_glowspeed_raw%" == "fast" ] then {
+        if all [ check papi "%eglow_activeglow_raw%" == inline "{{element sname}}blink" check papi "%eglow_glow_speed_raw%" == "fast" ] then {
           sound ENTITY_VILLAGER_NO by 1 1
         } else if perm "snapix.glow" then {
           console inline "eglow set %player_name% blink {{ element sname }} fast"
+          icons refresh
           sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
         } else {
           sound ENTITY_ITEM_BREAK by 1 0
         }
-        icons update
-            icons relocate
     sub:
       - rule: 'check element id == 1'
         json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":16733525}}}}'
@@ -121,7 +116,7 @@ generator:
         json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":4673362}}}}'
       - rule: 'check element id == 16'
         frames-prop:
-          last: 1
+          last: 20
           type: reversable
         frames:
           - json: '{"type":"LEATHER_CHESTPLATE","meta":{"display":{"color":{"type":"INT","data":16733525}}}}'
@@ -140,27 +135,25 @@ generator:
           &aБыструю анимацию {{ element lname }}
         action:
           left: |-
-            if all [ check papi "%eglow_activeglow_raw%" == element sname check papi "%eglow_glowspeed_raw%" == "slow" ] then {
+            if all [ check papi "%eglow_activeglow_raw%" == element sname check papi "%eglow_glow_speed_raw%" == "slow" ] then {
               sound ENTITY_VILLAGER_NO by 1 1
             } else if perm "snapix.glow" then {
               console inline "eglow set %player_name% {{ element sname }} slow"
+              icons refresh
               sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
             } else {
               sound ENTITY_ITEM_BREAK by 1 0
             }
-            icons update
-            icons relocate
           right: |-
-            if all [ check papi "%eglow_activeglow_raw%" == element sname check papi "%eglow_glowspeed_raw%" == "fast" ] then {
+            if all [ check papi "%eglow_activeglow_raw%" == element sname check papi "%eglow_glow_speed_raw%" == "fast" ] then {
               sound ENTITY_VILLAGER_NO by 1 1
             } else if perm "snapix.glow" then {
               console inline "eglow set %player_name% {{ element sname }} fast"
+              icons refresh
               sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
             } else {
               sound ENTITY_ITEM_BREAK by 1 0
             }
-            icons update
-            icons relocate
       - rule: 'check element id == 17'
         material: spruce_sapling
         name: '{{ element name }}'
@@ -176,23 +169,21 @@ generator:
               sound ENTITY_VILLAGER_NO by 1 1
             } else if perm "snapix.glow" then {
               console inline "eglow set %player_name% {{ element lsname }}"
+              icons refresh
               sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
             } else {
               sound ENTITY_ITEM_BREAK by 1 0
             }
-            icons update
-            icons relocate
           right: |-
             if check papi "%eglow_activeglow_raw%" == element lfname then {
               sound ENTITY_VILLAGER_NO by 1 1
             } else if perm "snapix.glow" then {
               console inline "eglow set %player_name% {{ element lfname }}"
+              icons refresh
               sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
             } else {
               sound ENTITY_ITEM_BREAK by 1 0
             }
-            icons update
-            icons relocate
       - rule: 'check element id == 18'
         frames-prop:
           last: 1
@@ -213,23 +204,21 @@ generator:
               sound ENTITY_VILLAGER_NO by 1 1
             } else if perm "snapix.glow" then {
               console inline "eglow set %player_name% {{ element lsname }}"
+              icons refresh
               sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
             } else {
               sound ENTITY_ITEM_BREAK by 1 0
             }
-            icons update
-            icons relocate
           right: |-
             if check papi "%eglow_activeglow_raw%" == element lfname then {
               sound ENTITY_VILLAGER_NO by 1 1
             } else if perm "snapix.glow" then {
               console inline "eglow set %player_name% {{ element lfname }}"
+              icons refresh
               sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
             } else {
               sound ENTITY_ITEM_BREAK by 1 0
             }
-            icons update
-            icons relocate
   elements:
     - id: '1'
       name: '&cКрасное &fсвечение'

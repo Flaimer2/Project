@@ -4,11 +4,11 @@ layout: |-
   #########
   ###1#8###
   #########
-  ##6#2#8##
+  ##4#6#5##
   #########
 items:
   1:
-    head: '%tab_placeholder_condition:getSkinName%'
+    head: '%player_name%'
     name: '§aВаш профиль'
     lore: |-
       §fНажмите, либо используйте
@@ -42,7 +42,8 @@ items:
       - ''
       - '&aНажмите, чтобы открыть'
     action: |-
-      menu open Generators
+      ctx set 'menu' to 'true'
+      menu switch Generators
   4:
     head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTNjMTUzYzM5MWMzNGUyZDMyOGE2MDgzOWU2ODNhOWY4MmFkMzA0ODI5OWQ4YmM2YTM5ZTZmOTE1Y2M1YSJ9fX0
     name: '&aНаборы'
@@ -50,22 +51,19 @@ items:
       &fЗдесь Вы сможете получить
       &fнабор с ценными предметами
 
-      &fДоступные наборы:
-        &fНабор &6Premium&r
-        &fНабор &aElite&r
-        &fНабор &bLegend&r
-        &fНабор &9SnapiX&r
+      §fДоступные наборы: §a{{ node AvailableKits }}
 
       &aНажмите, чтобы открыть
     action: |-
-      menu open Kits
+      ctx set 'menu' to 'true'
+      menu switch Kit
   5:
     head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzZjMGQwNDU5YzY3ZjJiZTgyZmJlNTQwNmFiOGQxMzc4ZGExZjI4ZjdhM2Y4MmYxZGZjNDc2MTVhOTU1YTcifX19
     name: '&aПанель управления островом'
     lore: |-
       &fВозьмите под полный контроль ваш остров!
       &fУправление настройками, уровнем, участниками,
-      &fбанами, погодой и т.д. на вам острове
+      &fбанами, погодой и т.д. на вашем острове
 
       &aНажмите, чтобы открыть
     action: |-
@@ -79,7 +77,8 @@ items:
 
       &aНажмите, чтобы открыть
     action: |-
-      menu open Warps
+      ctx set 'menu' to 'true'
+      menu switch Warps
   7:
     head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGFhOWNiZDk3MDYzMTI3Njc1OWQ1ZDc2MjljYWFjYTUwYTI2ZmM3YjJkYjc4NjVlZjQ3MDllNWRkMmM2YjgwMCJ9fX0=
     name: '&aРынок'
@@ -106,7 +105,25 @@ items:
 
       &aНажмите, чтобы открыть
     action: |-
-      menu open donate
+      ctx set 'menu' to 'true'
+      menu switch donate
+
+nodes:
+  AvailableKits:
+    type: kether
+    value: |-
+      if perm "skyblock.kit.snapix" then {
+        "Start, Premium, Elite, Legend, SnapiX"
+      } else if perm "skyblock.kit.legend" then {
+        "Start, Premium, Elite, Legend"
+      } else if perm "skyblock.kit.elite" then {
+        "Start, Premium, Elite"
+      } else if perm "skyblock.kit.premium" then {
+        "Start, Premium"
+      } else {
+        "Start"
+      }
+
 bindings:
   command:
     name: menu

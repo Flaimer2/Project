@@ -65,5 +65,3 @@ items:
 bindings:
   command:
     name: 'warps'
-    aliases:
-    - warp

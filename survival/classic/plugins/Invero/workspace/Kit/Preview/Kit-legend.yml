@@ -1,31 +1,36 @@
 menu:
-  title: 'Legend'
+  title: 'Набор Legend'
 
 layout:
-- '12345    '
 - '         '
+- ' 12AI345 '
+- ' 6789    '
 - '         '
-- '         '
-- 'R    6789'
+- '    R    '
 
 items:
   R:
-    material: 'barrier'
-    name: '&cВернуться в меню наборов'
+    material: 'ARROW'
+    name: '&aВернуться назад'
     action: menu switch Kit
   1:
-    material: 'DIAMOND_SWORD'
+    material: 'iron_sword'
   2:
     material: 'diamond_pickaxe'
+  A:
+    material: 'diamond_axe'
+  I:
+    material: 'iron_ingot'
+    amount: 16
   3:
     material: 'diamond'
-    amount: 64
+    amount: 8
   4:
     material: 'log'
-    amount: 64
+    amount: 48
   5:
     material: 'golden_apple'
-    amount: 64
+    amount: 16
   6:
     material: 'diamond_helmet'
   7:

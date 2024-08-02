@@ -116,7 +116,7 @@ generator:
         title "&fВы приобрели" subtitle inline "сообщение гола {{element MessageName}}" by 20 20 10
         menu close
       } else if all [ check papi "%coin_amount%" >= element price isPriceSnapers ] then {
-        console inline "snapicoin remove %player_name% {{element price}} -s"
+        console inline "coin withdraw %player_name% {{element price}} -s"
         console inline "lp user %player_name% perm set snapithebridge.cosmetics.message.{{element Message}}"
         console inline "lp user %player_name% perm set snapithebridge.cosmetics.message.{{element Message}}.shop"
         console "lp user %player_name% meta set snapithebridge.cosmetics.message.amount %math_{luckperms_meta_snapithebridge.cosmetics.message.amount}+1%"

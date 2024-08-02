@@ -1662,7 +1662,7 @@ Alias:
   #  
   # /cmi warp $1-
   /warp:
-    Enabled: false
+    Enabled: true
     Tab: true
   /warps:
     Enabled: false

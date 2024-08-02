@@ -1,0 +1,213 @@
+Effects:
+  Christmas:
+    Displayname: "&cC&2h&cr&2i&cs&2t&cm&2a&cs"
+    Delay: 1.0
+    Colors:
+     - "red"
+     - "darkgreen"
+    GUI:
+     Page: 1
+     Slot: 1
+     Material: "SAPLING"
+     Meta: 1
+     Name: "&cC&2h&cr&2i&cs&2t&cm&2a&cs"
+     Lores:
+      - "&fLeft click: %effect_name%"
+      - "&fEffect permission: %effect_has_permission%"
+  ChristmasS:
+    Displayname: "&cC&2h&cr&2i&cs&2t&cm&2a&css"
+    Delay: 2.0
+    Colors:
+     - "red"
+     - "darkgreen"
+    GUI:
+     Page: 1
+     Slot: 3
+     Material: "SAPLING"
+     Meta: 1
+     Name: "&cC&2h&cr&2i&cs&2t&cm&2a&cs"
+     Lores:
+      - "&fLeft click: %effect_name%"
+      - "&fEffect permission: %effect_has_permission%"
+  Halloween:
+    Displayname: "&6Halloween"
+    Delay: 1.0
+    Colors:
+     - "gold"
+     - "yellow"
+    GUI:
+     Page: 1
+     Slot: 2
+     Material: "PUMPKIN"
+     Meta: 0
+     Name: "&6H&ea&6l&el&6o&ew&6e&ee&6n"
+     Lores:
+      - "&fLeft click: %effect_name%"
+      - "&fEffect permission: %effect_has_permission%"
+  Halloweens:
+    Displayname: "&6Halloweens"
+    Delay: 2.0
+    Colors:
+     - "gold"
+     - "yellow"
+    GUI:
+     Page: 1
+     Slot: 4
+     Material: "PUMPKIN"
+     Meta: 0
+     Name: "&6H&ea&6l&el&6o&ew&6e&ee&6n"
+     Lores:
+      - "&fLeft click: %effect_name%"
+      - "&fEffect permission: %effect_has_permission%"
+  SnapiX:
+    Displayname: "&9SnapiX"
+    Delay: 1.0
+    Colors:
+     - "white"
+     - "blue"
+    GUI:
+     Page: 1
+     Slot: 2
+     Material: "PUMPKIN"
+     Meta: 0
+     Name: "&6H&ea&6l&el&6o&ew&6e&ee&6n"
+     Lores:
+      - "&fLeft click: %effect_name%"
+      - "&fEffect permission: %effect_has_permission%"
+  SnapiXs:
+    Displayname: "&9SnapiXs"
+    Delay: 2.0
+    Colors:
+     - "white"
+     - "blue"
+    GUI:
+     Page: 1
+     Slot: 2
+     Material: "PUMPKIN"
+     Meta: 0
+     Name: "&6H&ea&6l&el&6o&ew&6e&ee&6n"
+     Lores:
+      - "&fLeft click: %effect_name%"
+      - "&fEffect permission: %effect_has_permission%"
+  Ukraine:
+    Displayname: "&6Ukraine"
+    Delay: 1.0
+    Colors:
+     - "blue"
+     - "yellow"
+    GUI:
+     Page: 1
+     Slot: 2
+     Material: "PUMPKIN"
+     Meta: 0
+     Name: "&6H&ea&6l&el&6o&ew&6e&ee&6n"
+     Lores:
+      - "&fLeft click: %effect_name%"
+      - "&fEffect permission: %effect_has_permission%"
+  Ukraines:
+    Displayname: "&6Ukraines"
+    Delay: 2.0
+    Colors:
+     - "blue"
+     - "yellow"
+    GUI:
+     Page: 1
+     Slot: 2
+     Material: "PUMPKIN"
+     Meta: 0
+     Name: "&6H&ea&6l&el&6o&ew&6e&ee&6n"
+     Lores:
+      - "&fLeft click: %effect_name%"
+      - "&fEffect permission: %effect_has_permission%"
+  UPA:
+    Displayname: "&6UPA"
+    Delay: 1.0
+    Colors:
+     - "black"
+     - "red"
+    GUI:
+     Page: 1
+     Slot: 2
+     Material: "PUMPKIN"
+     Meta: 0
+     Name: "&6H&ea&6l&el&6o&ew&6e&ee&6n"
+     Lores:
+      - "&fLeft click: %effect_name%"
+      - "&fEffect permission: %effect_has_permission%"
+  UPAs:
+    Displayname: "&6UPAs"
+    Delay: 2.0
+    Colors:
+     - "black"
+     - "red"
+    GUI:
+     Page: 1
+     Slot: 2
+     Material: "PUMPKIN"
+     Meta: 0
+     Name: "&6H&ea&6l&el&6o&ew&6e&ee&6n"
+     Lores:
+      - "&fLeft click: %effect_name%"
+      - "&fEffect permission: %effect_has_permission%"
+  Russia:
+    Displayname: "&6Russia"
+    Delay: 1.0
+    Colors:
+     - "white"
+     - "blue"
+     - "white"
+    GUI:
+     Page: 1
+     Slot: 2
+     Material: "PUMPKIN"
+     Meta: 0
+     Name: "&6H&ea&6l&el&6o&ew&6e&ee&6n"
+     Lores:
+      - "&fLeft click: %effect_name%"
+      - "&fEffect permission: %effect_has_permission%"
+  Russias:
+    Displayname: "&6Russias"
+    Delay: 2.0
+    Colors:
+     - "white"
+     - "blue"
+     - "white"
+    GUI:
+     Page: 1
+     Slot: 2
+     Material: "PUMPKIN"
+     Meta: 0
+     Name: "&6H&ea&6l&el&6o&ew&6e&ee&6n"
+     Lores:
+      - "&fLeft click: %effect_name%"
+      - "&fEffect permission: %effect_has_permission%"
+  RedAndBlue:
+    Displayname: "&6RedAndBlue"
+    Delay: 1.0
+    Colors:
+     - "red"
+     - "blue"
+    GUI:
+     Page: 1
+     Slot: 2
+     Material: "PUMPKIN"
+     Meta: 0
+     Name: "&6H&ea&6l&el&6o&ew&6e&ee&6n"
+     Lores:
+      - "&fLeft click: %effect_name%"
+      - "&fEffect permission: %effect_has_permission%"
+  RedAndBlues:
+    Displayname: "&6RedAndBlues"
+    Delay: 2.0
+    Colors:
+     - "red"
+     - "blue"
+    GUI:
+     Page: 1
+     Slot: 2
+     Material: "PUMPKIN"
+     Meta: 0
+     Name: "&6H&ea&6l&el&6o&ew&6e&ee&6n"
+     Lores:
+      - "&fLeft click: %effect_name%"
+      - "&fEffect permission: %effect_has_permission%"

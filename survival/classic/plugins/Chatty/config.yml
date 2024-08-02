@@ -86,11 +86,13 @@ chats:
     enable: true
     format: '&c[ʟ] {prefix}{player}&r{suffix} &7> &r{message}'
     range: 100
+    permission: false
   global:
     enable: true
     format: '&e[ɢ] {prefix}{player}&r{suffix} &7> &f{message}'
     range: -2
     symbol: '!'
+    permission: false
 
   # Example chat with multiline format
   notify:

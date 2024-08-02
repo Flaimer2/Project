@@ -1,40 +1,18 @@
-[14:04:24] [Thread-1263/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[14:04:24] [Server thread/INFO]: FlaimerPro[/127.0.0.1:59866] logged in with entity id 9 at ([auth]0.5, 50.0, 0.5)
-[14:06:08] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[15:34:30] [Thread-1268/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[15:34:30] [Server thread/INFO]: FlaimerPro[/127.0.0.1:63641] logged in with entity id 10 at ([auth]0.5, 50.0, 0.5)
-[17:02:38] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[17:08:32] [Thread-1272/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[17:08:32] [Server thread/INFO]: FlaimerPro[/127.0.0.1:49639] logged in with entity id 11 at ([auth]0.5, 50.0, 0.5)
-[17:09:40] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[18:13:09] [Thread-1276/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[18:13:09] [Server thread/INFO]: FlaimerPro[/127.0.0.1:50115] logged in with entity id 12 at ([auth]0.5, 50.0, 0.5)
-[18:14:29] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[22:31:37] [Thread-1285/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[22:31:37] [Thread-1286/INFO]: UUID of player Danuk16 is b8a47f4c-108e-33dd-a551-34497268b20f
-[22:31:37] [Server thread/INFO]: FlaimerPro[/127.0.0.1:63189] logged in with entity id 13 at ([auth]0.5, 50.0, 0.5)
-[22:31:37] [Server thread/INFO]: Danuk16[/127.0.0.1:63190] logged in with entity id 14 at ([auth]0.5, 50.0, 0.5)
-[22:35:44] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[22:41:24] [Server thread/INFO]: Danuk16 lost connection: Disconnected
-[22:50:39] [Thread-1288/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[22:50:39] [Server thread/INFO]: FlaimerPro[/127.0.0.1:54611] logged in with entity id 15 at ([auth]0.5, 50.0, 0.5)
-[22:50:50] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[23:22:44] [Thread-1290/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[23:22:44] [Server thread/INFO]: FlaimerPro[/127.0.0.1:58386] logged in with entity id 16 at ([auth]0.5, 50.0, 0.5)
-[23:22:54] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[23:28:32] [Thread-1291/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-[23:28:32] [Server thread/INFO]: FlaimerPro[/127.0.0.1:60604] logged in with entity id 17 at ([auth]0.5, 50.0, 0.5)
-[23:30:48] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
-[23:31:05] [Server thread/INFO]: Stopping the server
-[23:31:05] [Server thread/INFO]: Stopping server
-[23:31:05] [Server thread/INFO]: [ViaRewind] Disabling ViaRewind v2.0.4-SNAPSHOT
-[23:31:05] [Server thread/INFO]: [RunDisable] Disabling RunDisable v0.1
-[23:31:05] [Server thread/INFO]: [RunDisable] Plugin disabled
-[23:31:05] [Server thread/INFO]: [HolographicDisplays] Disabling HolographicDisplays v2.3.3-SNAPSHOT
-[23:31:05] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v4.7.1-SNAPSHOT
-[23:31:05] [Server thread/INFO]: [ViaVersion] ViaVersion is disabling, if this is a reload and you experience issues consider rebooting.
-[23:31:05] [Server thread/INFO]: [TpLogin] Disabling TpLogin v4.1.1
-[23:31:05] [Server thread/INFO]: Saving players
-[23:31:05] [Server thread/INFO]: Saving worlds
-[23:31:05] [Server thread/INFO]: Saving chunks for level 'auth'/Overworld
-[23:31:05] [Server thread/INFO]: Saving usercache.json
+[10:47:28] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
+[11:02:58] [Thread-12/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
+[11:03:02] [Server thread/INFO]: FlaimerPro[/127.0.0.1:59574] logged in with entity id 10 at ([auth]0.5, 50.0, 0.5)
+[11:03:02] [Server thread/INFO]: Stopping the server
+[11:03:02] [Server thread/INFO]: Stopping server
+[11:03:02] [Server thread/INFO]: [ViaRewind] Disabling ViaRewind v2.0.4-SNAPSHOT
+[11:03:02] [Server thread/INFO]: [RunDisable] Disabling RunDisable v0.1
+[11:03:02] [Server thread/INFO]: [RunDisable] Plugin disabled
+[11:03:02] [Server thread/INFO]: [HolographicDisplays] Disabling HolographicDisplays v2.3.3-SNAPSHOT
+[11:03:02] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v4.7.1-SNAPSHOT
+[11:03:02] [Server thread/INFO]: [ViaVersion] ViaVersion is disabling, if this is a reload and you experience issues consider rebooting.
+[11:03:02] [Server thread/INFO]: [TpLogin] Disabling TpLogin v4.1.1
+[11:03:02] [Server thread/INFO]: Saving players
+[11:03:02] [Server thread/INFO]: FlaimerPro lost connection: §aСервер перезагружается
+[11:03:09] [Server thread/INFO]: FlaimerPro left the game.
+[11:03:09] [Server thread/INFO]: Saving worlds
+[11:03:09] [Server thread/INFO]: Saving chunks for level 'auth'/Overworld
+[11:03:09] [Server thread/INFO]: Saving usercache.json

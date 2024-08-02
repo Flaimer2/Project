@@ -1,0 +1,39 @@
+[
+  {
+    "user": {
+      "type": "other",
+      "name": "CONSOLE"
+    },
+    "time": 1722531232529,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/xf1Fs7Npaq"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "FlaimerPro",
+      "uniqueId": "67b6efe6-bf52-3c13-8d21-291fd6b1fe76"
+    },
+    "time": 1722517334956,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/d74UnZiJQQ"
+    }
+  },
+  {
+    "user": {
+      "type": "other",
+      "name": "CONSOLE"
+    },
+    "time": 1722516487820,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/KOOjRBG3fz"
+    }
+  }
+]

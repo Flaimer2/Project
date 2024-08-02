@@ -2,7 +2,6 @@ settings:
   defaultscene:
     nopermission: scene1
   dithering: false
-  distance: 1000
   global: false
   advancedpalette: true
   resetonradiusexit: false
@@ -61,9 +60,21 @@ scenes:
       width: 640
       height: 385
       image: SkyBlock-3.png
-internal:
-  locations:
-    firstlocation: world:18:85:31
-    secondlocation: world:18:87:35
+displays:
+  default:
+    invisible: true
+    glow: false
+    distance: 75.0
+    world: world
     direction: west
-  pluginversion: '14.4'
+    down: down
+    firstlocation:
+      x: 18.0
+      y: 85.0
+      z: 31.0
+    secondlocation:
+      x: 18.0
+      y: 87.0
+      z: 35.0
+internal:
+  pluginversion: '19.3'

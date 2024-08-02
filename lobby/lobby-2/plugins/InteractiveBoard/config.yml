@@ -1,7 +1,5 @@
-# InteractiveBoard by Joiubas
-
 settings:
   language:
     defaultlanguage: en_lang.yml
   bungee-freeze-fix: false
-configversion: '19.8'
+configversion: '19.3'

@@ -1,17 +1,17 @@
 menu:
-  title: 'Start'
+  title: 'Набор Start'
 
 layout:
-- '12345    '
 - '         '
+- ' 12345E6 '
+- ' 789     '
 - '         '
-- '         '
-- 'R    6789'
+- '    R    '
 
 items:
   R:
-    material: 'barrier'
-    name: '&cВернуться в меню наборов'
+    material: 'ARROW'
+    name: '&aВернуться назад'
     action: menu switch Kit
   1:
     material: 'stone_sword'
@@ -19,12 +19,15 @@ items:
     material: 'stone_pickaxe'
   3:
     material: 'coal'
-    amount: 8
+    amount: 4
   4:
     material: 'log'
     amount: 8
   5:
     material: 'apple'
+    amount: 16
+  E:
+    material: 'experience_bottle'
     amount: 16
   6:
     material: 'leather_helmet'

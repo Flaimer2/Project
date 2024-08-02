@@ -1,66 +1,100 @@
 menu:
-  title: 'Legend'
-
-layout:
-- '123456789'
-- '`10``11``12``13``14``15``16`  '
-- '         '
-- '         '
-- 'R    `17``18``19``20`'
-
-items:
-  R:
-    material: 'barrier'
-    name: '&cВернуться в меню наборов'
-    action: menu switch Kit
-  1:
-    json: '{"type":"IRON_SWORD","meta":{"ench":[{"lvl":{"type":"SHORT","data":1},"id":{"type":"SHORT","data":16}}]}}'
-  2:
-    material: 'diamond_pickaxe'
-  3:
-    material: 'iron_axe'
-  4:
-    material: 'iron_shovel'
-  5:
-    json: '{"type":"BOW","meta":{"ench":[{"lvl":{"type":"SHORT","data":2},"id":{"type":"SHORT","data":48}}]}}'
-  6:
-    material: 'arrow'
-    amount: 32
-  7:
-    material: 'iron_ingot'
-    amount: 16
-  8:
-    material: 'diamond'
-    amount: 4
-  9:
-    material: 'log'
-    amount: 64
-  10:
-    material: 'golden_apple'
-    amount: 8
-  11:
-    material: 'sapling'
-    amount: 4
-  12:
-    material: 'sapling:1'
-    amount: 4
-  13:
-    material: 'sapling:2'
-    amount: 4
-  14:
-    material: 'sapling:3'
-    amount: 4
-  15:
-    material: 'sapling:4'
-    amount: 4
-  16:
-    material: 'sapling:5'
-    amount: 4
-  17:
-    json: '{"type":"IRON_HELMET","meta":{"ench":[{"lvl":{"type":"SHORT","data":1},"id":{"type":"SHORT","data":0}}]}}'
-  18:
-    json: '{"type":"IRON_CHESTPLATE","meta":{"ench":[{"lvl":{"type":"SHORT","data":1},"id":{"type":"SHORT","data":0}}]}}'
-  19:
-    json: '{"type":"IRON_LEGGINGS","meta":{"ench":[{"lvl":{"type":"SHORT","data":1},"id":{"type":"SHORT","data":0}}]}}'
-  20:
-    json: '{"type":"IRON_BOOTS","meta":{"ench":[{"lvl":{"type":"SHORT","data":1},"id":{"type":"SHORT","data":0}}]}}'
+  title: 'Набор Legend (Страница {{math add [ page get 1 ]}}/2)'
+  virtual: true
+scale: [ 9, 5 ]
+pages:
+  - layout:
+    - '         '
+    - ' 1234567 '
+    - ' 89`10``11``12``13``14`'
+    - '         '
+    - '    R   N'
+    items:
+      N:
+        material: arrow
+        name: '&aСледующая страница'
+        action: |-
+          page next
+          menu title update
+          icons refresh
+        sub:
+          - rule: 'page isLast'
+            inherit: false
+            material: air
+      1:
+        json: '{"type":"IRON_SWORD","meta":{"ench":[{"lvl":{"type":"SHORT","data":1},"id":{"type":"SHORT","data":16}}]}}'
+      2:
+        material: 'diamond_pickaxe'
+      3:
+        material: 'iron_axe'
+      4:
+        material: 'iron_shovel'
+      5:
+        json: '{"type":"BOW","meta":{"ench":[{"lvl":{"type":"SHORT","data":2},"id":{"type":"SHORT","data":48}}]}}'
+      6:
+        material: 'arrow'
+        amount: 32
+      7:
+        material: 'iron_ingot'
+        amount: 16
+      8:
+        material: 'diamond'
+        amount: 4
+      9:
+        material: 'log'
+        amount: 64
+      10:
+        material: 'golden_apple'
+        amount: 8
+      11:
+        material: 'sapling'
+        amount: 4
+      12:
+        material: 'sapling:1'
+        amount: 4
+      13:
+        material: 'sapling:2'
+        amount: 4
+      14:
+        material: 'sapling:3'
+        amount: 4
+      R:
+        material: 'ARROW'
+        name: '&aВернуться назад'
+        action: menu switch Kit
+  - layout:
+    - '         '
+    - ' `15``16``17``18``19``20`  '
+    - '         '
+    - '         '
+    - 'P   R    '
+    items:
+      P:
+        material: arrow
+        name: '&aПредыдущая страница'
+        action: |-
+          page previous
+          menu title update
+          icons refresh
+        sub:
+          - rule: 'page isFirst'
+            inherit: false
+            material: air
+      R:
+        material: 'ARROW'
+        name: '&aВернуться назад'
+        action: menu switch Kit
+      15:
+        material: 'sapling:4'
+        amount: 4
+      16:
+        material: 'sapling:5'
+        amount: 4
+      17:
+        json: '{"type":"IRON_HELMET","meta":{"ench":[{"lvl":{"type":"SHORT","data":1},"id":{"type":"SHORT","data":0}}]}}'
+      18:
+        json: '{"type":"IRON_CHESTPLATE","meta":{"ench":[{"lvl":{"type":"SHORT","data":1},"id":{"type":"SHORT","data":0}}]}}'
+      19:
+        json: '{"type":"IRON_LEGGINGS","meta":{"ench":[{"lvl":{"type":"SHORT","data":1},"id":{"type":"SHORT","data":0}}]}}'
+      20:
+        json: '{"type":"IRON_BOOTS","meta":{"ench":[{"lvl":{"type":"SHORT","data":1},"id":{"type":"SHORT","data":0}}]}}'

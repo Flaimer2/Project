@@ -1,17 +1,17 @@
 menu:
-  title: 'Start'
+  title: 'Набор Start'
 
 layout:
-- '12345    '
+- '         '
+- ' 12345   '
 - '         '
 - '         '
-- '         '
-- 'R        '
+- '    R    '
 
 items:
   R:
-    material: 'barrier'
-    name: '&cВернуться в меню наборов'
+    material: 'ARROW'
+    name: '&aВернуться назад'
     action: menu switch Kit
   1:
     material: 'wood_sword'

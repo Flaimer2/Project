@@ -1,0 +1,46 @@
+claim:
+  vertexpand:
+    enabled: false
+  blocklimits:
+    enabled: true
+    limits:
+      default: 20000
+      premium: 25000
+      elite: 35000
+      legend: 50000
+      snapix: 70000
+regionprotect:
+  flow:
+    lava:
+      enabled: true
+    water:
+      enabled: true
+    otherliquid:
+      enabled: true
+  ignitebyplayer:
+    enabled: true
+  fire:
+    spread:
+      toregion:
+        enabled: true
+      inregion:
+        enabled: true
+    burn:
+      enabled: true
+  explosion:
+    block:
+      enabled: true
+    entity:
+      enabled: true
+  pistonmove:
+    enabled: true
+autoflags:
+  enabled: false
+  flags: {}
+restrictcommands:
+  enabled: false
+  commands: []
+extendedwewand:
+  enabled: true
+misc:
+  pvpmode: deny

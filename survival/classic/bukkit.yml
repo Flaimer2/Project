@@ -19,27 +19,19 @@ settings:
   update-folder: update
   plugin-profiling: false
   connection-throttle: 4000
-  query-plugins: false
+  query-plugins: true
   deprecated-verbose: default
-  shutdown-message: §aСервер перезагружается
-  ping-packet-limit: 100
-  use-exact-login-location: false
+  shutdown-message: Server closed
 spawn-limits:
-  monsters: 20
+  monsters: 15
   animals: 5
-  water-animals: 0
-  ambient: 0
+  water-animals: 12
+  ambient: 1
 chunk-gc:
   period-in-ticks: 400
   load-threshold: 0
 ticks-per:
   animal-spawns: 400
-  monster-spawns: 12
-  autosave: 16000
+  monster-spawns: 4
+  autosave: 6000
 aliases: now-in-commands.yml
-database:
-  username: bukkit
-  isolation: SERIALIZABLE
-  driver: org.sqlite.JDBC
-  password: walrus
-  url: jdbc:sqlite:{DIR}{NAME}.db

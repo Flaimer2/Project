@@ -48,8 +48,12 @@ messages:
       selection block at the bottom left corner and the second one at the top right
       corner of the board.
     invalid_command: Invalid command, please use &a/ib help&7 to see commands.
+    invalid_character: Character &c#&7 can not be used in board names.
     board_not_found: Board with this name was not found.
     board_exists: Board under this name already exists.
+    board_not_deletable: This board can not be deleted in game.
+    board_not_resettable: This board can not be reset in game.
+    horizontal_unsupported: Horizontal boards are only supported in &c&l1.13+&7 versions.
   reload: All boards have been reloaded.
   reset:
     select: Please punch the board you want to reset.
@@ -67,4 +71,4 @@ messages:
     &a/ib &7name - get name of a board
     &a/ib &7reset - reload a specific board
     &a/ib &7coordinates - get x and y coordinates of a pixel
-version: '14.4'
+version: '19.3'
