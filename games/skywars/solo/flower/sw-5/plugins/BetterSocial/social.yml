@@ -1,0 +1,152 @@
+#Social media items, you can add up to 53 social medias.
+#Why not 54??? Because inventories have 54 slots and 1 is required for the back button. 54 - 1 = 53
+Social:
+  #This is the identifier. This will must be the same in all servers for the same network.
+  #If this is NOT the same. The media will NOT be loaded and will appear like it's not selected.
+  twitter:
+    Enabled: true
+    Slot: 20
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2M3NDVhMDZmNTM3YWVhODA1MDU1NTkxNDllYTE2YmQ0YTg0ZDQ0OTFmMTIyMjY4MThjMzg4MWMwOGU4NjBmYyJ9fX0="
+    Regex: '^(http(s)?:\/\/|)(?:www\.)?twitter\.com\/([a-zA-Z0-9_]{1,30})$' #If you don't understand what it is DO NOT MODIFY. If you want to accept every input, just set to "none"
+    Wrong-input: "&fНеверная ссылка! Введите по примеру: &atwitter.com/ВашаСсылка"
+    #Set to true if the input is a URL.
+    Clickable: true #This option will add a clickable text if server type is spigot (Not supported in any other server type)
+    Displayname: "&bTwitter"
+    #This message will contain the social link or value. Available placeholders:
+    #{PLAYER} player that reads the text. {TARGET} player name that owns the social media.
+    #{SOCIAL_MEDIA} the link/value of the social media.
+    Sub-title: "&fНапишите свою ссылку на аккаунт в &bTwitter &fв чат"
+    Updated: "&fВаша ссылка на &bTwitter &fбыла обновлена!"
+    Message: "&f&l        > Нажмите здесь, чтобы посетить Twitter {TARGET}! <"
+    #This message will be sent after the main message. It just contains 2 placeholders.
+    # {PLAYER} replaced by player that clicks the social and {TARGET} replaced by social media owner.
+    Additional:
+    - "&cЭта страница Twitter не связана с нами и не контролируется нами, мы не можем"
+    - "&cгарантировать ее соответствие. Открывайте эту ссылку на свой страх и риск."
+  youtube:
+    Enabled: true
+    Slot: 21
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjQzNTNmZDBmODYzMTQzNTM4NzY1ODYwNzViOWJkZjBjNDg0YWFiMDMzMWI4NzJkZjExYmQ1NjRmY2IwMjllZCJ9fX0="
+    Regex: '^((http|https):\/\/|)(www\.|)youtube\.com\/(channel\/|user\/|)[a-zA-Z0-9\-_]{1,}$'
+    Clickable: true
+    Wrong-input: "&fНеверная ссылка! Введите по примеру: &ayoutube.com/ВашаСсылкаНаКанал"
+    Displayname: "&cYouTube"
+    Sub-title: "&fНапишите свою ссылку на аккаунт в &cYouTube &fв чат:"
+    Updated: "&fВаша ссылка на &cYouTube &fбыла обновлена!"
+    Message: "&f&l        > Нажмите здесь, чтобы посетить {TARGET} YouTube! <"
+    Additional:
+    - "&cЭта страница YouTube не связана с нами и не контролируется нами, мы не можем"
+    - "&cгарантировать ее соответствие. Открывайте эту ссылку на свой страх и риск."
+  instagram:
+    Enabled: true
+    Slot: 22
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWM4OGQ2MTYzZmFiZTdjNWU2MjQ1MGViMzdhMDc0ZTJlMmM4ODYxMWM5OTg1MzZkYmQ4NDI5ZmFhMDgxOTQ1MyJ9fX0="
+    Regex: '^(http(s)?:\/\/)?(www\.)?instagram\.com\/([a-zA-Z0-9_]{1,30})$'
+    Wrong-input: "&fНеверная ссылка! Введите по примеру: &ainstagram.com/ВашаСсылка"
+    Clickable: true
+    Displayname: "&dInstagram"
+    Sub-title: "&fНапишите свою ссылку на аккаунт в &dInstagram &fв чат:"
+    Updated: "&fВаша ссылка на &dInstagram &fбыла обновлена!"
+    Message: "&f&l        > Нажмите здесь, чтобы посетить Instagram {TARGET}! <"
+    Additional:
+    - "&cЭта страница Instagram не связана с нами и не контролируется нами, мы не можем"
+    - "&cгарантировать ее соответствие. Открывайте эту ссылку на свой страх и риск."
+  twitch:
+    Enabled: true
+    Slot: 23
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDZiZTY1ZjQ0Y2QyMTAxNGM4Y2RkZDAxNThiZjc1MjI3YWRjYjFmZDE3OWY0YzFhY2QxNThjODg4NzFhMTNmIn19fQ=="
+    Regex: '^(http(s)?:\/\/)?(www\.)?twitch\.tv\/([a-zA-Z0-9_]{1,30})$'
+    Wrong-input: "&fНеверная ссылка! Введите по примеру: &atwitch.tv/ВашаСсылка"
+    Clickable: true
+    Displayname: "&5Twitch"
+    Sub-title: "&fНапишите свою ссылку на аккаунт в &5Twitch &fв чат:"
+    Updated: "&fВаша ссылка на &5Twitch &fбыла обновлена!"
+    Message: "&f&l        > Нажмите здесь, чтобы посетить Twitch {TARGET}! <"
+    Additional:
+    - "&cЭта страница Twitch не связана с нами и не контролируется нами, мы не можем"
+    - "&cгарантировать ее соответствие. Открывайте эту ссылку на свой страх и риск."
+  facebook:
+    Enabled: true
+    Slot: 24
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGViNDYxMjY5MDQ0NjNmMDdlY2ZjOTcyYWFhMzczNzNhMjIzNTliNWJhMjcxODIxYjY4OWNkNTM2N2Y3NTc2MiJ9fX0="
+    Regex: '^(http(s)?:\/\/)?(www\.)?(facebook|fb)\.com\/([a-zA-Z0-9_\.]{1,40})$'
+    Wrong-input: "&fНеверная ссылка! Введите по примеру: &afacebook.com/ВашаСсылка"
+    Clickable: true
+    Displayname: "&9Facebook"
+    Sub-title: "&fНапишите свою ссылку на аккаунт в &9Facebook &fв чат:"
+    Updated: "&fВаша ссылка на &9Facebook &fбыла обновлена!"
+    Message: "&f&l        > Нажмите здесь, чтобы посетить Facebook {TARGET}! <"
+    Additional:
+    - "&cЭта страница Facebook не связана с нами и не контролируется нами, мы не можем"
+    - "&cгарантировать ее соответствие. Открывайте эту ссылку на свой страх и риск."
+  discord:
+    Enabled: true
+    Slot: 29
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGM1OWU1YzdiMDczOGI1NzlmM2I0NDRjMTNhNDdiZWQ0OTZiMzA4MzhiMmVlMmIxMjdjYzU5Y2Q3OThhZWU3NyJ9fX0="
+    Regex: '^(.{1,32}#\d{0,4})$'
+    Wrong-input: "&fНеверный тег! Введите тег по примеру: &aВашеИмя#0000"
+    Clickable: false
+    Displayname: "&9Discord"
+    Sub-title: "&fНапишите тег на &9Discord &fв чат:"
+    Updated: "&fВаш тег на &9Discord &fбыл обновлён!"
+    Message: "&f&l > Тег {TARGET} на его аккаунт в Discord: {SOCIAL_MEDIA} <"
+    Additional:
+    - "&cЭта страница Discord не связана с нами и не контролируется нами, мы не можем"
+    - "&cгарантировать ее соответствие. Открывайте эту ссылку на свой страх и риск."
+  vk:
+    Enabled: true
+    Slot: 30
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmJkNzNkNjE2ZDIxYzE5MzAxZjJmMDc2Y2JjNTQ3YzdjMWI1MWJkNWUxYTQ1ZDdjNTlkNWFkYjgyODA4ZSJ9fX0="
+    Regex: '^(http(s)?:\/\/)?(www|m\.)?(vk)\.com\/([a-zA-Z0-9_\.]{1,40})$'
+    Wrong-input: "&fНеверная ссылка! Введите по примеру: &avk.com/ID"
+    Clickable: true
+    Displayname: "&9ВКонтакте"
+    Sub-title: "&fНапишите свою ссылку на аккаунт в &9ВКонтакте &fв чат:"
+    Updated: "&fВаша ссылка на &9ВКонтакте &fбыла обновлена!"
+    Message: "&f&l > Нажмите здесь, чтобы посетить ВКонтакте {TARGET}! <"
+    Additional:
+    - "&cЭта страница ВКонтакте не связана с нами и не контролируется нами, мы не можем"
+    - "&cгарантировать ее соответствие. Открывайте эту ссылку на свой страх и риск."
+  Reddit:
+    Enabled: false
+    Slot: 29
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGQ5YmQ0YjJmYThkYTgyNDdhODJjM2QxZmEyNDY3MTVmOWI2ZDk4Yzc3ODM3NGRhNmVmYzEwYzg5Y2Q2NCJ9fX0="
+    Regex: '([a-zA-Z0-9_-]{3,20})$'
+    Wrong-input: "&cInvalid input! You must enter your user tag like: YourName#0000"
+    Clickable: false
+    Displayname: "&fReddit"
+    Sub-title: "&fНапишите свою ссылку на аккаунт в discord в чат:"
+    Updated: "&aВаша ссылка на discord была обновлена!"
+    Message: "&f&l > Player {TARGET} is linked to the discord account {SOCIAL_MEDIA} <"
+    Additional:
+    - "&cЭта страница Discord не связана с нами и не контролируется нами, мы не можем"
+    - "&cгарантировать ее соответствие. Открывайте эту ссылку на свой страх и риск."
+  TikTok:
+    Enabled: true
+    Slot: 31
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYThlNDE1YjVjMWViNDU2NjNkYTZmZGFlNTc5OGRkMTk5YjIxNGQ0NzY3NmIzOTJjYTMwNmY3OTI5M2M5N2Y4NCJ9fX0="
+    Regex: '([a-zA-Z0-9_-]{3,24})$'
+    Wrong-input: "&fНеверный тег! Введите тег по примеру: &a@ВашНик"
+    Clickable: false
+    Displayname: "&cTikTok"
+    Sub-title: "&fНапишите свой ID на аккаунт в &cTikTok &fв чат:"
+    Updated: "&fВаш ID на &cTikTok &fбыл обновлен!"
+    Message: "&f&l > Тег {TARGET} на его аккаунт в TikTok: {SOCIAL_MEDIA} <"
+    Additional:
+    - "&cЭта страница TikTok не связана с нами и не контролируется нами, мы не можем"
+    - "&cгарантировать ее соответствие. Открывайте эту ссылку на свой страх и риск."
+  snapixforum:
+    Enabled: false
+    Slot: 20
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2Y5ZmQyMWEyZTJmNTcyZTllNWJmMGI1NTJmMDljNDE2YzQ4NzZjYmVhMGQ0YWMzZWMxZTY5ZGVlYzU5YSJ9fX0="
+    #This will match all links like "https://www.yournetwork.net/user/thenameoftheprofile" which can be the profile link of the player in your network forum.
+    Regex: '^(http(s)?:\/\/)(forum\.)mcsnapix\.ru\/members\/?([a-zA-Z0-9_]{1,30}\.)?([0-9_]{1,30})$'
+    Wrong-input: "&cНекорректная ссылка! Вы должны ввести ссылку, как: www.younetwork.net/members/YourUser"
+    Clickable: true
+    Displayname: "&fФорум"
+    Sub-title: "&fВставьте ссылку на свой профиль на форуме в чат:"
+    Updated: "&aСсылка на ваш профиль на форуме была обновлена!"
+    Message: "&f&l        > Нажмите здесь, чтобы посетить профиль на форуме игрока {TARGET}! <"
+    Additional:
+    - "&cЭта страница YourNetwork Forums не связана с нами и не контролируется нами, мы не можем"
+    - "&cгарантировать ее соответствие. Открывайте эту ссылку на свой страх и риск."

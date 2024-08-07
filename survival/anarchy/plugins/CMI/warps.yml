@@ -1,0 +1,21 @@
+Shop:
+  Location: lobby;88.0;93.0;-54.5;-180.0;0.02
+  Creator: b8a47f4c-108e-33dd-a551-34497268b20f
+Top:
+  Location: lobby;77.5;93.0;16.5;-359.99;0.0
+  Creator: b8a47f4c-108e-33dd-a551-34497268b20f
+Blocks:
+  Location: lobby;21.5;93.5;21.5;0.01;0.04
+  Creator: b8a47f4c-108e-33dd-a551-34497268b20f
+Casino:
+  Location: lobby;39.5;93.0;-18.5;179.97;0.01
+  Creator: b8a47f4c-108e-33dd-a551-34497268b20f
+PvP:
+  Location: lobby;110.5;93.0;3.5;-90.02;0.01
+  Creator: b8a47f4c-108e-33dd-a551-34497268b20f
+Quest:
+  Location: lobby;65.5;93.0;89.5;-45.01;0.01
+  Creator: b8a47f4c-108e-33dd-a551-34497268b20f
+RTP:
+  Location: lobby;39.5;93.0;45.5;45.01;0.01
+  Creator: b8a47f4c-108e-33dd-a551-34497268b20f

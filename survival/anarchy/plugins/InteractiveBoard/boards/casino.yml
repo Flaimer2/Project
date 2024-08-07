@@ -1,0 +1,30 @@
+settings:
+  defaultscene:
+    nopermission: scene1
+  dithering: false
+  global: false
+  advancedpalette: true
+  resetonradiusexit: false
+scenes:
+  scene1:
+    object1:
+      type: image
+      image: Casino.png
+displays:
+  default:
+    invisible: true
+    glow: false
+    distance: 75.0
+    world: lobby
+    direction: south
+    down: down
+    firstlocation:
+      x: 38.0
+      y: 96.0
+      z: -21.0
+    secondlocation:
+      x: 40.0
+      y: 96.0
+      z: -21.0
+internal:
+  pluginversion: '19.3'

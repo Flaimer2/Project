@@ -1,0 +1,319 @@
+killeffects:
+  default:
+    id: 0
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: BARRIER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aNone
+        lore:
+        - §7You do not have any KillEffect.
+    type: none
+    name: Default
+    price: 0
+    isBuy: false
+    slot: 10
+    page: 1
+    permission: ultraskywars.killeffect.default
+    autoGivePermission: ultraskywars.killeffect.autogive.Default
+    needPermToBuy: false
+  firework:
+    id: 0
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: FIREWORK
+      meta:
+        ==: ItemMeta
+        meta-type: FIREWORK
+        display-name: §aФейерверк
+        lore:
+        - §7
+        - '§fРедкость: §a[Обычная]'
+        - '§fЦена: §a20000$'
+        - §7
+        - <status>
+    type: firework
+    name: Фейерверк
+    price: 20000
+    isBuy: true
+    slot: 10
+    page: 1
+    permission: ultraskywars.killeffect.fireworks
+    autoGivePermission: ultraskywars.killeffect.autogive.Fireworks
+    needPermToBuy: false
+  thunder:
+    id: 1
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_AXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aГром
+        lore:
+        - §7
+        - '§fРедкость: §a[Обычная]'
+        - '§fЦена: §a20000$'
+        - §7
+        - <status>
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+    type: thunder
+    name: Гром
+    price: 20000
+    isBuy: true
+    slot: 11
+    page: 1
+    permission: ultraskywars.killeffect.thunder
+    autoGivePermission: ultraskywars.killeffect.autogive.Thunder
+    needPermToBuy: false
+  explode:
+    id: 2
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: TNT
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aTNT
+        lore:
+        - §7
+        - '§fРедкость: §a[Обычная]'
+        - '§fЦена: §a20000$'
+        - §7
+        - <status>
+    type: tnt
+    name: TNT
+    price: 20000
+    isBuy: true
+    slot: 12
+    page: 1
+    permission: ultraskywars.killeffect.explode
+    autoGivePermission: ultraskywars.killeffect.autogive.Explode
+    needPermToBuy: false
+  squid:
+    id: 3
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: MONSTER_EGG
+      meta:
+        ==: ItemMeta
+        meta-type: SPAWN_EGG
+        display-name: §aСпрут
+        lore:
+        - §7
+        - '§fРедкость: §a[Обычная]'
+        - '§fЦена: §a20000$'
+        - §7
+        - <status>
+        internal: H4sIAAAAAAAAAONiYOBi4HTNK8ksqQxJTOdgYMpMYeDPzcxLTS5KTCuxKi4sBQowAACkzUJUJwAAAA==
+        id: squid
+    type: squid
+    name: Спрут
+    price: 20000
+    isBuy: true
+    slot: 13
+    page: 1
+    permission: ultraskywars.killeffect.squid
+    autoGivePermission: ultraskywars.killeffect.autogive.Squid
+    needPermToBuy: false
+  blood:
+    id: 4
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: REDSTONE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aКровавая смерть
+        lore:
+        - §7
+        - '§fРедкость: §a[Обычная]'
+        - '§fЦена: §a20000$'
+        - §7
+        - <status>
+    type: blood
+    name: Кровавая смерть
+    price: 20000
+    isBuy: true
+    slot: 14
+    page: 1
+    permission: ultraskywars.killeffect.blood
+    autoGivePermission: ultraskywars.killeffect.autogive.Blood
+    needPermToBuy: false
+  diamond:
+    id: 5
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aВзрыв миллионера
+        lore:
+        - §7
+        - '§fРедкость: §9[Редкая]'
+        - '§fЦена: §a50000$'
+        - §7
+        - <status>
+    type: diamondexplode
+    name: Взрыв миллионера
+    price: 50000
+    isBuy: true
+    slot: 15
+    page: 1
+    permission: ultraskywars.killeffect.diamond
+    autoGivePermission: ultraskywars.killeffect.autogive.Diamond Explode
+    needPermToBuy: false
+  flower:
+    id: 6
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: YELLOW_FLOWER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aВесна
+        lore:
+        - §7
+        - '§fРедкость: §9[Редкая]'
+        - '§fЦена: §a50000$'
+        - §7
+        - <status>
+    type: flower
+    name: Весна
+    price: 50000
+    isBuy: true
+    slot: 16
+    page: 1
+    permission: ultraskywars.killeffect.flower
+    autoGivePermission: ultraskywars.killeffect.autogive.Flower
+    needPermToBuy: false
+  head:
+    id: 7
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: §aГолова
+        lore:
+        - §7
+        - '§fРедкость: §9[Редкая]'
+        - '§fЦена: §a50000$'
+        - §7
+        - <status>
+    type: head
+    name: Голова
+    price: 50000
+    isBuy: true
+    slot: 19
+    page: 1
+    permission: ultraskywars.killeffect.head
+    autoGivePermission: ultraskywars.killeffect.autogive.Head
+    needPermToBuy: false
+  snow:
+    id: 8
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: SNOW_BLOCK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aСнежный взрыв
+        lore:
+        - §7
+        - '§fРедкость: §9[Редкая]'
+        - '§fЦена: §a50000$'
+        - §7
+        - <status>
+    type: snow
+    name: Снежный взрыв
+    price: 50000
+    isBuy: true
+    slot: 20
+    page: 1
+    permission: ultraskywars.killeffect.snow
+    autoGivePermission: ultraskywars.killeffect.autogive.Snow
+    needPermToBuy: false
+  cookie:
+    id: 9
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: COOKIE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aФонтан из печенья
+        lore:
+        - §7
+        - '§fРедкость: §5[Эпическая]'
+        - '§fЦена: §a78000$'
+        - §7
+        - <status>
+    type: cookie
+    name: Фонтан из печенья
+    price: 78000
+    isBuy: true
+    slot: 21
+    page: 1
+    permission: ultraskywars.killeffect.cookie
+    autoGivePermission: ultraskywars.killeffect.autogive.Cookie
+    needPermToBuy: false
+  gift:
+    id: 10
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: GOLD_INGOT
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aВзрыв подарков
+        lore:
+        - §7
+        - '§fРедкость: §5[Эпическая]'
+        - '§fЦена: §a78000$'
+        - §7
+        - <status>
+    type: gift
+    name: Взрыв подарков
+    price: 78000
+    isBuy: true
+    slot: 22
+    page: 1
+    permission: ultraskywars.killeffect.gift
+    autoGivePermission: ultraskywars.killeffect.autogive.Gift
+    needPermToBuy: false
+  heart:
+    id: 11
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: APPLE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aВзрыв сердца
+        lore:
+        - §7
+        - '§fРедкость: §6[Легендарная]'
+        - '§fЦена: §a90000$'
+        - §7
+        - <status>
+    type: heart
+    name: Взрыв сердца
+    price: 90000
+    isBuy: true
+    slot: 23
+    page: 1
+    permission: ultraskywars.killeffect.heart
+    autoGivePermission: ultraskywars.killeffect.autogive.Heart
+    needPermToBuy: false

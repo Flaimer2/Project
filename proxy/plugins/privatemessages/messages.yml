@@ -1,7 +1,7 @@
 # Can be 'minimessage' (ex. <rainbow>Hello</rainbow>) or 'ampersand' (legacy messages, ex. &cHello)
 messages-type: ampersand
 no-console: '&8» &cYou must be a player to execute this command.'
-no-permission: '&8» &cYou do not have permission to do that.'
+no-permission: '&8» &fУ вас &cнет &fразрешения, чтобы сделать это!'
 configurations-reloaded: '&8» &aThe plugin configurations have been reloaded!'
 commands:
   message:

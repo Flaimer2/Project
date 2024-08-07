@@ -1,0 +1,45 @@
+Events:
+  1:
+    type: block_interact
+    conditions:
+    - '%block_x% == -220'
+    - '%block_y% == 36'
+    - '%block_z% == -282'
+    - '%action_type% equals PHYSICAL'
+    - '%deluxeplayeroptions_doublejump% equals §aOn'
+    actions:
+      default:
+      - 'console_command: lp user %player% perm set hubparkour.starting.snapix'
+      - 'player_command: doublejump'
+  2:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%luckperms_has_permission_hubparkour.starting.snapix% equals yes'
+    - '%hubparkour_currentparkour% !equals parkour'
+    actions:
+      default:
+      - 'console_command: lp user %player% perm unset hubparkour.starting.snapix'
+      - 'player_command: doublejump'
+  3:
+    type: block_interact
+    conditions:
+    - '%block_x% == -220'
+    - '%block_y% == 36'
+    - '%block_z% == -282'
+    - '%action_type% equals PHYSICAL'
+    - '%deluxeplayeroptions_fly% equals §aOn'
+    actions:
+      default:
+      - 'console_command: lp user %player% perm set hubparkour.starting.snapix1'
+      - 'player_command: fly'
+  4:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%luckperms_has_permission_hubparkour.starting.snapix1% equals yes'
+    - '%hubparkour_currentparkour% !equals parkour'
+    actions:
+      default:
+      - 'console_command: lp user %player% perm unset hubparkour.starting.snapix1'
+      - 'player_command: fly'

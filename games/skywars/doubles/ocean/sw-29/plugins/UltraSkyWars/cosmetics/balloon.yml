@@ -1,0 +1,385 @@
+balloons:
+  redskull:
+    id: 0
+    name: Красный череп
+    permission: ultraskywars.ballons.redskull
+    url: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2I4NTJiYTE1ODRkYTllNTcxNDg1OTk5NTQ1MWU0Yjk0NzQ4YzRkZDYzYWU0NTQzYzE1ZjlmOGFlYzY1YzgifX19
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: §aКрасный череп
+        lore:
+          - §7
+          - '§fРедкость: §a[Обычная]'
+          - '§fЦена: §a25000$'
+          - §7
+          - <status>
+        ItemFlags: !!set
+          HIDE_PLACED_ON: null
+          HIDE_ENCHANTS: null
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+          HIDE_DESTROYS: null
+    slot: 10
+    page: 1
+    price: 25000
+    isBuy: true
+    autoGivePermission: ultraskywars.balloon.autogive.redskull
+    needPermToBuy: false
+  beachball:
+    id: 1
+    name: Пляжный мяч
+    permission: ultraskywars.ballons.beachball
+    url: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWE1YWIwNWVhMjU0YzMyZTNjNDhmM2ZkY2Y5ZmQ5ZDc3ZDNjYmEwNGU2YjVlYzJlNjhiM2NiZGNmYWMzZmQifX19
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: §aПляжный мяч
+        lore:
+          - §7
+          - '§fРедкость: §a[Обычная]'
+          - '§fЦена: §a25000$'
+          - §7
+          - <status>
+        ItemFlags: !!set
+          HIDE_PLACED_ON: null
+          HIDE_ENCHANTS: null
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+          HIDE_DESTROYS: null
+    slot: 11
+    page: 1
+    price: 25000
+    isBuy: true
+    autoGivePermission: ultraskywars.balloon.autogive.beachball
+    needPermToBuy: false
+  popcorn:
+    id: 2
+    name: Попкорн
+    permission: ultraskywars.ballons.popcorn
+    url: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWE1MjYwMjEzMzFmOWE5N2MwMTEzZDRhNzlhMGVhMmM5ZGNkOTUxYzA3ZDQ5YTg2MTAyMTBlNmM3ZmQ3YjA3OCJ9fX0=
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: §aПопкорн
+        lore:
+          - §7
+          - '§fРедкость: §a[Обычная]'
+          - '§fЦена: §a25000$'
+          - §7
+          - <status>
+        ItemFlags: !!set
+          HIDE_PLACED_ON: null
+          HIDE_ENCHANTS: null
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+          HIDE_DESTROYS: null
+    slot: 12
+    page: 1
+    price: 25000
+    isBuy: true
+    autoGivePermission: ultraskywars.balloon.autogive.popcorn
+    needPermToBuy: false
+  candybag:
+    id: 3
+    name: Корзина с конфетами
+    permission: ultraskywars.ballons.candybag
+    url: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGQzMTE3M2U3YjdjNzhlNWU0OGRjZmY2NmQ1Nzk4MGFlY2EzODI0Y2Q4NTg0YWFjNDZkNzdjMjYwYzM4YmI0YyJ9fX0=
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: §aКорзина с конфетами
+        lore:
+          - §7
+          - '§fРедкость: §a[Обычная]'
+          - '§fЦена: §a25000$'
+          - §7
+          - <status>
+        ItemFlags: !!set
+          HIDE_PLACED_ON: null
+          HIDE_ENCHANTS: null
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+          HIDE_DESTROYS: null
+    slot: 13
+    page: 1
+    price: 25000
+    isBuy: true
+    autoGivePermission: ultraskywars.balloon.autogive.candybag
+    needPermToBuy: false
+  globus:
+    id: 4
+    name: Глобус
+    permission: ultraskywars.ballons.globus
+    url: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmMxZTczMDIzMzUyY2JjNzdiODk2ZmU3ZWEyNDJiNDMxNDNlMDEzYmVjNWJmMzE0ZDQxZTVmMjY1NDhmYjJkMiJ9fX0=
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: §aГлобус
+        lore:
+          - §7
+          - '§fРедкость: §9[Редкая]'
+          - '§fЦена: §a50000$'
+          - §7
+          - <status>
+        ItemFlags: !!set
+          HIDE_PLACED_ON: null
+          HIDE_ENCHANTS: null
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+          HIDE_DESTROYS: null
+    slot: 14
+    page: 1
+    price: 50000
+    isBuy: true
+    autoGivePermission: ultraskywars.balloon.autogive.globus
+    needPermToBuy: false
+  med:
+    id: 5
+    name: Аптечка
+    permission: ultraskywars.ballons.med
+    url: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODc5M2VlZjQ4NDkwNzhkZjRjY2Q0OTgwNTRjNzRlMjE3MWM3NzFmMjczMDk0NDE2NGE4ZWU3YjJkNTYzODMyIn19fQ==
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: §aАптечка
+        lore:
+          - §7
+          - '§fРедкость: §9[Редкая]'
+          - '§fЦена: §a50000$'
+          - §7
+          - <status>
+        ItemFlags: !!set
+          HIDE_PLACED_ON: null
+          HIDE_ENCHANTS: null
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+          HIDE_DESTROYS: null
+    slot: 15
+    page: 1
+    price: 50000
+    isBuy: true
+    autoGivePermission: ultraskywars.balloon.autogive.med
+    needPermToBuy: false
+  rubic:
+    id: 6
+    name: Кубик Рубика
+    permission: ultraskywars.ballons.rubic
+    url: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMyYmUzYmM2MDc3NzMyNjRjZWVlMGVkZDYxNTMxNjM0MWVjMmI0NjVhMTZjZGI1NzhiZGFlZGQ2NDNkIn19fQ==
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: §aКубик Рубика
+        lore:
+          - §7
+          - '§fРедкость: §9[Редкая]'
+          - '§fЦена: §a50000$'
+          - §7
+          - <status>
+        ItemFlags: !!set
+          HIDE_PLACED_ON: null
+          HIDE_ENCHANTS: null
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+          HIDE_DESTROYS: null
+    slot: 16
+    page: 1
+    price: 50000
+    isBuy: true
+    autoGivePermission: ultraskywars.balloon.autogive.rubic
+    needPermToBuy: false
+  clown:
+    id: 7
+    name: Страшный клоун
+    permission: ultraskywars.ballons.clown
+    url: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODZkYmMxZGViYzU3NDM4YTVkZTRiYTkxNTE1MTM4MmFiYzNkOGYxMzE4ZTJhMzVlNzhkZmIzMGYwNGJjNDY3In19fQ==
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: §aСтрашный клоун
+        lore:
+          - §7
+          - '§fРедкость: §9[Редкая]'
+          - '§fЦена: §a50000$'
+          - §7
+          - <status>
+        ItemFlags: !!set
+          HIDE_PLACED_ON: null
+          HIDE_ENCHANTS: null
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+          HIDE_DESTROYS: null
+    slot: 19
+    page: 1
+    price: 50000
+    isBuy: true
+    autoGivePermission: ultraskywars.balloon.autogive.clown
+    needPermToBuy: false
+  grinch:
+    id: 8
+    name: Гринч
+    permission: ultraskywars.ballons.grinch
+    url: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTljODlhODg5YzRiYjQyMWVhOWM1NmNiZWFlN2FmMWU2ZDg1ZjRmYWZmMzRhY2JhNzJlMWE4ZDVjNDExNmE4In19fQ==
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: §aГринч
+        lore:
+          - §7
+          - '§fРедкость: §9[Редкая]'
+          - '§fЦена: §a50000$'
+          - §7
+          - <status>
+        ItemFlags: !!set
+          HIDE_PLACED_ON: null
+          HIDE_ENCHANTS: null
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+          HIDE_DESTROYS: null
+    slot: 20
+    page: 1
+    price: 50000
+    isBuy: true
+    autoGivePermission: ultraskywars.balloon.autogive.grinch
+    needPermToBuy: false
+  sun:
+    id: 9
+    name: Солнце
+    permission: ultraskywars.ballons.sun
+    url: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDcxMWU1NDcyYzU3YzMyMTgwOGI3YmUzNDRhMTFlZmFhNGRlYjViNDA0NTU2OTdlZDRhM2U2ZTkyODc3MjAwMiJ9fX0=
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: §aСолнце
+        lore:
+          - §7
+          - '§fРедкость: §6[Легендарная]'
+          - '§fЦена: §a125000$'
+          - §7
+          - <status>
+        ItemFlags: !!set
+          HIDE_PLACED_ON: null
+          HIDE_ENCHANTS: null
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+          HIDE_DESTROYS: null
+    slot: 21
+    page: 1
+    price: 125000
+    isBuy: true
+    autoGivePermission: ultraskywars.balloon.autogive.sun
+    needPermToBuy: false
+  jocker:
+    id: 10
+    name: Джокер
+    permission: ultraskywars.ballons.jocker
+    url: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2ViOThmZWY1YmMyMDkyMWU4ZTc5YmY3MTZhODk1ZjRjNjk4NTcxZjMzZjhkZTMzNDE5ZWI4Y2E4YWZmOSJ9fX0=
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: §aДжокер
+        lore:
+          - §7
+          - '§fРедкость: §6[Легендарная]'
+          - '§fЦена: §a125000$'
+          - §7
+          - <status>
+        ItemFlags: !!set
+          HIDE_PLACED_ON: null
+          HIDE_ENCHANTS: null
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+          HIDE_DESTROYS: null
+    slot: 22
+    page: 1
+    price: 125000
+    isBuy: true
+    autoGivePermission: ultraskywars.balloon.autogive.jocker
+    needPermToBuy: false
+  moon:
+    id: 11
+    name: Луна
+    permission: ultraskywars.ballons.moon
+    url: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzAwYTFhN2JiMDdmZGI0ZTZhODZlMzQxODE2ZTg4NDNkZGFmN2NmMzcxM2EzNjY2ZDc0YjcyZjk4NjE5ZjA2MyJ9fX0=
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: §aЛуна
+        lore:
+          - §7
+          - '§fРедкость: §6[Легендарная]'
+          - '§fЦена: §a125000$'
+          - §7
+          - <status>
+        ItemFlags: !!set
+          HIDE_PLACED_ON: null
+          HIDE_ENCHANTS: null
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+          HIDE_DESTROYS: null
+    slot: 23
+    page: 1
+    price: 125000
+    isBuy: true
+    autoGivePermission: ultraskywars.balloon.autogive.moon
+    needPermToBuy: false

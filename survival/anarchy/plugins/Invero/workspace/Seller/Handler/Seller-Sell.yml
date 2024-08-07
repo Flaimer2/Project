@@ -1,0 +1,104 @@
+menu:
+  title: '&0Продажа'
+
+layout: |-
+  ####*####
+  #########
+  ##-#X#+##
+  #########
+  ####B####
+
+items:
+  -:
+    name: '&cУбавить'
+    material: red stained glass pane
+    lore: |
+      &fТекущее количество: &a{{&amount}}
+
+      &fНажмите ЛКМ, чтобы &a-1
+      &fНажмите Шифт + ЛКМ, чтобы &a-8
+
+    action:
+      left: |-
+        if check &amount > &minAmount then {
+          ctx set 'amount' to math - [ &amount 1 ]
+          icons refresh
+          sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        } else {
+          sound ENTITY_ITEM_BREAK by 1 0
+        }
+      shift_left: |-
+        if check math - [ &amount 8 ] >= &minAmount then {
+          ctx set 'amount' to math - [ &amount 8 ]
+          icons refresh
+          sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        } else if check &minAmount == &amount then {
+          sound ENTITY_ITEM_BREAK by 1 0
+        } else {
+          ctx set 'amount' to &minAmount
+          icons refresh
+          sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        }
+    sub:
+      - rule: 'check &maxAmount == &minAmount'
+        material: air
+        inherit: false
+  +:
+    name: '&aПрибавить'
+    material: lime stained glass pane
+    lore: |
+      &fТекущее количество: &a{{&amount}}
+
+      &fНажмите ЛКМ, чтобы &a+1
+      &fНажмите Шифт + ЛКМ, чтобы &a+8
+    sub:
+      - rule: 'check &maxAmount == &minAmount'
+        material: air
+        inherit: false
+    action:
+      left: |-
+        if check &amount < &maxAmount then {
+          ctx set 'amount' to math + [ &amount 1 ]
+          icons refresh
+          sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        } else {
+          sound ENTITY_ITEM_BREAK by 1 0
+        }
+      shift_left: |-
+        if check math + [ &amount 8 ] <= &maxAmount then {
+          ctx set 'amount' to math + [ &amount 8 ]
+          icons refresh
+          sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        } else if check &maxAmount == &amount then {
+          sound ENTITY_ITEM_BREAK by 1 0
+        } else {
+          ctx set 'amount' to &maxAmount
+          icons refresh
+          sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        }
+  X:
+    material: '{{&itemMaterial}}'
+    amount: '{{&amount}}'
+    name: '&a{{&itemName}}'
+    enhancedLore: true
+    lore: |-
+      &fЦена: &a{{ type int math mul [ &price math add [ 1 papi "%snapiseller_current_discount%" ] ]}}$ &7{{if check papi "%snapiseller_current_level%" == 1 then " " else inline "&m({{&price}}$)" }}
+      {{ if check &maxAmount == &minAmount then " " else inline "&fКоличество: &a{{&amount}}\\n\\n&fИтоговая цена: &a{{type int math mul [ &amount &price math add [ 1 papi "%snapiseller_current_discount%" ] ]}}$\\n" }}
+      {{ if check &sellAmount < &amount then "&cУх! Это слишком много для меня" else if check &amount <= papi inline %checkitem_amount_mat:{{&itemMaterial}}% then "&aНажмите, чтобы продать!" else "&cУ вас недостаточно предметов" }}
+    action: |-
+      if check &sellAmount < &amount then {
+        sound ENTITY_ITEM_BREAK by 1 0
+      } else if check &amount <= papi inline %checkitem_amount_mat:{{&itemMaterial}}% then {
+        papi inline %checkitem_remove_mat:{{&itemMaterial}},amt:{{&amount}}%
+        command inline "money give %player_name% {{type int math mul [ &amount &price math add [ 1 inline {{papi %snapiseller_current_discount%}} ] ]}}" as console 
+        tell "&cСкупщик &7| &fВы продали &a{{&itemName}} &fза &a{{type int math mul [ &amount &price math add [ 1 inline {{papi %snapiseller_current_discount%}} ] ]}}$"
+        command inline "snapiselleradmin purchase add %player_name% {{type int math mul [ &amount &price math add [ 1 inline {{papi %snapiseller_current_discount%}} ] ]}}" as console
+        command inline "snapiselleradmin item add %player_name% {{&Item}} {{&amount}}" as console
+        menu close
+      } else {
+        sound ENTITY_ITEM_BREAK by 1 0
+      }
+  B:
+    name: '&aВернуться к категориям'
+    material: 'arrow'
+    action: menu switch &fromMenu

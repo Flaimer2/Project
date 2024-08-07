@@ -20,7 +20,7 @@ lastloginapi:
   configuration-outdated: '&cThe configuration file ''%config%'' of LastLoginAPI is outdated!'
   # [Special tags]
   # => %permission%  = Missing permission
-  no-permission: '&cYou do not have access to that command'
+  no-permission: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
   common-messages:
     invalid-command: '&cInvalid command'
     configuration-reloaded: '&aConfiguration reloaded'

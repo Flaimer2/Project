@@ -1,0 +1,492 @@
+glasses:
+  Defecto:
+    id: 0
+    name: Defecto
+    schematic: glass.schematic
+    clear: clearGlass.schematic
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: GLASS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aDefault
+        lore:
+        - §fThis is a default glass
+        - §f
+        - <price>
+        - §f
+        - §eRight-Click to preview!
+        - <status>
+    isBuy: false
+    price: 0
+    slot: 10
+    page: 1
+    permission: ultraskywars.glass.Defecto
+    autoGivePermission: ultraskywars.glass.autogive.Defecto
+    needPermToBuy: false
+    schematicTeam: glass.schematic
+    clearTeam: clearGlass.schematic
+  Orange:
+    id: 1
+    name: Оранжевая
+    schematic: orangeGlass.schematic
+    clear: clearGlass.schematic
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: STAINED_GLASS
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aОранжевая
+        lore:
+        - §f
+        - '§fРедкость: §a[Обычная]'
+        - '§fЦена: §a40000$'
+        - §7
+        - <status>
+        - §aНажмите ПКМ, чтобы посмотреть клетку
+    isBuy: true
+    price: 40000
+    slot: 10
+    page: 1
+    permission: ultraskywars.glass.Orange
+    autoGivePermission: ultraskywars.glass.autogive.Orange
+    needPermToBuy: false
+    schematicTeam: orangeGlass.schematic
+    clearTeam: clearGlass.schematic
+  Magenta:
+    id: 2
+    name: Пурпурная
+    schematic: magentaGlass.schematic
+    clear: clearGlass.schematic
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: STAINED_GLASS
+      damage: 2
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aПурпурная
+        lore:
+        - §f
+        - '§fРедкость: §a[Обычная]'
+        - '§fЦена: §a40000$'
+        - §7
+        - <status>
+        - §aНажмите ПКМ, чтобы посмотреть клетку
+    isBuy: true
+    price: 40000
+    slot: 11
+    page: 1
+    permission: ultraskywars.glass.Magenta
+    autoGivePermission: ultraskywars.glass.autogive.Magenta
+    needPermToBuy: false
+    schematicTeam: magentaGlass.schematic
+    clearTeam: clearGlass.schematic
+  Lblue:
+    id: 3
+    name: Голубая
+    schematic: lblueGlass.schematic
+    clear: clearGlass.schematic
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: STAINED_GLASS
+      damage: 3
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aГолубая
+        lore:
+        - §f
+        - '§fРедкость: §a[Обычная]'
+        - '§fЦена: §a40000$'
+        - §7
+        - <status>
+        - §aНажмите ПКМ, чтобы посмотреть клетку
+    isBuy: true
+    price: 40000
+    slot: 12
+    page: 1
+    permission: ultraskywars.glass.Lblue
+    autoGivePermission: ultraskywars.glass.autogive.Lblue
+    needPermToBuy: false
+    schematicTeam: lblueGlass.schematic
+    clearTeam: clearGlass.schematic
+  Yellow:
+    id: 4
+    name: Жёлтая
+    schematic: yellowGlass.schematic
+    clear: clearGlass.schematic
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: STAINED_GLASS
+      damage: 4
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aЖёлтая
+        lore:
+        - §f
+        - '§fРедкость: §a[Обычная]'
+        - '§fЦена: §a40000$'
+        - §7
+        - <status>
+        - §aНажмите ПКМ, чтобы посмотреть клетку
+    isBuy: true
+    price: 40000
+    slot: 13
+    page: 1
+    permission: ultraskywars.glass.Yellow
+    autoGivePermission: ultraskywars.glass.autogive.Yellow
+    needPermToBuy: false
+    schematicTeam: yellowGlass.schematic
+    clearTeam: clearGlass.schematic
+  Lime:
+    id: 5
+    name: Лаймовая
+    schematic: limeGlass.schematic
+    clear: clearGlass.schematic
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: STAINED_GLASS
+      damage: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aЛаймовая
+        lore:
+        - §f
+        - '§fРедкость: §a[Обычная]'
+        - '§fЦена: §a40000$'
+        - §7
+        - <status>
+        - §aНажмите ПКМ, чтобы посмотреть клетку
+    isBuy: true
+    price: 40000
+    slot: 14
+    page: 1
+    permission: ultraskywars.glass.Lime
+    autoGivePermission: ultraskywars.glass.autogive.Lime
+    needPermToBuy: false
+    schematicTeam: limeGlass.schematic
+    clearTeam: clearGlass.schematic
+  Pink:
+    id: 6
+    name: Розовая
+    schematic: pinkGlass.schematic
+    clear: clearGlass.schematic
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: STAINED_GLASS
+      damage: 6
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aРозовая
+        lore:
+        - §f
+        - '§fРедкость: §a[Обычная]'
+        - '§fЦена: §a40000$'
+        - §7
+        - <status>
+        - §aНажмите ПКМ, чтобы посмотреть клетку
+    isBuy: true
+    price: 40000
+    slot: 15
+    page: 1
+    permission: ultraskywars.glass.Pink
+    autoGivePermission: ultraskywars.glass.autogive.Pink
+    needPermToBuy: false
+    schematicTeam: pinkGlass.schematic
+    clearTeam: clearGlass.schematic
+  Gray:
+    id: 7
+    name: Серая
+    schematic: grayGlass.schematic
+    clear: clearGlass.schematic
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: STAINED_GLASS
+      damage: 7
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aСерая
+        lore:
+        - §f
+        - '§fРедкость: §a[Обычная]'
+        - '§fЦена: §a40000$'
+        - §7
+        - <status>
+        - §aНажмите ПКМ, чтобы посмотреть клетку
+    isBuy: true
+    price: 40000
+    slot: 16
+    page: 1
+    permission: ultraskywars.glass.Gray
+    autoGivePermission: ultraskywars.glass.autogive.Gray
+    needPermToBuy: false
+    schematicTeam: grayGlass.schematic
+    clearTeam: clearGlass.schematic
+  lgray:
+    id: 8
+    name: Светло-серая
+    schematic: lgrayGlass.schematic
+    clear: clearGlass.schematic
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: STAINED_GLASS
+      damage: 8
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aСветло-серая
+        lore:
+        - §f
+        - '§fРедкость: §a[Обычная]'
+        - '§fЦена: §a40000$'
+        - §7
+        - <status>
+        - §aНажмите ПКМ, чтобы посмотреть клетку
+    isBuy: true
+    price: 40000
+    slot: 19
+    page: 1
+    permission: ultraskywars.glass.lgray
+    autoGivePermission: ultraskywars.glass.autogive.lgray
+    needPermToBuy: false
+    schematicTeam: lgrayGlass.schematic
+    clearTeam: clearGlass.schematic
+  Purple:
+    id: 10
+    name: Фиолетовая
+    schematic: purpleGlass.schematic
+    clear: clearGlass.schematic
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: STAINED_GLASS
+      damage: 10
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aФиолетовая
+        lore:
+        - §f
+        - '§fРедкость: §a[Обычная]'
+        - '§fЦена: §a40000$'
+        - §7
+        - <status>
+        - §aНажмите ПКМ, чтобы посмотреть клетку
+    isBuy: true
+    price: 40000
+    slot: 20
+    page: 1
+    permission: ultraskywars.glass.Purple
+    autoGivePermission: ultraskywars.glass.autogive.Purple
+    needPermToBuy: false
+    schematicTeam: purpleGlass.schematic
+    clearTeam: clearGlass.schematic
+  Brown:
+    id: 12
+    name: Коричневая
+    schematic: brownGlass.schematic
+    clear: clearGlass.schematic
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: STAINED_GLASS
+      damage: 12
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aКоричневая
+        lore:
+        - §f
+        - '§fРедкость: §a[Обычная]'
+        - '§fЦена: §a40000$'
+        - §7
+        - <status>
+        - §aНажмите ПКМ, чтобы посмотреть клетку
+    isBuy: true
+    price: 40000
+    slot: 21
+    page: 1
+    permission: ultraskywars.glass.Brown
+    autoGivePermission: ultraskywars.glass.autogive.Brown
+    needPermToBuy: false
+    schematicTeam: brownGlass.schematic
+    clearTeam: clearGlass.schematic
+  Green:
+    id: 13
+    name: Зелёная
+    schematic: greenGlass.schematic
+    clear: clearGlass.schematic
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: STAINED_GLASS
+      damage: 13
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aЗелёная
+        lore:
+        - §f
+        - '§fРедкость: §a[Обычная]'
+        - '§fЦена: §a40000$'
+        - §7
+        - <status>
+        - §aНажмите ПКМ, чтобы посмотреть клетку
+    isBuy: true
+    price: 40000
+    slot: 22
+    page: 1
+    permission: ultraskywars.glass.Green
+    autoGivePermission: ultraskywars.glass.autogive.Green
+    needPermToBuy: false
+    schematicTeam: greenGlass.schematic
+    clearTeam: clearGlass.schematic
+  Red:
+    id: 14
+    name: Красная
+    schematic: redGlass.schematic
+    clear: clearGlass.schematic
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: STAINED_GLASS
+      damage: 14
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aКрасная
+        lore:
+        - §f
+        - '§fРедкость: §a[Обычная]'
+        - '§fЦена: §a40000$'
+        - §7
+        - <status>
+        - §aНажмите ПКМ, чтобы посмотреть клетку
+    isBuy: true
+    price: 40000
+    slot: 23
+    page: 1
+    permission: ultraskywars.glass.Red
+    autoGivePermission: ultraskywars.glass.autogive.Red
+    needPermToBuy: false
+    schematicTeam: redGlass.schematic
+    clearTeam: clearGlass.schematic
+  Black:
+    id: 15
+    name: Чёрная
+    schematic: blackGlass.schematic
+    clear: clearGlass.schematic
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: STAINED_GLASS
+      damage: 15
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aЧёрная
+        lore:
+        - §f
+        - '§fРедкость: §9[Редкая]'
+        - '§fЦена: §a55000$'
+        - §7
+        - <status>
+        - §aНажмите ПКМ, чтобы посмотреть клетку
+    isBuy: true
+    price: 55000
+    slot: 24
+    page: 1
+    permission: ultraskywars.glass.Black
+    autoGivePermission: ultraskywars.glass.autogive.Black
+    needPermToBuy: false
+    schematicTeam: blackGlass.schematic
+    clearTeam: clearGlass.schematic
+  White:
+    id: 16
+    name: Белая
+    schematic: whiteGlass.schematic
+    clear: clearGlass.schematic
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: STAINED_GLASS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aБелая
+        lore:
+        - §f
+        - '§fРедкость: §9[Редкая]'
+        - '§fЦена: §a55000$'
+        - §7
+        - <status>
+        - §aНажмите ПКМ, чтобы посмотреть клетку
+    isBuy: true
+    price: 55000
+    slot: 25
+    page: 1
+    permission: ultraskywars.glass.White
+    autoGivePermission: ultraskywars.glass.autogive.White
+    needPermToBuy: false
+    schematicTeam: whiteGlass.schematic
+    clearTeam: clearGlass.schematic
+  Cyan:
+    id: 9
+    name: Бирюзовая
+    schematic: cyanGlass.schematic
+    clear: clearGlass.schematic
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: STAINED_GLASS
+      damage: 9
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aБирюзовая
+        lore:
+        - §f
+        - '§fРедкость: §9[Редкая]'
+        - '§fЦена: §a55000$'
+        - §7
+        - <status>
+        - §aНажмите ПКМ, чтобы посмотреть клетку
+    isBuy: true
+    price: 55000
+    slot: 28
+    page: 1
+    permission: ultraskywars.glass.Cyan
+    autoGivePermission: ultraskywars.glass.autogive.Cyan
+    needPermToBuy: false
+    schematicTeam: cyanGlass.schematic
+    clearTeam: clearGlass.schematic
+  Blue:
+    id: 11
+    name: Синяя
+    schematic: blueGlass.schematic
+    clear: clearGlass.schematic
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: STAINED_GLASS
+      damage: 11
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aСиняя
+        lore:
+        - §f
+        - '§fРедкость: §9[Редкая]'
+        - '§fЦена: §a55000$'
+        - §7
+        - <status>
+        - §aНажмите ПКМ, чтобы посмотреть клетку
+    isBuy: true
+    price: 55000
+    slot: 29
+    page: 1
+    permission: ultraskywars.glass.Blue
+    autoGivePermission: ultraskywars.glass.autogive.Blue
+    needPermToBuy: false
+    schematicTeam: blueGlass.schematic
+    clearTeam: clearGlass.schematic

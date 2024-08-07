@@ -1,0 +1,50 @@
+
+server:
+  name: '&8<3>  §6Выбор сервера &8<3>  &e&lПРАВЫЙ КЛИК'
+  material: COMPASS
+  slot: 1
+  commands:
+  - 'player: сервера'
+  delay: -1
+  permission: superlobby.items.profile
+donate:
+  name: '&8<3>  §6Донат-меню &8<3>  &e&lПРАВЫЙ КЛИК'
+  material: DIAMOND
+  slot: 9
+  skull: <player>
+  commands:
+  - 'player: donate'
+  delay: -1
+  permission: superlobby.items.profile
+games:
+  name: '&8<3>  &9Pocket Games &8<3>  &e&lПРАВЫЙ КЛИК'
+  material: SKULL_ITEM:3
+  slot: 4
+  skull: 'Hussseo_Axolotl'
+  commands:
+  - 'player: pg'
+  delay: -1
+  permission: superlobby.items.profile
+gadgets:
+  name: '&8<3>  &aГаджеты &8<3>  &e&lПРАВЫЙ КЛИК'
+  lore:
+  - '&fДенег: &a%vault_eco_balance_fixed%'
+  - ''
+  - '&fНаслаждайтесь приятными'
+  - '&fкосметическими функциями!'
+  material: NETHER_STAR
+  slot: 5
+  skull: <player>
+  commands:
+  - 'player: gadgetsmenu main'
+  delay: -1
+  permission: superlobby.items.profile
+profile:
+  name: '&8<3>  &bВаш Профиль &8<3>  &e&lПРАВЫЙ КЛИК'
+  material: SKULL_ITEM:3
+  slot: 2
+  skull: '%player_name%'
+  commands:
+  - 'player: profilemefjdjhjhfgjdj'
+  delay: -1
+  permission: superlobby.items.profile

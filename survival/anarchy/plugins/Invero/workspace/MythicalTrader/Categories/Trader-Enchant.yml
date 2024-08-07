@@ -1,0 +1,258 @@
+menu:
+  title: '&0Книги зачарований (Страница {{math add [ page get 1 ]}}/{{math add [ page max 1 ]}})'
+  
+layout: |-
+  #########
+  #       #
+  #       #
+  #       #
+  #########
+  P#M#B###N
+
+items:
+  P:
+    material: arrow
+    name: '&aПредыдущая страница'
+    action: |-
+      page previous
+      menu title update
+      icons refresh
+    sub:
+      - rule: 'page isFirst'
+        inherit: false
+        material: air
+  N:
+    material: arrow
+    name: '&aСледующая страница'
+    action: |-
+      page next
+      menu title update
+      icons refresh
+    sub:
+      - rule: 'page isLast'
+        inherit: false
+        material: air
+  # Воздух
+  '#':
+    material: air
+  M:
+    material: GOLD_INGOT
+    update: 60
+    name: '&fВаш баланс'
+    lore: '&a%vault_eco_balance_fixed%₵'
+  B:
+    material: arrow
+    name: '&aВернуться в главное меню'
+    action: menu switch MythicalTrader
+
+generator:
+  output:
+    name: '{{ element Name }}'
+    json: '{{ element Material }}'
+    flag: HIDE_ATTRIBUTES
+    lore: |-
+      {{if check element Description == null then " " else element Description}}
+      &fПокупка: &a{{ type int math mul [ element Price math sub [ 1 papi "%mythicaltrader_current_discount%" ] ] }}₵ &7{{if check papi "%mythicaltrader_current_level%" == 1 then " " else inline "&m({{ element Price }}₵)" }}
+
+      &aНажмите, чтобы купить!
+    enhancedLore: true
+    action: |-
+      ctx set 'fromMenu' to 'Trader-Enchant'
+      ctx set 'itemName' to element Name
+      ctx set 'itemMaterial' to element Material
+      ctx set 'giveCommand' to element GiveCommand
+      ctx set 'price' to element Price
+      ctx set 'amount' to 1
+      ctx set 'minAmount' to 1
+      ctx set 'maxAmount' to element MaxAmount
+      menu switch Shop-PurchaseWithJson
+  elements:
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":5},"id":{"type":"SHORT","data":32}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:32,lvl:5}]}'
+      Price: 29
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":1},"id":{"type":"SHORT","data":33}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:33,lvl:1}]}'
+      Price: 24
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":3},"id":{"type":"SHORT","data":34}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:34,lvl:3}]}'
+      Price: 26
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":3},"id":{"type":"SHORT","data":35}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:35,lvl:3}]}'
+      Price: 32
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":3},"id":{"type":"SHORT","data":61}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:61,lvl:3}]}'
+      Price: 21
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":3},"id":{"type":"SHORT","data":62}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:62,lvl:3}]}'
+      Price: 23
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":1},"id":{"type":"SHORT","data":70}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:70,lvl:1}]}'
+      Price: 16
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":5},"id":{"type":"SHORT","data":0}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:0,lvl:5}]}'
+      Price: 29
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":5},"id":{"type":"SHORT","data":1}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:1,lvl:5}]}'
+      Price: 25
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":5},"id":{"type":"SHORT","data":2}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:2,lvl:5}]}'
+      Price: 23
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":5},"id":{"type":"SHORT","data":3}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:3,lvl:5}]}'
+      Price: 24
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":5},"id":{"type":"SHORT","data":4}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:4,lvl:5}]}'
+      Price: 23
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":4},"id":{"type":"SHORT","data":5}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:5,lvl:4}]}'
+      Price: 21
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":1},"id":{"type":"SHORT","data":6}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:6,lvl:1}]}'
+      Price: 19
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":4},"id":{"type":"SHORT","data":7}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:7,lvl:4}]}'
+      Price: 29
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":4},"id":{"type":"SHORT","data":8}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:8,lvl:4}]}'
+      Price: 22
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":6},"id":{"type":"SHORT","data":16}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:16,lvl:6}]}'
+      Price: 33
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":5},"id":{"type":"SHORT","data":17}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:17,lvl:5}]}'
+      Price: 24
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":5},"id":{"type":"SHORT","data":18}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:18,lvl:5}]}'
+      Price: 20
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":3},"id":{"type":"SHORT","data":19}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:19,lvl:3}]}'
+      Price: 28
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":3},"id":{"type":"SHORT","data":20}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:20,lvl:3}]}'
+      Price: 28
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":3},"id":{"type":"SHORT","data":21}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:21,lvl:3}]}'
+      Price: 25
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":4},"id":{"type":"SHORT","data":34}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:34,lvl:4}]}'
+      Price: 27
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":6},"id":{"type":"SHORT","data":48}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:48,lvl:6}]}'
+      Price: 32
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":3},"id":{"type":"SHORT","data":49}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:49,lvl:3}]}'
+      Price: 29
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":1},"id":{"type":"SHORT","data":50}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:50,lvl:1}]}'
+      Price: 24
+      MaxAmount: 1
+    - Material: '{"type":"ENCHANTED_BOOK","meta":{"StoredEnchantments":[{"lvl":{"type":"SHORT","data":1},"id":{"type":"SHORT","data":51}}]}}'
+      Name: '&aЗачарованная книга'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% enchanted_book {{&amount}} 0 {display:{Name:"&dЗачарованная книга"},ench:[{id:51,lvl:1}]}'
+      Price: 24
+      MaxAmount: 1

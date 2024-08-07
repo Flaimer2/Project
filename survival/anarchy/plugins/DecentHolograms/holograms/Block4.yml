@@ -1,0 +1,20 @@
+location: lobby:26,500:98,100:27,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: "&f&oМожно купить у &d&l&oМифического торговца"
+    height: 0.4
+  - content: "§f– Приобретены &bвсе &fулучшения и эффекты"
+    height: 0.3
+  - content: "§f– Голограмму видно только в &bзоне &fпривата"
+    height: 0.4
+  - content: "§dМифический приват"
+    height: 0.4
+  - content: "&fРазмер: &a45x45x45"
+    height: 0.3
+  actions: {}

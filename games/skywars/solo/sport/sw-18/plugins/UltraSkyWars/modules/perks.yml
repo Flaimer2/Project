@@ -1,0 +1,648 @@
+price:
+  nextPrice: '&fСтоимость: &a<price>'
+  unlocked: '&aРазблокировано!'
+states:
+  upgrade: '&aНажмите ЛКМ, чтобы улучшить'
+  maxed: '&aМаксимальный уровень!'
+  noHas: '&cУ вас нет этого перка!'
+status:
+  offState: '&fНажмите ПКМ, чтобы &cвыключить &fперк'
+  onState: '&fНажмите ПКМ, чтобы &aвключить &fперк'
+perks:
+  fallreduction:
+    id: 0
+    name: '&aУрон от падения'
+    lore: "&fУрон от падения будет снижен \n&fна &a<amount>% &fс вероятностью &a<probability>%\n\
+      &7\n<price>\n&7\n<state>\n&7\n<status>"
+    icon:
+      material: DIAMOND_BOOTS
+      data: 0
+      amount: 1
+    slot: 10
+    levels:
+      level1:
+        level: 1
+        price: 10000
+        percent: 10
+        probability: 80
+      level2:
+        level: 1
+        percent: 10
+        price: 10000
+        probability: 80
+      level3:
+        level: 2
+        percent: 15
+        price: 25000
+        probability: 85
+      level4:
+        level: 3
+        percent: 20
+        price: 50000
+        probability: 90
+      level5:
+        level: 4
+        percent: 25
+        price: 80000
+        probability: 95
+    disabled: false
+    gameTypes:
+    - SOLO
+    - TEAM
+    - RANKED
+  firedamagereduction:
+    id: 1
+    name: '&aУрон от огня'
+    lore: |-
+      &fУрон от огня будет снижен
+      &fна &a<amount>% &fс вероятностью &a<probability>%
+      &7
+      <price>
+      &7
+      <state>
+      &7
+      <status>
+    icon:
+      material: FLINT_AND_STEEL
+      data: 0
+      amount: 1
+    slot: 11
+    levels:
+      level1:
+        level: 1
+        percent: 5
+        price: 9000
+        probability: 75
+      level2:
+        level: 1
+        percent: 5
+        price: 9000
+        probability: 75
+      level3:
+        level: 2
+        percent: 10
+        price: 16000
+        probability: 85
+      level4:
+        level: 3
+        percent: 15
+        price: 45000
+        probability: 90
+      level5:
+        level: 4
+        percent: 20
+        price: 70000
+        probability: 95
+    disabled: false
+    gameTypes:
+    - SOLO
+    - TEAM
+    - RANKED
+  shotdamagereduction:
+    id: 2
+    name: '&aУрон от стрел'
+    lore: |-
+      &fУрон от стрелы, которая попала в вас,
+      &fбудет снижен на &a<amount>% &fс вероятностью &a<probability>%
+      &7
+      <price>
+      &7
+      <state>
+      &7
+      <status>
+    icon:
+      material: BOW
+      data: 0
+      amount: 1
+    slot: 12
+    levels:
+      level1:
+        level: 1
+        percent: 5
+        price: 11000
+        probability: 70
+      level2:
+        level: 1
+        percent: 5
+        price: 11000
+        probability: 70
+      level3:
+        level: 2
+        percent: 10
+        price: 25000
+        probability: 80
+      level4:
+        level: 3
+        percent: 15
+        price: 53000
+        probability: 85
+      level5:
+        level: 4
+        percent: 20
+        price: 85000
+        probability: 90
+    disabled: false
+    gameTypes:
+    - SOLO
+    - TEAM
+    - RANKED
+  anno_o_mite:
+    id: 3
+    name: '&aЧешуйницы от стрел'
+    lore: |-
+      &fПри попадании в игрока стрелой, может
+      &fпоявиться чешуйница с вероятностью &a<probability>%
+      &7
+      <price>
+      &7
+      <state>
+      &7
+      <status>
+    icon:
+      material: MONSTER_EGG
+      data: 60
+      amount: 1
+    slot: 13
+    levels:
+      level1:
+        level: 1
+        percent: 0
+        price: 7000
+        probability: 5
+      level2:
+        level: 1
+        percent: 0
+        price: 7000
+        probability: 5
+      level3:
+        level: 2
+        percent: 0
+        price: 20000
+        probability: 10
+      level4:
+        level: 3
+        percent: 0
+        price: 50000
+        probability: 15
+      level5:
+        level: 4
+        percent: 0
+        price: 70000
+        probability: 20
+    disabled: false
+    gameTypes:
+    - SOLO
+    - TEAM
+    - RANKED
+  arrowrecovery:
+    id: 4
+    name: '&aВозвращение стрел'
+    lore: |-
+      &fПри попадании в игрока стрелой, ваша стрела
+      &fвернётся к вам с вероятностью &a<probability>%
+      &7
+      <price>
+      &7
+      <state>
+      &7
+      <status>
+    icon:
+      material: ARROW
+      data: 0
+      amount: 1
+    slot: 14
+    levels:
+      level1:
+        level: 1
+        percent: 0
+        price: 3000
+        probability: 5
+      level2:
+        level: 1
+        percent: 0
+        price: 3000
+        probability: 5
+      level3:
+        level: 2
+        percent: 0
+        price: 14000
+        probability: 10
+      level4:
+        level: 3
+        percent: 0
+        price: 28000
+        probability: 15
+      level5:
+        level: 4
+        percent: 0
+        price: 40000
+        probability: 20
+    disabled: false
+    gameTypes:
+    - SOLO
+    - TEAM
+    - RANKED
+  blazingarrows:
+    id: 5
+    name: '&aПылающие стрелы'
+    lore: |-
+      &a<probability>% &fвероятности выстрела
+      &fогненной стрелой из лука
+      &7
+      <price>
+      &7
+      <state>
+      &7
+      <status>
+    icon:
+      material: BLAZE_POWDER
+      data: 0
+      amount: 1
+    slot: 15
+    levels:
+      level1:
+        level: 1
+        percent: 0
+        price: 7000
+        probability: 1
+      level2:
+        level: 1
+        percent: 0
+        price: 7000
+        probability: 1
+      level3:
+        level: 2
+        percent: 0
+        price: 18000
+        probability: 2
+      level4:
+        level: 3
+        percent: 0
+        price: 29000
+        probability: 3
+      level5:
+        level: 4
+        percent: 0
+        price: 50000
+        probability: 5
+    disabled: false
+    gameTypes:
+    - SOLO
+    - TEAM
+    - RANKED
+  bulldozer:
+    id: 6
+    name: '&aБульдозер'
+    lore: |-
+      &fКогда вы убиваете врага,
+      &aвы получаете 5 &fсекунд Силы I
+      &7
+      <price>
+      &7
+      <state>
+      &7
+      <status>
+    icon:
+      material: ANVIL
+      data: 0
+      amount: 1
+    slot: 16
+    levels:
+      level1:
+        level: 1
+        percent: 0
+        price: 7000
+        probability: 100
+      level2:
+        level: 1
+        percent: 0
+        price: 7000
+        probability: 100
+    disabled: false
+    gameTypes:
+    - SOLO
+    - TEAM
+    - RANKED
+    duration: 5
+    amplifier: 0
+  endermastery:
+    id: 7
+    name: '&aЭндерМастер'
+    lore: |-
+      &fУменьшение урона
+      &fна &a<amount>% &fот эндерпёрла
+      &7
+      <price>
+      &7
+      <state>
+      &7
+      <status>
+    icon:
+      material: ENDER_PEARL
+      data: 0
+      amount: 1
+    slot: 19
+    levels:
+      level1:
+        level: 1
+        percent: 40
+        price: 6000
+        probability: 100
+      level2:
+        level: 1
+        percent: 40
+        price: 6000
+        probability: 100
+      level3:
+        level: 2
+        percent: 45
+        price: 17000
+        probability: 100
+      level4:
+        level: 3
+        percent: 50
+        price: 34000
+        probability: 100
+    disabled: false
+    gameTypes:
+    - SOLO
+    - TEAM
+    - RANKED
+  juggernaut:
+    id: 8
+    name: '&aУбийца'
+    lore: |-
+      &fУбийства врагов дают вам
+      &fРегенерацию I на &a4 &fсекунды
+      &7
+      <price>
+      &7
+      <state>
+      &7
+      <status>
+    icon:
+      material: DIAMOND_HELMET
+      data: 0
+      amount: 1
+    slot: 20
+    levels:
+      level1:
+        level: 1
+        percent: 0
+        price: 12000
+        probability: 100
+      level2:
+        level: 1
+        percent: 0
+        price: 12000
+        probability: 100
+    disabled: false
+    gameTypes:
+    - SOLO
+    - TEAM
+    - RANKED
+    duration: 4
+    amplifier: 0
+  knowledge:
+    id: 9
+    name: '&aKnowledge'
+    lore: |-
+      &7Every kill you gain 2 EXP
+      &7Level.
+      &7
+      <price>
+      &7
+      <state>
+      <status>
+    icon:
+      material: EXP_BOTTLE
+      data: 0
+      amount: 1
+    slot: 16
+    levels:
+      level1:
+        level: 1
+        percent: 0
+        price: 500
+        probability: 100
+    disabled: true
+    gameTypes:
+    - SOLO
+    - TEAM
+    - RANKED
+  miningexpertise:
+    id: 10
+    name: '&aЭксперт шахт'
+    lore: |-
+      &f&a<probability>% &fшанс получить дополнительно
+      &a1 &fруду за каждый добытый блок
+      &7
+      <price>
+      &7
+      <state>
+      &7
+      <status>
+    icon:
+      material: STONE_PICKAXE
+      data: 0
+      amount: 1
+    slot: 21
+    levels:
+      level1:
+        level: 1
+        percent: 1
+        price: 4500
+        probability: 20
+      level2:
+        level: 1
+        percent: 1
+        price: 4500
+        probability: 20
+      level3:
+        level: 2
+        percent: 1
+        price: 9000
+        probability: 30
+      level4:
+        level: 3
+        percent: 1
+        price: 15000
+        probability: 40
+      level5:
+        level: 4
+        percent: 1
+        price: 30000
+        probability: 50
+    disabled: false
+    gameTypes:
+    - SOLO
+    - TEAM
+    - RANKED
+  speedstart:
+    id: 11
+    name: '&aСкорость I'
+    lore: |-
+      &fПолучите Скорость I на
+      &a10 &fсекунд в начале игры
+      &7
+      <price>
+      &7
+      <state>
+      &7
+      <status>
+    icon:
+      material: FEATHER
+      data: 0
+      amount: 1
+    slot: 22
+    levels:
+      level1:
+        level: 1
+        percent: 100
+        price: 16000
+        probability: 100
+      level2:
+        level: 1
+        percent: 100
+        price: 16000
+        probability: 100
+    disabled: false
+    gameTypes:
+    - SOLO
+    - TEAM
+    - RANKED
+    duration: 10
+    amplifier: 0
+  resistencestart:
+    id: 12
+    name: '&aСопротивление'
+    lore: |-
+      &fПолучите &a20 &fсекунд Сопротивления I
+      &fв начале каждой игры
+      &7
+      <price>
+      &7
+      <state>
+      &7
+      <status>
+    icon:
+      material: IRON_CHESTPLATE
+      data: 0
+      amount: 1
+    slot: 29
+    levels:
+      level1:
+        level: 1
+        percent: 1
+        price: 14000
+        probability: 100
+      level2:
+        level: 1
+        percent: 1
+        price: 14000
+        probability: 100
+    disabled: true
+    gameTypes:
+    - SOLO
+    - TEAM
+    - RANKED
+    duration: 20
+    amplifier: 0
+  nourishment:
+    id: 13
+    name: '&aГолод'
+    lore: |-
+      &fКаждое убийство восстанавливает
+      &fваш голод с вероятностью &a<probability>%
+      &7
+      <price>
+      &7
+      <state>
+      &7
+      <status>
+    icon:
+      material: BREAD
+      data: 0
+      amount: 1
+    slot: 23
+    levels:
+      level1:
+        level: 1
+        percent: 1
+        price: 6000
+        probability: 20
+      level2:
+        level: 1
+        percent: 1
+        price: 6000
+        probability: 20
+      level3:
+        level: 2
+        percent: 1
+        price: 12000
+        probability: 25
+      level4:
+        level: 3
+        percent: 1
+        price: 24000
+        probability: 30
+      level5:
+        level: 4
+        percent: 1
+        price: 38000
+        probability: 40
+    disabled: false
+    gameTypes:
+    - SOLO
+    - TEAM
+    - RANKED
+  savior:
+    id: 14
+    name: '&aСпаситель'
+    lore: |-
+      &fУбийства врагов дают вам Поглощение I
+      &fна &a4 &fсекунды с вероятностью &a<probability>%
+      &7
+      <price>
+      &7
+      <state>
+      &7
+      <status>
+    icon:
+      material: APPLE
+      data: 0
+      amount: 1
+    slot: 24
+    levels:
+      level1:
+        level: 1
+        percent: 1
+        price: 4000
+        probability: 20
+      level2:
+        level: 1
+        percent: 1
+        price: 4000
+        probability: 20
+      level3:
+        level: 2
+        percent: 1
+        price: 9000
+        probability: 25
+      level4:
+        level: 3
+        percent: 1
+        price: 14000
+        probability: 30
+      level5:
+        level: 4
+        percent: 1
+        price: 25000
+        probability: 35
+    disabled: false
+    gameTypes:
+    - SOLO
+    - TEAM
+    - RANKED
+    duration: 4
+    amplifier: 0

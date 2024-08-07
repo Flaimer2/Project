@@ -1,0 +1,120 @@
+taunts:
+  prueba:
+    id: 0
+    name: prueba
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: ARROW
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aDefault
+        lore:
+        - §fThis is a default taunt
+        - §f
+        - <price>
+        - §f
+        - §eRight-Click to preview!
+        - <status>
+    title: '&c&lВЫ ПОГИБЛИ!'
+    subtitle: '§fСейчас вы - наблюдатель'
+    player: ' §a<killer>'
+    none: ''
+    slot: 10
+    page: 1
+    price: 0
+    permission: ultraskywars.taunt.prueba
+    isBuy: false
+    taunts:
+    # Можно использовать <killer> (ник убийцы) и <death> (ник мёртового)
+      CONTACT:
+        cause: CONTACT
+        msg:
+        - §fИгрок §a<death> §fбыл убит
+      LAVA:
+        cause: LAVA
+        msg:
+        - §fИгрок §a<death> §fутонул в лаве
+      DROWNING:
+        cause: DROWNING
+        msg:
+        - §fИгрок §a<death> §fутонул в воде
+      LIGHTNING:
+        cause: LIGHTNING
+        msg:
+        - §fИгрок §a<death> §fбыл наказан Зевсом
+      FALLING_BLOCK:
+        cause: FALLING_BLOCK
+        msg:
+        - §fНа игрока §a<death> §fбыл сброшен блок
+      FIRE_TICK:
+        cause: FIRE_TICK
+        msg:
+        - §fИгрок §a<death> §fсгорел заживо
+      ENTITY_EXPLOSION:
+        cause: ENTITY_EXPLOSION
+        msg:
+        - §fИгрок §a<death> §fвзорвался на тысячу осколков
+      THORNS:
+        cause: THORNS
+        msg:
+        - §fИгрок §a<death> §fубил сам себя
+      ENTITY_ATTACK:
+        cause: ENTITY_ATTACK
+        msg:
+        - §fИгрок §a<death> §fбыл убит игроком
+      SUFFOCATION:
+        cause: SUFFOCATION
+        msg:
+        - §fИгрок §a<death> §fбыл задушен
+      WITHER:
+        cause: WITHER
+        msg:
+        - §fИгрок §a<death> §fубит визером
+      FIRE:
+        cause: FIRE
+        msg:
+        - §fИгрок §a<death> §fсгорел заживо
+      MELTING:
+        cause: MELTING
+        msg:
+        - §fИгрок §a<death> §fубит позорно
+      MAGIC:
+        cause: MAGIC
+        msg:
+        - §fИгрок §a<death> §fумер от волшебства
+      # Можно использовать <killer> (ник убийцы) и <death> (ник мёртового)
+      PROJECTILE:
+        cause: PROJECTILE
+        msg:
+        - §fИгрок §a<death> §fбыл застрелян игроком
+      BLOCK_EXPLOSION:
+        cause: BLOCK_EXPLOSION
+        msg:
+        - §fИгрок §a<death> §fвзорвался на тысячу осколков
+      POISON:
+        cause: POISON
+        msg:
+        - §fИгрок §a<death> §fумер от волшебства
+      CUSTOM:
+        cause: CUSTOM
+        msg:
+        - §fИгрок §a<death> §fумер от неизвестных причин
+      STARVATION:
+        cause: STARVATION
+        msg:
+        - §fИгрок §a<death> §fумер от голода (жаль, что мак закрыли)
+      FALL:
+        cause: FALL
+        msg:
+        - §fИгрок §a<death> §fразбился насмерть
+      SUICIDE:
+        cause: SUICIDE
+        msg:
+        - §fИгрок §a<death> §fбыл отвергнут своей девушкой и покончил с собой
+      VOID:
+        cause: VOID
+        msg:
+        - §fИгрок §a<death> §fзастрелен в пустоте
+    autoGivePermission: ultraskywars.taunts.autogive.prueba
+    needPermToBuy: false

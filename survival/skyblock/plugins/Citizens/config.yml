@@ -108,7 +108,7 @@ npc:
   follow:
     teleport-across-worlds: true
   commands:
-    global-delay-seconds: 1
+    global-delay-seconds: -1
     error-messages:
       maximum-times-used: You have reached the maximum number of uses ({0}).
       missing-item: Missing {1} {0}

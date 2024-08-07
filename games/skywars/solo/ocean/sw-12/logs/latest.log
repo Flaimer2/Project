@@ -1,0 +1,56 @@
+[21:51:11] [Server thread/INFO]: Starting minecraft server version 1.12.2
+[21:51:11] [Server thread/INFO]: Loading properties
+[21:51:11] [Server thread/INFO]: Default game type: SURVIVAL
+[21:51:11] [Server thread/INFO]: This server is running Paper version git-Paper-4466fe0 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
+[21:51:11] [Server thread/INFO]: Debug logging is disabled
+[21:51:11] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:51:11] [Server thread/WARN]: Ignoring non existent stats.forced-stats achievement.openInventory
+[21:51:11] [Server thread/WARN]: Ignoring non existent stats.forced-stats achievement.diamonds
+[21:51:12] [Server thread/INFO]: Generating keypair
+[21:51:12] [Server thread/INFO]: Starting Minecraft server on *:21601
+[21:51:12] [Server thread/INFO]: Using default channel type
+[21:51:14] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[21:51:14] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.10.10
+[21:51:14] [Server thread/INFO]: [DisableJoinMessage] Loading DisableJoinMessage v1.0
+[21:51:14] [Server thread/INFO]: [NametagEdit] Loading NametagEdit v4.4.10
+[21:51:14] [Server thread/INFO]: [OldCombatMechanics] Loading OldCombatMechanics v1.11.0
+[21:51:14] [Server thread/INFO]: [FastAsyncWorldEdit] Loading FastAsyncWorldEdit v21.03.26-b67f782-1287-22.3.10
+[21:51:14] [Server thread/INFO]: [CommandForward] Loading CommandForward v0.5.0
+[21:51:14] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.0.1
+[21:51:14] [Server thread/INFO]: [ViaVersion] ViaVersion 5.0.1 is now loaded. Registering protocol transformers and injecting...
+[21:51:15] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[21:51:15] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[21:51:15] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[21:51:15] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[21:51:16] [Server thread/INFO]: [ViaRewind] Registering protocols...
+[21:51:16] [Server thread/INFO]: [NBTAPI] Loading NBTAPI v2.8.0
+[21:51:16] [Server thread/INFO]: [NBTAPI] bStats disabled
+[21:51:16] [Server thread/INFO]: [NBTAPI] Update check disabled
+[21:51:16] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Spigot: v1_12_R1! Trying to find NMS support
+[21:51:16] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_12_R1' loaded!
+[21:51:16] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Gson: class com.google.gson.Gson
+[21:51:16] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.0.1
+[21:51:16] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v4.0.0
+[21:51:16] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.117
+[21:51:16] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1.7;dd00bb1
+[21:51:16] [Server thread/INFO]: [LastLoginAPI] Loading LastLoginAPI v1.7.4
+[21:51:16] [Server thread/INFO]: [LastLoginAPI] Loading libraries of LastLoginAPI v1.7.4, this may take a while
+[21:51:17] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for jar-relocator
+[21:51:17] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for asm
+[21:51:17] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for asm-commons
+[21:51:17] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for gson
+[21:51:17] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for jdbi3-core
+[21:51:17] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for geantyref
+[21:51:17] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for caffeine
+[21:51:17] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for jdbi3-stringtemplate4
+[21:51:17] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for ST4
+[21:51:17] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for antlr-runtime
+[21:51:17] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for jdbi3-sqlobject
+[21:51:17] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for slf4j-api
+[21:51:17] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for slf4j-simple
+[21:51:17] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for HikariCP
+[21:51:17] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for mariadb-java-client
+[21:51:17] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for mysql-connector-j
+[21:51:17] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for postgresql
+[21:51:17] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for h2
+[21:51:17] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v5.0.0-SNAPSHOT-b587

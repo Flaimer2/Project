@@ -1,0 +1,18 @@
+location: lobby:77,500:96,500:20,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: "&e&lРейтинги"
+    height: 0.6
+  - content: "&fУзнайте &aлучших &fигроков на режиме!"
+    height: 0.3
+  - content: "&fХм... А может, вы здесь тоже есть?"
+    height: 0.6
+  - content: "&f&oРейтинги обновляются каждую &a&o1 &f&oминуту"
+    height: 0.3
+  actions: {}

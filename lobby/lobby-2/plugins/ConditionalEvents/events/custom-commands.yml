@@ -2,14 +2,10 @@ Events:
   override:
     type: player_command
     conditions:
-    - '%main_command% equalsIgnoreCase /social and %args_length% equals 0 execute action'
     - '%main_command% equalsIgnoreCase /games or %main_command% equalsIgnoreCase /pgames or %main_command% equalsIgnoreCase /pgame execute action2'
     - '%main_command% equalsIgnoreCase /gadgets execute action3'
     - '%main_command% equalsIgnoreCase /lvl or %main_command% equalsIgnoreCase /level or %main_command% equalsIgnoreCase /levels execute action4'
     actions:
-      action:
-      - 'cancel_event: true'
-      - 'console_command: bettersocial edit %player%'
       action2:
       - 'cancel_event: true'
       - 'console_command: pg menu %player%'

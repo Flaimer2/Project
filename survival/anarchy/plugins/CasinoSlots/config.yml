@@ -1,0 +1,117 @@
+# Instructions for this configuration file can be found at the BukkitDev page:
+# http://dev.bukkit.org/server-mods/casino-slots/pages/info/config/
+# If you change the config-version, the defaults will be added. You have been warned.
+options:
+  debug: false
+  config-version: 1.0
+  bukkit-version: 2377
+  track-statistics: true
+  allow-diagonal-winnings: false
+  enable-slot-protection: true
+  enable-chunk-messages: false
+  enable-worldguard-check: false
+  towny-checks:
+    enabled: false
+    only-mayors: true
+    no-mayor: Вы не можете создать Казино
+    only-towns: true
+    no-town: To create a slot you must be part of a town.
+    no-ownership: You don't own the plot where that would be at, please make sure
+      you are the owner and then try again.
+  chat:
+    display-plugin-prefix: true
+    plugin-prefix: Казино §7|
+    plugin-prefix-color: '&c'
+    chat-color: '&f'
+  update-checking:
+    enabled: false
+    channel: bukkit
+    time: 120
+types:
+  casino1:
+    cost: 250
+    create-cost: 1000
+    reel:
+    - 42,10
+    - 41,5
+    - 57,2
+    rewards:
+      '42':
+        message: Ура! Вы &aвыиграли&f. Ваша награда была выдана
+        money: 250
+      '41':
+        message: Ура! Вы &aвыиграли&f. Ваша награда была выдана
+        money: 500
+      '57':
+        message: Ура! Вы &aвыиграли&f. Ваша награда была выдана
+        money: 1200
+    messages:
+      insufficient-funds: У вас &cнедостаточно &fденег, чтобы сыграть в казино ;c
+      in-use: Эта слот-машина уже &aиспользуется&f! Попробуйте позже
+      no-win: Эх, &cне повезло &fв этот раз... Попробуйте ещё раз!
+      start: С вашего счёта было списано &a[cost]&f. Поехали!
+      help:
+      - '§fСтоимость игры: §a250$'
+      - '§fВыигрыш:'
+      - '  §f3 §7железных §fблока: §a250$'
+      - '  §f3 §eзолотых §fблока: §a500$'
+      - '  §f3 §bалмазных §fблока: §a1200$'
+  casino2:
+    cost: 1000
+    create-cost: 1000
+    reel:
+    - 42,10
+    - 41,5
+    - 57,2
+    rewards:
+      '42':
+        message: Ура! Вы &aвыиграли&f. Ваша награда была выдана
+        money: 1000
+      '41':
+        message: Ура! Вы &aвыиграли&f. Ваша награда была выдана
+        money: 2500
+      '57':
+        message: Ура! Вы &aвыиграли&f. Ваша награда была выдана
+        money: 5000
+    messages:
+      insufficient-funds: У вас &cнедостаточно &fденег, чтобы сыграть в казино ;c
+      in-use: Эта слот-машина уже &aиспользуется&f! Попробуйте позже
+      no-win: Эх, &cне повезло &fв этот раз... Попробуйте ещё раз!
+      start: С вашего счёта было списано &a[cost]&f. Поехали!
+      help:
+      - '§fСтоимость игры: §a1000$'
+      - '§fВыигрыш:'
+      - '  §f3 §7железных §fблока: §a1000$'
+      - '  §f3 §eзолотых §fблока: §a2500$'
+      - '  §f3 §bалмазных §fблока: §a5000$'
+  casino3:
+    cost: 3000
+    create-cost: 1000
+    reel:
+    - 42,7
+    - 41,3
+    - 57,1
+    rewards:
+      '42':
+        message: Ура! Вы &aвыиграли&f. Ваша награда была выдана
+        action: command coin deposit [player] 5
+        money: 0
+      '41':
+        message: Ура! Вы &aвыиграли&f. Ваша награда была выдана
+        action: command coin deposit [player] 10
+        money: 0
+      '57':
+        message: Ура! Вы &aвыиграли&f. Ваша награда была выдана
+        action: command coin deposit [player] 50
+        money: 0
+    messages:
+      insufficient-funds: У вас &cнедостаточно &fденег, чтобы сыграть в казино ;c
+      in-use: Эта слот-машина уже &aиспользуется&f! Попробуйте позже
+      no-win: Эх, &cне повезло &fв этот раз... Попробуйте ещё раз!
+      start: С вашего счёта было списано &a[cost]&f. Поехали!
+      help:
+      - '§fСтоимость игры: §a3000$'
+      - '§fВыигрыш:'
+      - '  §f3 §7железных §fблока: §a5₵'
+      - '  §f3 §eзолотых §fблока: §a10₵'
+      - '  §f3 §bалмазных §fблока: §a50₵'

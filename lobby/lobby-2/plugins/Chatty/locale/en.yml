@@ -4,7 +4,7 @@ messages:
   only-for-players: '&cThis command is only for players.'
   chat-not-found: '&cApplicable chat not found. You can''t send the message.'
   reload: '&aConfig successfully reloaded!'
-  no-permission: '&cYou don''t have permission.'
+  no-permission: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
   spy-on: '&aYou have been enabled spy-mode.'
   spy-off: '&cYou have been disabled spy-mode.'
   cooldown: '&cWait for {cooldown} seconds, before send message in this chat again.'
@@ -41,11 +41,11 @@ messages:
     usage: '&cUsage: /{label} <chat>'
     chat-not-found: '&cChat with this name was not found.'
     chat-switched: '&aYou have switched to chat "{chat}".'
-    no-chat-permission: '&cYou don''have permission for this chat.'
+    no-chat-permission: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
 
   prefix-command:
     usage: '&cUsage: /{label} <player> <<prefix>|clear>'
-    no-permissions-others: '&cYou don''t have permission to changing prefixes of other players.'
+    no-permissions-others: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
     player-not-found: '&cPlayer not found.'
     length-limit-min: '&cPrefix cannot be shorter than {limit} symbols.'
     length-limit-max: '&cPrefix cannot be longer than {limit} symbols.'

@@ -1,0 +1,16 @@
+location: lobby:16,500:97,400:27,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: "&f&oМожно купить у &d&l&oМифического торговца"
+    height: 0.4
+  - content: "§cОгромный приват"
+    height: 0.4
+  - content: "&fРазмер: &a67x67x67"
+    height: 0.3
+  actions: {}

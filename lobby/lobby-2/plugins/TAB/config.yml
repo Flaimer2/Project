@@ -4,7 +4,7 @@ header-footer:
   header:
   - '%animation:servername%'
   - ''
-  - '&r&fОнлайн на сервере: &c%bungee_total% %condition:smile%'
+  - '&r&fОнлайн на сервере: &c%balancer_count:all% %condition:smile%'
   - '&fСейчас в Lobby: &c%online%'
   - ''
   - '&fИгроки:'
@@ -128,7 +128,7 @@ placeholder-output-replacements: {}
 conditions:
   smile:
     conditions:
-    - '%bungee_total%=>10'
+    - '%balancer_count:all%=>10'
     type: AND
     true: '&e☺'
     false: '&e☹'

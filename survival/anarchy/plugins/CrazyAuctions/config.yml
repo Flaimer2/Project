@@ -1,0 +1,321 @@
+Settings:
+  Prefix: '&6Торговая площадка&7 | &f' #Prefix of when you get Crazy Auctions Messages.
+  GUIName: '&8Торговая площадка' #Name of the Main GUI.
+  Players-Current-Items: '&8Ваша торговая площадка' #The Name of the Player Current Items GUI.
+  Cancelled/Expired-Items: '&8Отмененные/Истекшие' #Name of the Cancelled/Expired GUI.
+  Buying-Item: '&8Покупка предмета: Вы точно уверены?' #Name of the Buying GUI.
+  Bidding-On-Item: '&8Вы в торгах на этот предмет.' #Name of the Budding GUI.
+  Categories: '&8Категории' #Name of the Category GUI.
+  Sell-Time: 2d #The time that each item will sell for.
+  Bid-Time: 2m 30s #Time for each item that is biddable.
+  Full-Expire-Time: 10d #The full time the item is in the crazy auctions.
+  Bid-Winner-Time: 20d #The time the winner of a bid has to claim there prize.
+  Minimum-Sell-Price: 10 #Minimum amount you can sell a item for.
+  Max-Beginning-Sell-Price: 1000000 #Max amount you can sell a item for.
+  Minimum-Bid-Price: 10 #Minimum starting bid.
+  Max-Beginning-Bid-Price: 1000000 #Maximum starting bid.
+  Allow-Damaged-Items: False #Allow items that have been damaged.
+  Category-Page-Opens-First: False #If set to true the categories page will open when they do /CA.
+  Feature-Toggle: #Toggle if a feature is on or off.
+    Selling: true #Able to use the selling part of the auction house.
+    Bidding: true #Able to use the bidding part of the auction house.
+  Sounds:
+    Toggle: True #Disable the clicking sound.
+    Sound: 'UI_BUTTON_CLICK' #Make sure if you use 1.8 or lower you use the 1.8 sound and 1.9 and up use 1.9 sounds. The default sound is 1.8.
+    #1.8 sounds are found here: http://docs.codelanx.com/Bukkit/1.8/org/bukkit/Sound.html
+    #1.9 sounds are found here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+  GUISettings: #Settings for things in the gui.
+    SellingItemLore: #The lore on items that are being sold.
+      - ''
+      - '&fЦена: &a$%Price%'
+      - '&fПродавец: &a%Seller%'
+      - ''
+      - '&aНажмите, чтобы купить'
+    CurrentLore: #Lore on items that are in your current items GUI.
+      - ''
+      - '&fЦена: &a$%Price%'
+      - '&fВремя действия: &a%Time%'
+      - ''
+      - '&cНажмите, чтобы отменить'
+    Cancelled/ExpiredLore: #Lore on items that are in your cancelled/expired GUI.
+      - ''
+      - '&fОсталось: &a%Time%'
+      - ''
+      - '&aНажмите, чтобы вернуть предмет'
+    Bidding: #Lore on Bidding Items.
+      - ''
+      - '&fПродавец: &a%Seller%'
+      - '&fТекущая ставка: &a$%TopBid%'
+      - '&fТоп участник: &a%TopBidder%'
+      - '&fОсталось: &a%Time%'
+      - ''
+      - '&aНажмите, чтобы сделать ставку'
+    Category-Settings:
+      Armor:
+        Item: 'GOLD_CHESTPLATE'
+        Toggle: true
+        Slot: 11
+        Name: '&aБроня'
+        Lore:
+          - '&fЭта категория содержит все виды'
+          - '&fброни, которые вы можете купить'
+          - ''
+          - '&aНажмите, чтобы выбрать категорию'
+      Weapons:
+        Item: 'GOLD_SWORD'
+        Toggle: true
+        Slot: 12
+        Name: '&aОружия'
+        Lore:
+          - '&fЭта категория содержит все виды'
+          - '&fоружия, которые вы можете купить'
+          - ''
+          - '&aНажмите, чтобы выбрать категорию'
+      Tools:
+        Item: 'GOLD_PICKAXE'
+        Toggle: true
+        Slot: 13
+        Name: '&aИнструменты'
+        Lore:
+          - '&fЭта категория содержит все виды'
+          - '&fинструменов, которые вы можете купить'
+          - ''
+          - '&aНажмите, чтобы выбрать категорию'
+      Food:
+        Item: 'GOLDEN_APPLE'
+        Toggle: true
+        Slot: 14
+        Name: '&aЕда'
+        Lore:
+          - '&fЭта категория содержит все виды'
+          - '&fеды, которые вы можете купить'
+          - ''
+          - '&aНажмите, чтобы выбрать категорию'
+      Potions:
+        Item: 'POTION'
+        Toggle: true
+        Slot: 15
+        Name: '&aЗелья'
+        Lore:
+          - '&fЭта категория содержит все виды'
+          - '&fзелий, которые вы можете купить'
+          - ''
+          - '&aНажмите, чтобы выбрать категорию'
+      Blocks:
+        Item: 'GRASS'
+        Toggle: true
+        Slot: 16
+        Name: '&aБлоки'
+        Lore:
+          - '&fЭта категория содержит все виды'
+          - '&fблоков, которые вы можете купить'
+          - ''
+          - '&aНажмите, чтобы выбрать категорию'
+      Other:
+        Item: 'GOLD_NUGGET'
+        Toggle: true
+        Slot: 17
+        Name: '&aДругое'
+        Lore:
+          - '&fЭта категория содержит все остальные'
+          - '&fпредметы, которые вы можете купить'
+          - ''
+          - '&aНажмите, чтобы выбрать категорию'
+      None:
+        Item: 'BARRIER'
+        Toggle: true
+        Slot: 23
+        Name: '&aОбщее'
+        Lore:
+          - '&fЭта категория содержит все виды'
+          - '&fпредметов, которые вы можете купить'
+          - ''
+          - '&aНажмите, чтобы выбрать категорию'
+    OtherSettings: #Other Settings for the GUIs.
+      SellingItems: #The button for your current items.
+        Item: 'DIAMOND' #The item that this button is.
+        Toggle: true #If the item is in the gui or not.
+        Slot: 50 #The slot it is in. I recommend not changing these. If you do make sure they are still in the bottom row.
+        Name: '&aВаши продажи' #Name of the item.
+        Lore: #Lore of the item.
+          - '&fСписок предметов, которые'
+          - '&fвы сейчас продаёте на площадке'
+          - ''
+          - '&aНажмите, чтобы открыть меню'
+      Cancelled/ExpiredItems: #The button for Cancelled/Expired Items.
+        Item: 'POISONOUS_POTATO'
+        Toggle: true
+        Slot: 48
+        Name: '&aВозвращенные товары'
+        Lore:
+          - '&fСписок предметов, которые были'
+          - '&fотменены или истекли по времени'
+          - ''
+          - '&aНажмите, чтобы открыть меню'
+      PreviousPage: #The button for Previous Page.
+        Item: 'ARROW'
+        Toggle: true
+        Slot: 46
+        Name: '&aПредыдущая страница'
+        Lore: {}
+      Refesh: #The button for Refresh Page.
+        Item: 'APPLE'
+        Toggle: false
+        Slot: 51
+        Name: '&aОбновить страницу'
+        Lore: {}
+      NextPage: #The button for Next Page.
+        Item: 'ARROW'
+        Toggle: true
+        Slot: 54
+        Name: '&aСледущая страница'
+        Lore: {}
+      Category1: #The button for Next Page.
+        Item: 'CHEST'
+        Toggle: true
+        Slot: 52
+        Name: '&aКатегории'
+        Lore:
+          - '&fВыберите категорию, чтобы было'
+          - '&fпроще искать нужный предмет'
+          - ''
+          - '&fТекущая категория: &a%Category%'
+          - ''
+          - '&aНажмите, чтобы открыть меню'
+      Category2: #The button for Next Page.
+        Item: 'APPLE'
+        Toggle: false
+        Slot: 51
+        Name: '&aКатегории'
+        Lore:
+          - '&bТекущая категория: &6%Category%'
+          - '&fХотите видеть предметы по определенным категориям?'
+          - '&fНажмите сюда, чтобы увидеть все категории предметов.'
+      Bidding/Selling: #Switch between Bidding and Selling.
+        Selling:
+          Item: 'APPLE'
+          Toggle: false
+          Slot: 51
+          Name: '&aТекущите предметы, выставленные вами на продажу.'
+          Lore:
+            - '&aНажмите, чтобы посмотреть'
+            - '&aпредметы, которые вы выставили на продажу.'
+        Bidding:
+          Item: 'APPLE'
+          Toggle: false
+          Slot: 51
+          Name: '&aТекущие предметы, которые вы можете купить.'
+          Lore:
+            - '&aНажмите, чтобы посмотреть'
+            - '&aпредметы, которые вы можете купить.'
+      WhatIsThis: #The info on all the Books buttons.
+        SellingShop: #The Book in the main shop.
+          Item: 'APPLE'
+          Toggle: false
+          Slot: 51
+          Name: '&6Что это за страница?'
+          Lore:
+            - '&fЗдесь Вы можете посмотреть или купить'
+            - '&fвещи, которые выставили на продажу'
+            - '&fдругие игроки. А также выставить на'
+            - '&fпродажу свои вещи.'
+            - '&f------------------------------------------'
+            - '&c⊳ &fПомошь по Торговой площадке - &a/ah help'
+        BiddingShop: #The Book in the main shop.
+          Item: 'APPLE'
+          Toggle: false
+          Slot: 51
+          Name: '&6Как продать свою вещь?'
+          Lore:
+            - '&fЧтобы выставить предмет на продажу'
+            - '&fВозьмите его в руку и напишите:'
+            - '&a/ah sell/bid <цена> <количество>'
+            - '&f-----------------------------------------'
+            - '&c⊳ &fПомошь по Торговой площадке - &a/ah help'
+        CurrentItems: #The Book in the Current items GUI.
+          Item: 'APPLE'
+          Toggle: false
+          Slot: 51
+          Name: '&6А тут что?'
+          Lore:
+            - '&fВсе предметы, которые Вы продаете,'
+            - '&fбудут отображаться в этом меню.'
+            - '&f-----------------------------------------'
+            - '&c⊳ &fПомошь по Торговой площадке - &a/ah help'
+        Cancelled/ExpiredItems: #The Book in the Cancelled/Expired Items GUI.
+          Item: 'APPLE'
+          Toggle: false
+          Slot: 51
+          Name: '&6А тут что?'
+          Lore:
+            - '&fЭто - корзина. Здесь хранятся предметы,'
+            - '&fу которых &6истек&f срок продажи, или которые'
+            - '&fбыли с неё &6сняты&f Вами.'
+            - '&f---------------------------------------------'
+            - '&c⊳ &fПомошь по Торговой площадке - &a/ah help'
+        Viewing: #The Book in the Viewing Items GUI.
+          Item: 'BOOK'
+          Toggle: true
+          Slot: 50
+          Name: '&6Что это за страница?'
+          Lore:
+            - '&fЗдесь Вы можете посмотреть или купить'
+            - '&fвещи, которые выставили на продажу'
+            - '&fдругие игроки. А также выставить на'
+            - '&fпродажу свои вещи.'
+            - '&f------------------------------------------'
+            - '&c⊳ &fПомошь по Торговой площадке - &a/ah help'
+        Categories: #The Book in the Viewing Items GUI.
+          Item: 'APPLE'
+          Toggle: false
+          Slot: 51
+          Name: '&6Что это за страница?'
+          Lore:
+            - '&fЗдесь Вы можете посмотреть или купить'
+            - '&fвещи, которые выставили на продажу'
+            - '&fдругие игроки. А также выставить на'
+            - '&fпродажу свои вещи.'
+            - '&f------------------------------------------'
+            - '&c⊳ &fПомошь по Торговой площадке - &a/ah help'
+      Back: #The Back Buttons.
+        Item: 'ARROW'
+        Slot: 50
+        Name: '&aНазад'
+      Return: #The Return Buttons.
+        Item: 'FLOWER_POT'
+        Slot: 50
+        Name: '&aЗабрать всё'
+        Lore:
+          - '&aНажмите, чтобы забрать все отмененные'
+          - '&aи истекшие предметы в ваш инвентарь.'
+      Confirm: #The Confirm Buttons.
+        Item: 'LIME_STAINED_GLASS_PANE'
+        Name: '&aПодтвердить'
+      Cancel: #The Cancel Buttons.
+        Item: 'RED_STAINED_GLASS_PANE'
+        Name: '&cОтменить'
+      Your-Item: #The item that shows when you try to buy/bid on your item.
+        Item: 'BARRIER'
+        Name: '&cВы не можете приобрести свой товар.'
+      Cant-Afford: #The item that shows when you cant afford this item.
+        Item: 'BARRIER'
+        Name: '&cВы не можете позволить себе этот товар.'
+      Top-Bidder: #The item for when a player is already the top bidder.
+        Item: 'BARRIER'
+        Name: '&cВы уже являетесь топ участником.'
+      Bidding: #The item in the middle when bidding on an item.
+        Item: 'BLACK_STAINED_GLASS_PANE'
+        Name: '&7Торги'
+        Lore:
+          - '&7<--&aДобавить &cУдалить&7-->'
+          - '&fВаша текущая ставка: &a$%Bid%'
+          - '&fТекущий топ участник: &a$%TopBid%'
+      Bid: #The button for when you want to confirm your bid.
+        Item: 'LIGHT_BLUE_STAINED_GLASS_PANE'
+        Name: '&aСтавка'
+        Lore:
+          - ''
+          - '&aНажмите, чтобы сделать ставку'
+  BlackList:
+    - 'BEDROCK'
+    - 'END_PORTAL_FRAME'

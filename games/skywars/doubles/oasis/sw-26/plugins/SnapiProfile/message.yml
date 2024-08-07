@@ -1,0 +1,8 @@
+profile:
+  cannotUsed: 'Нельзя здесь использовать команду'
+  notFound: 'Игрок %name% не найден'
+
+statistic:
+  cannotUsed: 'Нельзя здесь использовать команду'
+  notFound: 'Игрок %name% не найден'
+

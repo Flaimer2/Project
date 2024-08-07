@@ -1,0 +1,38 @@
+menu:
+  title: '&0Казино'
+
+layout:
+  - '         '
+  - '         '
+  - '  1 2 3  '
+  - '         '
+  - '         '
+
+items:
+  1:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTBhNGM5NGRkNjVhN2NhZGM0MTcyY2VkZjM5OTBhODU0Mjc3MmJiMTEzY2RmMWEwZjc4ZWY2NTJjNmFiZTZjYiJ9fX0=
+    name: '§aСлот-машина №1'
+    lore: |-
+      §fСтоимость игры: §a250$
+      §fВыигрыш:
+        §f3 §7железных §fблока: §a250$
+        §f3 §eзолотых §fблока: §a500$
+        §f3 §bалмазных §fблока: §a1200$
+  2:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTQ3YzU1MDY0ZjFkMDc2MjVhZjA1Y2RiYzBmYzdjODQxNzNiMTA1NDEwMjRjODg1NWVkNzEzMmNhNzc2NzI0NiJ9fX0=
+    name: '§aСлот-машина №2'
+    lore: |-
+      §fСтоимость игры: §a1000$
+      §fВыигрыш:
+        §f3 §7железных §fблока: §a1000$
+        §f3 §eзолотых §fблока: §a2500$
+        §f3 §bалмазных §fблока: §a5000$
+  3:
+    head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDljYjk0ZDg3MjkxOTdhMThhNzY4ODJjMjQ5MThhOGMwNDQ5NGQzNDcyN2Y0ZGYwNjBmYjdhNDVhMWZmODUzNyJ9fX0=
+    name: '§aСлот-машина №3'
+    lore: |-
+      §fСтоимость игры: §a3000$
+      §fВыигрыш:
+        §f3 §7железных §fблока: §a5₵
+        §f3 §eзолотых §fблока: §a10₵
+        §f3 §bалмазных §fблока: §a50₵

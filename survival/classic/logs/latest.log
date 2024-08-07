@@ -1,103 +1,773 @@
-[10:48:19] [luckperms-worker-2/INFO]: [LP] LOG > (Console@skyblock) [U] (flaimerpro)
-[10:48:19] [luckperms-worker-2/INFO]: [LP] LOG > meta set skyblock.quest.done.35 5
-[10:48:19] [luckperms-worker-2/INFO]: [LP] LOG > (Console@skyblock) [U] (flaimerpro)
-[10:48:19] [luckperms-worker-2/INFO]: [LP] LOG > meta set skyblock.quest.done.36 5
-[10:48:19] [luckperms-worker-2/INFO]: [LP] LOG > (Console@skyblock) [U] (flaimerpro)
-[10:48:19] [luckperms-worker-2/INFO]: [LP] LOG > meta set skyblock.quest.done.37 5
-[10:48:22] [luckperms-worker-2/INFO]: [LP] LOG > (Console@skyblock) [U] (flaimerpro)
-[10:48:22] [luckperms-worker-2/INFO]: [LP] LOG > meta set skyblock.quest.done.35 6
-[10:48:22] [luckperms-worker-2/INFO]: [LP] LOG > (Console@skyblock) [U] (flaimerpro)
-[10:48:22] [luckperms-worker-2/INFO]: [LP] LOG > meta set skyblock.quest.done.36 6
-[10:48:22] [luckperms-worker-2/INFO]: [LP] LOG > (Console@skyblock) [U] (flaimerpro)
-[10:48:22] [luckperms-worker-2/INFO]: [LP] LOG > meta set skyblock.quest.done.37 6
-[11:02:53] [Server thread/INFO]: Stopping the server
-[11:02:53] [Server thread/INFO]: Stopping server
-[11:02:53] [Server thread/INFO]: [CMI] Disabling CMI v9.1.0.1
-[11:02:53] [Server thread/INFO]: [CMI] Closed db connections
-[11:02:53] [Server thread/INFO]: [CMILib] Disabling CMILib v1.1.1.0
-[11:02:53] [Server thread/INFO]: [SnapiClans] Disabling SnapiClans v3.0.0
-[11:02:53] [Server thread/INFO]: [DecentHolograms] Disabling DecentHolograms v2.8.6
-[11:02:53] [Server thread/INFO]: [SnapiCoin] Disabling SnapiCoin v1.0.0
-[11:02:53] [Server thread/INFO]: [SnapiBalancer] Disabling SnapiBalancer v1.5
-[11:02:53] [Server thread/INFO]: [BetterRTP] Disabling BetterRTP v2.9.3
-[11:02:53] [Server thread/INFO]: [ItemJoin] Disabling ItemJoin v6.0.7-RELEASE-b995
-[11:02:53] [Server thread/INFO]: [SnapiSet] Disabling SnapiSet v1.0.0
-[11:02:53] [Server thread/INFO]: [SnapiProfile] Disabling SnapiProfile v1.0.0
-[11:02:53] [Server thread/INFO]: [CrazyAuctions] Disabling CrazyAuctions v1.2.7
-[11:02:53] [Server thread/INFO]: [Invero] Disabling Invero v1.0.8-pre-1
-[11:02:54] [Server thread/INFO]: [com.zaxxer.hikari_4_0_3.HikariDataSource] HikariPool-1 - Shutdown initiated...
-[11:02:54] [Server thread/INFO]: [com.zaxxer.hikari_4_0_3.HikariDataSource] HikariPool-1 - Shutdown completed.
-[11:02:54] [Server thread/INFO]: [SnapiCooperation] Disabling SnapiCooperation v1.0.0
-[11:02:54] [Server thread/INFO]: [Citizens] Disabling Citizens v2.0.30-SNAPSHOT (build 2881)
-[11:02:54] [Server thread/INFO]: [SnapiLibrary] Disabling SnapiLibrary v2.0.0
-[11:02:54] [Server thread/INFO]: [EnchantGui] Disabling EnchantGui v3.6.4
-[11:02:54] [Server thread/INFO]: [XConomy] Disabling XConomy v2.25.15
-[11:02:54] [XConomyRedisSub/INFO]: [XConomy] Unsubscribe redis channel
-[11:02:54] [Server thread/INFO]: [XConomy] XConomy успешно выключен
-[11:02:54] [Server thread/INFO]: [HeadDatabase] Disabling HeadDatabase v4.13.4
-[11:02:54] [Server thread/INFO]: [Jobs] Disabling Jobs v4.16.3
-[11:02:54] [Jobs-DatabaseSaveTask/INFO]: [Jobs] Database save task shutdown!
-[11:02:54] [Jobs-BufferedPaymentThread/INFO]: [Jobs] Buffered payment thread shutdown.
-[11:02:54] [Server thread/INFO]: [Jobs] Plugin has been disabled successfully.
-[11:02:54] [Server thread/INFO]: [AlonsoLevels] Disabling AlonsoLevels v2.2.3-BETA-PRO
-[11:02:54] [Server thread/INFO]: [AlonsoLevels] [MySQL] Forcing connection close..
-[11:02:54] [Server thread/INFO]: [com.alonsoaliaga.alonsolevels.libraries.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
-[11:02:54] [Server thread/INFO]: [com.alonsoaliaga.alonsolevels.libraries.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
-[11:02:54] [Server thread/INFO]:  
-[11:02:54] [Server thread/INFO]: [AlonsoLevels] Plugin has been disabled!
-[11:02:54] [Server thread/INFO]: [AlonsoLevels] Thank you for using my plugin!
-[11:02:54] [Server thread/INFO]:  
-[11:02:54] [Server thread/INFO]: [BetterSocial] Disabling BetterSocial v1.3-BETA
-[11:02:54] [Server thread/INFO]: [BetterSocial] [MySQL] Forcing connection close..
-[11:02:54] [Server thread/INFO]: [com.alonsoaliaga.bettersocial.libraries.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
-[11:02:54] [Server thread/INFO]: [com.alonsoaliaga.bettersocial.libraries.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
-[11:02:54] [Server thread/INFO]:  
-[11:02:54] [Server thread/INFO]: [BetterSocial] Plugin has been disabled!
-[11:02:54] [Server thread/INFO]: [BetterSocial] Thank you for using my plugin!
-[11:02:54] [Server thread/INFO]:  
-[11:02:54] [Server thread/INFO]: [Chatty] Disabling Chatty v2.19.14
-[11:02:54] [Server thread/INFO]: [TigerReports] Disabling TigerReports v4.13.1
-[11:02:54] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
-[11:02:54] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion: vault
-[11:02:54] [Server thread/INFO]: [TAB] Disabling TAB v4.0.3
-[11:02:54] [Server thread/INFO]: [TAB] Disabled in 0ms
-[11:02:54] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.0.0-SNAPSHOT-b587
-[11:02:54] [Server thread/INFO]: [LastLoginAPI] Disabling LastLoginAPI v1.7.4
-[11:02:54] [Server thread/INFO]: [LastLoginAPI] Disabling LastLoginAPI
-[11:02:54] [Server thread/WARN]: [Server thread] INFO com.alessiodp.lastloginapi.libs.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-[11:02:54] [Server thread/WARN]: [Server thread] INFO com.alessiodp.lastloginapi.libs.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-[11:02:54] [Server thread/INFO]: [LastLoginAPI] LastLoginAPI disabled
-[11:02:54] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.117
-[11:02:54] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion: luckperms
-[11:02:54] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
-[11:02:54] [Server thread/INFO]: [LuckPerms] Closing messaging service...
-[11:02:54] [Server thread/INFO]: [LuckPerms] Closing storage...
-[11:02:54] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Shutdown initiated...
-[11:02:54] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Shutdown completed.
-[11:02:54] [Server thread/INFO]: [LuckPerms] Goodbye!
-[11:02:54] [Server thread/INFO]: [ViaRewind] Disabling ViaRewind v4.0.0
-[11:02:54] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.0.1
-[11:02:54] [Server thread/INFO]: [NBTAPI] Disabling NBTAPI v2.8.0
-[11:02:54] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.0.1
-[11:02:54] [Server thread/INFO]: [ViaVersion] ViaVersion is disabling, if this is a reload and you experience issues consider rebooting.
-[11:02:54] [Server thread/INFO]: [CommandForward] Disabling CommandForward v0.5.0
-[11:02:54] [Server thread/INFO]: [WGExtender] Disabling WGExtender v1.0
-[11:02:54] [Server thread/INFO]: [WGRegionEvents] Disabling WGRegionEvents v1.1
-[11:02:54] [Server thread/INFO]: [ServerUtils] Disabling ServerUtils v3.5.3
-[11:02:54] [Server thread/INFO]: [OldCombatMechanics] Disabling OldCombatMechanics v1.11.0
-[11:02:54] [Server thread/INFO]: [OldCombatMechanics] OldCombatMechanics v1.11.0 has been disabled
-[11:02:54] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v6.2.2-SNAPSHOT
-[11:02:54] [Server thread/INFO]: [WorldGuard] Завершение работы исполнителя и ожидание каких-либо незавершенных задач...
-[11:02:54] [Server thread/INFO]: [AntiRelog] Disabling AntiRelog v2.1
-[11:02:54] [Server thread/INFO]: [ConditionalEvents] Disabling ConditionalEvents v3.6.3
-[11:02:54] [Server thread/INFO]: [ConditionalEvents] Has been disabled! Version: 3.6.3
-[11:02:54] [Server thread/INFO]: [spark] Disabling spark v1.10.93
-[11:02:54] [Server thread/INFO]: [DisableJoinMessage] Disabling DisableJoinMessage v1.0
-[11:02:54] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.10.10
-[11:02:54] [Server thread/INFO]: [MainChairs] Disabling MainChairs v0.9.4
-[11:02:54] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v6.1.9-SNAPSHOT
-[11:02:54] [Server thread/INFO]: Saving players
-[11:02:54] [Server thread/INFO]: Saving worlds
-[11:02:54] [Server thread/INFO]: Saving chunks for level 'world'/overworld
-[11:02:54] [Server thread/INFO]: Saving chunks for level 'world_nether'/the_nether
-[11:02:54] [Server thread/INFO]: Saving chunks for level 'world_the_end'/the_end
+[22:55:41] [Server thread/INFO]: Starting minecraft server version 1.12.2
+[22:55:41] [Server thread/INFO]: Loading properties
+[22:55:41] [Server thread/INFO]: Default game type: SURVIVAL
+[22:55:41] [Server thread/INFO]: This server is running Paper version git-Paper-1620 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
+[22:55:42] [Server thread/INFO]: Debug logging is disabled
+[22:55:42] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[22:55:42] [Server thread/INFO]: Using 4 threads for Netty based IO
+[22:55:42] [Server thread/WARN]: Ignoring non existent stats.forced-stats achievement.openInventory
+[22:55:42] [Server thread/WARN]: Ignoring non existent stats.forced-stats achievement.diamonds
+[22:55:42] [Server thread/INFO]: Generating keypair
+[22:55:43] [Server thread/INFO]: Starting Minecraft server on *:21201
+[22:55:43] [Server thread/INFO]: Using default channel type
+[22:55:47] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[22:55:48] [Server thread/INFO]: Loading library org.jetbrains.kotlin:kotlin-stdlib-common:1.8.20
+[22:55:48] [Server thread/INFO]: Loading library org.jetbrains.kotlin:kotlin-stdlib:1.8.20
+[22:55:48] [Server thread/INFO]: Loading library org.jetbrains:annotations:13.0
+[22:55:50] [ForkJoinPool.commonPool-worker-9/INFO]: Loading library org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.5.0-RC
+[22:55:50] [ForkJoinPool.commonPool-worker-9/INFO]: Loading library org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.5.0-RC
+[22:55:50] [ForkJoinPool.commonPool-worker-3/INFO]: Loading library org.yaml:snakeyaml:1.32
+[22:55:51] [ForkJoinPool.commonPool-worker-7/INFO]: Loading library org.apache.commons:commons-jexl3:3.2.1
+[22:55:51] [ForkJoinPool.commonPool-worker-3/INFO]: Loading library com.typesafe:config:1.4.2
+[22:55:51] [ForkJoinPool.commonPool-worker-3/INFO]: Loading library com.electronwill.night-config:core:3.6.6
+[22:55:51] [ForkJoinPool.commonPool-worker-7/INFO]: Loading library com.mojang:datafixerupper:4.0.26
+[22:55:51] [ForkJoinPool.commonPool-worker-3/INFO]: Loading library com.electronwill.night-config:toml:3.6.6
+[22:55:51] [ForkJoinPool.commonPool-worker-3/INFO]: Loading library com.electronwill.night-config:json:3.6.6
+[22:55:51] [ForkJoinPool.commonPool-worker-3/INFO]: Loading library com.electronwill.night-config:hocon:3.6.6
+[22:55:53] [ForkJoinPool.commonPool-worker-11/INFO]: Loading library com.zaxxer:HikariCP:4.0.3
+[22:55:53] [ForkJoinPool.commonPool-worker-11/INFO]: Loading library org.slf4j:slf4j-api:2.1.0-alpha1
+[22:55:55] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1.9-SNAPSHOT
+[22:55:55] [Server thread/INFO]: [MainChairs] Loading MainChairs v0.9.4
+[22:55:55] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.10.10
+[22:55:55] [Server thread/INFO]: [DisableJoinMessage] Loading DisableJoinMessage v1.0
+[22:55:55] [Server thread/INFO]: [spark] Loading spark v1.10.93
+[22:55:55] [Server thread/INFO]: [ConditionalEvents] Loading ConditionalEvents v3.6.3
+[22:55:55] [Server thread/INFO]: [AntiRelog] Loading AntiRelog v2.1
+[22:55:55] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v6.2.2-SNAPSHOT
+[22:55:55] [Server thread/INFO]: [OldCombatMechanics] Loading OldCombatMechanics v1.11.0
+[22:55:55] [Server thread/INFO]: [ServerUtils] Loading ServerUtils v3.5.3
+[22:55:55] [Server thread/INFO]: [WGRegionEvents] Loading WGRegionEvents v1.1
+[22:55:55] [Server thread/INFO]: [WGExtender] Loading WGExtender v1.0
+[22:55:55] [Server thread/INFO]: [CommandForward] Loading CommandForward v0.5.0
+[22:55:55] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.0.1
+[22:55:55] [Server thread/INFO]: [ViaVersion] ViaVersion 5.0.1 is now loaded. Registering protocol transformers and injecting...
+[22:55:56] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[22:55:56] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[22:55:56] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[22:55:56] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[22:55:57] [Server thread/INFO]: [ViaRewind] Registering protocols...
+[22:55:57] [Server thread/INFO]: [NBTAPI] Loading NBTAPI v2.8.0
+[22:55:57] [Server thread/INFO]: [NBTAPI] bStats disabled
+[22:55:57] [Server thread/INFO]: [NBTAPI] Update check disabled
+[22:55:57] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Spigot: v1_12_R1! Trying to find NMS support
+[22:55:57] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_12_R1' loaded!
+[22:55:57] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Gson: class com.google.gson.Gson
+[22:55:57] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.0.1
+[22:55:57] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v4.0.0
+[22:55:57] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.117
+[22:55:58] [Server thread/INFO]: [LastLoginAPI] Loading LastLoginAPI v1.7.4
+[22:55:58] [Server thread/INFO]: [LastLoginAPI] Loading libraries of LastLoginAPI v1.7.4, this may take a while
+[22:55:58] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for jar-relocator
+[22:55:59] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for asm
+[22:55:59] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for asm-commons
+[22:55:59] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for gson
+[22:55:59] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for jdbi3-core
+[22:55:59] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for geantyref
+[22:55:59] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for caffeine
+[22:55:59] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for jdbi3-stringtemplate4
+[22:55:59] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for ST4
+[22:55:59] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for antlr-runtime
+[22:55:59] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for jdbi3-sqlobject
+[22:55:59] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for slf4j-api
+[22:55:59] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for slf4j-simple
+[22:56:00] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for HikariCP
+[22:56:00] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for mariadb-java-client
+[22:56:00] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for mysql-connector-j
+[22:56:00] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for postgresql
+[22:56:00] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for h2
+[22:56:00] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v5.0.0-SNAPSHOT-b587
+[22:56:02] [Server thread/INFO]: [TAB] Loading TAB v4.0.3
+[22:56:02] [Server thread/INFO]: [Vault] Loading Vault v1.7.3-b131
+[22:56:02] [Server thread/INFO]: [TigerReports] Loading TigerReports v4.13.1
+[22:56:02] [Server thread/INFO]: [Chatty] Loading Chatty v2.19.14
+[22:56:02] [Server thread/INFO]: [BetterSocial] Loading BetterSocial v1.3-BETA
+[22:56:02] [Server thread/INFO]: [AlonsoLevels] Loading AlonsoLevels v2.2.3-BETA-PRO
+[22:56:02] [Server thread/INFO]: [Jobs] Loading Jobs v4.16.3
+[22:56:02] [Server thread/INFO]: [HeadDatabase] Loading HeadDatabase v4.13.4
+[22:56:02] [Server thread/INFO]: [XConomy] Loading XConomy v2.25.15
+[22:56:02] [Server thread/INFO]: [EnchantGui] Loading EnchantGui v3.6.4
+[22:56:02] [Server thread/INFO]: [SnapiLibrary] Loading SnapiLibrary v2.0.0
+[22:56:02] [Server thread/INFO]: [Citizens] Loading Citizens v2.0.30-SNAPSHOT (build 2881)
+[22:56:02] [Server thread/INFO]: [SnapiCooperation] Loading SnapiCooperation v1.0.0
+[22:56:02] [Server thread/INFO]: [Invero] Loading Invero v1.0.8-pre-1
+[22:56:03] [Server thread/INFO]: [CrazyAuctions] Loading CrazyAuctions v1.2.7
+[22:56:03] [Server thread/INFO]: [SnapiProfile] Loading SnapiProfile v1.0.0
+[22:56:03] [Server thread/INFO]: [SnapiSet] Loading SnapiSet v1.0.0
+[22:56:03] [Server thread/INFO]: [ItemJoin] Loading ItemJoin v6.0.7-RELEASE-b995
+[22:56:03] [Server thread/INFO]: [BetterRTP] Loading BetterRTP v2.9.3
+[22:56:03] [Server thread/INFO]: [SnapiBalancer] Loading SnapiBalancer v1.5
+[22:56:03] [Server thread/INFO]: [SnapiCoin] Loading SnapiCoin v1.0.0
+[22:56:03] [Server thread/INFO]: [DecentHolograms] Loading DecentHolograms v2.8.6
+[22:56:03] [Server thread/INFO]: [SnapiClans] Loading SnapiClans v3.0.0
+[22:56:03] [Server thread/INFO]: [CMILib] Loading CMILib v1.1.1.0
+[22:56:03] [Server thread/INFO]: [CMI] Loading CMI v9.1.0.1
+[22:56:03] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[22:56:03] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.0
+[22:56:03] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.117
+[22:56:04] [Server thread/INFO]:         __    
+[22:56:04] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.117
+[22:56:04] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[22:56:04] [Server thread/INFO]: 
+[22:56:04] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[22:56:04] [Server thread/INFO]: [LuckPerms] Loading storage provider... [MARIADB]
+[22:56:04] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Starting...
+[22:56:05] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Start completed.
+[22:56:05] [Server thread/INFO]: [LuckPerms] Loading messaging service... [REDIS]
+[22:56:06] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[22:56:06] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[22:56:06] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 2917ms)
+[22:56:06] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.0.0-SNAPSHOT-b587
+[22:56:06] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[22:56:07] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[22:56:07] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[22:56:07] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[22:56:07] [Server thread/INFO]: [XConomy] Enabling XConomy v2.25.15
+[22:56:07] [Server thread/INFO]: [XConomy] UUID-Mode: Default
+[22:56:07] [Server thread/INFO]: [XConomy] Language: RUSSIAN
+[22:56:07] [Server thread/INFO]: [XConomy] Метод сохранения - MySQL
+[22:56:08] [Server thread/INFO]: [XConomy] Успешное подключение к MySQL
+[22:56:09] [Server thread/INFO]: [XConomy] Успешное подключение к Redis
+[22:56:09] [XConomyRedisSub/INFO]: [XConomy] Creating Redis listening thread
+[22:56:09] [Server thread/INFO]: [XConomy] XConomy успешно включен
+[22:56:09] [Server thread/INFO]: [XConomy] Found PlaceholderAPI
+[22:56:09] [XConomyRedisSub/INFO]: [XConomy] Subscribe redis channel success, channel XConomy_Sync
+[22:56:09] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: xconomy
+[22:56:09] [Server thread/INFO]: [XConomy] PlaceholderAPI successfully hooked
+[22:56:09] [Server thread/INFO]: [XConomy] ===== YiC =====
+[22:56:09] [Server thread/INFO]: [ItemJoin] Enabling ItemJoin v6.0.7-RELEASE-b995
+[22:56:09] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[22:56:09] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[22:56:09] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[22:56:09] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[22:56:09] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[22:56:09] [Server thread/INFO]: Preparing level "world"
+[22:56:09] [Server thread/INFO]: -------- World Settings For [world] --------
+[22:56:09] [Server thread/INFO]: Experience Merge Radius: 6.0
+[22:56:09] [Server thread/INFO]: Arrow Despawn Rate: 300
+[22:56:09] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[22:56:09] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[22:56:09] [Server thread/INFO]: Max TNT Explosions: 100
+[22:56:09] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[22:56:09] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[22:56:09] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[22:56:09] [Server thread/INFO]: Structure Info Saving: true
+[22:56:09] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 16 / Mi 12 / Tiv true
+[22:56:09] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[22:56:09] [Server thread/INFO]: Cane Growth Modifier: 100%
+[22:56:09] [Server thread/INFO]: Melon Growth Modifier: 100%
+[22:56:09] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[22:56:09] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[22:56:09] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[22:56:09] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[22:56:09] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[22:56:09] [Server thread/INFO]: Vine Growth Modifier: 100%
+[22:56:09] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[22:56:09] [Server thread/INFO]: Mob Spawn Range: 4
+[22:56:09] [Server thread/INFO]: Random Lighting Updates: false
+[22:56:09] [Server thread/INFO]: Item Despawn Rate: 6000
+[22:56:09] [Server thread/INFO]: Item Merge Radius: 4.0
+[22:56:09] [Server thread/INFO]: View Distance: 10
+[22:56:09] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[22:56:09] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[22:56:10] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[22:56:10] [Server thread/INFO]: Experience Merge Radius: 6.0
+[22:56:10] [Server thread/INFO]: Arrow Despawn Rate: 300
+[22:56:10] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[22:56:10] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[22:56:10] [Server thread/INFO]: Max TNT Explosions: 100
+[22:56:10] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[22:56:10] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[22:56:10] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[22:56:10] [Server thread/INFO]: Structure Info Saving: true
+[22:56:10] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 16 / Mi 12 / Tiv true
+[22:56:10] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[22:56:10] [Server thread/INFO]: Cane Growth Modifier: 100%
+[22:56:10] [Server thread/INFO]: Melon Growth Modifier: 100%
+[22:56:10] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[22:56:10] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[22:56:10] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[22:56:10] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[22:56:10] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[22:56:10] [Server thread/INFO]: Vine Growth Modifier: 100%
+[22:56:10] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[22:56:10] [Server thread/INFO]: Mob Spawn Range: 4
+[22:56:10] [Server thread/INFO]: Random Lighting Updates: false
+[22:56:10] [Server thread/INFO]: Item Despawn Rate: 6000
+[22:56:10] [Server thread/INFO]: Item Merge Radius: 4.0
+[22:56:10] [Server thread/INFO]: View Distance: 10
+[22:56:10] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[22:56:10] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[22:56:10] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[22:56:10] [Server thread/INFO]: Experience Merge Radius: 6.0
+[22:56:10] [Server thread/INFO]: Arrow Despawn Rate: 300
+[22:56:10] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[22:56:10] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[22:56:10] [Server thread/INFO]: Max TNT Explosions: 100
+[22:56:10] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[22:56:10] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[22:56:10] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[22:56:10] [Server thread/INFO]: Structure Info Saving: true
+[22:56:10] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 16 / Mi 12 / Tiv true
+[22:56:10] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[22:56:10] [Server thread/INFO]: Cane Growth Modifier: 100%
+[22:56:10] [Server thread/INFO]: Melon Growth Modifier: 100%
+[22:56:10] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[22:56:10] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[22:56:10] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[22:56:10] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[22:56:10] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[22:56:10] [Server thread/INFO]: Vine Growth Modifier: 100%
+[22:56:10] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[22:56:10] [Server thread/INFO]: Mob Spawn Range: 4
+[22:56:10] [Server thread/INFO]: Random Lighting Updates: false
+[22:56:10] [Server thread/INFO]: Item Despawn Rate: 6000
+[22:56:10] [Server thread/INFO]: Item Merge Radius: 4.0
+[22:56:10] [Server thread/INFO]: View Distance: 10
+[22:56:10] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[22:56:10] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[22:56:11] [Server thread/INFO]: Preparing start region for level 0 (Seed: -1426488351304636149)
+[22:56:12] [Server thread/INFO]: Preparing spawn area: 1%
+[22:56:13] [Server thread/INFO]: Preparing start region for level 1 (Seed: -5759138803872447665)
+[22:56:13] [Server thread/INFO]: Preparing start region for level 2 (Seed: 1268988800552242750)
+[22:56:14] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1.9-SNAPSHOT
+[22:56:14] [Server thread/WARN]: [WorldEdit] Failed to load the built-in block registry
+java.io.IOException: Could not find blocks.json
+	at com.sk89q.worldedit.world.registry.BundledBlockData.loadFromResource(BundledBlockData.java:81) ~[?:?]
+	at com.sk89q.worldedit.world.registry.BundledBlockData.<init>(BundledBlockData.java:64) ~[?:?]
+	at com.sk89q.worldedit.world.registry.BundledBlockData.<clinit>(BundledBlockData.java:54) ~[?:?]
+	at com.sk89q.worldedit.WorldEdit.<clinit>(WorldEdit.java:107) ~[?:?]
+	at com.sk89q.worldedit.bukkit.WorldEditPlugin.onEnable(WorldEditPlugin.java:100) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) ~[spigot.jar:git-Paper-1620]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:316) ~[spigot.jar:git-Paper-1620]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:405) ~[spigot.jar:git-Paper-1620]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:395) ~[spigot.jar:git-Paper-1620]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:344) ~[spigot.jar:git-Paper-1620]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.t(MinecraftServer.java:442) ~[spigot.jar:git-Paper-1620]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.l(MinecraftServer.java:403) ~[spigot.jar:git-Paper-1620]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.a(MinecraftServer.java:341) ~[spigot.jar:git-Paper-1620]
+	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:289) ~[spigot.jar:git-Paper-1620]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:616) ~[spigot.jar:git-Paper-1620]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+[22:56:14] [Server thread/INFO]: WEPIF: Использование Bukkit Permissions API.
+[22:56:15] [Server thread/INFO]: [WorldEdit] Использую com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_12_R2 для Bukkit адаптеров
+[22:56:15] [Server thread/INFO]: [MainChairs] Enabling MainChairs v0.9.4
+[22:56:15] [Server thread/INFO]: [MainChairs] Your server is running version v1_12_R1
+[22:56:15] [Server thread/INFO]: [MainChairs] NMS hooked !
+[22:56:15] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.10.10
+[22:56:15] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[22:56:15] [Server thread/INFO]: [DisableJoinMessage] Enabling DisableJoinMessage v1.0
+[22:56:15] [Server thread/INFO]: [spark] Enabling spark v1.10.93
+[22:56:15] [Server thread/INFO]: [spark] Using Bukkit scheduler for tick monitoring
+[22:56:15] [Server thread/INFO]: [spark] Starting background profiler...
+[22:56:15] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+[22:56:16] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: spark
+[22:56:16] [Server thread/INFO]: [spark] Registered PlaceholderAPI placeholders
+[22:56:16] [Server thread/INFO]: [ConditionalEvents] Enabling ConditionalEvents v3.6.3
+[22:56:16] [Server thread/INFO]: [ConditionalEvents] Has been enabled! Version: 3.6.3
+[22:56:16] [Server thread/INFO]: [ConditionalEvents] Thanks for using my plugin!  ~Ajneb97
+[22:56:16] [Server thread/INFO]: There is a new version available. (4.56.1)
+[22:56:16] [Server thread/INFO]: You can download it at: https://www.spigotmc.org/resources/82271/
+[22:56:16] [Server thread/INFO]: [AntiRelog] Enabling AntiRelog v2.1
+[22:56:16] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v6.2.2-SNAPSHOT
+[22:56:17] [Server thread/INFO]: [WorldGuard] (world) Поджигание TNT отключено.
+[22:56:17] [Server thread/INFO]: [WorldGuard] (world) Зажигалки РАЗРЕШЕНЫ.
+[22:56:17] [Server thread/INFO]: [WorldGuard] (world) Огонь лавы отключен.
+[22:56:17] [Server thread/INFO]: [WorldGuard] (world) Все распространение огня отключено.
+[22:56:17] [Server thread/INFO]: [WorldGuard] Загрузка конфигурации для мира 'world'
+[22:56:17] [Server thread/INFO]: [WorldGuard] (world_nether) Поджигание TNT отключено.
+[22:56:17] [Server thread/INFO]: [WorldGuard] (world_nether) Зажигалки РАЗРЕШЕНЫ.
+[22:56:17] [Server thread/INFO]: [WorldGuard] (world_nether) Огонь лавы отключен.
+[22:56:17] [Server thread/INFO]: [WorldGuard] (world_nether) Все распространение огня отключено.
+[22:56:17] [Server thread/INFO]: [WorldGuard] Загрузка конфигурации для мира 'world_nether'
+[22:56:17] [Server thread/INFO]: [WorldGuard] (world_the_end) Поджигание TNT отключено.
+[22:56:17] [Server thread/INFO]: [WorldGuard] (world_the_end) Зажигалки РАЗРЕШЕНЫ.
+[22:56:17] [Server thread/INFO]: [WorldGuard] (world_the_end) Огонь лавы отключен.
+[22:56:17] [Server thread/INFO]: [WorldGuard] (world_the_end) Все распространение огня отключено.
+[22:56:17] [Server thread/INFO]: [WorldGuard] Загрузка конфигурации для мира 'world_the_end'
+[22:56:17] [Server thread/INFO]: [WorldGuard] Загрузка данных региона...
+[22:56:17] [Server thread/INFO]: [OldCombatMechanics] Enabling OldCombatMechanics v1.11.0
+[22:56:18] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: ocm
+[22:56:18] [Server thread/INFO]: [OldCombatMechanics] OldCombatMechanics v1.11.0 has been enabled
+[22:56:18] [Server thread/INFO]: [ServerUtils] Enabling ServerUtils v3.5.3
+[22:56:19] [Server thread/INFO]: [WGRegionEvents] Enabling WGRegionEvents v1.1
+[22:56:19] [Server thread/INFO]: [WGExtender] Enabling WGExtender v1.0
+[22:56:19] [Server thread/INFO]: [CommandForward] Enabling CommandForward v0.5.0
+[22:56:19] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.0.1
+[22:56:19] [Server thread/INFO]: [NBTAPI] Enabling NBTAPI v2.8.0
+[22:56:19] [Server thread/INFO]: [NBTAPI] Adding listeners...
+[22:56:19] [Server thread/INFO]: [NBTAPI] Gson:
+[22:56:19] [Server thread/INFO]: [NBTAPI] Checking bindings...
+[22:56:19] [Server thread/INFO]: [NBTAPI] All Classes were able to link!
+[22:56:19] [Server thread/INFO]: [NBTAPI] All Methods were able to link!
+[22:56:19] [Server thread/INFO]: [NBTAPI] Running NBT reflection test...
+[22:56:19] [Server thread/INFO]: [NBTAPI] ListTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] EntityTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] MergeTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] WorldDataTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] DirectApplyTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] SpawnEntityCustomNbtInjectorTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] EntityCustomNbtInjectorTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] TileTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] NBTFileTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] GetterSetterTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] ForEachTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] BlockNBTTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] SubCompoundsTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] TilesCustomNBTPersistentTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] RemovingKeys: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] TilesCustomNBTInjectorTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] MergeTileSubCompoundTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] ItemConvertionTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] ChunkNBTPersistentTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] GameprofileTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] StreamTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] ItemMergingTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] EmptyItemTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] EqualsTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] EntityCustomNbtPersistentTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] TypeTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] IteratorTest: Ok
+[22:56:19] [Server thread/INFO]: [NBTAPI] Success! This version of NBT-API is compatible with your server.
+[22:56:19] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.0.1
+[22:56:19] [Server thread/INFO]: [LastLoginAPI] Enabling LastLoginAPI v1.7.4
+[22:56:19] [Server thread/INFO]: [LastLoginAPI] Initializing LastLoginAPI v1.7.4
+[22:56:20] [Server thread/WARN]: [Server thread] INFO com.alessiodp.lastloginapi.libs.hikari.HikariDataSource - HikariPool-1 - Starting...
+[22:56:20] [Server thread/WARN]: [Server thread] INFO com.alessiodp.lastloginapi.libs.hikari.pool.HikariPool - HikariPool-1 - Added connection com.alessiodp.lastloginapi.libs.mysql.cj.jdbc.ConnectionImpl@5bb3c9aa
+[22:56:20] [Server thread/WARN]: [Server thread] INFO com.alessiodp.lastloginapi.libs.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[22:56:22] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: lastloginapi
+[22:56:22] [Server thread/INFO]: [LastLoginAPI] Hooked into PlaceholderAPI
+[22:56:22] [Server thread/INFO]: [LastLoginAPI] LastLoginAPI v1.7.4 enabled
+[22:56:22] [Server thread/INFO]: [TAB] Enabling TAB v4.0.3
+[22:56:22] [Server thread/INFO]: [TAB] Server version: 1.12.2 (v1_12_R1)
+[22:56:22] [Server thread/INFO]: [TAB] Loaded NMS hook in 139ms
+[22:56:23] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: tab
+[22:56:24] [Server thread/INFO]: [TAB] Enabled in 1504ms
+[22:56:24] [Server thread/INFO]: [TigerReports] Enabling TigerReports v4.13.1
+[22:56:24] [Server thread/INFO]: [TigerReports] Le plugin utilise BungeeCord.
+[22:56:24] [Server thread/INFO]: [TigerReports] Le plugin utilise les prefixes et suffixes du chat du plugin Vault pour afficher les noms des joueurs.
+[22:56:24] [Server thread/INFO]: [Chatty] Enabling Chatty v2.19.14
+[22:56:24] [Server thread/INFO]: [Chatty] Vault has successful hooked.
+[22:56:24] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: chatty
+[22:56:24] [Server thread/INFO]: [Chatty] PlaceholderAPI has successful hooked.
+[22:56:24] [Server thread/INFO]: [BetterSocial] Enabling BetterSocial v1.3-BETA
+[22:56:24] [Server thread/INFO]: [BetterSocial] Inventory title with support for more than 32 characters. Skipping..
+[22:56:24] [Server thread/INFO]: [BetterSocial] Hex colors are not available! Ignoring..
+[22:56:24] [Server thread/INFO]: [BetterSocial] Old constructor for HoverEvent found! Using it..
+[22:56:24] [Server thread/INFO]: [BetterSocial] New sendTitle method found! Using it..
+[22:56:24] [Server thread/INFO]: [BetterSocial] New setUnbreakable method found! Using it..
+[22:56:24] [Server thread/INFO]: [BetterSocial] New isUnbreakable method found! Using it..
+[22:56:24] [Server thread/INFO]:   ___      _   _           ___          _      _ 
+[22:56:24] [Server thread/INFO]:  | _ ) ___| |_| |_ ___ _ _/ __| ___  __(_)__ _| |
+[22:56:24] [Server thread/INFO]:  | _ \/ -_)  _|  _/ -_) '_\__ \/ _ \/ _| / _` | |
+[22:56:24] [Server thread/INFO]:  |___/\___|\__|\__\___|_| |___/\___/\__|_\__,_|_|
+[22:56:24] [Server thread/INFO]: 
+[22:56:24] [Server thread/INFO]:    Running plugin BetterSocial v1.3-BETA
+[22:56:24] [Server thread/INFO]:    Server running Paper version git-Paper-1620 (MC: 1.12.2)
+[22:56:24] [Server thread/INFO]:    (Implementing API version git-Paper-1620 (MC: 1.12.2))
+[22:56:24] [Server thread/INFO]:    (Developed by  AlonsoAliaga - Thanks for using my plugin ❤)
+[22:56:24] [Server thread/INFO]:    (If you loved the plugin consider leaving a review and mentioning your server IP in it!
+[22:56:24] [Server thread/INFO]: 
+[22:56:24] [Server thread/INFO]: ===================================================================================
+[22:56:24] [Server thread/INFO]: [BetterSocial] You are using a Paper fork (Paper). Plugin might have errors
+[22:56:24] [Server thread/INFO]: [BetterSocial] and not work properly. Consider using SPIGOT!
+[22:56:24] [Server thread/INFO]: [BetterSocial] This is not an error! This is just a warning to let you know that this
+[22:56:24] [Server thread/INFO]: [BetterSocial] plugin has not been tested on paper forks. This plugin was made for spigot
+[22:56:24] [Server thread/INFO]: [BetterSocial] and has been tested on spigot only. If you have issues report them to the
+[22:56:24] [Server thread/INFO]: [BetterSocial] developer instead of reviewing 1 star. Thanks in advanced!
+[22:56:24] [Server thread/INFO]: [BetterSocial] Join our official support server on alonsoaliaga.com/discord
+[22:56:24] [Server thread/INFO]: ===================================================================================
+[22:56:24] [Server thread/INFO]: 
+[22:56:24] [Server thread/INFO]: [BetterSocial] BungeeCord action bar available. Hooking..
+[22:56:24] [Server thread/INFO]: [BetterSocial] ProtocolLib found! Checking..
+[22:56:24] [Server thread/INFO]: [BetterSocial] Configuration auto-update is not enabled!
+[22:56:24] [Server thread/INFO]: [BetterSocial] [HikariCP] Using com.mysql.jdbc.jdbc2.optional.MysqlDataSource for source class name..
+[22:56:24] [Server thread/INFO]: [com.alonsoaliaga.bettersocial.libraries.hikari.HikariDataSource] HikariPool-1 - Starting...
+[22:56:25] [Server thread/INFO]: [com.alonsoaliaga.bettersocial.libraries.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[22:56:25] [Server thread/INFO]: [BetterSocial] [MySQL] Attempting to create 'bettersocial' table..
+[22:56:25] [Server thread/INFO]: [BetterSocial] [MySQL] Table 'bettersocial' has been created if didn't exist.
+[22:56:25] [Server thread/INFO]: [BetterSocial] Media 'twitter' is enabled in config. Loading..
+[22:56:25] [Server thread/INFO]: [BetterSocial] GameProfile field is available for heads. Hooking..
+[22:56:25] [Server thread/INFO]: [BetterSocial] Media 'twitter' successfully enabled! Slot: 20
+[22:56:25] [Server thread/INFO]: [BetterSocial] Media 'youtube' is enabled in config. Loading..
+[22:56:25] [Server thread/INFO]: [BetterSocial] Media 'youtube' successfully enabled! Slot: 21
+[22:56:25] [Server thread/INFO]: [BetterSocial] Media 'instagram' is enabled in config. Loading..
+[22:56:25] [Server thread/INFO]: [BetterSocial] Media 'instagram' successfully enabled! Slot: 22
+[22:56:25] [Server thread/INFO]: [BetterSocial] Media 'twitch' is enabled in config. Loading..
+[22:56:25] [Server thread/INFO]: [BetterSocial] Media 'twitch' successfully enabled! Slot: 23
+[22:56:25] [Server thread/INFO]: [BetterSocial] Media 'facebook' is enabled in config. Loading..
+[22:56:25] [Server thread/INFO]: [BetterSocial] Media 'facebook' successfully enabled! Slot: 24
+[22:56:25] [Server thread/INFO]: [BetterSocial] Media 'discord' is enabled in config. Loading..
+[22:56:25] [Server thread/INFO]: [BetterSocial] Media 'discord' successfully enabled! Slot: 29
+[22:56:25] [Server thread/INFO]: [BetterSocial] Media 'vk' is enabled in config. Loading..
+[22:56:25] [Server thread/INFO]: [BetterSocial] Media 'vk' successfully enabled! Slot: 30
+[22:56:25] [Server thread/INFO]: [BetterSocial] Media 'Reddit' is disabled in config. Skipping..
+[22:56:25] [Server thread/INFO]: [BetterSocial] Media 'TikTok' is enabled in config. Loading..
+[22:56:25] [Server thread/INFO]: [BetterSocial] Media 'TikTok' successfully enabled! Slot: 31
+[22:56:25] [Server thread/INFO]: [BetterSocial] Media 'snapixforum' is disabled in config. Skipping..
+[22:56:25] [Server thread/INFO]: [BetterSocial] Social media 'youtube' column already registered in database!
+[22:56:25] [Server thread/INFO]: [BetterSocial] Social media 'twitter' column already registered in database!
+[22:56:25] [Server thread/INFO]: [BetterSocial] Social media 'twitch' column already registered in database!
+[22:56:25] [Server thread/INFO]: [BetterSocial] Social media 'discord' column already registered in database!
+[22:56:25] [Server thread/INFO]: [BetterSocial] Social media 'vk' column already registered in database!
+[22:56:25] [Server thread/INFO]: [BetterSocial] Social media 'tiktok' column already registered in database!
+[22:56:25] [Server thread/INFO]: [BetterSocial] Social media 'facebook' column already registered in database!
+[22:56:25] [Server thread/INFO]: [BetterSocial] Social media 'instagram' column already registered in database!
+[22:56:25] [Server thread/INFO]: [BetterSocial] PlaceholderAPI found! Hooking..
+[22:56:25] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: bettersocial
+[22:56:25] [Server thread/INFO]: [AlonsoLevels] Enabling AlonsoLevels v2.2.3-BETA-PRO
+[22:56:25] [Server thread/INFO]: [AlonsoLevels] Max health Attribute check found. Using it..
+[22:56:25] [Server thread/INFO]: [AlonsoLevels] Inventory title with support for more than 32 characters. Skipping..
+[22:56:25] [Server thread/INFO]: [AlonsoLevels] Hex colors are not available! Ignoring..
+[22:56:25] [Server thread/INFO]: [AlonsoLevels] Old constructor for HoverEvent found! Using it..
+[22:56:25] [Server thread/INFO]: [AlonsoLevels] New sendTitle method found! Using it..
+[22:56:25] [Server thread/INFO]: [AlonsoLevels] New setUnbreakable method found! Using it..
+[22:56:25] [Server thread/INFO]: [AlonsoLevels] New isUnbreakable method found! Using it..
+[22:56:25] [Server thread/INFO]: [AlonsoLevels] Damageable interface is not available! Using old method for durability..
+[22:56:25] [Server thread/INFO]:     _   _                  _                _      ___         
+[22:56:25] [Server thread/INFO]:    /_\ | |___ _ _  ___ ___| |   _____ _____| |___ | _ \_ _ ___ 
+[22:56:25] [Server thread/INFO]:   / _ \| / _ \ ' \(_-</ _ \ |__/ -_) V / -_) (_-< |  _/ '_/ _ \
+[22:56:25] [Server thread/INFO]:  /_/ \_\_\___/_||_/__/\___/____\___|\_/\___|_/__/ |_| |_| \___/
+[22:56:25] [Server thread/INFO]: 
+[22:56:25] [Server thread/INFO]:    Running plugin AlonsoLevels v2.2.3-BETA-PRO (v1_12)
+[22:56:25] [Server thread/INFO]:    Server running Paper version git-Paper-1620 (MC: 1.12.2)
+[22:56:25] [Server thread/INFO]:    (Implementing API version git-Paper-1620 (MC: 1.12.2))
+[22:56:25] [Server thread/INFO]:    (Developed by  AlonsoAliaga - Thanks for using my plugin ❤!)
+[22:56:25] [Server thread/INFO]:    (Thanks for purchasing my plugin Unknown! If you didn't, do it or you won't receive support :D
+[22:56:25] [Server thread/INFO]:    Join our official discord server to receive support in alonsoaliaga.com/discord
+[22:56:25] [Server thread/INFO]:    If you loved the plugin consider leaving a 5-stars review and mentioning your server IP in it!
+[22:56:25] [Server thread/INFO]: 
+[22:56:25] [Server thread/INFO]: ==============================================================================================
+[22:56:25] [Server thread/INFO]: [AlonsoLevels] This is not a error! This is just a warning to keep in mind if you have issues!
+[22:56:25] [Server thread/INFO]: [AlonsoLevels] You are using a Paper fork (Paper). This plugin was made for Spigot
+[22:56:25] [Server thread/INFO]: [AlonsoLevels] but was (in most cases) tested with different builds of Paper and Purpur.
+[22:56:25] [Server thread/INFO]: [AlonsoLevels] Spigot and forks API are really similar and should be compatible, however there are
+[22:56:25] [Server thread/INFO]: [AlonsoLevels] some cases in which they aren't compatible. If you have issues report them to the
+[22:56:25] [Server thread/INFO]: [AlonsoLevels] developer instead of reviewing 1 star. Thanks in advanced!
+[22:56:25] [Server thread/INFO]: [AlonsoLevels] Join us in our official support server on alonsoaliaga.com/discord
+[22:56:25] [Server thread/INFO]: ==============================================================================================
+[22:56:25] [Server thread/INFO]: 
+[22:56:25] [Server thread/INFO]: [AlonsoLevels] BungeeCord action bar available. Hooking..
+[22:56:25] [Server thread/INFO]: [AlonsoLevels] ProtocolLib found! Checking..
+[22:56:26] [Server thread/INFO]: [Auto-update] Configuration is up-to-date!
+[22:56:26] [Server thread/INFO]: [AlonsoLevels] Vault found! Hooking..
+[22:56:26] [Server thread/INFO]: [AlonsoLevels] Cost type 'VAULT' has been enabled!
+[22:56:26] [Server thread/INFO]: [AlonsoLevels] Successfully hooked economy with VAULT mode!
+[22:56:26] [Server thread/INFO]: [AlonsoLevels] [HikariCP] Using com.mysql.jdbc.jdbc2.optional.MysqlDataSource for source class name..
+[22:56:26] [Server thread/INFO]: [com.alonsoaliaga.alonsolevels.libraries.hikari.HikariDataSource] HikariPool-1 - Starting...
+[22:56:26] [Server thread/INFO]: [com.alonsoaliaga.alonsolevels.libraries.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[22:56:26] [Server thread/INFO]: [AlonsoLevels] [MySQL] Attempting to create 'account_levels' table..
+[22:56:26] [Server thread/INFO]: [AlonsoLevels] [MySQL] Table 'account_levels' has been created if didn't exist.
+[22:56:26] [Server thread/INFO]: [AlonsoLevels] Column called 'auto_claim' already exists. Skipping..
+[22:56:26] [Server thread/INFO]: [AlonsoLevels] GameProfile field is available for heads. Hooking..
+[22:56:26] [Server thread/INFO]: [AlonsoLevels] Server name has been selected as 'Lobby-2'
+[22:56:26] [Server thread/INFO]: [AlonsoLevels] Formula for experience is enabled! Loading..
+[22:56:26] [Server thread/INFO]: ===========================================================================================
+[22:56:26] [Server thread/WARN]: Warning: Nashorn engine is planned to be removed from a future JDK release
+[22:56:27] [Server thread/INFO]: [AlonsoLevels] Engine 'JavaScript' (1) recognized: jdk.nashorn.api.scripting.NashornScriptEngine@4e883ec5
+[22:56:29] [Server thread/INFO]: [AlonsoLevels] Successfully loaded 300 levels!
+[22:56:29] [Server thread/INFO]: [AlonsoLevels] Successfully loaded 9 colors!
+[22:56:29] [Server thread/INFO]: [AlonsoLevels] Loaded 100 normal rewards in 4 pages.
+[22:56:29] [Server thread/INFO]: [AlonsoLevels] Loaded 10 veteran rewards.
+[22:56:29] [Server thread/INFO]: [AlonsoLevels] Section for 'Normal multipliers' called 'Normal' in multipliers.yml is invalid. Skipping..
+[22:56:29] [Server thread/INFO]: [AlonsoLevels] Loaded 0 normal multipliers.
+[22:56:29] [Server thread/INFO]: [AlonsoLevels] Veteran section is not enabled in configuration. Skipping veteran multipliers..
+[22:56:29] [Server thread/INFO]: [AlonsoLevels] =========================== IMPORTANT WARNING! ===========================
+[22:56:29] [Server thread/INFO]: [AlonsoLevels] Seems that you just updated the plugin to 2.2-BETA-PRO version or higher!
+[22:56:29] [Server thread/INFO]: [AlonsoLevels] To enable slot customization make sure you edit 'Options.Normal-rewards.Rows'
+[22:56:29] [Server thread/INFO]: [AlonsoLevels] and 'Options.Veteran-rewards.Rows' to a number between 1 and 6. If it's 0 custom
+[22:56:29] [Server thread/INFO]: [AlonsoLevels] slots will be ignored as you probably just updated to this version.
+[22:56:29] [Server thread/INFO]: [AlonsoLevels] After updating those values, custom slots will take effect. This is a BETA feature,
+[22:56:29] [Server thread/INFO]: [AlonsoLevels] please report bugs in our discord server: https://alonsoaliaga.com/discord
+[22:56:29] [Server thread/INFO]: [AlonsoLevels] ============================ END OF WARNING! ============================
+[22:56:29] [Server thread/INFO]: [AlonsoLevels] Rewards command shortcut is disabled! To enable you must edit config and RESTART the server.
+[22:56:29] [Server thread/INFO]: [AlonsoLevels] Leaderboard is disabled! Skipping..
+[22:56:29] [Server thread/INFO]: [AlonsoLevels] PlaceholderAPI found! Hooking..
+[22:56:29] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: alonsolevels
+[22:56:29] [Server thread/INFO]: [AlonsoLevels] VaultMultiplier wasn't found! Skipping..
+[22:56:29] [Server thread/INFO]: (*) Downloaded from Https://diREctlEakS.tO
+[22:56:29] [Server thread/INFO]: [Jobs] Enabling Jobs v4.16.3
+[22:56:29] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: jobsr
+[22:56:30] [Server thread/INFO]: [Jobs] PlaceholderAPI hooked.
+[22:56:33] [Server thread/INFO]: [Jobs] Loaded 8 titles!
+[22:56:33] [Server thread/INFO]: [Jobs] Your defined (REPEATER) protected block id/name is not correct!
+[22:56:33] [Server thread/INFO]: [Jobs] Your defined (COMPARATOR) protected block id/name is not correct!
+[22:56:33] [Server thread/INFO]: [Jobs] Your defined (WHEAT) protected block id/name is not correct!
+[22:56:33] [Server thread/INFO]: [Jobs] Your defined (SUGAR_CANE) protected block id/name is not correct!
+[22:56:33] [Server thread/INFO]: [Jobs] Your defined (NETHER_WART) protected block id/name is not correct!
+[22:56:33] [Server thread/INFO]: [Jobs] Your defined (MELON) protected block id/name is not correct!
+[22:56:33] [Server thread/INFO]: [Jobs] Loaded 69 protected blocks timers!
+[22:56:33] [Server thread/INFO]: [Jobs] Loaded 1111 custom item names!
+[22:56:33] [Server thread/INFO]: [Jobs] Loaded 51 custom entity names!
+[22:56:33] [Server thread/INFO]: [Jobs] Loaded 2 custom MythicMobs names!
+[22:56:33] [Server thread/INFO]: [Jobs] Loaded 30 custom enchant names!
+[22:56:33] [Server thread/INFO]: [Jobs] Loaded 16 custom color names!
+[22:56:34] [Server thread/INFO]: [Jobs] Loaded 1 quests for Дровосек
+[22:56:34] [Server thread/INFO]: [Jobs] Loaded 1 quests for Шахтер
+[22:56:34] [Server thread/WARN]: [Jobs] Job Miner is using REDSTONE_ORE instead of GLOWING_REDSTONE_ORE.
+[22:56:34] [Server thread/WARN]: [Jobs] Automatically changing block to GLOWING_REDSTONE_ORE. Please update your configuration.
+[22:56:34] [Server thread/WARN]: [Jobs] In vanilla minecraft, REDSTONE_ORE changes to GLOWING_REDSTONE_ORE when interacted with.
+[22:56:34] [Server thread/WARN]: [Jobs] In the future, Jobs using REDSTONE_ORE instead of GLOWING_REDSTONE_ORE may fail to work correctly.
+[22:56:34] [Server thread/INFO]: [Jobs] Loaded 1 quests for Строитель
+[22:56:34] [Server thread/INFO]: [Jobs] Loaded 1 quests for Копатель
+[22:56:34] [Server thread/INFO]: [Jobs] Loaded 1 quests for Фермер
+[22:56:34] [Server thread/WARN]: [Jobs] Job Farmer has an invalid Break type property: WHEAT (wheat)! Material must be a block! Use "/jobs blockinfo" on a target block
+[22:56:34] [Server thread/WARN]: [Jobs] Job Farmer has an invalid Break type property: CARROTS (carrots)! Material must be a block! Use "/jobs blockinfo" on a target block
+[22:56:34] [Server thread/WARN]: [Jobs] Job Farmer has an invalid Break type property: SUGAR_CANE (sugar_cane)! Material must be a block! Use "/jobs blockinfo" on a target block
+[22:56:34] [Server thread/WARN]: [Jobs] Job Farmer has an invalid Break type property: NETHER_WART (nether_wart)! Material must be a block! Use "/jobs blockinfo" on a target block
+[22:56:34] [Server thread/WARN]: [Jobs] Job Farmer has an invalid Place type property: WHEAT (wheat)! Material must be a block! Use "/jobs blockinfo" on a target block
+[22:56:34] [Server thread/WARN]: [Jobs] Job Farmer has an invalid Place type property: CARROTS (carrots)! Material must be a block! Use "/jobs blockinfo" on a target block
+[22:56:34] [Server thread/WARN]: [Jobs] Job Farmer has an invalid Place type property: SUGAR_CANE (sugar_cane)! Material must be a block! Use "/jobs blockinfo" on a target block
+[22:56:34] [Server thread/WARN]: [Jobs] Job Farmer has an invalid Breed type property: Turtle!
+[22:56:34] [Server thread/INFO]: [Jobs] Loaded 1 quests for Охотник
+[22:56:34] [Server thread/WARN]: [Jobs] Job Hunter has an invalid Kill type property: PHANTOM!
+[22:56:34] [Server thread/WARN]: [Jobs] Job Hunter has an invalid Kill type property: DROWNED!
+[22:56:34] [Server thread/INFO]: [Jobs] Loaded 1 quests for Исследователь
+[22:56:34] [Server thread/INFO]: [Jobs] Loaded 1 quests for Крафтер
+[22:56:34] [Server thread/INFO]: [Jobs] Loaded 1 quests for Рыбак
+[22:56:34] [Server thread/INFO]: [Jobs] Loaded 1 quests for Оружейник
+[22:56:34] [Server thread/INFO]: [Jobs] Loaded 1 quests for Зельевар
+[22:56:34] [Server thread/INFO]: [Jobs] Loaded 1 quests for Чародей
+[22:56:34] [Server thread/INFO]: [Jobs] Loaded 12 jobs!
+[22:56:34] [Server thread/INFO]: [Jobs] Explorer job manager registered!
+[22:56:34] [Jobs-DatabaseSaveTask/INFO]: [Jobs] Started database save task.
+[22:56:34] [Jobs-BufferedPaymentThread/INFO]: [Jobs] Started buffered payment thread.
+[22:56:34] [Server thread/INFO]: [Jobs] Preloaded 5 players data in 0.01
+[22:56:34] [Server thread/INFO]: [Jobs] WorldGuard detected.
+[22:56:34] [Server thread/INFO]: [Jobs] Loading explorer data
+[22:56:34] [Server thread/INFO]: [Jobs] Loaded explorer data (496)
+[22:56:34] [Server thread/INFO]: [Jobs] Plugin has been enabled successfully.
+[22:56:34] [Server thread/INFO]: [HeadDatabase] Enabling HeadDatabase v4.13.4
+[22:56:35] [Server thread/INFO]: [HeadDatabase] Using "ru_Ru.lang" translated by MenaR
+[22:56:35] [Server thread/INFO]: [HeadDatabase] Economy successfully setup using CURRENCY!
+[22:56:35] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: hdb
+[22:56:35] [Server thread/INFO]: [EnchantGui] Enabling EnchantGui v3.6.4
+[22:56:35] [Server thread/INFO]: [EnchantGui] You do not have the most updated version of EnchantGui! (v3.9.1)
+[22:56:35] [Server thread/INFO]: [EnchantGui] Currently Version: 3.6.4
+[22:56:35] [Server thread/INFO]: [EnchantGui] Latest Version: 3.9.1
+[22:56:35] [Server thread/INFO]: Get the latest version at https://www.spigotmc.org/resources/enchantgui.63088/
+[22:56:35] [Server thread/INFO]: [SnapiLibrary] Enabling SnapiLibrary v2.0.0
+[22:56:36] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.30-SNAPSHOT (build 2881)
+[22:56:36] [Server thread/INFO]: [Citizens] Loading external libraries
+[22:56:36] [DefaultDispatcher-worker-2/INFO]: Success subscribed to channel: events-messenger
+[22:56:39] [Server thread/INFO]: [Citizens] No translation for system language (ru_RU): defaulting to English
+[22:56:39] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: citizensplaceholder
+[22:56:39] [Server thread/INFO]: [Citizens] Loaded economy handling via Vault.
+[22:56:39] [Server thread/INFO]: [SnapiCooperation] Enabling SnapiCooperation v1.0.0
+[22:56:40] [Server thread/INFO]: [SnapiCooperation] [ACF] Enabled Asynchronous Tab Completion Support!
+[22:56:40] [Server thread/INFO]: [Invero] Enabling Invero v1.0.8-pre-1
+[22:56:40] [Server thread/WARN]: [Invero] ink.ptms.adyeshach.core.event.AdyeshachEntityInteractEvent not found, use @Ghost to turn off this warning
+[22:56:41] [Server thread/INFO]: [CrazyAuctions] Enabling CrazyAuctions v1.2.7
+[22:56:41] [Server thread/INFO]: [CrazyAuctions] Loading the config.yml
+[22:56:41] [Server thread/INFO]: [CrazyAuctions] Successfully loaded config.yml
+[22:56:41] [Server thread/INFO]: [CrazyAuctions] Loading the Data.yml
+[22:56:41] [Server thread/INFO]: [CrazyAuctions] Successfully loaded Data.yml
+[22:56:41] [Server thread/INFO]: [CrazyAuctions] Loading the Messages.yml
+[22:56:41] [Server thread/INFO]: [CrazyAuctions] Successfully loaded Messages.yml
+[22:56:41] [Server thread/INFO]: [SnapiProfile] Enabling SnapiProfile v1.0.0
+[22:56:41] [Server thread/INFO]: [SnapiProfile] [ACF] Enabled Asynchronous Tab Completion Support!
+[22:56:41] [Server thread/INFO]: [SnapiSet] Enabling SnapiSet v1.0.0
+[22:56:41] [Server thread/INFO]: [SnapiSet] [ACF] Enabled Asynchronous Tab Completion Support!
+[22:56:41] [Server thread/INFO]: [BetterRTP] Enabling BetterRTP v2.9.3
+[22:56:41] [Server thread/INFO]: [SnapiBalancer] Enabling SnapiBalancer v1.5
+[22:56:41] [Server thread/INFO]: [SnapiBalancer] [ACF] Enabled Asynchronous Tab Completion Support!
+[22:56:41] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: balancer
+[22:56:41] [Server thread/INFO]: [SnapiCoin] Enabling SnapiCoin v1.0.0
+[22:56:41] [Server thread/INFO]: [SnapiCoin] [ACF] Enabled Asynchronous Tab Completion Support!
+[22:56:41] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: coin
+[22:56:41] [Server thread/INFO]: [DecentHolograms] Enabling DecentHolograms v2.8.6
+[22:56:42] [Server thread/INFO]: [SnapiClans] Enabling SnapiClans v3.0.0
+[22:56:44] [Server thread/INFO]: [SnapiClans] [ACF] Enabled Asynchronous Tab Completion Support!
+[22:56:44] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: clan
+[22:56:44] [Server thread/INFO]: [CMILib] Enabling CMILib v1.1.1.0
+[22:56:46] [Server thread/INFO]: Server version: v1_12_R1 - 1.12.2 - paper
+[22:56:46] [Server thread/INFO]: CMI hooked.
+[22:56:46] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: cmil
+[22:56:46] [Server thread/INFO]: PlaceholderAPI hooked.
+[22:56:46] [Server thread/INFO]: Updated (EN) language file. Took 62ms
+[22:56:47] [Server thread/INFO]: Updated (RU) language file. Took 31ms
+[22:56:47] [Server thread/INFO]: [CMI] Enabling CMI v9.1.0.1
+[22:56:47] [Server thread/INFO]: [35m Downloaded from https://directleaks.to [0m
+[22:56:47] [Server thread/INFO]: ┏━━━┓ ┏━┓┏━┓ ┏━━┓
+[22:56:47] [Server thread/INFO]: ┃┏━┓┃ ┃ ┗┛ ┃ ┗┫┣┛
+[22:56:47] [Server thread/INFO]: ┃┃ ┗┛ ┃┏┓┏┓┃  ┃┃ 
+[22:56:47] [Server thread/INFO]: ┃┃ ┏┓ ┃┃┃┃┃┃  ┃┃ 
+[22:56:47] [Server thread/INFO]: ┃┗━┛┃ ┃┃┃┃┃┃ ┏┫┣┓
+[22:56:47] [Server thread/INFO]: ┗━━━┛ ┗┛┗┛┗┛ ┗━━┛
+[22:56:47] [Server thread/INFO]: _______________________________________________________
+[22:56:47] [Server thread/INFO]:   Integrating PaperSpigot async methods
+[22:56:47] [Server thread/INFO]:   Citizens found.
+[22:56:47] [Server thread/INFO]:   28 Enabled and 28 Disabled modules
+[22:56:47] [Server thread/INFO]:   Permission plugin: LuckPerms5.4.117
+[22:56:47] [Server thread/INFO]:   Initialized Cipher256 AES
+[22:56:48] [Server thread/INFO]:   Loaded (59) regular alias into memory. Took 171ms
+[22:56:48] [Server thread/INFO]:   Loaded (1) custom text's into memory. Took 15ms
+[22:56:48] [Server thread/INFO]:   3.21.0 data base type detected
+[22:56:48] [Server thread/INFO]:   Started SqLite data base. Took 340ms
+[22:56:48] [Server thread/INFO]:   Vault was found - Enabling capabilities. Economy: XConomy
+[22:56:49] [Server thread/INFO]:   Loaded (5) warning categories into memory. Took 0ms
+[22:56:49] [Server thread/INFO]:   Loaded (3) warning commands into memory. Took 0ms
+[22:56:49] [Server thread/INFO]:   Loaded (95) custom mob heads into memory. Took 31ms
+[22:56:49] [Server thread/INFO]:   Loaded (0) cooldowns into memory. Took 31ms
+[22:56:49] [Server thread/INFO]:   Loaded (3) warmups into memory. Took 0ms
+[22:56:49] [Server thread/INFO]:   Initializing BungeeCord
+[22:56:49] [Server thread/INFO]:   Loaded (5) player data into memory. Took 0ms
+[22:56:49] [Server thread/INFO]:   Loaded (0) playtime records into memory. Took 0ms
+[22:56:49] [Server thread/INFO]:   Loaded (0) playtime reward records into memory. Took 0ms
+[22:56:49] [Server thread/INFO]:   Loaded (0) custom alias into memory. Took 0ms
+[22:56:49] [Server thread/INFO]:   Registered events. Took 140ms
+[22:56:49] [Server thread/INFO]:   Loaded (0) event action commands into memory. Took 15ms
+[22:56:49] [Server thread/INFO]:   Updated (EN) language file. Took 186ms
+[22:56:49] [Server thread/INFO]:   Updated (RU) language file. Took 249ms
+[22:56:49] [Server thread/INFO]:   Loaded (245) worth values into memory. Took 62ms
+[22:56:50] [Server thread/INFO]:   Loaded (4) warps into memory. Took 15ms
+[22:56:50] [Server thread/INFO]:   Vault permissions was found - Enabling capabilities.
+[22:56:50] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: cmi
+[22:56:50] [Server thread/INFO]:   PlaceholderAPI hooked.
+[22:56:50] [Server thread/INFO]:   PlaceholderAPI was found - Enabling capabilities.
+[22:56:50] [Server thread/INFO]:   Jobs was found - Enabling capabilities.
+[22:56:50] [Server thread/INFO]:   Starting world timer.
+[22:56:50] [Server thread/INFO]:   Initializing world manager.
+[22:56:50] [Server thread/INFO]:   Loaded GeoIP
+[22:56:50] [Server thread/INFO]:   Loaded (0) skin cache entries into memory. Took 0ms
+[22:56:50] [Server thread/INFO]:   Version 9.1.0.1 has been enabled
+[22:56:50] [Server thread/INFO]: ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+[22:56:50] [Server thread/INFO]: Done (40,855s)! For help, type "help" or "?"
+[22:56:50] [Server thread/INFO]: Timings Reset
+[22:56:50] [Craft Scheduler Thread - 9/INFO]: [ServerUtils] Checking for updates...
+[22:56:50] [Craft Scheduler Thread - 7/INFO]: [ItemJoin] Update checking is currently disabled in the config.yml
+[22:56:50] [Craft Scheduler Thread - 7/INFO]: [ItemJoin] If you wish to use the auto update feature, you will need to enable it.
+[22:56:50] [Craft Scheduler Thread - 5/INFO]: [ItemJoin] Hooked into { WorldGuard, HeadDatabase, PlaceholderAPI, ProtocolLib, Citizens, Vault }
+[22:56:50] [Craft Scheduler Thread - 6/INFO]: [ItemJoin] 0/2 Custom item(s) loaded!
+[22:56:50] [Craft Scheduler Thread - 11/INFO]: [TigerReports] Le plugin utilise une base de donnees MySQL.
+[22:56:50] [Craft Scheduler Thread - 16/INFO]: New version of CMILib was detected. Please update it
+[22:56:50] [Craft Scheduler Thread - 10/WARN]: ------------------------------------------------------
+[22:56:50] [Craft Scheduler Thread - 10/WARN]: [TigerReports] Le plugin a ete mis a jour.
+[22:56:50] [Craft Scheduler Thread - 10/WARN]: La nouvelle version 5.3.4 est disponible ici:
+[22:56:50] [Craft Scheduler Thread - 10/WARN]: https://www.spigotmc.org/resources/tigerreports.25773/
+[22:56:50] [Craft Scheduler Thread - 10/WARN]: ------------------------------------------------------
+[22:56:50] [Craft Scheduler Thread - 15/INFO]: 
+A newer version of DecentHolograms is available. Download it from: https://www.spigotmc.org/resources/96927/
+[22:56:50] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.12.2 (340)
+[22:56:50] [Server thread/WARN]: [ViaVersion] This version of Minecraft is extremely outdated and support for it has reached its end of life. You will still be able to run Via on this Minecraft version, but we are unlikely to provide any further fixes or help with problems specific to legacy Minecraft versions. Please consider updating to give your players a better experience and to avoid issues that have long been fixed.
+[22:56:50] [Server thread/WARN]: [ViaVersion] You are running an outdated Java version, please update it to at least Java 17 (your version is 11.0.22).
+[22:56:50] [Server thread/WARN]: [ViaVersion] Starting with Minecraft 1.21, ViaVersion will no longer officially be compatible with this version of Java, only offering unsupported compatibility builds.
+[22:56:50] [Server thread/INFO]: [Jobs] Successfully linked with Vault.
+[22:56:50] [Server thread/INFO]: [I] 已成功载入对 HeadDatabase 插件的支持
+[22:56:50] [Craft Scheduler Thread - 9/INFO]: [ServerUtils] ServerUtils 3.5.4 is available!
+[22:56:50] [Craft Scheduler Thread - 9/INFO]: [ServerUtils] Release info: https://modrinth.com/plugin/serverutils/version/3.5.4
+[22:56:50] [Server thread/INFO]: [com.zaxxer.hikari_4_0_3.HikariDataSource] HikariPool-1 - Starting...
+[22:56:50] [Server thread/INFO]: [com.zaxxer.hikari_4_0_3.HikariDataSource] HikariPool-1 - Start completed.
+[22:56:51] [Server thread/INFO]: [I] 已成功连接 SQLITE 数据库
+[22:56:51] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[22:56:51] [Server thread/INFO]: [Citizens] Loaded 6 NPCs.
+[22:56:51] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: bungee
+[22:56:51] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: localtime
+[22:56:51] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: luckperms
+[22:56:51] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: player
+[22:56:51] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: progress
+[22:56:51] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: server
+[22:56:51] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: vault
+[22:56:51] [Server thread/INFO]: 7 placeholder hooks successfully registered!
+[22:56:51] [Craft Scheduler Thread - 12/INFO]: [HeadDatabase] Succesfully loaded 46004 heads!
+[22:56:52] [Craft Scheduler Thread - 17/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor!
+[22:56:52] [Craft Scheduler Thread - 12/INFO]: [HeadDatabase] Successfully loaded 15 featured tags!
+[22:56:52] [Craft Scheduler Thread - 12/WARN]: [HeadDatabase] You are using an outdated version!
+[22:56:52] [Craft Scheduler Thread - 12/WARN]: [HeadDatabase] Latest version: 4.19.8. You are on version: 4.13.4.
+[22:56:52] [Craft Scheduler Thread - 12/WARN]: [HeadDatabase] Update here: https://www.spigotmc.org/resources/head-database.14280/
+[22:56:52] [Server thread/WARN]: [ViaVersion] There is a newer plugin version available: 5.0.3, you're on: 5.0.1
+[22:56:52] [Craft Scheduler Thread - 11/INFO]: [EnchantGui] Error - Invalid slot number: 55. The number cannot greater than inventory size!
+[22:56:52] [Craft Scheduler Thread - 11/INFO]: [EnchantGui] Error - Invalid slot number: 56. The number cannot greater than inventory size!
+[22:56:52] [Craft Scheduler Thread - 11/INFO]: Чародей | config has been reloaded
+[22:56:52] [Craft Scheduler Thread - 11/INFO]: Чародей | Total loaded enchantments: 26
+[22:56:52] [Server thread/INFO]: [I] 初始化 1 个工作空间... 开始加载菜单
+[22:56:53] [Server thread/INFO]: [I] 已成功载入了 22 个有效菜单... (0.76 secs)
+[22:59:48] [Server thread/INFO]: Stopping server
+[22:59:48] [Server thread/INFO]: [CMI] Disabling CMI v9.1.0.1
+[22:59:48] [Server thread/INFO]: [CMI] Closed db connections
+[22:59:48] [Server thread/INFO]: [CMILib] Disabling CMILib v1.1.1.0
+[22:59:48] [Server thread/INFO]: [SnapiClans] Disabling SnapiClans v3.0.0
+[22:59:48] [Server thread/INFO]: [DecentHolograms] Disabling DecentHolograms v2.8.6
+[22:59:48] [Server thread/INFO]: [SnapiCoin] Disabling SnapiCoin v1.0.0
+[22:59:48] [Server thread/INFO]: [SnapiBalancer] Disabling SnapiBalancer v1.5
+[22:59:48] [Server thread/INFO]: [BetterRTP] Disabling BetterRTP v2.9.3
+[22:59:48] [Server thread/INFO]: [ItemJoin] Disabling ItemJoin v6.0.7-RELEASE-b995
+[22:59:48] [Server thread/INFO]: [SnapiSet] Disabling SnapiSet v1.0.0
+[22:59:48] [Server thread/INFO]: [SnapiProfile] Disabling SnapiProfile v1.0.0
+[22:59:48] [Server thread/INFO]: [CrazyAuctions] Disabling CrazyAuctions v1.2.7
+[22:59:48] [Server thread/INFO]: [Invero] Disabling Invero v1.0.8-pre-1
+[22:59:48] [Server thread/INFO]: [com.zaxxer.hikari_4_0_3.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[22:59:48] [Server thread/INFO]: [com.zaxxer.hikari_4_0_3.HikariDataSource] HikariPool-1 - Shutdown completed.
+[22:59:48] [Server thread/INFO]: [SnapiCooperation] Disabling SnapiCooperation v1.0.0
+[22:59:48] [Server thread/INFO]: [Citizens] Disabling Citizens v2.0.30-SNAPSHOT (build 2881)
+[22:59:48] [Server thread/INFO]: [SnapiLibrary] Disabling SnapiLibrary v2.0.0
+[22:59:49] [Server thread/INFO]: [EnchantGui] Disabling EnchantGui v3.6.4
+[22:59:49] [Server thread/INFO]: [XConomy] Disabling XConomy v2.25.15
+[22:59:49] [XConomyRedisSub/INFO]: [XConomy] Unsubscribe redis channel
+[22:59:49] [Server thread/INFO]: [XConomy] XConomy успешно выключен
+[22:59:49] [Server thread/INFO]: [HeadDatabase] Disabling HeadDatabase v4.13.4
+[22:59:49] [Server thread/INFO]: [Jobs] Disabling Jobs v4.16.3
+[22:59:49] [Server thread/INFO]: [Jobs] Plugin has been disabled successfully.
+[22:59:49] [Jobs-BufferedPaymentThread/INFO]: [Jobs] Buffered payment thread shutdown.
+[22:59:49] [Jobs-DatabaseSaveTask/INFO]: [Jobs] Database save task shutdown!
+[22:59:49] [Server thread/INFO]: [AlonsoLevels] Disabling AlonsoLevels v2.2.3-BETA-PRO
+[22:59:49] [Server thread/INFO]: [AlonsoLevels] [MySQL] Forcing connection close..
+[22:59:49] [Server thread/INFO]: [com.alonsoaliaga.alonsolevels.libraries.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[22:59:49] [Server thread/INFO]: [com.alonsoaliaga.alonsolevels.libraries.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[22:59:49] [Server thread/INFO]:  
+[22:59:49] [Server thread/INFO]: [AlonsoLevels] Plugin has been disabled!
+[22:59:49] [Server thread/INFO]: [AlonsoLevels] Thank you for using my plugin!
+[22:59:49] [Server thread/INFO]:  
+[22:59:49] [Server thread/INFO]: [BetterSocial] Disabling BetterSocial v1.3-BETA
+[22:59:49] [Server thread/INFO]: [BetterSocial] [MySQL] Forcing connection close..
+[22:59:49] [Server thread/INFO]: [com.alonsoaliaga.bettersocial.libraries.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[22:59:49] [Server thread/INFO]: [com.alonsoaliaga.bettersocial.libraries.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[22:59:49] [Server thread/INFO]:  
+[22:59:49] [Server thread/INFO]: [BetterSocial] Plugin has been disabled!
+[22:59:49] [Server thread/INFO]: [BetterSocial] Thank you for using my plugin!
+[22:59:49] [Server thread/INFO]:  
+[22:59:49] [Server thread/INFO]: [Chatty] Disabling Chatty v2.19.14
+[22:59:49] [Server thread/INFO]: [TigerReports] Disabling TigerReports v4.13.1
+[22:59:49] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
+[22:59:49] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion: vault
+[22:59:49] [Server thread/INFO]: [TAB] Disabling TAB v4.0.3
+[22:59:49] [Server thread/INFO]: [TAB] Disabled in 15ms
+[22:59:49] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.0.0-SNAPSHOT-b587
+[22:59:49] [Server thread/INFO]: [LastLoginAPI] Disabling LastLoginAPI v1.7.4
+[22:59:49] [Server thread/INFO]: [LastLoginAPI] Disabling LastLoginAPI
+[22:59:49] [Server thread/WARN]: [Server thread] INFO com.alessiodp.lastloginapi.libs.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[22:59:49] [Server thread/WARN]: [Server thread] INFO com.alessiodp.lastloginapi.libs.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[22:59:49] [Server thread/INFO]: [LastLoginAPI] LastLoginAPI disabled
+[22:59:49] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.117
+[22:59:49] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion: luckperms
+[22:59:49] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[22:59:49] [Server thread/INFO]: [LuckPerms] Closing messaging service...
+[22:59:49] [Server thread/INFO]: [LuckPerms] Closing storage...
+[22:59:49] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Shutdown initiated...
+[22:59:49] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Shutdown completed.
+[22:59:49] [Server thread/INFO]: [LuckPerms] Goodbye!
+[22:59:49] [Server thread/INFO]: [ViaRewind] Disabling ViaRewind v4.0.0
+[22:59:49] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.0.1
+[22:59:49] [Server thread/INFO]: [NBTAPI] Disabling NBTAPI v2.8.0
+[22:59:49] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.0.1
+[22:59:49] [Server thread/INFO]: [ViaVersion] ViaVersion is disabling, if this is a reload and you experience issues consider rebooting.
+[22:59:49] [Server thread/INFO]: [CommandForward] Disabling CommandForward v0.5.0
+[22:59:49] [Server thread/INFO]: [WGExtender] Disabling WGExtender v1.0
+[22:59:49] [Server thread/INFO]: [WGRegionEvents] Disabling WGRegionEvents v1.1
+[22:59:49] [Server thread/INFO]: [ServerUtils] Disabling ServerUtils v3.5.3
+[22:59:49] [Server thread/INFO]: [OldCombatMechanics] Disabling OldCombatMechanics v1.11.0
+[22:59:49] [Server thread/INFO]: [OldCombatMechanics] OldCombatMechanics v1.11.0 has been disabled
+[22:59:49] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v6.2.2-SNAPSHOT
+[22:59:49] [Server thread/INFO]: [WorldGuard] Завершение работы исполнителя и ожидание каких-либо незавершенных задач...
+[22:59:49] [Server thread/INFO]: [AntiRelog] Disabling AntiRelog v2.1
+[22:59:49] [Server thread/INFO]: [ConditionalEvents] Disabling ConditionalEvents v3.6.3
+[22:59:49] [Server thread/INFO]: [ConditionalEvents] Has been disabled! Version: 3.6.3
+[22:59:49] [Server thread/INFO]: [spark] Disabling spark v1.10.93
+[22:59:49] [Server thread/INFO]: [DisableJoinMessage] Disabling DisableJoinMessage v1.0
+[22:59:49] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.10.10
+[22:59:49] [Server thread/INFO]: [MainChairs] Disabling MainChairs v0.9.4
+[22:59:49] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v6.1.9-SNAPSHOT
+[22:59:49] [Server thread/INFO]: Saving players
+[22:59:49] [Server thread/INFO]: Saving worlds
+[22:59:49] [Server thread/INFO]: Saving chunks for level 'world'/overworld
+[22:59:49] [Server thread/INFO]: Saving chunks for level 'world_nether'/the_nether
+[22:59:49] [Server thread/INFO]: Saving chunks for level 'world_the_end'/the_end

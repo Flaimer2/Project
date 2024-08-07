@@ -1,0 +1,14 @@
+location: lobby:-271,5:31,5:-169,5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&bЕжедневные награды'
+    height: 0.3
+  - content: '&e&lПРАВЫЙ КЛИК'
+    height: 0.3
+  actions: {}

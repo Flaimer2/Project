@@ -286,7 +286,7 @@ Gadgets:
         Cooldown: 30
         Mystery Dust: 28000
         Rarity: Rare
-        Enabled: true
+        Enabled: false
         CanBeFound: true
         Purchasable: true
         Lore:
@@ -300,7 +300,7 @@ Gadgets:
         Cooldown: 45
         Mystery Dust: 58000
         Rarity: Epic
-        Enabled: true
+        Enabled: false
         CanBeFound: true
         Purchasable: true
         Lore:
@@ -488,16 +488,16 @@ Gadgets:
       Teleport Stick:
         Name: '&9Телепортационная палка'
         Cooldown: 5
-        Mystery Dust: 18000
-        Rarity: Rare
-        Enabled: false
+        Mystery Dust: 34000
+        Rarity: Epic
+        Enabled: true
         CanBeFound: true
         Purchasable: true
         Lore:
           Locked: &id020
-          - '&fПозволяет телепортироваться в любом месте,'
-          - '&fкликая правой кнопкой мыши'
-          - '&fи указывая этой магической палкой!'
+          - '&fУ вас будет магическая сила!'
+          - '&fВы сможете телепортироваться'
+          - '&fтуда, куда вы смотрите'
           Unlocked: *id020
         Material: STICK
         Range: 30
@@ -911,12 +911,12 @@ Gadgets:
         Purchasable: true
         Lore:
           Locked: &id041
-          - '&fИспользуя эту технику, пользователи'
-          - '&fзаменяют свое тело блоком дерева.'
+          - '&fИспользуя эту технику, вы'
+          - '&fпревращаетесь в бревно -_-'
           Unlocked: *id041
         Material: OAK_LOG
       Cryotube:
-        Name: '&9Криотруба'
+        Name: '&9Криокамера'
         Cooldown: 45
         Mystery Dust: 25000
         Rarity: Rare
@@ -935,7 +935,7 @@ Gadgets:
         Cooldown: 40
         Mystery Dust: 30000
         Rarity: Rare
-        Enabled: true
+        Enabled: false
         CanBeFound: true
         Purchasable: true
         Lore:
@@ -995,7 +995,7 @@ Gadgets:
         Cooldown: 30
         Mystery Dust: 15000
         Rarity: Common
-        Enabled: true
+        Enabled: false
         CanBeFound: true
         Purchasable: true
         Lore:

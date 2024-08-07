@@ -1,0 +1,243 @@
+wineffects:
+  fireworks:
+    id: 0
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: FIREWORK
+      meta:
+        ==: ItemMeta
+        meta-type: FIREWORK
+        display-name: §aФейерверки
+        lore:
+        - §f
+        - '§fРедкость: §a[Обычная]'
+        - '§fЦена: §a25000$'
+        - §f
+        - <status>
+    type: fireworks
+    name: Фейерверки
+    price: 25000
+    isBuy: true
+    slot: 10
+    page: 1
+    permission: ultraskywars.wineffects.fireworks
+    autoGivePermission: ultraskywars.wineffect.autogive.Fireworks
+    needPermToBuy: false
+  vulcanwool:
+    id: 1
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOL
+      damage: 14
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aВулкан из шерсти
+        lore:
+        - §f
+        - '§fРедкость: §a[Обычная]'
+        - '§fЦена: §a25000$'
+        - §f
+        - <status>
+    type: vulcanwool
+    name: Вулкан из шерсти
+    price: 25000
+    isBuy: true
+    slot: 11
+    page: 1
+    permission: ultraskywars.wineffects.vulcanwool
+    autoGivePermission: ultraskywars.wineffect.autogive.Vulcan Wool
+    needPermToBuy: false
+  vulcanfire:
+    id: 2
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: FIREWORK_CHARGE
+      meta:
+        ==: ItemMeta
+        meta-type: FIREWORK_EFFECT
+        display-name: §aОгенный вулкан
+        lore:
+        - §f
+        - '§fРедкость: §a[Обычная]'
+        - '§fЦена: §a25000$'
+        - §f
+        - <status>
+    type: vulcanfire
+    name: Огенный вулкан
+    price: 25000
+    isBuy: true
+    slot: 12
+    page: 1
+    permission: ultraskywars.wineffects.vulcanfire
+    autoGivePermission: ultraskywars.wineffect.autogive.Vulcan Fire
+    needPermToBuy: false
+  icewalker:
+    id: 3
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: ICE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aЛедяной ходок
+        lore:
+        - §f
+        - '§fРедкость: §9[Редкий]'
+        - '§fЦена: §a45000$'
+        - §f
+        - <status>
+    type: icewalker
+    name: Ледяной ходок
+    price: 45000
+    isBuy: true
+    slot: 13
+    page: 1
+    permission: ultraskywars.wineffects.icewalker
+    autoGivePermission: ultraskywars.wineffect.autogive.Ice Walker
+    needPermToBuy: false
+  notes:
+    id: 4
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: GREEN_RECORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aНоты
+        lore:
+        - §f
+        - '§fРедкость: §9[Редкий]'
+        - '§fЦена: §a45000$'
+        - §f
+        - <status>
+    type: notes
+    name: Ноты
+    price: 45000
+    isBuy: true
+    slot: 14
+    page: 1
+    permission: ultraskywars.wineffects.notes
+    autoGivePermission: ultraskywars.wineffect.autogive.Notes
+    needPermToBuy: false
+  chickens:
+    id: 5
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: EGG
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aВулкан из цыплят
+        lore:
+        - §f
+        - '§fРедкость: §9[Редкий]'
+        - '§fЦена: §a45000$'
+        - §f
+        - <status>
+    type: chickens
+    name: Вулкан из цыплят
+    price: 45000
+    isBuy: true
+    slot: 15
+    page: 1
+    permission: ultraskywars.wineffects.chickens
+    autoGivePermission: ultraskywars.wineffect.autogive.chickens
+    needPermToBuy: false
+  guardian:
+    id: 6
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: PRISMARINE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aСтражи
+        lore:
+        - §f
+        - '§fРедкость: §5[Эпический]'
+        - '§fЦена: §a80000$'
+        - §f
+        - <status>
+    type: guardian
+    name: Стражи
+    price: 80000
+    isBuy: true
+    slot: 16
+    page: 1
+    permission: ultraskywars.wineffects.guardian
+    autoGivePermission: ultraskywars.wineffect.autogive.guardian
+    needPermToBuy: false
+  dragon:
+    id: 7
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: DRAGON_EGG
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aDragon Rider
+        lore:
+        - '§eDescription:'
+        - §7Dragon spawn and you ride.
+        - §7
+        - <price>
+        - §7
+        - <status>
+    type: dragon
+    name: dragon
+    price: 2500
+    isBuy: true
+    slot: 19
+    page: 1
+    permission: ultraskywars.wineffects.dragon
+    autoGivePermission: ultraskywars.wineffect.autogive.dragon
+    needPermToBuy: false
+  wither:
+    id: 7
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: §aВсадник визера
+        lore:
+        - §f
+        - '§fРедкость: §6[Легендарный]'
+        - '§fЦена: §a95000$'
+        - §f
+        - <status>
+    type: wither
+    name: Всадник визера
+    price: 95000
+    isBuy: true
+    slot: 19
+    page: 1
+    permission: ultraskywars.wineffects.wither
+    autoGivePermission: ultraskywars.wineffect.autogive.wither
+    needPermToBuy: false
+  daredevil:
+    id: 8
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: SADDLE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aВсадник лошади
+        lore:
+        - §f
+        - '§fРедкость: §6[Легендарный]'
+        - '§fЦена: §a95000$'
+        - §f
+        - <status>
+    type: daredevil
+    name: Всадник лошади
+    price: 95000
+    isBuy: true
+    slot: 20
+    page: 1
+    permission: ultraskywars.wineffects.daredevil
+    autoGivePermission: ultraskywars.wineffect.autogive.daredevil
+    needPermToBuy: false

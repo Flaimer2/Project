@@ -1,0 +1,65 @@
+set-by: Set by &f%creator%&7.
+set-by-yourself: You set this bounty.
+reward-is: The reward is &f$%reward%&7.
+kill-him-claim-bounty: Kill him to claim the bounty!
+dont-let-them-kill-u: Don't let them kill you.
+thug-player: This player is a thug!
+right-click-remove-bounty: Right click to remove this bounty.
+click-buy-compass: Click to buy the compass for $%price%.
+click-target: Click to target him.
+click-untarget: Click to untarget him.
+click-up-bounty: <Shift Click> to increase the bounty.
+current-hunters: There are &f%hunters% &7players tracking him.
+no-title: '&cNo Title'
+no-player: '&c- No Player -'
+gui-name: '&nBounties (%page%/%max-page%)'
+leaderboard-gui-name: '&nHunter Leaderboard'
+chat-bar: '&m-----------------------------------------------------'
+bounty-created: You succesfully set a bounty on &6%player%&e.
+bounty-explain: The first to kill this player will receive &6$%reward%&e.
+new-bounty-on-you: '&6%creator% &ejust set a &6$%reward%&e bounty on you!'
+new-bounty-on-you-illegal: You killed a man illegally! A $%reward% bounty was set
+  on you!
+new-bounty-on-you-undefined: Someone just set a $%reward% bounty on you!
+new-bounty-on-player: '&6%creator% &eset a bounty on &6%target%&e! Kill him to get
+  &6$%reward%&e!'
+new-bounty-on-player-illegal: '&6%target%&e killed a player illegally: a bounty was
+  set on him! Kill him to get &6$%reward%&e!'
+new-bounty-on-player-undefined: Someone set a bounty on &6%target%&e! Kill him to
+  get &6$%reward%&e!
+bounty-change: '&6%player%&e''s bounty is now &6$%reward%&e.'
+bounty-claimed: '&6%killer% &eclaimed &6%target%&e''s bounty: &6$%reward%&e!'
+bounty-claimed-by-you: 'You successfully claimed &6%target%&e''s bounty: &6$%reward%&e!'
+error-player: Couldn't find the player called %arg%.
+not-valid-number: '%arg% is not a valid number.'
+new-hunter-alert: '%hunter% now targets you.'
+empty-inv-first: Please empty your inventory first.
+not-enough-perms: You don't have enough permissions.
+command-usage: 'Usage: %command%'
+bounty-imun: You can't set a bounty on this player.
+track-imun: You can't track this player.
+target-cooldown: Please wait another %remain% second%s% to target a player.
+cant-set-bounty-on-yourself: You can't set a bounty on yourself!
+bounty-expired: The bounty on &6%target% &ehas expired.
+reward-must-be-higher: Reward must be higher than $%min%!
+reward-must-be-lower: Reward must be lower than $%max%!
+not-enough-money: You don't have enough money.
+bounty-set-restriction: You must wait %left% more second%s% before creating a bounty.
+target-set: Target set.
+target-removed: Target removed.
+bought-compass: You Succesfully bought a &6tracking compass&e.
+tax-explain: '&6%percent%&e% of the reward (&6$%price%&e) were taken as tax.'
+player-must-be-connected: The player must be connected in order to be tracked.
+level-up: '&lWell done!&e You''re level &6%level% &enow!'
+level-up-2: Claim &6%bounties% &emore bounties to level up again!
+level-up-rewards: Put your cursor over this message to see your rewards!
+level-up-reward: '- &f%reward%'
+click-select: Click to select.
+successfully-selected: You successfully selected &6%item%&e.
+unlocked-titles: 'Unlocked titles:'
+unlocked-quotes: 'Unlocked quotes:'
+tracking-compass-reset: Compass reset.
+console: console
+compass-in-another-world: In another world
+compass-blocks: '%blocks% blocks'
+compass-format: '&7&l[ &6&l%format% &7&l]'

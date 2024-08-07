@@ -17,7 +17,7 @@ Config:
 Messages:
   prefix: '&4[&bConditionalEvents&4] '
   commandReload: '&aConfig Reloaded.'
-  commandNoPermissions: '&cYou don''t have permissions to use this command.'
+  commandNoPermissions: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
   commandResetError: '&cUse &7/ce reset <player> <event>/all'
   eventDoesNotExists: '&cThat event doesn''t exists on the config.'
   eventDataReset: '&aData reset for player &e%player% &aon event &e%event%&a!'

@@ -1,0 +1,20 @@
+location: lobby:-245,5:33,5:-177,5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&6&lMiniGames'
+    height: 0.3
+  - content: '&7&l⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀'
+    height: 0.3
+  - content: '&fОнлайн: &a%balancer_count:games%'
+    height: 0.3
+  - content: '&fПопулярность: %progress_bar_{balancer_count:games}_c:&a■_p:&7■_r:&7■_l:10_m:{balancer_count:all}_fullbar:&a■■■■■■■■■■%'
+    height: 0.3
+  - content: '&aНажмите, чтобы войти'
+    height: 0.3
+  actions: {}

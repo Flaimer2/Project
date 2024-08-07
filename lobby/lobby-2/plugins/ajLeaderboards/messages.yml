@@ -26,7 +26,7 @@ time:
     h: 'ч '
     m: 'м '
     s: с
-noperm: You don't have permission to do this!
+noperm: У вас нет разрешения, чтобы сделать это!
 commands:
     reload:
         success: '&aConfigs reloaded!'

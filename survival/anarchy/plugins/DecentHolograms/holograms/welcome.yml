@@ -1,0 +1,30 @@
+location: lobby:27,500:97,500:0,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: "&c&LАНАРХИЯ"
+    height: 0.6
+  - content: "&eДобро пожаловать на Анархию, &6%player_name%&e!"
+    height: 0.3
+  - content: "&fДля телепортации в обычный мир, напишите – &a/rtp"
+    height: 0.6
+  - content: "&fЧто здесь есть:"
+    height: 0.3
+  - content: "&f– &eПриваты с помощью особых блоков"
+    height: 0.3
+  - content: "&f– &eвозможность улучшить свой приват"
+    height: 0.3
+  - content: "&f– &eмистический магазин с особыми предметами"
+    height: 0.3
+  - content: "&f– &eминимальное количество ограничений и правил"
+    height: 0.3
+  - content: "&f– &eи многое другое..."
+    height: 0.6
+  - content: "&fКупить донат можно на нашем сайте – &bmcsnapix.ru"
+    height: 0.3
+  actions: {}

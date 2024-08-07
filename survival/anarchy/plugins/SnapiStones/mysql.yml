@@ -1,0 +1,4 @@
+database: 'server_anarchy'
+host: 'localhost:3306'
+password: 'root'
+username: 'root'

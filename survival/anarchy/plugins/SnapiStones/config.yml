@@ -1,0 +1,13 @@
+disableRegion:
+  - 'lobby'
+enableWorld:
+  - 'world'
+  - 'world_nether'
+menuOpenCommand: 'invero menu open ProtectedBlock %player_name% region=%region_id%'
+regionCount:
+  snapix: 8
+  default: 2
+  elite: 4
+  premium: 3
+  legend: 6
+

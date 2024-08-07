@@ -1,0 +1,30 @@
+# 
+#                                                                                                   #
+#                                 Студия: https://vk.com/mcdev.store                                #
+#                              Форум Майнкрафт: https://forum-minecraft.ru                          #
+#                              Магазин сборок и плагинов: https://mcdev.su                          #
+#                                                                                                   #
+#                                                                                                   #
+#                           Связь с разработчиком: https://t.me/mcdevs_bot                          #
+#                                                                                                   #
+#                            Размещение своего сервера: https://mcrating.org                        #
+#                                                                                                   #
+#                                                                                                   #
+#                                                                                                   #
+#                                                                                                   #
+#                       Если ресурс скачен не с forum-minecraft.ru или mcdev.su                     #
+#                   то дальнейшее использование может быть не безопасным, сообщите                  #
+#                               об этом автору https://t.me/mcdevs_bot                              #
+#                                                                                                   #
+#                                                                                                   #
+#                                                                                                   #
+#                            Удаление данной надписи не избавит вас от                              #
+#                             ответственности, если вы сольете ресурс                               #
+#                                                                                                   #
+#                                                                                                   #
+#                                                                                                   #
+settings:
+  language:
+    defaultlanguage: en_lang.yml
+  bungee-freeze-fix: false
+configversion: '19.3'

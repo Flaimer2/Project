@@ -1,0 +1,99 @@
+menu:
+  title: '&0Блоки привата'
+  
+layout: |-
+  #########
+  #       #
+  #       #
+  #       #
+  #########
+  ##M#B####
+
+items:
+  P:
+    material: arrow
+    name: '&aПредыдущая страница'
+    action: |-
+      page previous
+      menu title update
+      icons refresh
+    sub:
+      - rule: 'page isFirst'
+        inherit: false
+        material: air
+  N:
+    material: arrow
+    name: '&aСледующая страница'
+    action: |-
+      page next
+      menu title update
+      icons refresh
+    sub:
+      - rule: 'page isLast'
+        inherit: false
+        material: air
+  # Воздух
+  '#':
+    material: air
+  M:
+    material: GOLD_INGOT
+    update: 60
+    name: '&fВаш баланс'
+    lore: '&a%vault_eco_balance_fixed%₵'
+  B:
+    material: arrow
+    name: '&aВернуться в главное меню'
+    action: menu switch MythicalTrader
+
+generator:
+  output:
+    name: '{{ element Name }}'
+    material: '{{ element Material }}'
+    flag: HIDE_ATTRIBUTES
+    lore: |-
+      {{if check element Description == null then " " else element Description}}
+      &fПокупка: &a{{ type int math mul [ element Price math sub [ 1 papi "%mythicaltrader_current_discount%" ] ] }}₵ &7{{if check papi "%mythicaltrader_current_level%" == 1 then " " else inline "&m({{ element Price }}₵)" }}
+
+      &aНажмите, чтобы купить!
+    enhancedLore: true
+    action: |-
+      ctx set 'fromMenu' to 'Trader-Blocks'
+      ctx set 'itemName' to element Name
+      ctx set 'itemMaterial' to element Material
+      ctx set 'giveCommand' to element GiveCommand
+      ctx set 'price' to element Price
+      ctx set 'amount' to 1
+      ctx set 'minAmount' to 1
+      ctx set 'maxAmount' to element MaxAmount
+      menu switch Shop-Purchase
+  elements:
+    - Material: 'iron_block'
+      Name: '&7Малый приват'
+      Description: "&fЭтот приват идиально подходит\\n&fдля новичков и небольших баз\\n\\n&fРазмер: &a17x17x17\\n"
+      GiveCommand: 'minecraft:give %player_name% {{&itemMaterial}} {{&amount}} 0 {display:{Name:"§aБлок привата",Lore:["§a§fМаксимум владельцев: §a2","§a§fМаксимум участников: §a5"]},maxMember:"1",maxOwner:"1"}'
+      Price: 4
+      MaxAmount: 1
+    - Material: 'diamond_block'
+      Name: '&bСредний приват'
+      Description: "&fСредний приват подходит для\\n&fуже обосновавшихся игроков\\n\\n&fРазмер: &a35x35x35\\n"
+      GiveCommand: 'minecraft:give %player_name% {{&itemMaterial}} {{&amount}} 0 {display:{Name:"§aБлок привата",Lore:["§a§fМаксимум владельцев: §a2","§a§fМаксимум участников: §a5"]},maxMember:"1",maxOwner:"1"}'
+      Price: 7
+      MaxAmount: 1
+    - Material: 'emerald_ore'
+      Name: '&2Большой приват'
+      Description: "&fЭтот приват имеет большие границы.\\n&fС ним вы легко обустроитесь\\n\\n&fРазмер: &a45x45x45\\n"
+      GiveCommand: 'minecraft:give %player_name% {{&itemMaterial}} {{&amount}} 0 {display:{Name:"§aБлок привата",Lore:["§a§fМаксимум владельцев: §a2","§a§fМаксимум участников: §a5"]},maxMember:"1",maxOwner:"1"}'
+      Price: 19
+      MaxAmount: 1
+    - Material: 'red_mushroom_block'
+      Name: '&cОгромный приват'
+      Description: "&fОгромный приват – настоящая находка!\\n&fОн защищает большую территорию\\n\\n&fРазмер: &a67x67x67\\n"
+      GiveCommand: 'minecraft:give %player_name% {{&itemMaterial}} {{&amount}} 0 {display:{Name:"§aБлок привата",Lore:["§a§fМаксимум владельцев: §a2","§a§fМаксимум участников: §a5"]},maxMember:"1",maxOwner:"1"}'
+      Price: 49
+      MaxAmount: 1
+    - Material: 'brown_mushroom_block'
+      Name: '&dМифический приват'
+      Description: "&fМифический приват имеет особенности:\\n&7 – &fИмеет &bвсе &fулучшения и эффекты\\n&7 – &fГолограмму видно только в &bпривате\\n\\n&fРазмер: &a45x45x45\\n"
+      GiveCommand: 'minecraft:give %player_name% {{&itemMaterial}} {{&amount}} 0 {display:{Name:"§aБлок привата",Lore:["§a§fМаксимум владельцев: §a6","§a§fМаксимум участников: §a14","§fЭффекты в регионе:","§7 – §aПрыгучесть","§7 – §aСкорость","§7 – §aОгнестойкость","§7 – §aРегенерация","§7 – §aСпешка"]},maxMember:"5",effect:"Jump;Speed;FireResistance;Regeneration;Haste",maxOwner:"5"}'
+      Price: 74
+      MaxAmount: 1

@@ -1,0 +1,19 @@
+items:
+  compass:
+    noTarget: '&cПоблизости нет игроков! Попробуйте в другом месте.'
+    targeted: '&fКомпас направлен на игрока &a<player>&f. Следуйте компасу.'
+    countdown: '&fВы должны подождать &a<time>&f секунд, чтобы использовать компас
+      снова.'
+    range: 100
+    time: 3
+  instantTNT:
+    fuse_ticks: 40
+  TNTLaunch:
+    noFall: 5
+    multiply: 2.5
+  soup:
+    maxHealth: '&fУ вас и так максимум &cHP&f.'
+    hearts: 2.5
+  endBuff:
+    countdown: '&fВы должны подождать &a<time>&f секунд, чтобы использовать это снова.'
+    time: 3

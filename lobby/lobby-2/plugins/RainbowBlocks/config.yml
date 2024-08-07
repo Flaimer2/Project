@@ -26,7 +26,7 @@ Messages:
    Enable: "&aYou Have Toggled On Rainbow Blocks!" # Enable Message for /rainbow
    Disable: "&cYou Have Toggled Off Rainbow Blocks" # Disables Message for /rainbow
    Reload: "&aThe Configuration has been successfully reloaded." # Reload Message for when you reload the plugin
-   NoPerm: "&c&lERROR &f- &cYou do not have permissions to use this :("
+   NoPerm: "&fУ вас &cнет &fразрешения, чтобы сделать это!"
 
 #
 # <!> Settings For The Changing Speed
@@ -67,14 +67,14 @@ Help:
   - " "
   - "&4\u25cf &3&lCommands &4\u25cf"
   - " "
-  - "&4&l� &6/rainbow - &aToggles Rainbow."
-  - "&4&l� &6/rainbow reload -  &aReloads Configurations.."
-  - "&4&l� &6/rainbow help - &aSends you this help msg."
-  - "&4&l� &6/rainbow ver/version - &aSends you the current version and config version."
+  - "&4&l� &6/rainbow - &aToggles Rainbow."
+  - "&4&l� &6/rainbow reload -  &aReloads Configurations.."
+  - "&4&l� &6/rainbow help - &aSends you this help msg."
+  - "&4&l� &6/rainbow ver/version - &aSends you the current version and config version."
   - " "
   - "&4\u25cf &3&lPermissions &4\u25cf"
   - " "
-  - "&4&l� &arainbowblocks.use - &aAllows you to use the /rainbow commands."
-  - "&4&l� &arainbowblocks.update - &aAllows you to see the updates that come."
+  - "&4&l� &arainbowblocks.use - &aAllows you to use the /rainbow commands."
+  - "&4&l� &arainbowblocks.update - &aAllows you to see the updates that come."
   - "&6"
   - "&3Developed by &bHusly"

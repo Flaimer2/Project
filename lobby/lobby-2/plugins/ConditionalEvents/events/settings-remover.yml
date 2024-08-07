@@ -1,0 +1,30 @@
+Events:
+  FlyRemove:
+    type: repetitive
+    repetitive_time: 100
+    conditions:
+    - '%player_has_permission_playeroptions.fly% equals no'
+    - '%deluxeplayeroptions_fly% equals §aOn'
+    actions:
+      default:
+      - 'player_command_as_op: fly'
+  JumpRemove:
+    type: repetitive
+    repetitive_time: 100
+    conditions:
+    - '%player_has_permission_playeroptions.jump% equals no'
+    - '%deluxeplayeroptions_jump% equals §aOn'
+    actions:
+      default:
+      - 'player_command_as_op: jump'
+      - 'console_command: lp user %player% meta unset jumptime'
+  SpeedRemove:
+    type: repetitive
+    repetitive_time: 100
+    conditions:
+    - '%player_has_permission_playeroptions.speed% equals no'
+    - '%deluxeplayeroptions_speed% equals §aOn'
+    actions:
+      default:
+      - 'player_command_as_op: speed'
+      - 'console_command: lp user %player% meta unset speedtime'

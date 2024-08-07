@@ -6,7 +6,7 @@ MESSAGES:
   already_in_hub: "&fВы &aуже &fв лобби!"
   connecting_to_hub: "&aПодключение &fк лобби..."
   disabled_command: "%prefix% &cSorry, this command is disabled."
-  missing_permission: "%prefix% &7I'm sorry, you're lacking permission &c%permission%"
+  missing_permission: "%prefix% &fУ вас &cнет &fразрешения, чтобы сделать это!"
   no_server: "&cНет &fлобби, доступного в качестве запасного варианта."
   empty_server: "%prefix% &fПожалуйста, укажите сервер"
   server_is_added: "%prefix% &b%server% &7is already into Fallback Server's list."

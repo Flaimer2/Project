@@ -64,7 +64,7 @@ expansions:
     - ',;.'
   checkitem:
     give_enabled: false
-    remove_enabled: false
+    remove_enabled: true
   math:
     Precision: 0
     Rounding: half_up

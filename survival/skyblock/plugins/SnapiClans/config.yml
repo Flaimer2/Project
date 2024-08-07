@@ -56,7 +56,7 @@ roles:
 
 
 max-members: 10
-chat-format: '&f[&eКлан&f] %vault_prefix%%player_name%%tab_placeholder_condition:suffix% > %message%'
+chat-format: '&f[&eКлан&f] %vault_prefix%%player_name%%vault_suffix% > %message%'
 invite-reply-seconds: 60
 economy:
   tag: 1000

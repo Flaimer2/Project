@@ -1,0 +1,14 @@
+location: lobby:21,500:97,000:28,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: "§bСредний приват"
+    height: 0.4
+  - content: "&fРазмер: &a35x35x35"
+    height: 0.3
+  actions: {}

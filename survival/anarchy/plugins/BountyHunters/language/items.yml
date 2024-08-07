@@ -1,0 +1,62 @@
+NEXT_PAGE:
+  name: Next
+  lore: []
+PREVIOUS_PAGE:
+  name: Previous
+  lore: []
+PLAYER_HEAD:
+  name: '%name%'
+  lore: []
+GUI_PLAYER_HEAD:
+  name: '%name%'
+  lore:
+  - '&8&m--------------------------------'
+  - '%bounty-creator%'
+  - '%bounty-reward%'
+  - '%bounty-hunters%'
+  - ''
+  - '%bounty-instruction%'
+  - '%compass-instruction%'
+  - '&8&m--------------------------------'
+LB_PLAYER_DATA:
+  name: '[%rank%] %name%'
+  lore:
+  - '&8&m-----------------------------'
+  - 'Claimed Bounties: &f%bounties%'
+  - 'Head Collection: &f%successful-bounties%'
+  - 'Current Title: &f%title%'
+  - 'Level: &f%level%'
+  - '&8&m-----------------------------'
+PROFILE:
+  name: '[%level%] %name%'
+  lore:
+  - '&8&m--------------------------------'
+  - 'Claimed Bounties: &f%claimed-bounties%'
+  - 'Head Collection: &f%successful-bounties%'
+  - 'Level: &f%level%'
+  - 'Level Progress: %lvl-progress%'
+  - ''
+  - 'Current Title: &f%current-title%'
+  - ''
+  - Type /bounties titles to manage your title.
+  - Type /bounties quotes to manage your quote.
+  - '&8&m--------------------------------'
+SET_BOUNTY:
+  name: How to create a bounty?
+  lore:
+  - Use /bounty <player> <reward>
+  - to create a bounty on a player.
+  - ''
+  - '&aHow to increase a bounty?'
+  - Use /bounty <player> <amount>
+  - to increase a bounty.
+  - ''
+  - '&aHow to remove a bounty?'
+  - You can remove a bounty as the
+  - bounty creator by right clicking
+  - it in this menu.
+BOUNTY_COMPASS:
+  name: Bounty Compass
+  lore:
+  - Allows you to see at which
+  - distance your target is.

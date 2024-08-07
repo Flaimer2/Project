@@ -4,7 +4,7 @@
 
 
 
-last-created-npc-id: 77
+last-created-npc-id: 78
 npc:
   '43':
     metadata:
@@ -78,7 +78,7 @@ npc:
             globalcooldown: -1
             n: -1
             delay: -1
-    traitnames: scoreboardtrait,lookclose,hologramtrait,equipment,commandtrait,location,skintrait,owner,mounttrait,spawned,type,inventory,gravity
+    traitnames: mounttrait,gravity,scoreboardtrait,owner,skintrait,hologramtrait,inventory,spawned,type,lookclose,location,equipment,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -154,7 +154,7 @@ npc:
         lines:
           '0': '&aНажмите, чтобы открыть меню'
           '1': '&e&lУлучшение острова'
-    traitnames: scoreboardtrait,lookclose,hologramtrait,equipment,commandtrait,location,skintrait,owner,mounttrait,spawned,rotationtrait,type,inventory,gravity
+    traitnames: mounttrait,gravity,scoreboardtrait,owner,skintrait,hologramtrait,rotationtrait,inventory,spawned,type,lookclose,location,equipment,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -213,7 +213,7 @@ npc:
         lines:
           '0': '&aНажмите, чтобы открыть меню'
           '1': '&b&lЗадания'
-    traitnames: owner,scoreboardtrait,mounttrait,hologramtrait,spawned,equipment,commandtrait,location,type,inventory,skintrait,gravity
+    traitnames: mounttrait,spawned,gravity,inventory,type,scoreboardtrait,owner,location,skintrait,equipment,hologramtrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -271,7 +271,7 @@ npc:
             globalcooldown: -1
             n: -1
             delay: -1
-    traitnames: owner,scoreboardtrait,mounttrait,hologramtrait,equipment,spawned,commandtrait,location,type,inventory,skintrait,gravity
+    traitnames: mounttrait,inventory,gravity,spawned,type,scoreboardtrait,owner,location,skintrait,hologramtrait,equipment,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -325,7 +325,7 @@ npc:
             globalcooldown: -1
             n: -1
             delay: -1
-    traitnames: owner,scoreboardtrait,mounttrait,hologramtrait,equipment,spawned,commandtrait,location,type,inventory,skintrait,gravity
+    traitnames: mounttrait,gravity,inventory,spawned,type,scoreboardtrait,owner,location,skintrait,equipment,hologramtrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -380,7 +380,7 @@ npc:
             globalcooldown: 0
             n: -1
             delay: 0
-    traitnames: owner,scoreboardtrait,mounttrait,hologramtrait,spawned,equipment,commandtrait,location,type,inventory,skintrait,gravity
+    traitnames: mounttrait,spawned,inventory,gravity,type,scoreboardtrait,owner,location,skintrait,hologramtrait,equipment,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -429,7 +429,7 @@ npc:
             globalcooldown: -1
             n: -1
             delay: -1
-    traitnames: owner,scoreboardtrait,mounttrait,hologramtrait,spawned,commandtrait,age,location,type,skintrait,inventory
+    traitnames: mounttrait,spawned,inventory,type,age,scoreboardtrait,owner,location,skintrait,hologramtrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -469,7 +469,7 @@ npc:
       spawned: true
       hologramtrait:
         direction: BOTTOM_UP
-        lineHeight: -1.0
+        lineHeight: 0.3
       commandtrait:
         cost: -1.0
         executionMode: LINEAR
@@ -486,7 +486,7 @@ npc:
             globalcooldown: 0
             n: -1
             delay: 0
-    traitnames: owner,scoreboardtrait,mounttrait,hologramtrait,spawned,commandtrait,age,location,type,inventory,skintrait
+    traitnames: mounttrait,spawned,inventory,type,age,scoreboardtrait,owner,location,skintrait,hologramtrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -543,7 +543,7 @@ npc:
             globalcooldown: -1
             n: -1
             delay: -1
-    traitnames: owner,scoreboardtrait,mounttrait,hologramtrait,spawned,age,commandtrait,location,type,inventory,skintrait
+    traitnames: mounttrait,inventory,spawned,type,age,scoreboardtrait,owner,location,skintrait,hologramtrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -580,7 +580,7 @@ npc:
           '0': '&aЖдите в следующем сезоне!'
           '1': '&fУ вас &6&lОбычный &fуровень'
           '2': '&b&lSnapi&b&lPass'
-    traitnames: scoreboardtrait,owner,mounttrait,hologramtrait,spawned,age,location,type,skintrait,inventory
+    traitnames: mounttrait,inventory,spawned,type,age,scoreboardtrait,owner,location,skintrait,hologramtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -588,4 +588,61 @@ npc:
     metadata:
       cached-skin-uuid: a6845183-4ef5-4bc6-9530-bc02c8551f48
       cached-skin-uuid-name: f892c2c9-0842-47bb-95c5-2f62efa1a617
+      nameplate-visible: 'false'
+  '78':
+    name: BackPvP
+    uuid: 1c9144b7-1418-4d0c-893d-eab50c727c9e
+    traits:
+      type: PLAYER
+      location:
+        bodyYaw: 0.0
+        world: world
+        x: '0.5'
+        y: '85.0'
+        z: '1001.0'
+        yaw: '0.0'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      skintrait:
+        fetchDefaultSkin: true
+        signature: H7JyJxhy5D/KSaqQy/gWs9Rds95A6eYLXp+WJO4YudHnaBRLKUEpNE8r3jOAbP52J4kEalmE1UqCOP8rClFZejTzVwr5lklXIgV9ONDiXlj6sTMPUy4LuNhnKpW1MivLxxuvPpSjzYPLG+C4eiFcqSQBPbCUcpUKt4cKY0C8Cjnmyw9AeQ4sGWa9GFonF7STZsOpag8zWrFvB/vzWAeRxIWeUsS3kVvRESRTqY9saTb2o3tG35pvup+vFSminjG8aW4novEEKGE3JeFA6+c+3PxvPV8yEce0qU5T20UhCjZYtkdAuRksFOdEUMOIZKSEG03YbwY7+j4tj+pAlwuURWaFr9kJQnFHI6Ku01esaP7srUTCDwIhgJ2pbQiCrcXWElowMEHaEkcRsUn6QYhWEWGU/+I4Eqat1vOCHYz+ut1hrLpuGiew56gEEhGtvAf2vYgV46JaNF9mG2ROWh3Pnf0IXccS80YALUFI6YV3JARmUjjjfVFgFahSsI0DZefNF+Pbahq/oSOqdYw5iV8T3eANCcvldj1XBcRJAbEH3CDiMGv6ELcliO1nJVtlUrt+d7Y7tJRiqcLcfQiQoQuUCGN/cqqHRK0m8DenI+ip/L3G0qt1UHSf64NplxDOyIO5SmK68+iZKR15/3hZ7sHtbdLuXMK6S+yryoGZDdJONro=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTcyMjYwMjM4MjA5OSwKICAicHJvZmlsZUlkIiA6ICIwYTM4MDRlZGM3N2E0OGJjOTgzMTQ1ZjU4MTYxYzZiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJCaW5neV9ZVCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS83MWM3YzhjNjFhOTJmMTlmM2JjM2Q1MTZlM2RiMDk1ZmIzNTZhODgxZjI1ZjBiZGRjZjg1ZjNjNDZmZDcyNjdkIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0=
+        updateSkins: false
+        skinName: Bingy_YT
+      owner:
+        uuid: 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
+      spawned: true
+      commandtrait:
+        cost: -1.0
+        executionMode: LINEAR
+        experienceCost: -1.0
+        hideErrorMessages: false
+        persistSequence: false
+        commands:
+          '0':
+            command: arena adminleave <p>
+            hand: BOTH
+            player: false
+            op: false
+            cooldown: 0
+            globalcooldown: 0
+            n: -1
+            delay: 0
+      hologramtrait:
+        direction: BOTTOM_UP
+        lineHeight: 0.3
+        lines:
+          '0': '&aНажмите, чтобы телепортироваться'
+          '1': '&fИли напишите &b/arena leave'
+          '2': '&c&lВыйти с арены'
+    traitnames: mounttrait,inventory,spawned,type,age,scoreboardtrait,owner,location,skintrait,hologramtrait,commandtrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    metadata:
+      cached-skin-uuid: 0a3804ed-c77a-48bc-9831-45f58161c6bc
+      cached-skin-uuid-name: bingy_yt
       nameplate-visible: 'false'

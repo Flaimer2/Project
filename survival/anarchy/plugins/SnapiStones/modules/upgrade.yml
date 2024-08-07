@@ -1,0 +1,50 @@
+effects:
+  Speed:
+    effect: 'SPEED'
+    level: 1
+    name: 'Скорость'
+  Jump:
+    effect: 'JUMP'
+    level: 1
+    name: 'Прыгучесть'
+  Regeneration:
+    effect: 'REGENERATION'
+    level: 1
+    name: 'Регенерация'
+  FireResistance:
+    effect: 'FIRE_RESISTANCE'
+    level: 1
+    name: 'Огнестойкость'
+  Haste:
+    effect: 'FAST_DIGGING'
+    level: 1
+    name: 'Спешка'
+item:
+  effectBought:
+    - '§fЭффекты в регионе:'
+    - '§a%effects%'
+  formatListEffect: ' §7– §a%name%'
+  lore:
+    - '§a%maxOwners%'
+    - '§a%maxMembers%'
+    - '§a%effectBought%'
+  maxMembers: '§fМаксимум участников: §a%amount%'
+  maxOwners: '§fМаксимум владельцев: §a%amount%'
+  name: '§aБлок привата'
+limit:
+  member:
+    1: 5
+    2: 7
+    3: 9
+    4: 11
+    5: 14
+  owner:
+    1: 2
+    2: 3
+    3: 4
+    4: 5
+    5: 6
+message:
+  limit:
+    addMember: '§fВы §cпревышаете §fлимит по участникам §7(%region_max_members%)'
+    addOwner: '§fВы §cпревышаете §fлимит по владельцам §7(%region_max_owners%)'

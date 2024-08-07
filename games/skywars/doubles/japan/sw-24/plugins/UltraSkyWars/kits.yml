@@ -1,0 +1,1023 @@
+kits:
+  Стандартный:
+    id: 0
+    name: Стандартный
+    slot: 10
+    page: 1
+    permission: ultraskywars.kits.default
+    levels:
+      '1':
+        level: 1
+        permission: ultraskywars.kits.default.1
+        icon:
+          ==: org.bukkit.inventory.ItemStack
+          type: IRON_PICKAXE
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: §aСтандартный
+            lore:
+            - '§fСодержит предметы:'
+            - §7Железная кирка
+            - §7Железный топор
+            - §7Железная лопата
+            - §7
+            - '§fРедкость: §a[Обычная]'
+            - §7
+            - <status>
+            ItemFlags:
+            - HIDE_ENCHANTS
+            - HIDE_ATTRIBUTES
+            - HIDE_UNBREAKABLE
+            - HIDE_DESTROYS
+            - HIDE_PLACED_ON
+            - HIDE_POTION_EFFECTS
+        slot: 10
+        price: 0
+        isBuy: false
+        armor:
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        inv:
+        - ==: org.bukkit.inventory.ItemStack
+          type: IRON_PICKAXE
+        - ==: org.bukkit.inventory.ItemStack
+          type: IRON_AXE
+        - ==: org.bukkit.inventory.ItemStack
+          type: IRON_SPADE
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        autoGivePermission: ultraskywars.kits.autogive.default.1
+        needPermToBuy: false
+    modes:
+    - SOLO
+    - TEAM
+  Armorsmith:
+    id: 3
+    name: Оружейник
+    slot: 11
+    page: 1
+    permission: ultraskywars.kit.Armorsmith
+    levels:
+      '1':
+        level: 1
+        permission: ultraskywars.kit.Armorsmith.1
+        icon:
+          ==: org.bukkit.inventory.ItemStack
+          type: ANVIL
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: §aОружейник
+            lore:
+            - '§fСодержит предметы:'
+            - §7Наковальня
+            - §7Зачарованная книга §8(Защита IV,
+            - §8Острота I, Бесконечность I)
+            - §7Алмазный шлем
+            - §7Пузырёк опыта §8(64x)
+            - §7
+            - '§fРедкость: §a[Обычная]'
+            - '§fЦена: §a15000$'
+            - §7
+            - <status>
+        slot: 11
+        price: 15000
+        isBuy: true
+        armor:
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: DIAMOND_HELMET
+        inv:
+        - ==: org.bukkit.inventory.ItemStack
+          type: ANVIL
+        - ==: org.bukkit.inventory.ItemStack
+          type: ENCHANTED_BOOK
+          meta:
+            ==: ItemMeta
+            meta-type: ENCHANTED
+            repair-cost: 3
+            stored-enchants:
+              PROTECTION_ENVIRONMENTAL: 4
+              DAMAGE_ALL: 1
+              ARROW_INFINITE: 1
+        - ==: org.bukkit.inventory.ItemStack
+          type: EXP_BOTTLE
+          amount: 64
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        autoGivePermission: ultraskywars.kits.autogive.Armorsmith.1
+        needPermToBuy: false
+    modes:
+    - SOLO
+    - TEAM
+  Ecologist:
+    id: 5
+    name: Эколог
+    slot: 12
+    page: 1
+    permission: ultraskywars.kit.Ecologist
+    levels:
+      '1':
+        level: 1
+        permission: ultraskywars.kit.Ecologist.1
+        icon:
+          ==: org.bukkit.inventory.ItemStack
+          type: DIAMOND_AXE
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: §aЭколог
+            lore:
+            - '§fСодержит предметы:'
+            - §7Алмазный топор
+            - §8(Эффективность I, Острота I)
+            - §7Дуб §8(16x)
+            - §7
+            - '§fРедкость: §a[Обычная]'
+            - '§fЦена: §a15000$'
+            - §7
+            - <status>
+            repair-cost: 3
+            ItemFlags:
+            - HIDE_ENCHANTS
+            - HIDE_ATTRIBUTES
+            - HIDE_UNBREAKABLE
+            - HIDE_DESTROYS
+            - HIDE_PLACED_ON
+            - HIDE_POTION_EFFECTS
+        slot: 12
+        price: 15000
+        isBuy: true
+        armor:
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        inv:
+        - ==: org.bukkit.inventory.ItemStack
+          type: DIAMOND_AXE
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              DAMAGE_ALL: 1
+              DIG_SPEED: 1
+            repair-cost: 3
+        - ==: org.bukkit.inventory.ItemStack
+          type: LOG
+          amount: 16
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        autoGivePermission: ultraskywars.kits.autogive.Ecologist.1
+        needPermToBuy: false
+    modes:
+    - SOLO
+    - TEAM
+  Healer:
+    id: 7
+    name: Целитель
+    slot: 13
+    page: 1
+    permission: ultraskywars.kit.Healer
+    levels:
+      '1':
+        level: 1
+        permission: ultraskywars.kit.Healer.1
+        icon:
+          ==: org.bukkit.inventory.ItemStack
+          type: CAKE
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: §aЦелитель
+            lore:
+            - '§fСодержит предметы:'
+            - §7Взрывное Лечебное зелье §8(3x)
+            - §7Взрывное Зелье регенерации §8(2x)
+            - §7Золотое яблоко §8(2x)
+            - §7
+            - '§fРедкость: §a[Обычная]'
+            - '§fЦена: §a15000$'
+            - §7
+            - <status>
+        slot: 13
+        price: 15000
+        isBuy: true
+        armor:
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        inv:
+        - ==: org.bukkit.inventory.ItemStack
+          type: SPLASH_POTION
+          amount: 3
+          meta:
+            ==: ItemMeta
+            meta-type: POTION
+            potion-type: minecraft:healing
+        - ==: org.bukkit.inventory.ItemStack
+          type: SPLASH_POTION
+          amount: 2
+          meta:
+            ==: ItemMeta
+            meta-type: POTION
+            potion-type: minecraft:regeneration
+        - ==: org.bukkit.inventory.ItemStack
+          type: GOLDEN_APPLE
+          amount: 2
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        autoGivePermission: ultraskywars.kits.autogive.Healer.1
+        needPermToBuy: false
+    modes:
+    - SOLO
+    - TEAM
+  Knight:
+    id: 9
+    name: Рыцарь
+    slot: 14
+    page: 1
+    permission: ultraskywars.kit.Knight
+    levels:
+      '1':
+        level: 1
+        permission: ultraskywars.kit.Knight.1
+        icon:
+          ==: org.bukkit.inventory.ItemStack
+          type: IRON_SWORD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: §aРыцарь
+            lore:
+            - '§fСодержит предметы:'
+            - §7Железный меч §8(Острота II)
+            - §7Золотой шлем
+            - §8(Защита IV, Прочность V)
+            - §7
+            - '§fРедкость: §a[Обычная]'
+            - '§fЦена: §a15000$'
+            - §7
+            - <status>
+            ItemFlags:
+            - HIDE_ENCHANTS
+            - HIDE_ATTRIBUTES
+            - HIDE_UNBREAKABLE
+            - HIDE_DESTROYS
+            - HIDE_PLACED_ON
+            - HIDE_POTION_EFFECTS
+        slot: 14
+        price: 15000
+        isBuy: true
+        armor:
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: GOLD_HELMET
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              PROTECTION_ENVIRONMENTAL: 4
+              DURABILITY: 5
+        inv:
+        - ==: org.bukkit.inventory.ItemStack
+          type: IRON_SWORD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              DAMAGE_ALL: 2
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        autoGivePermission: ultraskywars.kits.autogive.Knight.1
+        needPermToBuy: false
+    modes:
+    - SOLO
+    - TEAM
+  Pro:
+    id: 11
+    name: Профессионал
+    slot: 15
+    page: 1
+    permission: ultraskywars.kit.Pro
+    levels:
+      '1':
+        level: 1
+        permission: ultraskywars.kit.Pro.1
+        icon:
+          ==: org.bukkit.inventory.ItemStack
+          type: IRON_HELMET
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: §aПрофессионал
+            lore:
+            - '§fСодержит предметы:'
+            - §7Железный шлем
+            - §7Железный нагрудник
+            - §7Каменный меч §8(Острота I)
+            - §7Стекло §8(16x)
+            - §7Золотое яблоко
+            - §7
+            - '§fРедкость: §a[Обычная]'
+            - '§fЦена: §a15000$'
+            - §7
+            - <status>
+            ItemFlags:
+            - HIDE_ENCHANTS
+            - HIDE_ATTRIBUTES
+            - HIDE_UNBREAKABLE
+            - HIDE_DESTROYS
+            - HIDE_PLACED_ON
+            - HIDE_POTION_EFFECTS
+        slot: 15
+        price: 15000
+        isBuy: true
+        armor:
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: IRON_CHESTPLATE
+        - ==: org.bukkit.inventory.ItemStack
+          type: IRON_HELMET
+        inv:
+        - ==: org.bukkit.inventory.ItemStack
+          type: STONE_SWORD
+        - ==: org.bukkit.inventory.ItemStack
+          type: GLASS
+          amount: 16
+        - ==: org.bukkit.inventory.ItemStack
+          type: GOLDEN_APPLE
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        autoGivePermission: ultraskywars.kits.autogive.Pro.1
+        needPermToBuy: false
+    modes:
+    - SOLO
+    - TEAM
+  Scout:
+    id: 13
+    name: Разведчик
+    slot: 16
+    page: 1
+    permission: ultraskywars.kit.Scout
+    levels:
+      '1':
+        level: 1
+        permission: ultraskywars.kit.Scout.1
+        icon:
+          ==: org.bukkit.inventory.ItemStack
+          type: POTION
+          meta:
+            ==: ItemMeta
+            meta-type: POTION
+            display-name: §aРазведчик
+            lore:
+            - '§fСодержит предметы:'
+            - §7Каменный меч
+            - §7Зелье стремительности
+            - §8(Скорость II (0:40))
+            - §7
+            - '§fРедкость: §a[Обычная]'
+            - '§fЦена: §a15000$'
+            - §7
+            - <status>
+            ItemFlags:
+            - HIDE_ENCHANTS
+            - HIDE_ATTRIBUTES
+            - HIDE_UNBREAKABLE
+            - HIDE_DESTROYS
+            - HIDE_PLACED_ON
+            - HIDE_POTION_EFFECTS
+            potion-type: minecraft:strong_swiftness
+        slot: 16
+        price: 15000
+        isBuy: true
+        armor:
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        inv:
+        - ==: org.bukkit.inventory.ItemStack
+          type: STONE_SWORD
+        - ==: org.bukkit.inventory.ItemStack
+          type: SPLASH_POTION
+          amount: 3
+          meta:
+            ==: ItemMeta
+            meta-type: POTION
+            potion-type: minecraft:swiftness
+            custom-effects:
+            - ==: PotionEffect
+              effect: 1
+              duration: 800
+              amplifier: 1
+              ambient: false
+              has-particles: false
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        autoGivePermission: ultraskywars.kits.autogive.Scout.1
+        needPermToBuy: false
+    modes:
+    - SOLO
+    - TEAM
+  Cactus:
+    id: 14
+    name: Кактус
+    slot: 19
+    page: 1
+    permission: ultraskywars.kit.Cactus
+    levels:
+      '1':
+        level: 1
+        permission: ultraskywars.kit.Cactus.1
+        icon:
+          ==: org.bukkit.inventory.ItemStack
+          type: CACTUS
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: §aКактус
+            lore:
+            - '§fСодержит предметы:'
+            - §7Кожаная куртка
+            - §8(Прочность V, Шипы V)
+            - §7Кожаные штаны
+            - §8(Прочность V, Шипы III)
+            - §7Кактус §8(16x)
+            - §7Песок §8(32x)
+            - §7
+            - '§fРедкость: §9[Редкая]'
+            - '§fЦена: §a20000$'
+            - §7
+            - <status>
+        slot: 19
+        price: 20000
+        isBuy: true
+        armor:
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_LEGGINGS
+          meta:
+            ==: ItemMeta
+            meta-type: LEATHER_ARMOR
+            enchants:
+              THORNS: 3
+              DURABILITY: 5
+        - ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_CHESTPLATE
+          meta:
+            ==: ItemMeta
+            meta-type: LEATHER_ARMOR
+            enchants:
+              THORNS: 5
+              DURABILITY: 5
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        inv:
+        - ==: org.bukkit.inventory.ItemStack
+          type: CACTUS
+          amount: 16
+        - ==: org.bukkit.inventory.ItemStack
+          type: SAND
+          amount: 32
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        autoGivePermission: ultraskywars.kits.autogive.Cactus.1
+        needPermToBuy: false
+    modes:
+    - SOLO
+    - TEAM
+  Enchanter:
+    id: 16
+    name: Чародей
+    slot: 20
+    page: 1
+    permission: ultraskywars.kit.Enchanter
+    levels:
+      '1':
+        level: 1
+        permission: ultraskywars.kit.Enchanter.1
+        icon:
+          ==: org.bukkit.inventory.ItemStack
+          type: ENCHANTMENT_TABLE
+          meta:
+            ==: ItemMeta
+            meta-type: TILE_ENTITY
+            display-name: §aЧародей
+            lore:
+            - '§fСодержит предметы:'
+            - §7Стол зачарований
+            - §7Пузырёк опыта §8(64x)
+            - §7Книжная полка §8(8x)
+            - §7Алмаз §8(10x)
+            - §7
+            - '§fРедкость: §9[Редкая]'
+            - '§fЦена: §a20000$'
+            - §7
+            - <status>
+            blockMaterial: ENCHANTMENT_TABLE
+        slot: 20
+        price: 20000
+        isBuy: true
+        armor:
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        inv:
+        - ==: org.bukkit.inventory.ItemStack
+          type: ENCHANTMENT_TABLE
+        - ==: org.bukkit.inventory.ItemStack
+          type: EXP_BOTTLE
+          amount: 64
+        - ==: org.bukkit.inventory.ItemStack
+          type: BOOKSHELF
+          amount: 8
+        - ==: org.bukkit.inventory.ItemStack
+          type: DIAMOND
+          amount: 10
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        autoGivePermission: ultraskywars.kits.autogive.Чародей.1
+        needPermToBuy: false
+    modes:
+    - SOLO
+    - TEAM
+  Hunter:
+    id: 18
+    name: Охотник
+    slot: 21
+    page: 1
+    permission: ultraskywars.kit.Hunter
+    levels:
+      '1':
+        level: 1
+        permission: ultraskywars.kit.Hunter.1
+        icon:
+          ==: org.bukkit.inventory.ItemStack
+          type: BOW
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: §aОхотник
+            lore:
+            - '§fСодержит предметы:'
+            - §7Лук §8(Сила II)
+            - §7Стрела §8(24x)
+            - §7
+            - '§fРедкость: §9[Редкая]'
+            - '§fЦена: §a20000$'
+            - §7
+            - <status>
+        slot: 10
+        price: 20000
+        isBuy: true
+        armor:
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        - ==: org.bukkit.inventory.ItemStack
+          type: AIR
+          damage: -1
+          amount: 0
+        inv:
+        - ==: org.bukkit.inventory.ItemStack
+          type: BOW
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              ARROW_DAMAGE: 2
+        - ==: org.bukkit.inventory.ItemStack
+          type: ARROW
+          amount: 24
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        autoGivePermission: ultraskywars.kits.autogive.Охотник.1
+        needPermToBuy: false
+    modes:
+    - SOLO
+    - TEAM

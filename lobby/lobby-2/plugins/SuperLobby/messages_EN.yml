@@ -1,6 +1,6 @@
 
 error-no-console: '&cNot available in the console.'
-error-no-permission: '&7You not have permission to use this command.'
+error-no-permission: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
 error-spawn-not-set: '&7Spawn no set.'
 error-no-spawn: '&7No spawn location data.'
 use-command: '&7Use &a/superlobby help | ? &7to Displays the help page.'

@@ -1,0 +1,841 @@
+[19:44:10] [Server thread/INFO]: Starting minecraft server version 1.12.2
+[19:44:10] [Server thread/INFO]: Loading properties
+[19:44:10] [Server thread/INFO]: Default game type: SURVIVAL
+[19:44:10] [Server thread/INFO]: This server is running Paper version git-Paper-4466fe0 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
+[19:44:10] [Server thread/INFO]: Debug logging is disabled
+[19:44:10] [Server thread/INFO]: Using 4 threads for Netty based IO
+[19:44:10] [Server thread/WARN]: Ignoring non existent stats.forced-stats achievement.openInventory
+[19:44:10] [Server thread/WARN]: Ignoring non existent stats.forced-stats achievement.diamonds
+[19:44:10] [Server thread/INFO]: Generating keypair
+[19:44:10] [Server thread/INFO]: Starting Minecraft server on *:21619
+[19:44:10] [Server thread/INFO]: Using default channel type
+[19:44:12] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[19:44:12] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.10.10
+[19:44:12] [Server thread/INFO]: [DisableJoinMessage] Loading DisableJoinMessage v1.0
+[19:44:12] [Server thread/INFO]: [NametagEdit] Loading NametagEdit v4.4.10
+[19:44:12] [Server thread/INFO]: [OldCombatMechanics] Loading OldCombatMechanics v1.11.0
+[19:44:12] [Server thread/INFO]: [FastAsyncWorldEdit] Loading FastAsyncWorldEdit v21.03.26-b67f782-1287-22.3.10
+[19:44:12] [Server thread/INFO]: [CommandForward] Loading CommandForward v0.5.0
+[19:44:12] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.0.1
+[19:44:12] [Server thread/INFO]: [ViaVersion] ViaVersion 5.0.1 is now loaded. Registering protocol transformers and injecting...
+[19:44:13] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[19:44:13] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[19:44:13] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[19:44:13] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[19:44:14] [Server thread/INFO]: [ViaRewind] Registering protocols...
+[19:44:14] [Server thread/INFO]: [NBTAPI] Loading NBTAPI v2.8.0
+[19:44:14] [Server thread/INFO]: [NBTAPI] bStats disabled
+[19:44:14] [Server thread/INFO]: [NBTAPI] Update check disabled
+[19:44:14] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Spigot: v1_12_R1! Trying to find NMS support
+[19:44:14] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_12_R1' loaded!
+[19:44:14] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Gson: class com.google.gson.Gson
+[19:44:14] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.0.1
+[19:44:14] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v4.0.0
+[19:44:14] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.117
+[19:44:15] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1.7;dd00bb1
+[19:44:15] [Server thread/INFO]: [LastLoginAPI] Loading LastLoginAPI v1.7.4
+[19:44:15] [Server thread/INFO]: [LastLoginAPI] Loading libraries of LastLoginAPI v1.7.4, this may take a while
+[19:44:15] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for jar-relocator
+[19:44:15] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for asm
+[19:44:15] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for asm-commons
+[19:44:15] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for gson
+[19:44:15] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for jdbi3-core
+[19:44:15] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for geantyref
+[19:44:15] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for caffeine
+[19:44:15] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for jdbi3-stringtemplate4
+[19:44:15] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for ST4
+[19:44:15] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for antlr-runtime
+[19:44:15] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for jdbi3-sqlobject
+[19:44:15] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for slf4j-api
+[19:44:15] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for slf4j-simple
+[19:44:15] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for HikariCP
+[19:44:15] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for mariadb-java-client
+[19:44:15] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for mysql-connector-j
+[19:44:15] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for postgresql
+[19:44:15] [Server thread/INFO]: [LastLoginAPI] Verifying checksum for h2
+[19:44:15] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v5.0.0-SNAPSHOT-b587
+[19:44:17] [Server thread/INFO]: [FakePlayers] Loading FakePlayers v2.4
+[19:44:17] [Server thread/INFO]: [TAB] Loading TAB v4.0.3
+[19:44:17] [Server thread/INFO]: [Vault] Loading Vault v1.7.3-b131
+[19:44:17] [Server thread/INFO]: [TigerReports] Loading TigerReports v4.13.1
+[19:44:17] [Server thread/INFO]: [BetterSocial] Loading BetterSocial v1.3-BETA
+[19:44:17] [Server thread/INFO]: [WorldChangeScreenRemover] Loading WorldChangeScreenRemover v1.0.18
+[19:44:17] [Server thread/INFO]: [AlonsoLevels] Loading AlonsoLevels v2.2.3-BETA-PRO
+[19:44:17] [Server thread/INFO]: [XConomy] Loading XConomy v2.25.15
+[19:44:17] [Server thread/INFO]: [SnapiLibrary] Loading SnapiLibrary v2.0.0
+[19:44:17] [Server thread/INFO]: [SnapiCooperation] Loading SnapiCooperation v1.0.0
+[19:44:17] [Server thread/INFO]: [SnapiProfile] Loading SnapiProfile v1.0.0
+[19:44:17] [Server thread/INFO]: [SnapiGameReward] Loading SnapiGameReward v1.0.0
+[19:44:17] [Server thread/INFO]: [UltraSkyWars] Loading UltraSkyWars v9.0.0
+[19:44:17] [Server thread/INFO]: [SnapiBalancer] Loading SnapiBalancer v1.5
+[19:44:17] [Server thread/INFO]: [SnapiCoin] Loading SnapiCoin v1.0.0
+[19:44:17] [Server thread/INFO]: [SnapiClans] Loading SnapiClans v3.0.0
+[19:44:17] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[19:44:17] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v21.03.26-b67f782-1287-22.3.10
+[19:44:17] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.0
+[19:44:17] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.117
+[19:44:18] [Server thread/INFO]:         __    
+[19:44:18] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.117
+[19:44:18] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[19:44:18] [Server thread/INFO]: 
+[19:44:18] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[19:44:18] [Server thread/INFO]: [LuckPerms] Loading storage provider... [MARIADB]
+[19:44:18] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Starting...
+[19:44:18] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Start completed.
+[19:44:19] [Server thread/INFO]: [LuckPerms] Loading messaging service... [REDIS]
+[19:44:19] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[19:44:19] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[19:44:19] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 2138ms)
+[19:44:19] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.0.0-SNAPSHOT-b587
+[19:44:19] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[19:44:19] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[19:44:20] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[19:44:20] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[19:44:20] [Server thread/INFO]: [XConomy] Enabling XConomy v2.25.15
+[19:44:20] [Server thread/INFO]: [XConomy] UUID-Mode: Default
+[19:44:20] [Server thread/INFO]: [XConomy] Language: RUSSIAN
+[19:44:20] [Server thread/INFO]: [XConomy] Метод сохранения - MySQL
+[19:44:20] [Server thread/INFO]: [XConomy] Успешное подключение к MySQL
+[19:44:20] [Server thread/INFO]: [XConomy] Успешное подключение к Redis
+[19:44:20] [XConomyRedisSub/INFO]: [XConomy] Creating Redis listening thread
+[19:44:20] [Server thread/INFO]: [XConomy] XConomy успешно включен
+[19:44:20] [Server thread/INFO]: [XConomy] Found PlaceholderAPI
+[19:44:20] [XConomyRedisSub/INFO]: [XConomy] Subscribe redis channel success, channel XConomy_Sync
+[19:44:20] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: xconomy
+[19:44:20] [Server thread/INFO]: [XConomy] PlaceholderAPI successfully hooked
+[19:44:20] [Server thread/INFO]: [XConomy] ===== YiC =====
+[19:44:20] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[19:44:20] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[19:44:20] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[19:44:20] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[19:44:20] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[19:44:20] [Server thread/INFO]: Preparing level "wait"
+[19:44:20] [Server thread/INFO]: -------- World Settings For [wait] --------
+[19:44:20] [Server thread/INFO]: Item Merge Radius: 4.0
+[19:44:20] [Server thread/INFO]: Item Despawn Rate: 6000
+[19:44:20] [Server thread/INFO]: View Distance: 10
+[19:44:20] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[19:44:20] [Server thread/INFO]: Arrow Despawn Rate: 300
+[19:44:20] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[19:44:20] [Server thread/INFO]: Experience Merge Radius: 6.0
+[19:44:20] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[19:44:20] [Server thread/INFO]: Mob Spawn Range: 4
+[19:44:20] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[19:44:20] [Server thread/INFO]: Structure Info Saving: true
+[19:44:20] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[19:44:20] [Server thread/INFO]: Cane Growth Modifier: 100%
+[19:44:20] [Server thread/INFO]: Melon Growth Modifier: 100%
+[19:44:20] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[19:44:20] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[19:44:20] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[19:44:20] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[19:44:20] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[19:44:20] [Server thread/INFO]: Vine Growth Modifier: 100%
+[19:44:20] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[19:44:20] [Server thread/INFO]: Max TNT Explosions: 100
+[19:44:20] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[19:44:20] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[19:44:20] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[19:44:20] [Server thread/INFO]: Random Lighting Updates: false
+[19:44:20] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 16 / Mi 12 / Tiv true
+[19:44:21] [Server thread/INFO]: Preparing start region for level 0 (Seed: 963968177252978174)
+[19:44:21] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.10.10
+[19:44:21] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[19:44:21] [Server thread/INFO]: [DisableJoinMessage] Enabling DisableJoinMessage v1.0
+[19:44:21] [Server thread/INFO]: [NametagEdit] Enabling NametagEdit v4.4.10
+[19:44:21] [Server thread/INFO]: [NametagEdit] Found LuckPerms! Hooking in.
+[19:44:21] [Server thread/INFO]: [OldCombatMechanics] Enabling OldCombatMechanics v1.11.0
+[19:44:21] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: ocm
+[19:44:21] [Server thread/INFO]: [OldCombatMechanics] OldCombatMechanics v1.11.0 has been enabled
+[19:44:21] [Server thread/INFO]: [CommandForward] Enabling CommandForward v0.5.0
+[19:44:21] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.0.1
+[19:44:21] [Server thread/INFO]: [NBTAPI] Enabling NBTAPI v2.8.0
+[19:44:21] [Server thread/INFO]: [NBTAPI] Adding listeners...
+[19:44:21] [Server thread/INFO]: [NBTAPI] Gson:
+[19:44:21] [Server thread/INFO]: [NBTAPI] Checking bindings...
+[19:44:21] [Server thread/INFO]: [NBTAPI] All Classes were able to link!
+[19:44:21] [Server thread/INFO]: [NBTAPI] All Methods were able to link!
+[19:44:21] [Server thread/INFO]: [NBTAPI] Running NBT reflection test...
+[19:44:21] [Server thread/INFO]: [NBTAPI] TypeTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] EntityCustomNbtInjectorTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] TilesCustomNBTPersistentTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] MergeTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] TileTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] TilesCustomNBTInjectorTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] WorldDataTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] ListTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] EmptyItemTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] ItemMergingTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] RemovingKeys: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] SpawnEntityCustomNbtInjectorTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] NBTFileTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] GameprofileTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] ChunkNBTPersistentTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] SubCompoundsTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] BlockNBTTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] ForEachTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] ItemConvertionTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] DirectApplyTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] EntityTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] MergeTileSubCompoundTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] IteratorTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] StreamTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] EntityCustomNbtPersistentTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] GetterSetterTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] EqualsTest: Ok
+[19:44:21] [Server thread/INFO]: [NBTAPI] Success! This version of NBT-API is compatible with your server.
+[19:44:21] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.0.1
+[19:44:21] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1.7;dd00bb1
+[19:44:22] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[19:44:22] [Server thread/INFO]: [WorldEdit] Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_12_R1 as the Bukkit adapter
+[19:44:22] [Server thread/WARN]: [WorldEdit] WorldEdit has detected you are using Java 7 (based on detected version 11.0.22).
+[19:44:22] [Server thread/WARN]: [WorldEdit] WorldEdit will stop supporting Java less than version 8 in the future, due to Java 7 being EOL since April 2015. Please update your server to Java 8.
+[19:44:22] [Server thread/INFO]: [LastLoginAPI] Enabling LastLoginAPI v1.7.4
+[19:44:22] [Server thread/INFO]: [LastLoginAPI] Initializing LastLoginAPI v1.7.4
+[19:44:22] [Server thread/WARN]: [Server thread] INFO com.alessiodp.lastloginapi.libs.hikari.HikariDataSource - HikariPool-1 - Starting...
+[19:44:22] [Server thread/WARN]: [Server thread] INFO com.alessiodp.lastloginapi.libs.hikari.pool.HikariPool - HikariPool-1 - Added connection com.alessiodp.lastloginapi.libs.mysql.cj.jdbc.ConnectionImpl@3cda262b
+[19:44:22] [Server thread/WARN]: [Server thread] INFO com.alessiodp.lastloginapi.libs.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[19:44:23] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: lastloginapi
+[19:44:23] [Server thread/INFO]: [LastLoginAPI] Hooked into PlaceholderAPI
+[19:44:23] [Server thread/INFO]: [LastLoginAPI] LastLoginAPI v1.7.4 enabled
+[19:44:23] [Server thread/INFO]: [FakePlayers] Enabling FakePlayers v2.4
+[19:44:23] [Server thread/INFO]: Detected version: v1_12_R1
+[19:44:23] [Server thread/INFO]: Paper detected.
+[19:44:23] [Server thread/INFO]: [TAB] Enabling TAB v4.0.3
+[19:44:23] [Server thread/INFO]: [TAB] Server version: 1.12.2 (v1_12_R1)
+[19:44:23] [Server thread/INFO]: [TAB] Loaded NMS hook in 48ms
+[19:44:23] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: tab
+[19:44:23] [Server thread/INFO]: [TAB] Enabled in 187ms
+[19:44:23] [Server thread/INFO]: [TigerReports] Enabling TigerReports v4.13.1
+[19:44:23] [Server thread/INFO]: [TigerReports] Le plugin utilise BungeeCord.
+[19:44:23] [Server thread/INFO]: [TigerReports] Le plugin utilise les prefixes et suffixes du chat du plugin Vault pour afficher les noms des joueurs.
+[19:44:23] [Server thread/INFO]: [BetterSocial] Enabling BetterSocial v1.3-BETA
+[19:44:23] [Server thread/INFO]: [BetterSocial] Inventory title with support for more than 32 characters. Skipping..
+[19:44:23] [Server thread/INFO]: [BetterSocial] Hex colors are not available! Ignoring..
+[19:44:23] [Server thread/INFO]: [BetterSocial] Old constructor for HoverEvent found! Using it..
+[19:44:23] [Server thread/INFO]: [BetterSocial] New sendTitle method found! Using it..
+[19:44:23] [Server thread/INFO]: [BetterSocial] New setUnbreakable method found! Using it..
+[19:44:23] [Server thread/INFO]: [BetterSocial] New isUnbreakable method found! Using it..
+[19:44:23] [Server thread/INFO]:   ___      _   _           ___          _      _ 
+[19:44:23] [Server thread/INFO]:  | _ ) ___| |_| |_ ___ _ _/ __| ___  __(_)__ _| |
+[19:44:23] [Server thread/INFO]:  | _ \/ -_)  _|  _/ -_) '_\__ \/ _ \/ _| / _` | |
+[19:44:23] [Server thread/INFO]:  |___/\___|\__|\__\___|_| |___/\___/\__|_\__,_|_|
+[19:44:23] [Server thread/INFO]: 
+[19:44:23] [Server thread/INFO]:    Running plugin BetterSocial v1.3-BETA
+[19:44:23] [Server thread/INFO]:    Server running Paper version git-Paper-4466fe0 (MC: 1.12.2)
+[19:44:23] [Server thread/INFO]:    (Implementing API version git-Paper-4466fe0 (MC: 1.12.2))
+[19:44:23] [Server thread/INFO]:    (Developed by  AlonsoAliaga - Thanks for using my plugin ❤)
+[19:44:23] [Server thread/INFO]:    (If you loved the plugin consider leaving a review and mentioning your server IP in it!
+[19:44:23] [Server thread/INFO]: 
+[19:44:23] [Server thread/INFO]: ===================================================================================
+[19:44:23] [Server thread/INFO]: [BetterSocial] You are using a Paper fork (Paper). Plugin might have errors
+[19:44:23] [Server thread/INFO]: [BetterSocial] and not work properly. Consider using SPIGOT!
+[19:44:23] [Server thread/INFO]: [BetterSocial] This is not an error! This is just a warning to let you know that this
+[19:44:23] [Server thread/INFO]: [BetterSocial] plugin has not been tested on paper forks. This plugin was made for spigot
+[19:44:23] [Server thread/INFO]: [BetterSocial] and has been tested on spigot only. If you have issues report them to the
+[19:44:23] [Server thread/INFO]: [BetterSocial] developer instead of reviewing 1 star. Thanks in advanced!
+[19:44:23] [Server thread/INFO]: [BetterSocial] Join our official support server on alonsoaliaga.com/discord
+[19:44:23] [Server thread/INFO]: ===================================================================================
+[19:44:23] [Server thread/INFO]: 
+[19:44:23] [Server thread/INFO]: [BetterSocial] BungeeCord action bar available. Hooking..
+[19:44:23] [Server thread/INFO]: [BetterSocial] ProtocolLib found! Checking..
+[19:44:23] [Server thread/INFO]: [BetterSocial] Configuration auto-update is not enabled!
+[19:44:23] [Server thread/INFO]: [BetterSocial] [HikariCP] Using com.mysql.jdbc.jdbc2.optional.MysqlDataSource for source class name..
+[19:44:23] [Server thread/INFO]: [com.alonsoaliaga.bettersocial.libraries.hikari.HikariDataSource] HikariPool-1 - Starting...
+[19:44:23] [Server thread/INFO]: [com.alonsoaliaga.bettersocial.libraries.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[19:44:23] [Server thread/INFO]: [BetterSocial] [MySQL] Attempting to create 'bettersocial' table..
+[19:44:23] [Server thread/INFO]: [BetterSocial] [MySQL] Table 'bettersocial' has been created if didn't exist.
+[19:44:23] [Server thread/INFO]: [BetterSocial] Media 'twitter' is enabled in config. Loading..
+[19:44:23] [Server thread/INFO]: [BetterSocial] GameProfile field is available for heads. Hooking..
+[19:44:23] [Server thread/INFO]: [BetterSocial] Media 'twitter' successfully enabled! Slot: 20
+[19:44:23] [Server thread/INFO]: [BetterSocial] Media 'youtube' is enabled in config. Loading..
+[19:44:23] [Server thread/INFO]: [BetterSocial] Media 'youtube' successfully enabled! Slot: 21
+[19:44:23] [Server thread/INFO]: [BetterSocial] Media 'instagram' is enabled in config. Loading..
+[19:44:23] [Server thread/INFO]: [BetterSocial] Media 'instagram' successfully enabled! Slot: 22
+[19:44:23] [Server thread/INFO]: [BetterSocial] Media 'twitch' is enabled in config. Loading..
+[19:44:23] [Server thread/INFO]: [BetterSocial] Media 'twitch' successfully enabled! Slot: 23
+[19:44:23] [Server thread/INFO]: [BetterSocial] Media 'facebook' is enabled in config. Loading..
+[19:44:23] [Server thread/INFO]: [BetterSocial] Media 'facebook' successfully enabled! Slot: 24
+[19:44:23] [Server thread/INFO]: [BetterSocial] Media 'discord' is enabled in config. Loading..
+[19:44:23] [Server thread/INFO]: [BetterSocial] Media 'discord' successfully enabled! Slot: 29
+[19:44:23] [Server thread/INFO]: [BetterSocial] Media 'vk' is enabled in config. Loading..
+[19:44:23] [Server thread/INFO]: [BetterSocial] Media 'vk' successfully enabled! Slot: 30
+[19:44:23] [Server thread/INFO]: [BetterSocial] Media 'Reddit' is disabled in config. Skipping..
+[19:44:23] [Server thread/INFO]: [BetterSocial] Media 'TikTok' is enabled in config. Loading..
+[19:44:23] [Server thread/INFO]: [BetterSocial] Media 'TikTok' successfully enabled! Slot: 31
+[19:44:23] [Server thread/INFO]: [BetterSocial] Media 'snapixforum' is disabled in config. Skipping..
+[19:44:23] [Server thread/INFO]: [BetterSocial] Social media 'youtube' column already registered in database!
+[19:44:23] [Server thread/INFO]: [BetterSocial] Social media 'twitter' column already registered in database!
+[19:44:23] [Server thread/INFO]: [BetterSocial] Social media 'twitch' column already registered in database!
+[19:44:23] [Server thread/INFO]: [BetterSocial] Social media 'discord' column already registered in database!
+[19:44:23] [Server thread/INFO]: [BetterSocial] Social media 'vk' column already registered in database!
+[19:44:23] [Server thread/INFO]: [BetterSocial] Social media 'tiktok' column already registered in database!
+[19:44:23] [Server thread/INFO]: [BetterSocial] Social media 'facebook' column already registered in database!
+[19:44:23] [Server thread/INFO]: [BetterSocial] Social media 'instagram' column already registered in database!
+[19:44:23] [Server thread/INFO]: [BetterSocial] PlaceholderAPI found! Hooking..
+[19:44:23] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: bettersocial
+[19:44:23] [Server thread/INFO]: [WorldChangeScreenRemover] Enabling WorldChangeScreenRemover v1.0.18
+[19:44:23] [Server thread/INFO]: [AlonsoLevels] Enabling AlonsoLevels v2.2.3-BETA-PRO
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] Max health Attribute check found. Using it..
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] Inventory title with support for more than 32 characters. Skipping..
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] Hex colors are not available! Ignoring..
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] Old constructor for HoverEvent found! Using it..
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] New sendTitle method found! Using it..
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] New setUnbreakable method found! Using it..
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] New isUnbreakable method found! Using it..
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] Damageable interface is not available! Using old method for durability..
+[19:44:24] [Server thread/INFO]:     _   _                  _                _      ___         
+[19:44:24] [Server thread/INFO]:    /_\ | |___ _ _  ___ ___| |   _____ _____| |___ | _ \_ _ ___ 
+[19:44:24] [Server thread/INFO]:   / _ \| / _ \ ' \(_-</ _ \ |__/ -_) V / -_) (_-< |  _/ '_/ _ \
+[19:44:24] [Server thread/INFO]:  /_/ \_\_\___/_||_/__/\___/____\___|\_/\___|_/__/ |_| |_| \___/
+[19:44:24] [Server thread/INFO]: 
+[19:44:24] [Server thread/INFO]:    Running plugin AlonsoLevels v2.2.3-BETA-PRO (v1_12)
+[19:44:24] [Server thread/INFO]:    Server running Paper version git-Paper-4466fe0 (MC: 1.12.2)
+[19:44:24] [Server thread/INFO]:    (Implementing API version git-Paper-4466fe0 (MC: 1.12.2))
+[19:44:24] [Server thread/INFO]:    (Developed by  AlonsoAliaga - Thanks for using my plugin ❤!)
+[19:44:24] [Server thread/INFO]:    (Thanks for purchasing my plugin Unknown! If you didn't, do it or you won't receive support :D
+[19:44:24] [Server thread/INFO]:    Join our official discord server to receive support in alonsoaliaga.com/discord
+[19:44:24] [Server thread/INFO]:    If you loved the plugin consider leaving a 5-stars review and mentioning your server IP in it!
+[19:44:24] [Server thread/INFO]: 
+[19:44:24] [Server thread/INFO]: ==============================================================================================
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] This is not a error! This is just a warning to keep in mind if you have issues!
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] You are using a Paper fork (Paper). This plugin was made for Spigot
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] but was (in most cases) tested with different builds of Paper and Purpur.
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] Spigot and forks API are really similar and should be compatible, however there are
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] some cases in which they aren't compatible. If you have issues report them to the
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] developer instead of reviewing 1 star. Thanks in advanced!
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] Join us in our official support server on alonsoaliaga.com/discord
+[19:44:24] [Server thread/INFO]: ==============================================================================================
+[19:44:24] [Server thread/INFO]: 
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] BungeeCord action bar available. Hooking..
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] ProtocolLib found! Checking..
+[19:44:24] [Server thread/INFO]: [Auto-update] Configuration is up-to-date!
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] Vault found! Hooking..
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] Cost type 'VAULT' has been enabled!
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] Successfully hooked economy with VAULT mode!
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] [HikariCP] Using com.mysql.jdbc.jdbc2.optional.MysqlDataSource for source class name..
+[19:44:24] [Server thread/INFO]: [com.alonsoaliaga.alonsolevels.libraries.hikari.HikariDataSource] HikariPool-1 - Starting...
+[19:44:24] [Server thread/INFO]: [com.alonsoaliaga.alonsolevels.libraries.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] [MySQL] Attempting to create 'account_levels' table..
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] [MySQL] Table 'account_levels' has been created if didn't exist.
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] Column called 'auto_claim' already exists. Skipping..
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] GameProfile field is available for heads. Hooking..
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] Server name has been selected as 'Lobby-2'
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] Formula for experience is enabled! Loading..
+[19:44:24] [Server thread/INFO]: ===========================================================================================
+[19:44:24] [Server thread/WARN]: Warning: Nashorn engine is planned to be removed from a future JDK release
+[19:44:24] [Server thread/INFO]: [AlonsoLevels] Engine 'JavaScript' (1) recognized: jdk.nashorn.api.scripting.NashornScriptEngine@8e35fb3
+[19:44:26] [Server thread/INFO]: [AlonsoLevels] Successfully loaded 300 levels!
+[19:44:26] [Server thread/INFO]: [AlonsoLevels] Successfully loaded 9 colors!
+[19:44:26] [Server thread/INFO]: [AlonsoLevels] Loaded 100 normal rewards in 4 pages.
+[19:44:26] [Server thread/INFO]: [AlonsoLevels] Loaded 10 veteran rewards.
+[19:44:26] [Server thread/INFO]: [AlonsoLevels] Section for 'Normal multipliers' called 'Normal' in multipliers.yml is invalid. Skipping..
+[19:44:26] [Server thread/INFO]: [AlonsoLevels] Loaded 0 normal multipliers.
+[19:44:26] [Server thread/INFO]: [AlonsoLevels] Veteran section is not enabled in configuration. Skipping veteran multipliers..
+[19:44:26] [Server thread/INFO]: [AlonsoLevels] =========================== IMPORTANT WARNING! ===========================
+[19:44:26] [Server thread/INFO]: [AlonsoLevels] Seems that you just updated the plugin to 2.2-BETA-PRO version or higher!
+[19:44:26] [Server thread/INFO]: [AlonsoLevels] To enable slot customization make sure you edit 'Options.Normal-rewards.Rows'
+[19:44:26] [Server thread/INFO]: [AlonsoLevels] and 'Options.Veteran-rewards.Rows' to a number between 1 and 6. If it's 0 custom
+[19:44:26] [Server thread/INFO]: [AlonsoLevels] slots will be ignored as you probably just updated to this version.
+[19:44:26] [Server thread/INFO]: [AlonsoLevels] After updating those values, custom slots will take effect. This is a BETA feature,
+[19:44:26] [Server thread/INFO]: [AlonsoLevels] please report bugs in our discord server: https://alonsoaliaga.com/discord
+[19:44:26] [Server thread/INFO]: [AlonsoLevels] ============================ END OF WARNING! ============================
+[19:44:26] [Server thread/INFO]: [AlonsoLevels] Rewards command shortcut is disabled! To enable you must edit config and RESTART the server.
+[19:44:26] [Server thread/INFO]: [AlonsoLevels] Leaderboard is disabled! Skipping..
+[19:44:26] [Server thread/INFO]: [AlonsoLevels] PlaceholderAPI found! Hooking..
+[19:44:26] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: alonsolevels
+[19:44:26] [Server thread/INFO]: [AlonsoLevels] VaultMultiplier wasn't found! Skipping..
+[19:44:26] [Server thread/INFO]: (*) Downloaded from Https://diREctlEakS.tO
+[19:44:26] [Server thread/INFO]: [SnapiLibrary] Enabling SnapiLibrary v2.0.0
+[19:44:26] [Server thread/INFO]: [SnapiCooperation] Enabling SnapiCooperation v1.0.0
+[19:44:26] [DefaultDispatcher-worker-2/INFO]: Success subscribed to channel: events-messenger
+[19:44:27] [Server thread/INFO]: [SnapiCooperation] [ACF] Enabled Asynchronous Tab Completion Support!
+[19:44:27] [Server thread/INFO]: [SnapiProfile] Enabling SnapiProfile v1.0.0
+[19:44:27] [Server thread/INFO]: [SnapiProfile] [ACF] Enabled Asynchronous Tab Completion Support!
+[19:44:27] [Server thread/INFO]: [SnapiGameReward] Enabling SnapiGameReward v1.0.0
+[19:44:27] [Server thread/INFO]: [UltraSkyWars] Enabling UltraSkyWars v9.0.0
+[19:44:27] [Server thread/INFO]: [com.zaxxer.hikari.HikariDataSource] UltraSkyWars 5f787145-1fcd-43e8-8abd-53a2ba2911ca - Starting...
+[19:44:27] [Server thread/INFO]: [com.zaxxer.hikari.HikariDataSource] UltraSkyWars 5f787145-1fcd-43e8-8abd-53a2ba2911ca - Start completed.
+[19:44:27] [Server thread/INFO]: UltraSkyWars | MySQL connected correctly.
+[19:44:28] [Server thread/INFO]: This chest no has items.
+[19:44:28] [Server thread/INFO]: This chest no has items.
+[19:44:28] [Server thread/INFO]: UltraSkyWars | Injection UltraSkyWars WorldEdit 1.8.8 - 1.12 loaded correctly!
+[19:44:28] [Server thread/INFO]: UltraSkyWars | Hooked into PlaceholderAPI!
+[19:44:28] [Server thread/INFO]: UltraSkyWars | Hooked into NametagEdit!
+[19:44:28] [Server thread/INFO]: UltraSkyWars | Hooked into Vault!
+[19:44:28] [Server thread/INFO]: -------- World Settings For [Birches] --------
+[19:44:28] [Server thread/INFO]: Item Merge Radius: 4.0
+[19:44:28] [Server thread/INFO]: Item Despawn Rate: 6000
+[19:44:28] [Server thread/INFO]: View Distance: 10
+[19:44:28] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[19:44:28] [Server thread/INFO]: Arrow Despawn Rate: 300
+[19:44:28] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[19:44:28] [Server thread/INFO]: Experience Merge Radius: 6.0
+[19:44:28] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[19:44:28] [Server thread/INFO]: Mob Spawn Range: 4
+[19:44:28] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[19:44:28] [Server thread/INFO]: Structure Info Saving: true
+[19:44:28] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[19:44:28] [Server thread/INFO]: Cane Growth Modifier: 100%
+[19:44:28] [Server thread/INFO]: Melon Growth Modifier: 100%
+[19:44:28] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[19:44:28] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[19:44:28] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[19:44:28] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[19:44:28] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[19:44:28] [Server thread/INFO]: Vine Growth Modifier: 100%
+[19:44:28] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[19:44:28] [Server thread/INFO]: Max TNT Explosions: 100
+[19:44:28] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[19:44:28] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[19:44:28] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[19:44:28] [Server thread/INFO]: Random Lighting Updates: false
+[19:44:28] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 16 / Mi 12 / Tiv true
+[19:44:28] [Server thread/INFO]: Preparing start region for level 1 (Seed: 4145140481494932845)
+[19:44:29] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: usw
+[19:44:29] [Server thread/INFO]: [SnapiBalancer] Enabling SnapiBalancer v1.5
+[19:44:29] [Server thread/INFO]: [SnapiBalancer] [ACF] Enabled Asynchronous Tab Completion Support!
+[19:44:29] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: balancer
+[19:44:29] [Server thread/INFO]: [SnapiCoin] Enabling SnapiCoin v1.0.0
+[19:44:29] [Server thread/INFO]: [SnapiCoin] [ACF] Enabled Asynchronous Tab Completion Support!
+[19:44:29] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: coin
+[19:44:29] [Server thread/INFO]: [SnapiClans] Enabling SnapiClans v3.0.0
+[19:44:30] [Server thread/INFO]: [SnapiClans] [ACF] Enabled Asynchronous Tab Completion Support!
+[19:44:30] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: clan
+[19:44:30] [Server thread/INFO]: Done (9,659s)! For help, type "help" or "?"
+[19:44:30] [Server thread/INFO]: Timings Reset
+[19:44:30] [Craft Scheduler Thread - 7/INFO]: [TigerReports] Le plugin utilise une base de donnees MySQL.
+[19:44:30] [Craft Scheduler Thread - 6/WARN]: ------------------------------------------------------
+[19:44:30] [Craft Scheduler Thread - 6/WARN]: [TigerReports] Le plugin a ete mis a jour.
+[19:44:30] [Craft Scheduler Thread - 6/WARN]: La nouvelle version 5.3.4 est disponible ici:
+[19:44:30] [Craft Scheduler Thread - 6/WARN]: https://www.spigotmc.org/resources/tigerreports.25773/
+[19:44:30] [Craft Scheduler Thread - 6/WARN]: ------------------------------------------------------
+[19:44:31] [Server thread/INFO]: (FAWE) Detected class org.bukkit.event.block.BlockExplodeEvent
+[19:44:31] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.12.2 (340)
+[19:44:31] [Server thread/WARN]: [ViaVersion] This version of Minecraft is extremely outdated and support for it has reached its end of life. You will still be able to run Via on this Minecraft version, but we are unlikely to provide any further fixes or help with problems specific to legacy Minecraft versions. Please consider updating to give your players a better experience and to avoid issues that have long been fixed.
+[19:44:31] [Server thread/WARN]: [ViaVersion] You are running an outdated Java version, please update it to at least Java 17 (your version is 11.0.22).
+[19:44:31] [Server thread/WARN]: [ViaVersion] Starting with Minecraft 1.21, ViaVersion will no longer officially be compatible with this version of Java, only offering unsupported compatibility builds.
+[19:44:31] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[19:44:31] [Server thread/INFO]: [FakePlayers] You are using the latest version of FakePlayers.
+[19:44:31] [Craft Scheduler Thread - 7/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor!
+[19:44:31] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: bungee
+[19:44:31] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: localtime
+[19:44:31] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: luckperms
+[19:44:31] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: player
+[19:44:31] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: progress
+[19:44:31] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: server
+[19:44:31] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: vault
+[19:44:31] [Server thread/INFO]: 7 placeholder hooks successfully registered!
+[19:44:31] [Server thread/WARN]: [ViaVersion] There is a newer plugin version available: 5.0.2, you're on: 5.0.1
+[19:44:32] [Server thread/INFO]: UltraSkyWars | Injection UltraSkyWars SpecialItems loaded correctly!
+[19:44:32] [Server thread/INFO]: UltraSkyWars | Injection UltraSkyWars MobFriends loaded correctly!
+[19:44:35] [Server thread/INFO]: [TAB] ViaVersion returned protocol version -1 for player test1. Using server's version (340 - 1.12.2)
+[19:44:35] [Server thread/INFO]: [TAB] ViaVersion returned protocol version -1 for player test2. Using server's version (340 - 1.12.2)
+[19:44:35] [Server thread/INFO]: [TAB] ViaVersion returned protocol version -1 for player test3. Using server's version (340 - 1.12.2)
+[19:44:35] [Server thread/INFO]: [TAB] ViaVersion returned protocol version -1 for player test4. Using server's version (340 - 1.12.2)
+[19:44:36] [Server thread/INFO]: [TAB] ViaVersion returned protocol version -1 for player test5. Using server's version (340 - 1.12.2)
+[19:44:36] [Server thread/INFO]: [TAB] ViaVersion returned protocol version -1 for player test6. Using server's version (340 - 1.12.2)
+[19:44:36] [Server thread/INFO]: [TAB] ViaVersion returned protocol version -1 for player test7. Using server's version (340 - 1.12.2)
+[19:44:36] [Server thread/INFO]: [TAB] ViaVersion returned protocol version -1 for player test8. Using server's version (340 - 1.12.2)
+[19:44:36] [Server thread/INFO]: [TAB] ViaVersion returned protocol version -1 for player test9. Using server's version (340 - 1.12.2)
+[19:44:36] [Server thread/INFO]: [TAB] ViaVersion returned protocol version -1 for player test10. Using server's version (340 - 1.12.2)
+[19:44:36] [Server thread/INFO]: [TAB] ViaVersion returned protocol version -1 for player test11. Using server's version (340 - 1.12.2)
+[19:44:36] [Server thread/INFO]: [TAB] ViaVersion returned protocol version -1 for player test12. Using server's version (340 - 1.12.2)
+[19:44:36] [Server thread/INFO]: [TAB] ViaVersion returned protocol version -1 for player test13. Using server's version (340 - 1.12.2)
+[19:44:36] [Server thread/INFO]: [TAB] ViaVersion returned protocol version -1 for player test14. Using server's version (340 - 1.12.2)
+[19:44:36] [Server thread/INFO]: [TAB] ViaVersion returned protocol version -1 for player test. Using server's version (340 - 1.12.2)
+[19:44:39] [User Authenticator #1/INFO]: UUID of player FlaimerPro is 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/decorations/gray_bed_from_white_bed' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/decorations/light_blue_bed_from_white_bed' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/redstone/dispenser' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/decorations/lime_bed_from_white_bed' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/decorations/magenta_bed_from_white_bed' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/decorations/orange_bed_from_white_bed' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/decorations/green_bed_from_white_bed' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/decorations/brown_bed_from_white_bed' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/decorations/pink_bed_from_white_bed' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/decorations/purple_bed_from_white_bed' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/decorations/yellow_bed_from_white_bed' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/decorations/black_bed_from_white_bed' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/decorations/red_bed_from_white_bed' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/decorations/cyan_bed_from_white_bed' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/decorations/blue_bed_from_white_bed' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/decorations/light_gray_bed_from_white_bed' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/redstone/wooden_button' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/food/cake' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/building_blocks/oak_wooden_slab' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/decorations/fence' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/decorations/crafting_table' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/redstone/trapdoor' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:story/shiny_gear' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/building_blocks/oak_stairs' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/redstone/fence_gate' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/redstone/wooden_pressure_plate' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/redstone/wooden_door' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/misc/stick' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/decorations/sign' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/building_blocks/stonebrick' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:story/lava_bucket' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/decorations/chest' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/redstone/stone_button' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/building_blocks/stone_slab' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/redstone/stone_pressure_plate' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:story/obtain_armor' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/brewing/cauldron' in progress file .\wait\advancements\67b6efe6-bf52-3c13-8d21-291fd6b1fe76.json - it doesn't exist anymore?
+[19:44:39] [Server thread/ERROR]: [WorldChangeScreenRemover] Unhandled exception occurred in onPacketSending(PacketEvent) for WorldChangeScreenRemover
+java.lang.UnsupportedOperationException: The method getUniqueId is not supported for temporary players.
+	at com.comphenix.protocol.injector.temporary.TemporaryPlayerFactory$1.delegate(TemporaryPlayerFactory.java:138) ~[?:?]
+	at com.comphenix.protocol.injector.temporary.TemporaryPlayerInvocationHandler.getUniqueId(Unknown Source) ~[?:?]
+	at me.zombie_striker.wcsr.MagicPacketHolder$3.onPacketSending(MagicPacketHolder.java:98) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokeSendingListener(SortedPacketListenerList.java:195) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokePacketSending(SortedPacketListenerList.java:149) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.postPacketToListeners(PacketFilterManager.java:547) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.invokePacketSending(PacketFilterManager.java:521) ~[?:?]
+	at com.comphenix.protocol.injector.netty.manager.NetworkManagerInjector.onPacketSending(NetworkManagerInjector.java:94) ~[?:?]
+	at com.comphenix.protocol.injector.netty.channel.NettyChannelInjector.processOutbound(NettyChannelInjector.java:527) ~[?:?]
+	at com.comphenix.protocol.injector.netty.channel.NettyChannelInjector$2.proxyRunnable(NettyChannelInjector.java:469) ~[?:?]
+	at com.comphenix.protocol.injector.netty.channel.NettyEventLoopProxy.execute(NettyEventLoopProxy.java:220) ~[?:?]
+	at net.minecraft.server.v1_12_R1.NetworkManager.a(NetworkManager.java:209) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.NetworkManager.sendPacket(NetworkManager.java:157) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.PlayerConnection.sendPacket(PlayerConnection.java:1206) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.PlayerList.moveToWorld(PlayerList.java:719) ~[spigot.jar:git-Paper-4466fe0]
+	at org.bukkit.craftbukkit.v1_12_R1.entity.CraftPlayer.teleport(CraftPlayer.java:655) ~[spigot.jar:git-Paper-4466fe0]
+	at org.bukkit.craftbukkit.v1_12_R1.entity.CraftEntity.teleport(CraftEntity.java:310) ~[spigot.jar:git-Paper-4466fe0]
+	at io.github.Leonardo0013YT.UltraSkyWars.game.UltraTeamGame.addPlayer(UltraTeamGame.java:62) ~[?:?]
+	at io.github.Leonardo0013YT.UltraSkyWars.managers.GameManager.addPlayerGame(GameManager.java:224) ~[?:?]
+	at io.github.Leonardo0013YT.UltraSkyWars.listeners.PlayerListener.onJoin(PlayerListener.java:58) ~[?:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor159.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:70) ~[spigot.jar:git-Paper-4466fe0]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:78) ~[spigot.jar:git-Paper-4466fe0]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62) ~[spigot.jar:git-Paper-4466fe0]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:513) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.PlayerList.onPlayerJoin(PlayerList.java:376) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.PlayerList.a(PlayerList.java:185) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.LoginListener.b(LoginListener.java:178) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.LoginListener.e(LoginListener.java:68) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.NetworkManager.a(NetworkManager.java:273) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.ServerConnection.c(ServerConnection.java:150) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.D(MinecraftServer.java:967) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.DedicatedServer.D(DedicatedServer.java:427) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.C(MinecraftServer.java:793) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:683) ~[spigot.jar:git-Paper-4466fe0]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+[19:44:39] [Server thread/ERROR]: Parameters: 
+  net.minecraft.server.v1_12_R1.PacketPlayOutRespawn@60055fd5[
+    a=-1
+    b=NORMAL
+    c=SURVIVAL
+    d=net.minecraft.server.v1_12_R1.WorldType@53ee474d
+  ]
+
+[19:44:39] [Server thread/ERROR]: [WorldChangeScreenRemover] Unhandled exception occurred in onPacketSending(PacketEvent) for WorldChangeScreenRemover
+java.lang.UnsupportedOperationException: The method getUniqueId is not supported for temporary players.
+	at com.comphenix.protocol.injector.temporary.TemporaryPlayerFactory$1.delegate(TemporaryPlayerFactory.java:138) ~[?:?]
+	at com.comphenix.protocol.injector.temporary.TemporaryPlayerInvocationHandler.getUniqueId(Unknown Source) ~[?:?]
+	at me.zombie_striker.wcsr.MagicPacketHolder$3.onPacketSending(MagicPacketHolder.java:98) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokeSendingListener(SortedPacketListenerList.java:195) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokePacketSending(SortedPacketListenerList.java:149) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.postPacketToListeners(PacketFilterManager.java:547) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.invokePacketSending(PacketFilterManager.java:521) ~[?:?]
+	at com.comphenix.protocol.injector.netty.manager.NetworkManagerInjector.onPacketSending(NetworkManagerInjector.java:94) ~[?:?]
+	at com.comphenix.protocol.injector.netty.channel.NettyChannelInjector.processOutbound(NettyChannelInjector.java:527) ~[?:?]
+	at com.comphenix.protocol.injector.netty.channel.NettyChannelInjector$2.proxyRunnable(NettyChannelInjector.java:469) ~[?:?]
+	at com.comphenix.protocol.injector.netty.channel.NettyEventLoopProxy.execute(NettyEventLoopProxy.java:220) ~[?:?]
+	at net.minecraft.server.v1_12_R1.NetworkManager.a(NetworkManager.java:209) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.NetworkManager.sendPacket(NetworkManager.java:157) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.PlayerConnection.sendPacket(PlayerConnection.java:1206) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.PlayerList.moveToWorld(PlayerList.java:722) ~[spigot.jar:git-Paper-4466fe0]
+	at org.bukkit.craftbukkit.v1_12_R1.entity.CraftPlayer.teleport(CraftPlayer.java:655) ~[spigot.jar:git-Paper-4466fe0]
+	at org.bukkit.craftbukkit.v1_12_R1.entity.CraftEntity.teleport(CraftEntity.java:310) ~[spigot.jar:git-Paper-4466fe0]
+	at io.github.Leonardo0013YT.UltraSkyWars.game.UltraTeamGame.addPlayer(UltraTeamGame.java:62) ~[?:?]
+	at io.github.Leonardo0013YT.UltraSkyWars.managers.GameManager.addPlayerGame(GameManager.java:224) ~[?:?]
+	at io.github.Leonardo0013YT.UltraSkyWars.listeners.PlayerListener.onJoin(PlayerListener.java:58) ~[?:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor159.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:70) ~[spigot.jar:git-Paper-4466fe0]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:78) ~[spigot.jar:git-Paper-4466fe0]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62) ~[spigot.jar:git-Paper-4466fe0]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:513) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.PlayerList.onPlayerJoin(PlayerList.java:376) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.PlayerList.a(PlayerList.java:185) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.LoginListener.b(LoginListener.java:178) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.LoginListener.e(LoginListener.java:68) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.NetworkManager.a(NetworkManager.java:273) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.ServerConnection.c(ServerConnection.java:150) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.D(MinecraftServer.java:967) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.DedicatedServer.D(DedicatedServer.java:427) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.C(MinecraftServer.java:793) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:683) ~[spigot.jar:git-Paper-4466fe0]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+[19:44:39] [Server thread/ERROR]: Parameters: 
+  net.minecraft.server.v1_12_R1.PacketPlayOutRespawn@6e69ce90[
+    a=0
+    b=NORMAL
+    c=SURVIVAL
+    d=net.minecraft.server.v1_12_R1.WorldType@53ee474d
+  ]
+
+[19:44:39] [Server thread/INFO]: FlaimerPro[/127.0.0.1:55661] logged in with entity id 17 at ([wait]0.5, 76.8125, 0.5)
+[19:44:48] [Server thread/INFO]: Running 1.12 registry dumper!
+[19:44:48] [Server thread/INFO]: Using adapter: com.boydti.fawe.bukkit.v1_12.FaweAdapter_1_12@522c2eb9
+[19:44:48] [Server thread/INFO]: =========================================
+[19:44:50] [Server thread/ERROR]: [WorldChangeScreenRemover] Unhandled exception occurred in onPacketSending(PacketEvent) for WorldChangeScreenRemover
+java.lang.UnsupportedOperationException: The method getUniqueId is not supported for temporary players.
+	at com.comphenix.protocol.injector.temporary.TemporaryPlayerFactory$1.delegate(TemporaryPlayerFactory.java:138) ~[?:?]
+	at com.comphenix.protocol.injector.temporary.TemporaryPlayerInvocationHandler.getUniqueId(Unknown Source) ~[?:?]
+	at me.zombie_striker.wcsr.MagicPacketHolder$3.onPacketSending(MagicPacketHolder.java:98) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokeSendingListener(SortedPacketListenerList.java:195) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokePacketSending(SortedPacketListenerList.java:149) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.postPacketToListeners(PacketFilterManager.java:547) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.invokePacketSending(PacketFilterManager.java:521) ~[?:?]
+	at com.comphenix.protocol.injector.netty.manager.NetworkManagerInjector.onPacketSending(NetworkManagerInjector.java:94) ~[?:?]
+	at com.comphenix.protocol.injector.netty.channel.NettyChannelInjector.processOutbound(NettyChannelInjector.java:527) ~[?:?]
+	at com.comphenix.protocol.injector.netty.channel.NettyChannelInjector$2.proxyRunnable(NettyChannelInjector.java:469) ~[?:?]
+	at com.comphenix.protocol.injector.netty.channel.NettyEventLoopProxy.execute(NettyEventLoopProxy.java:220) ~[?:?]
+	at net.minecraft.server.v1_12_R1.NetworkManager.a(NetworkManager.java:209) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.NetworkManager.sendPacket(NetworkManager.java:157) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.PlayerConnection.sendPacket(PlayerConnection.java:1206) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.PlayerList.moveToWorld(PlayerList.java:719) ~[spigot.jar:git-Paper-4466fe0]
+	at org.bukkit.craftbukkit.v1_12_R1.entity.CraftPlayer.teleport(CraftPlayer.java:655) ~[spigot.jar:git-Paper-4466fe0]
+	at org.bukkit.craftbukkit.v1_12_R1.entity.CraftEntity.teleport(CraftEntity.java:310) ~[spigot.jar:git-Paper-4466fe0]
+	at io.github.Leonardo0013YT.UltraSkyWars.game.UltraTeamGame.updateStarting(UltraTeamGame.java:259) ~[?:?]
+	at io.github.Leonardo0013YT.UltraSkyWars.superclass.Game.update(Game.java:375) ~[?:?]
+	at io.github.Leonardo0013YT.UltraSkyWars.managers.GameManager$1.run(GameManager.java:405) ~[?:?]
+	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftTask.run(CraftTask.java:64) ~[spigot.jar:git-Paper-4466fe0]
+	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:423) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.D(MinecraftServer.java:859) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.DedicatedServer.D(DedicatedServer.java:427) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.C(MinecraftServer.java:793) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:683) ~[spigot.jar:git-Paper-4466fe0]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+[19:44:50] [Server thread/ERROR]: Parameters: 
+  net.minecraft.server.v1_12_R1.PacketPlayOutRespawn@11c8009e[
+    a=-1
+    b=NORMAL
+    c=SURVIVAL
+    d=net.minecraft.server.v1_12_R1.WorldType@53ee474d
+  ]
+
+[19:44:50] [Server thread/ERROR]: [WorldChangeScreenRemover] Unhandled exception occurred in onPacketSending(PacketEvent) for WorldChangeScreenRemover
+java.lang.UnsupportedOperationException: The method getUniqueId is not supported for temporary players.
+	at com.comphenix.protocol.injector.temporary.TemporaryPlayerFactory$1.delegate(TemporaryPlayerFactory.java:138) ~[?:?]
+	at com.comphenix.protocol.injector.temporary.TemporaryPlayerInvocationHandler.getUniqueId(Unknown Source) ~[?:?]
+	at me.zombie_striker.wcsr.MagicPacketHolder$3.onPacketSending(MagicPacketHolder.java:98) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokeSendingListener(SortedPacketListenerList.java:195) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokePacketSending(SortedPacketListenerList.java:149) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.postPacketToListeners(PacketFilterManager.java:547) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.invokePacketSending(PacketFilterManager.java:521) ~[?:?]
+	at com.comphenix.protocol.injector.netty.manager.NetworkManagerInjector.onPacketSending(NetworkManagerInjector.java:94) ~[?:?]
+	at com.comphenix.protocol.injector.netty.channel.NettyChannelInjector.processOutbound(NettyChannelInjector.java:527) ~[?:?]
+	at com.comphenix.protocol.injector.netty.channel.NettyChannelInjector$2.proxyRunnable(NettyChannelInjector.java:469) ~[?:?]
+	at com.comphenix.protocol.injector.netty.channel.NettyEventLoopProxy.execute(NettyEventLoopProxy.java:220) ~[?:?]
+	at net.minecraft.server.v1_12_R1.NetworkManager.a(NetworkManager.java:209) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.NetworkManager.sendPacket(NetworkManager.java:157) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.PlayerConnection.sendPacket(PlayerConnection.java:1206) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.PlayerList.moveToWorld(PlayerList.java:722) ~[spigot.jar:git-Paper-4466fe0]
+	at org.bukkit.craftbukkit.v1_12_R1.entity.CraftPlayer.teleport(CraftPlayer.java:655) ~[spigot.jar:git-Paper-4466fe0]
+	at org.bukkit.craftbukkit.v1_12_R1.entity.CraftEntity.teleport(CraftEntity.java:310) ~[spigot.jar:git-Paper-4466fe0]
+	at io.github.Leonardo0013YT.UltraSkyWars.game.UltraTeamGame.updateStarting(UltraTeamGame.java:259) ~[?:?]
+	at io.github.Leonardo0013YT.UltraSkyWars.superclass.Game.update(Game.java:375) ~[?:?]
+	at io.github.Leonardo0013YT.UltraSkyWars.managers.GameManager$1.run(GameManager.java:405) ~[?:?]
+	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftTask.run(CraftTask.java:64) ~[spigot.jar:git-Paper-4466fe0]
+	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:423) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.D(MinecraftServer.java:859) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.DedicatedServer.D(DedicatedServer.java:427) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.C(MinecraftServer.java:793) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:683) ~[spigot.jar:git-Paper-4466fe0]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+[19:44:50] [Server thread/ERROR]: Parameters: 
+  net.minecraft.server.v1_12_R1.PacketPlayOutRespawn@2f77e0f1[
+    a=0
+    b=NORMAL
+    c=SURVIVAL
+    d=net.minecraft.server.v1_12_R1.WorldType@53ee474d
+  ]
+
+[19:45:24] [Server thread/ERROR]: [WorldChangeScreenRemover] Unhandled exception occurred in onPacketSending(PacketEvent) for WorldChangeScreenRemover
+java.lang.UnsupportedOperationException: The method getUniqueId is not supported for temporary players.
+	at com.comphenix.protocol.injector.temporary.TemporaryPlayerFactory$1.delegate(TemporaryPlayerFactory.java:138) ~[?:?]
+	at com.comphenix.protocol.injector.temporary.TemporaryPlayerInvocationHandler.getUniqueId(Unknown Source) ~[?:?]
+	at me.zombie_striker.wcsr.MagicPacketHolder$3.onPacketSending(MagicPacketHolder.java:98) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokeSendingListener(SortedPacketListenerList.java:195) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokePacketSending(SortedPacketListenerList.java:149) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.postPacketToListeners(PacketFilterManager.java:547) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.invokePacketSending(PacketFilterManager.java:521) ~[?:?]
+	at com.comphenix.protocol.injector.netty.manager.NetworkManagerInjector.onPacketSending(NetworkManagerInjector.java:94) ~[?:?]
+	at com.comphenix.protocol.injector.netty.channel.NettyChannelInjector.processOutbound(NettyChannelInjector.java:527) ~[?:?]
+	at com.comphenix.protocol.injector.netty.channel.NettyChannelInjector$2.proxyRunnable(NettyChannelInjector.java:469) ~[?:?]
+	at com.comphenix.protocol.injector.netty.channel.NettyEventLoopProxy.execute(NettyEventLoopProxy.java:220) ~[?:?]
+	at net.minecraft.server.v1_12_R1.NetworkManager.a(NetworkManager.java:209) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.NetworkManager.sendPacket(NetworkManager.java:157) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.PlayerConnection.sendPacket(PlayerConnection.java:1206) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.PlayerList.moveToWorld(PlayerList.java:719) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.PlayerList.moveToWorld(PlayerList.java:622) ~[spigot.jar:git-Paper-4466fe0]
+	at org.bukkit.craftbukkit.v1_12_R1.entity.CraftPlayer$1.respawn(CraftPlayer.java:1840) ~[spigot.jar:git-Paper-4466fe0]
+	at io.github.Leonardo0013YT.UltraSkyWars.listeners.PlayerListener$1.run(PlayerListener.java:172) ~[?:?]
+	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftTask.run(CraftTask.java:64) ~[spigot.jar:git-Paper-4466fe0]
+	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:423) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.D(MinecraftServer.java:859) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.DedicatedServer.D(DedicatedServer.java:427) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.C(MinecraftServer.java:793) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:683) ~[spigot.jar:git-Paper-4466fe0]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+[19:45:24] [Server thread/ERROR]: Parameters: 
+  net.minecraft.server.v1_12_R1.PacketPlayOutRespawn@765b3359[
+    a=-1
+    b=NORMAL
+    c=SURVIVAL
+    d=net.minecraft.server.v1_12_R1.WorldType@53ee474d
+  ]
+
+[19:45:24] [Server thread/ERROR]: [WorldChangeScreenRemover] Unhandled exception occurred in onPacketSending(PacketEvent) for WorldChangeScreenRemover
+java.lang.UnsupportedOperationException: The method getUniqueId is not supported for temporary players.
+	at com.comphenix.protocol.injector.temporary.TemporaryPlayerFactory$1.delegate(TemporaryPlayerFactory.java:138) ~[?:?]
+	at com.comphenix.protocol.injector.temporary.TemporaryPlayerInvocationHandler.getUniqueId(Unknown Source) ~[?:?]
+	at me.zombie_striker.wcsr.MagicPacketHolder$3.onPacketSending(MagicPacketHolder.java:98) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokeSendingListener(SortedPacketListenerList.java:195) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokePacketSending(SortedPacketListenerList.java:149) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.postPacketToListeners(PacketFilterManager.java:547) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.invokePacketSending(PacketFilterManager.java:521) ~[?:?]
+	at com.comphenix.protocol.injector.netty.manager.NetworkManagerInjector.onPacketSending(NetworkManagerInjector.java:94) ~[?:?]
+	at com.comphenix.protocol.injector.netty.channel.NettyChannelInjector.processOutbound(NettyChannelInjector.java:527) ~[?:?]
+	at com.comphenix.protocol.injector.netty.channel.NettyChannelInjector$2.proxyRunnable(NettyChannelInjector.java:469) ~[?:?]
+	at com.comphenix.protocol.injector.netty.channel.NettyEventLoopProxy.execute(NettyEventLoopProxy.java:220) ~[?:?]
+	at net.minecraft.server.v1_12_R1.NetworkManager.a(NetworkManager.java:209) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.NetworkManager.sendPacket(NetworkManager.java:157) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.PlayerConnection.sendPacket(PlayerConnection.java:1206) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.PlayerList.moveToWorld(PlayerList.java:722) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.PlayerList.moveToWorld(PlayerList.java:622) ~[spigot.jar:git-Paper-4466fe0]
+	at org.bukkit.craftbukkit.v1_12_R1.entity.CraftPlayer$1.respawn(CraftPlayer.java:1840) ~[spigot.jar:git-Paper-4466fe0]
+	at io.github.Leonardo0013YT.UltraSkyWars.listeners.PlayerListener$1.run(PlayerListener.java:172) ~[?:?]
+	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftTask.run(CraftTask.java:64) ~[spigot.jar:git-Paper-4466fe0]
+	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:423) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.D(MinecraftServer.java:859) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.DedicatedServer.D(DedicatedServer.java:427) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.C(MinecraftServer.java:793) ~[spigot.jar:git-Paper-4466fe0]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:683) ~[spigot.jar:git-Paper-4466fe0]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+[19:45:24] [Server thread/ERROR]: Parameters: 
+  net.minecraft.server.v1_12_R1.PacketPlayOutRespawn@e692a2b[
+    a=0
+    b=NORMAL
+    c=SURVIVAL
+    d=net.minecraft.server.v1_12_R1.WorldType@53ee474d
+  ]
+
+[19:45:26] [Server thread/INFO]: starts 47
+[19:45:26] [Server thread/INFO]: starts 0
+[19:45:26] [Server thread/INFO]: starts 0
+[19:45:26] [Server thread/INFO]: starts 32
+[19:45:26] [Server thread/INFO]: starts 0
+[19:45:26] [Server thread/INFO]: starts 0
+[19:45:26] [Server thread/INFO]: starts 0
+[19:45:26] [Server thread/INFO]: starts 0
+[19:45:26] [Server thread/INFO]: starts 0
+[19:45:26] [Server thread/INFO]: starts 0
+[19:45:26] [Server thread/INFO]: starts 15
+[19:45:26] [Server thread/INFO]: starts 0
+[19:45:26] [Server thread/INFO]: starts 0
+[19:45:26] [Server thread/INFO]: starts 0
+[19:45:26] [Server thread/INFO]: starts 0
+[19:45:26] [Server thread/INFO]: starts 0
+[19:45:26] [Server thread/INFO]: 94
+[19:45:26] [Server thread/INFO]: 94
+[19:50:02] [Server thread/INFO]: FlaimerPro issued server command: /profile
+[19:50:03] [Server thread/INFO]: FlaimerPro lost connection: Disconnected
+[19:52:05] [Server thread/INFO]: -------- World Settings For [Birches] --------
+[19:52:05] [Server thread/INFO]: Item Merge Radius: 4.0
+[19:52:05] [Server thread/INFO]: Item Despawn Rate: 6000
+[19:52:05] [Server thread/INFO]: View Distance: 10
+[19:52:05] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[19:52:05] [Server thread/INFO]: Arrow Despawn Rate: 300
+[19:52:05] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[19:52:05] [Server thread/INFO]: Experience Merge Radius: 6.0
+[19:52:05] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[19:52:05] [Server thread/INFO]: Mob Spawn Range: 4
+[19:52:05] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[19:52:05] [Server thread/INFO]: Structure Info Saving: true
+[19:52:05] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[19:52:05] [Server thread/INFO]: Cane Growth Modifier: 100%
+[19:52:05] [Server thread/INFO]: Melon Growth Modifier: 100%
+[19:52:05] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[19:52:05] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[19:52:05] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[19:52:05] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[19:52:05] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[19:52:05] [Server thread/INFO]: Vine Growth Modifier: 100%
+[19:52:05] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[19:52:05] [Server thread/INFO]: Max TNT Explosions: 100
+[19:52:05] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[19:52:05] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[19:52:05] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[19:52:05] [Server thread/INFO]: Random Lighting Updates: false
+[19:52:05] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 16 / Mi 12 / Tiv true
+[19:52:05] [Server thread/INFO]: Preparing start region for level 1 (Seed: 4145140481494932845)
+[19:52:06] [Server thread/INFO]: Stopping server
+[19:52:06] [Server thread/INFO]: [SnapiClans] Disabling SnapiClans v3.0.0
+[19:52:06] [Server thread/INFO]: [SnapiCoin] Disabling SnapiCoin v1.0.0
+[19:52:06] [Server thread/INFO]: [SnapiBalancer] Disabling SnapiBalancer v1.5
+[19:52:06] [Server thread/INFO]: [UltraSkyWars] Disabling UltraSkyWars v9.0.0
+[19:52:06] [Server thread/INFO]: [com.zaxxer.hikari.HikariDataSource] UltraSkyWars 5f787145-1fcd-43e8-8abd-53a2ba2911ca - Shutdown initiated...
+[19:52:06] [Server thread/INFO]: [com.zaxxer.hikari.HikariDataSource] UltraSkyWars 5f787145-1fcd-43e8-8abd-53a2ba2911ca - Shutdown completed.
+[19:52:06] [Server thread/INFO]: [SnapiGameReward] Disabling SnapiGameReward v1.0.0
+[19:52:06] [Server thread/INFO]: [SnapiProfile] Disabling SnapiProfile v1.0.0
+[19:52:06] [Server thread/INFO]: [SnapiCooperation] Disabling SnapiCooperation v1.0.0
+[19:52:06] [Server thread/INFO]: [SnapiLibrary] Disabling SnapiLibrary v2.0.0
+[19:52:06] [Server thread/INFO]: [XConomy] Disabling XConomy v2.25.15
+[19:52:06] [XConomyRedisSub/INFO]: [XConomy] Unsubscribe redis channel
+[19:52:06] [Server thread/INFO]: [XConomy] XConomy успешно выключен
+[19:52:06] [Server thread/INFO]: [AlonsoLevels] Disabling AlonsoLevels v2.2.3-BETA-PRO
+[19:52:06] [Server thread/INFO]: [AlonsoLevels] [MySQL] Forcing connection close..
+[19:52:06] [Server thread/INFO]: [com.alonsoaliaga.alonsolevels.libraries.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[19:52:06] [Server thread/INFO]: [com.alonsoaliaga.alonsolevels.libraries.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[19:52:06] [Server thread/INFO]:  
+[19:52:06] [Server thread/INFO]: [AlonsoLevels] Plugin has been disabled!
+[19:52:06] [Server thread/INFO]: [AlonsoLevels] Thank you for using my plugin!
+[19:52:06] [Server thread/INFO]:  
+[19:52:06] [Server thread/INFO]: [WorldChangeScreenRemover] Disabling WorldChangeScreenRemover v1.0.18
+[19:52:06] [Server thread/INFO]: [BetterSocial] Disabling BetterSocial v1.3-BETA
+[19:52:06] [Server thread/INFO]: [BetterSocial] [MySQL] Forcing connection close..
+[19:52:06] [Server thread/INFO]: [com.alonsoaliaga.bettersocial.libraries.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[19:52:06] [Server thread/INFO]: [com.alonsoaliaga.bettersocial.libraries.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[19:52:06] [Server thread/INFO]:  
+[19:52:06] [Server thread/INFO]: [BetterSocial] Plugin has been disabled!
+[19:52:06] [Server thread/INFO]: [BetterSocial] Thank you for using my plugin!
+[19:52:06] [Server thread/INFO]:  
+[19:52:06] [Server thread/INFO]: [TigerReports] Disabling TigerReports v4.13.1
+[19:52:06] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
+[19:52:06] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion: vault
+[19:52:06] [Server thread/INFO]: [TAB] Disabling TAB v4.0.3
+[19:52:06] [Server thread/INFO]: [TAB] Disabled in 0ms
+[19:52:06] [Server thread/INFO]: [FakePlayers] Disabling FakePlayers v2.4
+[19:52:06] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.0.0-SNAPSHOT-b587
+[19:52:06] [Server thread/INFO]: [LastLoginAPI] Disabling LastLoginAPI v1.7.4
+[19:52:06] [Server thread/INFO]: [LastLoginAPI] Disabling LastLoginAPI
+[19:52:06] [Server thread/WARN]: [Server thread] INFO com.alessiodp.lastloginapi.libs.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[19:52:06] [Server thread/WARN]: [Server thread] INFO com.alessiodp.lastloginapi.libs.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[19:52:06] [Server thread/INFO]: [LastLoginAPI] LastLoginAPI disabled
+[19:52:06] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v6.1.7;dd00bb1
+[19:52:06] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.117
+[19:52:06] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion: luckperms
+[19:52:06] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[19:52:06] [Server thread/INFO]: [LuckPerms] Closing messaging service...
+[19:52:06] [Server thread/INFO]: [LuckPerms] Closing storage...
+[19:52:06] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Shutdown initiated...
+[19:52:06] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Shutdown completed.
+[19:52:06] [Server thread/INFO]: [LuckPerms] Goodbye!
+[19:52:06] [Server thread/INFO]: [ViaRewind] Disabling ViaRewind v4.0.0
+[19:52:06] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.0.1
+[19:52:06] [Server thread/INFO]: [NBTAPI] Disabling NBTAPI v2.8.0
+[19:52:06] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.0.1
+[19:52:06] [Server thread/INFO]: [ViaVersion] ViaVersion is disabling, if this is a reload and you experience issues consider rebooting.
+[19:52:06] [Server thread/INFO]: [CommandForward] Disabling CommandForward v0.5.0
+[19:52:06] [Server thread/INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v21.03.26-b67f782-1287-22.3.10
+[19:52:06] [Server thread/INFO]: [OldCombatMechanics] Disabling OldCombatMechanics v1.11.0
+[19:52:06] [Server thread/INFO]: [OldCombatMechanics] OldCombatMechanics v1.11.0 has been disabled
+[19:52:06] [Server thread/INFO]: [NametagEdit] Disabling NametagEdit v4.4.10
+[19:52:06] [Server thread/INFO]: [DisableJoinMessage] Disabling DisableJoinMessage v1.0
+[19:52:06] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.10.10
+[19:52:06] [Server thread/INFO]: Saving players
+[19:52:06] [Server thread/INFO]: Saving worlds
+[19:52:06] [Server thread/INFO]: Saving chunks for level 'wait'/overworld
+[19:52:06] [Server thread/INFO]: Saving chunks for level 'Birches'/overworld

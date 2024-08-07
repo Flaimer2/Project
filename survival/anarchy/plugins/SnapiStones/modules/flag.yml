@@ -1,0 +1,16 @@
+blocks:
+  RED_MUSHROOM_BLOCK:
+    farewell: '&fВы &cвышли &fиз региона игрока &a%other_player_name%'
+    greeting: '&fВы &aвошли &fв регион игрока &a%other_player_name%'
+  BROWN_MUSHROOM_BLOCK:
+    farewell: '&fВы &cвышли &fиз региона игрока &a%other_player_name%'
+    greeting: '&fВы &aвошли &fв регион игрока &a%other_player_name%'
+  EMERALD_ORE:
+    farewell: '&fВы &cвышли &fиз региона игрока &a%other_player_name%'
+    greeting: '&fВы &aвошли &fв регион игрока &a%other_player_name%'
+  DIAMOND_BLOCK:
+    farewell: '&fВы &cвышли &fиз региона игрока &a%other_player_name%'
+    greeting: '&fВы &aвошли &fв регион игрока &a%other_player_name%'
+  IRON_BLOCK:
+    farewell: '&fВы &cвышли &fиз региона игрока &a%other_player_name%'
+    greeting: '&fВы &aвошли &fв регион игрока &a%other_player_name%'

@@ -1,0 +1,67 @@
+# Command section can utilize same custom variables as scheduler. Check schedules.yml file for all possible variables.
+
+lobby:
+  rtp_1:
+    Loc: 36.0:92.0:51.0:36.0:99.0:51.0
+    enabled: true
+    effect: Reddust
+    showParticles: false
+    kickBack: false
+    particlesByPermission: true
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - rtp player [playerName]
+  rtp_2:
+    Loc: 35.0:92.0:50.0:35.0:99.0:50.0
+    enabled: true
+    effect: Reddust
+    showParticles: false
+    kickBack: false
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - rtp player [playerName]
+  rtp_3:
+    Loc: 34.0:92.0:49.0:34.0:99.0:49.0
+    enabled: true
+    effect: Reddust
+    showParticles: false
+    kickBack: false
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - rtp player [playerName]
+  rtp_4:
+    Loc: 33.0:92.0:48.0:33.0:99.0:48.0
+    enabled: true
+    effect: Reddust
+    showParticles: false
+    kickBack: false
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - rtp player [playerName]

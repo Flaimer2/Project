@@ -1,0 +1,27 @@
+# --{ =-=-=-=-=-=-=-=-=-= ItemJoin's Custom Item Configurations, by RockinChaos =-=-=-=-=-=-=-=-=-= }--
+# See the tutorial page for a more in-depth explanation; https://github.com/RockinChaos/ItemJoin/wiki
+# Join the discord for easy plugin support; https://discord.gg/D5FnJ7C
+# 
+# Modifying the Version will cause this file to break and regenerate.
+items-Version: 8
+items-Delay: 0
+items-Overwrite: lobby
+items-Spamming: false
+items-RestrictCount: false
+items:
+  Menu:
+    id: compass
+    slot: 0
+    name: '&8★  §6Игровое меню &8★  &e&lПРАВЫЙ КЛИК'
+    interact:
+    - 'player: menu'
+    itemflags: unbreakable, hide-attributes, death-drops
+    triggers: respawn
+  Menu2:
+    id: compass
+    slot: 0
+    name: '&8★  §6Игровое меню &8★  &e&lПРАВЫЙ КЛИК'
+    interact:
+    - 'player: menu'
+    itemflags: unbreakable, hide-attributes, death-drops
+    triggers: first-join

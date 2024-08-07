@@ -1,0 +1,138 @@
+menu:
+  title: '&0Главное меню'
+  virtual: true
+  
+layout:
+  - '         '
+  - ' 1 2 3 8 '
+  - '         '
+  - ' 4 5 6 7 '
+  - '         '
+  - '         '
+
+items:
+  1:
+    update: 20
+    head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODdmZjQxMWE5MDQ2N2IzZGJlMmIxMmIyNzA2ODZiMmM4NjU3Zjk4Mzg4MzFjMjZhMjRiZDM2NjQwNTY1NWQ5YyJ9fX0='
+    name: '§aВладельцы региона'
+    enhancedLore: true
+    lore: |-
+      
+      §fИгроки §7({{node Get with "owners_size"}}/{{node Get with "maxOwners"}})§f:
+      &a{{node Get with "owners_formatted"}}
+  2:
+    update: 20
+    head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWMwNzM0MTIyYThmYzgwYjNlMjE1Y2U1ODI2MTBhNDA1ZjBiYThjMmQ4MmQwNTJiNTc0MTNmMDkzYWU2YTRhZCJ9fX0='
+    name: '§aУчастники региона'
+    enhancedLore: true
+    lore: |-
+      
+      §fИгроки §7({{node Get with "members_size"}}/{{node Get with "maxMembers"}})§f:
+      &a{{node Get with "members_formatted"}}
+  3:
+    update: 20
+    head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTc5ODBiOTQwYWY4NThmOTEwOTQzNDY0ZWUwMDM1OTI4N2NiMGI1ODEwNjgwYjYwYjg5YmU0MjEwZGRhMGVkMSJ9fX0='
+    name: '§aИнформация о регионе'
+    lore: |-
+      
+      §fРазмер: §a{{node Get with "formattedRadius"}}
+      §fВладельцев: §a{{node Get with "owners_size"}} игроков
+      §fУчастников: §a{{node Get with "members_size"}} игроков
+      §fДата создания: §a{{node Get with "Date"}}
+      §fКоординаты блока: §a{{node Get with "Location"}}
+      §fТочка дома: {{node Get with "has_home"}}
+  4:
+    head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ4NmRiOWExNGQ1ODc5ZmEyODExZDMwMWNjYmQ1MjY5OTRmODcxMjQ3YjYyZjJkOWE0ODE4M2U5NjQxYWQ2OSJ9fX0='
+    name: '§aДобавить владельца'
+    lore: |-
+      §fВладельцы региона смогут
+      §fдобавлять и удалять участников,
+      §fа также сломать блок привата
+
+      §aНажмите, чтобы добавить
+    action:
+      if: 'papi inline "%region_{{&region}}:has_owner:{{player name}}%"'
+      then:
+        catch: name
+        cancel: [ 'cancel', 'break', 'exit', 'отмена', 'выход', 'выйти' ]
+        beforeInput: |
+          tell "§fНапишите §aник §fв чат, чтобы добавить его в качестве §aвладельца"
+          tell "§fЧтобы отменить это действие, напишите в чат: §cотмена §fили §ccancel"
+        afterInput: |
+          command inline "rg addowner {{&region}} {{&name}}"
+        onCancel: |
+          tell "&fВы &cотменили &fввод имени игрока в чат"
+        onRepeat: |
+          tell "&fПожалуйста, введите &aкорректный &fник. Чтобы выйти из режима добавления игрока, напишите:  §cотмена §fили §ccancel"
+      else: |-
+        tell inline "§fВы §cне являетесь §fвладельцем региона §a{{&region}}"
+
+  5:
+    head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjMyZmZmMTYzZTIzNTYzMmY0MDQ3ZjQ4NDE1OTJkNDZmODVjYmJmZGU4OWZjM2RmNjg3NzFiZmY2OWE2NjIifX19'
+    name: '§aДобавить участника'
+    lore: |-
+      §fУчастники региона смогут ставить и
+      §fломать любые блоки, кроме блока
+      §fпривата в вашем регионе
+
+      §aНажмите, чтобы добавить
+    action:
+      if: 'papi inline "%region_{{&region}}:has_owner:{{player name}}%"'
+      then:
+        catch: name
+        cancel: [ 'cancel', 'break', 'exit', 'отмена', 'выход', 'выйти' ]
+        beforeInput: |
+          tell "§fНапишите §aник §fв чат, чтобы добавить его в качестве §aучастника"
+          tell "§fЧтобы отменить это действие, напишите в чат: §cотмена §fили §ccancel"
+        afterInput: |
+          command inline "rg addmember {{&region}} {{&name}}"
+        onCancel: |
+          tell "&fВы &cотменили &fввод имени игрока в чат"
+        onRepeat: |
+          tell "&fПожалуйста, введите &aкорректный &fник. Чтобы выйти из режима добавления игрока, напишите:  §cотмена §fили §ccancel"
+      else: |-
+        tell inline "§fВы §cне являетесь §fвладельцем региона §a{{&region}}"
+  6:
+    head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTk5YWFmMjQ1NmE2MTIyZGU4ZjZiNjI2ODNmMmJjMmVlZDlhYmI4MWZkNWJlYTFiNGMyM2E1ODE1NmI2NjkifX19'
+    name: '§aУлучшение региона'
+    lore: |-
+      §fУ вас имеется возможность улучшить
+      §fсвой регион. Например, включить
+      §fэффекты в регионе, увеличить
+      §fмаксимальный лимит игроков и т.д.
+
+      §aНажмите, чтобы открыть меню
+    action: |-
+      ctx set Back to ProtectedBlock
+      menu switch Upgrade
+  7:
+    head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmM1MWE0OWNmMTViOGNlYTQ2NWVlNmYzMWUwYzdmNzA2NGU5YjhiODRkZTJjZjAxZDJjNzRiODk3YTAyZGRlNyJ9fX0='
+    name: '§aВидимость голограммы'
+    lore: |-
+      §fЕсли вам мешает голограмма,
+      §fто вы можете её выключить для
+      §fвладельцев и участников региона
+
+      §fГолограмма: §a{{if node Get with "hologramHide" then "§cВыключена" else "§aВключена"}}
+
+      §aНажмите, чтобы переключить
+    action: |-
+      command inline "rg hologramhide {{&region}}"
+      icons refresh
+  8:
+    head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2I1NmU0OTA4NWY1NWQ1ZGUyMTVhZmQyNmZjNGYxYWZlOWMzNDMxM2VmZjk4ZTNlNTgyNDVkZWYwNmU1ODU4YyJ9fX0='
+    name: '§aТелепортироваться домой'
+    lore: |-
+      §fВы можете телепортироваться на
+      §fточку дома, если она у вас
+      §fустановлена в вашем регионе
+
+      §aНажмите, чтобы телепортироваться
+    action: |-
+      command inline "rg home {{&region}}"
+nodes:
+  Get: 
+    type: kether
+    value: |-
+      set Arg to &invokeArgs[0]
+      papi inline "%region_{{&region}}:{{&Arg}}%"

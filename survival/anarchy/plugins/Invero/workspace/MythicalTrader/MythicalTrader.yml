@@ -1,0 +1,79 @@
+menu:
+  title: '&0Мифический продавец'
+
+layout:
+  - '         '
+  - ' 1  2  3 '
+  - '         '
+  - '  4   6 '
+  - '         '
+  - '    7    '
+
+items:
+  1:
+    material: red_mushroom_block
+    name: '§aБлоки привата'
+    lore: |-
+      §fВ продаже есть как обычные
+      §fблоки привата, так и особые
+
+      §aНажмите, чтобы открыть меню
+    action: menu open Trader-Blocks
+  2:
+    material: tnt
+    name: '§aПредметы для рейдов'
+    lore: |-
+      §fПриобретайте предметы, которые
+      §fпомогут вам в рейдах на базы
+      §f
+      §aНажмите, чтобы открыть меню
+    action: menu open Trader-RushItem
+  3:
+    material: mob_spawner
+    name: '§aЯйца и спавнеры'
+    lore: |-
+      §fСоздавайте моб-фермы с
+      §fпомощью яиц и спавнеров
+      §f
+      §aНажмите, чтобы открыть меню
+    action: menu open Trader-Spawner
+  4:
+    material: diamond_sword
+    flag: HIDE_ATTRIBUTES
+    name: '§aОсобое оружие и броня'
+    lore: |-
+      §fЗдесь вы найдёте особое оружие и
+      §fброню, которые помогут вам в PvP
+      §f
+      §aНажмите, чтобы открыть меню
+    action: menu open Trader-Armor
+  5:
+    material: enchanted_book
+    name: '§aКниги зачарований'
+    lore: |-
+      §fСтаньте настоящим чародеем
+      §fкупив книги для зачарований
+      §f
+      §aНажмите, чтобы открыть меню
+    action: menu open Trader-Enchant
+  6:
+    json: '{"type":"SPLASH_POTION","meta":{"Potion":{"type":"STRING","data":"minecraft:night_vision"}}}'
+    flag: HIDE_POTION_EFFECTS
+    name: '§aЗелья'
+    lore: |-
+      §fВы можете купить различные
+      §fзелья под все случаи игры
+      §f
+      §aНажмите, чтобы открыть меню
+    action: menu open Trader-Potion
+  7:
+    material: nether_star
+    name: '§aУровень взаимодействия'
+    enhancedLore: true
+    lore: |-
+      §fЧем больше вы тратите Снаперов
+      §fу §dМифического торговца§f, тем
+      §fбольше будет у вас скидка!
+      §f
+      {{if check papi %mythicaltrader_next_required% == "max" then "§fВаш уровень: &a%mythicaltrader_current_level%" else "§fВаш уровень: &a%mythicaltrader_current_level%\\n§fНужно потратить: &a%mythicaltrader_next_required%₵"}}
+      §fВаша скидка: &a%math_{mythicaltrader_current_discount}*100%%

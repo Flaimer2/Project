@@ -1,0 +1,3476 @@
+activated: '&aВключено'
+deactivated: '&cВыключено'
+injections:
+  eloRank: '&cДополнение EloRank не обнаружено.'
+  party: '&cДополнение Party не обнаружено.'
+  perks: '&cДополнение Perks не обнаружено.'
+  cubelets: '&cДополнение Cubelets не обнаружено.'
+  signs: '&cДополнение Signs не обнаружено.'
+  mobfriends: '&cДополнение MobFriends не обнаружено.'
+motds:
+  WAITING: '&aОжидание...'
+  STARTING: '&aНачинается...'
+  PREGAME: '&4В игре...'
+  GAME: '&4В игре...'
+  FINISH: '&9Завершается...'
+  RESTARTING: '&5Перезагрузка...'
+progressBar:
+  symbol: '|'
+  in: '&3'
+  out: '&f'
+  finish: '&8[<progress>&8] &a<percent>%'
+  max: '&cМаксимально'
+mobTitle: '&fМой друг: &a<name>'
+assists: '&2⚔ eПомощник &2<name> &aв &b<percent>% &2⚔'
+team: '&a[&a<#>&a]'
+parties:
+  noJoin: '&cВы не можете попасть в пати, если вы не являетесь лидером.'
+  join: |-
+    &f&m-------------------------------------------------
+    &aВаша группа будет доставлена к вашей группе.
+    &f&m-------------------------------------------------
+  joinGame: |-
+    &f&m-----------------------------------------
+    &aВы были приняты в игру вашего лидера.
+    &f&m-------------------------------------------------
+chat:
+  mainLobby: '%vault_prefix%&f<player>%vault_suffix% &7> &f<msg>'
+  spectator: '&7Наблюдатель %vault_prefix%&f<player>%vault_suffix% &7> &f<msg>'
+  lobby: '%vault_prefix%&f<player>%vault_suffix% &7> &f<msg>'
+  lobbyRanked: <rank> <player> &8» &f<msg>
+  game: '%vault_prefix%&f<player>%vault_suffix% &7> &f<msg>'
+  team: '&aКоманда %vault_prefix%&f<player>%vault_suffix% &7> &f<msg>'
+  global: '&eВсем %vault_prefix%&f<player>%vault_suffix% &7> &f<msg>'
+  ranked: <rank> <player> &8» &f<msg>
+fancy:
+  message: '&aИгра &a<game> &aначинается!'
+  click: '&2&lНажмите здесь, чтобы присоединиться!'
+  hover: '&fНажмите, чтобы присоединиться!'
+winCubelet: |-
+  &a&Поздравляем:
+  &aВы выиграли cubelet!
+cubeletReward: |-
+  &a&lCUBELETS
+  &aВы нашли <reward>&a редкость <rarity>
+xp:
+  add:
+    you: '&fВы добавили &a<xp> &fXP к игроку &a<player>.'
+    receiver: |-
+      &8&l+ &a<xp> &3XP
+      &aДобавлено от &b<sender>&a.
+  remove:
+    you: '&aВы удалили &a<xp> xp у игрока &a<player>.'
+    receiver: |-
+      &8&l- &a<xp> &3XP
+      &aУдалено от &b<sender>&a.
+  set:
+    you: '&aВы установили &a<xp> xp игроку &a<player>.'
+    receiver: |-
+      &8&l= &a<xp> &3XP
+      &aУстановлено от &b<sender>&a.
+coins:
+  add:
+    you: '&aВы добавили &a<coins> монет к игроку &a<player>.'
+    receiver: |-
+      &8&l+ &a<coins> &3Монет
+      &aДобавлено от &b<sender>&a.
+  remove:
+    you: '&aВы удалили &a<coins> монет у игрока &a<player>.'
+    receiver: |-
+      &8&l- &a<coins> &3Монет
+      &aУдалено от &b<sender>&a.
+  set:
+    you: '&aВы установили &a<coins> монет игроку &a<player>&a.'
+    receiver: |-
+      &8&l= &a<coins> &3Монет
+      &aУстановлено от &b<sender>&a.
+souls:
+  add:
+    you: '&aВы добавили &a<souls> душ к игроку &a<player>.'
+    receiver: |-
+      &8&l+ &a<souls> &bДуш
+      &aДобавлено от &b<sender>&a.
+  remove:
+    you: '&aВы удалили &a<souls> &aдуш у игрока &a<player>.'
+    receiver: |-
+      &8&l- &a<souls> &bДуш
+      &aУдалено от &b<sender>&a.
+  set:
+    you: '&aВы установили &a<souls> &aдуш игроку &a<player>&a.'
+    receiver: |-
+      &8&l= &a<souls> &bДуш
+      &aУстановлено от &b<sender>&a.
+cubelets:
+  add:
+    you: '&aВы добавили &a<cubelets> &acubelets к игроку &a<player>&a.'
+    receiver: |-
+      &8&l+ &a<cubelets> &aCubelets
+      &aДобавлено от &b<sender>&a.
+  remove:
+    you: '&aВы удалили &a<cubelets> &acubelets у игрока &a<player>&a.'
+    receiver: |-
+      &8&l- &a<cubelets> &aCubelets
+      &aУдалено от &b<sender>&a.
+  set:
+    you: '&aВы установили &a<cubelets> &acubelets игроку &a<player>&a.'
+    receiver: |-
+      &8&l= &a<cubelets> &aCubelets
+      &aУстановлено от &b<sender>&a.
+messages:
+  perks:
+    perkLocked: '&fЭто улучшение ещё &cзаблокировано &fдля вас'
+    maxedPerk: '&fЭто улучшение уже имеет &aмаксимальный &fуровень'
+    noCoins: '&cУ вас недостаточно денег для покупки этого улучшения'
+    buyed: '&fЭто улучшение было повышено до &a<level> &fуровня!'
+    toggle: '&fЭто улучшение было <state>'
+    offState: '&cвыключено'
+    onState: '&aвключено'
+  levels:
+    prestigeNoHas: '&cУ вас нет этой иконки престижа.'
+    selectPrestige: '&fВы выбрали &a<name>&f для иконки престижа.'
+    alreadySelected: '&fВы уже &aвыбрали &fэту иконку.'
+  changeEloMinor: '&cPerdiste &a<elo>'
+  changeEloMayor: '&aGanaste &a<elo>'
+  alreadyReward: '&aУ вас уже есть этот приз, поэтому вы получите, что-то другое.'
+  noCommandInPreview: '&cВы не можете войти в игру, когда находитесь в режиме предварительного
+    просмотра.'
+  spectatorChatDisabled: '&cЧат зрителей отключен.'
+  noLevelToRanked: '&cУ вас недостаточно уровня для перехода в ранг, вам необходим
+    уровень <level>.'
+  noEnderCountdown: '&cВы должны подождать <time> секунд, чтобы повторно запустить
+    жемчуг края.'
+  noGameRankedWithParty: '&aВы не можете войти в Ranked, находясь в команде.'
+  healthShow: '&fУ игрока &a<player> &fосталось &c<health>HP&f'
+  maxMobFriends: '&fУ вас не может быть больше &a<max>&f мобов!'
+  maxSouls: '&cВы не можете купить это, потому что он превышает лимит душ.'
+  canUseSoulWell: '&aВы можете использовать Колесо душ.'
+  noAvailable: '&cНет доступного Колеса душ.'
+  tauntPreview:
+    killer: InsiderAnh
+    lines: |-
+      <center>&a&lПРЕДВАРИТЕЛЬНЫЙ ПРОСМОТР НАСМЕШЕК &f- &a<taunt>
+      &f
+      <lines>
+      &f
+  noMapReset: '&cКарта не может быть перезагружена, потому что на ней есть людей.'
+  showPrefix: '&fТекущий префикс уровня: &a<status>'
+  perkTypes: '&fПоддерживаемые улучшения типа: &aОДИНОЧНЫЕ&f, &aКОМАНДНЫЕ&f, &aРАНГОВЫЕ&f.'
+  kitTypes: '&fПоддерживаемые наборы: &aОДИНОЧНЫЕ&f, &aКОМАНДНЫЕ&f, &aРАНГОВЫЕ&f.'
+  gameFull: '&fИгра была заполнена, время ожидания сократилось.'
+  alreadyAnimation: '&fВы уже выбрали эту анимацию.'
+  selectAnimation: '&fВы выбрали &a<type> &aанимацию для Колеса Душ.'
+  cosmetics:
+    alreadyHas: '&fУ этого игрока уже есть эта косметика.'
+    noHas: '&fУ игрока нет этой косметики.'
+    add: '&fДобавлено &a<type>&f с id &a<id>&f к игроку &a<player>&f.'
+    remove: '&fУдалено &a<type>&f с id &a<id>&f у игрока &a<player>&f.'
+  closeWithClick: '&fЧтобы закрыть меню, нажмите ЛКМ.'
+  favoriteAdd: '&fКарта &a<map>&f была добавлена в избранное.'
+  favoriteRemove: '&fКарта &a<map>&f была удалена из ваших избранных карт.'
+  updatedTops: '&fТопы успешно обновлены.'
+  buyLastLevel: '&fНеобходимо купить предыдущий уровень.'
+  noIngame: '&fВы не можете выполнить эту команду в игре.'
+  theGameNotStart: '&fИгра еще не началась.'
+  noMinPlayers: '&fМинимальное количество игроков должно быть достигнуто.'
+  forceStart: '&fИгра запущена. Игроком &a<player>'
+  joinTeam: '&fВы присоединились к &a<id> &fкоманде'
+  teamFull: '&fЭта команда заполнена! Попробуйте войти в другую.'
+  noPermit: '&fВам нужно разрешение для того, чтобы купить эту косметику.'
+  noSelected: '&aНе выбрано'
+  selected: '&aВы выбрали эту анимацию.'
+  alreadySelect: '&cВы уже выбрали эту анимацию.'
+  noCubelets: '&cУ вас нет cubelets.'
+  noArenaGroup: '&cНет доступных игр из этой группы.'
+  noGroup: '&cГруппы арен с таким именем не существует.'
+  noRandom: '&cВсе сервера сейчас заполнены! Попробуйте позже...'
+  teleported: '&fВы телепортированы к &a<player>&f.'
+  noRewards: '&cУ него нет ни одной награды.'
+  alreadyUse: '&cКолесо душ уже используется.'
+  cubeletsUse: '&cCubelets уже используется.'
+  fullGame: '&fЭта игра уже &cзаполнена&f.'
+  alreadyStart: '&fИгра уже &cзапущена&f.'
+  alreadyGame: '&fВы &aуже &fв игре.'
+  noPermission: '&cУ вас нет разрешения на это.'
+  join: '&fИгрок &a<player> &fподключился к игре &7(<players>/<max>)'
+  quit: '&fИгрок &a<player> &fпокинул игру &7(<players>/<max>)'
+  minPlayers: '&fВ игру зашло &aдостаточное &fколичество игроков. Начинается отсчёт
+    до начала игры...'
+  starting: '&fИгра начнется через &a<time> &fсек.!'
+  pregame: '&fКлетки откроются через &a<time> &fсек.!'
+  cancelStart: '&fНачало игры было &cотменено&f.'
+  noGameExists: '&cНет ни одной игры с таким названием.'
+  noGameType: Эта игра совсем не такая.
+  leaveGame: '&fВы &cпокинули &fигру.'
+  alreadyVoted: '&cВы уже проголосовали за &a<type>&c.'
+  voted: '&fИгрок &a<player> &fпроголосовал за &a<category> <type>&f. &fГолосов &a<votes>&f.'
+  deselect: '&aВы отменили текущий набор'
+  deselectTrail: '&aВы отменили текущий эффект стрелы'
+  deselectTaunt: '&aВы отменили текущую насмешку.'
+  deselectParting: '&aВы отменили текущее прощание'
+  deselectGlass: '&aВы отменили текущую клетку'
+  deselectBalloon: '&aВы отменили текущий шар'
+  deselectWinEffect: '&aВы отменили текущий победный эффект'
+  deselectKillEffect: '&aВы отменили текущий эффект убийства.'
+  deselectWinDance: '&aВы отменили текущий победный танец.'
+  noSelect: '&cУ вас нет выбранного набора.'
+  select: '&fВы выбрали набор: &a<kit>'
+  selectTrail: '&fВы выбрали эффект стрелы: &a<trail>'
+  selectTaunt: '&fВы выбрали насмешку: &a<taunt>'
+  selectParting: '&fВы выбрали прощание: &a<parting>'
+  selectKillSound: '&fВы выбрали звук убийства: &a<killsound>'
+  selectKillEffect: '&fВы выбрали эффект убийства: &a<killeffect>'
+  selectGlass: '&fВы выбрали клетка: &a<glass>'
+  selectBalloon: '&fВы выбрали шар: &a<balloon>'
+  selectWinEffect: '&fВы выбрали победный эффект: &a<wineffect>'
+  selectWinDance: '&fВы выбрали победный танец: &a<windance>'
+  multiplier: '&fМножитель &a<type> &fбыл активирован игроком &a<name> &fна &a<amount>&f
+    до &a<time>&f.'
+  multiplierFinish: '&b<type> &aмножитель &2<name> &aзакончилось.'
+  multiplierReceived: '&aВы получили &a<amount> &2<type>&a множитель на <time>&a.'
+  addRemoveBlock: '&aПКМ для добавления &f/ &cЛКМ для удаления!'
+  soulWell: '&fЭтот блок был выбран.'
+  cubelets: '&fЭтот блок был выбран.'
+  soulWellRemove: '&fЭтот блок был удален.'
+  cubeletsRemove: '&fЭтот блок был удален.'
+  reward: '&fВы нашли &a<name> &fс редкостью &a<rarity> &fиз &bКолеса душ&f.'
+  minSouls: '&cВы должны иметь как минимум 10 душ.'
+  maxRows: '&cВы достигли максимального количества строк.'
+  minRows: '&cВы достигли минимального количества строк.'
+  noInGame: '&cВы не в игре.'
+  noBuy: '&cЭто не может быть приобретено пользователем.'
+  noCoins: '&cУ вас недостаточно монет.'
+  bought: '&fВы купили &a<name>'
+  setFirstPerson: '&fПервое лицо: &a<state>&f.'
+  setSpectator: '&fВидимость наблюдателей: &a<state>&f.'
+  setNightVision: '&fНочное зрение: &a<state>&f.'
+  setSpeed: '&fВы установили скорость на &a<speed>&f.'
+  removedSing: '&cВы удалили табличку.'
+  voteType:
+    noType: '&aНе был изменён &bРанг &aв игре.'
+    time: '&fВремя: &a<time> &5- &2Голосов <vtime>'
+    projectile: '&fСнаряды: &a<proyectile> &5- &2Голосов <vproyectile>'
+    chest: '&fСундук: &a<chest> &5- &2Голосов <vchest>'
+    health: '&fЗдоровье: &a<health> &5- &2Голосов <vhealth>'
+    final: '&fФинал: &a<final> &5- &2Голосов <vfinal>'
+    items: '&fПредметы: &a<items> &5- &2Голосов <vitems>'
+    scenario: '&fСценарий: &a<scenario> &5- &2Голосов <vscenario>'
+  start: |-
+    &f
+    &b&l  SkyWars
+    &f
+    &f  Собирайте &aресурсы &fна вашем острове.
+    &f  Чтобы получить лучшие ресурсы – идите
+    &f  на &aцентр&f! Так, вам проще будет играть.
+    &f  Удачи и лёгкой победы!
+    &f
+  win: |-
+    &f
+    &b&l  SkyWars
+    &f
+    &f  Победитель &7- &f<winner>
+    &f
+    &a  Убийца #1 &7- &f<top1> &7- &f<number1>
+    &2  Убийца #2 &7- &f<top2> &7- &f<number2>
+    &c  Убийца #3 &7- &f<top3> &7- &f<number3>
+    &f
+  votes: ''
+  summonary: ''
+  xpGame: ''
+  coinsGame: ''
+  soulsGame: ''
+  xp: ''
+  coins: ''
+  souls: ''
+  xpYou: ''
+  coinsYou: ''
+  soulsYou: ''
+  winXPAndCoins: ''
+  promote:
+    msg: '&aВы повысили ранг в &aЛиге, &aваш новый ранг <eloRank>&a.'
+    broadcast: '&2[SkyWars Ranked] &aИгрок &2<player> &aбыл повышен до <eloRank>&a.'
+  demote:
+    msg: '&cВы понизили ранг в &aЛиге, &cваш новый ранг <eloRank>&a.'
+    broadcast: '&2[SkyWars Ranked] &cИгрок &2<player> &chбыл повышен до <eloRank>&a.'
+  levelUp:
+    msg: '&aВы повысили уровень &b<level>&a.'
+    broadcast: '&2[Levels] &aИгрок &2<player> &aбыл повышен до &b<level>&a.'
+  events:
+    refill: '&aСундуки были заполнены!'
+    dragon: '&cПоявился дракон!'
+    tnt: '&cНачался дождь, покиньте лагерь.'
+    wither: '&cПоявился иссушитель!'
+    zombie: '&aНастал конец человечества!'
+    none: '&cНет финального события.'
+  signs:
+    addSign: '&aДобавлен на табличке режим: &a<type>.'
+    noType: '&cТакого типа игры нет.'
+  challenges:
+    enabled: '&fВызов &a<challenge> &fбыл активирован в этой игре.'
+    disabled: '&fВызов &a<challenge> &fбыл деактивирован в этой игре.'
+    noChest: '&fВы не можете открыть сундуки и ломать блоки, пока у вас активен вызов:
+      &aБез сундуков&f.'
+    noBow: '&fВы не можете нанести урон с помощью лука, пока у вас активен вызов:
+      &aБез Лука&f.'
+    warriorSword: '&fВы можете нанести урон игроку только каменным мечом, пока у вас
+      активен вызов: &aБедный воин&f.'
+    warriorNoBow: '&fВы не можете нанести урон с помощью лука, пока у вас активен
+      вызов: &aБедный воин&f.'
+    warriorNoArmor: '&fВы не можете надеть броню, пока у вас активен вызов: &aБедный
+      воин&f.'
+    failedOnChallenge: '&fИгрок &a<player> &fне смог выполнить вызов &a<challenges>&f!
+      Не повезло, не повезло...'
+    completedChallenge: '&fИгрок &a<player> &fвыполнил вызов &a<challenges>&f! Юху!'
+    UHC: '&aUHC'
+    NO_CHEST: '&aБез сундуков'
+    ARCHERY: '&aЛучник'
+    PAPER: '&aБумага'
+    HEARTS: '&a5 HP'
+    WARRIOR: '&aБедный воин'
+    NO_BLOCKS: '&aБез Блоков'
+    NOOB: '&aНуб'
+action:
+  spectating: '&fНаблюдаем за &a<player> &f- &fРасстояние &a&l<distance>м &f- &fЗдоровье
+    &a&l<health>'
+  kill: '&fОсталось &a<players> &fигроков!'
+  selected: '&fВыбран набор: &a<kit>'
+  noSelected: '&fВы можете выбрать набор с помощью лука!'
+topFormat: '&a&l<top> &f- <name> &f- &2<amount>'
+rankedTopFormat: '&a&l<top> &f- <color>[<rank>] &f<name> &f- &2<amount>'
+chestEmpty: §cПусто!
+timer: §a<time>
+holograms:
+  soulwell:
+  - '&a&lКолесо душ'
+  - '&a&lПравый клик!'
+  cubelets:
+  - '&a&lCubelets'
+  - '&dНажмите, чтобы открыть!'
+  rewards:
+  - '&a&lВы Нашли'
+  - '&2<name>'
+  - <item>
+  - '&dРедкость: <rarity>'
+  tops:
+    kills:
+    - '&a&lРейтинг убийств в SkyWars'
+    - '&f(Лучшие 10 убийств)'
+    - <top>
+    wins:
+    - '&a&lРейтинг побед в SkyWars'
+    - '&f(Лучшие 10 побед)'
+    - <top>
+    deaths:
+    - '&a&lРейтинг смертей в SkyWars'
+    - '&f(Лучшие 10 смертей)'
+    - <top>
+    coins:
+    - '&a&lРейтинг монет в SkyWars'
+    - '&f(Лучшие 10 Монет)'
+    - <top>
+    elo:
+    - '&a&lРейтинг Elo в SkyWars Ranked'
+    - '&f(Лучшие 10 Elo)'
+    - <top>
+votes:
+  time:
+    name: Время
+    dawn: Рассвет
+    day: День
+    afternoon: День
+    night: Ночь
+  projectile:
+    name: Снаряды
+    noproj: Нет
+    yesproj: Да
+    exproj: Взрыв
+    desproj: Разрушитель
+    teleproj: Телепорт
+  health:
+    name: Здоровье
+    health5: 5 сердец
+    health10: 10 сердец
+    health20: 20 сердец
+    uhc: Без Регенерации
+  final:
+    name: Финал
+    dragon: Дракон
+    wither: Иссушитель
+    tnt: Динамитный дождь
+    none: Нет
+    zombies: Зомби
+    border: Граница
+  items:
+    name: Предметы
+    special: Специальное
+    normal: Нормальное
+    crazy: Сумасшедшее
+  scenario:
+    name: Сценарий
+    nofall: Без падения
+    nocleanup: Без очистки
+    goldenhead: Золотая голова
+    vampire: Вампиры
+titles:
+  first:
+    title: '&aПервое лицо'
+    subtitle: '&fНажмите Shift, чтобы выйти'
+  cancel:
+    title: '&cОТМЕНЕНО'
+    subtitle: '&f'
+  starting:
+    title: '&c<time>'
+    subtitle: '&f'
+  pregame:
+    title: '&c<time>'
+    subtitle: '&aПриготовьтесь к бою!'
+  win:
+    title: '&2&lВОЛШЕБНАЯ ПОБЕДА'
+    solo: '&fВы последний, кто остался в живых!'
+    tnt_madness: '&fEres el ultimo en pie!'
+    team: '&fВаша команда осталась последней!'
+    ranked: '&fВы самый лучший!'
+  endGame:
+    title: '&c&lИГРА ЗАКОНЧИЛАСЬ!'
+    subtitle: '&fСледующий раз будет лучше <a>'
+  refill:
+    title: '&f'
+    subtitle: '&aСундуки были заполнены!'
+  dragon:
+    title: '&5ДРАКОН ПРИБЛИЖАЕТСЯ'
+    subtitle: '&cВнимание!'
+  tnt:
+    title: '&cTNT'
+    subtitle: '&aСмотрите, куда вы идёте!'
+  wither:
+    title: '&fИссушитель'
+    subtitle: '&aПоявился зверь!'
+  zombie:
+    title: '&2Зомби'
+    subtitle: '&aАпокалипсис!'
+  border:
+    title: '&bГраница'
+    subtitle: '&fБегите!'
+  end:
+    title: '&7'
+    subtitle: '&7'
+  none:
+    title: '&f'
+    subtitle: '&f'
+setup:
+  clearedStats: '&cЭти данные были очищены в &a<ms> cms.'
+  noClearStatPlayers: '&cThis command will cause memory consumption, do not run it
+    when there are players on the server. There are currently &a<online>&c players.'
+  alreadyPreview: '&cВы уже видите предварительный просмотр косметики.'
+  noGlassPreview: '&cThe glass preview location has not been set.'
+  noBalloonPreview: '&cThe balloon preview location has not been set.'
+  noCosmeticLocation: '&cYou haven''t set the cosmetic place.'
+  noPlayerLocation: '&cYou haven''t set the player place.'
+  help:
+    separator: '&f&m-----------------------------------------'
+    player:
+    - '&a/sw kitsmenu <type> &f- &aОткрыть меню наборов.'
+    - '&a/sw kitsperks &f- &aOpen kits and perks.'
+    - '&a/sw glassmenu &f- &aOpen glass menu.'
+    - '&a/sw balloonsmenu &f- &aOpen balloons menu.'
+    - '&a/sw killsoundsmenu &f- &aOpen killsounds menu.'
+    - '&a/sw killeffectsmenu &f- &aOpen killeffects menu.'
+    - '&a/sw windancesmenu &f- &aOpen windances menu.'
+    - '&a/sw wineffectsmenu &f- &aOpen wineffects menu.'
+    - '&a/sw trailsmenu &f- &aOpen trails menu.'
+    - '&a/sw tauntsmenu &f- &aOpen taunts menu.'
+    - '&a/sw perksmenu <type> &f- &aOpen perks menu.'
+    - '&a/sw join <type> <name> &f- &aJoin to arena.'
+    - '&a/sw randomjoin <type> &f- &aRandom Join to arena.'
+    - '&a/sw customjoin <name> &f- &aПользовательское подключение к арене.'
+    - '&a/sw spect <name> &f- &aНаблюдение за игрой.'
+    - '&a/sw leave &f- &aПокинуть арену.'
+    - '&a/sw lobby &f- &aОткрывает меню Лобби.'
+    - '&a/sw animations &f- &aOpens the animations of cubelets.'
+    admin:
+    - '&a/sw menu solo/team/ranked &f- &aОткрывает меню типа игры.'
+    - '&a/sw perks add/remove <player> <id> &f- &aAdd or remove perk to player.'
+    - '&a/sw balloon add/remove <player> <id> &f- &aAdd or remove balloon to player.'
+    - '&a/sw glass add/remove <player> <id> &f- &aAdd or remove glass to player.'
+    - '&a/sw killeffect add/remove <player> <id> &f- &aAdd or remove killeffect to
+      player.'
+    - '&a/sw killsound add/remove <player> <id> &f- &aAdd or remove killsound to player.'
+    - '&a/sw kit add/remove <player> <id> &f- &aAdd or remove kit to player.'
+    - '&a/sw parting add/remove <player> <id> &f- &aAdd or remove parting to player.'
+    - '&a/sw taunt add/remove <player> <id> &f- &aAdd or remove taunt to player.'
+    - '&a/sw trail add/remove <player> <id> &f- &aAdd or remove taunt to player.'
+    - '&a/sw windance add/remove <player> <id> &f- &aAdd or remove windance to player.'
+    - '&a/sw wineffect add/remove <player> <id> &f- &aAdd or remove wineffect to player.'
+    - '&a/sw xp add/remove/set <player> <coins> &f- &aHandles the addition, removal
+      and set of xp.'
+    - '&a/sw coins add/remove/set <player> <coins> &f- &aHandles the addition, removal
+      and set of coins.'
+    - '&a/sw souls add/remove/set <player> <souls> &f- &aHandles the addition, removal
+      and set of souls.'
+    - '&a/sw cubelets add/remove/set <player> <coins> &f- &aHandles the addition,
+      removal and set of cubelets.'
+    - '&a/sw multiplier <type> <player> <amount> <time> &f- &aCreate a multiplier
+      of type with custom amount and duration.'
+  noHasGame: '&It is not possible to enter as there are no games.'
+  noTypePreview: '&cPlease write a valid preview type: &aBALLOON &cor &aGLASS&c.'
+  setPlayer: '&cYou''ve set the player place in the preview.'
+  setCosmetic: '&cYou''ve set the cosmetic place in the preview.'
+  savePreview: '&aYou saved this preview location.'
+  needOneGame: '&cYou need to have at least one arena created.'
+  setMainLobby: '&aYou''ve set up the main lobby.'
+  setTopKills: '&aYou''ve set up the top kills.'
+  setTopWins: '&aYou''ve set up the top wins.'
+  setTopDeaths: '&aYou''ve set up the top deaths.'
+  setTopCoins: '&aYou''ve set up the top coins.'
+  setTopElo: '&aYou''ve set up the top elo.'
+  alreadyCreating: '&cВы уже создаете арену.'
+  alreadyGlass: '&cYou are already creating a crystal, consider finishing it first.'
+  noSchema: '&cНи одной схематики с таким названием не существует.'
+  noNumber: '&cPlease write a number.'
+  noOnline: '&cThat player is not online.'
+  reload: '&aПлагин перезагружен успешно.'
+  reloadLang: '&aЯзыки в плагине были перезагружены успешно.'
+  chesttype:
+    setRefillChange: '&aRefill Change now is <state>&a.'
+    setArmorAllTeam: '&aArmor All Team now is <state>&a.'
+    setType: '&aWrite the text for this in the chat.'
+    type: '&aThe rate has been set to &a<name>&a.'
+    setSlot: '&aWrite the slot of chest in the chat.'
+    minSlot: '&cThe minimum slot is 0.'
+    maxSlot: '&cThe maximum slot is 53.'
+    saved: '&aТип сундука был сохранен.'
+  parting:
+    created: '&aYou have created a new parting with the name &a<name>&a.'
+    setIcon: '&aThis item has been set as an icon.'
+    noHand: '&cYou must have an item in hand.'
+    setPrice: '&aWrite the price of parting in the chat.'
+    minPrice: '&cМинимальная цена равна 0.'
+    setSlot: '&aWrite the slot of parting in the chat.'
+    minSlot: '&cThe minimum parting is 0.'
+    maxSlot: '&cThe maximum slot is 53.'
+    setPage: '&aWrite the page of parting in the chat.'
+    minPage: '&cМинимальная страница равна 0.'
+    addMessage: '&aWrite the message of parting in the chat.'
+    removeMessage: '&cПоследнее добавленное сообщение было удалено.'
+    setPermission: '&aWrite the permission of parting in the chat.'
+    setBuy: '&aBuying now is <state>&a.'
+    save: '&aThe parting has been saved.'
+  killsounds:
+    created: '&aYou have created a new killsound with the name &a<name>&a.'
+    setIcon: '&aThis item has been set as an icon.'
+    noHand: '&cВы должны держать предмет в руке.'
+    setVol1: '&aWrite the vol1 of killsound in the chat.'
+    minVol1: '&cThe minimum vol1 is -1.'
+    setVol2: '&aWrite the vol2 of killsound in the chat.'
+    minVol2: '&cThe minimum vol2 is -1.'
+    setPrice: '&aWrite the price of killsound in the chat.'
+    minPrice: '&cThe minimum price is 0.'
+    setSlot: '&aWrite the slot of killsound in the chat.'
+    minSlot: '&cThe minimum killsound is 0.'
+    maxSlot: '&cThe maximum slot is 53.'
+    setPage: '&aWrite the page of killsound in the chat.'
+    minPage: '&cThe minimum page is 0.'
+    setSound: '&aWrite the sound of killsound in the chat.'
+    noSound: '&cПожалуйста, напишите звук правильно.'
+    setPermission: '&aНапишите в чат permission для этого звука убийства.'
+    setBuy: '&aBuying now is <state>&a.'
+    save: '&aЗвук убийства был сохранен.'
+  balloons:
+    created: '&fВы создали новый шар, назвав его &a<name>&f.'
+    setIcon: '&fИконка стала идентичной предмету в ваших руках.'
+    noHand: '&cВы должны держать предмет в руке.'
+    setPrice: '&aWrite the price of balloons in the chat.'
+    minPrice: '&cThe minimum price is 0.'
+    setSlot: '&aWrite the slot of balloons in the chat.'
+    minSlot: '&cThe minimum balloons is 0.'
+    maxSlot: '&cThe maximum slot is 53.'
+    setPage: '&aWrite the page of balloons in the chat.'
+    minPage: '&cThe minimum page is 0.'
+    setPermission: '&aWrite the permission of balloons in the chat.'
+    setBuy: '&aBuying now is <state>&a.'
+    save: '&aThe balloons has been saved.'
+  trails:
+    created: '&aYou have created a new trail with the name &a<name>&a.'
+    setIcon: '&aThis item has been set as an icon.'
+    noHand: '&cYou must have an item in hand.'
+    setSpeed: '&aWrite the speed of trail in the chat.'
+    minSpeed: '&cThe minimum speed is 0.'
+    setoffsetX: '&aWrite the offsetX of trail in the chat.'
+    minoffsetX: '&cThe minimum offsetX is 0.'
+    setoffsetY: '&aWrite the offsetY of trail in the chat.'
+    minoffsetY: '&cThe minimum offsetY is 0.'
+    setoffsetZ: '&aWrite the offsetZ of trail in the chat.'
+    minoffsetZ: '&cThe minimum offsetZ is 0.'
+    setAmount: '&aWrite the amount of trail in the chat.'
+    minAmount: '&cThe minimum amount is 0.'
+    setRange: '&aWrite the range of trail in the chat.'
+    minRange: '&cThe minimum range is 0.'
+    setPrice: '&aWrite the price of trail in the chat.'
+    minPrice: '&cThe minimum price is 0.'
+    setSlot: '&aWrite the slot of trail in the chat.'
+    minSlot: '&cThe minimum price is 0.'
+    maxSlot: '&cThe maximum slot is 53.'
+    setPage: '&aWrite the page of trail in the chat.'
+    minPage: '&cThe minimum page is 0.'
+    noParticle: '&cThis is not a valid particle.'
+    setPermission: '&aWrite the permission of trail in the chat.'
+    setBuy: '&aBuying now is <state>&a.'
+    save: '&aThe trail has been saved.'
+  sign:
+    noType: '&cEnter a valid game type.'
+    addSign: '&aA sign of type &a<type> &awas added.'
+  chests:
+    alreadyMode: '&cThis mode is already included.'
+    writeChestMode: '&aWrite the mode you want to add.'
+    noLastChest: '&cThere''s no way to remove it.'
+    removedChestMode: '&cThe last mode of this Batch has been removed.'
+    addedChestMode: '&aAdded &a<mode> &amode to this batch of items.'
+    noModeChest: '&cThere''s no such game mode.'
+    setRefill: '&aRefill now is <state>&a.'
+    setCenter: '&aCenter now is <state>&a.'
+    minChance: '&cThe minimum chance is 0.'
+    setChance: '&aWrite the chance of item in the chat.'
+    save: '&aYou saved the chest successfully.'
+  event:
+    addSeconds: '&aAdded &2+<value> &ato time event.'
+    removeSeconds: '&cAdded &2-<value> &cto time event.'
+    addRefill: '&aYou added a fill event.'
+    addFinal: '&aYou added a final event.'
+    removeLast: '&aYou removed the last event.'
+    noEvents: '&cNo events are set.'
+    save: '&aYou saved the event successfully.'
+  menus:
+    finishEdit: '&aYou have edited the menu correctly.'
+  tauntstype:
+    setMessage: '&aWrite the message of taunt in the chat.'
+    save: '&aThe taunt type has been saved.'
+  soulwellreward:
+    setName: '&aWrite the name of reward in the chat.'
+    setRewards: '&aWrite the cmd of reward in the chat.'
+    setPermission: '&aWrite the name of reward in the chat.'
+    setChance: '&aWrite the chance of reward in the chat.'
+    minChance: '&cThe minimum chance is 0.1'
+    setRarity: '&aWrite the rarity of reward in the chat.'
+    setIcon: '&aThis item has been set as an icon.'
+    noHand: '&cYou must have an item in hand.'
+    noReward: '&cPlease write a valid reward type.'
+    noLast: '&cThere''s no last reward.'
+    removeCMD: '&cThe last cmd has been removed.'
+    removeReward: '&cThe last reward has been removed.'
+    save: '&aThe soulwell reward has been saved.'
+    saveC: '&aThe soulwell has been saved in config.'
+  kitlevel:
+    setPrice: '&aWrite the price of kit level in the chat.'
+    minPrice: '&cThe minimum price is 0.'
+    setSlot: '&aWrite the slot of kit level in the chat.'
+    minSlot: '&cThe minimum slot is 0.'
+    setItems: '&aSet up the kit items.'
+    setIcon: '&aThis item has been set as an icon.'
+    noHand: '&cYou must have an item in hand.'
+    save: '&aThe level has been saved.'
+  taunts:
+    created: '&aYou have created a new taunt with the name &a<name>&a.'
+    setPrice: '&aWrite the price of taunt in the chat.'
+    minPrice: '&cThe minimum price is 0.'
+    setSlot: '&aWrite the slot of taunt in the chat.'
+    minSlot: '&cThe minimum slot is 0.'
+    maxSlot: '&cThe maximum slot is 53.'
+    setPage: '&aWrite the page of taunt in the chat.'
+    minPage: '&cThe minimum page is 0.'
+    setBuy: '&aBuying now is <state>&a.'
+    setTitle: '&aWrite the title of taunt in the chat.'
+    setSubTitle: '&aWrite the subtitle of taunt in the chat.'
+    setPlayer: '&aWrite the killer message of taunt in the chat.'
+    setNone: '&aWrite the none killer message of taunt in the chat.'
+    setIcon: '&aThis item has been set as an icon.'
+    noHand: '&cYou must have an item in hand.'
+    setPermission: '&aWrite the permission of taunt in the chat.'
+    save: '&aThe taunt has been saved.'
+  kits:
+    created: '&aYou have created a new kit with the name &a<name>&a.'
+    setSlot: '&aWrite the slot of kit in the chat.'
+    minSlot: '&cThe minimum slot is 0.'
+    maxSlot: '&cThe maximum slot is 53.'
+    setPage: '&aWrite the page of kit in the chat.'
+    minPage: '&cThe minimum page is 0.'
+    setBuy: '&aBuying now is <state>&a.'
+    setPermission: '&aWrite the permission of kit in the chat.'
+    notSet:
+      noInv: '&cYou didn''t set up inventory and armor items.'
+      noLevels: '&cThe kit must have at least one level.'
+  glass:
+    created: '&aYou have created a new crystal with the name &a<name> &aschematic
+      &a<schematic> &aand clear &a<clear>&a.'
+    setPermission: '&aWrite the permission of glass in the chat.'
+    setPrice: '&aWrite the price of glass in the chat.'
+    minPrice: '&cThe minimum price is 0.'
+    setSlot: '&aWrite the slot of glass in the chat.'
+    minSlot: '&cThe minimum slot is 0.'
+    maxSlot: '&cThe maximum slot is 53.'
+    setPage: '&aWrite the page of glass in the chat.'
+    minPage: '&cThe minimum page is 0.'
+    setBuy: '&aBuying now is <state>&a.'
+    setIcon: '&aThis item has been set as an icon.'
+    noHand: '&cYou must have an item in hand.'
+    save: '&aYou saved the glass in the config.'
+  arena:
+    cloneMap: |-
+      &2&lARENA SETUP:
+      &aThe &a<map1> &amap has been cloned on the &a<map2> &amap.
+    alreadyMapEdit: |-
+      &2&lARENA SETUP:
+      &cThat map already exists, use the edit command, or clone the arena.
+    createMap: |-
+      &2&lARENA SETUP:
+      &aYou've created the map &a<name>&a.
+      &cNow you can paste your &aSchematic &cor start
+      &csetting up if you're already in the world.
+    setLobby: |-
+      &2&lARENA SETUP:
+      &aThe lobby location has been established.
+    setSpect: |-
+      &2&lARENA SETUP:
+      &aThe spect location has been established.
+    setMin: |-
+      &2&lARENA SETUP:
+      &aWrite the amount of min in the chat.
+    minMin: |-
+      &2&lARENA SETUP:
+      &cThe minimum number of players is 2.
+    setTeamSize: |-
+      &2&lARENA SETUP:
+      &aWrite the amount of team size in the chat.
+    minTeamSize: |-
+      &2&lARENA SETUP:
+      &cThe minimum team size is 1.
+    setIslandSpawn: |-
+      &2&lISLAND MANAGER SETUP:
+      &aYou established the island spawn.
+    setIslandBalloon: |-
+      &2&lISLAND MANAGER SETUP:
+      &aYou established the island balloon.
+    setIslandFence: |-
+      &2&lISLAND MANAGER SETUP:
+      &aYou established the island fence.
+    setChest: |-
+      &2&lISLAND MANAGER SETUP:
+      &aYou have received the stick, start setting up.
+    saveIsland: |-
+      &2&lISLAND MANAGER SETUP:
+      &aYou saved the island in the arena.
+    removeIsland: |-
+      &2&lISLAND MANAGER SETUP:
+      &cIsland number &a<#> &chas been removed.
+    setRanked: |-
+      &2&lARENA SETUP:
+      &aRanked mode now is <state>&a.
+    setVotes: |-
+      &2&lARENA SETUP:
+      &aVotes now is <state>&a.
+    setBorderX: |-
+      &2&lARENA SETUP:
+      &aWrite the location of border x in the chat.
+    setBorderZ: |-
+      &2&lARENA SETUP:
+      &aWrite the location of border z in the chat.
+    setColor: |-
+      &2&lARENA SETUP:
+      &aWrite the color of arena in the chat.
+    save: |-
+      &2&lARENA SETUP:
+      &aYou saved the arena in the config.
+    giveWand: '&aYou have been given the sand.'
+    detectedChest: '&a<amount>&a chests have been detected in this area.'
+    noSetLocation: '&cThere hasn''t been a place for that.'
+    teleportedTo: '&aYou teleported to &a<to>&a place.'
+    createdIsland: |-
+      &2&lISLAND MANAGER SETUP:
+      &aYou have created a new island.
+    editIsland: |-
+      &2&lISLAND MANAGER SETUP:
+      &aYou now editing island <#>.
+    noChest: '&cThis block is not a chest.'
+    alreadyAdded: '&cThis chest has already been added.'
+    addChest: '&aYou have added a chest.'
+    removeChest: '&aYou have removed a chest.'
+    noSetChest: '&cThis chest is not added.'
+    writeColor: '&cPlease put a valid color.'
+    notSet:
+      lobby: |-
+        &a&lARENA CHECK:
+        &cThe lobby location has not been established.
+      spect: |-
+        &a&lARENA CHECK:
+        &cThe spect location has not been established.
+      noIslands: |-
+        &a&lARENA CHECK:
+        &cThere must be at least two islands.
+      noCenter: |-
+        &a&lARENA CHECK:
+        &cThere must be at least one central chest.
+      noSpawn: |-
+        &a&lARENA CHECK:
+        &cThe spawn of island location has not been established.
+      noBalloon: |-
+        &a&lARENA CHECK:
+        &cThe balloon of island location has not been established.
+      noChest: |-
+        &a&lARENA CHECK:
+        &cThere must be at least one chest on the island.
+items:
+  instantTNT:
+    nameItem: '&cМгновенное TNT'
+    loreItem: |-
+      &fЭтот TNT взорвётся автоматически,
+      &fкогда оно попадёт на землю.
+  soup:
+    nameItem: '&dСуп'
+    loreItem: |-
+      &fНажатие на этот предмет
+      &fрегенерирует сердца.
+  endBuff:
+    nameItem: '&aРашерский Жемчуг Края'
+    loreItem: "&fВы будете телепортированы \n&fс помощью эндер жемчуга."
+  TNTLaunch:
+    nameItem: '&cTNT Launch'
+    loreItem: |-
+      &fThis TNT drives you just
+      &fby putting it on.
+  compass:
+    nameItem: '&aТрекер Игроков'
+    loreItem: |-
+      &fЭтот предмет находит
+      &fближайшего игрока.
+  lobby:
+    nameItem: '&aLobby Меню'
+    loreItem: |-
+      &fНажмите, чтобы открыть меню лобби.
+      &f
+      &aНажмите, чтобы открыть!
+  setup:
+    nameItem: '&aSetup Arena'
+    loreItem: |-
+      &fItem to setup arena.
+      &f
+      &fRight click to open.
+  center:
+    nameItem: '&aSet Center Chest'
+    loreItem: |-
+      &fItem to setup center
+      &fchest of arena.
+      &f
+      &aRight click to add.
+      &cLeft click to remove.
+  island:
+    nameItem: '&aSet Island Chest'
+    loreItem: |-
+      &fItem to setup center
+      &fisland of arena.
+      &f
+      &aRight click to add.
+      &cLeft click to remove.
+  votes:
+    nameItem: '&8★  &aГолосование &8★  &e&lПРАВЫЙ КЛИК'
+    loreItem: '&7Нажмите ПКМ, чтобы открыть меню для голосования'
+  team:
+    nameItem: '&8★  &6Выбор Команды &8★  &e&lПРАВЫЙ КЛИК'
+    loreItem: '&7Нажмите ПКМ, чтобы открыть меню выбора команды'
+  kits:
+    nameItem: '&8★  &aНаборы &8★  &e&lПРАВЫЙ КЛИК'
+    loreItem: '&7Нажмите ПКМ, чтобы открыть меню выбора набора'
+  spectate:
+    nameItem: '&8★  &aИгроки &8★  &e&lПРАВЫЙ КЛИК'
+    loreItem: '&7Нажмите ПКМ, для открытия меню игроков'
+  options:
+    nameItem: '&8★  &eНастройки наблюдателя &8★  &e&lПРАВЫЙ КЛИК'
+    loreItem: '&7Нажмите ПКМ, чтобы открыть настройки наблюдателя'
+  play:
+    nameItem: '&8★  &aИграть снова &8★  &e&lПРАВЫЙ КЛИК'
+    loreItem: '&7Нажмите ПКМ, чтобы присоединиться к другой игре'
+  challenges:
+    nameItem: '&8★  &eВызовы &8★  &e&lПРАВЫЙ КЛИК'
+    loreItem: '&7Нажмите ПКМ, чтобы открыть вызовы SkyWars'
+  leave:
+    nameItem: '&8★  &cВыйти в лобби &8★  &e&lПРАВЫЙ КЛИК'
+    loreItem: '&7Нажмите ПКМ, чтобы вернуться в лобби'
+menus:
+  setupPreview:
+    title: Setup Preview Location
+    player:
+      nameItem: '&aPlayer Location'
+      loreItem: |-
+        &fThis is a player location:
+        &f
+        &aPlayer: &b<loc>
+        &f
+        &aClick to set!
+    cosmetic:
+      nameItem: '&aCosmetic Location'
+      loreItem: |-
+        &fThis is a cosmetic location:
+        &f
+        &aCosmetic: &b<loc>
+        &f
+        &aClick to set!
+    save:
+      nameItem: '&aSave Preview'
+      loreItem: |-
+        &fSave this preview.
+        &f
+        &aClick to change!
+  chestsetup:
+    title: Setup Chests Type
+    armorAllTeams:
+      nameItem: '&aArmor All teams'
+      loreItem: |-
+        &fEnable or disable this option
+        &fchoose whether armor will appear
+        &ffor the entire team in the chests.
+        &f
+        &aArmor All Team: &b<armorAllTeams>
+        &f
+        &aClick to change!
+    refillChange:
+      nameItem: '&aRefill Change'
+      loreItem: |-
+        &fHere you can choose whether
+        &fitems change when refilling or not.
+        &f
+        &aRefill Change: &b<refillChange>
+        &f
+        &c&oNote: If you enable this option
+        &c&oyou must have REFILL mode items
+        &c&oset up, if you don't have them
+        &c&othe chests will appear empty.
+        &f
+        &aClick to change!
+    name:
+      nameItem: '&aName Type'
+      loreItem: |-
+        &fThis is name for type
+        &f
+        &aName: &b<name>
+        &f
+        &aClick to change!
+    key:
+      nameItem: '&aKey Type'
+      loreItem: |-
+        &fThis is key for type
+        &f
+        &aKey: &b<key>
+        &f
+        &aClick to change!
+    edit:
+      nameItem: '&aEdit Type'
+      loreItem: |-
+        &fThis is edit for type
+        &f
+        &aEdit: &b<edit>
+        &f
+        &aClick to change!
+    slotSetup:
+      nameItem: '&aSlotSetup Type'
+      loreItem: |-
+        &fThis is slot for setup menu.
+        &f
+        &aSlotSetup: &b<slotSetup>
+        &f
+        &aClick to change!
+    slotVotes:
+      nameItem: '&aSlotVotes Type'
+      loreItem: |-
+        &fThis is slot for vote menu.
+        &f
+        &aSlotVotes: &b<slotSetup>
+        &f
+        &aClick to change!
+    save:
+      nameItem: '&aSave Type'
+      loreItem: |-
+        &fSave this type.
+        &f
+        &aClick to change!
+  chesttypesetup:
+    title: Setup Type Chest
+  preview:
+    title: Предварительный просмотр набора
+  prestige:
+    title: Prestige Icons
+    status:
+      noHas: '&cYou don''t have this icon.'
+      select: '&aНажмите, чтобы убрать!'
+      selected: '&aУже выбрано!'
+  levels:
+    title: Прогресс Уровня на SkyWars
+    nowLevel:
+      nameItem: '&fУровень <level>'
+      loreItem: |-
+        &fЭто ваш текущий
+        &fуровень.
+    nextLevel:
+      nameItem: '&fУровень <level>'
+      loreItem: '&fСледующий уровень.'
+    glass:
+      nameItem: '&fУровень <level>'
+      loreItem: |-
+        &f
+        &fПрогресс: &b%usw_level_progress%&f/&a%usw_level_max%
+        &f%usw_level_prefix% %usw_level_bar% &f%usw_level_nextprefix%
+    prestige:
+      nameItem: '&2Prestige Icons'
+      loreItem: |-
+        &fSelect a Prestige Icon to
+        &fdisplay next to your name in
+        &fchat. You unlock new
+        &fPrestige Icons by prestiging
+        &fyour SkyWars Level or by
+        &fdonating coins to the Angel of
+        &fDeath!
+        &f
+        &f%usw_level_nextprefix% <player>
+        &f
+        &aClick to view!
+    hide:
+      nameItem: '&cСкрыть уровень'
+      loreItem: |-
+        &fToggles whether your SkyWars
+        &fLevel and Prestige Icon show
+        &fnext to your name.
+        &f
+        &aClick to hide!
+    show:
+      nameItem: '&aПоказать уровень'
+      loreItem: |-
+        &fToggles whether your SkyWars
+        &fLevel and Prestige Icon show
+        &fnext to your name.
+        &f
+        &aClick to show!
+  kitsperks:
+    title: Наборы и Улучшения
+    kitsolo:
+      nameItem: '&aНаборы'
+      loreItem: |-
+        &fВы будете получать набор
+        &fпредметов в начале каждой игры
+        &f
+        &fРазблокировано: &a%usw_unlocked_kits%/%usw_total_kits% &3(%usw_percentage_kits%%)
+        &fВыбрано: &a%usw_selected_solo_kit%
+        &f
+        &aНажмите, чтобы открыть!
+    kitteam:
+      nameItem: '&aКомандные наборы'
+      loreItem: |-
+        &fВыберите уникальные наборы
+        &fв командном режиме.
+        &f
+        &aНажмите, чтобы открыть!
+    kitranked:
+      nameItem: '&aРанговые наборы'
+      loreItem: |-
+        &fВыберите уникальные наборы
+        &fв ранговом режиме.
+        &f
+        &aНажмите, чтобы открыть!
+    perksolo:
+      nameItem: '&aУлучшения'
+      loreItem: |-
+        &fПовышайте свои возможности
+        &fс помощью улучшений!
+        &f
+        &fРазблокировано: &aunlocked_perks/total_perks &3(percentage_perks%)
+        &fВыбрано:
+        &aselected_perks
+        &f
+        &aНажмите, чтобы открыть!
+    perkteam:
+      nameItem: '&aКомандные улучшения'
+      loreItem: |-
+        &fВыберите уникальные умения
+        &fв командном режиме.
+        &f
+        &aНажмите, чтобы открыть!
+    perkranked:
+      nameItem: '&aРанговые улучшения'
+      loreItem: |-
+        &fВыберите уникальные умения
+        &fв ранговом режиме.
+        &f
+        &aНажмите, чтобы открыть!
+    close:
+      nameItem: '&aВернуться в магазин SkyWars&a&a&a&a'
+      loreItem: ''
+  heads:
+    title: Поврежденные головы
+  angelofdeath:
+    title: SoulWell AngelOfDeath
+  soulwellupgrade:
+    title: Улучшения Колеса душ
+  soulwellshop:
+    title: Магазин Колеса душ
+  soulwells:
+    title: Меню Колеса душ
+    shop:
+      nameItem: '&aМагазин Колеса Душ'
+      loreItem: |-
+        &fВ этом меню вы можете
+        &fкупить души, чтобы можно было
+        &fоткрыть Колесо душ.
+        &f
+        &aНажмите, чтобы открыть!
+    upgrades:
+      nameItem: '&aУлучшение Колеса душ'
+      loreItem: |-
+        &fВ этом меню вы можете улучшить
+        &fмаксимальное количество Душ и
+        &fдополнительное количество
+        &fДуш выиграв.
+        &f
+        &aНажмите для открытия!
+    heads:
+      nameItem: '&5Коллекция голов'
+      loreItem: |-
+        &fView your collection of
+        &5Heads&f. &fObtain Heads of
+        &fplayers by killing them
+        &fduring &5Corrupt &fgames!
+        &f
+        &fTotal Heads: &a<heads>
+        &f
+        &aClick to see!
+    settings:
+      nameItem: '&2Настройки Колеса Души'
+      loreItem: |-
+        &fОткрыть меню
+        &fнастройки Колеса душ.
+        &f
+        &aНажмите, чтобы открыть!
+    soulwell:
+      nameItem: '&aКолесо душ'
+      loreItem: "&fОткрыть Колесо душ \n&fс вашими настройками.\n&f\n&aНажмите, чт\
+        обы открыть!"
+  challenges:
+    title: Вызовы SkyWars
+    uhc:
+      nameItem: '&aUHC'
+      loreItem: |-
+        &fВы не сможете лечится
+        &fво время игры.
+        &f
+        &fСтатус: <status>
+        &fВремя завершения: &a<amount>
+        &f
+        &aНажмите, чтобы изменить!
+    nochest:
+      nameItem: '&aБез сундуков'
+      loreItem: |-
+        &fВы не сможете открывать сундуки
+        &fи ломать блоки во время игры.
+        &f
+        &fСтатус: <status>
+        &fВремя завершения: &a<amount>
+        &f
+        &aНажмите, чтобы изменить!
+    archery:
+      nameItem: '&aЛучник'
+      loreItem: |-
+        &fВы не сможете наносить
+        &fурон в ближнем бою.
+        &f
+        &fСтатус: <status>
+        &fВремя завершения: &a<amount>
+        &f
+        &aНажмите, чтобы изменить!
+    paper:
+      nameItem: '&aБумага'
+      loreItem: |-
+        &fПри попадании в вас, вы будете
+        &fоткидываться сильнее. Вы – лист бумаги)
+        &f
+        &fСтатус: <status>
+        &fВремя завершения: &a<amount>
+        &f
+        &aНажмите, чтобы изменить!
+    hearts:
+      nameItem: '&a5 HP'
+      loreItem: |-
+        &fУ вас в два раза меньше
+        &fсердец. Всего &c5 HP&f.
+        &f
+        &fСостояние: <status>
+        &fВремя завершения: &a<amount>
+        &f
+        &aНажмите, чтобы изменить!
+    warrior:
+      nameItem: '&aБедный воин'
+      loreItem: |-
+        &fВы сможете наносить урон только
+        &fкаменным мечом. А так же, вы не сможете
+        &fнадевать броню и стрелять из лука.
+        &f
+        &fСостояние: <status>
+        &fВремя завершения: &a<amount>
+        &f
+        &aНажмите, чтобы изменить!
+    noblocks:
+      nameItem: '&aБез блоков'
+      loreItem: |-
+        &fВы не сможете использовать
+        &fблоки во время игры.
+        &f
+        &fСостояние: <status>
+        &fВремя завершения: &a<amount>
+        &f
+        &aНажмите, чтобы изменить!
+    noob:
+      nameItem: '&aНуб'
+      loreItem: |-
+        &fВы не сможете использовать
+        &fнаборы или навыки.
+        &f
+        &fСостояние: <status>
+        &fВремя завершения: &a<amount>
+        &f
+        &aНажмите, чтобы изменить!
+  back:
+    nameItem: '&aВернуться в магазин'
+    loreItem: ''
+  last:
+    nameItem: '&aВернуться в магазин'
+    loreItem: ''
+  next:
+    nameItem: '&aВернуться в магазин'
+    loreItem: ''
+  close:
+    nameItem: '&aВернуться в магазин SkyWars'
+    loreItem: ''
+  cancel:
+    nameItem: '&aВернуться в магазин'
+    loreItem: ''
+  perks:
+    title: Улучшения
+    close:
+      nameItem: '&cЗакрыть'
+      loreItem: '&fЗакрыть это меню'
+  teamselector:
+    title: Выбор команды
+    empty: '&aНажмите, чтобы присоединиться'
+    inFull: '&eКоманда почти полная'
+    full: '&cКоманда уже заполнена'
+    players: '&f– &a<name>'
+    team:
+      nameItem: <colorState><#> команда &f- (&a<now>&f/&a<max>&f)
+      loreItem:
+      - '&fУчастники команды:'
+      - <players>
+      - '&f'
+      - <state>
+  cubelets:
+    select: '&aНажмите, чтобы убрать!'
+    noPerm: '&cНедостаточно прав.'
+    selected: '&aВыбрано!'
+    title: '&aCubelet Animations'
+    fireworks:
+      nameItem: '&aFirework Animation'
+      loreItem: |-
+        &fThis is an ancient animation
+        &fthat creates downward-falling
+        &ffireworks.
+        &f
+        <status>
+    head:
+      nameItem: '&aCubeHead Animation'
+      loreItem: |-
+        &fHead that goes up spinning
+        &fand gives you a reward.
+        &f
+        <status>
+    flames:
+      nameItem: '&aFlames Animation'
+      loreItem: |-
+        &fHe'll start spinning a flame circle
+        &fand when he's done he'll
+        &fgive you a gift.
+        &f
+        <status>
+  selector:
+    title: '&aВыбор карты &f- &a<type>'
+    loreItem: |-
+      &f
+      &fИгроков: &a<players>&f/&b<max>
+      &fСостояние: <state>
+      &fРежим: &a<mode>
+      &f
+      &aНажмите, чтобы присоединиться!
+      &f
+      &7Нажмите ПКМ, чтобы добавить в избранное
+    random:
+      nameItem: '&aСлучайная карта'
+      loreItem: |-
+        &f
+        &a<type> &fрежим
+        &f
+        &fВы будете подключены к
+        &fслучайной карте.
+        &f
+        &aНажмите, чтобы присоединиться!
+    favorites:
+      nameItem: '&aИзбранные карты'
+      loreItem: |-
+        &f
+        &a<type> &fрежим
+        &f
+        &fВы будете подключены к случайной
+        &fкарте из списка избранных.
+        &f
+        &aНажмите, чтобы присоединиться!
+  soulwellsettings:
+    title: '&2Настройки Колеса Души'
+    status:
+      select: '&aНажмите, чтобы убрать!'
+      selected: '&aВыбрано!'
+    normal:
+      nameItem: '&aОбычная анимация'
+      loreItem: |-
+        &fSelect the traditional
+        &fSoulWell animation.
+        &f
+        <status>
+    blaze:
+      nameItem: '&aBlaze Animation'
+      loreItem: |-
+        &fSelect the Blaze
+        &fSoulWell animation.
+        &f
+        <status>
+    3d:
+      nameItem: '&a3D Animation'
+      loreItem: |-
+        &fSelect the 3D
+        &fSoulWell animation.
+        &f
+        <status>
+    add:
+      nameItem: '&aДобавить &2+1'
+      loreItem: |-
+        &fAdd a row to your soulwell menu.
+        &f
+        &aClick to add!
+    remove:
+      nameItem: '&cRemove &2-1'
+      loreItem: |-
+        &fRemove a row to your soulwell menu.
+        &f
+        &aClick to add!
+    yesHas:
+      nameItem: '&aRows: &a<rows>'
+      loreItem: '&fYou currently have <rows> rows.'
+    notHas:
+      nameItem: '&cRow not used'
+      loreItem: '&fYou''re not using this row.'
+  soulwellmenu:
+    title: '&8Soul Well'
+    item:
+      loreItem: |-
+        &fDefault description:
+        &f
+        &aRarity: <rarity>
+        &aChance: &a<chance>%
+        &f
+    confirm:
+      nameItem: '&aConfirm'
+      loreItem: |-
+        &fClick to confirm.
+        &f
+        &aClick to start!
+    settings:
+      nameItem: '&2Soul Well Settings'
+      loreItem: |-
+        &fOpen a menu of
+        &fSoulWell settings.
+        &f
+        &aClick to open!
+    deny:
+      nameItem: '&cCancel'
+      loreItem: |-
+        &fClick to cancel.
+        &f
+        &aClick to close!
+  soulwell:
+    title: '&aSetup SoulWell'
+    rewards:
+      nameItem: '&aSoulWell Rewards'
+      loreItem: |-
+        &fSoulwell Rewards:
+        &f
+        &aClick to add!
+        &aRight click to remove last!
+    save:
+      nameItem: '&aSave'
+      loreItem: |-
+        &fSaves this soulwell in config.
+        &f
+        &aClick to save!
+  soulwellreward:
+    title: '&aSetup SoulWell Reward'
+    name:
+      nameItem: '&aName SoulWell Reward'
+      loreItem: |-
+        &fName of this SoulWell Reward:
+        &f
+        &aName: &b<name>
+        &f
+        &aClick to write in chat!
+    rarity:
+      nameItem: '&aRarity'
+      loreItem: |-
+        &fSets the rarity of these commands.
+        &f
+        &aRarity: &b<rarity>
+        &f
+        &bRarities:
+        &fCOMMON
+        &fUNCOMMON
+        &fRARE
+        &fEPIC
+        &fLEGENDARY
+        &f
+        &aClick to write in chat!
+    rewards:
+      nameItem: '&aSoulWell Commands'
+      loreItem: |-
+        &aAdd commands to reward,
+        &fclicking type the
+        &fcommand into the chat.
+        &f
+        &aClick to add!
+        &aRight Click to remove last!
+    icon:
+      nameItem: '&aSoulWell Reward Icon'
+      loreItem: |-
+        &fSoulWell icon in menu.
+        &f
+        &aClick with item IN HAND to change!
+    chance:
+      nameItem: '&aSoulWell Reward Chance'
+      loreItem: |-
+        &fChance of SoulWell:
+        &f
+        &aChance: &b<chance>%
+        &f
+        &aClick to change!
+    save:
+      nameItem: '&aSave'
+      loreItem: |-
+        &fSaves this soulwell reward in soulwell.
+        &f
+        &aClick to save!
+  parting:
+    title: '&aSetup Parting'
+    icon:
+      nameItem: '&aParting Icon'
+      loreItem: |-
+        &fParting icon in menu.
+        &f
+        &aClick with item IN HAND to change!
+    price:
+      nameItem: '&aParting Price'
+      loreItem: |-
+        &fPrice of Parting:
+        &f
+        &aPrice: &b<price>
+        &f
+        &aClick to change!
+    slot:
+      nameItem: '&aParting Slot'
+      loreItem: |-
+        &fSlot of Parting:
+        &f
+        &aSlot: &b<slot>
+        &f
+        &aClick to change!
+    page:
+      nameItem: '&aParting Page'
+      loreItem: |-
+        &fPage of Parting:
+        &f
+        &aPage: &b<page>
+        &f
+        &aClick to change!
+    message:
+      nameItem: '&aParting Message'
+      loreItem: |-
+        &fMessages of Parting:
+        &f
+        <messages>
+        &aClick to add!
+        &aRight Click to remove!
+    permission:
+      nameItem: '&aPermission of Parting'
+      loreItem: |-
+        &fThe Permission name is:
+        &f
+        &aPermission: &b<permission>
+        &f
+        &aClick to change!
+    name:
+      nameItem: '&aName Parting'
+      loreItem: |-
+        &fName of this Parting:
+        &f
+        &aName: &b<name>
+        &f
+    isBuy:
+      nameItem: '&aPurchasable'
+      loreItem: |-
+        &fSets whether this Parting
+        &fis purchaseable.
+        &a
+        &aValue: &b<purchasable>
+        &f
+        &aClick to change!
+    save:
+      nameItem: '&aSave'
+      loreItem: |-
+        &fSaves this Parting in config.
+        &f
+        &aClick to save!
+  killsounds:
+    title: '&aSetup KillSound'
+    icon:
+      nameItem: '&aKillSound Icon'
+      loreItem: |-
+        &fKillSound icon in menu.
+        &f
+        &aClick with item IN HAND to change!
+    price:
+      nameItem: '&aKillSound Price'
+      loreItem: |-
+        &fPrice of KillSound:
+        &f
+        &aPrice: &b<price>
+        &f
+        &aClick to change!
+    slot:
+      nameItem: '&aKillSound Slot'
+      loreItem: |-
+        &fSlot of KillSound:
+        &f
+        &aSlot: &b<slot>
+        &f
+        &aClick to change!
+    page:
+      nameItem: '&aKillSound Page'
+      loreItem: |-
+        &fPage of KillSound:
+        &f
+        &aPage: &b<page>
+        &f
+        &aClick to change!
+    sound:
+      nameItem: '&aKillSound Sound'
+      loreItem: |-
+        &fSound of KillSound:
+        &f
+        &aSound: &b<sound>
+        &f
+        &aClick to change!
+    vol1:
+      nameItem: '&aKillSound Vol 1'
+      loreItem: |-
+        &fVol 1 Sound of KillSound:
+        &f
+        &aVol 1: &b<vol1>
+        &f
+        &aClick to change!
+    vol2:
+      nameItem: '&aKillSound Vol 2'
+      loreItem: |-
+        &fVol 2 Sound of KillSound:
+        &f
+        &aVol 2: &b<vol2>
+        &f
+        &aClick to change!
+    permission:
+      nameItem: '&aPermission of KillSound'
+      loreItem: |-
+        &fThe Permission name is:
+        &f
+        &aPermission: &b<permission>
+        &f
+        &aClick to change!
+    name:
+      nameItem: '&aName KillSound'
+      loreItem: |-
+        &fName of this KillSound:
+        &f
+        &aName: &b<name>
+        &f
+    isBuy:
+      nameItem: '&aPurchasable'
+      loreItem: |-
+        &fSets whether this KillSound
+        &fis purchaseable.
+        &a
+        &aValue: &b<purchasable>
+        &f
+        &aClick to change!
+    save:
+      nameItem: '&aSave'
+      loreItem: |-
+        &fSaves this KillSound in config.
+        &f
+        &aClick to save!
+  players:
+    title: Наблюдать за игроками
+    close:
+      nameItem: '&cЗакрыть'
+      loreItem: |-
+        &fНажмите, чтобы закрыть
+        &fэто меню.
+    order:
+      nameItem: '&aСортировать по: &a<order>'
+      loreItem: |-
+        &fНажмите, чтобы изменить сортировку
+        &fголов игроков.
+        &f
+        &aНажмите, чтобы изменить!
+    players:
+      loreItem: |-
+        &f
+        &fЗдоровье: &a<health>
+        &fЕда: &a<food>
+        &fУбийств: &a<kills>
+        &f
+        &aНажмите, чтобы телепортироваться!
+  options:
+    title: Настройки наблюдателя
+    speedI:
+      nameItem: '&aСкорость I'
+      loreItem: |-
+        &fНажмите, чтобы установить скорость I.
+        &f
+        &aНажмите, чтобы изменить!
+    speedII:
+      nameItem: '&aСкорость II'
+      loreItem: |-
+        &fНажмите, чтобы установить скорость II.
+        &f
+        &aНажмите, чтобы изменить!
+    speedIII:
+      nameItem: '&aСкорость III'
+      loreItem: |-
+        &fНажмите, чтобы установить скорость III.
+        &f
+        &aНажмите, чтобы изменить!
+    speedIV:
+      nameItem: '&aСкорость IV'
+      loreItem: |-
+        &fНажмите, чтобы установить скорость IV.
+        &f
+        &aНажмите, чтобы изменить!
+    speedV:
+      nameItem: '&aСкорость V'
+      loreItem: |-
+        &fНажмите, чтобы установить скорость V.
+        &f
+        &aНажмите, чтобы изменить!
+    nightvision:
+      nameItem: '&aНочное Зрение'
+      loreItem: |-
+        &fПозволяет вам видеть в темноте.
+        &f
+        &aНажмите, чтобы изменить!
+    spects:
+      nameItem: '&aНаблюдатели'
+      loreItem: |-
+        &fПереключить видимость игроков.
+        &f
+        &aНажмите, чтобы изменить!
+    first:
+      nameItem: '&aПервое лицо'
+      loreItem: |-
+        &fСледите за игроками от первого лица!
+        &f
+        &aНажмите, чтобы изменить!
+  playagain:
+    title: Играть снова
+    close:
+      nameItem: '&cЗакрыть'
+      loreItem: |-
+        &fНажмите, чтобы закрыть
+        &fэто меню.
+    order:
+      nameItem: '&aСортировать по: &a<order>'
+      loreItem: |-
+        &fНажмите, чтобы изменить сортировку
+        &fигр.
+        &f
+        &aНажмите, чтобы изменить!
+  lobby:
+    title: Магазин SkyWars
+    levels:
+      nameItem: '&dПрогресс Уровня на SkyWars'
+      loreItem: |-
+        &fПосмотрите информацию о
+        &fпрогрессе уровня SkyWars,
+        &fвыберите иконку Престижа и
+        &fпосмотрите награды за уровень
+        &f
+        &fПрогресс: &b%usw_level_progress%&f/&a%usw_level_max%
+        &f%usw_level_prefix% %usw_level_bar% &f%usw_level_nextprefix%
+        &f
+        &aНажмите, чтобы посмотреть!
+    soulwell:
+      nameItem: '&aМеню Колеса душ'
+      loreItem: |-
+        &fOpen the soul well change
+        &fmenu and options.
+        &f
+        &aClick to open!
+    perksKits:
+      nameItem: '&aМеню наборов и умений'
+      loreItem: |-
+        &fОткройте меню, чтобы увидеть
+        &fваши наборы и умения.
+        &f
+        &aНажмите, чтобы открыть!
+    trails:
+      nameItem: '&aЭффекты стрел'
+      loreItem: |-
+        &fОт ваших стрел будут
+        &fидти различные эффекты
+        &f
+        &fРазблокировано: &a%usw_unlocked_trails%/%usw_total_trails% &3(%usw_percentage_trails%%)
+        &fВыбрано: &a%usw_selected_trail%
+        &f
+        &aНажмите, чтобы открыть!
+    taunts:
+      nameItem: '&aСообщения при убийстве'
+      loreItem: |-
+        &fПосле каждого вашего
+        &fубийства, в чате будет
+        &fпоявляться необычное сообщение
+        &f
+        &fРазблокировано: &a%usw_unlocked_taunts%/%usw_total_taunts% &3(%usw_percentage_taunts%%)
+        &fВыбрано: &a%usw_selected_taunt%
+        &f
+        &aНажмите, чтобы открыть!
+    balloons:
+      nameItem: '&aШары'
+      loreItem: |-
+        &fК вашему острову будет
+        &fприкреплён воздушный шар
+        &f
+        &fРазблокировано: &a%usw_unlocked_balloons%/%usw_total_balloons% &3(%usw_percentage_balloons%%)
+        &fВыбрано: &a%usw_selected_balloon%
+        &f
+        &aНажмите, чтобы открыть!
+    glass:
+      nameItem: '&aКлетки'
+      loreItem: |-
+        &fБудьте индивидуальны! Выбирайте
+        &fцвет своей клетки
+        &f
+        &fРазблокировано: &a%usw_unlocked_glass%/%usw_total_glass% &3(%usw_percentage_glass%%)
+        &fВыбрано: &a%usw_selected_glass%
+        &f
+        &aНажмите, чтобы открыть!
+    wineffects:
+      nameItem: '&aПобедные эффекты'
+      loreItem: |-
+        &fПосле каждой вашей победы
+        &fбудут появляться эффекты
+        &f
+        &fРазблокировано: &a%usw_unlocked_wineffects%/%usw_total_wineffects% &3(%usw_percentage_wineffects%%)
+        &fВыбрано: &a%usw_selected_wineffect%
+        &f
+        &aНажмите, чтобы открыть!
+    killeffects:
+      nameItem: '&aЭффекты убийства'
+      loreItem: |-
+        &fКаждое ваше убийство будет
+        &fсопровождаться различными эффектами
+        &f
+        &fРазблокировано: &a%usw_unlocked_killeffects%/%usw_total_killeffects% &3(%usw_percentage_killeffects%%)
+        &fВыбрано: &a%usw_selected_killeffect%
+        &f
+        &aНажмите, чтобы открыть!
+    windances:
+      nameItem: '&aПобедные танцы'
+      loreItem: |-
+        &fПразднуйте свою победу,
+        &fзлорадствуя и хвастаясь
+        &fперед другими игроками
+        &f
+        &fРазблокировано: &a%usw_unlocked_windances%/%usw_total_windances% &3(%usw_percentage_windances%%)
+        &fВыбрано: &a%usw_selected_windance%
+        &f
+        &aНажмите, чтобы открыть!
+    killsound:
+      nameItem: '&aЗвук убийства'
+      loreItem: |-
+        &fПосле ваших убийств вы
+        &fуслышите необычные звуки
+        &f
+        &fРазблокировано: &a%usw_unlocked_killsounds%/%usw_total_killsounds% &3(%usw_percentage_killsounds%%)
+        &fВыбрано: &a%usw_selected_killsound%
+        &f
+        &aНажмите, чтобы открыть!
+    parting:
+      nameItem: '&aПрощание'
+      loreItem: |-
+        &fПосле вашей смерти будут
+        &fпоявлятся ваши последние слова...
+        &f
+        &fРазблокировано: &a%usw_unlocked_partings%/%usw_total_partings% &3(%usw_percentage_partings%%)
+        &fВыбрано: &a%usw_selected_parting%
+        &f
+        &aНажмите, чтобы открыть!
+  balloons:
+    title: '&aSetup Balloons'
+    icon:
+      nameItem: '&aBalloon Icon'
+      loreItem: |-
+        &fBalloon icon in menu.
+        &f
+        &aClick with item IN HAND to change!
+    price:
+      nameItem: '&aBalloon Price'
+      loreItem: |-
+        &fPrice of Balloon:
+        &f
+        &aPrice: &b<price>
+        &f
+        &aClick to change!
+    slot:
+      nameItem: '&aBalloon Slot'
+      loreItem: |-
+        &fSlot of Balloon:
+        &f
+        &aSlot: &b<slot>
+        &f
+        &aClick to change!
+    page:
+      nameItem: '&aBalloon Page'
+      loreItem: |-
+        &fPage of Balloon:
+        &f
+        &aPage: &b<page>
+        &f
+        &aClick to change!
+    permission:
+      nameItem: '&aPermission of Balloon'
+      loreItem: |-
+        &fThe Permission name is:
+        &f
+        &aPermission: &b<permission>
+        &f
+        &aClick to change!
+    name:
+      nameItem: '&aName Balloon'
+      loreItem: |-
+        &fName of this Balloon:
+        &f
+        &aName: &b<name>
+        &f
+    url:
+      nameItem: '&aURI Trail'
+      loreItem: |-
+        &fUri of this Balloon:
+        &f
+        &aUri: &b<uri>
+        &f
+        &c&oYou can change this in config!
+    isBuy:
+      nameItem: '&aPurchasable'
+      loreItem: |-
+        &fSets whether this Balloon
+        &fis purchaseable.
+        &a
+        &aValue: &b<purchasable>
+        &f
+        &aClick to change!
+    save:
+      nameItem: '&aSave'
+      loreItem: |-
+        &fSaves this Balloon in config.
+        &f
+        &aClick to save!
+  trails:
+    title: '&aSetup Trail'
+    icon:
+      nameItem: '&aTrail Icon'
+      loreItem: |-
+        &fTrail icon in menu.
+        &f
+        &aClick with item IN HAND to change!
+    speed:
+      nameItem: '&aTrail Speed'
+      loreItem: |-
+        &fSpeed of Trail:
+        &f
+        &aSpeed: &b<speed>
+        &f
+        &aClick to change!
+    offsetX:
+      nameItem: '&aTrail OffSetX'
+      loreItem: |-
+        &fOffSetX of Trail:
+        &f
+        &aOffSetX: &b<offsetX>
+        &f
+        &aClick to change!
+    offsetY:
+      nameItem: '&aTrail OffSetY'
+      loreItem: |-
+        &fOffSetY of Trail:
+        &f
+        &aOffSetY: &b<offsetY>
+        &f
+        &aClick to change!
+    offsetZ:
+      nameItem: '&aTrail OffSetZ'
+      loreItem: |-
+        &fOffSetZ of Trail:
+        &f
+        &aOffSetZ: &b<offsetZ>
+        &f
+        &aClick to change!
+    amount:
+      nameItem: '&aTrail Amount'
+      loreItem: |-
+        &fAmount of Trail:
+        &f
+        &aAmount: &b<amount>
+        &f
+        &aClick to change!
+    range:
+      nameItem: '&aTrail Range'
+      loreItem: |-
+        &fRange of Trail:
+        &f
+        &aRange: &b<range>
+        &f
+        &aClick to change!
+    price:
+      nameItem: '&aTrail Price'
+      loreItem: |-
+        &fPrice of Trail:
+        &f
+        &aPrice: &b<price>
+        &f
+        &aClick to change!
+    slot:
+      nameItem: '&aTrail Slot'
+      loreItem: |-
+        &fSlot of Trail:
+        &f
+        &aSlot: &b<slot>
+        &f
+        &aClick to change!
+    page:
+      nameItem: '&aTrail Page'
+      loreItem: |-
+        &fPage of Trail:
+        &f
+        &aPage: &b<page>
+        &f
+        &aClick to change!
+    particle:
+      nameItem: '&aParticle of Trail'
+      loreItem: |-
+        &fThe Particle name is:
+        &f
+        &aParticle: &b<particle>
+        &f
+        &aClick to change!
+    permission:
+      nameItem: '&aPermission of Trail'
+      loreItem: |-
+        &fThe Permission name is:
+        &f
+        &aPermission: &b<permission>
+        &f
+        &aClick to change!
+    name:
+      nameItem: '&aName Trail'
+      loreItem: |-
+        &fName of this Trail:
+        &f
+        &aName: &b<name>
+        &f
+    isBuy:
+      nameItem: '&aPurchasable'
+      loreItem: |-
+        &fSets whether this trail
+        &fis purchaseable.
+        &a
+        &aValue: &b<purchasable>
+        &f
+        &aClick to change!
+    save:
+      nameItem: '&aSave'
+      loreItem: |-
+        &fSaves this Trail in config.
+        &f
+        &aClick to save!
+  kitlevels:
+    title: Уровни набора
+    close:
+      nameItem: '&aВернуться в магазин SkyWars'
+      loreItem: ''
+  kitselector:
+    title: Выбор набора
+    noPermission: '&cВы не можете купить этот набор!'
+    hasBuy: '&aУ вас уже есть этот набор!'
+    buy: '&aВы можете купить этот набор!'
+    noMoney: '&cУ вас недостаточно денег для покупки.'
+    level: '&aУровень: &2<level>'
+    price: '&aЦена: &2<price>'
+    noBuyable: '&cНельзя купить.'
+    buyed: '&2Куплено'
+    deselect:
+      nameItem: '&aОтменить выбранный набора'
+      loreItem: |-
+        &fНажмите, чтобы
+        &fотменить выбранный набора
+        &f
+        &aНажмите, чтобы убрать!
+    kit:
+      nameItem: '&aВыбран набор'
+      loreItem: |-
+        &fНажмите, чтобы увидеть
+        &fсодержимое этого набора.
+        &f
+        &aНажмите, чтобы просмотреть!
+    close:
+      nameItem: '&aВернуться в магазин SkyWars&a&a'
+      loreItem: ''
+  killsoundsselector:
+    title: Выбор звука убийства
+    noPermission: '&cВы не можете купить этот звук убийства!'
+    hasBuy: '&aУ вас уже есть этот звук убийства!'
+    buy: '&aВы можете купить этот звук убийства!'
+    noMoney: '&cУ вас недостаточно денег для покупки.'
+    price: '&aЦена: &2<price>'
+    noBuyable: '&cНельзя купить.'
+    buyed: '&2Куплено'
+    deselect:
+      nameItem: '&aОтменить выбранный звук убийства'
+      loreItem: |-
+        &fНажмите, чтобы
+        &fотменить выбранный звук убийства
+        &f
+        &aНажмите, чтобы убрать!
+    killsound:
+      nameItem: '&aВыбран звук убийства'
+      loreItem: |-
+        &fНажмите, чтобы увидеть
+        &fсодержимое этого звука убийства.
+        &f
+        &aНажмите, чтобы просмотреть!
+    close:
+      nameItem: '&aВернуться в магазин SkyWars'
+      loreItem: ''
+  wineffectsselector:
+    title: Выбор победного эффекта
+    noPermission: '&cВы не можете купить этот победный эффект!'
+    hasBuy: '&aУ вас уже есть этот победный эффект!'
+    buy: '&aВы можете купить этот победный эффект!'
+    noMoney: '&cУ вас недостаточно денег для покупки.'
+    price: '&aЦена: &2<price>'
+    noBuyable: '&cНельзя купить.'
+    buyed: '&2Bought'
+    deselect:
+      nameItem: '&aУбрать победный эффект'
+      loreItem: |-
+        &fНажмите, чтобы
+        &fотменить выбранный победный эффект
+        &f
+        &aНажмите, чтобы убрать!
+    wineffect:
+      nameItem: '&aВыбранный победный эффект'
+      loreItem: '&fНажмите, чтобы увидеть название эффекта'
+    close:
+      nameItem: '&aВернуться в магазин SkyWars'
+      loreItem: ''
+  killeffectsselector:
+    title: Выбор эффекта убийства
+    noPermission: '&cВы не можете купить этот эффект убийства!'
+    hasBuy: '&aУ вас уже есть этот эффект убийства!'
+    buy: '&aВы можете купить этот эффект убийства!'
+    noMoney: '&cУ вас недостаточно денег для покупки.'
+    price: '&aPrice: &2<price>'
+    noBuyable: '&cNot buyable.'
+    buyed: '&2Bought'
+    deselect:
+      nameItem: '&aОтменить выбранный эффект убийства'
+      loreItem: |-
+        &fНажмите, чтобы
+        &fотменить выбранный эффект убийства
+        &f
+        &aНажмите, чтобы убрать!
+    killeffect:
+      nameItem: '&aKillEffect Selected'
+      loreItem: |-
+        &fBy clicking you can see
+        &fthe contents of this killeffect.
+        &f
+        &aClick to view!
+    close:
+      nameItem: '&aВернуться в магазин SkyWars&a'
+      loreItem: ''
+  windancesselector:
+    title: Выбор победных танцев
+    noPermission: '&cВы не можете купить эти победные танцы!'
+    hasBuy: '&aУ вас уже есть эти победные танцы!'
+    buy: '&aВы можете купить эти победные танцы!'
+    noMoney: '&cУ вас недостаточно денег для покупки.'
+    price: '&aЦена: &2<price>'
+    noBuyable: '&cНельзя купить.'
+    buyed: '&2Куплено'
+    deselect:
+      nameItem: '&aОтменить выбранные победные танцы'
+      loreItem: |-
+        &fНажмите, чтобы
+        &fотменить выбранные победные танцы
+        &f
+        &aНажмите, чтобы убрать!
+    windance:
+      nameItem: '&aWinDances Selected'
+      loreItem: |-
+        &fBy clicking you can see
+        &fthe contents of this windances.
+        &f
+        &aClick to view!
+    close:
+      nameItem: '&aВернуться в магазин SkyWars'
+      loreItem: ''
+  glassselector:
+    title: Выбор клетки
+    noPermission: '&cВы не можете купить эту клетку!'
+    hasBuy: '&aУ вас уже есть эта клетка!'
+    buy: '&aВы можете купить эту клетку!'
+    noMoney: '&cУ вас недостаточно денег для покупки.'
+    price: '&aPrice: &2<price>'
+    noBuyable: '&cНельзя купить.'
+    buyed: '&2Куплено'
+    deselect:
+      nameItem: '&aОтменить выбранную клетку'
+      loreItem: |-
+        &fНажмите, чтобы
+        &fотменить выбранную клетку
+        &f
+        &aНажмите, чтобы убрать!
+    glass:
+      nameItem: '&aВыбрана клетка'
+      loreItem: |-
+        &f
+        &aНажмите, чтобы просмотреть!
+    close:
+      nameItem: '&aВернуться в магазин SkyWars'
+      loreItem: ''
+  balloonsselector:
+    title: Выбор шара
+    noPermission: '&cВы не можете купить этот набор!'
+    hasBuy: '&aУ вас уже есть этот шар!'
+    buy: '&aВы можете купить этот шар!'
+    noMoney: '&cУ вас недостаточно денег для покупки.'
+    price: '&aЦена: &2<price>'
+    noBuyable: '&cНельзя купить.'
+    buyed: '&2Куплено'
+    deselect:
+      nameItem: '&aОтменить выбранный шар'
+      loreItem: |-
+        &fНажмите, чтобы
+        &fотменить выбранный шар.
+        &f
+        &aНажмите, чтобы убрать!
+    balloon:
+      nameItem: '&aВыбран набор'
+      loreItem: |-
+        &fНажмите, чтобы увидеть
+        &fсодержимое этого набора.
+        &f
+        &aНажмите, чтобы просмотреть!
+    close:
+      nameItem: '&a&aВернуться в магазин SkyWars'
+      loreItem: ''
+  trailsselector:
+    title: Trail Selector
+    noPermission: '&cYou can''t buy this trail!'
+    hasBuy: '&aYou already have this trail!'
+    buy: '&aYou can buy this trail!'
+    noMoney: '&cYou don''t have money to buy.'
+    price: '&aPrice: &2<price>'
+    noBuyable: '&cNot buyable.'
+    buyed: '&2Bought'
+    deselect:
+      nameItem: '&aDeselect Trail'
+      loreItem: |-
+        &fBy clicking you will
+        &fdeselect this trail.
+        &f
+        &aClick to deselect!
+    trail:
+      nameItem: '&aTrail Selected'
+      loreItem: |-
+        &fBy clicking you can see
+        &fthe contents of this trail.
+        &f
+        &aClick to view!
+    close:
+      nameItem: '&aВернуться в магазин SkyWars'
+      loreItem: ''
+  partingselector:
+    title: Выбор прощания
+    noPermission: '&cВы не можете купить это прощание!'
+    hasBuy: '&aУ вас уже есть это прощание!'
+    buy: '&aВы можете купить это прощание!'
+    noMoney: '&cУ вас недостаточно денег для покупки.'
+    price: '&aPrice: &2<price>'
+    noBuyable: '&cNot buyable.'
+    buyed: '&2Bought'
+    deselect:
+      nameItem: '&aОтменить выбранное прощание'
+      loreItem: |-
+        &fНажмите, чтобы
+        &fотменить выбранное прощание
+        &f
+        &aНажмите, чтобы убрать!
+    parting:
+      nameItem: '&aParting Selected'
+      loreItem: |-
+        &fBy clicking you can see
+        &fthe contents of this parting.
+        &f
+        &aClick to view!
+    close:
+      nameItem: '&aВернуться в магазин SkyWars'
+      loreItem: ''
+  tauntsselector:
+    title: Выбор насмешки
+    noPermission: '&cВы не можете купить эти насмешки!'
+    hasBuy: '&aУ вас уже есть эти насмешки!'
+    buy: '&aВы можете купить эти насмешки!'
+    noMoney: '&cУ вас недостаточно денег для покупки.'
+    price: '&aЦена: &2<price>'
+    noBuyable: '&cНельзя купить.'
+    buyed: '&2Куплено'
+    deselect:
+      nameItem: '&aОтменить выбранные насмешки'
+      loreItem: |-
+        &fНажмите, чтобы
+        &fотменить выбранные насмешки
+        &f
+        &aНажмите, чтобы убрать!
+    taunt:
+      nameItem: '&aTaunt Selected'
+      loreItem: |-
+        &fBy clicking you can see
+        &fthe contents of this taunt.
+        &f
+        &aClick to view!
+    close:
+      nameItem: '&aВернуться в магазин SkyWars'
+      loreItem: ''
+  typechest:
+    title: '&aНастройки типа сундука'
+    key:
+      nameItem: '&aКлюч Сундука'
+      loreItem: |-
+        &fНажмите, чтобы изменить
+        &fключ этого сундука.
+        &f
+        &aНажмите, чтобы изменить!
+    voteslot:
+      nameItem: '&aVote Slot'
+      loreItem: |-
+        &fClick to change the
+        &fvote slot of this chest.
+        &f
+        &aVote Slot: &a<voteslot>
+        &f
+        &aClick to change!
+    setupslot:
+      nameItem: '&aSetup Slot'
+      loreItem: |-
+        &fClick to change the
+        &fsetup slot of this chest.
+        &f
+        &aSetup Slot: &a<setupslot>
+        &f
+        &aClick to change!
+    editprefix:
+      nameItem: '&aEdit Prefix'
+      loreItem: |-
+        &fThis is the prefix that
+        &fUltraSkyWars will use when
+        &fyou want to edit the inventory.
+        &f
+        &aEdit: &a<edit>
+        &f
+        &aClick to change!
+    save:
+      nameItem: '&aСохранить Тип Сундука'
+      loreItem: |-
+        &fClick to save this type of chest
+        &fand you can go to the item settings menu.
+        &f
+        &aClick to save!
+  chestsremove:
+    title: '&aChest - Remove Items'
+    save:
+      nameItem: '&aSave Items'
+      loreItem: |-
+        &fClick to save type
+        &fand back to setup chest.
+        &f
+        &aClick to save!
+  chestsadd:
+    title: '&aChest - Add Items'
+    chance:
+      nameItem: '&aChance'
+      loreItem: |-
+        &fIncreases or decreases
+        &fthe chance of appearing.
+        &f
+        &aChance: &a<chance>
+        &f
+        &aClick to change!
+    center:
+      nameItem: '&aCenter'
+      loreItem: |-
+        &fWhen you enable this option,
+        &fall items you put in will
+        &fappear only in the center.
+        &f
+        &aState: &a<center>
+        &f
+        &aClick to change!
+    refill:
+      nameItem: '&aRefill'
+      loreItem: |-
+        &fIf you enable this option,
+        &fif the chest type has change
+        &fin refill, this item will be
+        &ftaken instead for the
+        &fcenter or islands.
+        &f
+        &aState: &a<refill>
+        &f
+        &aClick to change!
+    modes:
+      nameItem: '&aModes'
+      loreItem: |-
+        &fHere you can set the mode
+        &for modes in which this item
+        &fwill be taken.
+        &f
+        &aModes:
+        <modes>
+        &f
+        &aClick to add!
+        &aRight click to remove last!
+    save:
+      nameItem: '&aSave Items'
+      loreItem: |-
+        &fClick to save type
+        &fand back to setup chest.
+        &f
+        &aClick to save!
+  cheststype:
+    title: '&aSetup Chest Type'
+    filter:
+      nameItem: '&aFilter Items'
+      loreItem: |-
+        &fThis is the items filter,
+        &fhere you can choose which
+        &fitems are displayed.
+        &f
+        &aFilter: &a<filter>
+        &f
+        &aClick to open!
+    add:
+      nameItem: '&aAdd Items'
+      loreItem: |-
+        &fClicking will open a
+        &fmenu to add items.
+        &f
+        &aClick to open!
+    remove:
+      nameItem: '&cRemove Items'
+      loreItem: |-
+        &fClicking will open a
+        &fmenu to remove items.
+        &f
+        &aClick to open!
+    save:
+      nameItem: '&aSave Type'
+      loreItem: |-
+        &fClick to save type
+        &fand back to setup menu.
+        &f
+        &aClick to save!
+  taunts:
+    title: '&aSetup Taunts'
+    settitle:
+      nameItem: '&aSet Title'
+      loreItem: |-
+        &fWhen you click you must type
+        &fthe title that will
+        &fappear when it dies.
+        &f
+        &aTitle: &b<title>
+        &f
+        &aClick to write in chat!
+    setsubtitle:
+      nameItem: '&aSet SubTitle'
+      loreItem: |-
+        &fWhen you click you must type
+        &fthe subtitle that will
+        &fappear when it dies.
+        &f
+        &aSubTitle: &b<subtitle>
+        &f
+        &aClick to write in chat!
+    setplayer:
+      nameItem: '&aSet Player'
+      loreItem: |-
+        &fBy clicking you should
+        &ftype in the chat the
+        &ffinal message when
+        &fthere is killer.
+        &f
+        &aPlayer: &b<player>
+        &f
+        &aClick to write in chat!
+    setnone:
+      nameItem: '&aSet None'
+      loreItem: |-
+        &fBy clicking you should
+        &ftype in the chat the
+        &ffinal message when
+        &fthere is no killer.
+        &f
+        &aNone: &b<none>
+        &f
+        &aClick to write in chat!
+    damage:
+      loreItem: |-
+        &fClicking will open a
+        &fmenu to add messages
+        &fby damage type.
+        &f
+        &aClick to open!
+    icon:
+      nameItem: '&aTaunt Icon'
+      loreItem: |-
+        &fTaunt icon in menu.
+        &f
+        &aClick with item IN HAND to change!
+    price:
+      nameItem: '&aTaunt Price'
+      loreItem: |-
+        &fPrice of Taunt:
+        &f
+        &aPrice: &b<price>
+        &f
+        &aClick to change!
+    slot:
+      nameItem: '&aTaunt Slot'
+      loreItem: |-
+        &fSlot of Taunt:
+        &f
+        &aSlot: &b<slot>
+        &f
+        &aClick to change!
+    page:
+      nameItem: '&aTaunt Page'
+      loreItem: |-
+        &fPage of Taunt:
+        &f
+        &aPage: &b<page>
+        &f
+        &aClick to change!
+    permission:
+      nameItem: '&aPermission of Taunt'
+      loreItem: |-
+        &fThe Permission name is:
+        &f
+        &aPermission: &b<permission>
+        &f
+        &aClick to change!
+    name:
+      nameItem: '&aName Taunt'
+      loreItem: |-
+        &fName of this Taunt:
+        &f
+        &aName: &b<name>
+        &f
+    isBuy:
+      nameItem: '&aPurchasable'
+      loreItem: |-
+        &fSets whether this taunt
+        &fis purchaseable.
+        &a
+        &aValue: &b<purchasable>
+        &f
+        &aClick to change!
+    save:
+      nameItem: '&aSave'
+      loreItem: |-
+        &fSaves this taunt in config.
+        &f
+        &aClick to save!
+  tauntstype:
+    title: '&aTaunts Type'
+    add:
+      nameItem: '&aAdd Message'
+      loreItem: |-
+        &fWhen you click you will need
+        &fto type the message in the
+        &fchat, use the following variables:
+        &f
+        &a<death> &f- &aFor the dead.
+        &a<killer> &f- &aFor the killer.
+        &f
+        &aClick to add!
+    save:
+      nameItem: '&aSave Type'
+      loreItem: |-
+        &fSaves the type of taunt.
+        &f
+        &aClick to save!
+  kits:
+    title: '&aSetup Kit'
+    name:
+      nameItem: '&aName Kit'
+      loreItem: |-
+        &fName of this kit:
+        &f
+        &aName: &b<name>
+        &f
+    slot:
+      nameItem: '&aKit Slot'
+      loreItem: |-
+        &fSlot of Kit:
+        &f
+        &aSlot: &b<slot>
+        &f
+        &aClick to change!
+    page:
+      nameItem: '&aKit Page'
+      loreItem: |-
+        &fPage of Kit:
+        &f
+        &aPage: &b<page>
+        &f
+        &aClick to change!
+    permission:
+      nameItem: '&aPermission of Kit'
+      loreItem: |-
+        &fThe Permission name is:
+        &f
+        &aPermission: &b<permission>
+        &f
+        &aClick to change!
+    levels:
+      nameItem: '&aKit Levels'
+      loreItem: |-
+        &fLevels of Kit.
+        &f
+        &aClick to open!
+    save:
+      nameItem: '&aSave Kit'
+      loreItem: |-
+        &fSave this kit in config.
+        &f
+        &aClick to save!
+  kitlevel:
+    title: '&aKit Levels Setup'
+    icon:
+      nameItem: '&aKit Level Icon'
+      loreItem: |-
+        &fKit Level icon in menu.
+        &f
+        &aClick with item IN HAND to change!
+    price:
+      nameItem: '&aKit Level Price'
+      loreItem: |-
+        &fPrice of Kit Level:
+        &f
+        &aPrice: &b<price>
+        &f
+        &aClick to change!
+    slot:
+      nameItem: '&aKit Level Slot'
+      loreItem: |-
+        &fSlot of Kit Level:
+        &f
+        &aSlot: &b<slot>
+        &f
+        &aClick to change!
+    items:
+      nameItem: '&aSet Items'
+      loreItem: |-
+        &fItems set for this kit level.
+        &f
+        &aClick to set!
+        &aRight Click to view!
+    isBuy:
+      nameItem: '&aPurchasable'
+      loreItem: |-
+        &fSets whether this kit
+        &fis purchaseable.
+        &a
+        &aValue: &b<purchasable>
+        &f
+        &aClick to change!
+    save:
+      nameItem: '&aSave Kit'
+      loreItem: |-
+        &fSave this kit in config.
+        &f
+        &aClick to save!
+  event:
+    title: '&aSetup Time Event'
+    add1:
+      nameItem: '&aAdd &2+1'
+      loreItem: '&fAdd &2+<value+1> &fto this event.'
+    add5:
+      nameItem: '&aAdd &2+5'
+      loreItem: '&fAdd &2+<value+5> &fto this event.'
+    info:
+      nameItem: '&aTime'
+      loreItem: |-
+        &fSeconds of this event:
+        &f
+        &aSecond: &b<second>
+        &f
+    remove5:
+      nameItem: '&cRemove &2-5'
+      loreItem: '&fRemove &2+<value-5> &fto this event.'
+    remove1:
+      nameItem: '&cRemove &2-1'
+      loreItem: '&fRemove &2+<value-1> &fto this event.'
+    save:
+      nameItem: '&aSave'
+      loreItem: '&fSave this event.'
+  events:
+    title: '&aSetup Arena Events'
+    remove:
+      nameItem: '&cRemove Last Event'
+      loreItem: |-
+        &fRemove the last, event
+        &fyou added to the arena.
+        &f
+        &aClick to remove!
+    refill:
+      nameItem: '&aAdd Refill Event'
+      loreItem: |-
+        &fYou will add a fill event
+        &fto the arena.
+        &f
+        &aClick  to add!
+    final:
+      nameItem: '&aAdd Final Event'
+      loreItem: |-
+        &fYou will add a final event
+        &fto the arena.
+        &f
+        &aClick  to add!
+    event:
+      loreItem: '&fThe event time start: &a<seconds>'
+  glass:
+    title: '&aSetup Glass'
+    name:
+      nameItem: '&aName of Glass'
+      loreItem: |-
+        &fThe Glass name is:
+        &f
+        &aName: &b<name>
+        &f
+    schematic:
+      nameItem: '&aName of Schematic'
+      loreItem: |-
+        &fThe Schematic name is:
+        &f
+        &aSchematic: &b<schematic>
+        &f
+    clear:
+      nameItem: '&aName of Clear'
+      loreItem: |-
+        &fThe Clear Schematic name is:
+        &f
+        &aClear: &b<clear>
+        &f
+    permission:
+      nameItem: '&aPermission of Glass'
+      loreItem: |-
+        &fThe Permission name is:
+        &f
+        &aPermission: &b<permission>
+        &f
+        &aClick to change!
+    icon:
+      nameItem: '&aGlass Icon'
+      loreItem: |-
+        &fGlass icon in menu.
+        &f
+        &aClick with item IN HAND to change!
+    price:
+      nameItem: '&aGlass Price'
+      loreItem: |-
+        &fPrice of Glass:
+        &f
+        &aPrice: &b<price>
+        &f
+        &aClick to change!
+    slot:
+      nameItem: '&aGlass Slot'
+      loreItem: |-
+        &fSlot of Glass:
+        &f
+        &aSlot: &b<slot>
+        &f
+        &aClick to change!
+    page:
+      nameItem: '&aGlass Page'
+      loreItem: |-
+        &fPage of Glass:
+        &f
+        &aPage: &b<page>
+        &f
+        &aClick to change!
+    isBuy:
+      nameItem: '&aPurchasable'
+      loreItem: |-
+        &fSets whether this glass
+        &fis purchaseable.
+        &a
+        &aValue: &b<purchasable>
+        &f
+        &aClick to change!
+    save:
+      nameItem: '&aSave Glass'
+      loreItem: |-
+        &fSave the Glass
+        &f
+        &aClick to save!
+  islands:
+    title: '&aIslands of Arena'
+    island:
+      nameItem: '&aIsland <#>'
+      loreItem: |-
+        &fThis island has the following settings:
+        &f
+        &aSpawn: &b<spawn>
+        &aBalloon: &b<balloon>
+        &aFence: &b<fence>
+        &aChests:
+        <chests>
+        &f
+        &aClick to edit!
+        &cRight click to remove!
+    addIsland:
+      nameItem: '&aAdd Island'
+      loreItem: |-
+        &fAdd an island to the game.
+        &f
+        &aClick to add!
+  island:
+    title: '&aSetup Island of Arena'
+    spawn:
+      nameItem: '&aSet Spawn'
+      loreItem: |-
+        &fSetting the island's spawn
+        &fis important for you to be
+        &fin the center to prevent
+        &fplayers from getting off the glass.
+        &f
+        &aSpawn: &b<spawn>
+        &f
+        &c&oNote: For team mode, you don't
+        &c&oneed to set more spawns, they
+        &c&owill automatically create
+        &c&oevery 6 blocks in Y.
+        &f
+        &aClick to set!
+        &aRight-Click to teleport!
+    balloon:
+      nameItem: '&aSet Balloon'
+      loreItem: |-
+        &fSet the place of the balloon,
+        &fit should be set behind the
+        &fisland, to 5 blocks, since
+        &fwhen appearing the giant
+        &fzombie interferes with users.
+        &f
+        &aBalloon: &b<balloon>
+        &f
+        &aClick to set!
+        &aRight-Click to teleport!
+    fence:
+      nameItem: '&aSet Fence'
+      loreItem: |-
+        &fSet the balloon fence, here
+        &fwill tie the rope of the
+        &fballoon you have created.
+        &f
+        &aFence: &b<fence>
+        &f
+        &aClick to set!
+        &aRight-Click to teleport!
+    chests:
+      nameItem: '&aIsland Chest'
+      loreItem: |-
+        &fGive wand for the set
+        &fisland chests.
+        &f
+        &aClick to give!
+        &aRight click to inspect 3x radius blocks!
+    save:
+      nameItem: '&aSave Island'
+      loreItem: |-
+        &fSave the Island in arena
+        &f
+        &aClick to save!
+  setup:
+    title: '&aSetup Arena'
+    name:
+      nameItem: '&aName of Arena'
+      loreItem: |-
+        &fThe arena name is:
+        &f
+        &aName: &b<name>
+        &f
+    schematic:
+      nameItem: '&aName of Schematic'
+      loreItem: |-
+        &fThe schematic name is:
+        &f
+        &aSchematic: &b<schematic>
+        &f
+    min:
+      nameItem: '&aMin Players'
+      loreItem: |-
+        &fMin players to start arena:
+        &f
+        &aMin: &b<min>
+        &f
+        &aClick to change!
+    teamSize:
+      nameItem: '&aTeamSize'
+      loreItem: |-
+        &fTeam size of arena:
+        &f
+        &aTeamSize: &b<teamSize>
+        &f
+        &aClick to change!
+    lobby:
+      nameItem: '&aLobby Location'
+      loreItem: |-
+        &fSet the lobby location,
+        &fhere players will be teleported
+        &fwhen entering the game.
+        &f
+        &aLobby: &b<lobby>
+        &f
+        &c&oNote: If you disable the pre lobby,
+        &c&oyou must set this place the same way,
+        &c&oit will not be taken into account
+        &c&owhen entering the arena, but we avoid
+        &c&oerrors simply by setting it.
+        &f
+        &aClick to set location!
+        &aRight-Click to teleport!
+    spect:
+      nameItem: '&aSpectator Location'
+      loreItem: |-
+        &fSet the spectator's location,
+        &fthis will be where players will
+        &fbe teleported when they die.
+        &f
+        &aSpectator: &b<spect>
+        &f
+        &c&oNote: This place is used for
+        &c&oother things must be established
+        &c&oin the same world.
+        &f
+        &aClick to set location!
+        &aRight-Click to teleport!
+    islands:
+      nameItem: '&aIslands'
+      loreItem: |-
+        &fOpens the menu for set islands.
+        &f
+        &aClick to open!
+    center:
+      nameItem: '&aCenter Chests'
+      loreItem: |-
+        &fIt gives you the rod to set
+        &fthe center chests, you can
+        &fset different loot for these chests.
+        &f
+        &aClick to give!
+        &aRight click to inspect 3x radius blocks!
+    events:
+      nameItem: '&aArena Events'
+      loreItem: |-
+        &fAdd or Remove events
+        &ffrom this arena.
+        &f
+        &aClick to open!
+    ranked:
+      nameItem: '&aArena Ranked'
+      loreItem: |-
+        &fSelect whether the
+        &fgame is ranked or not:
+        &f
+        &aRanked: &b<ranked>
+        &f
+        &aClick to change!
+    votes:
+      nameItem: '&aArena Votes'
+      loreItem: |-
+        &fSelect whether the
+        &fgame is votes or not:
+        &f
+        &aVotes: &b<votes>
+        &f
+        &aClick to change!
+    color:
+      nameItem: '&aColor of arena'
+      loreItem: |-
+        &fSets the color of arena
+        &f
+        &aColor: &b<color>
+        &f
+        &aClick to set location!
+    borderX:
+      nameItem: '&aBorderX Location'
+      loreItem: |-
+        &fSet the X coordinate of
+        &fthe center of your map,
+        &ffor border references.
+        &f
+        &aBorderX: &b<borderX>
+        &f
+        &c&oNote: This location is
+        &c&ofor the final BORDER event only.
+        &f
+        &aClick to change!
+    borderZ:
+      nameItem: '&aBorderZ Location'
+      loreItem: |-
+        &fSet the Z coordinate of
+        &fthe center of your map,
+        &ffor border references.
+        &f
+        &aBorderZ: &b<borderZ>
+        &f
+        &c&oNote: This location is
+        &c&ofor the final BORDER event only.
+        &f
+        &aClick to change!
+    save:
+      nameItem: '&aSave Arena'
+      loreItem: |-
+        &fSave the arena in config
+        &f
+        &aClick to save!
+  votes:
+    title: '&aVote Options'
+    chest:
+      nameItem: '&aVote Chest'
+      loreItem: |-
+        &fВы откроете меню голосования
+        &fдля сундуков в игре.
+        &f
+        &aНажмите, чтобы открыть!
+    final:
+      nameItem: '&aОкончание голосования'
+      loreItem: |-
+        &fВы откроете меню голосования
+        &fдля финала игры.
+        &f
+        &aНажмите, чтобы открыть!
+    health:
+      nameItem: '&aПроголосовать здоровье'
+      loreItem: |-
+        &fВы откроете меню голосования
+        &fдля здоровья в игре.
+        &f
+        &aНажмите, чтобы открыть!
+    projectile:
+      nameItem: '&aГолосовать за снаряд'
+      loreItem: |-
+        &fВы откроете меню голосования
+        &fдля снаряда в игре.
+        &f
+        &aНажмите, чтобы открыть!
+    time:
+      nameItem: '&aВремя голосования'
+      loreItem: |-
+        &fYou'll open a voting menu
+        &ffor the time in game.
+        &f
+        &aClick to open!
+  final:
+    title: '&aVote Type Final'
+    dragon:
+      nameItem: '&aДракон'
+      loreItem: |-
+        &fДракон появится в
+        &fконце игрового времени.
+        &f
+        &aГолосов: &b<dragonfinal>
+        &f
+        &aНажмите, чтобы проголосовать!
+    tnt:
+      nameItem: '&aTNT'
+      loreItem: |-
+        &fA rain of TNT reach the
+        &fend time of the game.
+        &f
+        &aVotes: &b<tntfinal>
+        &f
+        &aClick to vote!
+    zombie:
+      nameItem: '&aЗомби'
+      loreItem: |-
+        &fЗомби появятся в
+        &fконце игрового времени.
+        &f
+        &aГолосов: &b<zombiesfinal>
+        &f
+        &aНажмите, чтобы проголосовать!
+    wither:
+      nameItem: '&aИссушитель'
+      loreItem: |-
+        &fA withers will appears at
+        &fthe end of the game time.
+        &f
+        &aVotes: &b<witherfinal>
+        &f
+        &aClick to vote!
+    border:
+      nameItem: '&aBorder'
+      loreItem: |-
+        &fThere is a border in the
+        &fworld that gets smaller.
+        &f
+        &aVotes: &b<borderfinal>
+        &f
+        &aClick to vote!
+    none:
+      nameItem: '&aNone'
+      loreItem: |-
+        &fThere will be no events reaching
+        &fthe end time of the game.
+        &f
+        &aVotes: &b<nonefinal>
+        &f
+        &aClick to vote!
+  time:
+    title: '&aVote Type Time'
+    dawn:
+      nameItem: '&9Dawn Time'
+      loreItem: |-
+        &fThe time of the map
+        &fwill be Dawn.
+        &a
+        &aVotes: &b<dawntime>
+        &f
+        &aClick to vote!
+    day:
+      nameItem: '&aDay Time'
+      loreItem: |-
+        &fThe time of the map
+        &fwill be Day.
+        &a
+        &aVotes: &b<daytime>
+        &f
+        &aClick to vote!
+    afternoon:
+      nameItem: '&2Afternoon Time'
+      loreItem: |-
+        &fThe time of the map
+        &fwill be Afternoon.
+        &a
+        &aVotes: &b<afternoontime>
+        &f
+        &aClick to vote!
+    night:
+      nameItem: '&8Night Time'
+      loreItem: |-
+        &fThe time of the map
+        &fwill be Night.
+        &a
+        &aVotes: &b<nighttime>
+        &f
+        &aClick to vote!
+  health:
+    title: '&aVote Type Health'
+    health5:
+      nameItem: '&a5 Hearts'
+      loreItem: |-
+        &fYour live is reduced to
+        &f5 hearts.
+        &f
+        &aVotes: &b<health5>
+        &f
+        &aClick to vote!
+    health10:
+      nameItem: '&a10 Hearts'
+      loreItem: |-
+        &fYour live is normal.
+        &f
+        &aVotes: &b<health10>
+        &f
+        &aClick to vote!
+    health20:
+      nameItem: '&a20 Hearts'
+      loreItem: |-
+        &fYour live is increased to
+        &f20 hearts.
+        &f
+        &aVotes: &b<health20>
+        &f
+        &aClick to vote!
+    uhc:
+      nameItem: '&aUHC Health'
+      loreItem: |-
+        &fYour live is increased to
+        &f20 hearts.
+        &f
+        &aVotes: &b<healthuhc>
+        &f
+        &aClick to vote!
+  projectile:
+    title: '&aVote Type Projectile'
+    noProj:
+      nameItem: '&aNo Projectiles'
+      loreItem: |-
+        &fNo projectiles appear
+        &fin chests.
+        &f
+        &aVotes: &b<noproj>
+        &f
+        &aClick to vote!
+    siProj:
+      nameItem: '&aYes Projectiles'
+      loreItem: |-
+        &fProjectiles appear
+        &fin chests.
+        &f
+        &aVotes: &b<yesproj>
+        &f
+        &aClick to vote!
+    exProj:
+      nameItem: '&aExplosive Projectiles'
+      loreItem: |-
+        &fСнаряды взрывают
+        &fземлю после падения.
+        &f
+        &aГолосов: &b<exproj>
+        &f
+        &aНажмите, чтобы проголосовать!
+    desProj:
+      nameItem: '&aРазрушительные снаряды'
+      loreItem: |-
+        &fСнаряды уничтожают
+        &fземлю после падения.
+        &f
+        &aГолосов: &b<desproj>
+        &f
+        &aНажмите, чтобы проголосовать!
+    teleProj:
+      nameItem: '&aТранспортирующие снаряды'
+      loreItem: |-
+        &fСнаряды телепортируются
+        &fкогда вы падаете.
+        &f
+        &aГолосов: &b<teleproj>
+        &f
+        &aНажмите, чтобы проголосовать!
+events:
+  refill: '&aПополнение'
+  final: '&aФинал'
+  dragon: '&aДракон'
+  tnt: '&aTNT'
+  wither: '&aИссушитель'
+  zombie: '&aЗомби'
+  border: '&bГраница'
+  none: '&aКонец через'
+  noMore: '&aБольше событий нет'
+modes:
+  solo: Solo
+  tnt_madness: TNT Madness
+  team: Team
+  ranked: Ranked
+scoreboards:
+  main-title: '&a&lЛобби SkyWars'
+  main: |-
+    &f
+    &fИгрок: &a%player_name%
+    &f
+    &fМонет: &a%usw_coins%
+    &f
+    &fВсего Убийств: &a%usw_total_stat_KILLS%
+    &fВсего Побед: &a%usw_total_stat_WINS%
+    &fВсего Смертей: &a%usw_total_stat_DEATHS%
+    &f
+    &b&lmcsnapix.ru
+  lobby-title: '&b&lSkyWars'
+  lobby: |-
+    &7%localtime_timezone_GMT+3% &8(%server_name%)
+    &f
+    &fПоиск игроков...
+    &f
+    &fИгроков: &a<players>&f/&b<max>
+    &f
+    &fКарта: &a<map>
+    &f
+    &b&lmcsnapix.ru
+  starting-title: '&b&lSkyWars'
+  starting: |-
+    &7%localtime_timezone_GMT+3% &8(%server_name%)
+    &f
+    &fНачало через: &a<time>
+    &f
+    &fИгроков: &a<players>&f/&b<max>
+    &f
+    &fКарта: &a<map>
+    &f
+    &b&lmcsnapix.ru
+  pregame-title: '&b&lSkyWars'
+  pregame: |-
+    &7%localtime_timezone_GMT+3% &8(%server_name%)
+    &f
+    &fОткроется через &a<time> с
+    &f
+    &fИгроков: &a<players>&f/&b<max>
+    &f
+    &fКарта: &a<map>
+    &f
+    &b&lmcsnapix.ru
+  game-title: '&b&lSkyWars'
+  game: |-
+    &7%localtime_timezone_GMT+3% &8(%server_name%)
+    &f
+    &fСледующее событие:
+    &a<event> <eventTime>
+    &f
+    &fИгроков осталось: &a<players>
+    &f
+    &fУбийств: &a<kills>
+    &f
+    &fКарта: &a<map>
+    &fРежим: &a<mode>
+    &f
+    &b&lmcsnapix.ru
+  team-title: '&b&lSkyWars'
+  team: |-
+    &7%localtime_timezone_GMT+3% &8(%server_name%)
+    &f
+    &fСледующее событие:
+    &a<event> <eventTime>
+    &f
+    &fИгроков осталось: &a<players>
+    &f
+    &fУбийств: &a<kills>
+    &fКомандых убийств: &a<teamkills>
+    &f
+    &fКарта: &a<map>
+    &fРежим: &a<mode>
+    &f
+    &b&lmcsnapix.ru
+  ranked-title: '&b&lSkyWars'
+  ranked: |-
+    &7%localtime_timezone_GMT+3% &8(%server_name%)
+    &f
+    &fСледующее событие:
+    &a<event> <eventTime>
+    &f
+    &fИгроков осталось: &a<players>
+    &f
+    &fElo: &a<elo>
+    &fУбийств: &a<kills>
+    &f
+    &fКарта: &a<map>
+    &fРежим: &a<mode>
+    &f
+    &b&lmcsnapix.ru
+  tnt_madness-title: '&b&lSkyWars'
+  tnt_madness: |-
+    &7%localtime_timezone_GMT+3% &8(%server_name%)
+    &f
+    &fNext Event:
+    &a<event> <eventTime>
+    &f
+    &fPlayers left: &a<players>
+    &f
+    &fKills: &a<kills>
+    &f
+    &fMap: &a<map>
+    &fMode: &a<mode>
+    &f
+    &b&lmcsnapix.ru
+taunts:
+  CONTACT: §c<death> &eбыл убит
+  ENTITY_ATTACK: <death> &eбыл убил
+  PROJECTILE: <death> &eбыл застрелян
+  SUFFOCATION: <death> &eбыл задушен
+  FALL: <death> &eупал и разбился насмерть
+  FIRE: <death> &eсгорел заживо
+  FIRE_TICK: <death> &eсгорел заживо
+  MELTING: <death> &eубит позорно
+  LAVA: <death> &eутонул в лаве
+  DROWNING: <death> &eутонул в воде
+  BLOCK_EXPLOSION: <death> &eeвзорвался на тысячу осколков
+  ENTITY_EXPLOSION: <death> &eexploded into a thousand pieces
+  VOID: <death> &eзастрелен в пустоте
+  LIGHTNING: <death> &eбыл наказан Зевсом
+  SUICIDE: <death> &eбыл отвергнут своей девушкой и покончил с собой
+  STARVATION: <death> &eумер от голода
+  POISON: <death> &eумер от волшебства
+  MAGIC: <death> &eумер от волшебства
+  WITHER: <death> &eубит визаром
+  FALLING_BLOCK: <death> &eЯ уронил блок ему в голову
+  THORNS: <death> &eубил сам себя
+  CUSTOM: <death> &eумер от неизвестных причин
+  FLY_INTO_WALL: <death> &eврезался в стену и погиб
+  HOT_FLOOR: <death> &eпогиб на поле боя
+  CRAMMING: <death> &eумер от перегрузки
+  ENTITY_SWEEP_ATTACK: <death> &eумер от сущностей
+  DRAGON_BREATH: <death> &eубит от дыхания дракона
+  DRYOUT: <death> &eпогиб путем высыхания
+  BY: '&e благодаря &r<killer>&e.'
+  NONE: '&e.'
+soulwell:
+  rolling: '&fRolling...'
+  rarity:
+    common: '&aCommon'
+    uncommon: '&aUnCommon'
+    rare: '&9Rare'
+    epic: '&5Epic'
+    legendary: '&2Legendary'
+selector:
+  solo: Solo
+  normal: Solo
+  tnt_madness: TNT Madness
+  team: Team
+  all: All
+  ranked: '&2Ranked'
+  waiting: '&aWaiting'
+  starting: '&aStarting'
+  pregame: '&dPre Game'
+  game: '&4In Game'
+  finish: '&9Finish'
+  restarting: '&5Restarting'
+order:
+  KILLS: По убийствам
+  ALPHABETICALLY: По алфавиту
+  PLAYERS: Игроки
+  NONE: Нет
+leaderheads:
+  skywarsdeaths:
+    title: '&aUltraSkyWars Deaths'
+    lines:
+      '0': '&c----------'
+      '1': '&a{name}'
+      '2': '&a{amount} монет'
+      '3': '&c----------'
+  skywarswins:
+    title: '&aUltraSkyWars победы'
+    lines:
+      '0': '&c----------'
+      '1': '&a{name}'
+      '2': '&a{amount} монет'
+      '3': '&c----------'
+  skywarskills:
+    title: '&aUltraSkyWars убийства'
+    lines:
+      '0': '&c----------'
+      '1': '&a{name}'
+      '2': '&a{amount} монет'
+      '3': '&c----------'
+  skywarscoins:
+    title: '&aUltraSkyWars монеты'
+    lines:
+      '0': '&c----------'
+      '1': '&a{name}'
+      '2': '&a{amount} монет'
+      '3': '&c----------'
+  skywarselo:
+    title: '&aUltraSkyWars Elo'
+    lines:
+      '0': '&c----------'
+      '1': '&a{name}'
+      '2': '&a{amount} elo'
+      '3': '&c----------'
+  skywarsSdeaths:
+    title: '&aUSW Одиночные смерти'
+    lines:
+      '0': '&c----------'
+      '1': '&a{name}'
+      '2': '&a{amount} смертей'
+      '3': '&c----------'
+  skywarsSwins:
+    title: '&aUSW Одиночные победы'
+    lines:
+      '0': '&c----------'
+      '1': '&a{name}'
+      '2': '&a{amount} побед'
+      '3': '&c----------'
+  skywarsSkills:
+    title: '&aUSW Одиночные убийства'
+    lines:
+      '0': '&c----------'
+      '1': '&a{name}'
+      '2': '&a{amount} убийств'
+      '3': '&c----------'
+  skywarsTdeaths:
+    title: '&aUSW Командные смерти'
+    lines:
+      '0': '&c----------'
+      '1': '&a{name}'
+      '2': '&a{amount} смертей'
+      '3': '&c----------'
+  skywarsTwins:
+    title: '&aUSW Командные победы'
+    lines:
+      '0': '&c----------'
+      '1': '&a{name}'
+      '2': '&a{amount} побед'
+      '3': '&c----------'
+  skywarsTkills:
+    title: '&aUSW Командные убийства'
+    lines:
+      '0': '&c----------'
+      '1': '&a{name}'
+      '2': '&a{amount} убийств'
+      '3': '&c----------'
+  skywarsRdeaths:
+    title: '&aUSW Ранговые смерти'
+    lines:
+      '0': '&c----------'
+      '1': '&a{name}'
+      '2': '&a{amount} смертей'
+      '3': '&c----------'
+  skywarsRwins:
+    title: '&aUSW Ранговые победы'
+    lines:
+      '0': '&c----------'
+      '1': '&a{name}'
+      '2': '&a{amount} побед'
+      '3': '&c----------'
+  skywarsRkills:
+    title: '&aUSW Ранговые убийства'
+    lines:
+      '0': '&c----------'
+      '1': '&a{name}'
+      '2': '&a{amount} убийств'
+      '3': '&c----------'

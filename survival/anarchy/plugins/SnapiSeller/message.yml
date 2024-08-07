@@ -1,0 +1,12 @@
+command:
+  help:
+    - ''
+    - '  §a§lКоманды Скупщика'
+    - ''
+    - '  §fОбновить предметы §7– §a/snapiseller refreshitem'
+    - ''
+  refreshItem:
+    dontHaveSnapers: '§fУ вас не хватает §a%amount%₵'
+    playerNotFound: 'Игрок %player% не найден'
+    success: '§fВы §aобновили §fпредметы у Скупщика'
+    usage: '§fИспользуйте: §a/snapiseller refreshitem'

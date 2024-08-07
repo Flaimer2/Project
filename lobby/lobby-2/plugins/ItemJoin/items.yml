@@ -14,8 +14,8 @@ items:
     slot: 0
     name: '&8★  §6Выбор режима &8★  &e&lПРАВЫЙ КЛИК'
     itemflags: item-store, hide-attributes, death-drops, self-drops, cancel-events
-    triggers: join, respawn, world-switch
-    enabled-worlds: lobby
+    triggers: join, respawn
+    enabled-worlds: lobby, Preview
     interact:
       - 'console: invero menu open MainModeSelector %player%'
   2:
@@ -24,8 +24,8 @@ items:
     name: '&8★  &bВаш профиль &8★  &e&lПРАВЫЙ КЛИК'
     skull-owner: '%player_name%'
     itemflags: item-store, hide-attributes, death-drops, self-drops, cancel-events
-    triggers: join, respawn, world-switch
-    enabled-worlds: lobby
+    triggers: join, respawn
+    enabled-worlds: lobby, Preview
     interact:
       - 'player: profile'
   3:
@@ -33,8 +33,8 @@ items:
     slot: 4
     name: '&8★  &aГаджеты &8★  &e&lПРАВЫЙ КЛИК'
     itemflags: item-store, hide-attributes, death-drops, self-drops, cancel-events
-    triggers: join, respawn, world-switch
-    enabled-worlds: lobby
+    triggers: join, respawn
+    enabled-worlds: lobby, Preview
     interact:
       - 'player: gadgetsmenu main'
   4:
@@ -43,8 +43,8 @@ items:
     name: '&8★  &9Карманные игры &8★  &e&lПРАВЫЙ КЛИК'
     skull-texture: 'url-65dd1a64e529c90dd55d76733dfb58e3663a12472fb3c7657e2661ccf172fe64'
     itemflags: item-store, hide-attributes, death-drops, self-drops, cancel-events
-    triggers: join, respawn, world-switch
-    enabled-worlds: lobby
+    triggers: join, respawn
+    enabled-worlds: lobby, Preview
     interact:
       - 'console: pg menu %player%'
   5:
@@ -52,7 +52,7 @@ items:
     slot: 8
     name: '&8★  §6Донат-меню &8★  &e&lПРАВЫЙ КЛИК'
     itemflags: item-store, hide-attributes, death-drops, self-drops, cancel-events
-    triggers: join, respawn, world-switch
-    enabled-worlds: lobby
+    triggers: join, respawn
+    enabled-worlds: lobby, Preview
     interact:
       - 'console: invero menu open Donate %player%'

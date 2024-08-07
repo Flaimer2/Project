@@ -364,28 +364,26 @@ GUI-Menus:
           Sound: ENTITY_ENDERMAN_TELEPORT
 Items:
   Go-Back:
-    Name: '&eНазад'
+    Name: '&aВернуться назад'
     Material: ARROW
     Show: true
     Lore: ''
-    Slot: 39
+    Slot: 48
   Previous-Page:
-    Name: '&eПредыдущая страница'
+    Name: '&aПредыдущая страница'
     Material: ARROW
-    Lore:
-    - '&fСтраница &a{PAGE}'
-    Slot: 39
+    Lore: ''
+    Slot: 48
   Next-Page:
-    Name: '&eСледующая страница'
+    Name: '&aСледующая страница'
     Material: ARROW
-    Lore:
-    - '&fСтраница &a{PAGE}'
-    Slot: 41
+    Lore: ''
+    Slot: 50
   Already-Selected:
     Show-In-Lore: true
     Lore:
     - ''
-    - '&fУже выбрано'
+    - '&aГаджет уже выбран'
   Click-To-Select:
     Show-In-Lore: true
     Lore:
@@ -544,7 +542,7 @@ Reset-Buttons:
     Play-Sound:
       Enabled: true
       Sound: ENTITY_EXPERIENCE_ORB_PICKUP
-    Slot: 40
+    Slot: 49
   Reset-Particle:
     Name: '&cУбрать частицы'
     Material: RED_STAINED_GLASS
@@ -553,7 +551,7 @@ Reset-Buttons:
     Play-Sound:
       Enabled: true
       Sound: ENTITY_EXPERIENCE_ORB_PICKUP
-    Slot: 40
+    Slot: 49
   Reset-Suit:
     Name: '&cУбрать костюм'
     Material: RED_STAINED_GLASS
@@ -562,7 +560,7 @@ Reset-Buttons:
     Play-Sound:
       Enabled: true
       Sound: ENTITY_EXPERIENCE_ORB_PICKUP
-    Slot: 40
+    Slot: 49
   Reset-Gadget:
     Name: '&cУбрать гаджеты'
     Material: RED_STAINED_GLASS
@@ -571,7 +569,7 @@ Reset-Buttons:
     Play-Sound:
       Enabled: true
       Sound: ENTITY_EXPERIENCE_ORB_PICKUP
-    Slot: 40
+    Slot: 49
   Reset-Pet:
     Name: '&cУбрать питомца'
     Material: RED_STAINED_GLASS
@@ -580,7 +578,7 @@ Reset-Buttons:
     Play-Sound:
       Enabled: true
       Sound: ENTITY_EXPERIENCE_ORB_PICKUP
-    Slot: 40
+    Slot: 49
   Reset-Morph:
     Name: '&cУбрать Превращение'
     Material: RED_STAINED_GLASS
@@ -589,7 +587,7 @@ Reset-Buttons:
     Play-Sound:
       Enabled: true
       Sound: ENTITY_EXPERIENCE_ORB_PICKUP
-    Slot: 40
+    Slot: 49
   Reset-Banner:
     Name: '&cУбрать баннер'
     Material: RED_STAINED_GLASS
@@ -598,7 +596,7 @@ Reset-Buttons:
     Play-Sound:
       Enabled: true
       Sound: ENTITY_EXPERIENCE_ORB_PICKUP
-    Slot: 40
+    Slot: 49
   Reset-Emote:
     Name: '&cУбрать эмоции'
     Material: RED_STAINED_GLASS
@@ -607,7 +605,7 @@ Reset-Buttons:
     Play-Sound:
       Enabled: true
       Sound: ENTITY_EXPERIENCE_ORB_PICKUP
-    Slot: 40
+    Slot: 49
   Reset-Cloak:
     Name: '&cСнять плащ'
     Material: RED_STAINED_GLASS
@@ -616,12 +614,12 @@ Reset-Buttons:
     Play-Sound:
       Enabled: true
       Sound: ENTITY_EXPERIENCE_ORB_PICKUP
-    Slot: 40
+    Slot: 49
   Reset-Animated-Hat:
     Name: '&cСнять анимированную голову'
     Material: RED_STAINED_GLASS
     Show: true
-    Slot: 40
+    Slot: 49
     Lore: ''
     Play-Sound:
       Enabled: true
@@ -630,7 +628,7 @@ Reset-Buttons:
     Name: '&cУбрать Питомца'
     Material: RED_STAINED_GLASS
     Show: true
-    Slot: 40
+    Slot: 49
     Lore: ''
     Play-Sound:
       Enabled: true

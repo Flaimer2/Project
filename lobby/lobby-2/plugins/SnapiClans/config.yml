@@ -28,7 +28,7 @@ economy:
   tag: 35000
   create-clan: 50000
 
-chat-format: '&f[&eКлан&f] %vault_prefix%%player_name%%tab_placeholder_condition:suffix% > %message%'
+chat-format: '&f[&eКлан&f] %vault_prefix%%player_name%%vault_suffix% > %message%'
 limit-invite-for-clan: 5
 max-members: 10
 roles:

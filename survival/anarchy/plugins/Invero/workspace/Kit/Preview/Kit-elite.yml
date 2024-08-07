@@ -1,0 +1,42 @@
+menu:
+  title: 'Набор Elite'
+
+layout:
+- '         '
+- ' 12I345E '
+- ' 6789    '
+- '         '
+- '    R    '
+
+items:
+  R:
+    material: 'ARROW'
+    name: '&aВернуться назад'
+    action: menu switch Kit
+  1:
+    material: 'IRON_SWORD'
+  2:
+    material: 'DIAMOND_PICKAXE'
+  I:
+    material: 'iron_ingot'
+    amount: 8
+  3:
+    material: 'diamond'
+    amount: 4
+  4:
+    material: 'log'
+    amount: 32
+  5:
+    material: 'golden_apple'
+    amount: 8
+  E:
+    material: 'experience_bottle'
+    amount: 32
+  6:
+    material: 'IRON_HELMET'
+  7:
+    material: 'IRON_CHESTPLATE'
+  8:
+    material: 'IRON_LEGGINGS'
+  9:
+    material: 'IRON_BOOTS'

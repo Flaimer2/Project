@@ -1,0 +1,236 @@
+windances:
+  default:
+    id: 0
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: BARRIER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aОбычный
+        lore:
+        - §fYou do not have any Victory Dance
+    type: none
+    name: Обычный
+    price: 0
+    isBuy: false
+    slot: 10
+    permission: ultraskywars.windances.fireworks
+    page: 1
+    autoGivePermission: ultraskywars.windances.autogive.Default
+    needPermToBuy: false
+  fireworks:
+    id: 0
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: FIREWORK
+      meta:
+        ==: ItemMeta
+        meta-type: FIREWORK
+        display-name: §aФестиваль фейерверков
+        lore:
+        - §7
+        - '§fРедкость: §a[Обычная]'
+        - '§fЦена: §a35000$'
+        - §7
+        - <status>
+    type: fireworks
+    name: Фестиваль фейерверков
+    price: 35000
+    isBuy: true
+    slot: 10
+    page: 1
+    permission: ultraskywars.windances.fireworks
+    autoGivePermission: ultraskywars.windances.autogive.Fireworks
+    needPermToBuy: false
+  thunders:
+    id: 1
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_AXE
+    type: thunders
+    name: Ярость Тора
+    price: 35000
+    isBuy: true
+    slot: 11
+    page: 1
+    permission: ultraskywars.windances.thunder
+    autoGivePermission: ultraskywars.windances.autogive.Thunders
+    needPermToBuy: false
+    xOfCenter: 10
+    zOfCenter: 10
+    minOfCenter: 10
+    maxOfCenter: 15
+    taskTick: 20
+  explode:
+    id: 2
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: TNT
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aВзрывное прощание
+        lore:
+        - §7
+        - '§fРедкость: §a[Обычная]'
+        - '§fЦена: §a35000$'
+        - §7
+        - <status>
+    type: explode
+    name: Взрывное прощание
+    price: 35000
+    isBuy: true
+    slot: 12
+    page: 1
+    permission: ultraskywars.windances.explode
+    autoGivePermission: ultraskywars.windances.autogive.Explode
+    needPermToBuy: false
+  daynight:
+    id: 3
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: WATCH
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aДень и ночь
+        lore:
+        - §7
+        - '§fРедкость: §a[Обычная]'
+        - '§fЦена: §a35000$'
+        - §7
+        - <status>
+    type: daynight
+    name: День и ночь
+    price: 35000
+    isBuy: true
+    slot: 13
+    page: 1
+    permission: ultraskywars.windances.daynight
+    autoGivePermission: ultraskywars.windances.autogive.Day and Night
+    needPermToBuy: false
+  anvilland:
+    id: 4
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: ANVIL
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aДождь из наковален
+        lore:
+        - §7
+        - '§fРедкость: §9[Редкая]'
+        - '§fЦена: §a65000$'
+        - §7
+        - <status>
+    type: anvilland
+    name: Дождь из наковален
+    price: 65000
+    isBuy: true
+    slot: 14
+    page: 1
+    permission: ultraskywars.windances.anvilland
+    autoGivePermission: ultraskywars.windances.autogive.AnvilLand
+    needPermToBuy: false
+  icewalker:
+    id: 5
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: ICE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aЭльза
+        lore:
+        - §7
+        - '§fРедкость: §9[Редкая]'
+        - '§fЦена: §a65000$'
+        - §7
+        - <status>
+    type: icewalker
+    name: Эльза
+    price: 65000
+    isBuy: true
+    slot: 15
+    page: 1
+    permission: ultraskywars.windances.icewalker
+    autoGivePermission: ultraskywars.windances.autogive.IceWalker
+    needPermToBuy: false
+  meteors:
+    id: 6
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: FIREBALL
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aМетеоры
+        lore:
+        - §7
+        - '§fРедкость: §5[Эпическая]'
+        - '§fЦена: §a95000$'
+        - §7
+        - <status>
+    type: meteors
+    name: Метеоры
+    price: 95000
+    isBuy: true
+    slot: 16
+    page: 1
+    permission: ultraskywars.windances.meteors
+    autoGivePermission: ultraskywars.windances.autogive.Meteors
+    needPermToBuy: false
+  pigland:
+    id: 7
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: PORK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aСтрана свиней
+        lore:
+        - §7
+        - '§fРедкость: §5[Эпическая]'
+        - '§fЦена: §a95000$'
+        - §7
+        - <status>
+    type: pigland
+    name: Страна свиней
+    price: 95000
+    isBuy: true
+    slot: 19
+    page: 1
+    permission: ultraskywars.windances.pigland
+    autoGivePermission: ultraskywars.windances.autogive.PigLand
+    needPermToBuy: false
+    maxOfCenter: 25
+    firstUp: 110
+    maxRandomUp: 5
+    taskTick: 5
+  wolfs:
+    id: 8
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: BONE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aЗемля волков
+        lore:
+        - §7
+        - '§fРедкость: §6[Легендарная]'
+        - '§fЦена: §a110000$'
+        - §7
+        - <status>
+    type: wolfs
+    name: Земля волков
+    price: 110000
+    isBuy: true
+    slot: 20
+    page: 1
+    permission: ultraskywars.windances.wolfs
+    autoGivePermission: ultraskywars.windances.autogive.Wolfs
+    needPermToBuy: false

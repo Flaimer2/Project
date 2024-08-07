@@ -1,0 +1,181 @@
+menu:
+  title: '&0Улучшения'
+  
+layout: |-
+  #########
+  ##     ##
+  #########         
+  ###1#2###
+  #########       
+  ####B####
+### &region
+
+items:
+  # Воздух
+  '#':
+    material: air
+  B:
+    material: air
+    sub:
+      - rule: 'check ctx get Back == "ProtectedBlock"'
+        material: arrow
+        name: '§aВернуться назад'
+        action: |-
+          menu switch ProtectedBlock
+  1:
+    enhancedLore: true
+    head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ4NmRiOWExNGQ1ODc5ZmEyODExZDMwMWNjYmQ1MjY5OTRmODcxMjQ3YjYyZjJkOWE0ODE4M2U5NjQxYWQ2OSJ9fX0='
+    name: '&aУвеличение кол-ва владельцев'
+    lore: |-
+      &fВаш уровень: &a{{node Get with "maxOwners_level"}}/{{node Get with "maxOwners_level_max"}}
+      &fМаксимум владельцев: &a{{node Get with "maxOwners"}}
+      {{if check node Get with "maxOwners_level_max" <= node Get with "maxOwners_level" then " " else "&fСтоимость следующего уровня: &a{{node GetPriceMember with inline "{{node Get with "maxOwners_level_next"}}"}}₵\\n" }}
+      {{if check node Get with "maxOwners_level_max" <= node Get with "maxOwners_level" then "&aУ вас максимальный уровень" else "&aНажмите, чтобы улучшить"}}
+    action: |-
+      if check node Get with "maxOwners_level_max" <= node Get with "maxOwners_level" then {
+        msg "&fУ вас уже &aмаксимальное &fулучшение"
+        sound ENTITY_ITEM_BREAK by 1 0
+      } else if check node GetPriceOwner with node Get with "maxOwners_level_next" <= papi "%coin_amount%" then {
+        command inline "coin withdraw %player_name% {{node GetPriceOwner with papi inline %region_{{&region}}:maxOwners_level_next%}} -s" as console
+        command inline "regionadmin setlevel {{&region}} maxOwners {{papi inline %region_{{&region}}:maxOwners_level_next%}}" as console
+        sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        icons refresh
+        msg "&fВы успешно приобрели улучшение &aМаксимум владельцев ур. {{node Get with maxOwners_level}}"
+      } else {
+        msg "&fУ &cне хватает &fснаперов"
+      }
+
+  2:
+    enhancedLore: true
+    head: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjMyZmZmMTYzZTIzNTYzMmY0MDQ3ZjQ4NDE1OTJkNDZmODVjYmJmZGU4OWZjM2RmNjg3NzFiZmY2OWE2NjIifX19'
+    name: '&aУвеличение кол-ва участников'
+    lore: |-
+      &fВаш уровень: &a{{node Get with "maxMembers_level"}}/{{node Get with "maxMembers_level_max"}}
+      &fМаксимум участников: &a{{node Get with "maxMembers"}}
+      {{if check node Get with "maxMembers_level_max" <= node Get with "maxMembers_level" then " " else "&fСтоимость следующего уровня: &a{{node GetPriceMember with inline "{{node Get with "maxMembers_level_next"}}"}}₵\\n" }}
+      {{if check node Get with "maxMembers_level_max" <= node Get with "maxMembers_level" then "&aУ вас максимальный уровень" else "&aНажмите, чтобы улучшить"}}
+    action: |-
+      if check node Get with "maxMembers_level_max" <= node Get with "maxMembers_level" then {
+        msg "&fУ вас уже &aмаксимальное &fулучшение"
+        sound ENTITY_ITEM_BREAK by 1 0
+      } else if check node GetPriceMember with node Get with "maxMembers_level_next" <= papi "%coin_amount%" then {
+        command inline "coin withdraw %player_name% {{node GetPriceMember with papi inline %region_{{&region}}:maxMembers_level_next%}} -s" as console
+        command inline "regionadmin setlevel {{&region}} maxMembers {{papi inline %region_{{&region}}:maxMembers_level_next%}}" as console
+        sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        icons refresh
+        msg "&fВы успешно приобрели улучшение &aМаксимум участников ур. {{node Get with maxMembers_level}}"
+      } else {
+        msg "&fУ &cне хватает &fснаперов"
+      }
+
+generator:
+  output:
+    json: '{{element ItemJson}}'
+    enhancedLore: true
+    flag:
+      - 'HIDE_POTION_EFFECTS'
+      - 'HIDE_ATTRIBUTES'
+    name: '{{element Name}}'
+    lore: |-
+      {{element Description}}
+      
+      &fЦена: &a{{ element Price }}$
+      &fСтатус: {{ if papi inline "%region_{{&region}}:hasEffect:{{element EffectName}}%" then "&a&lРАЗБЛОКИРОВАНО" else "&c&lЗАБЛОКИРОВАНО" }}
+      {{ if not papi inline "%region_{{&region}}:hasEffect:{{element EffectName}}%" then " " else "&fЭффект: {{ if papi inline "%region_{{&region}}:hasActiveEffect:{{element EffectName}}%" then "&aВключен" else "&cВыключен" }}\\n"}}
+      {{ if papi inline "%region_{{&region}}:hasActiveEffect:{{element EffectName}}%" then "&cНажмите, чтобы выключить" else if papi inline "%region_{{&region}}:hasEffect:{{element EffectName}}%" then "&aНажмите, чтобы включить" else if check money get >= element Price then "&aНажмите, чтобы приобрести эффект" else "&cУ вас не хватает средств для покупки" }}
+    action:
+      if: 'papi inline "%region_{{&region}}:has_owner:{{player name}}%"'
+      then: |
+        if papi inline "%region_{{&region}}:hasActiveEffect:{{element EffectName}}%" then {
+          console inline "regionadmin removeactiveeffect {{&region}} {{element EffectName}}"
+          icons refresh
+          sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        } else if papi inline "%region_{{&region}}:hasEffect:{{element EffectName}}%" then {
+          console inline "regionadmin addactiveeffect {{&region}} {{element EffectName}}"
+          icons refresh
+          sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+        } else if check money get >= element Price then {
+          console inline "regionadmin addeffect {{&region}} {{element EffectName}}"
+          console inline "regionadmin addactiveeffect {{&region}} {{element EffectName}}"
+          console inline "money take %player_name% {{element Price}}"
+          icons refresh
+          msg "&fВы успешно приобрели эффект {{element Name}}"
+          title "&fВы купили эффект" subtitle element Name by 20 20 10
+          sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+          menu close
+        } else {
+          sound ENTITY_ITEM_BREAK by 1 0
+        }
+      else: |
+        if papi inline "%region_{{&region}}:hasEffect:{{element EffectName}}%" then {
+          sound ENTITY_ITEM_BREAK by 1 0
+        } else if check papi "%coin_amount%" >= element Price then {
+          console inline "regionadmin addeffect {{&region}} {{element EffectName}}"
+          console inline "regionadmin addactiveeffect {{&region}} {{element EffectName}}"
+          console inline "money take %player_name% {{element Price}}"
+          msg "&fВы успешно приобрели эффект {{element Name}}"
+          title "&fВы купили эффект" subtitle element Name by 20 20 10
+          sound ENTITY_EXPERIENCE_ORB_PICKUP by 1 1
+          menu close
+        } else {
+          sound ENTITY_ITEM_BREAK by 1 0
+        }
+  elements:
+    - Name: '&aПрыгучесть I'
+      ItemJson: '{"type":"POTION","meta":{"Potion":{"type":"STRING","data":"minecraft:leaping"}}}'
+      EffectName: 'Jump'
+      Price: 25000
+      Description: '&fС этим эффектом, вы будете\\n&fпрыгать выше в регионе'
+    - Name: '&aСкорость I'
+      ItemJson: '{"type":"POTION","meta":{"Potion":{"type":"STRING","data":"minecraft:swiftness"}}}'
+      EffectName: 'Speed'
+      Price: 30000
+      Description: '&fС этим эффектом, вы будете\\n&fдвигаться быстрее в регионе'
+    - Name: '&aОгнестойкость I'
+      ItemJson: '{"type":"POTION","meta":{"Potion":{"type":"STRING","data":"minecraft:fire_resistance"}}}'
+      EffectName: 'FireResistance'
+      Price: 40000
+      Description: '&fС этим эффектом, вы будете\\n&fзащищены от огня в регионе'
+    - Name: '&aРегенерация I'
+      ItemJson: '{"type":"POTION","meta":{"Potion":{"type":"STRING","data":"minecraft:regeneration"}}}'
+      EffectName: 'Regeneration'
+      Price: 45000
+      Description: '&fС этим эффектом, вы будете\\n&fвосстанавливать HP в регионе'
+    - Name: '&aСпешка I'
+      ItemJson: '{"type":"GOLD_PICKAXE"}'
+      EffectName: 'Haste'
+      Price: 50000
+      Description: '&fС этим эффектом, вы будете\\n&fломать блоки быстрее в регионе'
+
+nodes:
+  Get: 
+    type: kether
+    value: |-
+      set Arg to &invokeArgs[0]
+      papi inline "%region_{{&region}}:{{&Arg}}%"
+  GetPriceOwner:
+    type: kether
+    value: |-
+      set Number to &invokeArgs[0]
+
+      case &Number [
+        when "1" -> "10"
+        when "2" -> "15"
+        when "3" -> "20"
+        when "4" -> "25"
+        when "5" -> "30"
+        else "0"
+      ]
+  GetPriceMember:
+    type: kether
+    value: |-
+      set Number to &invokeArgs[0]
+
+      case &Number [
+        when "1" -> "5"
+        when "2" -> "10"
+        when "3" -> "15"
+        when "4" -> "20"
+        when "5" -> "25"
+        else "0"
+      ]

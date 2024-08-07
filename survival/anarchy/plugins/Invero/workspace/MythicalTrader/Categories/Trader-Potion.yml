@@ -1,0 +1,218 @@
+menu:
+  title: '&0Зелья'
+  
+layout: |-
+  #########
+  #       #
+  #       #
+  #       #
+  #########
+  ##M#B####
+
+items:
+  P:
+    material: arrow
+    name: '&aПредыдущая страница'
+    action: |-
+      page previous
+      menu title update
+      icons refresh
+    sub:
+      - rule: 'page isFirst'
+        inherit: false
+        material: air
+  N:
+    material: arrow
+    name: '&aСледующая страница'
+    action: |-
+      page next
+      menu title update
+      icons refresh
+    sub:
+      - rule: 'page isLast'
+        inherit: false
+        material: air
+  # Воздух
+  '#':
+    material: air
+  M:
+    material: GOLD_INGOT
+    update: 60
+    name: '&fВаш баланс'
+    lore: '&a%vault_eco_balance_fixed%₵'
+  B:
+    material: arrow
+    name: '&aВернуться в главное меню'
+    action: menu switch MythicalTrader
+
+generator:
+  output:
+    name: '{{ element Name }}'
+    json: '{{ element Material }}'
+    flag: HIDE_POTION_EFFECTS
+    lore: |-
+      {{if check element Description == null then " " else element Description}}
+      &fПокупка: &a{{ type int math mul [ element Price math sub [ 1 papi "%mythicaltrader_current_discount%" ] ] }}₵ &7{{if check papi "%mythicaltrader_current_level%" == 1 then " " else inline "&m({{ element Price }}₵)" }}
+
+      &aНажмите, чтобы купить!
+    enhancedLore: true
+    action: |-
+      ctx set 'fromMenu' to 'Trader-Potion'
+      ctx set 'itemName' to element Name
+      ctx set 'itemMaterial' to element Material
+      ctx set 'giveCommand' to element GiveCommand
+      ctx set 'price' to element Price
+      ctx set 'amount' to 1
+      ctx set 'minAmount' to 1
+      ctx set 'maxAmount' to element MaxAmount
+      menu switch Shop-PurchaseWithJson
+  elements:
+    #Обычные зелья
+    - Material: '{"type":"POTION","meta":{"CustomPotionColor":{"type":"INT","data":4404861},"Potion":{"type":"STRING","data":"minecraft:empty"},"display":{"Name":{"type":"STRING","data":"§dОсобое зелье ночного зрения"}},"CustomPotionEffects":[{"ShowParticles":{"type":"BYTE","data":0},"Duration":{"type":"INT","data":16800},"Amplifier":{"type":"BYTE","data":0},"Ambient":{"type":"BYTE","data":0},"Id":{"type":"BYTE","data":16}}]}}'
+      Name: '&aОсобое зелье ночного зрения &7(14:00)'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% potion {{&amount}} 0 {CustomPotionColor:4404861,display:{Name:"&dОсобое зелье ночного зрения"},CustomPotionEffects:[{Id:16,Duration:16800}]}'
+      Price: 7
+      MaxAmount: 1
+    - Material: '{"type":"POTION","meta":{"CustomPotionColor":{"type":"INT","data":13421772},"Potion":{"type":"STRING","data":"minecraft:empty"},"display":{"Name":{"type":"STRING","data":"§dОсобое зелье невидимости"}},"CustomPotionEffects":[{"ShowParticles":{"type":"BYTE","data":0},"Duration":{"type":"INT","data":12000},"Amplifier":{"type":"BYTE","data":0},"Ambient":{"type":"BYTE","data":0},"Id":{"type":"BYTE","data":14}}]}}'
+      Name: '&aОсобое зелье невидимости &7(10:00)'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% potion {{&amount}} 0 {CustomPotionColor:13421772,display:{Name:"&dОсобое зелье невидимости"},CustomPotionEffects:[{Id:14,Duration:12000}]}'
+      Price: 16
+      MaxAmount: 1
+    - Material: '{"type":"POTION","meta":{"CustomPotionColor":{"type":"INT","data":720654},"Potion":{"type":"STRING","data":"minecraft:empty"},"display":{"Name":{"type":"STRING","data":"§dОсобое зелье прыгучести II"}},"CustomPotionEffects":[{"ShowParticles":{"type":"BYTE","data":0},"Duration":{"type":"INT","data":3600},"Amplifier":{"type":"BYTE","data":1},"Ambient":{"type":"BYTE","data":0},"Id":{"type":"BYTE","data":8}}]}}'
+      Name: '&aОсобое зелье прыгучести II &7(3:00)'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% potion {{&amount}} 0 {CustomPotionColor:720654,display:{Name:"&dОсобое зелье прыгучести II"},CustomPotionEffects:[{Id:8,Duration:3600,Amplifier:1}]}'
+      Price: 14
+      MaxAmount: 1
+    - Material: '{"type":"POTION","meta":{"CustomPotionColor":{"type":"INT","data":16554273},"display":{"Name":{"type":"STRING","data":"§dОсобое зелье огнестойкости"}},"CustomPotionEffects":[{"Duration":{"type":"INT","data":12000},"Id":{"type":"INT","data":12}}]}}'
+      Name: '&aОсобое зелье огнестойкости &7(10:00)'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% potion {{&amount}} 0 {CustomPotionColor:16554273,display:{Name:"&dОсобое зелье огнестойкости"},CustomPotionEffects:[{Id:12,Duration:12000}]}'
+      Price: 11
+      MaxAmount: 1
+    - Material: '{"type":"POTION","meta":{"CustomPotionColor":{"type":"INT","data":10724259},"Potion":{"type":"STRING","data":"minecraft:empty"},"display":{"Name":{"type":"STRING","data":"§dОсобое зелье скорости II"}},"CustomPotionEffects":[{"ShowParticles":{"type":"BYTE","data":0},"Duration":{"type":"INT","data":3600},"Amplifier":{"type":"BYTE","data":1},"Ambient":{"type":"BYTE","data":0},"Id":{"type":"BYTE","data":1}}]}}'
+      Name: '&aОсобое зелье скорости II &7(3:00)'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% potion {{&amount}} 0 {CustomPotionColor:10724259,display:{Name:"&dОсобое зелье скорости II"},CustomPotionEffects:[{Id:1,Duration:3600,Amplifier:1}]}'
+      Price: 15
+      MaxAmount: 1
+    - Material: '{"type":"POTION","meta":{"CustomPotionColor":{"type":"INT","data":3355776},"Potion":{"type":"STRING","data":"minecraft:empty"},"display":{"Name":{"type":"STRING","data":"§dОсобое зелье водного дыхания"}},"CustomPotionEffects":[{"ShowParticles":{"type":"BYTE","data":0},"Duration":{"type":"INT","data":12000},"Amplifier":{"type":"BYTE","data":0},"Ambient":{"type":"BYTE","data":0},"Id":{"type":"BYTE","data":13}}]}}'
+      Name: '&aОсобое зелье водного дыхания &7(10:00)'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% potion {{&amount}} 0 {CustomPotionColor:3355776,display:{Name:"&dОсобое зелье водного дыхания"},CustomPotionEffects:[{Id:13,Duration:12000}]}'
+      Price: 10
+      MaxAmount: 1
+    - Material: '{"type":"POTION","meta":{"CustomPotionColor":{"type":"INT","data":13054514},"Potion":{"type":"STRING","data":"minecraft:empty"},"display":{"Name":{"type":"STRING","data":"§dОсобое зелье исцеления X"}},"CustomPotionEffects":[{"ShowParticles":{"type":"BYTE","data":0},"Duration":{"type":"INT","data":0},"Amplifier":{"type":"BYTE","data":10},"Ambient":{"type":"BYTE","data":0},"Id":{"type":"BYTE","data":6}}]}}'
+      Name: '&aОсобое зелье исцеления X'
+      Description: '&fОно вас сразу вылечит!\\n'
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% potion {{&amount}} 0 {CustomPotionColor:13054514,display:{Name:"&dОсобое зелье исцеления X"},CustomPotionEffects:[{Id:6,Duration:0,Amplifier:10}]}'
+      Price: 5
+      MaxAmount: 1
+    - Material: '{"type":"POTION","meta":{"CustomPotionColor":{"type":"INT","data":15023103},"Potion":{"type":"STRING","data":"minecraft:empty"},"display":{"Name":{"type":"STRING","data":"§dОсобое зелье регенерации II"}},"CustomPotionEffects":[{"ShowParticles":{"type":"BYTE","data":0},"Duration":{"type":"INT","data":1200},"Amplifier":{"type":"BYTE","data":1},"Ambient":{"type":"BYTE","data":0},"Id":{"type":"BYTE","data":10}}]}}'
+      Name: '&aОсобое зелье регенерации II &7(1:00)'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% potion {{&amount}} 0 {CustomPotionColor:15023103,display:{Name:"&dОсобое зелье регенерации II"},CustomPotionEffects:[{Id:10,Duration:1200,Amplifier:1}]}'
+      Price: 9
+      MaxAmount: 1
+    - Material: '{"type":"POTION","meta":{"CustomPotionColor":{"type":"INT","data":8723489},"Potion":{"type":"STRING","data":"minecraft:empty"},"display":{"Name":{"type":"STRING","data":"§dОсобое зелье силы II"}},"CustomPotionEffects":[{"ShowParticles":{"type":"BYTE","data":0},"Duration":{"type":"INT","data":6000},"Amplifier":{"type":"BYTE","data":1},"Ambient":{"type":"BYTE","data":0},"Id":{"type":"BYTE","data":5}}]}}'
+      Name: '&aОсобое зелье силы II &7(5:00)'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% potion {{&amount}} 0 {CustomPotionColor:8723489,display:{Name:"&dОсобое зелье силы II"},CustomPotionEffects:[{Id:5,Duration:6000,Amplifier:1}]}'
+      Price: 19
+      MaxAmount: 1
+    #Взрывные зелья
+    - Material: '{"type":"SPLASH_POTION","meta":{"CustomPotionColor":{"type":"INT","data":4404861},"Potion":{"type":"STRING","data":"minecraft:empty"},"display":{"Name":{"type":"STRING","data":"§dОсобое взрывное зелье ночного зрения"}},"CustomPotionEffects":[{"ShowParticles":{"type":"BYTE","data":0},"Duration":{"type":"INT","data":16800},"Amplifier":{"type":"BYTE","data":0},"Ambient":{"type":"BYTE","data":0},"Id":{"type":"BYTE","data":16}}]}}'
+      Name: '&aОсобое взрывное зелье ночного зрения &7(14:00)'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% splash_potion {{&amount}} 0 {CustomPotionColor:4404861,display:{Name:"&dОсобое взрывное зелье ночного зрения"},CustomPotionEffects:[{Id:16,Duration:16800}]}'
+      Price: 17
+      MaxAmount: 1
+    - Material: '{"type":"SPLASH_POTION","meta":{"CustomPotionColor":{"type":"INT","data":13421772},"Potion":{"type":"STRING","data":"minecraft:empty"},"display":{"Name":{"type":"STRING","data":"§dОсобое взрывное зелье невидимости"}},"CustomPotionEffects":[{"ShowParticles":{"type":"BYTE","data":0},"Duration":{"type":"INT","data":12000},"Amplifier":{"type":"BYTE","data":0},"Ambient":{"type":"BYTE","data":0},"Id":{"type":"BYTE","data":14}}]}}'
+      Name: '&aОсобое взрывное зелье невидимости &7(10:00)'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% splash_potion {{&amount}} 0 {CustomPotionColor:13421772,display:{Name:"&dОсобое взрывное зелье невидимости"},CustomPotionEffects:[{Id:14,Duration:12000}]}'
+      Price: 26
+      MaxAmount: 1
+    - Material: '{"type":"SPLASH_POTION","meta":{"CustomPotionColor":{"type":"INT","data":720654},"Potion":{"type":"STRING","data":"minecraft:empty"},"display":{"Name":{"type":"STRING","data":"§dОсобое взрывное зелье прыгучести II"}},"CustomPotionEffects":[{"ShowParticles":{"type":"BYTE","data":0},"Duration":{"type":"INT","data":3600},"Amplifier":{"type":"BYTE","data":1},"Ambient":{"type":"BYTE","data":0},"Id":{"type":"BYTE","data":8}}]}}'
+      Name: '&aОсобое взрывное зелье прыгучести II &7(3:00)'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% splash_potion {{&amount}} 0 {CustomPotionColor:720654,display:{Name:"&dОсобое взрывное зелье прыгучести II"},CustomPotionEffects:[{Id:8,Duration:3600,Amplifier:1}]}'
+      Price: 24
+      MaxAmount: 1
+    - Material: '{"type":"SPLASH_POTION","meta":{"CustomPotionColor":{"type":"INT","data":16554273},"display":{"Name":{"type":"STRING","data":"§dОсобое взрывное зелье огнестойкости"}},"CustomPotionEffects":[{"Duration":{"type":"INT","data":12000},"Id":{"type":"INT","data":12}}]}}'
+      Name: '&aОсобое взрывное зелье огнестойкости &7(10:00)'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% splash_potion {{&amount}} 0 {CustomPotionColor:16554273,display:{Name:"&dОсобое взрывное зелье огнестойкости"},CustomPotionEffects:[{Id:12,Duration:12000}]}'
+      Price: 21
+      MaxAmount: 1
+    - Material: '{"type":"SPLASH_POTION","meta":{"CustomPotionColor":{"type":"INT","data":10724259},"Potion":{"type":"STRING","data":"minecraft:empty"},"display":{"Name":{"type":"STRING","data":"§dОсобое взрывное зелье скорости II"}},"CustomPotionEffects":[{"ShowParticles":{"type":"BYTE","data":0},"Duration":{"type":"INT","data":3600},"Amplifier":{"type":"BYTE","data":1},"Ambient":{"type":"BYTE","data":0},"Id":{"type":"BYTE","data":1}}]}}'
+      Name: '&aОсобое взрывное зелье скорости II &7(3:00)'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% splash_potion {{&amount}} 0 {CustomPotionColor:10724259,display:{Name:"&dОсобое взрывное зелье скорости II"},CustomPotionEffects:[{Id:1,Duration:3600,Amplifier:1}]}'
+      Price: 25
+      MaxAmount: 1
+    - Material: '{"type":"SPLASH_POTION","meta":{"CustomPotionColor":{"type":"INT","data":3355776},"Potion":{"type":"STRING","data":"minecraft:empty"},"display":{"Name":{"type":"STRING","data":"§dОсобое взрывное зелье водного дыхания"}},"CustomPotionEffects":[{"ShowParticles":{"type":"BYTE","data":0},"Duration":{"type":"INT","data":12000},"Amplifier":{"type":"BYTE","data":0},"Ambient":{"type":"BYTE","data":0},"Id":{"type":"BYTE","data":13}}]}}'
+      Name: '&aОсобое взрывное зелье водного дыхания &7(10:00)'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% splash_potion {{&amount}} 0 {CustomPotionColor:3355776,display:{Name:"&dОсобое взрывное зелье водного дыхания"},CustomPotionEffects:[{Id:13,Duration:12000}]}'
+      Price: 20
+      MaxAmount: 1
+    - Material: '{"type":"SPLASH_POTION","meta":{"CustomPotionColor":{"type":"INT","data":13054514},"Potion":{"type":"STRING","data":"minecraft:empty"},"display":{"Name":{"type":"STRING","data":"§dОсобое взрывное зелье исцеления X"}},"CustomPotionEffects":[{"ShowParticles":{"type":"BYTE","data":0},"Duration":{"type":"INT","data":0},"Amplifier":{"type":"BYTE","data":10},"Ambient":{"type":"BYTE","data":0},"Id":{"type":"BYTE","data":6}}]}}'
+      Name: '&aОсобое взрывное зелье исцеления X'
+      Description: '&fОно сразу вылечит вас и ваших друзей!\\n'
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% splash_potion {{&amount}} 0 {CustomPotionColor:13054514,display:{Name:"&dОсобое взрывное зелье исцеления X"},CustomPotionEffects:[{Id:6,Duration:0,Amplifier:10}]}'
+      Price: 15
+      MaxAmount: 1
+    - Material: '{"type":"SPLASH_POTION","meta":{"CustomPotionColor":{"type":"INT","data":15023103},"Potion":{"type":"STRING","data":"minecraft:empty"},"display":{"Name":{"type":"STRING","data":"§dОсобое взрывное зелье регенерации II"}},"CustomPotionEffects":[{"ShowParticles":{"type":"BYTE","data":0},"Duration":{"type":"INT","data":1200},"Amplifier":{"type":"BYTE","data":1},"Ambient":{"type":"BYTE","data":0},"Id":{"type":"BYTE","data":10}}]}}'
+      Name: '&aОсобое взрывное зелье регенерации II &7(1:00)'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% splash_potion {{&amount}} 0 {CustomPotionColor:15023103,display:{Name:"&dОсобое взрывное зелье регенерации II"},CustomPotionEffects:[{Id:10,Duration:1200,Amplifier:1}]}'
+      Price: 19
+      MaxAmount: 1
+    - Material: '{"type":"SPLASH_POTION","meta":{"CustomPotionColor":{"type":"INT","data":8723489},"Potion":{"type":"STRING","data":"minecraft:empty"},"display":{"Name":{"type":"STRING","data":"§dОсобое взрывное зелье силы II"}},"CustomPotionEffects":[{"ShowParticles":{"type":"BYTE","data":0},"Duration":{"type":"INT","data":6000},"Amplifier":{"type":"BYTE","data":1},"Ambient":{"type":"BYTE","data":0},"Id":{"type":"BYTE","data":5}}]}}'
+      Name: '&aОсобое взрывное зелье силы II &7(5:00)'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% splash_potion {{&amount}} 0 {CustomPotionColor:8723489,display:{Name:"&dОсобое взрывное зелье силы II"},CustomPotionEffects:[{Id:5,Duration:6000,Amplifier:1}]}'
+      Price: 29
+      MaxAmount: 1
+    - Material: '{"type":"SPLASH_POTION","meta":{"CustomPotionColor":{"type":"INT","data":4194304},"Potion":{"type":"STRING","data":"minecraft:empty"},"display":{"Name":{"type":"STRING","data":"§dОсобое взрывное зелье вреда X"}},"CustomPotionEffects":[{"ShowParticles":{"type":"BYTE","data":0},"Duration":{"type":"INT","data":0},"Amplifier":{"type":"BYTE","data":10},"Ambient":{"type":"BYTE","data":0},"Id":{"type":"BYTE","data":7}}]}}'
+      Name: '&aОсобое взрывное зелье вреда X'
+      Description: '&fМоментально убивает врагов!\\n'
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% splash_potion {{&amount}} 0 {CustomPotionColor:4194304,display:{Name:"&dОсобое взрывное зелье вреда X"},CustomPotionEffects:[{Id:7,Duration:0,Amplifier:10}]}'
+      Price: 90
+      MaxAmount: 1
+    - Material: '{"type":"SPLASH_POTION","meta":{"CustomPotionColor":{"type":"INT","data":2256414},"Potion":{"type":"STRING","data":"minecraft:empty"},"display":{"Name":{"type":"STRING","data":"§dОсобое взрывное зелье отравления II"}},"CustomPotionEffects":[{"ShowParticles":{"type":"BYTE","data":0},"Duration":{"type":"INT","data":800},"Amplifier":{"type":"BYTE","data":1},"Ambient":{"type":"BYTE","data":0},"Id":{"type":"BYTE","data":19}}]}}'
+      Name: '&aОсобое взрывное зелье отравления II &7(0:40)'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% splash_potion {{&amount}} 0 {CustomPotionColor:2256414,display:{Name:"&dОсобое взрывное зелье отравления II"},CustomPotionEffects:[{Id:19,Duration:800,Amplifier:1}]}'
+      Price: 25
+      MaxAmount: 1
+    - Material: '{"type":"SPLASH_POTION","meta":{"CustomPotionColor":{"type":"INT","data":4094563},"Potion":{"type":"STRING","data":"minecraft:empty"},"display":{"Name":{"type":"STRING","data":"§dОсобое взрывное зелье слабости"}},"CustomPotionEffects":[{"ShowParticles":{"type":"BYTE","data":0},"Duration":{"type":"INT","data":7200},"Amplifier":{"type":"BYTE","data":0},"Ambient":{"type":"BYTE","data":0},"Id":{"type":"BYTE","data":18}}]}}'
+      Name: '&aОсобое взрывное зелье слабости &7(5:00)'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% splash_potion {{&amount}} 0 {CustomPotionColor:4094563,display:{Name:"&dОсобое взрывное зелье слабости"},CustomPotionEffects:[{Id:18,Duration:7200}]}'
+      Price: 25
+      MaxAmount: 1

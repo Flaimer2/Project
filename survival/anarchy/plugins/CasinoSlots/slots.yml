@@ -1,0 +1,68 @@
+slots:
+  '1':
+    name: '1'
+    type: casino1
+    ownerid: 2ccc03bb-c7c2-3c1e-80a0-24cc19cdf55c
+    owner: 848iyhw3
+    world: lobby
+    managed: false
+    funds: 0.0
+    item: false
+    itemID: 0
+    itemAmt: 0
+    controller: 35,92,-30
+    location:
+    - 34,93,-32
+    - 35,93,-32
+    - 36,93,-32
+    - 34,94,-32
+    - 35,94,-32
+    - 36,94,-32
+    - 34,95,-32
+    - 35,95,-32
+    - 36,95,-32
+    sign: 36,92,-29
+  '2':
+    name: '2'
+    type: casino2
+    ownerid: b8a47f4c-108e-33dd-a551-34497268b20f
+    owner: Danuk16
+    world: lobby
+    managed: false
+    funds: 0.0
+    item: false
+    itemID: 0
+    itemAmt: 0
+    controller: 39,92,-30
+    location:
+    - 38,93,-32
+    - 39,93,-32
+    - 40,93,-32
+    - 38,94,-32
+    - 39,94,-32
+    - 40,94,-32
+    - 38,95,-32
+    - 39,95,-32
+    - 40,95,-32
+  '3':
+    name: '3'
+    type: casino3
+    ownerid: b8a47f4c-108e-33dd-a551-34497268b20f
+    owner: Danuk16
+    world: lobby
+    managed: false
+    funds: 0.0
+    item: false
+    itemID: 0
+    itemAmt: 0
+    controller: 43,92,-30
+    location:
+    - 42,93,-32
+    - 43,93,-32
+    - 44,93,-32
+    - 42,94,-32
+    - 43,94,-32
+    - 44,94,-32
+    - 42,95,-32
+    - 43,95,-32
+    - 44,95,-32

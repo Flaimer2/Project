@@ -1,0 +1,151 @@
+#              ___      _   _           ___          _      _                Our plugins: https://alonsoaliaga.com/plugins
+#             | _ ) ___| |_| |_ ___ _ _/ __| ___  __(_)__ _| |               Support server: https://alonsoaliaga.com/discord
+#             | _ \/ -_)  _|  _/ -_) '_\__ \/ _ \/ _| / _` | |               Youtube: https://alonsoaliaga.com/play
+#             |___/\___|\__|\__\___|_| |___/\___/\__|_\__,_|_|               Test server: plugins.alonsoaliaga.com
+#                            by AlonsoAliaga                                 Twitch: https://alonsoaliaga.com/twitch
+#           Considering donating? https://alonsoaliaga.com/donate            Thanks for using my plugin! <3
+Messages:
+  No-permission: '&eСоциальные сети &7| &fУ вас &cнет &fразрешения на это'
+  No-permission-edit: '&eСоциальные сети &7| &fУ вас &cнет &fразрешения редактировать
+    свои социальные сети'
+  Reloaded: '&eСоциальные сети &7| &fНекоторые сообщения и опции были &aперезагружены&f.
+    Для других может потребоваться перезапуск!'
+  Invalid-player: '&eСоциальные сети &7| &fИгрок &cне находится &fв сети!'
+  Invalid-player-in-database: '&eСоциальные сети &7| &fИгрок &cне зарегистрирован &fна
+    сервере!'
+  Unknown-error: '&eСоциальные сети &7| &cНеожиданная ошибка! Повторите попытку позже,
+    если проблема сохраняется, обратитесь к Администрации проекта'
+  Unknown-error-search-other: '&eСоциальные сети &7| &cНеожиданная ошибка! Повторите
+    попытку позже, если проблема сохраняется, обратитесь к Администрации проекта'
+  No-input: '&eСоциальные сети &7| &fВы ничего &cне написали&f. В меню ссылок/ID ничего
+    не изменится!'
+  Please-reconnect: '&eСоциальные сети &7| &cНеожиданная ошибка! Пожалуйста, переподключитесь
+    к серверу'
+  Please-reconnect-other: ''
+  Keys:
+    None: '&cНет'
+  Social:
+    Title: '&0Социальные сети {PLAYER}'
+  Remove:
+    Not-linked: '&fЭта социальная сеть &cне привязана'
+    Removed: '&fВы &cудалили &fэту ссылку на социальную сеть'
+  Placeholders:
+    Value-none: Нет
+    Status-linked: '&aПривязано'
+    Status-unlinked: '&cОтвязано'
+  Help:
+    Admin:
+    - '&9 /bettersocial edit <player> &f- &bOpen edit GUI for player'
+    - '&9 /bettersocial <menu/media> <player> &f- &bOpen media GUI'
+    - '&9 /bettersocial reload &f- &bReload configuration'
+    User:
+    - '&9 /bettersocial edit &f- &bОткрыть GUI редактирования'
+    - '&9 /bettersocial menu <Игрок> &f- &bОткрыть GUI'
+Permissions:
+  Admin: bettersocial.admin
+  Edit: none
+  Others: none
+  Offline: bettersocial.offline
+Options:
+  Aliases:
+  - bsocial
+  Debug-mode: false
+  Fill-empty-slots: false
+  Size: 6
+  Back-edit-command: profile
+  Back-media-command: "none"
+  Sounds:
+    Open: none
+  Data-delay: 20
+  Auto-save:
+    Interval: 10
+Items:
+  Player:
+    Slot: 4
+    Online:
+      Displayname: '&a{PLAYER} &fсейчас в игре!'
+      Command: none
+    Offline:
+      Displayname: '&a{PLAYER} &fсейчас не в сети'
+      Command: none
+  Back:
+    Material: ARROW
+    Slot: 49
+    Displayname: §aВернуться в профиль
+    Command: profile
+  Media:
+    Lore-short:
+    - '&fСсылка/ID: &a{CURRENT}&r'
+    - ' '
+    - '&aНажмите ЛКМ, чтобы изменить!'
+    - '&aНажмите ПКМ, чтобы удалить!'
+    - ' '
+    - '&cКаждый игрок сможет увидеть'
+    - '&cВашу ссылку/ID'
+    Lore-long:
+    - '&fСсылка/ID:'
+    - '&a{CURRENT}&r'
+    - ' '
+    - '&aНажмите ЛКМ, чтобы изменить!'
+    - '&aНажмите ПКМ, чтобы удалить!'
+    - ' '
+    - '&cКаждый игрок сможет увидеть'
+    - '&cВашу ссылку/ID'
+  No-media:
+    Material: GLASS_BOTTLE
+    Slot: 22
+    Displayname: '&cНет ссылки/ID'
+    Lore:
+    - '&7{PLAYER} не привязал ни'
+    - '&7один аккаунт из соц. сетей'
+    - '&7к игровому аккаунту'
+  Visit:
+    Available:
+      Lore:
+      - '&aНажмите, чтобы посетить'
+    Unavailable:
+      Lore:
+      - '&7Не привязан'
+  Frame:
+    Color: BLACK
+    Custom-model-data: 0
+Database:
+  Type: MySQL
+  Table: bettersocial
+  File: database-bettersocial
+  Host: 127.0.0.1
+  Port: 3306
+  Database: server_global
+  Username: root
+  Password: 'root'
+  Additional-url: '?autoReconnect=true&useSSL=false'
+  Keep-connection-interval: 30
+  HikariCP:
+    Warning:
+    - ========================================================================================
+    - You don't need to edit this text, it's ONLY displayed in config so you can read
+      it.
+    - ========================================================================================
+    - HikariCP is experimental. Remember that only modify the following IF YOU KNOW
+      HOW IT WORKS.
+    - You will not get support for HikariCP configurations as 1) I'm not a HikariCP
+      advanced user
+    - and 2) Customization depends on the owner and his knowledge level.
+    - 'Related to Source-properties, if you KNOW and want to add custom properties
+      follow the format:'
+    - 'Source-properties:'
+    - '  thePropertySelected1: ''theValue1'''
+    - '  thePropertySelected2: ''theValue2'''
+    - '[!] Remember to modify data only if you know what you are doing'
+    - 'Available source properties can be found here: https://alonsoaliaga.com/HikariCP-sp'
+    - 'Available source class names can be found here: https://alonsoaliaga.com/HikariCP-cn'
+    Custom-source-class-name: default
+    Source-properties: []
+    Max-pool-size: 15
+Updates:
+  Auto-update-configuration: false
+  Check-updates: false
+  Notify-updates: false
+  Permission: bettersocial.update
+  Message: '&9&aНайдено новое обновление! Вы используете версию {CURRENT}.
+    Версия для скачивания {NEW} здесь &c{LINK}'

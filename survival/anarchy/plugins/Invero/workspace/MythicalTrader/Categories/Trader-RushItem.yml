@@ -1,0 +1,222 @@
+menu:
+  title: '&0Предметы для рейдов'
+  
+layout: |-
+  #########
+  #       #
+  #       #
+  #       #
+  #########
+  ##M#B####
+
+items:
+  P:
+    material: arrow
+    name: '&aПредыдущая страница'
+    action: |-
+      page previous
+      menu title update
+      icons refresh
+    sub:
+      - rule: 'page isFirst'
+        inherit: false
+        material: air
+  N:
+    material: arrow
+    name: '&aСледующая страница'
+    action: |-
+      page next
+      menu title update
+      icons refresh
+    sub:
+      - rule: 'page isLast'
+        inherit: false
+        material: air
+  # Воздух
+  '#':
+    material: air
+  M:
+    material: GOLD_INGOT
+    update: 60
+    name: '&fВаш баланс'
+    lore: '&a%vault_eco_balance_fixed%₵'
+  B:
+    material: arrow
+    name: '&aВернуться в главное меню'
+    action: menu switch MythicalTrader
+
+generator:
+  output:
+    name: '{{ element Name }}'
+    json: '{{ element Material }}'
+    flag: HIDE_ATTRIBUTES
+    lore: |-
+      {{if check element Description == null then " " else element Description}}
+      &fПокупка: &a{{ type int math mul [ element Price math sub [ 1 papi "%mythicaltrader_current_discount%" ] ] }}₵ &7{{if check papi "%mythicaltrader_current_level%" == 1 then " " else inline "&m({{ element Price }}₵)" }}
+
+      &aНажмите, чтобы купить!
+    enhancedLore: true
+    action: |-
+      ctx set 'fromMenu' to 'Trader-RushItem'
+      ctx set 'itemName' to element Name
+      ctx set 'itemMaterial' to element Material
+      ctx set 'giveCommand' to element GiveCommand
+      ctx set 'price' to element Price
+      ctx set 'amount' to element Amount
+      ctx set 'minAmount' to element MinAmount
+      ctx set 'maxAmount' to element MaxAmount
+      menu switch Shop-PurchaseWithJson
+  elements:
+    - Material: '{"type":"FLINT_AND_STEEL"}'
+      Name: '&aОгниво'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% FLINT_AND_STEEL {{&amount}} 0'
+      Price: 2
+      Amount: 1
+      MinAmount: 1
+      MaxAmount: 1
+    - Material: '{"type":"FISHING_ROD","meta":{"ench":[{"lvl":{"type":"SHORT","data":2},"id":{"type":"SHORT","data":19}},{"lvl":{"type":"SHORT","data":3},"id":{"type":"SHORT","data":34}}]}}'
+      Name: '&aУдочка'
+      Description: '\\n&fЭтой удочкой можно цеплять\\n&fигроков и потом бить!\\n'
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% FISHING_ROD {{&amount}} 0 {ench:[{id:19,lvl:2},{id:34,lvl:3}]}'
+      Price: 11
+      Amount: 1
+      MinAmount: 1
+      MaxAmount: 1
+    - Material: '{"type":"STRING","amount":32}'
+      Name: '&aНить'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% STRING 32 0'
+      Price: 6
+      Amount: 32
+      MinAmount: 32
+      MaxAmount: 32
+    - Material: '{"type":"RAILS","amount":16}'
+      Name: '&aРельсы'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% RAIL 16 0'
+      Price: 4
+      Amount: 16
+      MinAmount: 16
+      MaxAmount: 16
+    - Material: '{"type":"POWERED_RAIL","amount":16}'
+      Name: '&aЭнергорельсы'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% GOLDEN_RAIL 16 0'
+      Price: 7
+      Amount: 16
+      MinAmount: 16
+      MaxAmount: 16
+    - Material: '{"type":"GOLDEN_APPLE","amount":8}'
+      Name: '&aЗолотое яблоко'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% GOLDEN_APPLE 8 0'
+      Price: 7
+      Amount: 8
+      MinAmount: 8
+      MaxAmount: 8
+    - Material: '{"type":"EXP_BOTTLE","amount":32}'
+      Name: '&aПузырёк опыта'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% EXPERIENCE_BOTTLE 32 0'
+      Price: 8
+      Amount: 32
+      MinAmount: 32
+      MaxAmount: 32
+    - Material: '{"type":"ENDER_PEARL","amount":16}'
+      Name: '&aЭндер-жемчуг'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% ENDER_PEARL 16 0'
+      Price: 13
+      Amount: 16
+      MinAmount: 16
+      MaxAmount: 16
+    - Material: '{"type":"FIREBALL"}'
+      Name: '&aОгненный заряд'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% FIRE_CHARGE {{&amount}} 0'
+      Price: 6
+      Amount: 1
+      MinAmount: 1
+      MaxAmount: 64
+    - Material: '{"type":"BEACON"}'
+      Name: '&aМаяк'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% BEACON {{&amount}} 0'
+      Price: 12
+      Amount: 1
+      MinAmount: 1
+      MaxAmount: 64
+    - Material: '{"type":"PISTON_STICKY_BASE"}'
+      Name: '&aЛипкий поршень'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% STICKY_PISTON {{&amount}} 0'
+      Price: 5
+      Amount: 1
+      MinAmount: 1
+      MaxAmount: 64
+    - Material: '{"type":"PISTON_BASE"}'
+      Name: '&aПоршень'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% PISTON {{&amount}} 0'
+      Price: 4
+      Amount: 1
+      MinAmount: 1
+      MaxAmount: 64
+    - Material: '{"type":"DISPENSER"}'
+      Name: '&aРаздатчик'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% DISPENSER {{&amount}} 0'
+      Price: 5
+      Amount: 1
+      MinAmount: 1
+      MaxAmount: 64
+    - Material: '{"type":"REDSTONE_BLOCK"}'
+      Name: '&aРедстоуновый блок'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% REDSTONE_BLOCK {{&amount}} 0'
+      Price: 3
+      Amount: 1
+      MinAmount: 1
+      MaxAmount: 64
+    - Material: '{"type":"SPONGE"}'
+      Name: '&aГубка'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% SPONGE {{&amount}} 0'
+      Price: 7
+      Amount: 1
+      MinAmount: 1
+      MaxAmount: 64
+    - Material: '{"type":"SPONGE","data":1}'
+      Name: '&aМокрая губка'
+      Description: '&fСтоит дешевле, однако её\\n&fнужно сначала просушить\\n'
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% SPONGE {{&amount}} 1'
+      Price: 4
+      Amount: 1
+      MinAmount: 1
+      MaxAmount: 64
+    - Material: '{"type":"ENDER_CHEST"}'
+      Name: '&aЭндер-сундук'
+      Description: ''
+      # Если предмет обычный, тогда не надо трогать GiveCommand (сложными предметами является блоки привата и зелья)
+      GiveCommand: 'minecraft:give %player_name% ENDER_CHEST {{&amount}} 0'
+      Price: 11
+      Amount: 1
+      MinAmount: 1
+      MaxAmount: 64

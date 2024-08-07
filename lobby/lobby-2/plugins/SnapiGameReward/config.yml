@@ -1,0 +1,10 @@
+rewards:
+  SKYWARS:
+    message: 'Вы получили за игру %reward%'
+    separator: ', '
+    rewardsType:
+      EXPERIENCE:
+        format: '%amount%exp'
+        formatPriority: 0
+        range:
+          KILL: '500-1000'

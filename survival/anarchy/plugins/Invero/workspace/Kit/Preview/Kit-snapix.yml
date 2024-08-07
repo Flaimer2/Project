@@ -1,0 +1,44 @@
+menu:
+  title: 'Набор SnapiX'
+
+layout:
+- '         '
+- ' 12AI345 '
+- ' E6789   '
+- '         '
+- '    R    '
+
+items:
+  R:
+    material: 'ARROW'
+    name: '&aВернуться назад'
+    action: menu switch Kit
+  1:
+    json: '{"type":"DIAMOND_SWORD","meta":{"ench":[{"lvl":{"type":"SHORT","data":1},"id":{"type":"SHORT","data":16}}]}}'
+  2:
+    json: '{"type":"DIAMOND_PICKAXE","meta":{"ench":[{"lvl":{"type":"SHORT","data":2},"id":{"type":"SHORT","data":32}}]}}'
+  A:
+    json: '{"type":"DIAMOND_AXE","meta":{"ench":[{"lvl":{"type":"SHORT","data":2},"id":{"type":"SHORT","data":32}}]}}'
+  I:
+    material: 'iron_ingot'
+    amount: 32
+  3:
+    material: 'diamond'
+    amount: 16
+  4:
+    material: 'log'
+    amount: 64
+  5:
+    material: 'golden_apple'
+    amount: 24
+  E:
+    material: 'enchanted_golden_apple'
+    amount: 2
+  6:
+    material: 'diamond_helmet'
+  7:
+    material: 'diamond_chestplate'
+  8:
+    material: 'diamond_leggings'
+  9:
+    material: 'diamond_boots'

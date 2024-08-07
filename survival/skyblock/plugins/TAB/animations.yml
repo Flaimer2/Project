@@ -81,7 +81,7 @@ scoreboardline2:
   texts:
   - '&a%vault_eco_balance_fixed%$'
   - '&a%alonsolevels_colored_level_format% &7(&f%alonsolevels_progress_percent_format%&7)'
-  - '&a%bungee_total%'
+  - '&a%balancer_count:all%'
 scoreboardline3:
   change-interval: 3500
   texts:

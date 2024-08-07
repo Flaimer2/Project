@@ -1,0 +1,54 @@
+#
+# Файл регионов WorldGuard
+#
+# ПРЕДУПРЕЖДЕНИЕ: ЭТОТ ФАЙЛ АВТОМАТИЧЕСКИ СГЕНЕРИРОВАН. Если изменить этот файл
+# вручную, имейте в виду, ЧТО ОДИН НЕПРАВИЛЬНО ВВЕДЕННЫЙ СИМВОЛ МОЖЕТ ПОВЕРЕДИТЬ ФАЙЛ. Если
+# WorldGuard будет неспособен разобрать файл, ваши регионы НЕ ЗАГРУЗЯТСЯ, и
+# содержимое этого файла будет сброшено. Пожалуйста, используйте валидатор YAML, такой как
+# http://yaml-online-parser.appspot.com (для небольших файлов).
+#
+# НЕ ЗАБУДЬТЕ ПЕРИОДИЧЕСКИ ДЕЛАТЬ РЕЗЕРВНЫЕ КОПИИ.
+#
+regions:
+    flaimerpro_i1:
+        min: {x: -7618.0, y: 62.0, z: 6765.0}
+        max: {x: -7602.0, y: 78.0, z: 6781.0}
+        members: {}
+        flags: {}
+        owners:
+            unique-ids: [67b6efe6-bf52-3c13-8d21-291fd6b1fe76]
+        type: cuboid
+        priority: 0
+    flaimerpro_i2:
+        min: {x: -2557.0, y: 59.0, z: 3069.0}
+        max: {x: -2541.0, y: 75.0, z: 3085.0}
+        members: {}
+        flags: {}
+        owners:
+            unique-ids: [67b6efe6-bf52-3c13-8d21-291fd6b1fe76]
+        type: cuboid
+        priority: 0
+    flaimerpro_rm3:
+        min: {x: -8066.0, y: 39.0, z: -2214.0}
+        max: {x: -8000.0, y: 105.0, z: -2148.0}
+        members: {}
+        flags: {}
+        owners:
+            unique-ids: [67b6efe6-bf52-3c13-8d21-291fd6b1fe76]
+        type: cuboid
+        priority: 0
+    danuk16_rm1:
+        min: {x: -1064.0, y: 37.0, z: -2491.0}
+        max: {x: -998.0, y: 103.0, z: -2425.0}
+        members: {}
+        flags: {}
+        owners:
+            unique-ids: [b8a47f4c-108e-33dd-a551-34497268b20f]
+        type: cuboid
+        priority: 0
+    __global__:
+        members: {}
+        flags: {pvp: allow, tnt: allow}
+        owners: {}
+        type: global
+        priority: 0

@@ -1,0 +1,159 @@
+arenas:
+  Celestial:
+    name: Celestial
+    min: 8
+    ranked: false
+    teamSize: 1
+    lobby: wait;0.5;76.8125;0.5;-90.0;0.0
+    spectator: Celestial;1000.5;130.0;0.5;0.0;0.0
+    islands:
+      island0:
+        spawn: Celestial;1058.5;95.0;-13.5;90.0;0.0
+        balloon: Celestial;1067.5;100.0;-5.5;90.0;90.0
+        fence: Celestial;1061.5;73.0;-7.5;-90.0;90.0
+        chests:
+        - Celestial;1057.0;70.0;-12.0;0.0;0.0
+        - Celestial;1059.0;73.0;-18.0;0.0;0.0
+        - Celestial;1058.0;86.0;-20.0;0.0;0.0
+      island1:
+        spawn: Celestial;1058.5;95.0;14.5;90.0;0.0
+        balloon: Celestial;1061.5;100.0;2.5;52.799942;29.69999
+        fence: Celestial;1061.5;73.0;6.5;-90.0;90.0
+        chests:
+        - Celestial;1057.0;73.0;18.0;0.0;0.0
+        - Celestial;1059.0;70.0;12.0;0.0;0.0
+        - Celestial;1058.0;86.0;20.0;0.0;0.0
+      island2:
+        spawn: Celestial;1039.5;95.0;39.5;135.0;0.0
+        balloon: Celestial;1035.5;100.0;54.5;139.49992;64.049965
+        fence: Celestial;1039.5;74.0;51.5;270.0;90.0
+        chests:
+        - Celestial;1042.0;69.0;40.0;0.0;0.0
+        - Celestial;1043.0;73.0;42.0;0.0;0.0
+        - Celestial;1044.0;86.0;44.0;0.0;0.0
+      island3:
+        spawn: Celestial;1014.5;95.0;58.5;179.85;0.0
+        balloon: Celestial;1003.5;100.0;70.5;180.0;90.0
+        fence: Celestial;1008.5;73.0;61.5;0.44821167;90.0
+        chests:
+        - Celestial;1012.0;70.0;57.0;0.0;0.0
+        - Celestial;1018.0;73.0;59.0;0.0;0.0
+        - Celestial;1020.0;86.0;58.0;0.0;0.0
+      island4:
+        spawn: Celestial;986.5;95.0;58.5;180.0;0.0
+        balloon: Celestial;1001.5;100.0;66.5;180.0;90.0
+        fence: Celestial;994.5;73.0;61.5;-90.0;90.0
+        chests:
+        - Celestial;982.0;73.0;57.0;0.0;0.0
+        - Celestial;988.0;70.0;59.0;0.0;0.0
+        - Celestial;980.0;86.0;58.0;0.0;0.0
+      island5:
+        spawn: Celestial;961.5;95.0;39.5;-135.0;0.0
+        balloon: Celestial;938.5;100.0;39.5;-90.0;90.0
+        fence: Celestial;949.5;74.0;39.5;-270.0;90.0
+        chests:
+        - Celestial;958.0;73.0;43.0;0.0;0.0
+        - Celestial;960.0;69.0;42.0;0.0;0.0
+        - Celestial;956.0;86.0;44.0;0.0;0.0
+      island6:
+        spawn: Celestial;942.5;95.0;14.5;-90.0;0.0
+        balloon: Celestial;928.5;100.0;4.5;-90.0;90.0
+        fence: Celestial;939.5;73.0;8.5;-270.0;90.0
+        chests:
+        - Celestial;941.0;73.0;18.0;0.0;0.0
+        - Celestial;943.0;70.0;12.0;0.0;0.0
+        - Celestial;942.0;86.0;20.0;0.0;0.0
+      island7:
+        spawn: Celestial;942.5;95.0;-13.5;-90.0;0.0
+        balloon: Celestial;931.5;100.0;0.5;-126.00004;37.499947
+        fence: Celestial;939.5;73.0;-5.5;0.0;89.24999
+        chests:
+        - Celestial;941.0;70.0;-12.0;0.0;0.0
+        - Celestial;943.0;73.0;-18.0;0.0;0.0
+        - Celestial;942.0;86.0;-20.0;0.0;0.0
+      island8:
+        spawn: Celestial;961.5;95.0;-38.5;-45.0;0.0
+        balloon: Celestial;962.5;100.0;-67.5;14.100001;45.749985
+        fence: Celestial;961.5;74.0;-50.5;-90.0;90.0
+        chests:
+        - Celestial;957.0;73.0;-42.0;0.0;0.0
+        - Celestial;958.0;69.0;-40.0;0.0;0.0
+        - Celestial;956.0;86.0;-44.0;0.0;0.0
+      island9:
+        spawn: Celestial;985.5;95.0;-57.5;0.0;0.0
+        balloon: Celestial;997.5;100.0;-71.5;23.849998;47.40001
+        fence: Celestial;991.5;73.0;-60.5;0.0;90.0
+        chests:
+        - Celestial;981.0;73.0;-59.0;0.0;0.0
+        - Celestial;987.0;70.0;-57.0;0.0;0.0
+        - Celestial;979.0;86.0;-58.0;0.0;0.0
+      island10:
+        spawn: Celestial;1013.5;95.0;-57.5;0.0;0.0
+        balloon: Celestial;1001.5;100.0;-69.5;-39.3;56.399887
+        fence: Celestial;1005.5;73.0;-60.5;90.0;90.0
+        chests:
+        - Celestial;1011.0;70.0;-59.0;0.0;0.0
+        - Celestial;1017.0;73.0;-57.0;0.0;0.0
+        - Celestial;1019.0;86.0;-58.0;0.0;0.0
+      island11:
+        spawn: Celestial;1039.5;95.0;-38.5;45.0;0.0
+        balloon: Celestial;1068.5;100.0;-39.5;104.09998;42.30003
+        fence: Celestial;1051.5;74.0;-38.5;0.0;90.0
+        chests:
+        - Celestial;1044.0;86.0;-44.0;0.0;0.0
+        - Celestial;1040.0;69.0;-42.0;0.0;0.0
+        - Celestial;1042.0;73.0;-43.0;0.0;0.0
+    center:
+    - Celestial;1030.0;78.0;14.0;0.0;0.0
+    - Celestial;1032.0;73.0;19.0;0.0;0.0
+    - Celestial;1034.0;74.0;-3.0;0.0;0.0
+    - Celestial;1037.0;78.0;0.0;0.0;0.0
+    - Celestial;1030.0;79.0;-16.0;0.0;0.0
+    - Celestial;1019.0;73.0;-32.0;0.0;0.0
+    - Celestial;1015.0;78.0;-30.0;0.0;0.0
+    - Celestial;1001.0;78.0;-37.0;0.0;0.0
+    - Celestial;998.0;74.0;-34.0;0.0;0.0
+    - Celestial;985.0;79.0;-31.0;0.0;0.0
+    - Celestial;968.0;73.0;-20.0;0.0;0.0
+    - Celestial;970.0;78.0;-15.0;0.0;0.0
+    - Celestial;966.0;74.0;2.0;0.0;0.0
+    - Celestial;963.0;78.0;-1.0;0.0;0.0
+    - Celestial;969.0;79.0;15.0;0.0;0.0
+    - Celestial;980.0;73.0;32.0;0.0;0.0
+    - Celestial;985.0;78.0;30.0;0.0;0.0
+    - Celestial;1002.0;74.0;34.0;0.0;0.0
+    - Celestial;999.0;78.0;37.0;0.0;0.0
+    - Celestial;1015.0;79.0;31.0;0.0;0.0
+    - Celestial;1012.0;72.0;16.0;0.0;0.0
+    - Celestial;1014.0;71.0;4.0;0.0;0.0
+    - Celestial;1017.0;72.0;-11.0;0.0;0.0
+    - Celestial;996.0;71.0;-20.0;0.0;0.0
+    - Celestial;980.0;72.0;-8.0;0.0;0.0
+    - Celestial;999.0;71.0;-1.0;0.0;0.0
+    - Celestial;999.0;71.0;1.0;0.0;0.0
+    - Celestial;1001.0;71.0;-1.0;0.0;0.0
+    - Celestial;1001.0;71.0;1.0;0.0;0.0
+    - Celestial;999.0;78.0;0.0;0.0;0.0
+    - Celestial;1000.0;78.0;-1.0;0.0;0.0
+    - Celestial;1000.0;78.0;1.0;0.0;0.0
+    - Celestial;1001.0;78.0;0.0;0.0;0.0
+    - Celestial;994.0;85.0;0.0;0.0;0.0
+    - Celestial;1000.0;85.0;-6.0;0.0;0.0
+    - Celestial;1006.0;85.0;0.0;0.0;0.0
+    - Celestial;1000.0;85.0;6.0;0.0;0.0
+    - Celestial;1000.0;70.0;-5.0;0.0;0.0
+    - Celestial;1005.0;70.0;0.0;0.0;0.0
+    - Celestial;1000.0;70.0;5.0;0.0;0.0
+    - Celestial;995.0;70.0;0.0;0.0;0.0
+    votes: false
+    color: §0
+    borderX: 1000
+    borderZ: 0
+    events:
+    - REFILL:180
+    - FINAL:150
+    - REFILL:90
+    enabled: true
+    borderStart: 300
+    borderEnd: 20
+    gameType: SOLO

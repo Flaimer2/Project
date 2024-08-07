@@ -1,0 +1,24 @@
+location: lobby:21,500:97,600:24,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: "&e&lБлоки привата"
+    height: 0.6
+  - content: "&fЗдесь, представлены все блоки, с помощью"
+    height: 0.3
+  - content: "&fкоторых можно &bзаприватить &fтерриторию"
+    height: 0.6
+  - content: "&fНекоторые из этих блоков,"
+    height: 0.3
+  - content: "&fвы можете &aсделать &fсами, а некоторые,"
+    height: 0.3
+  - content: "&fможно только купить у &d&lМифического торговца"
+    height: 0.6
+  - content: "&f&oДля установки обычного блока, нажмите &a&oShift + ПКМ"
+    height: 0.3
+  actions: {}

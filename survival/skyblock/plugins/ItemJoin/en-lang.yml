@@ -23,7 +23,7 @@ general:
 commands:
   default:
     unknownCommand: '%prefix% &cUnknown command, See &l/ItemJoin Help &cfor a list of commands.'
-    noPermission: '%prefix% &cYou do not have permission to use that command!'
+    noPermission: '%prefix% &fУ вас &cнет &fразрешения, чтобы сделать это!'
     configReload: '%prefix% &aConfiguration(s) Reloaded!'
     noPlayer: '%prefix% &cYou must be a player to execute that command!'
     noTarget: '%prefix% &cThe player &c%target_player% &ccould not be found!'

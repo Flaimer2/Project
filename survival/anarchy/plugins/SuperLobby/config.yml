@@ -1,0 +1,298 @@
+
+debug: false
+newconfig: true
+update-check: false
+prefix: '&6SuperLobby &e>> &7'
+messages: EN
+join-clear-inventory: false
+join-clear-chat: false
+join-spawn: false
+command-spawn: false
+info-commands: false
+custom-events: false
+menu: false
+disable-daylight-sensor-interaction:
+  enable: true
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+disable-dropper-interaction:
+  enable: true
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+disable-hopper-interaction:
+  enable: true
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+disable-fence-gate-interaction:
+  enable: true
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+disable-trapdoor-interaction:
+  enable: true
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+disable-button-interaction:
+  enable: true
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+disable-dispenser-interaction:
+  enable: true
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+disable-noteblock-interaction:
+  enable: false
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+disable-armorstands-interaction:
+  enable: true
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+disable-door-interaction:
+  enable: false
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+disable-rain:
+  enable: true
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+disable-block-break:
+  enable: false
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+disable-block-place:
+  enable: false
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+disable-block-burn:
+  enable: true
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+disable-drop-item:
+  enable: false
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+disable-item-move:
+  enable: false
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+disable-item-damage:
+  enable: false
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+disable-pick-up-items:
+  enable: false
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+disable-entity-explode:
+  enable: false
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+disable-damage:
+  enable: false
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+disable-hunger:
+  enable: false
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+disable-death-message:
+  enable: true
+  world:
+  - lobby
+  - world
+  - world_nether
+  - auth
+  use-spawn-radius: false
+disable-creature-spawn:
+  enable: false
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+clear-drops-on-death:
+  enable: false
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+lobby-items:
+  enable: false
+  join-server: false
+  respawn: false
+  join-world: false
+  world:
+  - lobby
+  use-spawn-radius: false
+void-tp:
+  enable: true
+  level: 0
+  world:
+  - lobby
+  - auth
+always-day:
+  enable: false
+  world:
+  - lobby
+  - auth
+always-night:
+  enable: false
+  world:
+  - lobby
+  - auth
+frame-protect:
+  enable: true
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+farm-protect:
+  enable: true
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+jump-pads:
+  enable: true
+  plate-block: oak_pressure_plate
+  plate-block-old: WOOD_PLATE
+  sound: BLOCK_PISTON_EXTEND
+  sound-old: PISTON_EXTEND
+  world:
+  - lobby
+  - auth
+  use-spawn-radius: false
+join-boss-bar:
+  enable: false
+  message: '&3Welcome to mundopixels!'
+  color: BLUE
+  style: NOTCHED_20
+  seconds: 10
+join-tab:
+  enable: false
+  update: 1000
+  header: |-
+    &7
+    &f&m--&7&m--&8&m[-&r &6&lMUNDO&f&lPIXELS &7&lNETWORK &8&m-]&7&m--&f&m--
+    &7
+  footer: |-
+    &7
+    &7Website: &7mundopixels.net
+    &7Facebook: &7facebook.mundopixels.net
+    &7Store: &7tienda.mundopixels.net
+    &7
+join-titles:
+  enable: false
+  fade-in: 20
+  stay: 50
+  fade-out: 10
+  title: '&6<player> &bWelcome to'
+  sub-title: '&6&lMUNDO&f&lPIXELS'
+join-motd:
+  enable: false
+  message:
+  - '&a&m---------------------------------------------------'
+  - ' '
+  - '&a# &6&l<player> &7Welcome to &6&lMUNDO&f&lPIXELS &fNETWORK!'
+  - ' '
+  - '&a# &7Buy rank on: &2tienda.mundopixels.net'
+  - '&a# &7Facebook: &2facebook.mundopixels.net'
+  - '&a# &7For more information type &2/info'
+  - ' '
+  - '&a&m---------------------------------------------------'
+join-action-bar:
+  enable: false
+  seconds: 10
+  message: '&6Welcome to mundopixels!'
+commands-blacklist:
+  enable: false
+  bypass: superlobby.admin
+  list:
+  - /p
+  - /pl
+  - /bukkit:pl
+  - /'?'
+  - /bukkit:?
+  - /help
+  - /bukkit:help
+  - /plugins
+  - /bukkit:plugins
+  - /about
+  - /bukkit:about
+  - /ver
+  - /bukkit:ver
+  - /version
+  - /bukkit:version
+  - /gc
+  - /tps
+  - /me
+  - /bukkit:me
+  - /bukkit:ehelp
+  - /icanhasbukkit
+  - /icanhasspigot
+  - /info
+  - /mc:help
+  - /minecraft:help
+  - /essentials:help
+  - /essentials:ehelp
+  - /perm
+  - /mv
+  - /multiverse-core:mv
+  - /we
+  - /worldedit
+disable-tab-complete:
+  enable: false
+  bypass: superlobby.staff
+  whitelist:
+  - /warp
+  - /menu
+  - /games
+  - /info
+  - /yt
+  - /pay
+  - /tpa
+  - /tpaccept
+join-clear-inventory-bypass: false
+join-clear-chat-bypass: false
+disable-achievements: true

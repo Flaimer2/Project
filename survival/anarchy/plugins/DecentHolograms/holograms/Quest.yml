@@ -1,0 +1,20 @@
+location: lobby:67,537:96,000:91,573
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: "&d&lЗадания"
+    height: 0.6
+  - content: "&fЗдесь, у &bШахтёра&f, вы можете взять &dЗадания&f."
+    height: 0.3
+  - content: "&fЗа выполнение этих заданий, вы будете получать"
+    height: 0.3
+  - content: "&fразличные награды – от &a$&f до &bСнаперов"
+    height: 0.6
+  - content: "&e&oЗадания находятся в разработке..."
+    height: 0.3
+  actions: {}

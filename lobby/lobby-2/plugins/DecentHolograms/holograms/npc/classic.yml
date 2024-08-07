@@ -1,0 +1,20 @@
+location: lobby:-268,5:33,5:-179,5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&e&lClassic'
+    height: 0.3
+  - content: '&7&l⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀'
+    height: 0.3
+  - content: '&fОнлайн: &a%balancer_count:classic%'
+    height: 0.3
+  - content: '&fПопулярность: %progress_bar_{balancer_count:classic}_c:&a■_p:&7■_r:&7■_l:10_m:{balancer_count:all}_fullbar:&a■■■■■■■■■■%'
+    height: 0.3
+  - content: '&aНажмите, чтобы войти'
+    height: 0.3
+  actions: {}

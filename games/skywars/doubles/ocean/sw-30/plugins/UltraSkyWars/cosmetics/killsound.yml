@@ -1,0 +1,29 @@
+killsounds:
+  Default:
+    id: 0
+    name: Default
+    permission: ultraskywars.killsound.Default
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: GHAST_TEAR
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aDefault
+        lore:
+        - §fThis is a default lore.
+        - §fChange me in killsounds.yml
+        - §f
+        - <price>
+        - §f
+        - <status>
+    slot: 10
+    sound: LEVEL_UP
+    vol1: 1.0
+    vol2: 1.0
+    page: 1
+    price: 500
+    isBuy: true
+    message: 10
+    autoGivePermission: ultraskywars.killsound.autogive.Default
+    needPermToBuy: false

@@ -1,0 +1,46 @@
+blocks:
+  RED_MUSHROOM_BLOCK:
+    symbol: 'RM'
+    radius: 33
+    placeSound: 'ENTITY_SHULKER_TELEPORT'
+    breakSound: 'ENTITY_SHULKER_OPEN'
+    placeEffect:
+      name: 'EXPLOSION_NORMAL'
+      amount: 100
+    alwaysCreateRegion: true
+  BROWN_MUSHROOM_BLOCK:
+    symbol: 'BM'
+    radius: 22
+    placeSound: 'ENTITY_SHULKER_TELEPORT'
+    breakSound: 'ENTITY_SHULKER_OPEN'
+    placeEffect:
+      name: 'DRAGON_BREATH'
+      amount: 100
+    alwaysCreateRegion: true
+  EMERALD_ORE:
+    symbol: 'E'
+    radius: 22
+    placeSound: 'ENTITY_EXPERIENCE_ORB_PICKUP'
+    breakSound: 'BLOCK_ANVIL_PLACE'
+    placeEffect:
+      name: 'EXPLOSION_NORMAL'
+      amount: 10
+    alwaysCreateRegion: false
+  DIAMOND_BLOCK:
+    symbol: 'D'
+    radius: 17
+    placeSound: 'ENTITY_EXPERIENCE_ORB_PICKUP'
+    breakSound: 'BLOCK_ANVIL_PLACE'
+    placeEffect:
+      name: 'EXPLOSION_NORMAL'
+      amount: 10
+    alwaysCreateRegion: false
+  IRON_BLOCK:
+    symbol: 'I'
+    radius: 8
+    placeSound: 'ENTITY_EXPERIENCE_ORB_PICKUP'
+    breakSound: 'BLOCK_ANVIL_PLACE'
+    placeEffect:
+      name: 'EXPLOSION_NORMAL'
+      amount: 10
+    alwaysCreateRegion: false

@@ -1,0 +1,1041 @@
+#These are normal rewards. There can be UNLIMITED amount of normal rewards.
+#Make sure you edit all spaces. If the new reward doesn't have all values.
+#Plugin might not start correctly.
+Normal:
+  #Make sure you use the same identifier in all servers otherwise players will be able to claim
+  #the same reward because it has a different name.<- IMPORTANT
+  1:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 1
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a1000$"
+    Commands:
+    - "money give {PLAYER} 1000"
+  2:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 2
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a2000$"
+    Commands:
+    - "money give {PLAYER} 2000"
+  3:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 3
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a3000$"
+    Commands:
+    - "money give {PLAYER} 3000"
+  4:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 4
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a4000$"
+    Commands:
+    - "money give {PLAYER} 4000"
+  5:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 5
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a5000$"
+    - "&7+&a1 Мистическая коробка &e✰&7✰✰✰✰"
+    Commands:
+    - "money give {PLAYER} 5000"
+    - "gmysterybox give {PLAYER} 1 1"
+  6:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 6
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a6000$"
+    Commands:
+    - "money give {PLAYER} 6000"
+  7:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 7
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a7000$"
+    Commands:
+    - "money give {PLAYER} 7000"
+  8:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 8
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a8000$"
+    Commands:
+    - "money give {PLAYER} 8000"
+  9:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 9
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a9000$"
+    Commands:
+    - "money give {PLAYER} 9000"
+  10:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 10
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a10₵"
+    - "&7+&a1 Мистическая коробка &e✰✰&7✰✰✰"
+    Commands:
+    - "snapicoin add {PLAYER} 10 -s -m"
+    - "gmysterybox give {PLAYER} 1 2"
+  11:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 11
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a11000$"
+    Commands:
+    - "money give {PLAYER} 11000"
+  12:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 12
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a12000$"
+    Commands:
+    - "money give {PLAYER} 12000"
+  13:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 13
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a13000$"
+    Commands:
+    - "money give {PLAYER} 13000"
+  14:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 14
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a14000$"
+    Commands:
+    - "money give {PLAYER} 14000"
+  15:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 15
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a15000$"
+    - "&7+&a1 Мистическая коробка &e✰✰✰&7✰✰"
+    Commands:
+    - "money give {PLAYER} 15000"
+    - "gmysterybox give {PLAYER} 1 3"
+  16:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 16
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a16000$"
+    Commands:
+    - "money give {PLAYER} 16000"
+  17:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 17
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a17000$"
+    Commands:
+    - "money give {PLAYER} 17000"
+  18:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 18
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a18000$"
+    Commands:
+    - "money give {PLAYER} 18000"
+  19:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 19
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a19000$"
+    Commands:
+    - "money give {PLAYER} 19000"
+  20:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 20
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a20₵"
+    - "&7+&a1 Мистическая коробка &e✰✰✰✰&7✰"
+    Commands:
+    - "snapicoin add {PLAYER} 20 -s -m"
+    - "gmysterybox give {PLAYER} 1 4"
+  21:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 21
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a21000$"
+    Commands:
+    - "money give {PLAYER} 21000"
+  22:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 22
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a22000$"
+    Commands:
+    - "money give {PLAYER} 22000"
+  23:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 23
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a23000$"
+    Commands:
+    - "money give {PLAYER} 23000"
+  24:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 24
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a24000$"
+    Commands:
+    - "money give {PLAYER} 24000"
+  25:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 25
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a25000$"
+    - "&7+&a1 Мистическая коробка &e✰✰✰✰✰"
+    Commands:
+    - "money give {PLAYER} 25000"
+    - "gmysterybox give {PLAYER} 1 5"
+  26:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 26
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a26000$"
+    Commands:
+    - "money give {PLAYER} 26000"
+  27:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 27
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a27000$"
+    Commands:
+    - "money give {PLAYER} 27000"
+  28:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 28
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a28000$"
+    Commands:
+    - "money give {PLAYER} 28000"
+  29:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 29
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a29000$"
+    Commands:
+    - "money give {PLAYER} 29000"
+  30:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 30
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a30₵"
+    - "&7+&a2 Мистических коробок &e✰&7✰✰✰✰"
+    Commands:
+    - "snapicoin add {PLAYER} 30 -s -m"
+    - "gmysterybox give {PLAYER} 2 1"
+  31:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 31
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a31000$"
+    Commands:
+    - "money give {PLAYER} 31000"
+  32:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 32
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a32000$"
+    Commands:
+    - "money give {PLAYER} 32000"
+  33:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 33
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a33000$"
+    Commands:
+    - "money give {PLAYER} 33000"
+  34:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 34
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a34000$"
+    Commands:
+    - "money give {PLAYER} 34000"
+  35:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 35
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a35000$"
+    - "&7+&a2 Мистических коробок &e✰✰&7✰✰✰"
+    Commands:
+    - "money give {PLAYER} 35000"
+    - "gmysterybox give {PLAYER} 2 2"
+  36:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 36
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a36000$"
+    Commands:
+    - "money give {PLAYER} 36000"
+  37:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 37
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a37000$"
+    Commands:
+    - "money give {PLAYER} 37000"
+  38:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 38
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a38000$"
+    Commands:
+    - "money give {PLAYER} 38000"
+  39:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 39
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a39000$"
+    Commands:
+    - "money give {PLAYER} 39000"
+  40:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 40
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a40₵"
+    - "&7+&a2 Мистических коробок &e✰✰✰&7✰✰"
+    Commands:
+    - "snapicoin add {PLAYER} 40 -s -m"
+    - "gmysterybox give {PLAYER} 2 3"
+  41:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 41
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a41000$"
+    Commands:
+    - "money give {PLAYER} 41000"
+  42:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 42
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a42000$"
+    Commands:
+    - "money give {PLAYER} 42000"
+  43:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 43
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a43000$"
+    Commands:
+    - "money give {PLAYER} 43000"
+  44:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 44
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a44000$"
+    Commands:
+    - "money give {PLAYER} 44000"
+  45:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 45
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a45000$"
+    - "&7+&a2 Мистических коробок &e✰✰✰✰&7✰"
+    Commands:
+    - "money give {PLAYER} 45000"
+    - "gmysterybox give {PLAYER} 2 4"
+  46:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 46
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a46000$"
+    Commands:
+    - "money give {PLAYER} 46000"
+  47:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 47
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a47000$"
+    Commands:
+    - "money give {PLAYER} 47000"
+  48:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 48
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a48000$"
+    Commands:
+    - "money give {PLAYER} 48000"
+  49:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 49
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a49000$"
+    Commands:
+    - "money give {PLAYER} 49000"
+  50:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 50
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a50₵"
+    - "&7+&a2 Мистических коробок &e✰✰✰✰✰"
+    Commands:
+    - "snapicoin add {PLAYER} 50 -s -m"
+    - "gmysterybox give {PLAYER} 2 5"
+  51:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 51
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a51000$"
+    Commands:
+    - "money give {PLAYER} 51000"
+  52:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 52
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a52000$"
+    Commands:
+    - "money give {PLAYER} 52000"
+  53:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 53
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a53000$"
+    Commands:
+    - "money give {PLAYER} 53000"
+  54:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 54
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a54000$"
+    Commands:
+    - "money give {PLAYER} 54000"
+  55:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 55
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a55000$"
+    - "&7+&a3 Мистических коробок &e✰&7✰✰✰✰"
+    Commands:
+    - "money give {PLAYER} 55000"
+    - "gmysterybox give {PLAYER} 3 1"
+  56:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 56
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a56000$"
+    Commands:
+    - "money give {PLAYER} 56000"
+  57:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 57
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a57000$"
+    Commands:
+    - "money give {PLAYER} 57000"
+  58:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 58
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a58000$"
+    Commands:
+    - "money give {PLAYER} 58000"
+  59:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 59
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a59000$"
+    Commands:
+    - "money give {PLAYER} 59000"
+  60:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 60
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a60₵"
+    - "&7+&a3 Мистических коробок &e✰✰&7✰✰✰"
+    Commands:
+    - "snapicoin add {PLAYER} 60 -s -m"
+    - "gmysterybox give {PLAYER} 3 2"
+  61:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 61
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a61000$"
+    Commands:
+    - "money give {PLAYER} 61000"
+  62:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 62
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a62000$"
+    Commands:
+    - "money give {PLAYER} 62000"
+  63:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 63
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a63000$"
+    Commands:
+    - "money give {PLAYER} 63000"
+  64:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 64
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a64000$"
+    Commands:
+    - "money give {PLAYER} 64000"
+  65:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 65
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a65000$"
+    - "&7+&a3 Мистических коробок &e✰✰✰&7✰✰"
+    Commands:
+    - "money give {PLAYER} 65000"
+    - "gmysterybox give {PLAYER} 3 3"
+  66:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 66
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a66000$"
+    Commands:
+    - "money give {PLAYER} 66000"
+  67:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 67
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a67000$"
+    Commands:
+    - "money give {PLAYER} 67000"
+  68:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 68
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a68000$"
+    Commands:
+    - "money give {PLAYER} 68000"
+  69:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 69
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a69000$"
+    Commands:
+    - "money give {PLAYER} 69000"
+  70:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 70
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a70₵"
+    - "&7+&a3 Мистических коробок &e✰✰✰✰&7✰"
+    Commands:
+    - "snapicoin add {PLAYER} 70 -s -m"
+    - "gmysterybox give {PLAYER} 3 4"
+  71:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 71
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a71000$"
+    Commands:
+    - "money give {PLAYER} 71000"
+  72:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 72
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a72000$"
+    Commands:
+    - "money give {PLAYER} 72000"
+  73:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 73
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a73000$"
+    Commands:
+    - "money give {PLAYER} 73000"
+  74:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 74
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a74000$"
+    Commands:
+    - "money give {PLAYER} 74000"
+  75:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 75
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a75000$"
+    - "&7+&a3 Мистических коробок &e✰✰✰✰✰"
+    Commands:
+    - "money give {PLAYER} 75000"
+    - "gmysterybox give {PLAYER} 3 5"
+  76:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 76
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a76000$"
+    Commands:
+    - "money give {PLAYER} 76000"
+  77:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 77
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a77000$"
+    Commands:
+    - "money give {PLAYER} 77000"
+  78:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 78
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a78000$"
+    Commands:
+    - "money give {PLAYER} 78000"
+  79:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 79
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a79000$"
+    Commands:
+    - "money give {PLAYER} 79000"
+  80:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 80
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a80₵"
+    - "&7+&a4 Мистических коробок &e✰&7✰✰✰✰"
+    Commands:
+    - "snapicoin add {PLAYER} 80 -s -m"
+    - "gmysterybox give {PLAYER} 4 1"
+  81:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 81
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a81000$"
+    Commands:
+    - "money give {PLAYER} 81000"
+  82:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 82
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a82000$"
+    Commands:
+    - "money give {PLAYER} 82000"
+  83:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 83
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a83000$"
+    Commands:
+    - "money give {PLAYER} 83000"
+  84:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 84
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a84000$"
+    Commands:
+    - "money give {PLAYER} 84000"
+  85:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 85
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a85000$"
+    - "&7+&a4 Мистических коробок &e✰✰&7✰✰✰"
+    Commands:
+    - "money give {PLAYER} 85000"
+    - "gmysterybox give {PLAYER} 4 2"
+  86:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 86
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a86000$"
+    Commands:
+    - "money give {PLAYER} 86000"
+  87:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 87
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a87000$"
+    Commands:
+    - "money give {PLAYER} 87000"
+  88:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 88
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a88000$"
+    Commands:
+    - "money give {PLAYER} 88000"
+  89:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 89
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a89000$"
+    Commands:
+    - "money give {PLAYER} 89000"
+  90:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 90
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a90₵"
+    - "&7+&a4 Мистических коробок &e✰✰✰&7✰✰"
+    Commands:
+    - "snapicoin add {PLAYER} 90 -s -m"
+    - "gmysterybox give {PLAYER} 4 3"
+  91:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 91
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a91000$"
+    Commands:
+    - "money give {PLAYER} 91000"
+  92:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 92
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a92000$"
+    Commands:
+    - "money give {PLAYER} 92000"
+  93:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 93
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a93000$"
+    Commands:
+    - "money give {PLAYER} 93000"
+  94:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 94
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a94000$"
+    Commands:
+    - "money give {PLAYER} 94000"
+  95:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 95
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a95000$"
+    - "&7+&a4 Мистических коробок &e✰✰✰✰&7✰"
+    Commands:
+    - "money give {PLAYER} 95000"
+    - "gmysterybox give {PLAYER} 4 4"
+  96:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 96
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a96000$"
+    Commands:
+    - "money give {PLAYER} 96000"
+  97:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 97
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a97000$"
+    Commands:
+    - "money give {PLAYER} 97000"
+  98:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 98
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a98000$"
+    Commands:
+    - "money give {PLAYER} 98000"
+  99:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 99
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a99000$"
+    Commands:
+    - "money give {PLAYER} 99000"
+  100:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 100
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a100₵"
+    - "&7+&a4 Мистических коробок &e✰✰✰✰✰"
+    Commands:
+    - "snapicoin add {PLAYER} 100 -s -m"
+    - "gmysterybox give {PLAYER} 4 5"
+
+
+#These are veteran rewards. There can be ONLY 14 veteran rewards.
+#Please, do NOT add more. It will be ignored, no matter what you try.
+Veteran:
+  v1:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 120
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a240000$"
+    Commands:
+    - "money give {PLAYER} 240000"
+  v2:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 140
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a480000$"
+    Commands:
+    - "money give {PLAYER} 480000"
+  v3:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 160
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a720000$"
+    Commands:
+    - "money give {PLAYER} 720000"
+  v4:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 180
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a960000$"
+    Commands:
+    - "money give {PLAYER} 960000"
+  v5:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 200
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a500₵"
+    Commands:
+    - "snapicoin add {PLAYER} 500 -s -m"
+  v6:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 220
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a1440000$"
+    Commands:
+    - "money give {PLAYER} 1440000"
+  v7:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 240
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a1680000$"
+    Commands:
+    - "money give {PLAYER} 1680000"
+  v8:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 260
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a1920000$"
+    Commands:
+    - "money give {PLAYER} 1920000"
+  v9:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 280
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a2160000$"
+    Commands:
+    - "money give {PLAYER} 2160000"
+  v10:
+    Displayname: "{COLOR}Награда за {LEVEL} уровень"
+    Min-level: 300
+    Servers: []
+    Lore:
+    - "&fВаша награда:"
+    - "&7+&a700₵"
+    Commands:
+    - "snapicoin add {PLAYER} 700 -s -m"

@@ -78,30 +78,20 @@ general:
 # *money*        - message price (depends on Vault).
 # *permission*   - check permissions for this chat? Default: true.
 # *command*      - Command that is used to switch to chat to use it by default if symbol is not specified. Default: empty.
-# *aliases*      - Aliases for command. Default: empty.   &c[ʟ] {prefix}{player}%tab_placeholder_condition:suffix%&r > {message}
+# *aliases*      - Aliases for command. Default: empty.   &c[ʟ] {prefix}{player}%vault_suffix%&r > {message}
 chats:
   local:
     enable: true
     format: '&c[ʟ] {prefix}{player}{suffix} &7> &r{message}'
     range: 100
+    permission: false
 
   global:
     enable: true
     format: '&e[ɢ] {prefix}{player}{suffix} &7> &f{message}'
     range: -2
     symbol: '!'
-    
-  donate:
-    enable: false
-    format: '&e[Донат-чат] {prefix}{player}%tab_placeholder_condition:suffix% &7> &f{message}'
-    range: -2
-    symbol: '$'
-
-  staff:
-    enable: false
-    format: '&e[StaffChat] {prefix}{player}%tab_placeholder_condition:suffix% &7> &f{message}'
-    range: -1
-    symbol: '#'
+    permission: false
 
   # Example chat with multiline format
   notify:
@@ -571,7 +561,7 @@ miscellaneous:
       enable: false
 
       # Set to '' if you want to make it hidden.
-      message: '&8> &e{prefix}{player}%tab_placeholder_condition:suffix% &ejoined the server.'
+      message: '&8> &e{prefix}{player}%vault_suffix% &ejoined the server.'
 
       # Plays sound to all, when player joins.
       # Remove the line if not needed.
@@ -585,7 +575,7 @@ miscellaneous:
       first-join:
         # First join message.
         # Set to '' if you don't want to see special message for the first join.
-        message: '&8> &e{prefix}{player}%tab_placeholder_condition:suffix% &6joined the server for the first time!'
+        message: '&8> &e{prefix}{player}%vault_suffix% &6joined the server for the first time!'
         # Plays sound to all, when player joins.
         # Remove the line if not needed.
         sound: ORB_PICKUP
@@ -594,7 +584,7 @@ miscellaneous:
       enable: false
 
       # Set to '' if you want to make it hidden.
-      message: '&8> &e{prefix}{player}%tab_placeholder_condition:suffix% &eleft the server.'
+      message: '&8> &e{prefix}{player}%vault_suffix% &eleft the server.'
 
       # Plays sound to all, when player quits.
       # Remove the line if not needed.
@@ -608,7 +598,7 @@ miscellaneous:
       enable: false
 
       # Set to '' if you want to make it hidden.
-      message: '&8> &e{prefix}{player}%tab_placeholder_condition:suffix% &edied.'
+      message: '&8> &e{prefix}{player}%vault_suffix% &edied.'
 
       # Plays sound to all, when player dies.
       # Remove the line if not required.

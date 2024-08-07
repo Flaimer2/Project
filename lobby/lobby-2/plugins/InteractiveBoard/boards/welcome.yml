@@ -16,7 +16,7 @@ displays:
   default:
     invisible: true
     glow: true
-    distance: 30.0
+    distance: 75.0
     world: lobby
     direction: west
     down: down

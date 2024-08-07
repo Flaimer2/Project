@@ -1,0 +1,18 @@
+location: lobby:37,500:95,500:47,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: "&b&lRTP в обычный мир"
+    height: 0.6
+  - content: "&fЗайдите в &dпортал&f, чтобы"
+    height: 0.3
+  - content: "&fпереместиться в обычный мир"
+    height: 0.6
+  - content: "&a&oЖелаем Вам удачной игры!"
+    height: 0.3
+  actions: {}

@@ -1,0 +1,81 @@
+blocks:
+  RED_MUSHROOM_BLOCK:
+    height: 0.1
+    lines:
+      - '§cОгромный приват'
+      - ''
+      - '§fСоздатель: §a%region_author%'
+      - '§fРазмер: §a67x67x67'
+      - ''
+      - '§aНажмите SHIFT + ПКМ, чтобы открыть меню'
+    otherPlayerHeight: 2.4
+    otherPlayerLines:
+      - '§cОгромный приват'
+      - ''
+      - '§fСоздатель: §a%region_author%'
+      - '§fРазмер: §a67x67x67'
+    viewDistance: 64
+  BROWN_MUSHROOM_BLOCK:
+    height: 0.1
+    lines:
+      - '§dМифический приват'
+      - ''
+      - '§fСоздатель: §a%region_author%'
+      - '§fРазмер: §a45x45x45'
+      - ''
+      - '§aНажмите SHIFT + ПКМ, чтобы открыть меню'
+    otherPlayerHeight: 2.4
+    otherPlayerLines:
+      - '§dМифический приват'
+      - ''
+      - '§fСоздатель: §a%region_author%'
+      - '§fРазмер: §a45x45x45'
+    viewDistance: 45
+  EMERALD_ORE:
+    height: 0.1
+    lines:
+      - '§2Большой приват'
+      - ''
+      - '§fСоздатель: §a%region_author%'
+      - '§fРазмер: §a45x45x45'
+      - ''
+      - '§aНажмите SHIFT + ПКМ, чтобы открыть меню'
+    otherPlayerHeight: 2.4
+    otherPlayerLines:
+      - '§2Большой приват'
+      - ''
+      - '§fСоздатель: §a%region_author%'
+      - '§fРазмер: §a45x45x45'
+    viewDistance: 64
+  DIAMOND_BLOCK:
+    height: 0.1
+    lines:
+      - '§bСредний приват'
+      - ''
+      - '§fСоздатель: §a%region_author%'
+      - '§fРазмер: §a35x35x35'
+      - ''
+      - '§aНажмите SHIFT + ПКМ, чтобы открыть меню'
+    otherPlayerHeight: 2.4
+    otherPlayerLines:
+      - '§bСредний приват'
+      - ''
+      - '§fСоздатель: §a%region_author%'
+      - '§fРазмер: §a35x35x35'
+    viewDistance: 64
+  IRON_BLOCK:
+    height: 0.1
+    lines:
+      - '§7Малый приват'
+      - ''
+      - '§fСоздатель: §a%region_author%'
+      - '§fРазмер: §a17x17x17'
+      - ''
+      - '§aНажмите SHIFT + ПКМ, чтобы открыть меню'
+    otherPlayerHeight: 2.4
+    otherPlayerLines:
+      - '§7Малый приват'
+      - ''
+      - '§fСоздатель: §a%region_author%'
+      - '§fРазмер: §a17x17x17'
+    viewDistance: 64

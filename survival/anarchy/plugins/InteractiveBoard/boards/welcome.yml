@@ -1,0 +1,80 @@
+settings:
+  defaultscene:
+    nopermission: scene1
+  dithering: false
+  global: false
+  advancedpalette: true
+  resetonradiusexit: false
+scenes:
+  scene1:
+    button1:
+      type: button
+      color: 255 170 60
+      width: 640
+      height: 385
+      invisible: true
+      cooldown: 50
+      cornerradius: 10
+      onclick:
+        function1:
+          type: switchscene
+          scene: scene2
+    object1:
+      type: image
+      width: 640
+      height: 385
+      image: Anarchy-1.png
+  scene2:
+    button1:
+      type: button
+      color: 255 170 60
+      width: 640
+      height: 385
+      invisible: true
+      cooldown: 50
+      cornerradius: 10
+      onclick:
+        function1:
+          type: switchscene
+          scene: scene3
+    object1:
+      type: image
+      width: 640
+      height: 385
+      image: Anarchy-2.png
+  scene3:
+    button1:
+      type: button
+      color: 255 170 60
+      width: 640
+      height: 385
+      invisible: true
+      cooldown: 50
+      cornerradius: 10
+      onclick:
+        function1:
+          type: switchscene
+          scene: scene1
+    object1:
+      type: image
+      width: 640
+      height: 385
+      image: Anarchy-3.png
+displays:
+  default:
+    invisible: true
+    glow: false
+    distance: 75.0
+    world: lobby
+    direction: west
+    down: down
+    firstlocation:
+      x: 40.0
+      y: 94.0
+      z: -2.0
+    secondlocation:
+      x: 40.0
+      y: 96.0
+      z: 2.0
+internal:
+  pluginversion: '19.3'

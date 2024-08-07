@@ -1,0 +1,8 @@
+settings:
+  disable_player_file_saving: false
+  use_player_move_event: false
+  playerChunkUnload: false
+  mobAi: false
+  doLeafDecay: false
+  light-updates-max-ms-per-tick: 30
+License: ''

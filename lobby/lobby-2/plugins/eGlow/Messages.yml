@@ -2,7 +2,7 @@ main:
   prefix: '&e&leGlow&r '
   no-permission: '&cYou are not allowed to use this&f!'
   no-permission-join: '&cYou no longer have access to that glow effect&f!'
-  no-permission-glowonjoin: '&cYou don''t have permission to glow on join&f!'
+  no-permission-glowonjoin: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
   glow-new: ''
   glow-same: ''
   glow-enable: ''
