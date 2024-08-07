@@ -31,7 +31,7 @@ npc:
         age: 0
         locked: true
       spawned: true
-    traitnames: skintrait,inventory,owner,spawned,type,age,scoreboardtrait,location,mounttrait
+    traitnames: type,owner,location,skintrait,inventory,age,scoreboardtrait,mounttrait,spawned
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -65,7 +65,7 @@ npc:
         age: 0
         locked: true
       spawned: true
-    traitnames: skintrait,inventory,owner,spawned,type,scoreboardtrait,age,location,mounttrait
+    traitnames: type,owner,location,skintrait,inventory,scoreboardtrait,age,mounttrait,spawned
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -98,7 +98,7 @@ npc:
         age: 0
         locked: true
       spawned: true
-    traitnames: skintrait,inventory,owner,spawned,type,age,scoreboardtrait,location,mounttrait
+    traitnames: type,owner,location,skintrait,inventory,age,scoreboardtrait,mounttrait,spawned
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -132,7 +132,7 @@ npc:
         age: 0
         locked: true
       spawned: true
-    traitnames: skintrait,inventory,owner,spawned,type,age,scoreboardtrait,location,mounttrait
+    traitnames: type,owner,location,skintrait,inventory,age,scoreboardtrait,mounttrait,spawned
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -166,7 +166,7 @@ npc:
         age: 0
         locked: true
       spawned: true
-    traitnames: skintrait,inventory,owner,spawned,type,age,scoreboardtrait,location,mounttrait
+    traitnames: type,owner,location,skintrait,inventory,age,scoreboardtrait,mounttrait,spawned
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -200,7 +200,7 @@ npc:
         age: 0
         locked: true
       spawned: true
-    traitnames: skintrait,inventory,owner,spawned,type,scoreboardtrait,age,location,mounttrait
+    traitnames: type,owner,location,skintrait,inventory,scoreboardtrait,age,mounttrait,spawned
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -234,7 +234,7 @@ npc:
         age: 0
         locked: true
       spawned: true
-    traitnames: skintrait,inventory,owner,spawned,type,scoreboardtrait,age,location,mounttrait
+    traitnames: type,owner,location,skintrait,inventory,scoreboardtrait,age,mounttrait,spawned
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
