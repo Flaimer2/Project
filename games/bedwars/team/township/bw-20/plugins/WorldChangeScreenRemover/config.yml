@@ -1,0 +1,17 @@
+enableTitles: false
+TitleFadeIn-In-Seconds: 0.5
+TitleStay-In-Seconds: 5.0
+TitleFadeOut-In-Seconds: 0.5
+addEffect-Nausea: false
+addEffect-Blindness: false
+addEffect-Slowness: false
+Effect-Durration: 5.0
+Title: '&cYou are teleporting from world "%WCSR_To%"'
+SubTitle: '&aYou came from world "%WCSR_From%"'
+Enable-DELAYED-titles: false
+DELAYED-TitleFadeIn-In-Seconds: 0.5
+DELAYED-TitleStay-In-Seconds: 5.0
+DELAYED-TitleFadeOut-In-Seconds: 0.5
+DELAYED-Title: '&cThis is a delayed message'
+DELAYED-SubTitle: '&a In case other plugins interfere with the regular titles'
+DELAYED-delay-for-title-in-ticks: 20

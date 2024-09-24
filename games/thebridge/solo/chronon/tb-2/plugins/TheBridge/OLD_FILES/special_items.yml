@@ -1,0 +1,48 @@
+# Custom in-game lobby items.
+# Probably you will only translate displayname and lore so don't mess with it.
+#
+# Please don't modify 'Kit-Menu', 'Leave-Lobby', 'Leave-Spectator', 'Player-List' and 'Spectator-Options'
+# nodes as they are hardcoded in code!
+
+Leave-Lobby:
+  displayname: "&8★  &cВыйти в лобби &8★  &e&lПРАВЫЙ КЛИК"
+  lore:
+    - "&7Нажмите ПКМ, чтобы вернуться в лобби"
+  material-name: BED
+  slot: 8
+  stage: lobby
+
+Base-Selector:
+  displayname: "&8★  &6Выбор Команды &8★  &e&lПРАВЫЙ КЛИК"
+  lore:
+    "&7Нажмите ПКМ, чтобы открыть меню выбора команды"
+  material-name: NETHER_STAR
+  slot: 0
+  stage: lobby
+
+Leave-Spectator:
+  displayname: "&8★  &cВыйти в лобби &8★  &e&lПРАВЫЙ КЛИК"
+  lore:
+    - "&7Нажмите ПКМ, чтобы вернуться в лобби"
+  material-name: BED
+  slot: 8
+  stage: spectator
+
+Player-List:
+  displayname: "&8★  &aИгроки &8★  &e&lПРАВЫЙ КЛИК"
+  lore:
+    - "&7Нажмите ПКМ, для открытия меню игроков"
+  material-name: PLAYER_HEAD
+  slot: 0
+  stage: spectator
+
+Spectator-Options:
+  displayname: "&8★  &eНастройки наблюдателя &8★  &e&lПРАВЫЙ КЛИК"
+  lore:
+    - "&7Нажмите ПКМ, чтобы открыть настройки наблюдателя"
+  material-name: COMPASS
+  slot: 4
+  stage: spectator
+
+# Don't touch this
+Version: 1

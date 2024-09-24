@@ -1,0 +1,71 @@
+effects:
+  '1':
+    id: love
+    type: LOVE
+    price: 200
+    permission: false
+  '2':
+    id: tnt
+    type: TNT
+    price: 400
+    permission: false
+  '3':
+    id: egg_explosion
+    type: EGG_EXPLOSION
+    price: 600
+    permission: false
+  '4':
+    id: final_smash
+    type: FINAL_SMASH
+    price: 800
+    permission: false
+  '5':
+    id: head_rocket
+    type: HEAD_ROCKET
+    price: 1000
+    permission: false
+  '6':
+    id: cookie_fountain
+    type: COOKIE_FOUNTAIN
+    price: 1200
+    permission: false
+  '7':
+    id: blood
+    type: BLOOD
+    price: 1400
+    permission: false
+  '8':
+    id: ghost
+    type: GHOST
+    price: 1600
+    permission: false
+  '9':
+    id: creeper
+    type: CREEPER
+    price: 1800
+    permission: false
+  '10':
+    id: diamond
+    type: DIAMOND
+    price: 2000
+    permission: false
+  '11':
+    id: dyes
+    type: DYES
+    price: 2200
+    permission: true
+  '12':
+    id: flowers
+    type: FLOWERS
+    price: 2400
+    permission: true
+  '13':
+    id: rain
+    type: RAIN
+    price: 2600
+    permission: true
+  '14':
+    id: bunny_explosion
+    type: BUNNY_EXPLOSION
+    price: 2800
+    permission: true

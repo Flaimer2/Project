@@ -1,0 +1,91 @@
+effectPoints:
+  largeExplode:
+    amount: 9
+    particle: 'EXPLOSION_LARGE'
+    permission: 'snapithebridge.cosmetics.effect.largeExplode'
+    speed: 0.8
+  firework:
+    amount: 10
+    particle: 'FIREWORK'
+    permission: 'snapithebridge.cosmetics.effect.firework'
+    speed: 1
+  spell:
+    amount: 40
+    particle: 'SPELL'
+    permission: 'snapithebridge.cosmetics.effect.spell'
+    speed: 0.4
+  cloud:
+    amount: 20
+    particle: 'CLOUD'
+    permission: 'snapithebridge.cosmetics.effect.cloud'
+    speed: 0.7
+  lava:
+    amount: 40
+    particle: 'LAVA'
+    permission: 'snapithebridge.cosmetics.effect.lava'
+    speed: 0.5
+  flame:
+    amount: 40
+    particle: 'FLAME'
+    permission: 'snapithebridge.cosmetics.effect.flame'
+    speed: 0.4
+  snow:
+    amount: 30
+    particle: 'SNOW_SHOVEL'
+    permission: 'snapithebridge.cosmetics.effect.snow'
+    speed: 0.3
+  instant:
+    amount: 30
+    particle: 'SPELL_INSTANT'
+    permission: 'snapithebridge.cosmetics.effect.instant'
+    speed: 0.5
+pointMessage:
+  default:
+    message: '%base_color%%player% §fпрыгнул в портал команды %base_jumped%§f!'
+    permission: 'null'
+  banzai:
+    message: '%base_color%%player% §fбесстрашно проник к порталу команды %base_jumped%§fи прыгнул в него!'
+    permission: 'snapithebridge.cosmetics.message.banzai'
+  bouncer:
+    message: '§fУдар! %base_color%%player% §fпроникает к порталу команды %base_jumped%§f, и его невозможно остановить!'
+    permission: 'snapithebridge.cosmetics.message.bouncer'
+  daredevil:
+    message: '§fДержитесь за свои шляпы, %base_jumped% §fкоманда! %base_color%%player% §fтолько что совершил эпический прыжок в ваш портал!'
+    permission: 'snapithebridge.cosmetics.message.daredevil'
+  superman:
+    message: '§fЭто птица, это самолет... Нет, это %base_color%%player% §fлетит прямо в портал команды %base_jumped%§f!'
+    permission: 'snapithebridge.cosmetics.message.superman'
+  interdimensional:
+    message: '§fВжик! %base_color%%player% §fтолько что проскользнул через разлом и попал прямо в портал команды %base_jumped%§f!'
+    permission: 'snapithebridge.cosmetics.message.interdimensional'
+  pirate:
+    message: '§fРазрази меня гром! %base_color%%player% §fтолько что совершил набег на портал команды %base_jumped%§f!'
+    permission: 'snapithebridge.cosmetics.message.pirate'
+soundPoints:
+  anvilBreak:
+    permission: 'snapithebridge.cosmetics.sound.anviluse'
+    sound: 'ANVIL_USE'
+  LevelUP:
+    permission: 'snapithebridge.cosmetics.sound.levelup'
+    sound: 'LEVEL_UP'
+  EndermanIdle:
+    permission: 'snapithebridge.cosmetics.sound.endermanidle'
+    sound: 'ENDERMAN_IDLE'
+  EndermanTP:
+    permission: 'snapithebridge.cosmetics.sound.endermantp'
+    sound: 'ENDERMAN_TELEPORT'
+  EnderdragonWings:
+    permission: 'snapithebridge.cosmetics.sound.enderdragongrowl'
+    sound: 'ENDERDRAGON_GROWL'
+  blazeBreath:
+    permission: 'snapithebridge.cosmetics.sound.blazebreath'
+    sound: 'BLAZE_BREATH'
+  fireworkTwinkle:
+    permission: 'snapithebridge.cosmetics.sound.fireworkTwinkle'
+    sound: 'FIREWORK_TWINKLE'
+  fireworkLaunch:
+    permission: 'snapithebridge.cosmetics.sound.fireworklaunch'
+    sound: 'FIREWORK_LAUNCH'
+  villagerYes:
+    permission: 'snapithebridge.cosmetics.sound.villageryes'
+    sound: 'VILLAGER_YES'

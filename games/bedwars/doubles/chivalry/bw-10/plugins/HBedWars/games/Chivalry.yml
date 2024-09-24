@@ -1,0 +1,118 @@
+settings:
+  name: Chivalry
+  displayname: Chivalry
+  min_players: 12
+  group: doubles
+  island_radius: 25
+  respawn_protection: 5
+  max_build_height: 90
+  border: 150
+  locations:
+    waiting: wait;1000.5;43.8125;0.5;0.0;-0.3
+    spectator: Chivalry;0.5;100.0;0.5;0.0;0.0
+    generator:
+      diamond:
+      - Chivalry;-44.0;72.0;-44.0;0.0;0.0
+      - Chivalry;44.0;72.0;-44.0;0.0;0.0
+      - Chivalry;44.0;72.0;44.0;0.0;0.0
+      - Chivalry;-44.0;72.0;44.0;0.0;0.0
+      coal: []
+      emerald:
+      - Chivalry;-46.0;68.0;0.0;0.0;0.0
+      - Chivalry;0.0;68.0;-46.0;0.0;0.0
+      - Chivalry;46.0;68.0;0.0;0.0;0.0
+      - Chivalry;0.0;68.0;46.0;0.0;0.0
+votes:
+  enabled: false
+  shop: default
+  health: default
+  time: day
+team_settings:
+  PINK:
+    identifier: 7
+    respawn: Chivalry;32.5;71.0625;-85.5;0.0;-0.15
+    upgrades: Chivalry;29.5;71.0;-86.5;0.0;-90.0
+    shop: Chivalry;35.5;71.0;-86.5;0.0;90.0
+    chest: Chivalry;34.0;71.0;-84.0;0.0;0.0
+    generator: Chivalry;32.0;70.0;-90.0;0.0;0.0
+    topper: Chivalry;32.5;100.0;-85.5;0.0;0.0
+    bed_locations:
+    - Chivalry;32.0;70.0;-78.0;0.0;0.0
+    - Chivalry;32.0;70.0;-77.0;0.0;0.0
+  GRAY:
+    identifier: 8
+    respawn: Chivalry;-31.5;71.0625;-85.5;0.0;0.45000002
+    upgrades: Chivalry;-34.5;71.0;-86.5;0.15;-90.0
+    shop: Chivalry;-28.5;71.0;-86.5;0.15;90.0
+    chest: Chivalry;-30.0;71.0;-84.0;0.0;0.0
+    generator: Chivalry;-32.0;70.0;-90.0;0.0;0.0
+    topper: Chivalry;-31.5;100.0;-85.5;0.0;0.0
+    bed_locations:
+    - Chivalry;-32.0;70.0;-78.0;0.0;0.0
+    - Chivalry;-32.0;70.0;-77.0;0.0;0.0
+  BLUE:
+    identifier: 2
+    respawn: Chivalry;86.5;71.0625;32.5;0.0;90.0
+    upgrades: Chivalry;87.5;71.0;29.5;0.0;0.0
+    shop: Chivalry;87.5;71.0;35.5;-0.15;179.7
+    chest: Chivalry;84.0;71.0;34.0;0.0;0.0
+    generator: Chivalry;90.0;70.0;32.0;0.0;0.0
+    topper: Chivalry;86.5;100.0;32.5;0.0;90.0
+    bed_locations:
+    - Chivalry;78.0;70.0;32.0;0.0;0.0
+    - Chivalry;77.0;70.0;32.0;0.0;0.0
+  WHITE:
+    identifier: 6
+    respawn: Chivalry;-85.5;71.0625;32.5;0.0;-90.0
+    upgrades: Chivalry;-86.5;71.0;35.5;0.0;180.0
+    shop: Chivalry;-86.5;71.0;29.5;0.0;0.0
+    chest: Chivalry;-84.0;71.0;30.0;0.0;0.0
+    generator: Chivalry;-90.0;70.0;32.0;0.0;0.0
+    topper: Chivalry;-85.5;100.0;32.5;0.0;-90.0
+    bed_locations:
+    - Chivalry;-78.0;70.0;32.0;0.0;0.0
+    - Chivalry;-77.0;70.0;32.0;0.0;0.0
+  YELLOW:
+    identifier: 4
+    respawn: Chivalry;32.5;71.0625;86.5;0.0;180.0
+    upgrades: Chivalry;35.5;71.0;87.5;0.0;90.0
+    shop: Chivalry;29.5;71.0;87.5;0.0;-90.0
+    chest: Chivalry;30.0;71.0;84.0;0.0;0.0
+    generator: Chivalry;32.0;70.0;90.0;0.0;0.0
+    topper: Chivalry;32.5;100.0;86.5;0.0;180.0
+    bed_locations:
+    - Chivalry;32.0;70.0;78.0;0.0;0.0
+    - Chivalry;32.0;70.0;77.0;0.0;0.0
+  AQUA:
+    identifier: 5
+    respawn: Chivalry;-85.5;71.0625;-31.5;0.0;-90.0
+    upgrades: Chivalry;-86.5;71.0;-28.5;0.0;180.0
+    shop: Chivalry;-86.5;71.0;-34.5;0.0;0.0
+    chest: Chivalry;-84.0;71.0;-34.0;0.0;0.0
+    generator: Chivalry;-90.0;70.0;-32.0;0.0;0.0
+    topper: Chivalry;-85.5;100.0;-31.5;0.0;-90.0
+    bed_locations:
+    - Chivalry;-78.0;70.0;-32.0;0.0;0.0
+    - Chivalry;-77.0;70.0;-32.0;0.0;0.0
+  GREEN:
+    identifier: 3
+    respawn: Chivalry;-31.5;71.0625;86.5;0.0;180.0
+    upgrades: Chivalry;-28.5;71.0;87.5;0.15;89.85
+    shop: Chivalry;-34.5;71.0;87.5;0.0;-90.0
+    chest: Chivalry;-34.0;71.0;84.0;0.0;0.0
+    generator: Chivalry;-32.0;70.0;90.0;0.0;0.0
+    topper: Chivalry;-31.5;100.0;86.5;0.0;180.0
+    bed_locations:
+    - Chivalry;-32.0;70.0;78.0;0.0;0.0
+    - Chivalry;-32.0;70.0;77.0;0.0;0.0
+  RED:
+    identifier: 1
+    respawn: Chivalry;86.5;71.0625;-31.5;0.0;90.0
+    upgrades: Chivalry;87.5;71.0;-34.5;0.0;0.0
+    shop: Chivalry;87.5;71.0;-28.5;0.0;180.0
+    chest: Chivalry;84.0;71.0;-30.0;0.0;0.0
+    generator: Chivalry;90.0;70.0;-32.0;0.0;0.0
+    topper: Chivalry;86.5;100.0;-31.5;0.0;90.0
+    bed_locations:
+    - Chivalry;78.0;70.0;-32.0;0.0;0.0
+    - Chivalry;77.0;70.0;-32.0;0.0;0.0

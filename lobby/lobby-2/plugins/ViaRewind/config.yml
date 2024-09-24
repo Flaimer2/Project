@@ -33,7 +33,7 @@ always-show-original-mob-name: true
 world-border-particle: fireworksSpark
 #
 # If enabled, 1.8 players on 1.9+ servers can use /offhand to switch items between their main hand and offhand.
-enable-offhand: true
+enable-offhand: false
 #
 # Allows defining the offhand command
 offhand-command: /offhand

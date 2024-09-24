@@ -9,7 +9,7 @@
 #----------------------------------------------------------#
 #
 # Should ViaVersion check for updates?
-check-for-updates: true
+check-for-updates: false
 # Send the supported versions with the Status (Ping) response packet
 send-supported-versions: false
 # Easier to configure alternative to 'block-protocols'. Uses readable version strings with possible '<' and '>' prefixes.
@@ -154,7 +154,7 @@ auto-team: true
 # When enabled if certain metadata can't be read, we won't tell you about it
 suppress-metadata-errors: false
 # When enabled, 1.9+ will be able to block by using shields
-shield-blocking: true
+shield-blocking: false
 # If this setting is active, the main hand is used instead of the off-hand to trigger the blocking of the player.
 # With the main hand, the blocking starts way faster.
 # (Requires "show-shield-when-sword-in-hand" to be disabled)

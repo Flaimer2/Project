@@ -53,7 +53,7 @@ npc:
         lines:
           '0': '&aНажмите, чтобы открыть меню'
           '1': '&d&lЧародей'
-    traitnames: age,location,hologramtrait,spawned,mounttrait,type,scoreboardtrait,skintrait,owner,commandtrait,inventory
+    traitnames: scoreboardtrait,skintrait,hologramtrait,commandtrait,spawned,inventory,age,type,owner,location,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -90,7 +90,7 @@ npc:
           '0': '&aЖдите в следующем сезоне!'
           '1': '&fУ вас &6&lОбычный &fуровень'
           '2': '&b&lSnapi&b&lPass'
-    traitnames: age,location,hologramtrait,spawned,mounttrait,type,skintrait,scoreboardtrait,owner,inventory
+    traitnames: skintrait,scoreboardtrait,hologramtrait,spawned,inventory,age,type,owner,location,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -150,7 +150,7 @@ npc:
         lines:
           '0': '&aНажмите, чтобы открыть меню'
           '1': '&9&lАукционер'
-    traitnames: age,location,spawned,hologramtrait,mounttrait,type,skintrait,scoreboardtrait,owner,commandtrait,inventory
+    traitnames: skintrait,scoreboardtrait,hologramtrait,commandtrait,spawned,inventory,age,type,owner,location,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -206,7 +206,7 @@ npc:
         lines:
           '0': '&aНажмите, чтобы открыть меню'
           '1': '&e&lПродавец'
-    traitnames: age,location,spawned,hologramtrait,mounttrait,type,scoreboardtrait,skintrait,owner,commandtrait,inventory
+    traitnames: scoreboardtrait,skintrait,hologramtrait,spawned,commandtrait,inventory,age,type,owner,location,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -263,7 +263,7 @@ npc:
           '0': '&aНажмите, чтобы открыть меню'
           '1': '&fИли напишите &b/warps'
           '2': '&c&lВарпы'
-    traitnames: age,location,spawned,hologramtrait,mounttrait,type,skintrait,scoreboardtrait,owner,commandtrait,inventory
+    traitnames: skintrait,scoreboardtrait,hologramtrait,commandtrait,spawned,inventory,age,type,owner,location,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -319,7 +319,7 @@ npc:
       spawned: true
       owner:
         uuid: b8a47f4c-108e-33dd-a551-34497268b20f
-    traitnames: age,location,hologramtrait,spawned,mounttrait,type,scoreboardtrait,skintrait,owner,commandtrait,inventory
+    traitnames: scoreboardtrait,skintrait,hologramtrait,commandtrait,spawned,inventory,age,type,owner,location,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false

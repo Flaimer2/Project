@@ -1,0 +1,248 @@
+# This is the main configuration file for Spigot.
+# As you can see, there's tons to configure. Some options may impact gameplay, so use
+# with caution, and make sure you know what each option does before configuring.
+# For a reference for any variable inside this file, check out the Spigot wiki at
+# http://www.spigotmc.org/wiki/spigot-configuration/
+# 
+# If you need help with the configuration or have any questions related to Spigot,
+# join us at the IRC or drop by our forums and leave a post.
+# 
+# IRC: #spigot @ irc.spi.gt ( http://www.spigotmc.org/pages/irc/ )
+# Forums: http://www.spigotmc.org/
+
+config-version: 8
+settings:
+  debug: false
+  save-user-cache-on-stop-only: false
+  netty-threads: 4
+  attribute:
+    maxHealth:
+      max: 2048.0
+    movementSpeed:
+      max: 2048.0
+    attackDamage:
+      max: 2048.0
+  moved-wrongly-threshold: 0.0625
+  moved-too-quickly-threshold: 100.0
+  filter-creative-items: true
+  timeout-time: 60
+  restart-on-crash: true
+  restart-script: ./start.sh
+  sample-count: 12
+  late-bind: false
+  bungeecord: true
+  player-shuffle: 0
+  user-cache-size: 1000
+  int-cache-limit: 1024
+  limit-player-interactions: true
+  baby-zombie-movement-speed: 0.5
+  moved-too-quickly-multiplier: 10.0
+  item-dirty-ticks: 20
+messages:
+  whitelist: §c§lМы проводим технические работы!§r
+  unknown-command: §cНеизвестная команда!
+  server-full: §сСервер переполнен!
+  outdated-client: §7Устаревший клиент
+  outdated-server: §7Устаревший сервер
+  restart: §aСервер перезагружается
+timings:
+  enabled: true
+  verbose: true
+  server-name-privacy: false
+  hidden-config-entries:
+  - database
+  - settings.bungeecord-addresses
+  history-interval: 300
+  history-length: 3600
+commands:
+  tab-complete: 0
+  silent-commandblock-console: false
+  replace-commands:
+  - setblock
+  - summon
+  - testforblock
+  - tellraw
+  log: true
+  spam-exclusions:
+  - /skill
+stats:
+  disable-saving: false
+  forced-stats:
+    achievement:
+      openInventory: 1
+      diamonds: 1
+world-settings:
+  default:
+    verbose: true
+    zombie-aggressive-towards-villager: true
+    merge-radius:
+      item: 4.0
+      exp: 6.0
+    item-despawn-rate: 6000
+    view-distance: 10
+    arrow-despawn-rate: 300
+    enable-zombie-pigmen-portal-spawns: true
+    wither-spawn-sound-radius: 0
+    hanging-tick-frequency: 100
+    chunks-per-tick: 650
+    clear-tick-list: false
+    dragon-death-sound-radius: 0
+    nerf-spawner-mobs: false
+    mob-spawn-range: 4
+    anti-xray:
+      enabled: false
+      engine-mode: 1
+      hide-blocks:
+      - 14
+      - 15
+      - 16
+      - 21
+      - 48
+      - 49
+      - 54
+      - 56
+      - 73
+      - 74
+      - 82
+      - 129
+      - 130
+      replace-blocks:
+      - 1
+      - 5
+    max-entity-collisions: 8
+    ticks-per:
+      hopper-transfer: 8
+      hopper-check: 1
+    hopper-amount: 1
+    hunger:
+      walk-exhaustion: 0.2
+      sprint-exhaustion: 0.8
+      combat-exhaustion: 0.1
+      regen-exhaustion: 6.0
+      jump-walk-exhaustion: 0.05
+      jump-sprint-exhaustion: 0.2
+      swim-multiplier: 0.01
+      sprint-multiplier: 0.1
+      other-multiplier: 0.0
+    entity-tracking-range:
+      players: 56
+      animals: 48
+      monsters: 48
+      misc: 32
+      other: 64
+    max-tick-time:
+      tile: 50
+      entity: 50
+    seed-village: 10387312
+    seed-feature: 14357617
+    growth:
+      cactus-modifier: 100
+      cane-modifier: 100
+      melon-modifier: 100
+      mushroom-modifier: 100
+      pumpkin-modifier: 100
+      sapling-modifier: 100
+      wheat-modifier: 100
+      netherwart-modifier: 100
+      vine-modifier: 100
+      cocoa-modifier: 100
+    entity-activation-range:
+      animals: 16
+      monsters: 16
+      misc: 12
+      water: 12
+      tick-inactive-villagers: true
+    max-bulk-chunks: 10
+    max-tnt-per-tick: 100
+    random-light-updates: false
+    save-structure-info: true
+    fix-cannons: false
+    disable-explosion-knockback: false
+    allow-undead-horse-leashing: false
+    generator-settings:
+      canyon: true
+      caves: true
+      dungeon: true
+      fortress: true
+      mineshaft: true
+      monument: true
+      stronghold: true
+      temple: true
+      village: true
+      flat-bedrock: false
+    tnt-entity-height-nerf: 0
+    water-over-lava-flow-speed: 5
+    allow-block-location-tab-completion: true
+    remove-invalid-mob-spawner-tile-entities: true
+    player-blocking-damage-multiplier: 0.5
+    nether-ceiling-void-damage: false
+    falling-block-height-nerf: 0
+    game-mechanics:
+      disable-end-credits: false
+      boats-drop-boats: false
+      disable-player-crits: false
+      disable-chest-cat-detection: false
+    keep-spawn-loaded: true
+    use-async-lighting: false
+    disable-mood-sounds: false
+    disable-thunder: false
+    tick-next-tick-list-cap: 10000
+    tick-next-tick-list-cap-ignores-redstone: false
+    disable-ice-and-snow: false
+    portal-search-radius: 128
+    container-update-tick-rate: 1
+    falling-blocks-collide-with-signs: false
+    use-hopper-check: false
+    all-chunks-are-slime-chunks: false
+    cache-chunk-maps: false
+    remove-unloaded:
+      enderpearls: true
+      tnt-entities: true
+      falling-blocks: true
+    max-growth-height:
+      cactus: 3
+      reeds: 3
+    tnt-explosion-volume: 4.0
+    fishing-time-range:
+      MinimumTicks: 100
+      MaximumTicks: 900
+    mob-spawner-tick-rate: 1
+    player-exhaustion:
+      block-break: 0.02500000037252903
+      swimming: 0.014999999664723873
+    despawn-ranges:
+      soft: 32
+      hard: 128
+    load-chunks:
+      enderpearls: false
+      tnt-entities: false
+      falling-blocks: false
+    fast-drain:
+      lava: false
+      water: false
+    optimize-explosions: false
+    squid-spawn-height:
+      minimum: 45.0
+      maximum: 63.0
+    lava-flow-speed:
+      normal: 30
+      nether: 10
+    disable-teleportation-suffocation-check: false
+    seed-monument: 10387313
+    seed-slime: 987234911
+    squid-spawn-range:
+      min: 45.0
+effect-modifiers:
+  strength: 1.3
+  weakness: -0.5
+stackable-buckets:
+  lava: false
+  water: false
+  milk: false
+warnWhenSettingExcessiveVelocity: true
+data-value-allowed-items: []
+advancements:
+  disable-saving: true
+  disabled:
+  - minecraft:story/disabled
+  - '*'

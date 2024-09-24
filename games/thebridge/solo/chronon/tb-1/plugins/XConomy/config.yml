@@ -1,0 +1,42 @@
+UUID-mode: Default
+Importdata-mode: false
+Settings:
+  language: Russian
+  check-update: false
+  refresh-time: 300
+  eco-command: false
+  disable-essentials: true
+  initial-bal: 0
+  payment-tax: 0
+  ranking-size: 10
+  lines-per-page: 5
+  disable-cache: false
+  transaction-record: true
+  offline-pay-transfer-tips: false
+  username-ignore-case: true
+non-player-account:
+  enable: false
+  whitelist:
+    enable: false
+    fields-list:
+    - tax
+    - nation-
+Currency:
+  singular-name: $
+  plural-name: $
+  integer-bal: true
+  thousands-separator: ''
+  display-format: '%balance%$'
+  max-number: '10000000000000000'
+  format-balance:
+    '1000': k
+    '1000000': m
+  rounding-mode: 0
+SyncData:
+  enable: true
+  channel-type: Redis
+  sign: aa
+Region-Thread:
+  world: world
+  range-x: 1024
+  range-y: 1024

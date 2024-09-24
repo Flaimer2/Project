@@ -1,0 +1,7 @@
+_DEFAULT_:
+  tabprefix: "%luckperms-prefix%"
+  tagprefix: ""
+  tabsuffix: ""
+  tagsuffix: ""
+
+per-world: {}

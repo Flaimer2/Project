@@ -1,0 +1,97 @@
+# 
+# Don't edit it. But who's stopping you? It's your server!
+# Really, don't edit ;p
+# You edited it, huh? Next time hurt yourself!
+instances:
+  Cathedral:
+    lobbylocation: Game,-27.5,19.0,61.5,0.0,0.0
+    startlocation: Game,-28.0,20.0,104.0,0.0,0.0
+    endlocation: Game,-27.5,19.0,61.5,0.0,0.0
+    minimumplayers: 8
+    maximumplayers: 12
+    mapname: Cathedral
+    world: Game
+    signs: []
+    isdone: true
+    hidechances: false
+    playerspawnpoints:
+    - Game,-27.5,18.0,29.5
+    - Game,-52.5,18.0,48.5
+    - Game,-87.5,8.0,49.5
+    - Game,-94.5,8.0,96.5
+    - Game,-84.5,7.0,120.5
+    - Game,-57.5,8.0,97.5
+    - Game,-49.5,8.0,86.5
+    - Game,-37.5,8.0,94.5
+    - Game,-27.5,7.0,92.5
+    - Game,-17.5,8.0,91.5
+    - Game,-3.5,8.0,76.5
+    - Game,-27.5,20.0,106.5
+    - Game,-9.5,19.0,92.5
+    - Game,-36.5,33.0,53.5
+    - Game,-18.5,33.0,53.5
+    - Game,-27.5,14.0,107.5
+    - Game,-79.5,8.0,65.5
+    goldspawnpoints:
+    - Game,-28.5,18.0,26.5
+    - Game,-18.5,18.0,34.5
+    - Game,-41.5,18.0,40.5
+    - Game,-52.5,18.0,49.5
+    - Game,-44.5,19.0,62.5
+    - Game,-47.5,19.0,80.5
+    - Game,-41.5,20.0,88.5
+    - Game,-35.5,19.0,96.5
+    - Game,-24.5,20.0,106.5
+    - Game,-26.5,19.0,94.5
+    - Game,-18.5,19.0,98.5
+    - Game,-20.5,19.0,75.5
+    - Game,-11.5,19.0,95.5
+    - Game,-7.5,19.0,80.5
+    - Game,-13.5,20.0,69.5
+    - Game,-9.5,19.0,58.5
+    - Game,-11.5,18.0,45.5
+    - Game,-5.5,18.0,53.5
+    - Game,-28.5,19.0,55.5
+    - Game,-35.5,19.0,61.5
+    - Game,-73.5,8.0,48.5
+    - Game,-85.5,8.0,42.5
+    - Game,-85.5,8.0,60.5
+    - Game,-87.5,7.0,78.5
+    - Game,-75.5,8.0,66.5
+    - Game,-93.5,8.0,98.5
+    - Game,-84.5,8.0,111.5
+    - Game,-83.5,7.0,122.5
+    - Game,-67.5,8.0,104.5
+    - Game,-54.5,8.0,96.5
+    - Game,-44.5,8.0,85.5
+    - Game,-47.5,8.0,70.5
+    - Game,-36.5,8.0,65.5
+    - Game,-26.5,8.0,74.5
+    - Game,-29.5,7.0,82.5
+    - Game,-22.5,8.0,96.5
+    - Game,-7.5,8.0,97.5
+    - Game,-3.5,8.0,87.5
+    - Game,-8.5,8.0,62.5
+    - Game,-60.5,19.0,95.5
+    - Game,-65.5,14.0,83.5
+    - Game,-69.5,9.0,77.5
+    - Game,-78.5,12.0,101.5
+    - Game,-37.5,33.0,100.5
+    - Game,-35.5,33.0,73.5
+    - Game,-38.5,33.0,50.5
+    - Game,-17.5,33.0,57.5
+    - Game,-19.5,33.0,94.5
+    - Game,-16.5,33.0,109.5
+    - Game,-17.5,14.0,108.5
+    mystery-cauldrons:
+    - Game,-28.0,20.0,109.0
+    - Game,-58.0,8.0,94.0
+    - Game,-28.0,18.0,21.0
+    playerpermurderer: 1
+    playerperdetective: 1
+    goldvisuals: false
+    spectatorlocation: Game,-27.5,25.0,61.5,0.0,0.0
+    spawngoldtime: 5
+Do-Not-Edit:
+  File-Version: 1
+  Core-Version: 1

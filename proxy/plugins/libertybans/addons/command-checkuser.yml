@@ -1,0 +1,15 @@
+no-permission: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+punishment-does-not-exist: '&fУ этого игрока &cнет &fактивных наказаний!'
+layout:
+  - ''
+  - '  &b&lАктивное наказание игрока'
+  - ''
+  - '  &fТип: &a%TYPE%&f'
+  - '  &fВыдал наказание: &a%OPERATOR%&f'
+  - '  &fОставшееся время: &a%TIME_REMAINING%'
+  - '  &fПричина: &a%REASON%&f'
+  - ''
+usage: '&fИспользуйте: &a/libertybans checkuser игрок'
+player-does-not-exist: '&fТакого игрока &cне существует'
+ # Whether to enable this addon at all
+enable: true

@@ -1,0 +1,4 @@
+host: 'localhost:3306'
+database: 'server_global'
+password: 'root'
+username: 'root'

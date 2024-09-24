@@ -1,0 +1,118 @@
+settings:
+  name: Jellyfish
+  displayname: Jellyfish
+  min_players: 12
+  group: doubles
+  island_radius: 25
+  respawn_protection: 5
+  max_build_height: 90
+  border: 150
+  locations:
+    waiting: wait;1000.5;43.8125;0.5;0.0;0.0
+    spectator: Jellyfish;0.5;100.0;0.5;0.0;0.0
+    generator:
+      diamond:
+      - Jellyfish;40.0;69.0;-40.0;0.0;0.0
+      - Jellyfish;40.0;69.0;40.0;0.0;0.0
+      - Jellyfish;-40.0;69.0;40.0;0.0;0.0
+      - Jellyfish;-40.0;69.0;-40.0;0.0;0.0
+      coal: []
+      emerald:
+      - Jellyfish;0.0;66.0;-40.0;0.0;0.0
+      - Jellyfish;40.0;66.0;0.0;0.0;0.0
+      - Jellyfish;0.0;66.0;40.0;0.0;0.0
+      - Jellyfish;-40.0;66.0;0.0;0.0;0.0
+votes:
+  enabled: false
+  shop: default
+  health: default
+  time: day
+team_settings:
+  YELLOW:
+    identifier: 4
+    respawn: Jellyfish;85.5;70.0625;-39.5;0.0;90.0
+    upgrades: Jellyfish;87.0;70.0;-43.5;0.0;0.0
+    shop: Jellyfish;87.0;70.0;-35.5;0.0;180.0
+    chest: Jellyfish;84.0;70.0;-37.0;0.0;0.0
+    generator: Jellyfish;91.0;69.0;-40.0;0.0;0.0
+    topper: Jellyfish;85.5;110.0;-39.5;0.0;90.0
+    bed_locations:
+    - Jellyfish;97.0;72.0;-40.0;0.0;0.0
+    - Jellyfish;96.0;72.0;-40.0;0.0;0.0
+  PINK:
+    identifier: 7
+    respawn: Jellyfish;-84.5;70.0625;-39.5;0.0;-90.0
+    upgrades: Jellyfish;-86.0;70.0;-35.5;0.0;180.0
+    shop: Jellyfish;-86.0;70.0;-43.5;0.0;0.0
+    chest: Jellyfish;-84.0;70.0;-43.0;0.0;0.0
+    generator: Jellyfish;-91.0;69.0;-40.0;0.0;0.0
+    topper: Jellyfish;-84.5;110.0;-39.5;0.0;-90.0
+    bed_locations:
+    - Jellyfish;-97.0;72.0;-40.0;0.0;0.0
+    - Jellyfish;-96.0;72.0;-40.0;0.0;0.0
+  GRAY:
+    identifier: 8
+    respawn: Jellyfish;-84.5;70.0625;40.5;0.0;-90.0
+    upgrades: Jellyfish;-86.0;70.0;44.5;0.0;179.7
+    shop: Jellyfish;-86.0;70.0;36.5;0.0;0.0
+    chest: Jellyfish;-84.0;70.0;37.0;0.0;0.0
+    generator: Jellyfish;-91.0;69.0;40.0;0.0;0.0
+    topper: Jellyfish;-84.5;110.0;40.5;0.0;-90.0
+    bed_locations:
+    - Jellyfish;-97.0;72.0;40.0;0.0;0.0
+    - Jellyfish;-96.0;72.0;40.0;0.0;0.0
+  WHITE:
+    identifier: 6
+    respawn: Jellyfish;40.5;70.0625;85.5;0.0;180.0
+    upgrades: Jellyfish;44.5;70.0;87.0;0.0;90.0
+    shop: Jellyfish;36.5;70.0;87.0;0.0;-90.0
+    chest: Jellyfish;37.0;70.0;84.0;0.0;0.0
+    generator: Jellyfish;40.0;69.0;91.0;0.0;0.0
+    topper: Jellyfish;40.5;110.0;85.5;-0.3;180.0
+    bed_locations:
+    - Jellyfish;40.0;72.0;97.0;0.0;0.0
+    - Jellyfish;40.0;72.0;96.0;0.0;0.0
+  AQUA:
+    identifier: 5
+    respawn: Jellyfish;-39.5;70.0625;85.5;0.0;180.0
+    upgrades: Jellyfish;-35.5;70.0;87.0;0.0;90.0
+    shop: Jellyfish;-43.5;70.0;87.0;0.0;-90.0
+    chest: Jellyfish;-43.0;70.0;84.0;0.0;0.0
+    generator: Jellyfish;-40.0;69.0;91.0;0.0;0.0
+    topper: Jellyfish;-39.5;110.0;85.5;0.0;180.0
+    bed_locations:
+    - Jellyfish;-40.0;72.0;97.0;0.0;0.0
+    - Jellyfish;-40.0;72.0;96.0;0.0;0.0
+  RED:
+    identifier: 1
+    respawn: Jellyfish;-39.5;70.0625;-84.5;0.0;0.0
+    upgrades: Jellyfish;-43.5;70.0;-86.0;0.0;-90.0
+    shop: Jellyfish;-35.5;70.0;-86.0;0.0;90.0
+    chest: Jellyfish;-37.0;70.0;-84.0;0.0;0.0
+    generator: Jellyfish;-40.0;69.0;-91.0;0.0;0.0
+    topper: Jellyfish;-39.5;110.0;-84.5;0.0;0.0
+    bed_locations:
+    - Jellyfish;-40.0;72.0;-97.0;0.0;0.0
+    - Jellyfish;-40.0;72.0;-96.0;0.0;0.0
+  GREEN:
+    identifier: 3
+    respawn: Jellyfish;85.5;70.0625;40.5;0.0;90.0
+    upgrades: Jellyfish;87.0;70.0;36.5;0.0;0.0
+    shop: Jellyfish;87.0;70.0;44.5;0.3;179.85
+    chest: Jellyfish;84.0;70.0;43.0;0.0;0.0
+    generator: Jellyfish;91.0;69.0;40.0;0.0;0.0
+    topper: Jellyfish;85.5;110.0;40.5;0.0;90.0
+    bed_locations:
+    - Jellyfish;97.0;72.0;40.0;0.0;0.0
+    - Jellyfish;96.0;72.0;40.0;0.0;0.0
+  BLUE:
+    identifier: 2
+    respawn: Jellyfish;40.5;70.0625;-84.5;0.0;0.0
+    upgrades: Jellyfish;36.5;70.0;-86.0;0.0;-90.0
+    shop: Jellyfish;44.5;70.0;-86.0;0.0;90.0
+    chest: Jellyfish;43.0;70.0;-84.0;0.0;0.0
+    generator: Jellyfish;40.0;69.0;-91.0;0.0;0.0
+    topper: Jellyfish;40.5;110.0;-84.5;0.0;0.0
+    bed_locations:
+    - Jellyfish;40.0;72.0;-97.0;0.0;0.0
+    - Jellyfish;40.0;72.0;-96.0;0.0;0.0

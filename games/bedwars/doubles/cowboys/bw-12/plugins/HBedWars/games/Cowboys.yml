@@ -1,0 +1,118 @@
+settings:
+  name: Cowboys
+  displayname: Cowboys
+  min_players: 12
+  group: doubles
+  island_radius: 25
+  respawn_protection: 5
+  max_build_height: 90
+  border: 150
+  locations:
+    waiting: wait;1000.5;43.8125;0.5;0.0;0.0
+    spectator: Cowboys;0.5;110.0;0.5;0.0;0.0
+    generator:
+      diamond:
+      - Cowboys;-35.0;68.0;-35.0;0.0;0.0
+      - Cowboys;35.0;68.0;-35.0;0.0;0.0
+      - Cowboys;35.0;68.0;35.0;0.0;0.0
+      - Cowboys;-35.0;68.0;35.0;0.0;0.0
+      coal: []
+      emerald:
+      - Cowboys;-40.0;68.0;0.0;0.0;0.0
+      - Cowboys;0.0;68.0;-40.0;0.0;0.0
+      - Cowboys;40.0;68.0;0.0;0.0;0.0
+      - Cowboys;0.0;68.0;40.0;0.0;0.0
+votes:
+  enabled: false
+  shop: default
+  health: default
+  time: day
+team_settings:
+  AQUA:
+    identifier: 5
+    respawn: Cowboys;-33.5;72.0625;99.5;0.0;180.0
+    upgrades: Cowboys;-37.0;72.0;95.5;0.0;0.0
+    shop: Cowboys;-30.0;72.0;95.5;0.0;0.0
+    chest: Cowboys;-32.0;72.0;103.0;0.0;0.0
+    generator: Cowboys;-34.0;71.0;105.0;0.0;0.0
+    topper: Cowboys;-33.5;100.0;99.5;0.0;180.0
+    bed_locations:
+    - Cowboys;-26.0;71.0;99.0;0.0;0.0
+    - Cowboys;-26.0;71.0;98.0;0.0;0.0
+  RED:
+    identifier: 1
+    respawn: Cowboys;-33.5;72.0625;-98.5;0.0;0.0
+    upgrades: Cowboys;-37.0;72.0;-94.5;-1.3500166;180.0
+    shop: Cowboys;-30.0;72.0;-94.5;0.0;180.0
+    chest: Cowboys;-32.0;72.0;-103.0;0.0;0.0
+    generator: Cowboys;-34.0;71.0;-105.0;0.0;0.0
+    topper: Cowboys;-33.5;100.0;-98.5;0.0;0.0
+    bed_locations:
+    - Cowboys;-26.0;71.0;-98.0;0.0;0.0
+    - Cowboys;-26.0;71.0;-99.0;0.0;0.0
+  WHITE:
+    identifier: 6
+    respawn: Cowboys;34.5;72.0625;99.5;0.0;180.0
+    upgrades: Cowboys;38.0;72.0;95.5;0.0;0.0
+    shop: Cowboys;31.0;72.0;95.5;0.0;0.0
+    chest: Cowboys;32.0;72.0;103.0;0.0;0.0
+    generator: Cowboys;34.0;71.0;105.0;0.0;0.0
+    topper: Cowboys;34.5;100.0;99.5;0.0;180.0
+    bed_locations:
+    - Cowboys;26.0;71.0;99.0;0.0;0.0
+    - Cowboys;26.0;71.0;98.0;0.0;0.0
+  GREEN:
+    identifier: 3
+    respawn: Cowboys;99.5;72.0625;34.5;0.0;90.15
+    upgrades: Cowboys;95.5;72.0;38.0;0.0;-90.0
+    shop: Cowboys;95.5;72.0;31.0;0.0;-90.0
+    chest: Cowboys;103.0;72.0;32.0;0.0;0.0
+    generator: Cowboys;105.0;71.0;34.0;0.0;0.0
+    topper: Cowboys;99.5;100.0;34.5;0.0;90.0
+    bed_locations:
+    - Cowboys;99.0;71.0;26.0;0.0;0.0
+    - Cowboys;98.0;71.0;26.0;0.0;0.0
+  PINK:
+    identifier: 7
+    respawn: Cowboys;-98.5;72.0625;-33.5;0.0;-90.0
+    upgrades: Cowboys;-94.5;72.0;-37.0;0.0;90.0
+    shop: Cowboys;-94.5;72.0;-30.0;0.0;90.0
+    chest: Cowboys;-103.0;72.0;-32.0;0.0;0.0
+    generator: Cowboys;-105.0;71.0;-34.0;0.0;0.0
+    topper: Cowboys;-98.5;100.0;-33.5;0.0;-90.0
+    bed_locations:
+    - Cowboys;-99.0;71.0;-26.0;0.0;0.0
+    - Cowboys;-98.0;71.0;-26.0;0.0;0.0
+  YELLOW:
+    identifier: 4
+    respawn: Cowboys;99.5;72.0625;-33.5;0.0;90.0
+    upgrades: Cowboys;95.5;72.0;-37.0;0.0;-90.0
+    shop: Cowboys;95.5;72.0;-30.0;0.0;-90.0
+    chest: Cowboys;103.0;72.0;-32.0;0.0;0.0
+    generator: Cowboys;105.0;71.0;-34.0;0.0;0.0
+    topper: Cowboys;99.5;100.0;-33.5;0.0;90.0
+    bed_locations:
+    - Cowboys;99.0;71.0;-26.0;0.0;0.0
+    - Cowboys;98.0;71.0;-26.0;0.0;0.0
+  BLUE:
+    identifier: 2
+    respawn: Cowboys;34.5;72.0625;-98.5;0.0;0.0
+    upgrades: Cowboys;38.0;72.0;-94.5;0.0;180.0
+    shop: Cowboys;31.0;72.0;-94.5;0.0;180.0
+    chest: Cowboys;32.0;72.0;-103.0;0.0;0.0
+    generator: Cowboys;34.0;71.0;-105.0;0.0;0.0
+    topper: Cowboys;34.5;100.0;-98.5;0.0;0.0
+    bed_locations:
+    - Cowboys;26.0;71.0;-98.0;0.0;0.0
+    - Cowboys;26.0;71.0;-99.0;0.0;0.0
+  GRAY:
+    identifier: 8
+    respawn: Cowboys;-98.5;72.0625;34.5;0.0;-90.15
+    upgrades: Cowboys;-94.5;72.0;38.0;0.0;90.0
+    shop: Cowboys;-94.5;72.0;31.0;0.0;90.0
+    chest: Cowboys;-103.0;72.0;32.0;0.0;0.0
+    generator: Cowboys;-105.0;71.0;34.0;0.0;0.0
+    topper: Cowboys;-98.5;100.0;34.5;0.0;-90.15
+    bed_locations:
+    - Cowboys;-99.0;71.0;26.0;0.0;0.0
+    - Cowboys;-98.0;71.0;26.0;0.0;0.0

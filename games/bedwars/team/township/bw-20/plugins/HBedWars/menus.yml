@@ -1,0 +1,2384 @@
+menus:
+  cosmetics:
+    size: 6
+    type: CustomMenu
+    icons:
+      '50':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: EMERALD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjMKhWykvMTVWyUirIz8wrKVbSUUosKSnKTCotSS1WsiopKk0FiiSXZObnAblKSrUMAGxDxE5AAAAA
+        json: eyJuYW1lIjoicG9pbnRzIiwiYXR0cmlidXRlcyI6dHJ1ZSwiYWN0aW9ucyI6IiJ9
+      '48':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BOOK
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjMK1WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOUknMSi4tjlKxilJxz8otTY5RqlWoZAASlyYBFAAAA
+        json: eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wiY2xhc3NcIjpcIkNsb3NlXCJ9In0=
+      '22':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SKULL_ITEM
+          damage: 3
+          meta:
+            ==: ItemMeta
+            meta-type: SKULL
+            internal: H4sIAAAAAAAAAE2Qy26CQBiFf5s2taRPMelSk3EQjCZdWG0UI2NFLkJIGsBRwQENDI1ofKc+YmlX3Z3vXDZHApDgeXUoOf/Ij9uYsybcaRt4CbGsqGQrt0lAcLtLlF47DFXSZriLt4pCItLvSSDVoxPLRcyKJ2gKdhZlzgoJABpNeLADXjL4ZtUMe+s93qxnPKo0tWZzhflCS049LbOrcKSpWlrn06E6r/r/uooIHIW78mzvZcsyTG08lw3OpkYnSq0v3XHPbrKTqWNwOuYJNXeyZ9KYjoeVTijXE+NAx1HlpW5FL1ZXJ+9nLxl26MS9UGLJv6ybFnYTO6bmUlmMZv3tGr8CNOGeBimDxrmWj2/OpzZaUJhcUSBEHoelYAUaiLxkLRREIj5mNaKrj7J65KOBj6K8fsRHrVrxoCj+PJ1lpY9u6AY/RNRw3XUBAAA=
+            skull-owner: x
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiY3JpZXNcIixcImNsYXNz
+          XCI6XCJNZW51XCJ9In0=
+      '9':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: ARROW
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB2LsQ6EIBAFt9PcZ7zaL6D0qivU0mYTgmYLLogGlsr47xLKmcx8iHrqxtX+vstM243oDoHBlc6/7OqDWE3OBwxwqslvRSXDaCpSTQ3OWBE3t5FhGK3PjIGxB5dzk5PEwnjw0AtUr8E1cgAAAA==
+        json: |-
+          eyJuYW1lIjoicHJvamVjdGlsZV90cmFpbCIsImF0dHJpYnV0ZXMiOnRydWUsImFjdGlvbnMiOiJ7
+          XCJuYW1lXCI6XCJ0cmFpbHNcIixcImNsYXNzXCI6XCJNZW51XCJ9In0=
+      '11':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SKULL_ITEM
+          damage: 3
+          meta:
+            ==: ItemMeta
+            meta-type: SKULL
+            internal: H4sIAAAAAAAAAE2Ly26CQBiFf5s2taRPMelSkwGKt6QLq7EOFWi9oBCSZoShjg5oYGgV41v1AUu66uIk5zsXBUCB+9muEOIt28dcsDpckQge1A5W9VgzmqEa0+YjZrS51gzW7GCto6uGrqtxWwGlOh1YJjnL76Au2VEWGcsVAKjV4calomDww04m9lcbHK1MEZ5Iq+L5DAuHbA9tkrqn9YC0SFL1435rcur+2xqSLg3h6ebGT9+LdeLiiT4VbDxVw2Tx5ZWjnVdGlcyNV/ZLZxhxq3S5l4w2/pIYnrYwvFLs7C05WiXBVuLvnCFRrXloeNsRt18s7Mw/dWvocn/oJ3b5rjkzsxuv8BNAHa5tmjCoHSt7+7z8IAPHhtczolJmfF1IlqOezArWQDSUfJ9WiM4BSqtTgHoB+uZpRNOQ5QFqBCgUNM//coulRYAu6AK/oLF4SX0BAAA=
+            skull-owner: x
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwid2luZGFuY2VzXCIsXCJj
+          bGFzc1wiOlwiTWVudVwifSJ9
+      '13':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: IRON_SWORD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3JMQqAMAwF0GyKx/izJ+iok4M6ugSklgjFWqFNJ/HuiuPjNUQ1Vd2yDv080XjDqia/FZUMo6lIC+vUX/Ejbka0pzAM4/AhyL6L08xoGS7YnP8ZJRbGg4deCwz7pl0AAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwia2lsbGVmZmVjdHNcIixc
+          ImNsYXNzXCI6XCJNZW51XCJ9In0=
+      '15':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: MAP
+          damage: 14
+          meta:
+            ==: ItemMeta
+            meta-type: MAP
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8KhWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUiguKEiuLY5R0YpSScxKLi8GCvql5pTFKtUq1DADe6hpwWAAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwic3ByYXlzXCIsXCJjbGFz
+          c1wiOlwiTWVudVwifSJ9
+      '17':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: HOPPER
+          meta:
+            ==: ItemMeta
+            meta-type: TILE_ENTITY
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8KxWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUSvILClKLimOUdGKUknMSi4vBor6peaUxSrVKtQwAikJ0O1kAAAA=
+            blockMaterial: HOPPER
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwidG9wcGVyc1wiLFwiY2xh
+          c3NcIjpcIk1lbnVcIn0ifQ==
+      '27':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SKULL_ITEM
+          damage: 3
+          meta:
+            ==: ItemMeta
+            meta-type: SKULL
+            internal: H4sIAAAAAAAAAE2QwW6CQBRFn02bWtKvmHSpCVRQdNeqjWOcsSqKEJJmwFHRAQ0MVTT+Uz+xk666u/edezZPA9DgebYvhPjMDutY8Crc4RW8WLapm6zF68wwV3UzNO162G5F9WgVtm1mc0M3bA00JR15JmOeP0FV8rMsMp5rAFCpwsOCiYLDDy+Hur/c6qvlUEQlbqruzHQxxrtjC6eLMuziJk4UH7w1R2X739aSzLWE1xhu/XRShMlCHzWmgg+mRpTMv2nvIx73yMl3sU56m9JzqfAumwtNhjt1N3xncvKc/pnsFEuwQZy+RS7kTF3PUtmkPXKhr3PTV1vqzA3lxOul0Qaowj1lCYfKWcXHd/cLd8cUyBUxKbM4LCTPUUdmBa8hFsn4kKqKrgFKlRSgToDy7eG451y9Jg9QLUCRYHn+RwhPiwDd0A1+AXYGx8l7AQAA
+            skull-owner: x
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwic2hvcGtlZXBlcnNcIixc
+          ImNsYXNzXCI6XCJNZW51XCJ9In0=
+      '29':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SIGN
+          meta:
+            ==: ItemMeta
+            meta-type: TILE_ENTITY
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8KtWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUsjNzcnJTi4sT01OLY5R0YpSScxKLi8FSvql5pTFKtUq1DABvRhpFXgAAAA==
+            blockMaterial: SIGN
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwia2lsbG1lc3NhZ2VzXCIs
+          XCJjbGFzc1wiOlwiTWVudVwifSJ9
+      '33':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BED
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3JMQ5AQBAF0OmIY/zaCZRUCpSaSWTZKSSsZGe2ENm7E+XLq4hKKtp56btppOGBM4v7mkwUjcUkNdxm+xU+4mEEdwqjYazivajF61ZGzdgOp/rPICExMjK9ApfA810AAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiYmVkZGVzdHJveXNcIixc
+          ImNsYXNzXCI6XCJNZW51XCJ9In0=
+      '35':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: WOOD
+          damage: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8K5WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUyvPzU4qzM/OKY5R0YpSScxKLi8Hivql5pTFKtUq1DACHV72yWwAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwid29vZHNraW5zXCIsXCJj
+          bGFzc1wiOlwiTWVudVwifSJ9
+      '31':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: DIAMOND
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8KhWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKU0nMqCzKKY5R0YpSScxKLi8GCvql5pTFKtUq1DAC+WCQ9WAAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZ2x5cGhzXCIsXCJjbGFz
+          c1wiOlwiTWVudVwifSJ9
+  trails:
+    size: 4
+    type: CustomMenu
+    icons:
+      '12':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: FLINT_AND_STEEL
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjSKxWykvMTVWyUiooyo9PywGxdZQSS0qKMpNKS1KLlaxKikpTgSLJJZn5eUCuUnUMWEeMklWMElh9jJJOjFJyTmJxMVgspCgxM8c1LS01uSRGqVaplgEAr7+oHHEAAAA=
+        json: |-
+          eyJuYW1lIjoicHJvX2ZsYW1lIiwiYXR0cmlidXRlcyI6dHJ1ZSwiYWN0aW9ucyI6IntcIm5hbWVc
+          IjpcImZsYW1lXCIsXCJjbGFzc1wiOlwiVHJhaWxFZmZlY3RcIn0ifQ==
+      '13':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: WATER_BUCKET
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjyK9WykvMTVWyUiooyo8vTyxJLYovLshJLM5Q0lFKLCkpykwqLUktVrIqKSpNBYokl2Tm5wG5StUxYI0xSlYxSsjaYpR0YpSSgaxisFRIUWJmjmtaWmpySYxSrVItAwC0Y6pyfwAAAA==
+        json: |-
+          eyJuYW1lIjoicHJvX3dhdGVyX3NwbGFzaCIsImF0dHJpYnV0ZXMiOnRydWUsImFjdGlvbnMiOiJ7
+          XCJuYW1lXCI6XCJ3YXRlcl9zcGxhc2hcIixcImNsYXNzXCI6XCJUcmFpbEVmZmVjdFwifSJ9
+      '14':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: LAVA_BUCKET
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjyKxWykvMTVWyUiooyo9PKcosiM9JLEtU0lFKLCkpykwqLUktVrIqKSpNBYokl2Tm5wG5StUxYF0xSlYxSnA9MUo6MUrJOYnFxWDxkKLEzBzXtLTU5JIYpVqlWgYApLZuEHkAAAA=
+        json: |-
+          eyJuYW1lIjoicHJvX2RyaXBfbGF2YSIsImF0dHJpYnV0ZXMiOnRydWUsImFjdGlvbnMiOiJ7XCJu
+          YW1lXCI6XCJkcmlwX2xhdmFcIixcImNsYXNzXCI6XCJUcmFpbEVmZmVjdFwifSJ9
+      '15':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: REDSTONE
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjSK9WykvMTVWyUiooyo8vSk0pLsnPS1XSUUosKSnKTCotSS1WsiopKk0FiiSXZObnAblK1TFgTTFKVjFKMC0xSjoxSsk5icXFYOGQosTMHNe0tNTkkhilWqVaBgAxFafZdwAAAA==
+        json: |-
+          eyJuYW1lIjoicHJvX3JlZHN0b25lIiwiYXR0cmlidXRlcyI6dHJ1ZSwiYWN0aW9ucyI6IntcIm5h
+          bWVcIjpcInJlZHN0b25lXCIsXCJjbGFzc1wiOlwiVHJhaWxFZmZlY3RcIn0ifQ==
+      '16':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: NOTE_BLOCK
+          meta:
+            ==: ItemMeta
+            meta-type: TILE_ENTITY
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjiK9WykvMTVWyUiooyo/Pyy9JVdJRSiwpKcpMKi1JLVayKikqTQWKJJdk5ucBuUrVMWANMUpWQAZQeYySToxSck5icTFYKKQoMTPHNS0tNbkkRqlWqZYBAHjLfClvAAAA
+            blockMaterial: NOTE_BLOCK
+        json: |-
+          eyJuYW1lIjoicHJvX25vdGUiLCJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwi
+          Olwibm90ZVwiLFwiY2xhc3NcIjpcIlRyYWlsRWZmZWN0XCJ9In0=
+      '10':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BARRIER
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB2KsQqEMBAFt1PuM17tF6T0uMJGG8FmUXJhhYAmkqyV+O8Gu5lhPkQ1Ve20dN+hp/lCsLvA4EgxxCBoYFWT/58qGUbTKaU49TEUxcXvzzAFys5oGG6zOb9pTNZvv3UVp4wbNz0L9clfbgAAAA==
+        json: |-
+          eyJuYW1lIjoicHJvbm9uZSIsImF0dHJpYnV0ZXMiOnRydWUsImFjdGlvbnMiOiJ7XCJuYW1lXCI6
+          XCJub25lXCIsXCJjbGFzc1wiOlwiVHJhaWxFZmZlY3RcIn0ifQ==
+      '11':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: APPLE
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB2LvQqDQBAGt4vkMb7aJ7gyksImNgGbBVmPFQ/8CXtrJb575MoZZp5EFT1e/dA23YfkxCarIuBn+6xijhribmk8XDOC26G3iZ727UacXAZGYJQ+M2pGXCTnIr8maXlPk0ZnXLjoD3TzKKxxAAAA
+        json: |-
+          eyJuYW1lIjoicHJvaGVhcnQiLCJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwi
+          OlwiaGVhcnRzXCIsXCJjbGFzc1wiOlwiVHJhaWxFZmZlY3RcIn0ifQ==
+      '30':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: ARROW
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3KMQqEMBBG4elWPMZfe4KUWlnsbrmFAxLDFIFNAplJJd7dYPk+3kg00Gv+7evy/dB2IvskcKhirWZM8GY1Hs1E4aw26RIsltwTJz87wzFC0SQWgzKmXn+v+vhbcmNcuOgGnH24zmsAAAA=
+        json: |-
+          eyJuYW1lIjoicmV0dXJuIiwiYXR0cmlidXRlcyI6dHJ1ZSwiYWN0aW9ucyI6IntcIm5hbWVcIjpc
+          ImNvc21ldGljc1wiLFwiY2xhc3NcIjpcIk1lbnVcIn0ifQ==
+      '32':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: EMERALD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjMKhWykvMTVWyUirIz8wrKVbSUUosKSnKTCotSS1WsiopKk0FiiSXZObnAblKSrUMAGxDxE5AAAAA
+        json: eyJuYW1lIjoicG9pbnRzIiwiYXR0cmlidXRlcyI6dHJ1ZSwiYWN0aW9ucyI6IiJ9
+  windances:
+    size: 6
+    type: CustomMenu
+    icons:
+      '11':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: ANVIL
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3JsQqDQAwG4GyVPsY/+wSOth262E2XgKRHhIBN4S66yL27pePHdyVq6NJP8/P2Gmg8IBHZ3ltoQRd50xaSwr7+Iw6Gy0cZHUN8t3XOYs5oGWmVUv4xmd/Fkz6WRVMwKiqd10l6iWYAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiYW52aWxfcmFpblwiLFwi
+          Y2xhc3NcIjpcIldpbkRhbmNlRWZmZWN0XCJ9In0=
+      '12':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: FIREWORK
+          meta:
+            ==: ItemMeta
+            meta-type: FIREWORK
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCK1WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKU0jKLUsvzi7KLY5R0YpSScxKLi8Hi4Zl5Lol5yamuaWmpySUxSrVKtQwASV9CSmUAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZmlyZXdvcmtzXCIsXCJj
+          bGFzc1wiOlwiV2luRGFuY2VFZmZlY3RcIn0ifQ==
+      '14':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SADDLE
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCK5WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUKlNT4zMSy2OUdGKUknMSi4vBouGZeS6JecmprmlpqcklMUq1SrUMAEXr139jAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwieWVlX2hhd1wiLFwiY2xh
+          c3NcIjpcIldpbkRhbmNlRWZmZWN0XCJ9In0=
+      '13':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: PACKED_ICE
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCK1WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUkvNzUuKL8xILYpR0gLycxOJisHh4Zp5LYl5yqmtaWmpySYxSrVItAwATN167ZQAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiY29sZF9zbmFwXCIsXCJj
+          bGFzc1wiOlwiV2luRGFuY2VFZmZlY3RcIn0ifQ==
+      '15':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: FIREBALL
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3IPQqAMAwG0GyKx/hmT+Doz+Cig4NLQGKJUNAKbZzEuyuO7xVEOWX1vPTNONB0Q8yiXy/ThMripSXEmT/DR9yMIIcyKsahpmdMjJLhdknp39mHVoLTbtvUGePBQy9sfXAYYwAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwibWV0ZW9yc1wiLFwiY2xh
+          c3NcIjpcIldpbkRhbmNlRWZmZWN0XCJ9In0=
+      '16':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: WATCH
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCK9WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrICMzPSMkvjijMy0khglnRil5JzE4mKwTHhmnktiXnKqa1paajJQslaplgEAN/gDomcAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwibmlnaHRfc2hpZnRcIixc
+          ImNsYXNzXCI6XCJXaW5EYW5jZUVmZmVjdFwifSJ9
+      '19':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: NETHER_STAR
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKpWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUyjNLMlKLYpR0YpSScxKLi8GC4Zl5Lol5yamuaWmpySUxSrVKtQwAbJBJvGIAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwid2l0aGVyXCIsXCJjbGFz
+          c1wiOlwiV2luRGFuY2VFZmZlY3RcIn0ifQ==
+      '20':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: GRASS
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCK5WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKU0osSyzJLKmOUdGKUknMSi4vBouGZeS6JecmprmlpqcklMUq1SrUMADqGwOJjAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZ3Jhdml0eVwiLFwiY2xh
+          c3NcIjpcIldpbkRhbmNlRWZmZWN0XCJ9In0=
+      '21':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: DRAGON_EGG
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKpWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUUooS0/PzYpR0YpSScxKLi8GC4Zl5Lol5yamuaWmpySUxSrVKtQwAW6gMM2IAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZHJhZ29uXCIsXCJjbGFz
+          c1wiOlwiV2luRGFuY2VFZmZlY3RcIn0ifQ==
+      '10':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BARRIER
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKhWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrICM/DwgQydGKTknsbgYLBSemeeSmJec6pqWlppcEqNUq1TLAADhc5vAYAAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwibm9uZVwiLFwiY2xhc3Nc
+          IjpcIldpbkRhbmNlRWZmZWN0XCJ9In0=
+      '22':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: DIAMOND_BLOCK
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3JMQ6DMAwFUG9UPcafOQEjtEOXdmQxQm7koEipkRIzIe5exPj07kQ3avpxfg2fN007xL2k7+Za0XnZtIUET6udxM4w+SmjY8S8iidb5izmWqwyWkbIUuv1Y7KHWNBnjBqcceCgPzNoTrRtAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZmxvYXRpbmdfbGFudGVy
+          bnNcIixcImNsYXNzXCI6XCJXaW5EYW5jZUVmZmVjdFwifSJ9
+      '23':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: CARROT_STICK
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKlWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUCjLT44sSM/NilHRilJJzEouLwcLhmXkuiXnJqa5paanJJTFKtUq1DABnuUojZAAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwicGlnX3JhaW5cIixcImNs
+          YXNzXCI6XCJXaW5EYW5jZUVmZmVjdFwifSJ9
+      '24':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: WOOL
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCK1WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUyhOL4oszUlMLYpR0YpSScxKLi8Hi4Zl5Lol5yamuaWmpySUxSrVKtQwANHRifmUAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwid2FyX3NoZWVwXCIsXCJj
+          bGFzc1wiOlwiV2luRGFuY2VFZmZlY3RcIn0ifQ==
+      '48':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: ARROW
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3KMQqEMBBG4elWPMZfe4KUWlnsbrmFAxLDFIFNAplJJd7dYPk+3kg00Gv+7evy/dB2IvskcKhirWZM8GY1Hs1E4aw26RIsltwTJz87wzFC0SQWgzKmXn+v+vhbcmNcuOgGnH24zmsAAAA=
+        json: |-
+          eyJuYW1lIjoicmV0dXJuIiwiYXR0cmlidXRlcyI6dHJ1ZSwiYWN0aW9ucyI6IntcIm5hbWVcIjpc
+          ImNvc21ldGljc1wiLFwiY2xhc3NcIjpcIk1lbnVcIn0ifQ==
+      '50':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: EMERALD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjMKhWykvMTVWyUirIz8wrKVbSUUosKSnKTCotSS1WsiopKk0FiiSXZObnAblKSrUMAGxDxE5AAAAA
+        json: eyJuYW1lIjoicG9pbnRzIiwiYXR0cmlidXRlcyI6dHJ1ZSwiYWN0aW9ucyI6IiJ9
+      '25':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: FLINT_AND_STEEL
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKpWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUykpzkhPzYpR0YpSScxKLi8GC4Zl5Lol5yamuaWmpySUxSrVKtQwAJR5NHWIAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwidnVsY2FuXCIsXCJjbGFz
+          c1wiOlwiV2luRGFuY2VFZmZlY3RcIn0ifQ==
+      '28':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: WOOL
+          damage: 14
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCK9WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUykpzkhPz4svz83NilHRilJJzEouLwTLhmXkuiXnJqa5paanJJTFKtUq1DABTsJZfZwAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwidnVsY2FuX3dvb2xcIixc
+          ImNsYXNzXCI6XCJXaW5EYW5jZUVmZmVjdFwifSJ9
+      '29':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: MUTTON
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKpWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUijNSUwuKY5R0YpSScxKLi8GC4Zl5Lol5yamuaWmpySUxSrVKtQwAJds4AGIAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwic2hlZXBzXCIsXCJjbGFz
+          c1wiOlwiV2luRGFuY2VFZmZlY3RcIn0ifQ==
+      '30':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: CARPET
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKtWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKU0nIq45MTiwpSS2KUdGKUknMSi4vBEuGZeS6JecmprmlpqclAyVqlWgYAyTRgxGYAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZmx5X2NhcnBldFwiLFwi
+          Y2xhc3NcIjpcIldpbkRhbmNlRWZmZWN0XCJ9In0=
+  killeffects:
+    size: 6
+    type: CustomMenu
+    icons:
+      '48':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: ARROW
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3KMQqEMBBG4elWPMZfe4KUWlnsbrmFAxLDFIFNAplJJd7dYPk+3kg00Gv+7evy/dB2IvskcKhirWZM8GY1Hs1E4aw26RIsltwTJz87wzFC0SQWgzKmXn+v+vhbcmNcuOgGnH24zmsAAAA=
+        json: |-
+          eyJuYW1lIjoicmV0dXJuIiwiYXR0cmlidXRlcyI6dHJ1ZSwiYWN0aW9ucyI6IntcIm5hbWVcIjpc
+          ImNvc21ldGljc1wiLFwiY2xhc3NcIjpcIk1lbnVcIn0ifQ==
+      '50':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: EMERALD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjMKhWykvMTVWyUirIz8wrKVbSUUosKSnKTCotSS1WsiopKk0FiiSXZObnAblKSrUMAGxDxE5AAAAA
+        json: eyJuYW1lIjoicG9pbnRzIiwiYXR0cmlidXRlcyI6dHJ1ZSwiYWN0aW9ucyI6IiJ9
+      '12':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: TNT
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKhWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUSvJKYpR0YpSScxKLi8Eibpl5iTnemTk5rmlpqclA2VqlWgYAf7vyPWAAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwidG50XCIsXCJjbGFzc1wi
+          OlwiRmluYWxLaWxsRWZmZWN0XCJ9In0=
+      '11':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: APPLE
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKxWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUcvLLgAydGKXknMTiYrCQW2ZeYo53Zk6Oa1paanJJjFKtUi0DAGwWqfNhAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwibG92ZVwiLFwiY2xhc3Nc
+          IjpcIkZpbmFsS2lsbEVmZmVjdFwifSJ9
+      '13':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: EGG
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjiKpWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUUtPT41MrCnLyi4GSMUo6MUrJOYnFxWA5t8y8xBzvzJwc17S01OSSGKVapVoGACxxBpNqAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZWdnX2V4cGxvc2lvblwi
+          LFwiY2xhc3NcIjpcIkZpbmFsS2lsbEVmZmVjdFwifSJ9
+      '14':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: ARMOR_STAND
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjiKhWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKU0jLzEnPii3MTizNilHRilJJzEouLwTJuIBnvzJwc17S01OSSGKVapVoGAHrsXmRoAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZmluYWxfc21hc2hcIixc
+          ImNsYXNzXCI6XCJGaW5hbEtpbGxFZmZlY3RcIn0ifQ==
+      '15':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SKULL_ITEM
+          damage: 3
+          meta:
+            ==: ItemMeta
+            meta-type: SKULL
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjiKhWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUMlITU+KL8pOzU0tilHRilJJzEouLwTJumXmJOd6ZOTmuaWmpyUDZWqVaBgDglQykaAAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiaGVhZF9yb2NrZXRcIixc
+          ImNsYXNzXCI6XCJGaW5hbEtpbGxFZmZlY3RcIn0ifQ==
+      '16':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: COOKIE
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3JMQrCQBBG4ekUj/HXOUFKRUEELdMMhHGZhcF1FrKzVcjdDZbveyeiIx3O03y/vJ7EKyRisXcPbRhj6TpAUlj1PbEyXL7KGBmp1o/pnGv3EHPGsFuR1v73Zi7lYaVcc9YUjA0b/QDHMTbBbAAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiY29va2llX2ZvdW50YWlu
+          XCIsXCJjbGFzc1wiOlwiRmluYWxLaWxsRWZmZWN0XCJ9In0=
+      '19':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: NETHER_STALK
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKpWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUknLy81NilHRilJJzEouLwWJumXmJOd6ZOTmuaWmpySUxSrVKtQwAJOvsFmIAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiYmxvb2RcIixcImNsYXNz
+          XCI6XCJGaW5hbEtpbGxFZmZlY3RcIn0ifQ==
+      '20':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: GHAST_TEAR
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKpWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKU0jPyi0tilHRilJJzEouLwWJumXmJOd6ZOTmuaWmpyUDZWqVaBgBR3pkDYgAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZ2hvc3RcIixcImNsYXNz
+          XCI6XCJGaW5hbEtpbGxFZmZlY3RcIn0ifQ==
+      '21':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SKULL_ITEM
+          damage: 4
+          meta:
+            ==: ItemMeta
+            meta-type: SKULL
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKlWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUkotSUwtSi2KUdIDsnMTiYrCoW2ZeYo53Zk6Oa1paanJJjFKtUi0DAONl8MVkAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiY3JlZXBlclwiLFwiY2xh
+          c3NcIjpcIkZpbmFsS2lsbEVmZmVjdFwifSJ9
+      '22':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: DIAMOND
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKlWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUUjITc/PzUmKUdGKUknMSi4vBom6ZeYk53pk5Oa5paanJJTFKtUq1DAAfrnexZAAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZGlhbW9uZFwiLFwiY2xh
+          c3NcIjpcIkZpbmFsS2lsbEVmZmVjdFwifSJ9
+      '23':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: INK_SACK
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKxWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUUipTi2OUdGKUknMSi4vBQm6ZeYk53pk5Oa5paanJJTFKtUq1DABF1o/oYQAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZHllc1wiLFwiY2xhc3Nc
+          IjpcIkZpbmFsS2lsbEVmZmVjdFwifSJ9
+      '24':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: YELLOW_FLOWER
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKlWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKU0nLyy1OLimOUdGKUknMSi4vBom6ZeYk53pk5Oa5paanJJTFKtUq1DACwCk7HZAAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZmxvd2Vyc1wiLFwiY2xh
+          c3NcIjpcIkZpbmFsS2lsbEVmZmVjdFwifSJ9
+      '25':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: WATER_BUCKET
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKxWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUihIz82KUdGKUknMSi4vBQm6ZeYk53pk5Oa5paanJJTFKtUq1DACI+5TfYQAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwicmFpblwiLFwiY2xhc3Nc
+          IjpcIkZpbmFsS2lsbEVmZmVjdFwifSJ9
+      '28':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: RABBIT_FOOT
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3JQQrCQAwF0OwUj/HXPUGXFgURdOkmUNIhhYGYSicDSundW1w+3onoSIfzq791zwfxAomY81BDC9qYqzaQFHnynVgYLm9ltIyhuv96/X5sKnszGkYyKeW/1+xi92x2GUdNwVix0gZ0kawfbAAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiYnVubnlfZXhwbG9zaW9u
+          XCIsXCJjbGFzc1wiOlwiRmluYWxLaWxsRWZmZWN0XCJ9In0=
+      '10':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BARRIER
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKxWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrICM/DwgQydGKTknsbgYLOSWmZeY452Zk+OalpaaXBKjVKtUywAAWD2CdGEAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwibm9uZVwiLFwiY2xhc3Nc
+          IjpcIkZpbmFsS2lsbEVmZmVjdFwifSJ9
+  sprays:
+    size: 4
+    type: CustomMenu
+    icons:
+      '30':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: ARROW
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3KMQqEMBBG4elWPMZfe4KUWlnsbrmFAxLDFIFNAplJJd7dYPk+3kg00Gv+7evy/dB2IvskcKhirWZM8GY1Hs1E4aw26RIsltwTJz87wzFC0SQWgzKmXn+v+vhbcmNcuOgGnH24zmsAAAA=
+        json: |-
+          eyJuYW1lIjoicmV0dXJuIiwiYXR0cmlidXRlcyI6dHJ1ZSwiYWN0aW9ucyI6IntcIm5hbWVcIjpc
+          ImNvc21ldGljc1wiLFwiY2xhc3NcIjpcIk1lbnVcIn0ifQ==
+      '32':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: EMERALD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjMKhWykvMTVWyUirIz8wrKVbSUUosKSnKTCotSS1WsiopKk0FiiSXZObnAblKSrUMAGxDxE5AAAAA
+        json: eyJuYW1lIjoicG9pbnRzIiwiYXR0cmlidXRlcyI6dHJ1ZSwiYWN0aW9ucyI6IiJ9
+      '10':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BARRIER
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8KhWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrICM/DwgQydGKTknsbgYLBRcUJRYCWTWKtUyAABPHNHQWAAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwibm9uZVwiLFwiY2xhc3Nc
+          IjpcIlNwcmF5c1wifSJ9
+      '11':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BED
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjcK9WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUklJTYpR0YpSScxKLi8EiwQVFiZVAZq1SLQMAdE6FI1cAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiYmVkXCIsXCJjbGFzc1wi
+          OlwiU3ByYXlzXCJ9In0=
+      '12':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: TNT
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjcK9WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUSvJKYpR0YpSScxKLi8EiwQVFiZVAZq1SLQMAWEegylcAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwidG50XCIsXCJjbGFzc1wi
+          OlwiU3ByYXlzXCJ9In0=
+      '13':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: WATER_BUCKET
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKhWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUyhNLUovik0qTs1NLYpR0YpSScxKLi8FSwQVFiZVAZq1SLQMA0Vzcm2AAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwid2F0ZXJfYnVja2V0XCIs
+          XCJjbGFzc1wiOlwiU3ByYXlzXCJ9In0=
+  cries:
+    size: 5
+    type: CustomMenu
+    icons:
+      '11':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: MONSTER_EGG
+          damage: 65
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8K5WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUkhJLYpR0YpSScxKLi8EiLqmJJRnORZmpQG6tUi0DAELPyZ1bAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiYmF0XCIsXCJjbGFzc1wi
+          OlwiRGVhdGhDcmllc1wifSJ9
+      '10':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BARRIER
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8KlWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrICM/DwgQydGKTknsbgYLOSSmliS4VyUmQrk1irVMgAAhp/VoVwAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwibm9uZVwiLFwiY2xhc3Nc
+          IjpcIkRlYXRoQ3JpZXNcIn0ifQ==
+      '12':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BONE
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3IMQ5AQBAF0OmIY/zaCZRoNOg0k8iQSWywkt1RbdydKN8riHLK6mnumqGnMUHMgltu04jKwq0lZDV3+Y9IDC+nMipG3PVQuzyjZKyHxPh3q2JbE5x+fPDQC5ZNtDJgAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwic2tlbGV0b25cIixcImNs
+          YXNzXCI6XCJEZWF0aENyaWVzXCJ9In0=
+      '13':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BEACON
+          meta:
+            ==: ItemMeta
+            meta-type: TILE_ENTITY
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8KlWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUyvNz0mKUdGKUknMSi4vBQi6piSUZzkWZqUBurVItAwBZRA5PXAAAAA==
+            blockMaterial: BEACON
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwid29sZlwiLFwiY2xhc3Nc
+          IjpcIkRlYXRoQ3JpZXNcIn0ifQ==
+      '14':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: DRAGON_EGG
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCK5WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUUvNSUotSihLT8/NilHRilJJzEouLwTIuqYklGc5FmalAbq1SLQMAIsjLM2MAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZW5kZXJkcmFnb25cIixc
+          ImNsYXNzXCI6XCJEZWF0aENyaWVzXCJ9In0=
+      '15':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: COOKED_BEEF
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8KlWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUkkqLCmKUdGKUknMSi4vBQi6piSUZzkWZqUBurVItAwDR6TaDXAAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiYnVycFwiLFwiY2xhc3Nc
+          IjpcIkRlYXRoQ3JpZXNcIn0ifQ==
+      '16':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: ENDER_PEARL
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3IMQ5AQBAF0OmIY/zaCZRoNOg0k8hgEpuwkt1RbdydKN8riHLK6mnumqGnMUHMgltu04jKwq0lZDV3+Y9IDC+nMiqG+k3DKZ5RMtZDYvy7VbG9CU4/PnjoBV2ic6ZgAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZW5kZXJtYW5cIixcImNs
+          YXNzXCI6XCJEZWF0aENyaWVzXCJ9In0=
+      '39':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: ARROW
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3KMQqEMBBG4elWPMZfe4KUWlnsbrmFAxLDFIFNAplJJd7dYPk+3kg00Gv+7evy/dB2IvskcKhirWZM8GY1Hs1E4aw26RIsltwTJz87wzFC0SQWgzKmXn+v+vhbcmNcuOgGnH24zmsAAAA=
+        json: |-
+          eyJuYW1lIjoicmV0dXJuIiwiYXR0cmlidXRlcyI6dHJ1ZSwiYWN0aW9ucyI6IntcIm5hbWVcIjpc
+          ImNvc21ldGljc1wiLFwiY2xhc3NcIjpcIk1lbnVcIn0ifQ==
+      '41':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: EMERALD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjMKhWykvMTVWyUirIz8wrKVbSUUosKSnKTCotSS1WsiopKk0FiiSXZObnAblKSrUMAGxDxE5AAAAA
+        json: eyJuYW1lIjoicG9pbnRzIiwiYXR0cmlidXRlcyI6dHJ1ZSwiYWN0aW9ucyI6IiJ9
+      '19':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: FIREWORK
+          meta:
+            ==: ItemMeta
+            meta-type: FIREWORK
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKhWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKU0jKLUsvzi7JjlHRilJJzEouLwcIuqYklGc5FmalAbq1SLQMA1irCuWAAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZmlyZXdvcmtcIixcImNs
+          YXNzXCI6XCJEZWF0aENyaWVzXCJ9In0=
+  shopkeepers:
+    size: 5
+    type: CustomMenu
+    icons:
+      '39':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: ARROW
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3KMQqEMBBG4elWPMZfe4KUWlnsbrmFAxLDFIFNAplJJd7dYPk+3kg00Gv+7evy/dB2IvskcKhirWZM8GY1Hs1E4aw26RIsltwTJz87wzFC0SQWgzKmXn+v+vhbcmNcuOgGnH24zmsAAAA=
+        json: |-
+          eyJuYW1lIjoicmV0dXJuIiwiYXR0cmlidXRlcyI6dHJ1ZSwiYWN0aW9ucyI6IntcIm5hbWVcIjpc
+          ImNvc21ldGljc1wiLFwiY2xhc3NcIjpcIk1lbnVcIn0ifQ==
+      '41':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: EMERALD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjMKhWykvMTVWyUirIz8wrKVbSUUosKSnKTCotSS1WsiopKk0FiiSXZObnAblKSrUMAGxDxE5AAAAA
+        json: eyJuYW1lIjoicG9pbnRzIiwiYXR0cmlidXRlcyI6dHJ1ZSwiYWN0aW9ucyI6IiJ9
+      '12':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SKULL_ITEM
+          damage: 3
+          meta:
+            ==: ItemMeta
+            meta-type: SKULL
+            internal: H4sIAAAAAAAAAFVU2Y6jVhBlRonS08lXWHnztAwYMB5pHjCYxZiLF8ymliL27bKDWUbzL/mAfGTcPYmiPByV6tSpqlP34T4jyDPy2zXrITw1ZZjA4An5KPnI7+sNhgX4mn5BKX/zQlAB+UKTHv3i+WuScNEAxQn3GXl+NFVB0yVB+wl56oKx65ugfUYQ5MMT8umaRIXzxnz8S53aQ8OaqZGzrSn6olLu1DHcJvgO5WRpu3Fz9CzOR72cDh7KUJGTTnV+9w7rDcHbvtqZ4+UkcTd1EqrKlgdz5Lql3NWWmiZWL2N32HnkcB96U4AiJ69ul4aPyb3jmIpEYTAX7dQM9DWQy3mrUbGXLkWFDuv8FFIpeh9AUihHgR1X25R1mXgtg8aP3R7NWtOwFOnGnGB+EpvscCrb2t95u8jKolx2MajTU70lOUO0+iU6uNMYb6Ep06Xu8PRyw+97NzHneLUR931V3JhRB2isb2szJyV/SR26MKUnpeQiUOSsP4qWl8XnXYold5fFCafGrlWEDWxbXqmGom7QErANzzsBX7Ybv8lL/xxmmIFpguG4enoHy+iyJwYrtGz0hJn5lBSXFIyMVMICVCm01uEQqTXq4WZzvffpCEz3NACPFgrDF2p5uuYHGl5sZllrMMMmeLOEZW7GroGLQB4C+bqlG4I6KypzcQj2vjcD3CWcPWy9WAU45xGZ6fGb9az5e7CLK29z6nBM5o8SHynMVuHCreugRYvRrV6HGy5UCLL3KmVQVnPh5g26OWgl3qbiXYvmFb7J6EY77AOF6lzfZJfr2ymdccAQNVQw/3JcaS3FhXZCxD43n7p7ENRCOO9qszYYvlv6vV6d4zVYMqhaHcOt4MITqYAtmrOTVaY72hu9GMQUr3WrGxzPucVhoxJ9fUJ+1h3YBx/+DIYyktgD6hgY9NaX2DWZROLKSNGsSX1A4Zi1op1nMA2yxDKJJx7udg5b+wYzKWEoiZVmMO9HW5NmlWNwm/NQkN8wldNTVQCZMt9QK91BhZNQK5FaNmEiqdhNLm5XrqCr1mPvjzkHzTb13sZh6eN871z/1YLKxsnYF/XJ1g/QM/XKy/Ufu8XL5Bu3f3QXGIgX7FGbf9TaN79vt2lXFKr/5970+uSyUqQmTOKIF9Tjyvtx/d+MY45Vbq6nXs7nPkv2tnm++4JOvPu4blMF53OAn99ufcCGlvEArpAgjVBbiybF4DPFkEhV82ZVe+jmPalw+9kyJNwW9oNqgNRKM8zCLcJ+e2tDj6WofPcWnh9RROXw/PUrgjwhPwEnD5Bfr0FfREk8OEXyIH/ZGX9IrAqQy7eF03VN4vZd0C6+dE0ffF44XpeUxSNdfHtdFI/218WX14XTdk1ZOH33uvj8uvCg07bv/DUuKzkIHt/cI/+++I78DU09DB40BQAA
+            skull-owner: Seungihwani
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiYXN0cm9uYXV0XCIsXCJj
+          bGFzc1wiOlwiU2hvcEtlZXBlcnNcIn0ifQ==
+      '13':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SKULL_ITEM
+          damage: 3
+          meta:
+            ==: ItemMeta
+            meta-type: SKULL
+            internal: H4sIAAAAAAAAAF1U2Y6jRhRlRommp5WvsPLmaRmzGBipH1iMDRgw+6KWIpYCg8uAWYzxaP4on5UPibt7oknyUCrdc8+599xbUj0iyCPym3UcINy3dVZA8IB8lFLkdyIiQARW8ROKMvQTQVHRU7Qi0qcoAhRJ0hEAZPyIPN5FDWj7AnSfkYceXPuhBd0jgiAfHpDPVpFX0Svy8c/qJDKFcBUzjDmtL44gsAXVJF685Df5ORsD185rP9g23anOTp0ZgdvCyzmRTsE+Pau45inlAZ2W4nmFWehFK2HFWfLCpK48bUKBw1Bap4pTu2wdUd9eeNruOoqRl9m+HaQeRPvCUajcGTxs6iJAWObZEDeVwwbeHBqD1OV7nghrxa+VdCOq3WGsWHvHctXNzDy57ec4HdDhBkvC7hhuR9ynx2ZxlqjV3CAtcV83VSXIzkYkLQZ4WREt40TyIlUOoYoGDe2ej/4hrFrKbPGVZNVJjHWuDcGggyOlsRd6sAybceq5J6lcmo+FXwoNTt/iwhjdS0urdGli873sjSKKVmiJw1FUKiUrbDbstBWw+4ysO4uNbAXk/Fklhm6X093FDrpmU2Hr5VwgdmFkorgzVTi5g4NAGcSRU/zjOu41kzUX1loXyriz79vhq+lG4ly/GJiU1YIoIKYsPxyHs70DNDFiZX4rKJITqQzC+9i55E5MtkDVRNGOWMPjoPA0Q0PnO0XztERPuGw64ioxKTHKTHqg43qr17eBqSQ18Ja1I4oXfx+MprhNm8NCdDme3dRpIN8wTKcAURTO6NZc2+2F2GdJV+SipPRbhgp6oZXr1dSO2HoyXOJKk7YULDm7YcSFryRtJ4e4b0DNHeDWcckqGWI9hM7iOpnaedg3NJwMdQtcen6cdO0SOdYNs2718wPyqxvBAXz4C4x1LvEyGnlLmODm4W6gkIQ6V+1g0u9HFdaTJuSoyo+KxLNFspUv4Ql2oQOPUsGuJF5CA9uEgedgQcmOup2j2i09BHaAhhvxENrJUrMPh9BzlkEhdXzB5lLFTTEWNvHG1e/7ge91ZA5smC7GzU4qfvTCYBWfRDT1Zeic3GvqwSn0jDd/6VZehtY7L924RLp1p9BX33LvM937QG1nOcR/sVe+L3c/etbp1hz1gr78q8YQe3AIPW0KvBDdnUiY8gwa+oc3HztMLIKTeNK9Na7eZBjaZqFi7imwtaMuaDAsVTLAJEzfhKW+MZbBK8cTS80+kppwvKm2XIaldNMF9aoKzlUTjFG1pWLH/vQXey4aeOYh3az/7/31rfoYM2HMS7levO7o2sSWpPyTz4z6571Flcx4fkaQB+QXLToB5BN7rWHdwzvwifP+kHhdQ/bfZlHft0U89KCbfe3bAXyZRUlf1NU9nH17mVV36cvs68ssele/zL68zBIYdd0bah3qRgHg/kne4++z78jfOo8+6HIFAAA=
+            skull-owner: Axolotl
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiYXhvbG90bFwiLFwiY2xh
+          c3NcIjpcIlNob3BLZWVwZXJzXCJ9In0=
+      '14':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SKULL_ITEM
+          damage: 3
+          meta:
+            ==: ItemMeta
+            meta-type: SKULL
+            internal: H4sIAAAAAAAAAFVUya6jRhSlWxleP+UrrOzcT2YwYLfUCwMeADOYGfSkiHkeDAUYWv0f+Yh8ZGgni2RRunVO3XPuuZt6haBX6Dc174tCbusoLcIX6CMbQL+j+4CE3SB6i0IvetviRPjm7nDkzYuQ0ENDlCD2+Cv0uoiasAVp2H2CXkD4AH0bdq8QBH14gT6paVy5P5iPf4VMpqS3VHI2nQnC9s7v8yxeCzQsV43sKchDYHLUPGIkVcm3u60oZ2lbbtH1CcsNRRs73dpMhiVIsRKJ88Nez7Scqu7xMt8H1Tqc5KPNkW4Vy7W/tc90GJ2zWLvclVxE7jygS3VQPbN3YpKJ/e2e2s/eY9NQRzgYajJp9kxillxBjGaKS1SSg2yYYK61rZnqtJFoYIaYBP6GtYxHCi0Y9CPbk3feTUoADqBX8u0uEdebhtGd43CFe26QnXOn4tXj1rJB7sKblsWwg5jl4zlGo+6mhoRuB4h7JzOr38CDJVH3DWLtGKdUU8eUQUe1c33VeAPD7axCAUn5qBWUhcnOXJ/GuLcfu9wbcDI472R71+Uucj0OTT0hJc2Ho+ipdcOcsNl4lKYr+VZQZA+OOkRaFmWntuS0I6t4IfeITVKxyLqfvHWuWeo1lj2+N2B/UI4af4/kUC7ZdIfqAheouMjMaHrSAaJM7ky1SFzdqcWXP+0lFr9ou4Nj86yOkFzR9FqAEaJJznvCu9te6RLl/jHAwnW957NhIAqDRaaGa4MIBQm2lvS+Pc9rDqAp6g/gnqCRVBz6NdOQ1GjVa8BUuY1wbqUbO9ZzrsGVoo51sZUl7eaAW2LTSYej8liFbBvCHVNT3WbAQEnYiUPPAurWjdwX2inyi3vx8FlAGWdTD3qrfqw7DfPGS2z1kZdPDF5tv75APxtu0Ycf/gzHOmZpDnZNpPAxJfGsQ8oydSxo9iQtR2COiKDpkziNPEsfUv/CDU5ZdI5e5Gx6IFianSTzhgnnU+6UTmGXNixqS9ViRDC5UjCNVCgXfWbjosp2dHqI2YqaPNRpvLMh2cvcf3y4a2BxQ3jJ0+vhmWl2zaC3LQXxS0N1rBPiWlzh0GwspRTsV0bxbx/sWAm8aAt/er6RzxlLVh0GnJb+j/vRv/iNzx3ZctFdDsR12v/HAweuiRc2xiVOdeu90oCvmFKElx859EHQuMJGb7CQHUdxjlE7W/bN9FE0xUyYqVQ0lUwsb5No3nBJ0x9ORuXCeeGyeCuUNiJp+dYuxVTSxEQ02VHUuEygWf6Z7QIvldrTFfwVgl6gn0S3DKFf+L6tH9OCf6XMP1haEiHx28oFoE29HoTd6gto+/DzyvVBWlcLXH17X1WL8n315X3l10MavK8+L7fC7bonpyZ1w4fh8qst+PvqO/Q3ud1xSCMFAAA=
+            skull-owner: Kuroxy
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiY292aWRcIixcImNsYXNz
+          XCI6XCJTaG9wS2VlcGVyc1wifSJ9
+      '15':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SKULL_ITEM
+          damage: 3
+          meta:
+            ==: ItemMeta
+            meta-type: SKULL
+            internal: H4sIAAAAAAAAAFVU2Y6jVhBlRonS08pXWHnztMxmDCPlgcWGi83F7ItaisBgmx2zmGU0f5JPyEfG3T0Pia5KV+fUcqrqoZ4R5Bn53cj6PD821TnJ4yfkM4iQP9Y4gxPnM/lCMGj4QgYx9cJg+PolCKkQpwmcwvDwGXl+JNVx0yVx+wV56uKx65u4fUYQ5NMT8sVILmXwxnz+52DvCeJywnJD2p5OW/NwZsr6ZpM1YRl7z16JYTgyU2TdALYR9hN+muu61LH5flTmVuehw0Gyn3I3hWIvOyqrb6JThCYc0ZmhMA9rABladgInuiSqit8P9iFjJP7ecvss6yJt0lSHJlX+yFd45ZoTQU8W7Hivr+9LQt4Ofl7BvhbxnjsncLziIbGZ1mAmjyLrLE2dKn0mEpf6yaqaeCD9GYuaCO06leWXIeWG+zmVe3sXoY1RQDlTKlBQsJHuHFrygNuwqxkoDTPEfto7Eo+pR9rYyTfXYnD0PNyBZl92M0WI9Tz4jYOPztENDWIUL01zCaGWkUZgdBd6c4tX4bC79X0tc7yw8e/Hy0XzDndmwG5LxxTyyZ72sKPTplzbXRYIklf4JRodCwPSLeVGuCAK57Q5kEOdLKnwWoYMzZIBSRvqFd8UuxWnWVhkxC51plPRWu0oU7IDyNeVOK2z3Y09+EkrANbHruPASwx3OEokZgRog/kCvzcUB73y1xqUc86tgUnY2omueDIY2yVYxgnn5wIlZd3upjJXTo9qpTpnt7SilZG86rLJg5u21boEUHp+tFw0tz3M5RquAeNIV+Re26bJmUs9ZQg2tClfa2O2DuiuB7WfuFZcKSW6PvUZz7nwHrAKXR+VXghba3Uj3KIwz/iJm9q4lVktuzPYJTbLYHmm3AQmjlFpqsUkElwpfz4hv9pB3sef/o6H6gJ4GQ0cLD8R+jV02QQI1UUxvUl9mCJsScXcEso07AHPJidJvvtF3vpWnoGEpQAPMCXNJgX3Cygoa0UEqOdYuGpuJ+jsEliASRWUCabbyUtAyyfsBZTcFOJ+HYq26j10P+rIvGNhwBY4SUfHHUh+6uF5GRY7NHLl3CrsMXLyyXe09x4jScZ84yMuEm0ykuzJd5V338dcD60cHgyL/D/3Fu/K7U/dKpL0QU3o+39q9KGT974DJ8/x0UOxziOeQX33+t7HYb7g0Lxmnqnnygxwr9hlqqjhULQLZd6OqmitfVEZoKCR3iwX0FQwRWBxKGTjA6cw1RM4R4Uq5Bl09MJP316WvO+G55i3/6zVDII8Ib/AoIiRZ85TJBMVxcP2wf3GOX8BXoUI/L4Iuq5Jwr6L28W3runjr4vg1CVV+YCL76+L8pH9uvj2ugjyJC5fF19fF6c8aNt3zrhW9T6OH9ftgX8sfiD/Ak5/Cu0rBQAA
+            skull-owner: BYMHT0GGLE
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiYWxpZW5cIixcImNsYXNz
+          XCI6XCJTaG9wS2VlcGVyc1wifSJ9
+      '16':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SKULL_ITEM
+          damage: 3
+          meta:
+            ==: ItemMeta
+            meta-type: SKULL
+            internal: H4sIAAAAAAAAAF1U2Y6jRhRlRll6WvkKK2+elsHghZHywGYabIp9VUsRm6HMajYbRvNH+ah8SujlIcnDVdW5y7mnzkM9Isgj8pue9XmuNNUZ5vED8lmIkN/xeLMjwnj3FG0i/4lYh+GT76PEE7Hb4mS48VH8HD4ij/NQHTcdjNsvyEMX37u+idtHBEE+PSBfdJiU/mvm8180Q51MwFjyEt7oPgpi7yhciuVud51Y/+zX490QhsGe2lZZEYrE0Y7Vto113LkmKLAkUxN/szfsbLTsU9M3xkjQ2Y2NFFkd0K19OHFgt8vZvQGKZczoxfOgHSq/Ax1JuRJ5cGilFHHcOXpZftZtSpDLvY5tiRV26M5MWMe0oDYqFE+NxnIJLVyr4oauPYJC6SaC96F1IJ6IKJfvlxV/OERGFop5EZDF0l+7M5VQ8FcNvxUCYe8BTY2DF6R90oFMzk4OFBsuZ09BeGxutW1XZpE+a9dShlfNRcO8rqpml+53frq1lbWi3axdYjaaZCr+mNN5ymKntmCwFc1qh9VU35LRVuQgWinZdikP1Loiq1BwTrjMNs1o6c5Gcfddv8V7G6zXSXEXo+1eDp5JlTsddKxVJIwIQi3FvR0nu8JaJDdRT+EaOpvIjBg1napze3HdaZp0Yxg6krNDrQxuPDcU1+NwAdDcSOdYbcLpIHSXKwM1PUf70j5fIw61a6VJgnvqBo1UXuUo6dXVyuKn21I9Qn+8BhNhJELpGMvtxK7xJvUMUdoRSX+Hqg/H1qQFiugtjCir+MjCFU92+4qwG3ermftznTkTjLz8qOTDvm4yyFyyYsnwXNCTd4HftLqwpBS1ztml6ydsy59JjlGccx0lLiWqIm7KTu9eO5cFUEfPzUiwIAa6RXY+/twDlF6DNlL/eEB+tvy8jz/9Hd+qRGBE1LexPMS1NHAoKLBVIhnuKM8hscJNZk0MMLejwFAwfBYHr8hbz8wzAVJbgREmzzBxwIMcrFXM4zlUKsDFtbkbYFUcXKSNO1mpxILCHYWWgdTsDj0Ga68OeEt2573vPOJxvs8YhSfqTdPk21HvOhoWFpbuOQfMd8TcY4REhjQallb+0Yd6TopGcy0c32q7tx2zVhPtRAP+J/faP/Pd3t4oFPPcM7U9jeS/ODadb29yFxdTr1T7oLDQE67l8fOrDnPwLtndXbsYYKMUTOYks+oa8ALuXjgUXEJcsmeNRl54vFXIhjRJvHsHhpd6LA0Bz2GvXnisi3u2l7mFmAHWvXvww5d3fZ3naKnHH1BX/7/2OQpsmLnbD8+mgM87Iak+6jT53vt+ntWaRJAH5CfgFzHyi+gX82XGv9L2nwIjA0T5vvC7roFB38Xt4lvX9PHXhR92sCpnuPj+sijnyZfFt5dFXWVxUZUvi68vizD32/Ytq6dVfYzj+X+c8Y/FD+QflP/5l20FAAA=
+            skull-owner: JamNam
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwicG9rZW1vblwiLFwiY2xh
+          c3NcIjpcIlNob3BLZWVwZXJzXCJ9In0=
+      '19':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SKULL_ITEM
+          damage: 3
+          meta:
+            ==: ItemMeta
+            meta-type: SKULL
+            internal: H4sIAAAAAAAAAF1U2Y6jRhRlRonS08pXWHnzjBoDZhkpD2DabAbMTqGWIlazg1mMYTR/lM/Kh4TuaUVJHm5V3XPPufdUPdQjBD1CvxrFWJbnrkmyMn6APgoR9FtIUTGFw+EXlErwL1iAB19IJPK/4BjpB1iChmQCP0KPq6iNuyGL+0/QwxDfh7GL+0cIgj48QJ+M7FL7r8jHP11m4IMgzpNCVRg3V0+xyd+8jMMor/GRqCWDPYMYaUe3mLVExVk6KZddi2aXkiCPe5nWaDJAk24rorZB3AaaFO/zhFdjG2/PheZ3shMGYUjgOqf45IHjERsYaF7YN5hxn5OThlyZ/AnDz+pRuKDAATBqZWfOCwPHjTLb2ILzxeRBQGsSH2S2RZrC/cDeXCknmLrFgqMlN1fD3J7hdQZwQmkLNFkb+MJOe2Z3vi62W+cFiLvFtMHMRM9JRjcppyRUHBZebwvThBfifCMrlXVx3NNVwzKUq88nWwtvcTSa6iS7R1xXSrjehlIEk2JePXeOo93OOILpaMz2ZEzxfGY9Yck+utfhCJopOEi4L9TEWHpIUbu4Z3An4maZMd4eo4o5KwgRkHjEt3dRcaR60ipyFEb6oOAKzZo110szz3qXmbGZnbhdPPuGwc+D6N0H+H47jcaME9G+wXsSJKqSsaNn6ahBWLQmLnJQqfJpTycFOIu9GFHDM3qsxBNxQEJjR1CGO13VZ2TQZV9Kr3NSpYYbK0KTWrFdT6GSwliNllfjWEladNjCuxzd1cKWulJaQgqZs8z0opqqVnlRoKO9jFVEqh3kshvm01BGT0d9Wy7jaekvT6HiESrKwzPiC2lwBcB29sVVx3ZMnQemIPPTXbUZ2gx93e5Dp1GdnOgE6sk6IC6aXubQztuWRs0bp0os+P0B+tn2yzH+8Fc8NRfhIMK+sytDVE8Dl84EtrnIJpjVNWRWgGU23CvZJAkHOgt58eZVZe9ZZSFkNL5qc9Usy5U7gUXeezmAQe5lKisWwASwyh0zhQMLWNJKPgj9IaMvQs3MAeK1AWerYJ373ocDzj6PLS8Najk70W++Ft+JRuDqu7CyDc897nxXLL2DcFEzBg5ru3znwZ6bwtFaC+e3GvE2Z/VrwYNoZv/BXvlrv+ntnkK16ngaP83Uv3rsB9/ZlwAVU6/WxqCy4ROqlzH/6sO6KdwxVVhrr3J2DhBhBxwLUzkBVhYAe46whlLJbIGpjpcCUyxlU0+VxUIU9ljKrLzy9FTOrUle9BKY8n7lFP+8zQ9/g+fqqccdYWD83/sa1e7mcXb//m5LwJWDcGne6wz1g/tjT7SWgqAH6CfFr2Lo09Gvw3ld+hX6hXH+EA6qAqnfNv4wdFkwDnG/+Tp0Y/x544dD1tRruvn2sqlX8cvm6+uhG4fmZfP5ZROWft+/gUbatFIcr7/kmn/ffIf+BtRMeCVzBQAA
+            skull-owner: FancyFans
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwibmFydXRvXCIsXCJjbGFz
+          c1wiOlwiU2hvcEtlZXBlcnNcIn0ifQ==
+      '20':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SKULL_ITEM
+          damage: 3
+          meta:
+            ==: ItemMeta
+            meta-type: SKULL
+            internal: H4sIAAAAAAAAAGVU147bRhSlDRtZL/IVQt7khVgl0YAfKJJiEzvFhgUCtmUvYhGL4T/KR+VTwl07MIIAczFzz21nzgDzCACPwO96PhSF0tYvaRE9AO+5EPgjiF722LqeQhDbP6E4fnzCIch/Qr0IO+AhEiEw+Ag8rkVN1PZp1H0CHvpo6oc26h4BAHj3AHzS07jyXpH3f2V1yKTVjdTitonhC+x1t/0g3Aw08qZye59cBpOJYOjR2chNrpBDew7zfOnddFdUFb0s/gE2StW+HKUMf2EuM90LmdTvoGQ8hko3Ujzu6mVypRZUaTDxGCNX455PCqUKF8g6Hrw+L8Towp705Cp2swV3aE2SYUMeoKNSgiEtzFMncKPqzrp2mG5gNNADmuW6SYZ4oUR3speDEjmYJgKz+6wJzclLgpHQkzbVtdbS20NNEGdLIWlqKpMSFo9a42TtoE7jNpF05NjSgzoOdLA3G0RoUUn1GotjTffu8cS4l4asTm2YnjwYLZdMOC3tzGHGmRd8zOdDUGapImnVezZbizGShtKTh63S2fE9duzzfIJtsFK2A+wZ2YimbN2oXaYa8402yJEQAxk/7GqXHKS5OzNnuO5yao/CcU4LKtLhEA825dIo3FF2Zk/DFKIhQLCxUZxJm8qsrnsPa8Fj8CKcBouv8P1CZLpXWmfE5WnZkrUdoqvnLdNVa0PEAW345pwkyNf66bbbV7ynK8QCwQ4bjNrpSrJC7OdyYeyXkxtGp/sJYWMOQuSg4m+mR9j1eCPRTrAZ+ybqzcsoWYf2vn9hmE5FB0SkZURmea884w0tk3y15Ivkgr6eV8Lcx4NkG0glxhSfaIM2Gtdm3uHhdm7ozkJ5pch3ndoTTjY5Q8FcOcQPz8fRJ53t2WhtODSI69cH4KPpFUP07u9orGOO5EHPgooA0RLfJlKOqmPRcGZ5NZHiYInKR0kfBY4k0oDl725ZdO61yLmU2K+1mWs5sPRm6igZDigbOSob9ORkWuIaV0S21MU1xFkkuY5MiZirTrMPu43PmLKzzv3ZZwmZIvPTf3OkxoWxJGTN2TX5IrDNJijNHzNZbQ6t6888rYhYDVpjy49Y98rz9U6GDhbyf7HXfHP2SS6WUyL1WA0MqPp+QX71uJRQ45dmFpTnMiSxwbXVe8iY6BsP/Qi6BodJhopKlIPIFIHJzKoTJZUyw+duFkMiTGMiI07SQkOuxYEuo8JiRiCipeWOcZ3Exc1Fy01dhgMd41UXeuU9/uJXQkXInHPH1pL/cV/19y08d63x7Y1WjTrPAtM3HV7jLCj82k84WYFfAeAB+CB5ZQR87Po0qFb3t5P1J0fKEiB/23h936b+0Efd5kvfDtHnjRf0aV2t7ubb86ZaC583X543TV2kwXr8/LwJCq/r3kA9qRshitbfcfW/b74D/wBelYdQawUAAA==
+            skull-owner: sticn
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwicG9saWNlXCIsXCJjbGFz
+          c1wiOlwiU2hvcEtlZXBlcnNcIn0ifQ==
+      '21':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SKULL_ITEM
+          damage: 3
+          meta:
+            ==: ItemMeta
+            meta-type: SKULL
+            internal: H4sIAAAAAAAAAFVU2Y6bSBQlUUbTac1XWPPmtJrNNo6UBwxtsxjMvqmlqIBisQsDBswS5U/mE+Yjh06iGc1D6eqec5dzz0M9Ytgj9od56RDSbmWSI/iAvRdj7E9IMknCRMTTarMJn2icwp8AIMinmAEkGeFJCOD6EXucmyp4a3PYfMQeWji03Q02jxiGvXvAPpp5egVvyPu/s3IrdXEh9Rctrjt4qHknACCeDN61aGq7HlFpTDKvLJUVJSbNlhKYyUsKdLUcQ4vEARLr4Znm1tIQms3gNVBVPb5GW2lJr2JZXlfAWOs0Xk708wBC2aOL9qRrplHEbcQAl+ZtXOPYbXiXU60mkALPfrQ5RwKeSiyt1U708mJTbDKoLaNd9Gi8XIl1vk4vPtIlid21gGnUOuko50TGfuSE9b6/2apBQ6VnhBQ/7t0bkV/rMe+1MSxInAkssc6IgjAHY0gNJE8ZwQQxZIpKHqzhXHP2SO72nLxlIJVvOV7bmvu7mx54z1FuguuYleUP612dFS9hM3rC0qRRHWQE4miQ1P0hmXJZr8JWFscKB8ylKsAy470VkpfLDl8u1TErui0KvIb3y0AUKqmzNpRL9rp74bxA3+3WihiudKJf7ptqhRe7tg3WbG2P0ahuupg5JQb5vNSJyj+W0gbqWiMZptrWl/2yBvaRLq/phlXuVWkMGrzb4fOBkYR1DOAuZTzI3Kt7KW73lcG/6OfBsAUvXbGxmys7WxyKkEKCljDGwQcaxeEmaNSd4NNW2ZtpfR1e2C1qS9XiUC+PJtlCCBhtf8+O9j5HAh0eKjonIG2g0649dZLuyf3OkznFuFqlyYH+PPXyiQ4js7Y46D5H5im1e84KkvNKI2I1xWNcKIebYuosf0w1oVYEX2hoEp68zv/ygP3mANTBd3/BvkxFTsKBS6CIMrLQY3ORL1PF8sfT/BReXKm8Pah5L4scm0eCdA8K1AQ2uog5u557kXLOiuCcnRXLplRSxBVe6X33ZVAKnfYtcfSnXeEXe6TmYsPlbCped2NIBlV4cE7+vPfXHMunJDTniftvnVoF5CqLBWcMHAlFnlNFhfNzr2CMsWv/qjMQFAxi5qafXPOm9e0uy8TR6f/YW70zhpyYnnI2B4KBR3x5P1L/zTgWRBUWzjkq9kXMrbrA0+/xwaF/6DCZle/qpH92cr+wJ9VSz2ph98F5vp3fI8W6TOrsxuxH5k9SfjoolELO0Q1yn9Rx5ZziynQhFZ6lA166+NPs7RRRYlr+0JbocxRwOdG/fMGwB+yDCgqIPZjRDYLiazAjv+/cryJ3UjHz2wK07S0PuxY2i8/trYOfFiBq8/I6p4tvr4vr3Pu6+Py6iG8gLa8hQOh18el1ESHQND8IMysrGcL5g5vz74vv2D+IYO0ALgUAAA==
+            skull-owner: Scream_Z
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZHJhZ29uYmFsbFwiLFwi
+          Y2xhc3NcIjpcIlNob3BLZWVwZXJzXCJ9In0=
+      '22':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SKULL_ITEM
+          damage: 3
+          meta:
+            ==: ItemMeta
+            meta-type: SKULL
+            internal: H4sIAAAAAAAAAFVU266bRhQlUS8nR/0Kq28nkTFgDJHyYHMzmEuMuetI1QBjMzBcDTY4yn/0I/qRJad9aB/mYa2919pra0bzTBDPxG+nYsD4a1efEYZPxHs1JX5n05hPmTX7Ca7P1CcG8MknDsTgE8PwMNkkPLOJk2fieRY1sOsRvH4gnno49kMHr88EQbx7Ij6c0KUCP5j3f0ExkRmjMyrtiI6lDu2GBrn3wC/0WRa8NukwOKzclqu429eEU4TAJ10SXdB+RMvxEG8jjmGyezlKXqGZ3qkKHtp4v4dSO3KtJBcHOKLJnjqyYmXfypqJ0TYs1xiNV57QMa+Tioa5nCL5jHMJeLYp0Z28W6KHM3Z1yev21425nPZxwBqC200g3ZD3VuOogQ8zsjBPwWo8nOsO0ljUyxCvQNNNXFv4rSWzIHXTYSzYpgBhvjQHThXrAuvDXs9LrrmOklIKKavsWX9Vt+pS7NXWmjxLRmbHxUc5da1e59hzilzcgLwGp9ZegR15b76Wl26JmxvrBFS2jYAt4jZssLlb6q3Ebx9KWDG7Mdp098qxy5xanwr3sKQ0O4Y233guUnYt18UgWzo1HRnTozBTzXIUb3k7SxVzMfE9OdS8yzK9oJaJ0In51Be+xUFV4BnezaRrP5oo3eNhi2+eQek6pwbF6XpfZ6cX4XjlgU8pRV6h2pRqyXYNqody65cvOZjW5kvVysP2Jvhp13opeVDZfYOBPuYTTcnSY20otB93rszvbbch6SN7Xwv9BitD3I8MNbmn2tj6e+VxdjgmfbjVGA62FYzeSjpv+quml3AX9LGosgLj1xrDrxrp0pmwpF37eoFeV6dC6MEdX950QYovN2Nv1X73QrWBCG+7kS93fNvJeYYO1UWk7u4tcbBAWeqXJ+JnD+ABvvsT3uuLKmgk8Fc4oe0sDrZovt2L4YSTNR9DNEYz3z7M6X5QhS1K9totKvE1cnGhoi2rCioVKeo6Eo8rs3RXUa6SoYNzS5FR6BxJy/dykzLWppiicFKvAtpe1Go3xVTUxIpnhfPcf3w0N/KzLA2OSN++ZXoAPx3CwF4lpXeKAnkFAg1Hgnqx0I5MKg//20dGQUamcy2Z3mqbtxlzVpfsNQf9j/vRP/vd33ZUy1m337L6xP/HY90Df41DWsui6jjEpUfqtI3h/kcO92Y4Fyr01bWluIwlpkWYZ6WZF5SZS6Phm9hUXNoS1Sl0Ihw66t1yMI5EuwxLE82alaUYK8PRCoNS6fCHxtmuQ6Qe3rLt5yck7HihIr8QxBPxkwlKSPziwAwM/Yx/3fl/qIJlEsa3Bej7DsVDD6+Lz303wI8LkPSorma4+Pa6qGbl6+Lz6wJf4v518fF1kWBwvb5Rp6xuDhDOn9qMvy++E38DmjZ37iIFAAA=
+            skull-owner: Tehaut
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwibGdidFwiLFwiY2xhc3Nc
+          IjpcIlNob3BLZWVwZXJzXCJ9In0=
+      '10':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SKULL_ITEM
+          damage: 3
+          meta:
+            ==: ItemMeta
+            meta-type: SKULL
+            internal: H4sIAAAAAAAAAFVUyY6bWBQlUbdSKfVXWL2rlAow2CZSLxhswGYymFElRUyGhx+D4QGGKP/RH9Ef2a5KFt2rq3vucM49i/uIYY/YH9alh9Bo6zOA6QP2UU6wP/EljSfEmXzG13H4TJ1X9POGTpfPySpNydWaXFNL+hF7vA81aYtA2n3GHlB6Q32bdo8Yhn14wD5bIKvCN+TjP+K53iiTIU8mnfjFYRqMnZAEy4o4xAKQGMFATEqzCcPquMzQhROtD7uhqdLawkvhlAtMtYFScLmtK8KsNF8oxie50HGrvQJK58PsxKhmU8vhIG/ZyTV2vc2ZuREEymhOslIlnRv0szMwtj1H6BSR5Kpjxo4SPLvNG91/Ytf8OJRGPjLtQM2ox9VjS5uMs5rP5d69uQfDb1MP9sttBq2ZSKYl4z91gL2SLHnJ2H7oY9FgTlNEtG3M6HTDoFiBlK0cWT+w93teYpp+HHhOO6Wb3XUvFoDe1Q3LQiunZB220VWU6960gERPQs+VqH0BXFR6V2Z73lwIUbXP3nCy1uOe2HEeBcCalvyb0SSTE7ueUziJ6PFpxU9rGSXLZuDwg71tPHpeSZroEsqqYykNhyhfpZlwqGP8Fj9Nk5x5JeoEAonHkRpaxaKNwyYyrw5zsdyqManuWPRSWul7TpO4ExTFUjjYWlaqSApmNM+exiuUnfqJbvHVSeFMDo1Nsg0DMDKkYvtnCk20IB2ulCrnxnUnE73bsdM6nz37DIKEnLkXiSqcKx4St6x/ibt9lupzsgMvM1Uzsx4el0OUdh5XtBmQ7UE+QzJSK6RsSg4/PqFCiNftNF4nx36h1Al5G1MkPV56Oeye1MGo84jY+tSWHTL+qpJPYGW4GgNyOwIH6QY3G5ck1iYI2+wqEncpxBX/6wH73Qlhn374Ox3rTOb3eOgSMF6aeeSxQBbqTD35k37yb/rpgmsndtT58SDzLIil/RCUsAtseJEBu5J5eVRnewyEXakW7NInt3hQ+IQuOFAlj2Tg2pNWxJM2H2fNkjsesJlccVNEBk0kOrp/5/25Z3/yPQ0mIspl8IuLhFVU7vDE20O7dG6JC6fAPb7rS6Q9EVg/+xLRoRLJmQJPfa/9vOnOAzXFsqn/Y2/93r77xVknkjnqYDP8Z0cfubAPXG3y3QBXShomPIMHXv6uQyG1iyrAi+rasyZqQBcg9Octobrm5a7tpgvbWRNsyp/9USv8m18EpebKhF+qN110wN0TXJ253J8vRFC8eXYkVVIG777wHPMWz8eGwbAH7DctLFPskxV2KbqEd+AT536TeV3D3O+LEKEWRD1Ku8VX1Pbpl0UYI1BX93Tx/XVR3UdfF19fF2EypNXbh/qGwBv05XURw7Dr3otWXjeHNL3/t3v+Y/ED+xe/SHTxLQUAAA==
+            skull-owner: Sasetka
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiYWR2ZW50dXJlX3RpbWVc
+          IixcImNsYXNzXCI6XCJTaG9wS2VlcGVyc1wifSJ9
+      '11':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SKULL_ITEM
+          damage: 3
+          meta:
+            ==: ItemMeta
+            meta-type: SKULL
+            internal: H4sIAAAAAAAAAFVU2Y6jVhBlRommp5WvsPLmabHahpHygFkMmMULi7lqKWL3hQvYLAY8mv/IR+Qj4+70Q/JQuqpTdeqcWw/1jGHP2G/Hokdo19QpRMkT9lmNsd9jMggIhklfAoohXhgiWr6Eq9XiJSHCNOFSkkpp+hl7fpAuSdPBpP2KPXXJ2PVN0j5jGPbpCft6hFkVvCGf/24mlrsvGwFc1g7baOFOp319XKSgkvDanF/3Do1n2U1rbJHsJv7Ce5bdnPyd4Rt1cCXBXJcvemd79ebiwypsAFPmcnFY08yS708ZQ7cFmeYXt+fvnpcR25Vl7vWdfHQvOA2S81HF8XwqU0lON4l61Bfx2luXfJ+DCJx8f4mrPmykncB6Td8r4VzWi5os1JuYnYEqDKLTDqjp0rkaUyQ+3nVmTcga3+GMdK2U0GB3fshN+G1Pk/NFptF4Z9xqJZNE6apzKdroJ3ebFaPSRIiGu0ZyD+1ysGECp3PBhRXaNLluO9QKdRaD1E7pFzEJGJZN1uwpgBtaud+m+8oRiu2d7sOxWXPyUc0XC4kuIlmOLytuSqbTTjAOytmiyrJHPFuJ+12G2mQwYduD7caqKEmJoVVsW+pOMLSBW6naXeV5Rp6nBqfswuGXg0kYcbg5l0TkKvujyVDQKJJgpYRQpr02F002XCXb+5yXDzoF8wG6AVufJi5T5kfitivbA5AJ6nqZOiDgaM/NbZq77G/LK5VwIjvf2fOVrzmCSzWey4ztSoBcMLLsMBIgYNySDSPAyOOyWsWMmuh4cknFHIKQvqkLyRDm2spd46pUoFRX3EYnkNrsEYpN0XA8EjL7qV8ym9LnjnmxIOp6bSmH6pwftEKsbDvcF4v7ImD9UR9J1ASj02/DUAsAN+V0uNIiK4ujq/HHE/arG6A++fRXMtSZKmhE4JEoog/n8MRDVawzw/Yn6xGGyE9mrhLGcdiqAg8jRbuBErXAQYUK+eWDWxiefDbEPQFKaTJFnjA2BuXnEW16zuCXAFmePxqlfzcmtRUgn6nVegopcAk3ruU/dD/mgNhDQUh1pAo/tChUhaVMxCcNOaU7PuoT8Pbv/mJFI8GHp3jjMrHiTuBkvNf+/dNDB5n60WH+j731n7T2Q7OOlcNgQfb2nxl96KEeeObke4DQywWKBY4Ap/O7D/0e0f5dokFekKa9Rpa4hkBUScM+QN/eM0buD75d0A+fo0n5I/A0ZOZuaYjS4FMOAWxnBKKz8D2JBKU6+J4xGnYE3/cirLm3N91fOAx7wn4xgzLBvvg9BHXRP4Ava+9PVbBMbPdjFnRdA8O+S9rZ967pk2+zIOpgXT3S2Y/XWfWgvs6+v86Csq6yvn2dfXudRSho23f0eK4v2yR5HLZH/nP2E/sHmd8irCYFAAA=
+            skull-owner: YuiZoku
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiYW1vbmd1c1wiLFwiY2xh
+          c3NcIjpcIlNob3BLZWVwZXJzXCJ9In0=
+  killmessages:
+    size: 4
+    type: CustomMenu
+    icons:
+      '30':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: ARROW
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3KMQqEMBBG4elWPMZfe4KUWlnsbrmFAxLDFIFNAplJJd7dYPk+3kg00Gv+7evy/dB2IvskcKhirWZM8GY1Hs1E4aw26RIsltwTJz87wzFC0SQWgzKmXn+v+vhbcmNcuOgGnH24zmsAAAA=
+        json: |-
+          eyJuYW1lIjoicmV0dXJuIiwiYXR0cmlidXRlcyI6dHJ1ZSwiYWN0aW9ucyI6IntcIm5hbWVcIjpc
+          ImNvc21ldGljc1wiLFwiY2xhc3NcIjpcIk1lbnVcIn0ifQ==
+      '32':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: EMERALD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjMKhWykvMTVWyUirIz8wrKVbSUUosKSnKTCotSS1WsiopKk0FiiSXZObnAblKSrUMAGxDxE5AAAAA
+        json: eyJuYW1lIjoicG9pbnRzIiwiYXR0cmlidXRlcyI6dHJ1ZSwiYWN0aW9ucyI6IiJ9
+      '10':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_HELMET
+          meta:
+            ==: ItemMeta
+            meta-type: LEATHER_ARMOR
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKxWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUUlLTEktzSmKUdGKUknMSi4vBot6ZOTm+qcXFiempQIFapVoGAMTv53BhAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZGVmYXVsdFwiLFwiY2xh
+          c3NcIjpcIktpbGxNZXNzYWdlc1wifSJ9
+      '11':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: POTION
+          damage: 8193
+          meta:
+            ==: ItemMeta
+            meta-type: POTION
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKpWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUUooScxNLMpNjlHRilJJzEouLwcLemTk5vqnFxYnpqUCBWqVaBgCrFuQ1YgAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZHJhbWF0aWNcIixcImNs
+          YXNzXCI6XCJLaWxsTWVzc2FnZXNcIn0ifQ==
+  beddestroys:
+    size: 5
+    type: CustomMenu
+    icons:
+      '39':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: ARROW
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3KMQqEMBBG4elWPMZfe4KUWlnsbrmFAxLDFIFNAplJJd7dYPk+3kg00Gv+7evy/dB2IvskcKhirWZM8GY1Hs1E4aw26RIsltwTJz87wzFC0SQWgzKmXn+v+vhbcmNcuOgGnH24zmsAAAA=
+        json: |-
+          eyJuYW1lIjoicmV0dXJuIiwiYXR0cmlidXRlcyI6dHJ1ZSwiYWN0aW9ucyI6IntcIm5hbWVcIjpc
+          ImNvc21ldGljc1wiLFwiY2xhc3NcIjpcIk1lbnVcIn0ifQ==
+      '41':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: EMERALD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjMKhWykvMTVWyUirIz8wrKVbSUUosKSnKTCotSS1WsiopKk0FiiSXZObnAblKSrUMAGxDxE5AAAAA
+        json: eyJuYW1lIjoicG9pbnRzIiwiYXR0cmlidXRlcyI6dHJ1ZSwiYWN0aW9ucyI6IiJ9
+      '10':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BARRIER
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8K1WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrICM/DwgQydGKTknsbgYLOSUmuKSWlxSlF8J5Ncq1TIAAA1adR5dAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwibm9uZVwiLFwiY2xhc3Nc
+          IjpcIkJlZERlc3Ryb3lzXCJ9In0=
+      '11':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: MONSTER_EGG
+          damage: 94
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKtWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUigtLM1PiczOLizNzgCI6MUrJOYnFxWA5p9QUl9TikqL8SiC/VqmWAQAZhIMbZgAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwic3F1aWRfbWlzc2lsZVwi
+          LFwiY2xhc3NcIjpcIkJlZERlc3Ryb3lzXCJ9In0=
+      '12':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: FIREWORK
+          meta:
+            ==: ItemMeta
+            meta-type: FIREWORK
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKxWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKU0jKLUsvzi7JjlHRilJJzEouLwcJOqSkuqcUlRfmVQH6tUi0DAOO/gDhhAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZmlyZXdvcmtcIixcImNs
+          YXNzXCI6XCJCZWREZXN0cm95c1wifSJ9
+      '13':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: GLASS
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB2LsQ5AQBAFtyM+49W+QIlGQymSS+Sw4YKTuFWI+Hcb5cxkEqKYorztq6KpqXtgRU43XMIBmZwXp7CjuMMr4jHwdmeDzGBz8yLe+bkPOqwqU4NxsyH8OeepZC3HrfzipQ/7xJb2aQAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwibGlnaHRuaW5nX3N0cmlr
+          ZVwiLFwiY2xhc3NcIjpcIkJlZERlc3Ryb3lzXCJ9In0=
+      '14':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: LAVA_BUCKET
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCK9WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUchLLEuNTKwpy8ouBsjFKOjFKyTmJxcVgSafUFJfU4pKi/Eogv1aplgEAKIN0KWcAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwibGF2YV9leHBsb3Npb25c
+          IixcImNsYXNzXCI6XCJCZWREZXN0cm95c1wifSJ9
+      '15':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: CARROT_STICK
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKlWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUCjLT43Mzi4szc4B8nRil5JzE4mKwjFNqiktqcUlRfiWQX6tUywAAo+aWY2QAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwicGlnX21pc3NpbGVcIixc
+          ImNsYXNzXCI6XCJCZWREZXN0cm95c1wifSJ9
+      '16':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: STRING
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3IMQ5AQBAF0OmIY/zaCZRoNOg0k8hgCgm7ye4oZOPuRPleQZRTVk9z1ww9jQliFvblMo2oLFxaQlbbvfuIxHByKqNimA9ONs8oGeshMf5b69ZqtODvzw8eegFUkJ8wYAAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwidG9ybmFkb1wiLFwiY2xh
+          c3NcIjpcIkJlZERlc3Ryb3lzXCJ9In0=
+      '19':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: EYE_OF_ENDER
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8KtWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUSjIyU9NilHRilJJzEouLwWJOqSkuqcUlRfmVQH6tUi0DAKgA9zxeAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwidGhpZWZcIixcImNsYXNz
+          XCI6XCJCZWREZXN0cm95c1wifSJ9
+      '20':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: EGG
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKtWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUUtPT41MrCnLyi4GSMUo6MUrJOYnFxWA5p9QUl9TikqL8SiC/VqmWAQCfIIv2ZgAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZWdnX2V4cGxvc2lvblwi
+          LFwiY2xhc3NcIjpcIkJlZERlc3Ryb3lzXCJ9In0=
+      '21':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SNOW_BALL
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKxWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUknIyq6oSi1JilHRilJJzEouLwcJOqSkuqcUlRfmVQH6tUi0DAKrbZLVhAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiYmxpenphcmRcIixcImNs
+          YXNzXCI6XCJCZWREZXN0cm95c1wifSJ9
+      '22':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: MONSTER_EGG
+          damage: 90
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKtWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUCjLT41MrCnLyi4GSMUo6MUrJOYnFxWA5p9QUl9TikqL8SiC/VqmWAQBzVNr5ZgAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwicGlnX2V4cGxvc2lvblwi
+          LFwiY2xhc3NcIjpcIkJlZERlc3Ryb3lzXCJ9In0=
+      '23':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SKULL_ITEM
+          damage: 3
+          meta:
+            ==: ItemMeta
+            meta-type: SKULL
+            internal: H4sIAAAAAAAAAE2P3W6CMACFuyXLHNlTNLvUBBR0mngx/0ssDv9QQmIKrQNs0UBZBONb7QFHdrXL75zvXBwFAAW8rk4555/p+RhxVgOPiII3TQ8M+k7Uhu539Iau+Z1GVz/SBglo4OuUaZTqClCq0YWlMmLZC6hJdpV5yjIFAPBQA09bwnMGflhhqu4uVOnO5EGB2hWvVypfoPjSQcm28IeojUTVzz7a86L7zzUkcQy+b5mhm9i5L7bqvLXkbLbUArH5duOBsEZIX0wnHI/CEJfhCYtJtHAsgUu7xGv7asV2y10vBW6aHK/d2HLGBo4pt0pUWNNxuY8nJ9exwn3TFTjeGCjRuke7368e1MDzwDmg4cIC9g0SKdPIzyXLYE+mOatDEsjonFQIbx5MiGAe7HmQE1oc/PzLg3UPBpxk2V88YHTEMpmei4rv8A5+AY40QzR5AQAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwibGFkeV9idWdcIixcImNs
+          YXNzXCI6XCJCZWREZXN0cm95c1wifSJ9
+      '24':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: FLINT_AND_STEEL
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCK5WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKU0jKLUuNTEvOSgVydGKXknMTiYrCEU2qKS2pxSVF+JZBfq1TLAADbN5UwYwAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZmlyZV9kYW5jZVwiLFwi
+          Y2xhc3NcIjpcIkJlZERlc3Ryb3lzXCJ9In0=
+  woodskins:
+    size: 5
+    type: CustomMenu
+    icons:
+      '39':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: ARROW
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3KMQqEMBBG4elWPMZfe4KUWlnsbrmFAxLDFIFNAplJJd7dYPk+3kg00Gv+7evy/dB2IvskcKhirWZM8GY1Hs1E4aw26RIsltwTJz87wzFC0SQWgzKmXn+v+vhbcmNcuOgGnH24zmsAAAA=
+        json: |-
+          eyJuYW1lIjoicmV0dXJuIiwiYXR0cmlidXRlcyI6dHJ1ZSwiYWN0aW9ucyI6IntcIm5hbWVcIjpc
+          ImNvc21ldGljc1wiLFwiY2xhc3NcIjpcIk1lbnVcIn0ifQ==
+      '41':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: EMERALD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjMKhWykvMTVWyUirIz8wrKVbSUUosKSnKTCotSS1WsiopKk0FiiSXZObnAblKSrUMAGxDxE5AAAAA
+        json: eyJuYW1lIjoicG9pbnRzIiwiYXR0cmlidXRlcyI6dHJ1ZSwiYWN0aW9ucyI6IiJ9
+      '11':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: WOOD
+          damage: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3JsQ5AMBAG4NuIx/hnT2BksjAYLJfIqQ4NWmmvk3h3YvzyVUQlFe289N040HRDVKNbs9qERmO2NcSoC/4jboaX0zIaRrpiNna5DvE7o2aYQ1L6aw5hm3bnPz146AVz6ITTYwAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwic3BydWNlX3BsYW5rXCIs
+          XCJjbGFzc1wiOlwiV29vZFNraW5zXCJ9In0=
+      '12':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: WOOD
+          damage: 2
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKpWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUkjKLkjPiC3IS87JjlHRilJJzEouLwTLh+fkpwdmZeUBerVItAwD4T8zgYgAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiYmlyY2hfcGxhbmtcIixc
+          ImNsYXNzXCI6XCJXb29kU2tpbnNcIn0ifQ==
+      '13':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: WOOD
+          damage: 3
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCK5WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUskrz0nNS4wtyEvOyY5R0YpSScxKLi8FS4fn5KcHZmXlAXq1SLQMAw5Ezx2MAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwianVuZ2xlX3BsYW5rXCIs
+          XCJjbGFzc1wiOlwiV29vZFNraW5zXCJ9In0=
+      '14':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: WOOD
+          damage: 4
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCK5WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKAoonJmYnxBTmJedkxSjoxSsk5icXFYKnw/PyU4OzMPCCvVqmWAQBBc/BoYwAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiYWNhY2lhX3BsYW5rXCIs
+          XCJjbGFzc1wiOlwiV29vZFNraW5zXCJ9In0=
+      '15':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: WOOD
+          damage: 5
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCK1WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUUhKLsuPzE7PjC3IS87JjlHRilJJzEouLwZLh+fkpwdmZeUBerVItAwDx0HYSZQAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZGFya19vYWtfcGxhbmtc
+          IixcImNsYXNzXCI6XCJXb29kU2tpbnNcIn0ifQ==
+      '16':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: LOG
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8KtWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKU8hOz43Py02OUdGKUknMSi4vBouH5+SnB2Zl5QF6tUi0DAHF0DrNeAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwib2FrX2xvZ1wiLFwiY2xh
+          c3NcIjpcIldvb2RTa2luc1wifSJ9
+      '19':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: LOG
+          damage: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKxWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUiguKSpNT43Py02OUdGKUknMSi4vBEuH5+SnB2Zl5QF6tUi0DAMR6GHNhAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwic3BydWNlX2xvZ1wiLFwi
+          Y2xhc3NcIjpcIldvb2RTa2luc1wifSJ9
+      '20':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: LOG
+          damage: 2
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKhWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUkjKLkjPic/LTY5R0YpSScxKLi8Hi4fn5KcHZmXlAXq1SLQMA1j3viGAAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiYmlyY2hfbG9nXCIsXCJj
+          bGFzc1wiOlwiV29vZFNraW5zXCJ9In0=
+      '21':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: LOG
+          damage: 3
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKxWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUskrz0nNS43Py02OUdGKUknMSi4vBEuH5+SnB2Zl5QF6tUi0DAPtbyjBhAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwianVuZ2xlX2xvZ1wiLFwi
+          Y2xhc3NcIjpcIldvb2RTa2luc1wifSJ9
+      '22':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: LOG_2
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKxWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKAoonJmYnxOfnpMUo6MUrJOYnFxWCJ8Pz8lODszDwgr1aplgEAiHQkxWEAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiYWNhY2lhX2xvZ1wiLFwi
+          Y2xhc3NcIjpcIldvb2RTa2luc1wifSJ9
+      '23':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: LOG_2
+          damage: 1
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCK5WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUUhKLsuPzE7Pjc/LTY5R0YpSScxKLi8FS4fn5KcHZmXlAXq1SLQMAs7s1amMAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZGFya19vYWtfbG9nXCIs
+          XCJjbGFzc1wiOlwiV29vZFNraW5zXCJ9In0=
+      '10':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BARRIER
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8K5WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrICM/DwgQydGKTknsbgYLBSen58SnJ2ZB+TVKtUyAADw8TFyWwAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwibm9uZVwiLFwiY2xhc3Nc
+          IjpcIldvb2RTa2luc1wifSJ9
+  votes:
+    size: 4
+    type: CustomMenu
+    icons:
+      '31':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BOOK
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjMK1WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOUknMSi4tjlKxilJxz8otTY5RqlWoZAASlyYBFAAAA
+        json: eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wiY2xhc3NcIjpcIkNsb3NlXCJ9In0=
+      '11':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: MONSTER_EGG
+          damage: 120
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8KlWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUijPyC+LL8oHqYpR0YpSScxKLi8ESvql5pTFKtUq1DACoZScRXAAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwic2hvcF92b3Rlc1wiLFwi
+          Y2xhc3NcIjpcIk1lbnVcIn0ifQ==
+      '13':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: POTION
+          damage: 8225
+          meta:
+            ==: ItemMeta
+            meta-type: POTION
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8KtWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUMlITc0oy4svygSpjlHRilJJzEouLwVK+qXmlMUq1SrUMANwZoZpeAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiaGVhbHRoX3ZvdGVzXCIs
+          XCJjbGFzc1wiOlwiTWVudVwifSJ9
+      '15':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: WATCH
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8KlWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUSjJzU+PL8oHqYpR0YpSScxKLi8ESvql5pTFKtUq1DACqCQDGXAAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwidGltZV92b3Rlc1wiLFwi
+          Y2xhc3NcIjpcIk1lbnVcIn0ifQ==
+  shop_votes:
+    size: 4
+    type: CustomMenu
+    icons:
+      '11':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_HELMET
+          meta:
+            ==: ItemMeta
+            meta-type: LEATHER_ARMOR
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8K5WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUkhKLM5NjlHRilJJzEouLwWJh+SWpwRn5BTFKtUq1DAClyPslWwAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiYmFzaWNcIixcImNsYXNz
+          XCI6XCJWb3RlU2hvcFwifSJ9
+      '13':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: IRON_HELMET
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8K1WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUUlLTEktzSmKUdGKUknMSi4vBomH5JanBGfkFMUq1SrUMAOFdQJNdAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZGVmYXVsdFwiLFwiY2xh
+          c3NcIjpcIlZvdGVTaG9wXCJ9In0=
+      '15':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: DIAMOND_HELMET
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKxWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKU8stSiwryy1OLUlNilHRilJJzEouLwTJh+SWpwRn5BTFKtUq1DAABUwQnYQAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwib3ZlcnBvd2VyZWRcIixc
+          ImNsYXNzXCI6XCJWb3RlU2hvcFwifSJ9
+      '31':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: ARROW
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjcK9WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUyvKBSmKUdGKUknMSi4vBYr6peaUxSrVKtQwAU202pFcAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwidm90ZXNcIixcImNsYXNz
+          XCI6XCJNZW51XCJ9In0=
+  health_votes:
+    size: 4
+    type: CustomMenu
+    icons:
+      '31':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: ARROW
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjcK9WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUyvKBSmKUdGKUknMSi4vBYr6peaUxSrVKtQwAU202pFcAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwidm90ZXNcIixcImNsYXNz
+          XCI6XCJNZW51XCJ9In0=
+      '11':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: GOLDEN_APPLE
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3IMQ5AQBAF0OmIY/zaCZQ0NKhoJpGxJiHBJrujEncnyvcyopSScpyaqmupvyFmYZsv04jCwqU5xNnmz4+4GaccyigYq4TF+fAhZ7hdYvx78Ka1ym4r48FDL5cLojtgAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiaGFyZGNvcmVcIixcImNs
+          YXNzXCI6XCJWb3RlSGVhbHRoXCJ9In0=
+      '13':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: POTION
+          damage: 8193
+          meta:
+            ==: ItemMeta
+            meta-type: POTION
+            internal: H4sIAAAAAAAAAB3IMQ5AQBAF0OmIY/zaCZQ0NHQ0k8hYIySLxM5W4u5E+V5GlFJSDmNTdS11N8Ts2qZoGlDYFTWHONvO4yNuxiG7MgrGrItEb4yc4byE8G9/mtYq3lbGg4de7H2GjV8AAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZGVmYXVsdFwiLFwiY2xh
+          c3NcIjpcIlZvdGVIZWFsdGhcIn0ifQ==
+      '15':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: EXP_BOTTLE
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8KtWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUUvJLk3KATJ0YpeScxOJisGBYfkmqR2piTklGjFKtUi0DAKV16xJeAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZG91YmxlXCIsXCJjbGFz
+          c1wiOlwiVm90ZUhlYWx0aFwifSJ9
+  time_votes:
+    size: 4
+    type: CustomMenu
+    icons:
+      '31':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: ARROW
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjcK9WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUyvKBSmKUdGKUknMSi4vBYr6peaUxSrVKtQwAU202pFcAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwidm90ZXNcIixcImNsYXNz
+          XCI6XCJNZW51XCJ9In0=
+      '11':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: STAINED_CLAY
+          damage: 4
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8KxWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUUhIrY5R0YpSScxKLi8EiYfklqSGZIOlapVoGAPN2PulZAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZGF5XCIsXCJjbGFzc1wi
+          OlwiVm90ZVRpbWVcIn0ifQ==
+      '13':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: HARD_CLAY
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8KlWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUikvzilNLYpR0YpSScxKLi8GCYfklqSGZIBW1SrUMAOCtBK9cAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwic3Vuc2V0XCIsXCJjbGFz
+          c1wiOlwiVm90ZVRpbWVcIn0ifQ==
+      '15':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: STAINED_CLAY
+          damage: 15
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8K5WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrICMzPSMkhglnRil5JzE4mKwWFh+SWpIJkhBrVItAwBTMOoBWwAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwibmlnaHRcIixcImNsYXNz
+          XCI6XCJWb3RlVGltZVwifSJ9
+  stats:
+    size: 6
+    type: CustomMenu
+    icons:
+      '4':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: PAPER
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjUKhWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVlGoZAA169NQwAAAA
+        json: eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoiIn0=
+      '19':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: PAPER
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjUKhWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVlGoZAA169NQwAAAA
+        json: eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoiIn0=
+      '21':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: PAPER
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjUKhWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVlGoZAA169NQwAAAA
+        json: eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoiIn0=
+      '23':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: PAPER
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjUKhWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVlGoZAA169NQwAAAA
+        json: eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoiIn0=
+      '25':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: PAPER
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjUKhWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVlGoZAA169NQwAAAA
+        json: eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoiIn0=
+      '31':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: PAPER
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjUKhWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVlGoZAA169NQwAAAA
+        json: eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoiIn0=
+      '49':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BOOK
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjMK1WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOUknMSi4tjlKxilJxz8otTY5RqlWoZAASlyYBFAAAA
+        json: eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wiY2xhc3NcIjpcIkNsb3NlXCJ9In0=
+  team_selector:
+    size: 5
+    type: TeamSelectorMenu
+    icons:
+      '40':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BOOK
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjMK1WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOUknMSi4tjlKxilJxz8otTY5RqlWoZAASlyYBFAAAA
+        json: eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wiY2xhc3NcIjpcIkNsb3NlXCJ9In0=
+  teleport_spectator:
+    type: SpectatorPlayersMenu
+  options_spectator:
+    size: 4
+    type: CustomMenu
+    icons:
+      '11':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_BOOTS
+          meta:
+            ==: ItemMeta
+            meta-type: LEATHER_ARMOR
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKlWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUigtSU1OsDGKUdGKUknMSi4vBosEFqckliSX5Rf4FIE0xSrVKtQwAwTxvFmQAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwic3BlZWQ6MFwiLFwiY2xh
+          c3NcIjpcIlNwZWN0YXRvck9wdGlvblwifSJ9
+      '12':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: CHAINMAIL_BOOTS
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKlWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUigtSU1OsDGOUdGKUknMSi4vBosEFqckliSX5Rf4FIE0xSrVKtQwA3iuflmQAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwic3BlZWQ6MVwiLFwiY2xh
+          c3NcIjpcIlNwZWN0YXRvck9wdGlvblwifSJ9
+      '13':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: IRON_BOOTS
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKlWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUigtSU1OsjGKUdGKUknMSi4vBosEFqckliSX5Rf4FIE0xSrVKtQwAvhT+zGQAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwic3BlZWQ6MlwiLFwiY2xh
+          c3NcIjpcIlNwZWN0YXRvck9wdGlvblwifSJ9
+      '14':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: GOLD_BOOTS
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKlWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUigtSU1OsjGOUdGKUknMSi4vBosEFqckliSX5Rf4FIE0xSrVKtQwAoQMOTGQAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwic3BlZWQ6M1wiLFwiY2xh
+          c3NcIjpcIlNwZWN0YXRvck9wdGlvblwifSJ9
+      '15':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: DIAMOND_BOOTS
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKlWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUigtSU1OsTGKUdGKUknMSi4vBosEFqckliSX5Rf4FIE0xSrVKtQwAfmo8eGQAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwic3BlZWQ6NFwiLFwiY2xh
+          c3NcIjpcIlNwZWN0YXRvck9wdGlvblwifSJ9
+      '20':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: COMPASS
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjiKpWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUEktL8nVLUnNSC/KLSmKUdGKUknMSi4vBcsEFqckliSX5Rf4FIK0xSrVKtQwAFgS7AGoAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiYXV0by10ZWxlcG9ydFwi
+          LFwiY2xhc3NcIjpcIlNwZWN0YXRvck9wdGlvblwifSJ9
+      '21':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: EYE_OF_ENDER
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjiKxWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrICMzPSMEt2yzGKgXIySToxSck5icTFYKrggNbkksSS/yL+gBCxbq1TLAAA1rynMaQAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwibmlnaHQtdmlzaW9uXCIs
+          XCJjbGFzc1wiOlwiU3BlY3RhdG9yT3B0aW9uXCJ9In0=
+      '23':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: WATCH
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjiKxWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKU0jKLikt0C1KLivPzYpR0YpSScxKLi8FSwQWpySWJJflF/gUgnTFKtUq1DAAmqX15aQAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZmlyc3QtcGVyc29uXCIs
+          XCJjbGFzc1wiOlwiU3BlY3RhdG9yT3B0aW9uXCJ9In0=
+      '24':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: GLOWSTONE_DUST
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjiK5WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUijPyy3WLC1KTSxJL8otilHRilJJzEouLwZLBMHH/ApDeGKVapVoGAKX4F+xrAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwic2hvdy1zcGVjdGF0b3Jc
+          IixcImNsYXNzXCI6XCJTcGVjdGF0b3JPcHRpb25cIn0ifQ==
+  tracker_communication:
+    size: 3
+    type: CustomMenu
+    icons:
+      '13':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: COMPASS
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3JMQ5AQBAF0OmIY/zaCZRUCpSaSWRsJiFYsjtbibsT5csriHLK6nFqm6Gn/oaYhXVOphGVhaQlxNl6+o+4GV4OZVQMC+I2DVNczotRMtwuMf7VqU+MBw+9O+JXg14AAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwidHJhY2tlcl9zaG9wXCIs
+          XCJjbGFzc1wiOlwiTWVudVwifSJ9
+  quick_communications:
+    size: 5
+    type: CustomMenu
+    icons:
+      '40':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: ARROW
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3KMQ6DMAwFUG+tOMafOQEjTAxtRxZLyFgeIpogJc6EcndKxye9juhJj3FZ5+nzpuWEuOewVbeCwXO1HqIejvQjTkaSaIyB4Vl0t7zqEWNNQeVOjJ6hXynlf16WKqOh0QWOEdXCZwAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwidHJhY2tlcl9jb21tdW5p
+          Y2F0aW9uXCIsXCJjbGFzc1wiOlwiTWVudVwifSJ9
+      '10':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BOOK
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCK9WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUMlJzcvJjlHRilJJzEouLwWLO+bkFQDaQyi3Ny0xOBOmLUapVqmUAABHa0clnAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiaGVsbG9cIixcImNsYXNz
+          XCI6XCJDb21wYXNzQ29tbXVuaWNhdGlvblwifSJ9
+      '11':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BOOK
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjiK5WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUMnPjk/NzM/PSY5R0YpSScxKLi8Hizvm5BUA2kMotzctMTgTpjVGqVaplAADgUYaBawAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiaW1fY29taW5nXCIsXCJj
+          bGFzc1wiOlwiQ29tcGFzc0NvbW11bmljYXRpb25cIn0ifQ==
+      '12':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: IRON_FENCE
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB2LMQ7CQAwE3YF4xtZ5QcqkooGSxiIyF4MscQ7K+aoof+eg2hmN9kR0pMNwm87j9UL3DRKx2qOGFvSxVu0gKWzxptgYLlkZPcPyNOtTfTZ/MTpGeksp/zQu+dO4Ta5uSX53xo6dvuZC0WtuAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiaW1fZGVmZW5kaW5nXCIs
+          XCJjbGFzc1wiOlwiQ29tcGFzc0NvbW11bmljYXRpb25cIn0ifQ==
+      '13':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: IRON_SWORD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjiKtWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUMnPjgUoTk7Mz89JjlHRilJJzEouLwVLO+bkFQDaQyi3Ny0xOBGmPUapVqmUAABRRjD5uAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiaW1fYXR0YWNraW5nXCIs
+          XCJjbGFzc1wiOlwiQ29tcGFzc0NvbW11bmljYXRpb25cIn0ifQ==
+      '14':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: DIAMOND
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB2LOwrDMBAFt0vwMV6tE7iMqzRJmWZBrIUwAn2MtKqM72451ZtheBPRkx6vn30v3w/ZA6Jaw9rVN8xauzcQp6HkoTgYWZJnzIyQrCsx+hHzxjAMF6W1f1tK2gePST0HJ/efceKkC9YbneBvAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiaW1fY29sbGVjdGluZ1wi
+          LFwiY2xhc3NcIjpcIkNvbXBhc3NDb21tdW5pY2F0aW9uXCJ9In0=
+      '20':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BOOK
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjiKlWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUSjIS87KL4yvzS2OUdGKUknMSi4vBEs75uQVANpDKLc3LTE4EaY5RqlWqZQAArRoe7mwAAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwidGhhbmtzX3lvdVwiLFwi
+          Y2xhc3NcIjpcIkNvbXBhc3NDb21tdW5pY2F0aW9uXCJ9In0=
+      '15':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: CHEST
+          meta:
+            ==: ItemMeta
+            meta-type: TILE_ENTITY
+            internal: H4sIAAAAAAAAAI2MOwoCQRBEJ1M8hVQ8J9jQjUw0NGkY2qbRgfnIfEyWPY0XdTQzM6oqHvV2xmzN5nBxx/l8Mq8F3Frx1960YmqlqwVL8zmNiYWQOCphIvjoJIegA6YbwRIkcK1fNuf4GH1E7MkLf/6E1e5/BO7OT3VFa+5FtP7nwGreJunqwLMAAAA=
+            blockMaterial: CHEST
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiaW1fY29sbGVjdGluZ1wi
+          LFwiY2xhc3NcIjpcIkNvbXBhc3NDb21tdW5pY2F0aW9uXCJ9LCB7XCJuYW1lXCI6XCJpX2hhdmV
+          fcmVzb3VyY2VzXCIsXCJjbGFzc1wiOlwiQ29tcGFzc0NvbW11bmljYXRpb25cIn0ifQ==
+      '21':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BOOK
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjiKpWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKU0lNL4pMSk7NjlHRilJJzEouLwcLO+bkFQDaQyi3Ny0xOBGmNUapVqmUAAJJJ8tlqAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZ2V0X2JhY2tcIixcImNs
+          YXNzXCI6XCJDb21wYXNzQ29tbXVuaWNhdGlvblwifSJ9
+      '22':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: IRON_FENCE
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB2LMQ6DMBAEryPKM7bmBZRQ0UCZ5iTrMBfJEjYInyvE32NS7YxG+yZ6UdN/3DjME7kLYnaGpZhmdHYWbSHewp6q4mIkicroGMemktWt+tW0MlqG3yTnfxv2eFSuE0sKXp4/48ZNP1F+MuhvAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwicGxlYXNlX2RlZmVuZFwi
+          LFwiY2xhc3NcIjpcIkNvbXBhc3NDb21tdW5pY2F0aW9uXCJ9In0=
+      '23':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: IRON_SWORD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB2LsQ5AQBBEtyM+Y2pfoKTSUGpWZF2uuHBH3F4l/t1RzbzMm4qopKKdlr4bB5pviOrl1qQ2otEr2Rpi1B0hI25GEG8ZDWO3Gpcsi9kYNcPsEuO/dIc/c8/hU3BGvjfjwUMvfYi/920AAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwibGV0c19hdHRhY2tcIixc
+          ImNsYXNzXCI6XCJDb21wYXNzQ29tbXVuaWNhdGlvblwifSJ9
+      '24':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: DIAMOND
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB2MMQ7CMBAErwPlGVvnBSlJlQZKmpMsc1xhCdvIdxZFlL9jqHZGI+1EdKbT5R629XYl2RHdW3p0V8PireuMKJ5qGYqdUWJWxsL4aCiqz9DUam+ixpgZ8opm/77W/B48JveSJP4+GAcO+gLzhMbccwAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwid2VfbmVlZF9yZXNvdXJj
+          ZXNcIixcImNsYXNzXCI6XCJDb21wYXNzQ29tbXVuaWNhdGlvblwifSJ9
+      '25':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: FEATHER
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB2MMQrDMBAEr0vIM7b2C1zGVZqkTHNgLkKEA+tkpFMRjP8e2dXOMLA3oitd7u/5Mb2eJBvEveineawYvbQ4QIJrtq7YGCYpMkbGusgvllkt5KT2ZQyMsEitZ51yWjv3Sc00yPHA2LHTH3LlLMhxAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwicGxheWVyX2luY29taW5n
+          XCIsXCJjbGFzc1wiOlwiQ29tcGFzc0NvbW11bmljYXRpb25cIn0ifQ==
+  tracker_shop:
+    size: 5
+    type: EnemyTrackerMenu
+    icons:
+      '40':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: ARROW
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3KMQ6DMAwFUG+tOMafOQEjTAxtRxZLyFgeIpogJc6EcndKxye9juhJj3FZ5+nzpuWEuOewVbeCwXO1HqIejvQjTkaSaIyB4Vl0t7zqEWNNQeVOjJ6hXynlf16WKqOh0QWOEdXCZwAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwidHJhY2tlcl9jb21tdW5p
+          Y2F0aW9uXCIsXCJjbGFzc1wiOlwiTWVudVwifSJ9
+  solo:
+    size: 4
+    type: CustomMenu
+    icons:
+      '12':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BED
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3JMQqFMBAFwO0UTyGv9gSWWtn4q4/NgqyaImKykKyVeHfFcpiKqKSim+ah/430vyBmyS+nuYzW0ukayGpe40tcjCjBMVrGrj7WSeKmoc56KKNhrIfk/HWvIbzJuHHTA0TArrhlAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiam9pbiByYW5kb20gc29s
+          b1wiLFwiY2xhc3NcIjpcIkNvbW1hbmRcIn0ifQ==
+      '14':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SIGN
+          meta:
+            ==: ItemMeta
+            meta-type: TILE_ENTITY
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCK5WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUsvIz8xRyU/NKFYrzc/JjlHRilJJzEouLwZLO+bm5iXkpMUq1SrUMAH+t1UljAAAA
+            blockMaterial: SIGN
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiam9pbiBtZW51IHNvbG9c
+          IixcImNsYXNzXCI6XCJDb21tYW5kXCJ9In0=
+      '35':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: ENDER_PEARL
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8K5WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUilKz8jPzYpR0YpSScxKLi8GCzvm5uYl5KTFKtUq1DAA6VwE2WwAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwicmVqb2luXCIsXCJjbGFz
+          c1wiOlwiQ29tbWFuZFwifSJ9
+      '31':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BARRIER
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjMK1WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOUknMSi4tjlKxilJxz8otTY5RqlWoZAASlyYBFAAAA
+        json: eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wiY2xhc3NcIjpcIkNsb3NlXCJ9In0=
+  doubles:
+    size: 4
+    type: CustomMenu
+    icons:
+      '12':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BED
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjiKhWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUsvIz8xSKEvNS8nMVUvJLk3JSi2OUdGKUknMSi4vBKpzzc3OB8jFKtUq1DAC6e1iLaAAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiam9pbiByYW5kb20gZG91
+          Ymxlc1wiLFwiY2xhc3NcIjpcIkNvbW1hbmRcIn0ifQ==
+      '14':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SIGN
+          meta:
+            ==: ItemMeta
+            meta-type: TILE_ENTITY
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKtWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUsvIz8xRyU/NKFVLyS5NyUotjlHRilJJzEouLwfLO+bm5iXkpMUq1SrUMAKXmR8tmAAAA
+            blockMaterial: SIGN
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiam9pbiBtZW51IGRvdWJs
+          ZXNcIixcImNsYXNzXCI6XCJDb21tYW5kXCJ9In0=
+      '31':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BARRIER
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjMK1WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOUknMSi4tjlKxilJxz8otTY5RqlWoZAASlyYBFAAAA
+        json: eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wiY2xhc3NcIjpcIkNsb3NlXCJ9In0=
+      '35':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: ENDER_PEARL
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8K5WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUilKz8jPzYpR0YpSScxKLi8GCzvm5uYl5KTFKtUq1DAA6VwE2WwAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwicmVqb2luXCIsXCJjbGFz
+          c1wiOlwiQ29tbWFuZFwifSJ9
+  trios:
+    size: 4
+    type: CustomMenu
+    icons:
+      '12':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BED
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKtWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUsvIz8xSKEvNS8nMVgDryi2OUdGKUknMSi4vB8s75ublA2RilWqVaBgCtZgtuZgAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiam9pbiByYW5kb20gdHJp
+          b3NcIixcImNsYXNzXCI6XCJDb21tYW5kXCJ9In0=
+      '14':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SIGN
+          meta:
+            ==: ItemMeta
+            meta-type: TILE_ENTITY
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCKlWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUsvIz8xRyU/NKFYDq84tjlHRilJJzEouLwbLO+bm5iXkpMUq1SrUMAFu/UFRkAAAA
+            blockMaterial: SIGN
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiam9pbiBtZW51IHRyaW9z
+          XCIsXCJjbGFzc1wiOlwiQ29tbWFuZFwifSJ9
+      '31':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BARRIER
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjMK1WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOUknMSi4tjlKxilJxz8otTY5RqlWoZAASlyYBFAAAA
+        json: eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wiY2xhc3NcIjpcIkNsb3NlXCJ9In0=
+      '35':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: ENDER_PEARL
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8K5WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUilKz8jPzYpR0YpSScxKLi8GCzvm5uYl5KTFKtUq1DAA6VwE2WwAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwicmVqb2luXCIsXCJjbGFz
+          c1wiOlwiQ29tbWFuZFwifSJ9
+  quartets:
+    size: 4
+    type: CustomMenu
+    icons:
+      '12':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BED
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3KMQqEMBAF0OlcPIX82hOk1MrGLUUYkFFTREzCJpNKvLuy5YNXE32o6qZl6L8jzRdENbm1qM0wmoptIZu6GF7iYgTxlmEYR3ShSRL26JtfkaRWM6NlbKfk/C999P4NjBs3PUCPG29pAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiam9pbiByYW5kb20gcXVh
+          cnRldHNcIixcImNsYXNzXCI6XCJDb21tYW5kXCJ9In0=
+      '14':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SIGN
+          meta:
+            ==: ItemMeta
+            meta-type: TILE_ENTITY
+            internal: H4sIAAAAAAAAAB3KMQ6DMAwFUG+tOAX6MydgLBMLjCyWkAseghpHTZwJcXeqjk96DdGTHq9lHYd5ouWEuOfwrq4FveeqHWTzkOxHnAyTqIyecaRgbVSr7bdKdvXC6BjbR0r5hyHFKLYzLlx0AzqbNkZnAAAA
+            blockMaterial: SIGN
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiam9pbiBtZW51IHF1YXJ0
+          ZXRzXCIsXCJjbGFzc1wiOlwiQ29tbWFuZFwifSJ9
+      '31':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BARRIER
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjMK1WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOUknMSi4tjlKxilJxz8otTY5RqlWoZAASlyYBFAAAA
+        json: eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wiY2xhc3NcIjpcIkNsb3NlXCJ9In0=
+      '35':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: ENDER_PEARL
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8K5WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUilKz8jPzYpR0YpSScxKLi8GCzvm5uYl5KTFKtUq1DAA6VwE2WwAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwicmVqb2luXCIsXCJjbGFz
+          c1wiOlwiQ29tbWFuZFwifSJ9
+  1vs1:
+    size: 4
+    type: CustomMenu
+    icons:
+      '12':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BED
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCK1WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUsvIz8xSKEvNS8nMVDMuKDWOUdGKUknMSi4vB0s75ublAyRilWqVaBgBueNRQZQAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiam9pbiByYW5kb20gMXZz
+          MVwiLFwiY2xhc3NcIjpcIkNvbW1hbmRcIn0ifQ==
+      '14':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SIGN
+          meta:
+            ==: ItemMeta
+            meta-type: TILE_ENTITY
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjCK5WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUsvIz8xRyU/NKFQzLig1jlHRilJJzEouLwZLO+bm5iXkpMUq1SrUMAFUVr6FjAAAA
+            blockMaterial: SIGN
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiam9pbiBtZW51IDF2czFc
+          IixcImNsYXNzXCI6XCJDb21tYW5kXCJ9In0=
+      '31':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BARRIER
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjMK1WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOUknMSi4tjlKxilJxz8otTY5RqlWoZAASlyYBFAAAA
+        json: eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wiY2xhc3NcIjpcIkNsb3NlXCJ9In0=
+      '35':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: ENDER_PEARL
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8K5WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUilKz8jPzYpR0YpSScxKLi8GCzvm5uYl5KTFKtUq1DAA6VwE2WwAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwicmVqb2luXCIsXCJjbGFz
+          c1wiOlwiQ29tbWFuZFwifSJ9
+  toppers:
+    size: 4
+    type: CustomMenu
+    icons:
+      '30':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: ARROW
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3KMQqEMBBG4elWPMZfe4KUWlnsbrmFAxLDFIFNAplJJd7dYPk+3kg00Gv+7evy/dB2IvskcKhirWZM8GY1Hs1E4aw26RIsltwTJz87wzFC0SQWgzKmXn+v+vhbcmNcuOgGnH24zmsAAAA=
+        json: |-
+          eyJuYW1lIjoicmV0dXJuIiwiYXR0cmlidXRlcyI6dHJ1ZSwiYWN0aW9ucyI6IntcIm5hbWVcIjpc
+          ImNvc21ldGljc1wiLFwiY2xhc3NcIjpcIk1lbnVcIn0ifQ==
+      '32':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: EMERALD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjMKhWykvMTVWyUirIz8wrKVbSUUosKSnKTCotSS1WsiopKk0FiiSXZObnAblKSrUMAGxDxE5AAAAA
+        json: eyJuYW1lIjoicG9pbnRzIiwiYXR0cmlidXRlcyI6dHJ1ZSwiYWN0aW9ucyI6IiJ9
+      '10':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BARRIER
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8KtWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrICM/DwgQydGKTknsbgYLORZnJOYlxKSX1CQWhSjVKtUywAAdZYdTF4AAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwibm9uZVwiLFwiY2xhc3Nc
+          IjpcIklzbGFuZFRvcHBlclwifSJ9
+      '11':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SKULL_ITEM
+          damage: 3
+          meta:
+            ==: ItemMeta
+            meta-type: SKULL
+            internal: H4sIAAAAAAAAAE2QzU6DQACEVxMjEp9i47Ek/PYv8aCttksK2JaWQkjMAkuBLrSBxRSavpUPKHryODPfHGZ4AHjwuD7UlH6UxzilhAO3KAJP2kCOcTRSBTWWsKBKsiJgKVAERVREKZTV4TDWeMB3pRMpWUqqB8AxcmZ1SSoeAHDDgbstpjUB36TRRW+XiNFOp2GD+p221yK1UHYaoGLbBBPUR3mXz1/6i2b0j9UYdjTqKnriFcs6yLfiQllRMl9JYb75MrP3xLLfc8PxEjejiekYrTFdKka7V0x7L1t2qHpTpBk2zSzHlczZUrVmbuvZ7tmcblTX0anbvnXc6mD9eq2reRN9FO/E524BB+5fnU80sUxgXSBmrEyDmpEKjllZkx7EIUuPRSfhxYcFzokPxz4M6qJofNjzYUhxVf15qKK4iOzjqbvKh1d4BT9GquG/dwEAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiYnVubnlcIixcImNsYXNz
+          XCI6XCJJc2xhbmRUb3BwZXJcIn0ifQ==
+      '12':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SKULL_ITEM
+          damage: 3
+          meta:
+            ==: ItemMeta
+            meta-type: SKULL
+            internal: H4sIAAAAAAAAAE1QzW6CMADulixzZE/R7KgJqMg08bA5N2sEhiIIIVkKlIC2aKBMrfGt9oBrdtrt+z18nwKAAh5Xu4bSz2qfFZS0wC1KwZOR9vAzTkiHqH290ycx7uDY0DqGlsaZ3tVTnGkKUGTpQCpekPoBtDg58aYitQIAuGmBOw/ThoAfcp6r4SZX082cJmc0kNxdqdRG24OBSu8cT9AAMenPXgaL8/BfVufY12nQm+dh6TQx89RFb0nJbKklbP1tuoGw35yu7U8126Xb0PeYJdDREmthieBoCqTaH1M98NHJ9ENmubtTyBzp5UXoT1VLmFqwNVWLTXshe6f2206gUhtmzngsF7TA/av/hSa2BZwLxJxXRdxwUsMRrxrShjjhxb6UFF4iWGJGIjiKYJIXyY6UEWxLTHFd/6moprhM3f1BnhXBK7yCX8QQKPh5AQAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiY2hpY2tlblwiLFwiY2xh
+          c3NcIjpcIklzbGFuZFRvcHBlclwifSJ9
+      '13':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SKULL_ITEM
+          damage: 3
+          meta:
+            ==: ItemMeta
+            meta-type: SKULL
+            internal: H4sIAAAAAAAAAE1Qy2qDQADcFkqt9CuWHhOwvtLkloaSrERtE2OyIpTVrKhZjeha1JB/6id221MPc5gXDCMDIIPH7all7L0+JxmjErhFR/CUEFXTp6oxnh4jOtajl2RMDF0fT+KJkkRmZJLYkIEsShWteUabByBx2vG2po0MALiRwJ1PWEvBN+0tJTikyvFgsbhHpuDeVmEuyqsJKv0+WiATFcJfzc11P/2XNTjZGwxrVhqUH21U+Mpa2zC62jzHxe4ryO0uyFmOVVvFucPswWJYxZ2tIh17bx3e2727d072IOCluev5BR7iIVj++iI5+Ccn32lYdTJ3aTFnmGfJ4Xkq1kvg/nX/iRauA9wLJJzXWdRy2sAZr1s6giTm2bkUFF5CWJKChnAWwialtArhKIQxI03zp6GGkfLonStxUwiv8Ap+AFBP8VlzAQAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwic2hlZXBcIixcImNsYXNz
+          XCI6XCJJc2xhbmRUb3BwZXJcIn0ifQ==
+      '14':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SKULL_ITEM
+          damage: 3
+          meta:
+            ==: ItemMeta
+            meta-type: SKULL
+            internal: H4sIAAAAAAAAAE1Q226CMADtlixzZF/R7FGTegHEZA+bZLHEwUQFS0iWAiUWChooy9D4V/vA4Z72dq4P5ygAKOBxnTdCfFSHlAvWA7c4AU96iiI01ceDJNXoYEKHxsCI4mSQarGBWDpFk1hXgNKVjqySnNUPoCfZt2wqVisAgJseuPOoaBj4Ya2Fgt0eJTtLxC3WOr5ZI+Hg7Kjj0mujOdZw0fmLF23ZGv+yqqS+KsjY2gflqokKDy3HrmALdxgX2y/HzIfE9wQ5BdwxVy3x3b1jkpHjk4ltBrmdeZycVqp9Iq29yceOiRHxsWqbbvGeWYVtejzIbE6Kq/a2J8V2RFrLSHfouVvQA/ev/ieeOzZwzpBKWfGokayGM1k1rA9pLPmh7Cg8h7CkBQvhLIS14FfUD2EsaF3/abgWtEw2h2N3VQgv8AJ+AfokijB3AQAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwic2xpbWVcIixcImNsYXNz
+          XCI6XCJJc2xhbmRUb3BwZXJcIn0ifQ==
+      '15':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: IRON_SWORD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3IMQ5AQBAF0OmIY/zaCZRUGhqJZhIZbCFhV3ZGFBt3J8r3CqKcsnqc2qbvqE8Qs7jNlzlFZfFyJWSxLfiPSAwvh2NUDL1DXBklY9lF9b9Wd/HrEM7TRcaDh15UMa3zXwAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwic3dvcmRcIixcImNsYXNz
+          XCI6XCJJc2xhbmRUb3BwZXJcIn0ifQ==
+      '16':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SKULL_ITEM
+          damage: 3
+          meta:
+            ==: ItemMeta
+            meta-type: SKULL
+            internal: H4sIAAAAAAAAAE2Qy2qDQBiFp4XSVPoUQ5cJaIy5QRZtLMmEqM09ihBG/a2aGSM6NjUh79RHrHTV5eE7HxyOhJCEnlfHkrGP/BTGDBrongToJfQ8UJRev6VofWh1ejBo9RVVbfleH2i766sQhhKSaimDXMRQPKGGgG9R5lBICKG7BnrYUlYC+oFqJjv7SA72M+ZXpFvn9UpmFkmyHkm3lTcmXcJrPn3tzqvBv64m6E5jtjqLnHRRenwrz9Ulg+lS8fnmy+Sbtjl5P1uT5dFcG4qTbFSbLzSbG7LNl9xMjh1Lt2WHk8rUg8i4bC6WTjqOvj3ayadm6EFs1I5xiRKjbcgkVQbhYjSq1zfQ49vuQMaWiXZXTIXIY68UUOChyEtoYuqL+JTWEV9dnFIOLh66uIgAskNO49Q7nV3cdLHPaFH8MVIwmgbrU1bf5eIbvqFftRymFXsBAAA=
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwic2hlZXBfcmFpbmJvd1wi
+          LFwiY2xhc3NcIjpcIklzbGFuZFRvcHBlclwifSJ9
+  map_selector:
+    size: 6
+    type: MapSelectorMenu
+    icons:
+      '53':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BOOK
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjUKhWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVlGoZAA169NQwAAAA
+        json: eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoiIn0=
+  glyphs:
+    size: 4
+    type: CustomMenu
+    icons:
+      '30':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: ARROW
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAB3KMQqEMBBG4elWPMZfe4KUWlnsbrmFAxLDFIFNAplJJd7dYPk+3kg00Gv+7evy/dB2IvskcKhirWZM8GY1Hs1E4aw26RIsltwTJz87wzFC0SQWgzKmXn+v+vhbcmNcuOgGnH24zmsAAAA=
+        json: |-
+          eyJuYW1lIjoicmV0dXJuIiwiYXR0cmlidXRlcyI6dHJ1ZSwiYWN0aW9ucyI6IntcIm5hbWVcIjpc
+          ImNvc21ldGljc1wiLFwiY2xhc3NcIjpcIk1lbnVcIn0ifQ==
+      '32':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: EMERALD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjMKhWykvMTVWyUirIz8wrKVbSUUosKSnKTCotSS1WsiopKk0FiiSXZObnAblKSrUMAGxDxE5AAAAA
+        json: eyJuYW1lIjoicG9pbnRzIiwiYXR0cmlidXRlcyI6dHJ1ZSwiYWN0aW9ucyI6IiJ9
+      '11':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: DIAMOND
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8KpWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUUjITc/PzUmKUdGKUknMSi4vBou45lQUZMUq1SrUMAFrZcLBaAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZGlhbW9uZFwiLFwiY2xh
+          c3NcIjpcIkdseXBoXCJ9In0=
+      '12':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: EMERALD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdj8KpWSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKUUnNTixJzUmKUdGKUknMSi4vBou45lQUZMUq1SrUMAP2U+Q1aAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZW1lcmFsZFwiLFwiY2xh
+          c3NcIjpcIkdseXBoXCJ9In0=
+      '13':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: GOLD_INGOT
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjcK9WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrGKU0vNzUmKUdGKUknMSi4vBQu45lQUZMUq1SrUMAD+OkClXAAAA
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwiZ29sZFwiLFwiY2xhc3Nc
+          IjpcIkdseXBoXCJ9In0=
+      '14':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: SKULL_ITEM
+          damage: 3
+          meta:
+            ==: ItemMeta
+            meta-type: SKULL
+            internal: H4sIAAAAAAAAAE2Ly26CQBiFf5s2taRPMelSEhDBS9JF1ahDBCqiCCFpuAwBHNTA0AjGt+oDlu66Ouc7Fw6Ag9ftsaL0szjHKSVdeMARvIVRfxgTP+DHkhTzAyLK/CgYEl4hIyGSBqEoRAIHXHu6kIKlpHyBLiNXVhWk5ACg04WnvU8rAj+kVgX3kAjRQaVhjZWWra1ADZxdhvi0r4MZVnDe9qsPZV2P/21l5tsydSQ1cU+bKsj3wloyKVmZYpjvvp1G67vWTnTtxdGwcat4oM0XmWM5fX2OJdeaJnquyW6+EfXGzPQGi8Z8VxvLfa5bKjWWbqblm4Fu7xqtcWqtb2Zuqo7jg/AO0IVH3c8JdK6tfZ7aX3hm6LC8IZ+xIg0qRko0YUVFesgPWXo+tYhuHjq1Jw9NPFQVZemhnodC6v+5NlrS+pJ46I7u8AsLSioWeQEAAA==
+            skull-owner: x
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwidXJzc1wiLFwiY2xhc3Nc
+          IjpcIkdseXBoXCJ9In0=
+      '10':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          type: BARRIER
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            internal: H4sIAAAAAAAAAONiYOBgYHcKj/d09vdjcK9WSiwpKcpMKi1JLVayKikqTdVRSkwuyczPA3KVqmOU8hJzU2OUrICM/DwgQydGKTknsbgYLOSeU1mQEaNUq1TLAABNkmFAVwAAAA==
+        json: |-
+          eyJhdHRyaWJ1dGVzIjp0cnVlLCJhY3Rpb25zIjoie1wibmFtZVwiOlwibm9uZVwiLFwiY2xhc3Nc
+          IjpcIkdseXBoXCJ9In0=

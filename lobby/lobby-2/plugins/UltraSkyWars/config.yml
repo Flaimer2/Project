@@ -41,14 +41,14 @@ bungee:
     onFinish: false
   setup: true
 chat:
-  games: true
-  spectator: true
+  games: false
+  spectator: false
   spectatorGlobal: false
-  mainLobby: true
+  mainLobby: false
   broadcastLevelUp: false
   broadcastGame: false
-  broadcastRankLevelUp: true
-  broadcastRankLevelDown: true
+  broadcastRankLevelUp: false
+  broadcastRankLevelDown: false
 soulWellPrice: 10
 disableKitLevels: true
 disableVotesRanked: true

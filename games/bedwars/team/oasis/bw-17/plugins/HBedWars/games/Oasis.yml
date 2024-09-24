@@ -1,0 +1,74 @@
+settings:
+  name: Oasis
+  displayname: Oasis
+  min_players: 12
+  group: quartets
+  island_radius: 25
+  respawn_protection: 5
+  max_build_height: 90
+  border: 150
+  locations:
+    waiting: wait;1000.5;43.8125;0.5;0.0;0.0
+    spectator: Oasis;0.5;110.0;0.5;0.0;0.0
+    generator:
+      diamond:
+      - Oasis;-79.0;69.0;83.0;0.0;0.0
+      - Oasis;83.0;69.0;79.0;0.0;0.0
+      - Oasis;79.0;69.0;-83.0;0.0;0.0
+      - Oasis;-83.0;69.0;-79.0;0.0;0.0
+      coal: []
+      emerald:
+      - Oasis;0.0;68.0;-22.0;0.0;0.0
+      - Oasis;22.0;68.0;0.0;0.0;0.0
+      - Oasis;0.0;68.0;22.0;0.0;0.0
+      - Oasis;-22.0;68.0;0.0;0.0;0.0
+votes:
+  enabled: false
+  shop: default
+  health: default
+  time: day
+team_settings:
+  GREEN:
+    identifier: 3
+    respawn: Oasis;89.5;68.0;-2.5;0.0;180.3
+    upgrades: Oasis;87.5;68.0;-7.5;0.0;0.0
+    shop: Oasis;90.5;68.0;-7.5;0.0;0.0
+    chest: Oasis;93.0;68.0;1.0;0.0;0.0
+    generator: Oasis;89.0;67.0;2.0;0.0;0.0
+    topper: Oasis;89.5;150.0;-2.5;0.0;90.0
+    bed_locations:
+    - Oasis;79.0;68.0;-10.0;0.0;0.0
+    - Oasis;78.0;68.0;-10.0;0.0;0.0
+  BLUE:
+    identifier: 2
+    respawn: Oasis;-2.5;68.0;-88.5;0.0;90.0
+    upgrades: Oasis;-7.5;68.0;-86.5;0.0;-90.0
+    shop: Oasis;-7.5;68.0;-89.5;0.15;-90.0
+    chest: Oasis;1.0;68.0;-93.0;0.0;0.0
+    generator: Oasis;2.0;67.0;-89.0;0.0;0.0
+    topper: Oasis;-2.5;150.0;-88.5;0.0;0.0
+    bed_locations:
+    - Oasis;-10.0;68.0;-79.0;0.0;0.0
+    - Oasis;-10.0;68.0;-78.0;0.0;0.0
+  YELLOW:
+    identifier: 4
+    respawn: Oasis;-88.5;68.0;3.5;0.0;0.0
+    upgrades: Oasis;-86.5;68.0;8.5;0.0;180.0
+    shop: Oasis;-89.5;68.0;8.5;0.0;180.0
+    chest: Oasis;-93.0;68.0;-1.0;0.0;0.0
+    generator: Oasis;-89.0;67.0;-2.0;0.0;0.0
+    topper: Oasis;-88.5;150.0;3.5;0.0;-90.0
+    bed_locations:
+    - Oasis;-79.0;68.0;10.0;0.0;0.0
+    - Oasis;-78.0;68.0;10.0;0.0;0.0
+  RED:
+    identifier: 1
+    respawn: Oasis;3.5;68.0;89.5;0.0;-90.0
+    upgrades: Oasis;8.5;68.0;87.5;0.0;90.0
+    shop: Oasis;8.5;68.0;90.5;0.0;90.0
+    chest: Oasis;-1.0;68.0;93.0;0.0;0.0
+    generator: Oasis;-2.0;67.0;89.0;0.0;0.0
+    topper: Oasis;3.5;150.0;89.5;0.0;180.0
+    bed_locations:
+    - Oasis;10.0;68.0;79.0;0.0;0.0
+    - Oasis;10.0;68.0;78.0;0.0;0.0

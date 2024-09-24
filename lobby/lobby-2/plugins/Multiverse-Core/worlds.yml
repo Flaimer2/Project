@@ -2,7 +2,7 @@ worlds:
   lobby:
     ==: MVWorld
     hidden: 'false'
-    alias: ''
+    alias: lobby
     color: WHITE
     style: NORMAL
     pvp: 'true'

@@ -1,0 +1,369 @@
+#    You can translate TheBridge messages here.
+#             Color codes (&) supported.
+Color:
+  Placeholder:
+    Value: ''
+    Number: ''
+    Player: ''
+    Other: ''
+  Chat:
+    Issue: ''
+    Messages: ''
+    Special-Char:
+      Contains: ''
+      Before: ''
+Commands:
+  Did-You-Mean: '&fВы имели в виду &a/%value%&f?'
+  Command-Executed: '&fКоманда &aуспешно &fвыполнена!'
+  Teleported-To-Lobby: '&aПодключение &fк лобби...'
+  Removed-Game-Instance: '&cИгра была успешно удалена!'
+  No-Arena-Like-That: '&fАрена с таким ID &cне найдена&f!'
+  Look-At-Sign: '&cВам нужно смотреть на табличку для выполнения этой команды!'
+  Type-Arena-Name: '%color_chat_issue% Пожалуйста, введите ID арены!'
+  Hold-Any-Item: '%color_chat_issue% Вы должны держать любой предмет!'
+  No-Free-Arenas: '%color_chat_issue% Нет свободных арен!'
+  Only-By-Player: '%color_chat_issue% Вы можете выполнить эту команду только как игрок!'
+  Not-Playing: '&fВы должны &aиграть&f, чтобы выполнить эту команду!'
+  No-Permission: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+  Player-Not-Found: '&fИгрока с ником &a%player% &fне существует!'
+  Invalid-Location-Teleport: '&fМестоположение для телепортации &cнедействительно&f!'
+  Wrong-Usage: '&cНеправильное &fиспользование. Введите: &a%value%'
+  Main:
+    Description: ERR_MSG_Commands.Main.Description_NOT_FOUND
+    Admin-Bonus-Description: ERR_MSG_Commands.Main.Admin-Bonus-Description_NOT_FOUND
+    Header: ERR_MSG_Commands.Main.Header_NOT_FOUND
+    Footer: ERR_MSG_Commands.Main.Footer_NOT_FOUND
+  Admin:
+    Spychat:
+      Toggled: ERR_MSG_Commands.Admin.Spychat.Toggled_NOT_FOUND
+    List:
+      Header: ERR_MSG_Commands.Admin.List.Header_NOT_FOUND
+      No-Arenas: ERR_MSG_Commands.Admin.List.No-Arenas_NOT_FOUND
+      Format: ERR_MSG_Commands.Admin.List.Format_NOT_FOUND
+    Reload-Success: ERR_MSG_Commands.Admin.Reload-Success_NOT_FOUND
+    Adjust-Statistic: ERR_MSG_Commands.Admin.Adjust-Statistic_NOT_FOUND
+Admin:
+  Adjust-Statistic: '&fСтатистика %value% &fигрока %player% &fтеперь %number%!'
+  Reload-Success: '&fАрены &aперезагружены&f!'
+  List:
+    Header: '%plugin_name% арены: Название Состояние Игроки'
+    Format: '%arena_name% %arena_state_placeholder% %arena_players_size%/%arena_max_players%'
+    No-Arenas: '%color_chat_issue% Игровых экземпляров нет!'
+  Spychat:
+    Toggled: Spy чат переключен на %value%
+Main:
+  Header: ''
+  Description:
+  - '  &9&lКоманды TheBridge'
+  - '  &a'
+  - '  &fПоказать вашу статистику &7– &a/stats'
+  - '  &fВыйти из текущей арены &7– &a/%plugin_short_command% leave'
+  - '  &fПрисоединиться арене &7– &a/%plugin_short_command% join арена'
+  - '  &fВыбрать новый игровой комплект &7– &a/%plugin_short_command% selectkit'
+  - '  &fВыбрать команду &7– &a/%plugin_short_command% selectbase'
+  - '  &fПрисоединиться к случайной арене &7– &a/%plugin_short_command% randomjoin'
+  Admin-Bonus-Description: '  &fПоказать все команды администратора &7– &a/%plugin_short_command%'
+  Footer: ''
+Scoreboard:
+  Title: '&9&lTheBridge'
+  Bases:
+    Format: '%scoreboard_base_color_formatted% %scoreboard_base_points_formatted% &7%scoreboard_base_yourself%'
+    Not-Inside: ' '
+    Inside: '⇦'
+  Mode:
+    POINTS:
+      Got: '&a●'
+      Missing: '&f●'
+    HEARTS:
+      Got: '&c♥'
+      Missing: '&f♥'
+  Content:
+    Waiting:
+    - '§7%localtime_timezone_GMT+3% §8(%server_name%)'
+    - ''
+    - '&fПоиск игроков...'
+    - ''
+    - '&fИгроков: &a%arena_players_size%/%arena_max_players%'
+    - ''
+    - '&fКарта: &a%arena_name%'
+    - ''
+    - '&b&lmcsnapix.ru'
+    Starting:
+    - '§7%localtime_timezone_GMT+3% §8(%server_name%)'
+    - ''
+    - '&fНачало через: &a%arena_time%'
+    - ''
+    - '&fИгроков: &a%arena_players_size%'
+    - ''
+    - '&fКарта:&a %arena_name%'
+    - ''
+    - '&b&lmcsnapix.ru'
+    In-Game:
+    - '§7%localtime_timezone_GMT+3% §8(%server_name%)'
+    - ''
+    - '&fВремени осталось: &a%arena_time_formatted%'
+    - ''
+    - '%scoreboard_bases_list%'
+    - ''
+    - '&fУбийств: &a%user_statistic_local_kills%'
+    - '&fСмертей: &a%user_statistic_local_deaths%'
+    - '&fГолы: &a%user_statistic_local_scored_points%'
+    - ''
+    - '&b&lmcsnapix.ru'
+    Ending:
+    - '§7%localtime_timezone_GMT+3% §8(%server_name%)'
+    - ''
+    - '&cКонец игры'
+    - ''
+    - '%scoreboard_bases_list%'
+    - ''
+    - '&fУбийств: &a%user_statistic_local_kills%'
+    - '&fСмертей: &a%user_statistic_local_deaths%'
+    - '&fГолы: &a%user_statistic_local_scored_points%'
+    - ''
+    - '&b&lmcsnapix.ru'
+    Restarting:
+    - '§7%localtime_timezone_GMT+3% §8(%server_name%)'
+    - ''
+    - '&eПерезапуск игры...'
+    - ''
+    - '&fКарта: &a%arena_name%'
+    - ''
+    - '&b&lmcsnapix.ru'
+Bossbar:
+  Title: '%plugin_name% - &6&lSnapiX &7(это никто не увидит)'
+  Content:
+    Waiting:
+    - Waiting for more players...
+    Starting:
+    - 'Starting in: %arena_time%'
+    In-Game:
+    - Playing %plugin_name_uppercase% on PLUGILY.XYZ
+    - Check the plugin creator out on PLUGILY.XYZ
+    - Current own points %user_statistic_local_scored_points%
+    - Your base %arena_base_color_formatted%
+    Ending:
+    - Game has ended! You were playing on PLUGILY.XYZ
+    Restarting:
+    - Restarting the arena. You will be moved soon!
+In-Game:
+  Game-Chat-Format: "%vault_prefix%&f%player%%luckperms_suffix% &7> &f%message%"
+  You-Leveled-Up: 'Вы повысили уровень! Теперь вы на уровне %number%!'
+  Commands-Blocked: '&fВы должны покинуть игру, чтобы использовать эту команду. Напишите: &a/%plugin_short_command% leave!'
+  Join:
+    Already-Playing: '&fВы &aуже &fв очереди на игру! Вы можете &cпокинуть &fигру с помощью &a/%plugin_short_command% leave.'
+    No-Permission: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+    Full-Game: '&fУ вас &cнет &fразрешения на присоединение к полным играм!'
+    No-Slots-For-Premium: '&fЭта игра уже &cзаполнена &fпремиум-игроками! Извините!'
+    Cancelled-Via-API: '&fВы &cне можете &fприсоединиться к этой игре!'
+    As-Party-Member: '&fВы &aприсоединились &fк арене &a%arena_name%&f, потому что &aлидер &fгруппы присоединился к ней'
+    Arena-Not-Configured: '%color_chat_issue%%plugin_prefix% Arena is not configured
+      yet! Contact your server''s staff!'
+    Title: ''
+  Death:
+    Tag: '&cМертвый'
+    Screen: '&c&lВы умерли!'
+  Spectator:
+    Blocked: '%color_chat_issue%%plugin_prefix% Spectators are disabled for this arena'
+    You-Are-Spectator: '&fТеперь вы – &aзритель&f! Вы можете летать!'
+    Spectator-Menu-Name: 'Список живых игроков'
+    Target-Player-Health: '&fЗдоровье: &a%number%'
+    Spectator-Warning: '&fВы – &aзритель&f!'
+    Teleport: '&fВы телепортированы к &a%player%'
+    Menu:
+      Settings:
+        Status:
+          Enabled: "&aВключено"
+          Disabled: "&cВыключено"
+        Changed-Speed: "&fВы установили скорость на &a%number%"
+        Auto-Teleport: '%value% &fавтотелепортация'
+        Target-Player:
+          Action-Bar: 'Наблюдаем за &a%player% &f- &fРасстояние &a&l%number%м'
+        Night-Vision: '%value% Ночное Зрение'
+        First-Person-Mode:
+          Action-Bar: '&eSNEAK &cto leave! | Target %player%'
+          Title: '&eSNEAK &cto leave!'
+        Visibility: '%value% other spectator players'
+  Messages:
+    Join: '&fИгрок &a%player% &fподключился к игре &7(%arena_players_size%/%arena_max_players%)'
+    Leave: '&fИгрок &a%player% &fпокинул игру &7(%arena_players_size%/%arena_max_players%)'
+    Death: '&fИгрок &a%player% &fумер!'
+    Lobby:
+      Start-In: '&fИгра начнется через &a%arena_time% &fсек.'
+      Waiting-For-Players: '&fИдёт поиск игроков... Для начала игры нужно минимум &a%arena_min_players% &fигроков'
+      Enough-Players-To-Start: '&fВ игру зашло &aдостаточное &fколичество игроков. Начинается отсчёт до начала игры...'
+      Reduced-Time: '&fВремя было сокращено до &a%number% &fсек.'
+      Max-Players: ''
+      Game-Started:
+      - ''
+      - '  &9&lTheBridge'
+      - ''
+      - '  &fПервыми наберите &aпять &fочков,'
+      - '  &fпробегая через мост к острову противника,'
+      - '  &fзатем прыгните в его портал!'
+      - ''
+      Kicked-For-Premium-Slot: '&fИгрок &a%player% &fбыл удален из игры, чтобы освободить место для премиум-игрока!'
+      You-Were-Kicked-For-Premium-Slot: '&fВы были &cисключены &fиз игры, чтобы освободить место для премиум-игрока!'
+      Not-Enough-Space-For-Party: '%color_chat_issue%%plugin_prefix% Your party is
+        bigger than free places on the arena %arena_name%'
+    Game-End:
+      Summary:
+      - ''
+      - '  &9&lTheBridge'
+      - ''
+      - '  &fЛучший игрок &7- &a%arena_summary_winner_base_players% &7- &f%arena_summary_base_scored% голов'
+      - ''
+      - '  %arena_summary%'
+      - '  %arena_summary_player%'
+      - ''
+      Placeholders:
+        Win: '&fВы &aвыиграли&f! Ура'
+        Lose: '&fВы &cпроиграли&f! Повезёт в следующий раз'
+        Players: '&cНедостаточно &fигроков. Игра была принудительно &cостановлена&f!'
+        Base:
+          HEARTS: '&fПобедила команда &7- %arena_summary_winner_base%'
+          POINTS: '&fПобедила команда &7- %arena_summary_winner_base%'
+    Admin:
+      Set-Starting-In-To-0: '%plugin_prefix% An admin set waiting time to 0. The game
+        starts now!'
+    Arena:
+      Cooldown: '[%value%&8&l] &6%number% сек.'
+      Damage: '&fУ игрока &a%player% &fосталось &c%value%HP&f'
+      Death: '&fИгрок &a%player% &fумер от &a%value%!'
+      Killed: ''
+      Build-Break: '&fВы &cне можете &fстроить и ломать здесь'
+      Time-Left: 5,20,5;&fОсталось мало времени!;&a%arena_time% &f&fсек.
+      Portal:
+        Own: '&fВы прыгнули в &aсвой &fпортал!'
+        Opponent: ''
+        Scored:
+          Title: ""
+        Hologram: '%arena_base_color_formatted%;Прыгайте в этот портал!'
+        Out: '&fКоманда &cвышла&f!'
+      Blocked:
+        Start: ''
+        Reset: ''
+        Run: ''
+        Title: ''
+  Plugin-Prefix: ''
+Signs:
+  Please-Type-Arena-Name: '%color_chat_issue%%plugin_prefix% Please type arena name
+    in second line!'
+  Arena-Doesnt-Exists: '%color_chat_issue%%plugin_prefix% Arena with that name doesn''t
+    exists!'
+  Created: '%plugin_prefix% Sign created successfully!'
+  Removed: '%plugin_prefix% Sign successfully removed!'
+  Lines:
+  - '%plugin_prefix%'
+  - '%arena_state_placeholder%'
+  - '%arena_name%'
+  - '[%arena_players_size%/%arena_max_players%]'
+Arena-Selector:
+  Inventory-Title: '%plugin_short_command% ▸ Arena selector'
+  Item:
+    Name: '%arena_name%'
+    Lore:
+    - '%plugin_name% - %arena_name%'
+    - ' '
+    - ' '
+    - '  Online: %arena_players_size%/%arena_max_players%'
+    - '  State: %arena_state_placeholder%'
+    - ' '
+    - ' '
+    - '&aClick to join this arena'
+Validator:
+  Invalid-Arena-Configuration: 'Arena %arena_name% has invalid configuration! Missing
+    node: %value%'
+  Instance-Started: Arena %arena_name% instance successfully started!
+  No-Instances-Created: There are no arena instances created in configuration!
+Placeholders:
+  Game-States:
+    Waiting: '&fОжидание игроков...'
+    Starting: '&aНачинается'
+    Full-Game: '&6Полная'
+    In-Game: '&eВ игре'
+    Ending: '&aЗавершается'
+    Restarting: '&eПерезапуск'
+  Motd:
+    Waiting: '&lYou can join this game...'
+    Starting: '&e&lStarting'
+    Full-Game: '&4&lFULL | Use another Server'
+    In-Game: '&lIn-game | Click to spectate'
+    Ending: '&lEnding | Server is closing'
+    Restarting: '&c&lRestarting'
+Kit:
+  Not-Unlocked: '%color_chat_issue%%plugin_prefix% You haven''t unlocked %value% yet!'
+  Choose: '%plugin_prefix% You have chosen: %value%!'
+  Cooldown: '%color_chat_issue%%plugin_prefix% Kit ability still on cooldown (%number%)!'
+  No-Armor: '%color_chat_issue%%plugin_prefix% You can''t wear armor with your kit!'
+  Menu:
+    Title: Kit Menu
+    Lore:
+      Unlocked: '&aUNLOCKED!'
+      Locked: '&cLOCKED!'
+      Unlock-At-Level: Unlocks at level %number%
+      Unlock-In-Store: '&bUnlock this in the store!'
+Bases:
+  Team:
+    Full: "&fУчастники команды:"
+    Empty: 
+      - '&fУчастники команды:'
+      - '&aКоманда пуста'
+      - ''
+      - '&aНажмите, чтобы присоединиться'
+    Inside: "&fВы выбрали эту команду"
+    Name: "%base% &fкоманда"
+    Menu: "Выбор команды"
+    Choose: "&fВы выбрали команду %base%"
+    Member: "&fВы &aуже &fв этой команде!"
+  Colors:
+    BLACK: "&0Чёрная"
+    DARK_BLUE: "&1Тёмно-синяя"
+    DARK_GREEN: "&2Зелёная"
+    DARK_AQUA: "&3Бирюзовая"
+    DARK_RED: "&4Тёмно-красная"
+    DARK_PURPLE: "&5DARK_PURPLE"
+    GOLD: "&6Оранжевая"
+    LIGHT_GRAY: "&fСветло-серая"
+    DARK_GRAY: "&8Серая"
+    BLUE: "&9Синяя"
+    GREEN: "&aЛаймовая"
+    AQUA: "&bГолубая"
+    RED: "&cКрасная"
+    PINK: "&dРозовая"
+    YELLOW: "&eЖёлтая"
+    WHITE: "&fБелая"
+    BOLD: "&lBOLD"
+    STRIKETHROUGH: "&mSTRIKETHROUGH"
+    UNDERLINED: "&nUNDERLINED"
+    ITALIC: "&oITALIC"
+Leaderboard:
+  Type:
+    Hologram:
+      Header: '&6&lTop %number% in %value%'
+      Format: '&e%number%. %player% (%value%)'
+      Empty-Format: '&e%number%. Empty (0)'
+    Chat:
+      Header: '&8+-------+ &a&lYOUR STATS &8+-------+'
+      Header-Other: '&8+---------+ &aSTATS FOR &b%player% &8+---------+'
+      Footer: '&8+-----------------------------+'
+      Format: '%value% ▸ &a%number%'
+      Top:
+        Type-Name: '%color_chat_issue%Please type statistic name to view!'
+        Header: '&8&m+----------------+ [&6 Top 10 &8&m] +----------------+'
+        Format: '&e#%number% %player% - %value% %user_statistic%'
+  Statistics:
+    Wins: Wins ▸ %number%
+    Loses: Loses ▸ %number%
+    Games-Played: Games Played ▸ %number%
+    Level: Level ▸ %number%
+    Exp: Experience ▸ %number%
+    Next-Level-Exp: Exp to Level Up ▸ %number%
+    Score: Score ▸ %number%
+    Kills: Kills ▸ %number%
+    Deaths: Deaths  ▸ %number%
+  Invalid-Name: '%color_chat_issue%Name of statistic is invalid! Type: %value%'
+  Unknown-Player: '%color_chat_issue%Unknown Player'
+Do-Not-Edit:
+  File-Version: 1
+  Core-Version: 2

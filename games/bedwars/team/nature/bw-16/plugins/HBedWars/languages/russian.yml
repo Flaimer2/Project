@@ -1,0 +1,4704 @@
+messages:
+  command_permission: "&cУ вас нет разрешения на это."
+  join_error:
+    loading: "&cИгра загружается"
+    full: "&cИгра уже заполнена"
+    game: "&cИгра уже началась"
+    end: "&cИгра завершена"
+  join: "&fИгрок &a<name> &fподключился к игре &7(<bw-current_players>/<bw-max_players>)"
+  leave: "&fИгрок &a<name> &fпокинул игру &7(<bw-current_players>/<bw-max_players>)"
+  start: "&fВ игру зашло &aдостаточное &fколичество игроков. Начинается отсчёт до начала игры..."
+  cancel: "&fНачало игры было &cотменено&f."
+  full: "&fИгра была заполнена, время ожидания сократилось"
+  no_games_available: "&cНет доступных игр"
+  game_not_exists: "&cЭта игра не существует"
+  start_force_error: "&cВы не можете принудительно начать игру"
+  start_force: "&aИгра запущена. Игроком &6<name>"
+  start_countdown: "&fИгра начнется через &a<time> &f<time_format>"
+  start_announce:
+    - "&f"
+    - "&c&l  BedWars"
+    - "&f"
+    - "&f  Защитите свою кровать и уничтожьте"
+    - "&f  вражеские кровати. &aУлучшайте &fсебя и"
+    - "&f  вашу команду, собрав &aресурсы &fc"
+    - "&f  генераторов. Удачной игры!"
+    - "&f"
+  generator_upgrade: "<color><name>ные &fгенераторы были обновлены до &a<level_name> &fуровня"
+  bed_destroy_event: "&fВсе оставшиеся кровати были &cудалены"
+  sudden_death_event: "&cВышли драконы команд, готовьтесь к битве"
+  final_game_event: "&cИгра должна завершиться, каждая вторая жизнь будет уменьшена"
+  cannot_place_blocks: "&cЗдесь запрещено устанавливать блоки!"
+  cannot_break_blocks: ""
+  cannot_break_your_bed: "&cВы не можете сломать свою кровать!"
+  cannot_open_chest: "&cВы не можете открыть сундук этой команды, сначала уничтожьте её!"
+  max_build_height: "&cДостигнута максимальная высота постройки!"
+  blocked_command: "&cЭта команда не может быть использована в игре!"
+  respawn: "&fВы возродитесь через &a<time> &f<time_format>!"
+  player_loot: "<color>+<amount> <name>"
+  spray_cooldown: "&cВы должны подождать <time> <time_format> между использованием спрея!"
+  dont_leave_map: "&cВы не можете покинуть карту!"
+  team_eliminated:
+    - "&cКоманда уничтожена &7> <team_color><team_name> &fкоманда была уничтожена!"
+  use_cooldown: "&cПожалуйста, подождите <time><time_format> для использования этого снова"
+  win:
+    - "&f"
+    - "&c&l  BedWars"
+    - "&f"
+    - "&f  Победитель &7- <color><winner>"
+    - "&f"
+    - "&a  Убийца #1 &7- <top1> &7- &f<number1>"
+    - "&2  Убийца #2 &7- <top2> &7- &f<number2>"
+    - "&c  Убийца #3 &7- <top3> &7- &f<number3>"
+    - "&f"
+  win_none: "Никого"
+  alarm_trap_announce: "&c&lПредупреждающая ловушка установлена &7&l<name> &c&lиз <team_color>&l<team_name> &c&lкоманды!"
+  lang:
+    not_exist: "&cЭтот язык не существует"
+    selected: "&aВыбранный язык: &e<bw-lang>"
+  mobs:
+    iron_golem: "<team_color><time><time_format> &l<team_name> &8[ <team_color><health> &8]"
+    silverfish: "<team_color>&l<team_name> <team_color>Чешуйница"
+  shop:
+    insufficient: "&fУ вас недостаточно &a<material>&f! Нужно еще &a<amount>&f шт!"
+    purchase: "&fВы купили &a<name>"
+    already_bought: "&cВы уже купили это!"
+    load: "&8» &aМагазин и Панель быстрого доступа завершена"
+    load_error: "&8» &cВаш магазин не может быть загружен"
+    load_cooldown: "&cВы должны подождать <time> <time_format>, чтобы сделать статус снова"
+  upgrade:
+    insufficient: "&fУ вас &cнедостаточно &fресурсов, чтобы разблокировать это улучшение!"
+    purchase: "&fИгрок &a<player> &fкупил улучшение &a<name>"
+    already_bought: "&cВы уже открыли это улучшение!"
+    max_traps: "&cОчередь ловушек заполнена!"
+  team_selector:
+    already: "&cВы уже состоите в этой команде"
+    full: "&cКоманда уже заполнена!"
+    join: "&fИгрок &a<name> &fприсоединился к команде"
+  holograms:
+    generator:
+      - "&fУровень &a<level_name>"
+      - "<team_color>&l<name>ы"
+      - "&fПоявятся через &a<time> &f<time_format>"
+    shop:
+      - "<team_color>МАГАЗИН ПРЕДМЕТОВ"
+      - "&a&lНАЖМИТЕ ПКМ"
+    upgrades:
+      - "<team_color>УЛУЧШЕНИЯ"
+      - "&a&lНАЖМИТЕ ПКМ"
+  tab_prefix:
+    white: "&f⚑ &f"
+    orange: "&6⚑ &f"
+    yellow: "&e⚑ &f"
+    red: "&c⚑ &f"
+    pink: "&d⚑ &f"
+    purple: "&5⚑ &f"
+    green: "&a⚑ &f"
+    dark_green: "&2⚑ &f"
+    aqua: "&b⚑ &f"
+    cyan: "&3⚑ &f"
+    blue: "&9⚑ &f"
+    black: "&0⚑ &f"
+    gray: "&7⚑ &f"
+    dark_gray: "&8⚑ &f"
+    spectator: "&7⚑ &f"
+  team_name:
+    white: "Белая"
+    orange: "Оранжевая"
+    yellow: "Жёлтая"
+    red: "Красная"
+    pink: "Розовая"
+    purple: "Фиолетовая"
+    green: "Зелёная"
+    dark_green: "Тёмно-зелёная"
+    aqua: "Бирюзовая"
+    cyan: "Бирюзовая"
+    blue: "Синяя"
+    black: "Чёрная"
+    gray: "Серая"
+    dark_gray: "Тёмно-серая"
+  materials:
+    iron_ingot:
+      singular: "Железо"
+      plural: "Железа"
+      color: "&f"
+    gold_ingot:
+      singular: "Золото"
+      plural: "Золота"
+      color: "&6"
+    diamond:
+      singular: "Алмаз"
+      plural: "Алмазов"
+      color: "&b"
+    emerald:
+      singular: "Изумруд"
+      plural: "изумруда"
+      color: "&2"
+    coal:
+      singular: "Уголь"
+      plural: "Уголя"
+      color: "&0"
+  help:
+    - ""
+    - "<center>&c&lBedWars &7v.<bw-version>"
+    - ""
+    - " &7· &a/join &7- &fTo enter an arena"
+    - " &7· &a/lang &7- &fTo change the language"
+    - " &7· &a/points &7- &fTo view your points"
+    - ""
+  cosmetics:
+    permission: "&cУ вас нет разрешения на эту косметику"
+    not_enough_money: "&cУ вас недостаточно денег, чтобы купить это!"
+    purchased: "&fВы купили &a<cosmetic>&f!"
+    already_selected: "&cВы уже выбрали эту косметику"
+    selected: "&fВы выбрали &a<cosmetic>&f!"
+    unselected: "&cВы удалили эту косметику"
+  votes:
+    permission: "&cУ вас нет разрешения на голосование"
+    already_voted: "&cВы уже проголосовали!"
+    vote_shop: "&e<name> &fпроголосовала за магазин и &6<vote> улучшений!"
+    vote_health: "&e<name> &fпроголосовал за &6<vote> &fжизней!"
+    vote_time: "&e<name> &fпроголосовал за &6<vote> &fвремени!"
+    announce:
+      shop: "&eВыбран &6<name> &eмагазин с &6<votes>"
+      health: "&eВыбран &6<name> &eжизней с &6<votes>"
+      time: "&eВыбран &6<name> &eвремени с &6<votes>"
+  progress_bar:
+    symbol: "■"
+    progress_color: "&b"
+    left_color: "&7"
+    max: "&cМаксимально"
+    finish: "&8[ <progress> &8]"
+  groups:
+    solo: "Solo"
+    doubles: "Doubles"
+    trios: "Trios"
+    quartets: "Quartets"
+    1vs1: "1vs1"
+  leaderboard:
+    line: "&e<position>. &f<name> &7- &e<amount>"
+    empty: "&cДанный список лидеров пуст"
+  points:
+    see: "&aВаши очки: &f<bw-points>"
+    online: "&cДанный игрок не в сети"
+    integer: "&cВы должны ввести верное количество"
+    sender:
+      add: "&aВы добавили <points> очков к <name>"
+      remove: "&cВы забрали <points> очков у <name>"
+    target:
+      add: "&aВам дали <points> очков"
+      remove: "&aУ вас забрали <points> очков"
+  compass_tracker:
+    not_all_beds_destroyed: "&cЕще не все вражеские кровати разрушены!"
+    not_enough_resources: "&cУ вас недостаточно ресурсов!"
+    already_tracking: "&cВы уже отслеживаете эту команду!"
+    purchase: "&cВы потеряете возможность отслеживать эту команду, когда умрёте!"
+  quick_communications:
+    format: "&aКоманда %vault_prefix%<name>%vault_suffix% &7> &f<message>"
+    hello: "Привет ( ﾟ◡ﾟ)/!"
+    im_coming: "Я возвращаюсь на базу!"
+    im_defending: "Я защищаю!"
+    im_attacking: "Я атакую <team>"
+    im_collecting: "Я собираю <resource>"
+    i_have_resources: "У меня есть <resource>"
+    thanks_you: "Спасибо"
+    get_back: "Возвращайтесь на базу"
+    please_defend: "Защищайте, пожалуйста!"
+    lets_attack: "Давайте атаковать <team>"
+    we_need_resources: "Мне нужно <resource>"
+    player_incoming: "Игрок приближается!"
+  announcement:
+    rejoin: "&c&lЕсли вы отключились, воспользуйтесь /rejoin для переподключения обратно в игру"
+    cross_teaming: ""
+  rejoin:
+    no_arena: "&cАрен для переподключения нет!"
+    denied: "&cВы больше не можете присоединиться к арене. Игра закончилась или кровать уничтожена"
+    allowed: "&fПереносим вас на арену: &a<arena>&f!"
+    reconnected: "&a<name> &fпереподключился!"
+  cannot_use_chat:
+    - "&cВы не можете отправить то же самое сообщение дважды!"
+  map_selection:
+    daily_limit_exceeded:
+      - "&cВы использовали все доступные за день бесплатные карты!"
+      - "&cЧтобы разблокировать неограниченный выбор карт, вы можете купить &9SnapiX на &ehttps://mcsnapix.ru"
+  party:
+    help:
+      - ""
+      - "&aКоманды группы:"
+      - " &e/party help &b- Prints this help message"
+      - " &e/party invite <player> &b- Invites the player to your party"
+      - " &e/party leave &b- Leaves the current party"
+      - " &e/party promote <player> &b- Promote the player to the party leader"
+      - " &e/party remove <player> &b- Remove the player from the party"
+      - " &e/party accept <player> &b- Accept a party invite from the player"
+      - " &e/party disband &b- Disbands the party"
+      - ""
+    no_online: "&cДанный игрок не в сети!"
+    only_leader: "&cВы должны быть лидером для выполнения этого действия"
+    created: "&aВы создали компанию!"
+    not_in_party: "&cYou are not at a party!"
+    invite:
+      sender: "&aYou have invited <name>!"
+      invited: "&aYou have been invited to <name>'s party, you have 60 seconds to accept!"
+      no_invitation: "&cYou have no invitation from this player!"
+      expired: "&cThe party invitation has already expired!"
+      already: "&cYou have already invited this player!"
+      join: "&a<name> has joined the party!"
+    leave: "&c<name> has left the party!"
+    promote:
+      no_in_your_party: "&cThis player must be in your party!"
+      sender: "&aNow <name> is the leader!"
+      promoted: "&aNow you are the leader of the party!"
+    remove:
+      sender: "&aYou got <name> out of the party!"
+      removed: "&cYou have been taken out of the party :("
+    disband: "&cThe party has been disbanded!"
+  tnt_boost:
+    no_arena: "&cЭта команда должна быть использована в игре!"
+    only_double: "&cВы должны использовать целое или десятичное значение!"
+    not_zero: "&cЗначение должно быть больше 0!"
+    multiplied: "&aЗначение TNT умножено на <value>!"
+  bungeemode:
+    connecting: "&aВы подключены к серверу..."
+    no_data: "&cThere is no data on you!"
+    no_arena: "&cThe server is not available!"
+  cosmetics_command:
+    no_online: "&cЭтот игрок не в сети!"
+    add:
+      sender: "&fВы добавили косметику &a<cosmetic> &fигроку &a<name>"
+      receiver: "&fВы получили косметику &a<cosmetic>"
+    remove:
+      sender: "&fУдалена косметика &a<cosmetic> &fу игрока &a<name>"
+      receiver: "&cВаша косметика была удалена &l<cosmetic>"
+actionbar:
+  target_first_person: "&fЦель: &a&l<name>   &aЛКМ для меню &cShift для выхода"
+  target_default: "&fНаблюдаем за &a<name> &f- &fРасстояние &a&l<distance>м &f- &fЗдоровье &a&l<health>"
+  tracking: "&fОтслеживание: <team_color>&l<team_name> &f- Расстояние: &a&l<distance>м"
+titles:
+  join:
+    title: ""
+    subtitle: ""
+  respawn:
+    title: "&c&lВЫ ПОГИБЛИ!"
+    subtitle: "&fВы возродитесь через &a<time> &f<time_format>!"
+  starting:
+    title: "&c<time>"
+    subtitle: "&f"
+  bed_destroyed:
+    title: "&c&lКРОВАТЬ РАЗРУШЕНА!"
+    subtitle: ""
+  alarm:
+    title: "&c&lТревога!"
+    subtitle: "&fЛовушка сработала от <team_color>&l<team_name> &fкоманда!"
+  first_person:
+    title: "&fНаблюдаем за &a<name>"
+    subtitle: "&fНажмите Shift, чтобы выйти"
+  exit_first_person:
+    title: "&eВыход из режима наблюдателя"
+    subtitle: " "
+votes:
+  shop:
+    basic: "Основные"
+    default: "Нормальный"
+    overpowered: "Мощный"
+  health:
+    hardcore: "Хардкор"
+    default: "Нормальная"
+    double: "Двойная"
+  time:
+    day: "День"
+    sunset: "Закат"
+    night: "Ночь"
+cosmetics:
+  trails:
+    hearts: "Сердце"
+    flame: "Пламя"
+    water_splash: "Всплеск воды"
+    drip_lava: "Капающая Лава"
+    redstone: "Редстоун"
+    note: "Заметки"
+    none: "Отсутствует"
+  windances:
+    anvil_rain: "Дождь из наковален"
+    fireworks: "Фейерверки"
+    cold_snap: "Холодная схватка"
+    yee_haw: "Юху"
+    meteors: "Метеоры"
+    night_shift: "Ночной дозор"
+    wither: "Иссушитель"
+    gravity: "Гравитация"
+    dragon: "Дракон"
+    floating_lanterns: "Летающие фонари"
+    pig_rain: "Свиной дождь"
+    war_sheep: "Боевые овцы"
+    vulcan: "Вулкан"
+    vulcan_wool: "Вулкан шерсти"
+    sheeps: "Овцы"
+    fly_carpet: "Летающий ковер"
+    none: "Отсутствует"
+  killeffects:
+    love: "Любовь"
+    tnt: "TNT"
+    egg_explosion: "Взрыв яиц"
+    final_smash: "Окончательный разгром"
+    head_rocket: "Голова - ракета"
+    cookie_fountain: "Фонтан из печенья"
+    blood: "Кровь"
+    ghost: "Призрак"
+    creeper: "Крипер"
+    diamond: "Алмазы"
+    dyes: "Краски"
+    flowers: "Цветы"
+    rain: "Дождь"
+    bunny_explosion: "Взрыв из Кроликов"
+    none: "Отсутствует"
+  sprays:
+    bed: "Кровать"
+    tnt: "TNT"
+    water_bucket: "Ведро воды"
+    none: "Отсутствует"
+  cries:
+    bat: "Летучая мышь"
+    skeleton: "Скелет"
+    wolf: "Волк"
+    enderdragon: "Рев дракона"
+    burp: "Отрыжка"
+    enderman: "Эндермен"
+    firework: "Фейерверк"
+    none: "Отсутствует"
+  shopkeepers:
+    adventure_time: "Время приключений"
+    amongus: "Among Us"
+    astronaut: "Астронавт"
+    axolotl: "Аксолотль"
+    covid: "Covid-19"
+    alien: "Пришелец"
+    pokemon: "Покемон"
+    naruto: "Наруто"
+    police: "Полиция"
+    dragonball: "Жемчужина дракона"
+    lgbt: "ЛГБТ"
+  killmessages:
+    default:
+      name: "По умолчанию"
+      default:
+        killer: " &fигроком <color><name>"
+        default: "&fИгрок <color><name> &fбыл убит"
+        disconnect: "&fИгрок <color><name> &fпокинул игру"
+        final_kill: " &b&lФИНАЛЬНОЕ УБИЙСТВО"
+        final_kill_top: ""
+        bed_destroyed_top:
+          - "&eРазрушение кровати &7> <bed_color><bed_team_name> &fкровать была разрушена игроком <team_color><name>&f!"
+        bed_destroyed_you:
+          - "&eРазрушение кровати &7> &fВаша кровать была разрушена игроком <team_color><name>&f!"
+        bed_destroyed_everyone:
+          - "&eРазрушение кровати &7> <bed_color><bed_team_name> &fкровать была уничтожена <team_color><name>&f!"
+      messages:
+        contact: "&fИгрок <color><name> &fбыл пробит до смерти"
+        entity_attack: "&fИгрок <color><name> &fбыл убит"
+        projectile: "&fИгрок <color><name> &fбыл застрелян"
+        fall: "&fИгрок <color><name> &fразбился насмерть"
+        fire: "&fИгрок <color><name> &fсгорел заживо"
+        fire_tick: "&fИгрок <color><name> &fсгорел заживо"
+        block_explosion: "&fИгрок <color><name> &fвзорвался на тысячу осколков"
+        entity_explosion: "&fИгрок <color><name> &fвзорвался на тысячу осколков"
+        void: "&fИгрок <color><name> &fбыл скинут в пустоту"
+        falling_block: "&fНа игрока <color><name> &fбыл сброшен блок"
+        custom: "&fИгрок <color><name> &fумер от неизвестных причин"
+      entity:
+        iron_golem: " &fот Железного Голема игрока <color><name>&f!"
+        silverfish: " &fот Чешуйницы игрока <color><name>&f!"
+    dramatic:
+      name: "Драматичная"
+      default:
+        killer: " от <color><name>"
+        default: "<color><name> &fумер"
+        disconnect: "<color><name> &fотключился от игры"
+        final_kill: " &b&lФИНАЛЬНОЕ УБИЙСТВО"
+        final_kill_top: ""
+        bed_destroyed_top:
+          - ""
+          - "&f&lРазрушение кровати > <bed_color><bed_team_name> Кровать &7была кровать &e#<position> &7(<amount>) уничтожил <team_color><name>&7!"
+          - ""
+        bed_destroyed_you:
+          - ""
+          - "&f&lРазрушение кровати > &7Ваша кровать была уничтожена <team_color><name>"
+          - ""
+        bed_destroyed_everyone:
+          - ""
+          - "&f&lРазрушение кровати > <bed_color><bed_team_name> Кровать &cбыла жестоко разрушена <team_color><name>"
+          - ""
+      messages:
+        contact: "<color><name> &fумолял за столько ударов"
+        entity_attack: "<color><name> &fон был зверски убит"
+        projectile: "<color><name> &fони сделали ему супер выстрел в голову"
+        fall: "<color><name> &fупал со слишком высокого места"
+        fire: "<color><name> &fсгорел дотла"
+        fire_tick: "<color><name> &fон был жестоко сожжен заживо"
+        block_explosion: "<color><name> &fбыл разорван на куски воздухом"
+        entity_explosion: "<color><name> &fбыл разорван на куски воздухом"
+        void: "<color><name> &fпровалилась в пустоту его поцелуев"
+        falling_block: "<color><name> &fбыл жестоко раздавлен"
+        custom: "<color><name> &fсмерть уникальным и ублюдочным способом"
+      entity:
+        iron_golem: " от <color><name> &7Железного Голема!"
+        silverfish: " от <color><name> &7Чешуйницы!"
+  glyphs:
+    diamond: "Алмаз"
+    emerald: "Изумруд"
+    gold: "Золото"
+    urss: "СССР"
+    none: "Отсутствует"
+  beddestroys:
+    squid_missile: "Ракета \"Кальмар\""
+    firework: "Фейерверк"
+    lightning_strike: "Удар молнией"
+    lava_explosion: "Взрыв лавы"
+    pig_missile: "Свиная ракета"
+    tornado: "Торнадо"
+    thief: "Вор"
+    egg_explosion: "Взрыв яиц"
+    blizzard: "Метель"
+    pig_explosion: "Взрыв свиньи"
+    lady_bug: "Божья Коровка"
+    fire_dance: "Огненный танец"
+    none: "Отсутствует"
+  woodskins:
+    spruce_plank: "Еловая доска"
+    birch_plank: "Берёзовая доска"
+    jungle_plank: "Доска из тропического дерева"
+    acacia_plank: "Акациевая доска"
+    dark_oak_plank: "Доска из тёмного дуба"
+    oak_log: "Древесина дуба"
+    spruce_log: "Еловое бревно"
+    birch_log: "Берёзовое бревно"
+    jungle_log: "Бревно тропического дерева"
+    acacia_log: "Акациевое бревно"
+    dark_oak_log: "Бревно тёмного дуба"
+    none: "Отсутствует"
+  toppers:
+    bunny: "Зайчик"
+    chicken: "Курица"
+    sheep: "Овца"
+    slime: "Слизень"
+    sword: "Меч"
+    sheep_rainbow: "Радужная овца"
+    none: "Отсутствует"
+items:
+  servers:
+    name: "&9Пример &7(ПРАВЫЙ КЛИК)"
+    lore:
+      - "&7Пример предмета"
+  cosmetics:
+    name: "&aBedWars косметика &7(ПРАВЫЙ КЛИК)"
+    lore:
+      - "&7Ваша косметика"
+  random:
+    name: "&eСлучайная игра &7(ПРАВЫЙ КЛИК)"
+    lore:
+      - "&7Присоединитесь к случайной игре"
+  team_selector:
+    name: "&8★  &6Выбор Команды &8★  &e&lПРАВЫЙ КЛИК"
+    lore:
+      - "&7Нажмите ПКМ, чтобы открыть меню выбора команды"
+  votes:
+    name: "&8★  &aГолосование &8★  &e&lПРАВЫЙ КЛИК"
+    lore:
+      - "&7Нажмите ПКМ, чтобы открыть меню для голосования"
+  teleport_spectator:
+    name: "&8★  &aИгроки &8★  &e&lПРАВЫЙ КЛИК"
+    lore:
+      - "&7Нажмите ПКМ, для открытия меню игроков"
+  options_spectator:
+    name: "&8★  &eНастройки наблюдателя &8★  &e&lПРАВЫЙ КЛИК"
+    lore:
+      - "&7Нажмите ПКМ, чтобы открыть настройки наблюдателя"
+  play_again:
+    name: "&8★  &aИграть снова &8★  &e&lПРАВЫЙ КЛИК"
+    lore:
+      - "&7Нажмите ПКМ, чтобы присоединиться к другой игре"
+  leave:
+    name: "&8★  &cВыйти в лобби &8★  &e&lПРАВЫЙ КЛИК"
+    lore:
+      - "&7Нажмите ПКМ, чтобы вернуться в лобби"
+  tracker_shop:
+    name: "&8★  &cКомпас &8★  &e&lПРАВЫЙ КЛИК"
+    lore: [ ]
+holograms:
+  soloWins:
+    - "&b&lВсего побед"
+    - "&7BedWars • Solo"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&lChange to toggle!"
+    - "&a&lLifetime &7Monthly &7Weekly &7Daily"
+  soloWinsMonthly:
+    - "&b&lMonthly Wins"
+    - "&7BedWars • Solo"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&lChange to toggle!"
+    - "&7Lifetime &a&lMonthly &7Weekly &7Daily"
+  soloWinsWeekly:
+    - "&b&lWeekly Wins"
+    - "&7BedWars • Solo"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&lChange to toggle!"
+    - "&7Lifetime &7Monthly &a&lWeekly &7Daily"
+  soloWinsDaily:
+    - "&b&lDaily Wins"
+    - "&7BedWars • Solo"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&lChange to toggle!"
+    - "&7Lifetime &7Monthly &7Weekly &a&lDaily"
+  soloFinalKills:
+    - "&b&lLifetime Final Kills"
+    - "&7BedWars • Solo"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&lChange to toggle!"
+    - "&a&lLifetime &7Monthly &7Weekly &7Daily"
+  soloFinalKillsMonthly:
+    - "&b&lMonthly Final Kills"
+    - "&7BedWars • Solo"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&lChange to toggle!"
+    - "&7Lifetime &a&lMonthly &7Weekly &7Daily"
+  soloFinalKillsWeekly:
+    - "&b&lWeekly Final Kills"
+    - "&7BedWars • Solo"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&lChange to toggle!"
+    - "&7Lifetime &7Monthly &a&lWeekly &7Daily"
+  soloFinalKillsDaily:
+    - "&b&lDaily Final Kills"
+    - "&7BedWars • Solo"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&lChange to toggle!"
+    - "&7Lifetime &7Monthly &7Weekly &a&lDaily"
+  totalWins:
+    - "&b&lLifetime Wins"
+    - "&7All Modes"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&lChange to toggle!"
+    - "&a&lLifetime &7Monthly &7Weekly &7Daily"
+  totalWinsMonthly:
+    - "&b&lMonthly Wins"
+    - "&7All Modes"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&lChange to toggle!"
+    - "&7Lifetime &a&lMonthly &7Weekly &7Daily"
+  totalWinsWeekly:
+    - "&b&lWeekly Wins"
+    - "&7All Modes"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&lChange to toggle!"
+    - "&7Lifetime &7Monthly &a&lWeekly &7Daily"
+  totalWinsDaily:
+    - "&b&lDaily Wins"
+    - "&7All Modes"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&lChange to toggle!"
+    - "&7Lifetime &7Monthly &7Weekly &a&lDaily"
+  totalFinalKills:
+    - "&b&lLifetime Final Kills"
+    - "&7All Modes"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&lChange to toggle!"
+    - "&a&lLifetime &7Monthly &7Weekly &7Daily"
+  totalFinalKillsMonthly:
+    - "&b&lMonthly Final Kills"
+    - "&7All Modes"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&lChange to toggle!"
+    - "&7Lifetime &a&lMonthly &7Weekly &7Daily"
+  totalFinalKillsWeekly:
+    - "&b&lWeekly Final Kills"
+    - "&7All Modes"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&lChange to toggle!"
+    - "&7Lifetime &7Monthly &a&lWeekly &7Daily"
+  totalFinalKillsDaily:
+    - "&b&lDaily Final Kills"
+    - "&7All Modes"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&lChange to toggle!"
+    - "&7Lifetime &7Monthly &7Weekly &a&lDaily"
+menus:
+  replacement:
+    cosmetics:
+      permission: "&cУ вас нет разрешения!"
+      purchase: "&aНажмите, чтобы приобрести!"
+      selected: "&aВЫБРАНО!"
+      select: "&aНажмите, чтобы выбрать!"
+      need: "&cУ вас недостаточно денег"
+      price:
+        - ""
+        - "&fСтоимость: &a<cost>"
+    votes:
+      permission: "&cУ вас нет разрешения на голосование"
+      already_voted: "&cВы уже проголосовали"
+      vote: "&aНажмите, чтобы проголосовать!"
+    team:
+      full: "&cКоманда уже заполнена"
+      already: "&aВы уже в этой команде!"
+      join: "&aНажмите, чтобы присоединиться"
+      member: "&f- &e<name>"
+      empty: "&aКоманда пуста"
+    spectator:
+      auto_teleport:
+        enabled:
+          name: "&aАвтоматическая телепортация"
+          lore:
+            - "&fАвтоматически телепортирует к игроку"
+            - "&f"
+            - "&fСостояние: &aвключено"
+            - "&f"
+            - "&aНажмите, чтобы изменить!"
+        disabled:
+          name: "&aАвтоматическая телепортация"
+          lore:
+            - "&fАвтоматически телепортирует к игроку"
+            - "&f"
+            - "&fСостояние: &cвыключено"
+            - "&f"
+            - "&aНажмите, чтобы изменить!"
+      night_vision:
+        enabled:
+          name: "&aНочное Зрение"
+          lore:
+            - "&fПозволяет вам видеть в темноте"
+            - "&f"
+            - "&fСостояние: &aвключено"
+            - "&f"
+            - "&aНажмите, чтобы изменить!"
+        disabled:
+          name: "&aНочное Зрение"
+          lore:
+            - "&fПозволяет вам видеть в темноте"
+            - "&f"
+            - "&fСостояние: &cвыключено"
+            - "&f"
+            - "&aНажмите, чтобы изменить!"
+      first_person:
+        enabled:
+          name: "&aПервое лицо"
+          lore:
+            - "&fСледите за игроками от первого лица!"
+            - "&f"
+            - "&fСостояние: &aвключено"
+            - "&f"
+            - "&aНажмите, чтобы изменить!"
+        disabled:
+          name: "&aПервое лицо"
+          lore:
+            - "&fСледите за игроками от первого лица!"
+            - "&f"
+            - "&fСостояние: &cвыключено"
+            - "&f"
+            - "&aНажмите, чтобы изменить!"
+      show_spectator:
+        enabled:
+          name: "&aНаблюдатели"
+          lore:
+            - "&fПереключить видимость игроков"
+            - "&f"
+            - "&fСостояние: &aвключено"
+            - "&f"
+            - "&aНажмите, чтобы изменить!"
+        disabled:
+          name: "&aНаблюдатели"
+          lore:
+            - "&fПереключить видимость игроков"
+            - "&f"
+            - "&fСостояние: &cвыключено"
+            - "&f"
+            - "&aНажмите, чтобы изменить!"
+    track_shop:
+      price:
+        - ""
+        - "&fСтоимость: <color><amount> <material>"
+      status:
+        already_purchased: "&eУ вас уже есть покупка!"
+        not_enough: "&cУ вас недостаточно ресурсов!"
+        locked: "&cОткроется, когда все вражеские кровати будут уничтожены!"
+        purchase: "&aНажмите, чтобы приобрести!"
+    map_selection:
+      favorite: "&b✫ "
+      status:
+        available_animation1: "&a► Нажмите для игры"
+        available_animation2: "&a Нажмите для игры"
+        un_available_animation1: "&c► Превышен ежедневный лимит!"
+        un_available_animation2: "&c Превышен ежедневный лимит!"
+      color:
+        available: "&a"
+        un_available: "&c"
+  cosmetics:
+    title: "Косметика"
+    icons:
+      '9':
+        name: "&aСледы от снаряда"
+        lore:
+          - "&7Изменить частицу снаряда"
+          - "&7trail effect"
+          - ""
+          - "&7Открыто &a<bw-projectiles_purchased>/<bw-projectiles_total> &8(<bw-projectiles_percent>%)"
+          - "&7Выбрано"
+          - "&а<bw-projectiles_selected>"
+          - ""
+          - "&aНажмите, чтобы посмотреть!"
+      '11':
+        name: "&aПобедные танцы"
+        lore:
+          - "&7Празднуйте победу, злорадствуя и"
+          - "&7хвастаясь перед другими игроками"
+          - "&7всякий раз, когда вы побеждаете!"
+          - ""
+          - "&7Открыто &a<bw-windances_purchased>/<bw-windances_total> &8(<bw-windances_percent>%)"
+          - "&7Выбрано"
+          - "&a<bw-windances_selected>"
+          - ""
+          - "&aНажмите, чтобы посмотреть!"
+      '13':
+        name: "&aЭффекты финального убийства"
+        lore:
+          - "&7Выбор различных эффектов"
+          - "&7выбрать из этого вызова"
+          - "&7всякий раз, когда вы финально убиваете"
+          - "&7противника"
+          - ""
+          - "&7Открыто &a<bw-killeffects_purchased>/<bw-killeffects_total> &8(<bw-killeffects_percent>%)"
+          - "&7Выбрано"
+          - "&a<bw-killeffects_selected>"
+          - ""
+          - "&aНажмите, чтобы посмотреть!"
+      '15':
+        name: "&aСпреи"
+        lore:
+          - "&7Выберите спрей для отображения всех"
+          - "&7над местом! Спрей может быть"
+          - "&7быть найдены на каждом острове спавна"
+          - "&7и некоторые центральные острова"
+          - ""
+          - "&7Открыто &a<bw-sprays_purchased>/<bw-sprays_total> &8(<bw-sprays_percent>%)"
+          - "&7Выбрано"
+          - "&a<bw-sprays_selected>"
+          - ""
+          - "&aНажмите, чтобы посмотреть!"
+      '17':
+        name: "&aВерхушки острова"
+        lore:
+          - "&7Выберите верхушку острова"
+          - "&7украсить ваш остров! В"
+          - "&7Случайные doubles и Teams режимы"
+          - "&7выбор игрока из каждой команды"
+          - "&7выбрано"
+          - ""
+          - "&7Открыто &a<bw-toppers_purchased>/<bw-toppers_total> &8(<bw-toppers_percent>%)"
+          - "&7Выбрано"
+          - "&a<bw-toppers_selected>"
+          - ""
+          - "&aНажмите, чтобы посмотреть!"
+      '22':
+        name: "&aПредсмертные Крики"
+        lore:
+          - "&7Let others know just how salty"
+          - "&7yours tears are every time you"
+          - "&7die with these death cries"
+          - ""
+          - "&7Открыто &a<bw-deathcries_purchased>/<bw-deathcries_total> &8(<bw-deathcries_percent>%)"
+          - "&7Выбрано"
+          - "&a<bw-deathcries_selected>"
+          - ""
+          - "&aНажмите, чтобы посмотреть!"
+      '27':
+        name: "&aСкины продавца"
+        lore:
+          - "&7Select from various Shopkeeper"
+          - "&7skins, which will replace how"
+          - "&7the shopkeeper look in-game!"
+          - ""
+          - "&7Открыто &a<bw-shopkeepers_purchased>/<bw-shopkeepers_total> &8(<bw-shopkeepers_percent>%)"
+          - "&7Выбрано"
+          - "&a<bw-shopkeepers_selected>"
+          - ""
+          - "&aНажмите, чтобы посмотреть!"
+      '29':
+        name: "&aСообщения убийства"
+        lore:
+          - "&7Выберите пакет сообщений об убийстве"
+          - "&7заменить сообщения в чате, когда вы"
+          - "&7убиваете игроков, команды и ломаете"
+          - "&7Кровати!"
+          - ""
+          - "&7Открыто &a<bw-killmessages_purchased>/<bw-killmessages_total> &8(<bw-killmessages_percent>%)"
+          - "&7Выбрано"
+          - "&a<bw-killmessages_selected>"
+          - ""
+          - "&aНажмите, чтобы посмотреть!"
+      '31':
+        name: "&aСимволы"
+        lore:
+          - "&7Выберите изображение символа, которое будет"
+          - "&7появляться при сборе алмазов"
+          - "&7и изумрудов!"
+          - "&7Beds!"
+          - ""
+          - "&7Открыто &a<bw-glyphs_purchased>/<bw-glyphs_total> &8(<bw-glyphs_percent>%)"
+          - "&7Выбрано"
+          - "&a<bw-glyphs_selected>"
+          - ""
+          - "&aНажмите, чтобы посмотреть!"
+      '33':
+        name: "&aРазрушение кровати"
+        lore:
+          - "&7Выберите из различных разрушений кроватей"
+          - "&7эффект, которые возникают, когда"
+          - "&7вы сломаете кровать!"
+          - ""
+          - "&7Открыто &a<bw-beddestroys_purchased>/<bw-beddestroys_total> &8(<bw-beddestroys_percent>%)"
+          - "&7Выбрано"
+          - "&a<bw-beddestroys_selected>"
+          - ""
+          - "&aНажмите, чтобы посмотреть!"
+      '35':
+        name: "&aДеревянные скины"
+        lore:
+          - "&7Измените вид дерева в игре"
+          - ""
+          - "&7Открыто &a<bw-woodskins_purchased>/<bw-woodskins_total> &8(<bw-woodskins_percent>%)"
+          - "&7Выбрано"
+          - "&a<bw-woodskins_selected>"
+          - ""
+          - "&aНажмите, чтобы посмотреть!"
+      '48':
+        name: "&cЗакрыть"
+        lore:
+          - "&7Закрыть магазин BedWars"
+      '50':
+        name: "&fВаши деньги: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  trails:
+    title: "Trails"
+    icons:
+      '10':
+        name: "&aНичего"
+        lore:
+          - "&7Projectile Trail"
+          - ""
+          - "&7Selecting this option disables"
+          - "&7your projectile trail"
+          - ""
+          - "<select_status>"
+      '11':
+        name: "&aHearts"
+        lore:
+          - "&7Projectile Trail"
+          - ""
+          - "&7Select the Heart projectile"
+          - "&7trail"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '12':
+        name: "&aFlame"
+        lore:
+          - "&7Projectile Trail"
+          - ""
+          - "&7Select the Flame projectile"
+          - "&7trail"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '13':
+        name: "&aWater"
+        lore:
+          - "&7Projectile Trail"
+          - ""
+          - "&7Select the Water projectile"
+          - "&7trail"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '14':
+        name: "&aLava"
+        lore:
+          - "&7Projectile Trail"
+          - ""
+          - "&7Select the Lava projectile"
+          - "&7trail"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '15':
+        name: "&aRedstone"
+        lore:
+          - "&7Projectile Trail"
+          - ""
+          - "&7Select the Redstone projectile"
+          - "&7trail"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '16':
+        name: "&aNotes"
+        lore:
+          - "&7Projectile Trail"
+          - ""
+          - "&7Select the Notes projectile"
+          - "&7trail"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '30':
+        name: "&cНазад"
+        lore:
+          - "&7В магазин Bed Wars"
+      '32':
+        name: "&fВаши деньги: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  windances:
+    title: "Победные танцы"
+    icons:
+      '10':
+        name: "&aНичего"
+        lore:
+          - "&8Победный танец"
+          - ""
+          - "&7Selecting this option disables"
+          - "&7your win dances"
+          - ""
+          - "<select_status>"
+      '11':
+        name: "&aДождь из наковален"
+        lore:
+          - "&8Победный танец"
+          - ""
+          - "&7Наковальни будут градом падать с неба"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '12':
+        name: "&aФейерверк"
+        lore:
+          - "&8Победный танец"
+          - ""
+          - "&7Отпразднуйте великолепным шоу"
+          - "&7Фейерверк показывается!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '13':
+        name: "&aХолодная схватка"
+        lore:
+          - "&8Победный танец"
+          - ""
+          - "&7Охладите зону вокруг вас"
+          - "&7абсолютный ноль"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '14':
+        name: "&aИ-и-ху"
+        lore:
+          - "&8Победный танец"
+          - ""
+          - "&7Скачите на лошади так, будто сейчас 1876"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '15':
+        name: "&aМетеоритный дождь"
+        lore:
+          - "&8Победный танец"
+          - ""
+          - "&7A meteor shower will rain down"
+          - "&7из неба"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '16':
+        name: "&aНочной дозор"
+        lore:
+          - "&8Победный танец"
+          - ""
+          - "&7Установите его в день, установите его в ночь"
+          - "&7повторяйте, как бог"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '19':
+        name: "&aВсадник иссушителя"
+        lore:
+          - "&8Победный танец"
+          - ""
+          - "&7Ride a Wither straight from the"
+          - "&7nether"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '20':
+        name: "&aГравитация"
+        lore:
+          - "&8Победный танец"
+          - ""
+          - "&7В зоне вокруг вас блоков"
+          - "&7вылетет"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '21':
+        name: "&aДраконий всадник"
+        lore:
+          - "&8Победный танец"
+          - ""
+          - "&7Возможность езды на Драконе"
+          - "&7разрушая карту"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '22':
+        name: "&aЛетающие фонари"
+        lore:
+          - "&8Победный танец"
+          - ""
+          - "&7Spawn floating lanterns to"
+          - "&7brighten up the night"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '23':
+        name: "&aСвиной Дождь"
+        lore:
+          - "&8Победный танец"
+          - ""
+          - "&7На небе будет дождь из свиней"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '24':
+        name: "&aБоевые овцы"
+        lore:
+          - "&8Победный танец"
+          - ""
+          - "&7Ride on a colorful sheep who"
+          - "&7changes its colors"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '25':
+        name: "&aВулкан"
+        lore:
+          - "&8Победный танец"
+          - ""
+          - "&7Вы станете живым вулканом"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '28':
+        name: "&aВулкан шерсти"
+        lore:
+          - "&8Победный танец"
+          - ""
+          - "&7Вы станете вулканом"
+          - "&7нежности"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '29':
+        name: "&aОвцы"
+        lore:
+          - "&8Победный танец"
+          - ""
+          - "&7Colored &aS&3h&ee&de&9p&bs &7will come out"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '30':
+        name: "&aFly Carpet"
+        lore:
+          - "&8Победный танец"
+          - ""
+          - "&7You will fly on a flying carpet"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '48':
+        name: "&cНазад"
+        lore:
+          - "&7В магазин Bed Wars"
+      '50':
+        name: "&fВаши деньги: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  killeffects:
+    title: "Эффекты финального убийства"
+    icons:
+      '10':
+        name: "&aНичего"
+        lore:
+          - "&8Эффект финального убийства"
+          - ""
+          - "&7Selecting this option disables"
+          - "&7ваш эффект финального убийства"
+          - ""
+          - "<select_status>"
+      '11':
+        name: "&aЛюбовь"
+        lore:
+          - "&8Эффект финального убийства"
+          - ""
+          - "&7Убийство врага породит много"
+          - "&7любви"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '12':
+        name: "&aTNT"
+        lore:
+          - "&8Эффект финального убийства"
+          - ""
+          - "&7Killing an enemy will make them"
+          - "&7disappear into TNT"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '13':
+        name: "&aВзрыв яиц"
+        lore:
+          - "&8Эффект финального убийства"
+          - ""
+          - "&7Killing an enemy will make them"
+          - "&7drop egg explosions"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '14':
+        name: "&aОкончательный разгром"
+        lore:
+          - "&8Эффект финального убийства"
+          - ""
+          - "&7Killing an enemy will smash him"
+          - "&7out of the world"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '15':
+        name: "&aГолова - ракета"
+        lore:
+          - "&8Эффект финального убийства"
+          - ""
+          - "&7Killing an enemy will launch"
+          - "&7their head up in the skies"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '16':
+        name: "&aФонтан из печенья"
+        lore:
+          - "&8Эффект финального убийства"
+          - ""
+          - "&7Killing an enemy will let"
+          - "&7cookies sprinkle out of you"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '19':
+        name: "&aКровь"
+        lore:
+          - "&8Эффект финального убийства"
+          - ""
+          - "&7Killing an enemy will make them"
+          - "&7взрывается в крови"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '20':
+        name: "&aПризрак"
+        lore:
+          - "&8Эффект финального убийства"
+          - ""
+          - "&7Killing an enemy will his ghost"
+          - "&7appears"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '21':
+        name: "&aКрипер"
+        lore:
+          - "&8Эффект финального убийства"
+          - ""
+          - "&7Появится электрический крипер"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '22':
+        name: "&aАлмаз"
+        lore:
+          - "&8Эффект финального убийства"
+          - ""
+          - "&7Killing an enemy will make them"
+          - "&7взрыв алмазов"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '23':
+        name: "&aКрасители"
+        lore:
+          - "&8Эффект финального убийства"
+          - ""
+          - "&7Killing an enemy will make them"
+          - "&7explode dyes"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '24':
+        name: "&aЦветы"
+        lore:
+          - "&8Эффект финального убийства"
+          - ""
+          - "&7Killing an enemy will make flowers"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '25':
+        name: "&aДождь"
+        lore:
+          - "&8Эффект финального убийства"
+          - ""
+          - "&7An uncontrollable rain will fall"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '28':
+        name: "&aВзрыв из Кроликов"
+        lore:
+          - "&8Эффект финального убийства"
+          - ""
+          - "&7Flying rabbits will come out and explode"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '48':
+        name: "&cНазад"
+        lore:
+          - "&7В магазин Bed Wars"
+      '50':
+        name: "&fВаши деньги: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  sprays:
+    title: "Спрей"
+    icons:
+      '10':
+        name: "&aНичего"
+        lore:
+          - "&8Спрей"
+          - ""
+          - "&7Selecting this option disables"
+          - "&7ваш спрей"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '11':
+        name: "&aКровать"
+        lore:
+          - "&8Спрей"
+          - ""
+          - "&7Выберите спрей кровати"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '12':
+        name: "&aTNT"
+        lore:
+          - "&8Спрей"
+          - ""
+          - "&7Выберите спрей TNT"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '13':
+        name: "&aВедро воды"
+        lore:
+          - "&8Спрей"
+          - ""
+          - "&7Выберите спрей воды"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '30':
+        name: "&cНазад"
+        lore:
+          - "&7В магазин Bed Wars"
+      '32':
+        name: "&fВаши деньги: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  toppers:
+    title: "Верхушки острова"
+    icons:
+      '10':
+        name: "&aНичего"
+        lore:
+          - "&8Верхушка острова"
+          - ""
+          - "&7Выберите верхушку острова \"Нет\""
+          - "&7spawn above your island"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '11':
+        name: "&aКролик"
+        lore:
+          - "&8Верхушка острова"
+          - ""
+          - "&7Выберите верхушку острова \"Кролик\""
+          - "&7to spawn above your island"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '12':
+        name: "&aКурица"
+        lore:
+          - "&8Верхушка острова"
+          - ""
+          - "&7Выберите верхушку острова \"Курица\""
+          - "&7to spawn above your island"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '13':
+        name: "&aОвца"
+        lore:
+          - "&8Верхушка острова"
+          - ""
+          - "&7Выберите верхушку острова \"Овца\""
+          - "&7to spawn above your island"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '14':
+        name: "&aСлизень"
+        lore:
+          - "&8Верхушка острова"
+          - ""
+          - "&7Выберите верхушку острова \"Слизень\""
+          - "&7to spawn above your island"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '15':
+        name: "&aМеч"
+        lore:
+          - "&8Верхушка острова"
+          - ""
+          - "&7Выберите верхушку острова \"Меч\""
+          - "&7to spawn above your island"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '16':
+        name: "&aРадужная овца"
+        lore:
+          - "&8Верхушка острова"
+          - ""
+          - "&7Выберите остров Радуги"
+          - "&7Верхушка для появления над вашим"
+          - "&7островом"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '30':
+        name: "&cНазад"
+        lore:
+          - "&7В магазин Bed Wars"
+      '32':
+        name: "&fВаши деньги: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  cries:
+    title: "Крики"
+    icons:
+      '10':
+        name: "&aНичего"
+        lore:
+          - "&8Предсмертный крик"
+          - ""
+          - "&7Проигрывает плач смерти \"Нет\", когда"
+          - "&7вы умираете"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '11':
+        name: "&aЛетучая мышь"
+        lore:
+          - "&8Предсмертный крик"
+          - ""
+          - "&7Проигрывает плач смерти \"Летучая мышь\""
+          - "&7когда вы умираете"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '12':
+        name: "&aСкелет"
+        lore:
+          - "&8Предсмертный крик"
+          - ""
+          - "&7Проигрывает плач смерти \"Скелет\""
+          - "&7когда вы умираете"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '13':
+        name: "&aВолк"
+        lore:
+          - "&8Предсмертный крик"
+          - ""
+          - "&7Проигрывает плач смерти \"Волк\""
+          - "&7когда вы умираете"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '14':
+        name: "&aЭндер Дракон"
+        lore:
+          - "&8Предсмертный крик"
+          - ""
+          - "&7Проигрывает плач смерти \"Эндер Дракон\""
+          - "&7когда вы умираете"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '15':
+        name: "&aОтрыжка"
+        lore:
+          - "&8Предсмертный крик"
+          - ""
+          - "&7Проигрывает плач смерти \"Отрыжка\""
+          - "&7когда вы умираете"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '16':
+        name: "&aЭндерман"
+        lore:
+          - "&8Предсмертный крик"
+          - ""
+          - "&7Проигрывает плач смерти \"Эндерман\""
+          - "&7когда вы умираете"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '19':
+        name: "&aФейерверк"
+        lore:
+          - "&8Предсмертный крик"
+          - ""
+          - "&7Проигрывает плач смерти \"Фейерверк\""
+          - "&7когда вы умираете"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '39':
+        name: "&cНазад"
+        lore:
+          - "&7В магазин Bed Wars"
+      '41':
+        name: "&fВаши деньги: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  shopkeepers:
+    title: "Торговец"
+    icons:
+      '10':
+        name: "&aВремя приключений"
+        lore:
+          - "&8Торговец"
+          - ""
+          - "&7Выберите время приключений как"
+          - "&7ваш торговец!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '11':
+        name: "&aAmong Us"
+        lore:
+          - "&8Торговец"
+          - ""
+          - "&7Выберите Among Us как ваш"
+          - "&7Торговец!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '12':
+        name: "&aАстронавт"
+        lore:
+          - "&8Торговец"
+          - ""
+          - "&7Выберите астронавта как ваш"
+          - "&7Торговец!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '13':
+        name: "&aАксолотль"
+        lore:
+          - "&8Торговец"
+          - ""
+          - "&7Выберите аксолотля как ваш"
+          - "&7Торговец!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '14':
+        name: "&aКоронавирус"
+        lore:
+          - "&8Торговец"
+          - ""
+          - "&7Выберите коронавирус как ваш"
+          - "&7Торговец!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '15':
+        name: "&aПришелец"
+        lore:
+          - "&8Торговец"
+          - ""
+          - "&7Выберите пришельца в качестве вашего торговца!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '16':
+        name: "&aПокемон"
+        lore:
+          - "&8Торговец"
+          - ""
+          - "&7Выберите покемона в качестве вашего торговца!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '19':
+        name: "&aНаруто"
+        lore:
+          - "&8Торговец"
+          - ""
+          - "&7Выберите наруто в качестве вашего торговца!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '20':
+        name: "&aПолиция"
+        lore:
+          - "&8Торговец"
+          - ""
+          - "&7Выберите полицию в качестве вашего торговца!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '21':
+        name: "&aЖемчужина дракона"
+        lore:
+          - "&8Торговец"
+          - ""
+          - "&7Выберите жемчужину дракона как ваш"
+          - "&7Торговец!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '22':
+        name: "&aLGBT"
+        lore:
+          - "&8Торговец"
+          - ""
+          - "&7Select LGBT as your Shopkeeper!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '39':
+        name: "&cНазад"
+        lore:
+          - "&7В магазин Bed Wars"
+      '41':
+        name: "&fВаши деньги: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  killmessages:
+    title: "Сообщения об убийстве"
+    icons:
+      '10':
+        name: "&aПо умолчанию"
+        lore:
+          - "&8Сообщения об убийстве"
+          - ""
+          - "&7Выберите сообщения по умолчанию"
+          - "&7для сообщений в игре!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '11':
+        name: "&aДраматический"
+        lore:
+          - "&8Сообщения об убийстве"
+          - ""
+          - "&7Выберите сообщения драматические"
+          - "&7для сообщений в игре!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '30':
+        name: "&cНазад"
+        lore:
+          - "&7В магазин Bed Wars"
+      '32':
+        name: "&fВаши деньги: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  glyphs:
+    title: "Символы"
+    icons:
+      '10':
+        name: "&aНЕТ"
+        lore:
+          - "&8Символ"
+          - ""
+          - "&7Выберите символы НЕТ. Это"
+          - "&7изменение косметическое"
+          - ""
+          - "<select_status>"
+      '11':
+        name: "&aАлмаз"
+        lore:
+          - "&8Символ"
+          - ""
+          - "&7Выберите символы Алмаз. Это"
+          - "&7изменение косметическое"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '12':
+        name: "&aИзумруд"
+        lore:
+          - "&8Символ"
+          - ""
+          - "&7Выберите символы Изумруд. Это"
+          - "&7изменение косметическое"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '13':
+        name: "&aЗолото"
+        lore:
+          - "&8Символ"
+          - ""
+          - "&7Выберите символы золото. Это"
+          - "&7изменение косметическое"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '14':
+        name: "&aСовок)"
+        lore:
+          - "&8Символ"
+          - ""
+          - "&7Выберите символы совка. Это"
+          - "&7изменение косметическое"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '30':
+        name: "&cНазад"
+        lore:
+          - "&7В магазин Bed Wars"
+      '32':
+        name: "&fВаши деньги: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  beddestroys:
+    title: "Разрушения кровати"
+    icons:
+      '10':
+        name: "&aНичего"
+        lore:
+          - "&8Разрушение кровати"
+          - ""
+          - "&7Проигрывает \"Уничтожение кровати NONE\", когда"
+          - "&7вы сломаете кровать"
+          - ""
+          - "<select_status>"
+      '11':
+        name: "&aРакета \"Кальмар\""
+        lore:
+          - "&8Разрушение кровати"
+          - ""
+          - "&7Разрушение кровать породит"
+          - "&7товарища"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '12':
+        name: "&aФейерверк"
+        lore:
+          - "&8Разрушение кровати"
+          - ""
+          - "&7Разрушение кровати запустит"
+          - "&7фейерверки"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '13':
+        name: "&aУдар молнией"
+        lore:
+          - "&8Разрушение кровати"
+          - ""
+          - "&7Разрушение кровати пробудит"
+          - "&7Тора"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '14':
+        name: "&aВзрыв лавы"
+        lore:
+          - "&8Разрушение кровати"
+          - ""
+          - "&7Разбивание кровать сделает"
+          - "&7взрыв в лаве"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '15':
+        name: "&aСвиная ракета"
+        lore:
+          - "&8Разрушение кровати"
+          - ""
+          - "&7Разрушение кровать породит"
+          - "&7товарища"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '16':
+        name: "&aТорнадо"
+        lore:
+          - "&8Разрушение кровати"
+          - ""
+          - "&7Разрушение кровати вызовет"
+          - "&7вихрь"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '19':
+        name: "&aВор"
+        lore:
+          - "&8Разрушение кровати"
+          - ""
+          - "&7Проигрывает \"Уничтожение кровати Вор\", когда"
+          - "&7вы сломаете кровать"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '20':
+        name: "&aВзрыв яиц"
+        lore:
+          - "&8Разрушение кровати"
+          - ""
+          - "&7Проигрывает \"Уничтожение кровати Яйцо\""
+          - "&7уничтожаешь кровать"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '21':
+        name: "&aВьюга"
+        lore:
+          - "&8Разрушение кровати"
+          - ""
+          - "&7Проигрывает \"Уничтожение кровати Вьюга\""
+          - "&7когда вы сломаете кровать"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '22':
+        name: "&aВзрыв свиньи"
+        lore:
+          - "&8Разрушение кровати"
+          - ""
+          - "&7Разрушение кровать породит"
+          - "куча маленьких свиней"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '23':
+        name: "&aБожья Коровка"
+        lore:
+          - "&8Разрушение кровати"
+          - ""
+          - "&7Проигрывает \"Уничтожение кровати Божья Коровка\""
+          - "&7когда вы сломаете кровать"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '24':
+        name: "&aОгненный танец"
+        lore:
+          - "&8Разрушение кровати"
+          - ""
+          - "&7Проигрывает \"Уничтожение кровати Огненный танец\""
+          - "&7когда вы сломаете кровать"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '39':
+        name: "&cНазад"
+        lore:
+          - "&7В магазин Bed Wars"
+      '41':
+        name: "&fВаши деньги: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  woodskins:
+    title: "Деревянные скины"
+    icons:
+      '10':
+        name: "&aНичего"
+        lore:
+          - "&8Деревянные скины"
+          - ""
+          - "&7Выбор этой опции отключен"
+          - "&7ваш деревянный скин"
+          - ""
+          - "<select_status>"
+      '11':
+        name: "&aЕловая доска"
+        lore:
+          - "&8Деревянный скин"
+          - ""
+          - "&7Выберите дерево из ели"
+          - "&7Скин будет использоваться при размещении"
+          - "&7деревянных блоков"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '12':
+        name: "&aБерёзовая доска"
+        lore:
+          - "&8Деревянный скин"
+          - ""
+          - "&7Выберите древесину из березы"
+          - "&7Скин будет использоваться при размещении"
+          - "&7деревянных блоков"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '13':
+        name: "&aДоска из тропического дерева"
+        lore:
+          - "&8Деревянные скины"
+          - ""
+          - "&7Выберите доску из тропического дерева"
+          - "&7Скин будет использоваться при размещении"
+          - "&7деревянных блоков"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '14':
+        name: "&aАкациевая доска"
+        lore:
+          - "&8Деревянные скины"
+          - ""
+          - "&7Выберите акациевую доску"
+          - "&7Скин будет использоваться при размещении"
+          - "&7деревянных блоков"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '15':
+        name: "&aДоска из тёмного дуба"
+        lore:
+          - "&8Деревянные скины"
+          - ""
+          - "&7Выберите доску из тёмного дуба"
+          - "&7Скин будет использоваться при размещении"
+          - "&7деревянных блоков"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '16':
+        name: "&aДревесина дуба"
+        lore:
+          - "&8Деревянные скины"
+          - ""
+          - "&7Выберите дубовую древесину"
+          - "&7Скин будет использоваться при размещении"
+          - "&7деревянных блоков"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '19':
+        name: "&aЕловая древесина"
+        lore:
+          - "&8Деревянные скины"
+          - ""
+          - "&7Выберите еловую древесину"
+          - "&7Скин будет использоваться при размещении"
+          - "&7деревянных блоков"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '20':
+        name: "&aБерёзовая древесина"
+        lore:
+          - "&8Деревянные скины"
+          - ""
+          - "&7Выберите берёзовую древесину"
+          - "&7Скин будет использоваться при размещении"
+          - "&7деревянных блоков"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '21':
+        name: "&aДжунглевая древесина"
+        lore:
+          - "&8Деревянные скины"
+          - ""
+          - "&7Выберите джунглевую древесину"
+          - "&7Скин будет использоваться при размещении"
+          - "&7деревянных блоков"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '22':
+        name: "&aАкациевая древесина"
+        lore:
+          - "&8Деревянные скины"
+          - ""
+          - "&7Выберите акациевую древесину"
+          - "&7Скин будет использоваться при размещении"
+          - "&7деревянных блоков"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '23':
+        name: "&aДревесина тёмного дуба"
+        lore:
+          - "&8Деревянные скины"
+          - ""
+          - "&7Выберите древесину тёмного дуба"
+          - "&7Скин будет использоваться при размещении"
+          - "&7деревянных блоков"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '39':
+        name: "&cНазад"
+        lore:
+          - "&7В магазин Bed Wars"
+      '41':
+        name: "&fВаши деньги: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  votes:
+    title: "Голоса"
+    icons:
+      '11':
+        name: "&aShop & Upgrades"
+        lore:
+          - "&8Vote Shop & Upgrades"
+          - ""
+          - "&7You can vote for the types of"
+          - "&7items in the store"
+          - ""
+          - "&eOnly for donors"
+      '13':
+        name: "&aHealth"
+        lore:
+          - "&8Vote Health"
+          - ""
+          - "&7You can vote for the number"
+          - "&7of hearts in the game"
+          - ""
+          - "&eOnly for donors"
+      '15':
+        name: "&aTime"
+        lore:
+          - "&8Vote Time"
+          - ""
+          - "&7You can vote for the time in game"
+          - ""
+          - "&eOnly for donors"
+      '31':
+        name: "&cЗакрыть"
+  shop_votes:
+    title: "Shop Vote"
+    icons:
+      '11':
+        name: "&aBasic"
+        lore:
+          - "&8Shop & Upgrades"
+          - ""
+          - "&7Store prices will be higher"
+          - "&7than normal and open fewer items"
+          - ""
+          - "&7There are &6<votes> &7votes"
+          - ""
+          - "<vote_status>"
+      '13':
+        name: "&aNormal"
+        lore:
+          - "&8Shop & Upgrades"
+          - ""
+          - "&7The store is normal"
+          - ""
+          - "&7There are &6<votes> &7votes"
+          - ""
+          - "<vote_status>"
+      '15':
+        name: "&aOverpowered"
+        lore:
+          - "&8Shop & Upgrades"
+          - ""
+          - "&7The prices of the store will be"
+          - "&7lower and open more items"
+          - ""
+          - "&7There are &6<votes> &7votes"
+          - ""
+          - "<vote_status>"
+      '31':
+        name: "&cНазад"
+        lore:
+          - "&7To Votes Menu"
+  health_votes:
+    title: "Health Vote"
+    icons:
+      '11':
+        name: "&aHardcore"
+        lore:
+          - "&8Health"
+          - ""
+          - "&7The life of the players will be"
+          - "&75 hearts!"
+          - ""
+          - "&7There are &6<votes> &7votes"
+          - ""
+          - "<vote_status>"
+      '13':
+        name: "&aNormal"
+        lore:
+          - "&8Health"
+          - ""
+          - "&7The life of the players will be"
+          - "&7normal!"
+          - ""
+          - "&7There are &6<votes> &7votes"
+          - ""
+          - "<vote_status>"
+      '15':
+        name: "&aDouble"
+        lore:
+          - "&8Health"
+          - ""
+          - "&7The life of the players will be"
+          - "&7double!"
+          - ""
+          - "&7There are &6<votes> &7votes"
+          - ""
+          - "<vote_status>"
+      '31':
+        name: "&cНазад"
+        lore:
+          - "&7To Votes Menu"
+  time_votes:
+    title: "Time Vote"
+    icons:
+      '11':
+        name: "&aDay"
+        lore:
+          - "&8Time"
+          - ""
+          - "&7The time will be day"
+          - ""
+          - "&7There are &6<votes> &7votes"
+          - ""
+          - "<vote_status>"
+      '13':
+        name: "&aSunset"
+        lore:
+          - "&8Time"
+          - ""
+          - "&7The time will be sunset"
+          - ""
+          - "&7There are &6<votes> &7votes"
+          - ""
+          - "<vote_status>"
+      '15':
+        name: "&aNight"
+        lore:
+          - "&8Time"
+          - ""
+          - "&7The time will be night"
+          - ""
+          - "&7There are &6<votes> &7votes"
+          - ""
+          - "<vote_status>"
+      '31':
+        name: "&cНазад"
+        lore:
+          - "&7To Votes Menu"
+  stats:
+    title: "Bed Wars Statistics"
+    icons:
+      '4':
+        name: "&aOverall Statistics"
+        lore:
+          - "&7Games Played: &a<bw-total_games_played>"
+          - ""
+          - "&7Beds Broken: &a<bw-total_beds_broken>"
+          - "&7Beds Lost: &a<bw-total_beds_lost>"
+          - ""
+          - "&7Kills: &a<bw-total_kills>"
+          - "&7Deaths: &a<bw-total_deaths>"
+          - "&7Final Kills: &a<bw-total_final_kills>"
+          - "&7Final Deaths: &a<bw-total_final_deaths>"
+          - "&7Final K/D Radio: &a<bw-total_final_kd>"
+          - ""
+          - "&7Wins: &a<bw-total_wins>"
+          - "&7Losses: &a<bw-total_losses>"
+          - ""
+          - "&7Winsteak: <bw-total_winsteak>"
+      '19':
+        name: "&aSolo Statistics"
+        lore:
+          - "&7Games Played: &a<bw-solo_games_played>"
+          - ""
+          - "&7Beds Broken: &a<bw-solo_beds_broken>"
+          - "&7Beds Lost: &a<bw-solo_beds_lost>"
+          - ""
+          - "&7Kills: &a<bw-solo_kills>"
+          - "&7Deaths: &a<bw-solo_deaths>"
+          - "&7Final Kills: &a<bw-solo_final_kills>"
+          - "&7Final Deaths: &a<bw-solo_final_deaths>"
+          - "&7Final K/D Radio: &a<bw-solo_final_kd>"
+          - ""
+          - "&7Wins: &a<bw-solo_wins>"
+          - "&7Losses: &a<bw-solo_losses>"
+      '21':
+        name: "&aDoubles Statistics"
+        lore:
+          - "&7Games Played: &a<bw-doubles_games_played>"
+          - ""
+          - "&7Beds Broken: &a<bw-doubles_beds_broken>"
+          - "&7Beds Lost: &a<bw-doubles_beds_lost>"
+          - ""
+          - "&7Kills: &a<bw-doubles_kills>"
+          - "&7Deaths: &a<bw-doubles_deaths>"
+          - "&7Final Kills: &a<bw-doubles_final_kills>"
+          - "&7Final Deaths: &a<bw-doubles_final_deaths>"
+          - "&7Final K/D Radio: &a<bw-doubles_final_kd>"
+          - ""
+          - "&7Wins: &a<bw-doubles_wins>"
+          - "&7Losses: &a<bw-doubles_losses>"
+      '23':
+        name: "&aTrios Statistics"
+        lore:
+          - "&7Games Played: &a<bw-trios_games_played>"
+          - ""
+          - "&7Beds Broken: &a<bw-trios_beds_broken>"
+          - "&7Beds Lost: &a<bw-trios_beds_lost>"
+          - ""
+          - "&7Kills: &a<bw-trios_kills>"
+          - "&7Deaths: &a<bw-trios_deaths>"
+          - "&7Final Kills: &a<bw-trios_final_kills>"
+          - "&7Final Deaths: &a<bw-trios_final_deaths>"
+          - "&7Final K/D Radio: &a<bw-trios_final_kd>"
+          - ""
+          - "&7Wins: &a<bw-trios_wins>"
+          - "&7Losses: &a<bw-trios_losses>"
+      '25':
+        name: "&aQuartets Statistics"
+        lore:
+          - "&7Games Played: &a<bw-quartets_games_played>"
+          - ""
+          - "&7Beds Broken: &a<bw-quartets_beds_broken>"
+          - "&7Beds Lost: &a<bw-quartets_beds_lost>"
+          - ""
+          - "&7Kills: &a<bw-quartets_kills>"
+          - "&7Deaths: &a<bw-quartets_deaths>"
+          - "&7Final Kills: &a<bw-quartets_final_kills>"
+          - "&7Final Deaths: &a<bw-quartets_final_deaths>"
+          - "&7Final K/D Radio: &a<bw-quartets_final_kd>"
+          - ""
+          - "&7Wins: &a<bw-quartets_wins>"
+          - "&7Losses: &a<bw-quartets_losses>"
+      '31':
+        name: "&a1vs1 Statistics"
+        lore:
+          - "&7Games Played: &a<bw-1vs1_games_played>"
+          - ""
+          - "&7Beds Broken: &a<bw-1vs1_beds_broken>"
+          - "&7Beds Lost: &a<bw-1vs1_beds_lost>"
+          - ""
+          - "&7Kills: &a<bw-1vs1_kills>"
+          - "&7Deaths: &a<bw-1vs1_deaths>"
+          - "&7Final Kills: &a<bw-1vs1_final_kills>"
+          - "&7Final Deaths: &a<bw-1vs1_final_deaths>"
+          - "&7Final K/D Radio: &a<bw-1vs1_final_kd>"
+          - ""
+          - "&7Wins: &a<bw-1vs1_wins>"
+          - "&7Losses: &a<bw-1vs1_losses>"
+      '49':
+        name: "&cЗакрыть"
+  team_selector:
+    title: "Выбор команды"
+    icons:
+      '{team}':
+        name: "<color><team_name> &fкоманда"
+        lore:
+          - "&fУчастники команды:"
+          - "<team_players>"
+          - ""
+          - "<team_status>"
+      '40':
+        name: "&cЗакрыть"
+  teleport_spectator:
+    title: "Телепортер"
+    icons:
+      '{player}':
+        name: "&a<name>"
+        lore:
+          - ""
+          - "&fЗдоровье: &a<health>%"
+          - "&fЕда: &a<food>%"
+          - "&fКоманда: <team_color><team_name>"
+          - ""
+          - "&aНажмите, чтобы телепортироваться!"
+  options_spectator:
+    title: "Настройки наблюдателя"
+    icons:
+      '11':
+        name: "&aСкорость I"
+      '12':
+        name: "&aСкорость II"
+      '13':
+        name: "&aСкорость III"
+      '14':
+        name: "&aСкорость IV"
+      '15':
+        name: "&aСкорость V"
+      '20':
+        name: "<spectator_status>"
+        lore:
+          - "<spectator_status>"
+      '21':
+        name: "<spectator_status>"
+        lore:
+          - "<spectator_status>"
+      '23':
+        name: "<spectator_status>"
+        lore:
+          - "<spectator_status>"
+      '24':
+        name: "<spectator_status>"
+        lore:
+          - "<spectator_status>"
+  tracker_communication:
+    title: "Трекер и коммуникации"
+    icons:
+      '13':
+        name: "&aМагазин трекера"
+        lore:
+          - "&fОтслеживайте местоположение других игроков"
+          - "&fс помощью трекера! Он работает до вашей смерти"
+          - ""
+          - "&aНажмите, чтобы открыть!"
+  quick_communications:
+    title: "Быстрая связь"
+    icons:
+      '10':
+        name: "&aПриветик ( ﾟ◡ﾟ)/!"
+        lore:
+          - ""
+          - "&aНажмите, чтобы отправить!"
+      '11':
+        name: "§aВозвращаюсь на базу!"
+        lore:
+          - ""
+          - "&aНажмите, чтобы отправить!"
+      '12':
+        name: "&aЗащищаю!"
+        lore:
+          - ""
+          - "&aНажмите, чтобы отправить!"
+      '13':
+        name: "&aЯ атакую"
+        lore:
+          - ""
+          - "&aНажмите, чтобы отправить!"
+      '14':
+        name: "&aСобираю ресурсы!"
+        lore:
+          - "&fВы можете выбрать ресурсы"
+          - ""
+          - "&aНажмите, чтобы отправить!"
+      '15':
+        name: "&aУ меня есть ресурсы!"
+        lore:
+          - "&fВы можете выбрать ресурсы"
+          - ""
+          - "&aНажмите, чтобы отправить!"
+      '20':
+        name: "&aСпасибо"
+        lore:
+          - ""
+          - "&aНажмите, чтобы отправить!"
+      '21':
+        name: "&aВозвращайтесь на базу"
+        lore:
+          - ""
+          - "&aНажмите, чтобы отправить!"
+      '22':
+        name: "§aЗащищайте!"
+        lore:
+          - ""
+          - "&aНажмите, чтобы отправить!"
+      '23':
+        name: "&aАтакуем!"
+        lore:
+          - "&fУ вас есть возможность выбрать"
+          - "&fкоманду"
+          - ""
+          - "&aНажмите, чтобы отправить!"
+      '24':
+        name: "&aНам нужны ресурсы!"
+        lore:
+          - "&fВы можете выбрать ресурсы"
+          - ""
+          - "&aНажмите, чтобы отправить!"
+      '25':
+        name: "&aИгрок приближается!"
+        lore:
+          - ""
+          - "&aНажмите, чтобы отправить!"
+      '40':
+        name: "&aНазад"
+        lore:
+          - "&fНажмите, чтобы вернуться назад"
+  '{quick_communications_resources}':
+    title: "Выберите опцию:"
+    icons:
+      '{diamond}':
+        name: "&a<message>"
+        lore:
+          - "&fНажмите, чтобы отправить сообщение: '&a<message>&f'"
+          - "&fвашим товарищам по команде!"
+          - ""
+          - "&aНажмите, чтобы отправить!"
+      '{iron}':
+        name: "&a<message>"
+        lore:
+          - "&fНажмите, чтобы отправить сообщение: '&a<message>&f'"
+          - "&fвашим товарищам по команде!"
+          - ""
+          - "&aНажмите, чтобы отправить!"
+      '{gold}':
+        name: "&a<message>"
+        lore:
+          - "&fНажмите, чтобы отправить сообщение: '&a<message>&f'"
+          - "&fвашим товарищам по команде!"
+          - ""
+          - "&aНажмите, чтобы отправить!"
+      '{emerald}':
+        name: "&a<message>"
+        lore:
+          - "&fНажмите, чтобы отправить сообщение: '&a<message>&f'"
+          - "&fвашим товарищам по команде!"
+          - ""
+          - "&aНажмите, чтобы отправить!"
+  '{quick_communications_team}':
+    title: "Выберите опцию:"
+    icons:
+      '{team}':
+        name: "&a<message>"
+        lore:
+          - "&fНажмите, чтобы отправить сообщение: '&a<message>&f'"
+          - "&fвашим товарищам по команде!"
+          - ""
+          - "&aНажмите, чтобы отправить!"
+  tracker_shop:
+    title: "Приобрести трекер врагов"
+    icons:
+      '{team}':
+        name: "<team_color>Отслеживать команду <team_name>"
+        lore:
+          - "&fПриобретите трекер на эту команду, чтобы"
+          - "&fотслеживать их местоположение!"
+          - "<cost_status>"
+          - ""
+          - "<status>"
+      '40':
+        name: "&aНазад"
+        lore:
+          - "&fНажмите, чтобы вернуться назад"
+  solo:
+    title: "Играть в Bed Wars"
+    icons:
+      '12':
+        name: "&aBed Wars (Solo)"
+        lore:
+          - "&fИграть в Bed Wars Solo"
+          - ""
+          - "&aНажмите для игры!"
+      '14':
+        name: "&aMap Selector (Solo)"
+        lore:
+          - "&fPick which map you want to play"
+          - "&ffrom a list of available servers"
+          - ""
+          - "&eClick to browse!"
+      '31':
+        name: "&cЗакрыть"
+        lore: [ ]
+      '35':
+        name: "&cClick here to rejoin!"
+        lore:
+          - "&fClick here to rejoin your game"
+          - "&fif you have been disconnected"
+          - "&ffrom it"
+  doubles:
+    title: "Play Bed Wars"
+    icons:
+      '12':
+        name: "&aBed Wars (Doubles)"
+        lore:
+          - "&fPlay Bed Wars Doubles"
+          - ""
+          - "&eClick to play!"
+      '14':
+        name: "&aMap Selector (Doubles)"
+        lore:
+          - "&fPick which map you want to play"
+          - "&ffrom a list of available servers"
+          - ""
+          - "&eClick to browse!"
+      '31':
+        name: "&cЗакрыть"
+        lore: [ ]
+      '35':
+        name: "&cClick here to rejoin!"
+        lore:
+          - "&7Click here to rejoin your game"
+          - "&7if you have been disconnected"
+          - "&7from it"
+  trios:
+    title: "Play Bed Wars"
+    icons:
+      '12':
+        name: "&aBed Wars (Trios)"
+        lore:
+          - "&7Play Bed Wars Trios"
+          - ""
+          - "&aНажмите для игры!"
+      '14':
+        name: "&aMap Selector (Trios)"
+        lore:
+          - "&7Pick which map you want to play"
+          - "&7from a list of available servers"
+          - ""
+          - "&eClick to browse!"
+      '31':
+        name: "&cЗакрыть"
+        lore: [ ]
+      '35':
+        name: "&cClick here to rejoin!"
+        lore:
+          - "&7Click here to rejoin your game"
+          - "&7if you have been disconnected"
+          - "&7from it"
+  quartets:
+    title: "Play Bed Wars"
+    icons:
+      '12':
+        name: "&aBed Wars (Quartets"
+        lore:
+          - "&7Play Bed Wars Quartets"
+          - ""
+          - "&aНажмите для игры!"
+      '14':
+        name: "&aMap Selector (Quartets)"
+        lore:
+          - "&7Pick which map you want to play"
+          - "&7from a list of available servers"
+          - ""
+          - "&eClick to browse!"
+      '31':
+        name: "&cЗакрыть"
+        lore: [ ]
+      '35':
+        name: "&cClick here to rejoin!"
+        lore:
+          - "&7Click here to rejoin your game"
+          - "&7if you have been disconnected"
+          - "&7from it"
+  1vs1:
+    title: "Play Bed Wars"
+    icons:
+      '12':
+        name: "&aBed Wars (1vs1)"
+        lore:
+          - "&7Play Bed Wars 1vs1"
+          - ""
+          - "&aНажмите для игры!"
+      '14':
+        name: "&aMap Selector (1vs1)"
+        lore:
+          - "&7Pick which map you want to play"
+          - "&7from a list of available servers"
+          - ""
+          - "&eClick to browse!"
+      '31':
+        name: "&cЗакрыть"
+        lore: [ ]
+      '35':
+        name: "&cClick here to rejoin!"
+        lore:
+          - "&7Click here to rejoin your game"
+          - "&7if you have been disconnected"
+          - "&7from it"
+          - "&7from it"
+  map_selector:
+    title: "Bed Wars Maps"
+    icons:
+      '{map}':
+        name: "<color><name>"
+        lore:
+          - "&8<group>"
+          - ""
+          - "&7Available Servers: &a<available_servers>"
+          - "&7Times Joined: &a<times_joined>"
+          - "&7Map Selections: &a<map_selections>"
+          - ""
+          - "<status>"
+          - "&eRight click to toggle favorite!"
+      '{random}':
+        name: "&aRandom Map"
+        lore:
+          - "&8<group>"
+          - ""
+          - "&7Map Selections: &a<map_selections>"
+          - ""
+          - "<status>"
+          - "&eRight click to toggle favorite!"
+      '{favourite}':
+        name: "&aRandom Favourite"
+        lore:
+          - "&8<group>"
+          - ""
+          - "&7Map Selections: &a<map_selections>"
+          - ""
+          - "<status>"
+          - "&eRight click to toggle favorite!"
+      '{next}':
+        name: "&aNext Page!"
+        lore:
+          - "&7Click to go to page <page>!"
+      '{previous}':
+        name: "&aПредыдущая страница!"
+        lore:
+          - "&7Click to go to page <page>!"
+      '53':
+        name: "&aMap Selection"
+        lore:
+          - "&7Each day you can choose which"
+          - "&7map you want to play 1 time"
+          - "&7Unlock unlimited map selection"
+          - "&7by upgrading to &bMVP&c+ &7rank"
+          - "&7on your store!"
+          - ""
+          - "&ehttps://store.minecraft.net"
+upgrade_menus:
+  status:
+    price:
+      unlock: "&a&lРАЗБЛОКИРОВАНО"
+      buy: "&aНажмите, чтобы приобрести!"
+      need: "&cУ вас недостаточно ресурсов!"
+    color_name:
+      buy: "&a"
+      need: "&c"
+    color_level:
+      buyed: "&a"
+      default: "&7"
+    trap:
+      max: "&cОчередь ловушек заполнена!"
+      browse: "&aНажмите, чтобы посмотреть!"
+    trap_price:
+      - ""
+      - "&fСтоимость: &b<cost> алмаз"
+    trap_queue_lore:
+      - "&fУстановил: &a<name>"
+  basic:
+    upgrades_menu:
+      inventory_title: "Улучшения и ловушки"
+      decoration:
+        '1':
+          name: "&8⬆ &fМожно купить"
+          lore:
+            - "&8⬇ &fОчередь ловушек"
+      contents:
+        sharpened_swords:
+          name: "<color>Заострённые мечи"
+          lore:
+            - "&fУ вашей команды теперь всегда"
+            - "&fбудет Острота I на всех мечах и"
+            - "&fтопорах!"
+            - ""
+            - "&fСтоимость: &b8 алмазов"
+            - ""
+            - "<upgrade_status>"
+        reinforced_armor:
+          levels:
+            '1':
+              name: "<color>Улучшение брони I"
+              lore:
+                - "&fВаша команда получит защиту на"
+                - "&fвсе части брони!"
+                - ""
+                - "<color>Уровень 1: Защита I, &b4 алмаза"
+                - "&fУровень 2: Защита II, &b8 алмазов"
+                - "&fУровень 3: Защита III, &b16 алмазов"
+                - "&fУровень 4: Защита IV, &b24 алмаза"
+                - ""
+                - "<upgrade_status>"
+            '2':
+              name: "<color>Улучшение брони II"
+              lore:
+                - "&fВаша команда получит защиту на"
+                - "&fвсе части брони!"
+                - ""
+                - "&aУровень 1: Защита I, &b4 алмаза"
+                - "<color>Уровень 2: Защита II, &b8 алмазов"
+                - "&fУровень 3: Защита III, &b16 алмазов"
+                - "&fУровень 4: Защита IV, &b24 алмаза"
+                - ""
+                - "<upgrade_status>"
+            '3':
+              name: "<color>Улучшение брони III"
+              lore:
+                - "&fВаша команда получит защиту на"
+                - "&fвсе части брони!"
+                - ""
+                - "&aУровень 1: Защита I, &b4 алмаза"
+                - "&aУровень 2: Защита II, &b8 алмазов"
+                - "<color>Уровень 3: Защита III, &b16 алмазов"
+                - "&fУровень 4: Защита IV, &b24 алмаза"
+                - ""
+                - "<upgrade_status>"
+            '4':
+              name: "<color>Улучшение брони IV"
+              lore:
+                - "&fВаша команда получит защиту на"
+                - "&fвсе части брони!"
+                - ""
+                - "&aУровень 1: Защита I, &b4 алмаза"
+                - "&aУровень 2: Защита II, &b8 алмазов"
+                - "&aУровень 3: Защита III, &b16 алмазов"
+                - "<color>Уровень 4: Защита IV, &b24 алмаза"
+                - ""
+                - "<upgrade_status>"
+        maniac_miner:
+          levels:
+            '1':
+              name: "<color>Безумный шахтёр I"
+              lore:
+                - "&fВсе игроки в вашей команде"
+                - "&fполучат вечный эффект спешки"
+                - ""
+                - "<color>Уровень 1: Спешка I, &b4 алмаза"
+                - "&fУровень 2: Спешка II, &b6 алмазов"
+                - ""
+                - "<upgrade_status>"
+            '2':
+              name: "<color>Безумный шахтёр II"
+              lore:
+                - "&fВсе игроки в вашей команде"
+                - "&fполучат вечный эффект спешки"
+                - ""
+                - "&aУровень 1: Спешка I, &b4 алмаза"
+                - "<color>Уровень 2: Спешка II, &b6 Алмазов"
+                - ""
+                - "<upgrade_status>"
+        iron_forge:
+          levels:
+            '1':
+              name: "<color>Железный генератор"
+              lore:
+                - "&fУлучшите появление ресурсов на"
+                - "&fвашем острове"
+                - ""
+                - "<color>Уровень 1: +50% ресурсов, &b6 Алмазов"
+                - "&fУровень 2: +100% ресурсов, &b12 Алмазов"
+                - "&fУровень 3: Создание изумрудов, &b18 алмазов"
+                - "&fУровень 4: +200% ресурсов, &b24 алмаза"
+                - ""
+                - "<upgrade_status>"
+            '2':
+              name: "<color>Железный генератор"
+              lore:
+                - "&fУлучшите появление ресурсов на"
+                - "&fвашем острове"
+                - ""
+                - "&aУровень 1: +50% ресурсов, &b6 Алмазов"
+                - "<color>Уровень 2: +100% ресурсов, &b12 Алмазов"
+                - "&fУровень 3: Создание изумрудов, &b18 алмазов"
+                - "&fУровень 4: +200% ресурсов, &b24 алмаза"
+                - ""
+                - "<upgrade_status>"
+            '3':
+              name: "<color>Железный генератор"
+              lore:
+                - "&fУлучшите появление ресурсов на"
+                - "&fвашем острове"
+                - ""
+                - "&aУровень 1: +50% ресурсов, &b6 Алмазов"
+                - "&aУровень 2: +100% ресурсов, &b12 Алмазов"
+                - "<color>Уровень 3: Создание изумрудов, &b18 алмазов"
+                - "&fУровень 4: +200% ресурсов, &b24 алмаза"
+                - ""
+                - "<upgrade_status>"
+            '4':
+              name: "<color>Железный генератор"
+              lore:
+                - "&fУлучшите появление ресурсов на"
+                - "&fвашем острове"
+                - ""
+                - "&aУровень 1: +50% ресурсов, &b6 Алмазов"
+                - "&aУровень 2: +100% ресурсов, &b12 Алмазов"
+                - "&aУровень 3: Создание изумрудов, &b18 алмазов"
+                - "<color>Уровень 4: +200% ресурсов, &b24 алмаза"
+                - ""
+                - "<upgrade_status>"
+        heal_pool:
+          name: "<color>Исцеляющее поле"
+          lore:
+            - "&fСоздает поле регенерации"
+            - "&fвокруг базы!"
+            - ""
+            - "&fСтоимость: &b3 алмаза"
+            - ""
+            - "<upgrade_status>"
+        sudden_death:
+          name: "<color>Любимчик драконов"
+          lore:
+            - "&fВаша команда будет иметь 2"
+            - "&fдракона вместо 1 во время боя насмерть!"
+            - ""
+            - "&fСтоимость: &b10 алмазов"
+            - ""
+            - "<upgrade_status>"
+        buy_traps:
+          name: "&aКупить ловушку"
+          lore:
+            - "&fПриобретенные ловушки будут"
+            - "&fпоставлены в очередь"
+            - ""
+            - "&aНажмите, чтобы посмотреть!"
+        selected_trap_1:
+          name: "<color>Ловушка #1: Ловушки нет!" #1: No Trap!"
+          lore:
+            - "&fПервый враг, который придёт на"
+            - "&fвашу базу, активирует"
+            - "&fловушку!"
+            - ""
+            - "&fПокупка ловушки поставит её"
+            - "&fв очередь. Её цена зависит от"
+            - "&fколичества ловушек в очереди"
+            - ""
+            - "&fСледующая ловушка: <color><cost> <material>"
+        selected_trap_2:
+          name: "<color>Ловушка #2: Ловушки нет!" #2: No Trap!"
+          lore:
+            - "&fВторой враг, который придёт на"
+            - "&fвашу базу, активирует"
+            - "&fловушку!"
+            - ""
+            - "&fПокупка ловушки поставит её"
+            - "&fв очередь. Её цена зависит от"
+            - "&fколичества ловушек в очереди"
+            - ""
+            - "&fСледующая ловушка: <color><cost> <material>"
+    traps_menu:
+      inventory_title: "Меню ловушек"
+      contents:
+        blindness:
+          name: "<color>Это ловушка!"
+          lore:
+            - "&fНакладывает слепоту и медлительность"
+            - "&fна 8 секунд"
+            - "<trap_price_status>"
+            - ""
+            - "<upgrade_status>"
+        counter-offensive_trap:
+          name: "<color>Контрнаступательная ловушка"
+          lore:
+            - "&fДаёт Скорость I и Прыгучесть II"
+            - "&fна 10 секунд союзникам"
+            - "&fвблизи вашей базы"
+            - "<trap_price_status>"
+            - ""
+            - "<upgrade_status>"
+        alarm_trap:
+          name: "<color>Сигнализация"
+          lore:
+            - "&fОповещает о враге, а также"
+            - "&fпоказывает их ник и команду"
+            - "<trap_price_status>"
+            - ""
+            - "<upgrade_status>"
+        miner_fatigue_trap:
+          name: "<color>Ловушка усталости"
+          lore:
+            - "&fДаёт врагам усталость"
+            - "&fна 10 секунд"
+            - "<trap_price_status>"
+            - ""
+            - "<upgrade_status>"
+        return:
+          name: "&aНазад"
+          lore:
+            - "&fК улучшениям и ловушкам"
+  default:
+    upgrades_menu:
+      inventory_title: "Улучшения и ловушки"
+      decoration:
+        '1':
+          name: "&8⬆ &fМожно купить"
+          lore:
+            - "&8⬇ &fОчередь ловушек"
+      contents:
+        sharpened_swords:
+          name: "<color>Заострённые мечи"
+          lore:
+            - "&fУ вашей команды теперь всегда"
+            - "&fбудет Острота I на всех мечах и"
+            - "&fтопорах!"
+            - ""
+            - "&fСтоимость: &b4 алмаза"
+            - ""
+            - "<upgrade_status>"
+        reinforced_armor:
+          levels:
+            '1':
+              name: "<color>Улучшение брони I"
+              lore:
+                - "&fВаша команда получит защиту на"
+                - "&fвсе части брони!"
+                - ""
+                - "<color>Уровень 1: Защита I, &b2 алмаза"
+                - "&fУровень 2: Защита II, &b4 алмаза"
+                - "&fУровень 3: Защита III, &b8 алмазов"
+                - "&fУровень 4: Защита IV, &b16 алмазов"
+                - ""
+                - "<upgrade_status>"
+            '2':
+              name: "<color>Улучшение брони II"
+              lore:
+                - "&fВаша команда получит защиту на"
+                - "&fвсе части брони!"
+                - ""
+                - "&aУровень 1: Защита I, &b2 алмаза"
+                - "<color>Уровень 2: Защита II, &b4 алмаза"
+                - "&fУровень 3: Защита III, &b8 алмазов"
+                - "&fУровень 4: Защита IV, &b16 алмазов"
+                - ""
+                - "<upgrade_status>"
+            '3':
+              name: "<color>Улучшение брони III"
+              lore:
+                - "&fВаша команда получит защиту на"
+                - "&fвсе части брони!"
+                - ""
+                - "&aУровень 1: Защита I, &b2 алмаза"
+                - "&aУровень 2: Защита II, &b4 алмаза"
+                - "<color>Уровень 3: Защита III, &b8 алмазов"
+                - "&fУровень 4: Защита IV, &b16 алмазов"
+                - ""
+                - "<upgrade_status>"
+            '4':
+              name: "<color>Улучшение брони IV"
+              lore:
+                - "&fВаша команда получит защиту на"
+                - "&fвсе части брони!"
+                - ""
+                - "&aУровень 1: Защита I, &b2 алмаза"
+                - "&aУровень 2: Защита II, &b4 алмаза"
+                - "&aУровень 3: Защита III, &b8 алмазов"
+                - "<color>Уровень 4: Защита IV, &b16 алмазов"
+                - ""
+                - "<upgrade_status>"
+        maniac_miner:
+          levels:
+            '1':
+              name: "<color>Безумный шахтёр I"
+              lore:
+                - "&fВсе игроки в вашей команде"
+                - "&fполучат вечный эффект спешки"
+                - ""
+                - "<color>Уровень 1: Спешка I, &b2 алмаза"
+                - "&fУровень 2: Спешка II, &b4 алмаза"
+                - ""
+                - "<upgrade_status>"
+            '2':
+              name: "<color>Безумный шахтёр II"
+              lore:
+                - "&fВсе игроки в вашей команде"
+                - "&fполучат вечный эффект спешки"
+                - ""
+                - "&aУровень 1: Спешка I, &b2 алмаза"
+                - "<color>Уровень 2: Спешка II, &b4 алмаза"
+                - ""
+                - "<upgrade_status>"
+        iron_forge:
+          levels:
+            '1':
+              name: "<color>Железный генератор"
+              lore:
+                - "&fУлучшите появление ресурсов на"
+                - "&fвашем острове"
+                - ""
+                - "<color>Уровень 1: +50% ресурсов, &b2 алмаза"
+                - "&fУровень 2: +100% ресурсов, &b4 алмаза"
+                - "&fУровень 3: Создание изумрудов, &b6 алмазов"
+                - "&fУровень 4: +200% ресурсов, &b8 Алмазов"
+                - ""
+                - "<upgrade_status>"
+            '2':
+              name: "<color>Железный генератор"
+              lore:
+                - "&fУлучшите появление ресурсов на"
+                - "&fвашем острове"
+                - ""
+                - "&aУровень 1: +50% ресурсов, &b2 алмаза"
+                - "<color>Уровень 2: +100% ресурсов, &b4 алмаза"
+                - "&fУровень 3: Создание изумрудов, &b6 алмазов"
+                - "&fУровень 4: +200% ресурсов, &b8 Алмазов"
+                - ""
+                - "<upgrade_status>"
+            '3':
+              name: "<color>Железный генератор"
+              lore:
+                - "&fУлучшите появление ресурсов на"
+                - "&fвашем острове"
+                - ""
+                - "&aУровень 1: +50% ресурсов, &b2 алмаза"
+                - "&aУровень 2: +100% ресурсов, &b4 алмаза"
+                - "<color>Уровень 3: Создание изумрудов, &b6 алмазов"
+                - "&fУровень 4: +200% ресурсов, &b8 Алмазов"
+                - ""
+                - "<upgrade_status>"
+            '4':
+              name: "<color>Железный генератор"
+              lore:
+                - "&fУлучшите появление ресурсов на"
+                - "&fвашем острове"
+                - ""
+                - "&aУровень 1: +50% ресурсов, &b2 алмаза"
+                - "&aУровень 2: +100% ресурсов, &b4 алмаза"
+                - "&aУровень 3: Создание изумрудов, &b6 алмазов"
+                - "<color>Уровень 4: +200% ресурсов, &b8 Алмазов"
+                - ""
+                - "<upgrade_status>"
+        heal_pool:
+          name: "<color>Исцеляющее поле"
+          lore:
+            - "&fСоздает поле регенерации"
+            - "&fвокруг базы!"
+            - ""
+            - "&fСтоимость: &b1 алмаз"
+            - ""
+            - "<upgrade_status>"
+        sudden_death:
+          name: "<color>Любимчик драконов"
+          lore:
+            - "&fВаша команда будет иметь 2"
+            - "&fдракона вместо 1 во время боя насмерть!"
+            - ""
+            - "&fСтоимость: &b5 алмазов"
+            - ""
+            - "<upgrade_status>"
+        buy_traps:
+          name: "&aКупить ловушку"
+          lore:
+            - "&fПриобретенные ловушки будут"
+            - "&fпоставлены в очередь"
+            - ""
+            - "<trap_status>"
+        selected_trap_1:
+          name: "<color>Ловушка #1: Ловушки нет!" #1: No Trap!"
+          lore:
+            - "&fПервый враг, который придёт на"
+            - "&fвашу базу, активирует"
+            - "&fловушку!"
+            - ""
+            - "&fПокупка ловушки поставит её"
+            - "&fв очередь. Её цена зависит от"
+            - "&fколичества ловушек в очереди"
+            - ""
+            - "&fСледующая ловушка: <color><cost> <material>"
+        selected_trap_2:
+          name: "<color>Ловушка #2: Ловушки нет!" #2: No Trap!"
+          lore:
+            - "&fВторой враг, который придёт на"
+            - "&fвашу базу, активирует"
+            - "&fловушку!"
+            - ""
+            - "&fПокупка ловушки поставит её"
+            - "&fв очередь. Её цена зависит от"
+            - "&fколичества ловушек в очереди"
+            - ""
+            - "&fСледующая ловушка: <color><cost> <material>"
+        selected_trap_3:
+          name: "<color>Ловушка #3: Ловушки нет!" #3: No Trap!"
+          lore:
+            - "&fТретий враг, который придёт на"
+            - "&fвашу базу, активирует"
+            - "&fловушку!"
+            - ""
+            - "&fПокупка ловушки поставит её"
+            - "&fв очередь. Её цена зависит от"
+            - "&fколичества ловушек в очереди"
+            - ""
+            - "&fСледующая ловушка: <color><cost> <material>"
+    traps_menu:
+      inventory_title: "Меню ловушек"
+      contents:
+        blindness:
+          name: "<color>Это ловушка!"
+          lore:
+            - "&fНакладывает слепоту и медлительность"
+            - "&fна 8 секунд"
+            - "<trap_price_status>"
+            - ""
+            - "<upgrade_status>"
+        counter-offensive_trap:
+          name: "<color>Контрнаступательная ловушка"
+          lore:
+            - "&fДаёт Скорость I и Прыгучесть II"
+            - "&fна 10 секунд союзникам"
+            - "&fвблизи вашей базы"
+            - "<trap_price_status>"
+            - ""
+            - "<upgrade_status>"
+        alarm_trap:
+          name: "<color>Сигнализация"
+          lore:
+            - "&fОповещает о враге, а также"
+            - "&fпоказывает их ник и команду"
+            - "<trap_price_status>"
+            - ""
+            - "<upgrade_status>"
+        miner_fatigue_trap:
+          name: "<color>Ловушка усталости"
+          lore:
+            - "&fДаёт врагам усталость"
+            - "&fна 10 секунд"
+            - "<trap_price_status>"
+            - ""
+            - "<upgrade_status>"
+        return:
+          name: "&aНазад"
+          lore:
+            - "&fК улучшениям и ловушкам"
+  overpowered:
+    upgrades_menu:
+      inventory_title: "Улучшения и ловушки"
+      decoration:
+        '1':
+          name: "&8⬆ &fМожно купить"
+          lore:
+            - "&8⬇ &fОчередь ловушек"
+      contents:
+        sharpened_swords:
+          name: "<color>Заострённые мечи"
+          lore:
+            - "&fУ вашей команды теперь всегда"
+            - "&fбудет Острота I на всех мечах и"
+            - "&fтопорах!"
+            - ""
+            - "&fСтоимость: &b2 алмаза"
+            - ""
+            - "<upgrade_status>"
+        reinforced_armor:
+          levels:
+            '1':
+              name: "<color>Улучшение брони I"
+              lore:
+                - "&fВаша команда получит защиту на"
+                - "&fвсе части брони!"
+                - ""
+                - "<color>Tier 1: Protection I, &b1 Diamonds"
+                - "&fTier 2: Protection II, &b2 Diamonds"
+                - "&fTier 3: Protection III, &b4 Diamonds"
+                - "&fTier 4: Protection IV, &b8 Diamonds"
+                - ""
+                - "<upgrade_status>"
+            '2':
+              name: "<color>Улучшение брони II"
+              lore:
+                - "&fВаша команда получит защиту на"
+                - "&fвсе части брони!"
+                - ""
+                - "&aTier 1: Protection I, &b1 Diamonds"
+                - "<color>Tier 2: Protection II, &b2 Diamonds"
+                - "&fTier 3: Protection III, &b4 Diamonds"
+                - "&fTier 4: Protection IV, &b8 Diamonds"
+                - ""
+                - "<upgrade_status>"
+            '3':
+              name: "<color>Улучшение брони III"
+              lore:
+                - "&fВаша команда получит защиту на"
+                - "&fвсе части брони!"
+                - ""
+                - "&aTier 1: Protection I, &b1 Diamonds"
+                - "&aTier 2: Protection II, &b2 Diamonds"
+                - "<color>Tier 3: Protection III, &b4 Diamonds"
+                - "&fTier 4: Protection IV, &b8 Diamonds"
+                - ""
+                - "<upgrade_status>"
+            '4':
+              name: "<color>Улучшение брони IV"
+              lore:
+                - "&fВаша команда получит защиту на"
+                - "&fвсе части брони!"
+                - ""
+                - "&aTier 1: Protection I, &b1 Diamonds"
+                - "&aTier 2: Protection II, &b2 Diamonds"
+                - "&aTier 3: Protection III, &b4 Diamonds"
+                - "<color>Tier 4: Protection IV, &b8 Diamonds"
+                - ""
+                - "<upgrade_status>"
+        maniac_miner:
+          levels:
+            '1':
+              name: "<color>Безумный шахтёр I"
+              lore:
+                - "&fВсе игроки в вашей команде"
+                - "&fполучат вечный эффект спешки"
+                - ""
+                - "<color>Tier 1: Haste I, &b1 Diamonds"
+                - "&fTier 2: Haste II, &b2 Diamonds"
+                - ""
+                - "<upgrade_status>"
+            '2':
+              name: "<color>Безумный шахтёр II"
+              lore:
+                - "&fВсе игроки в вашей команде"
+                - "&fполучат вечный эффект спешки"
+                - ""
+                - "&aTier 1: Haste I, &b1 Diamonds"
+                - "<color>Tier 2: Haste II, &b2 Diamonds"
+                - ""
+                - "<upgrade_status>"
+        iron_forge:
+          levels:
+            '1':
+              name: "<color>Железный генератор"
+              lore:
+                - "&fУлучшите появление ресурсов на"
+                - "&fвашем острове"
+                - ""
+                - "<color>Tier 1: +50% Resources, &b1 Diamonds"
+                - "&fTier 2: +100% Resources, &b2 Diamonds"
+                - "&fTier 3: Spawn emeralds, &b4 Diamonds"
+                - "&fTier 4: +200% Resources, &b6 Diamonds"
+                - ""
+                - "<upgrade_status>"
+            '2':
+              name: "<color>Железный генератор"
+              lore:
+                - "&fУлучшите появление ресурсов на"
+                - "&fвашем острове"
+                - ""
+                - "&aTier 1: +50% Resources, &b1 Diamonds"
+                - "<color>Уровень 2: +100% ресурсов, &b2 алмаза"
+                - "&fTier 3: Spawn emeralds, &b4 Diamonds"
+                - "&fTier 4: +200% Resources, &b6 Diamonds"
+                - ""
+                - "<upgrade_status>"
+            '3':
+              name: "<color>Железный генератор"
+              lore:
+                - "&fУлучшите появление ресурсов на"
+                - "&fвашем острове"
+                - ""
+                - "&aTier 1: +50% Resources, &b1 Diamonds"
+                - "&aУровень 2: +100% ресурсов, &b2 алмаза"
+                - "<color>Tier 3: Spawn emeralds, &b4 Diamonds"
+                - "&fTier 4: +200% Resources, &b6 Diamonds"
+                - ""
+                - "<upgrade_status>"
+            '4':
+              name: "<color>Железный генератор"
+              lore:
+                - "&fУлучшите появление ресурсов на"
+                - "&fвашем острове"
+                - ""
+                - "&aTier 1: +50% Resources, &b1 Diamonds"
+                - "&aУровень 2: +100% ресурсов, &b2 алмаза"
+                - "&aTier 3: Spawn emeralds, &b4 Diamonds"
+                - "<color>Уровень 4: +200% ресурсов, &b6 Алмазов"
+                - ""
+                - "<upgrade_status>"
+        heal_pool:
+          name: "<color>Исцеляющее поле"
+          lore:
+            - "&fСоздает поле регенерации"
+            - "&fвокруг базы!"
+            - ""
+            - "&fСтоимость: &b1 алмаз"
+            - ""
+            - "<upgrade_status>"
+        sudden_death:
+          name: "<color>Любимчик драконов"
+          lore:
+            - "&fВаша команда будет иметь 2"
+            - "&fдракона вместо 1 во время боя насмерть!"
+            - ""
+            - "&fCost: &b2 Diamonds"
+            - ""
+            - "<upgrade_status>"
+        buy_traps:
+          name: "&aКупить ловушку"
+          lore:
+            - "&fПриобретенные ловушки будут"
+            - "&fпоставлены в очередь"
+            - ""
+            - "<trap_status>"
+        selected_trap_1:
+          name: "<color>Ловушка #1: Ловушки нет!" #1: No Trap!"
+          lore:
+            - "&fПервый враг, который придёт на"
+            - "&fвашу базу, активирует"
+            - "&fловушку!"
+            - ""
+            - "&fПокупка ловушки поставит её"
+            - "&fв очередь. Её цена зависит от"
+            - "&fколичества ловушек в очереди"
+            - ""
+            - "&fСледующая ловушка: <color><cost> <material>"
+        selected_trap_2:
+          name: "<color>Ловушка #2: Ловушки нет!" #2: No Trap!"
+          lore:
+            - "&fВторой враг, который придёт на"
+            - "&fвашу базу, активирует"
+            - "&fловушку!"
+            - ""
+            - "&fПокупка ловушки поставит её"
+            - "&fв очередь. Её цена зависит от"
+            - "&fколичества ловушек в очереди"
+            - ""
+            - "&fСледующая ловушка: <color><cost> <material>"
+        selected_trap_3:
+          name: "<color>Ловушка #3: Ловушки нет!" #3: No Trap!"
+          lore:
+            - "&fТретий враг, который придёт на"
+            - "&fвашу базу, активирует"
+            - "&fловушку!"
+            - ""
+            - "&fПокупка ловушки поставит её"
+            - "&fв очередь. Её цена зависит от"
+            - "&fколичества ловушек в очереди"
+            - ""
+            - "&fСледующая ловушка: <color><cost> <material>"
+    traps_menu:
+      inventory_title: "Меню ловушек"
+      contents:
+        blindness:
+          name: "<color>Это ловушка!"
+          lore:
+            - "&fНакладывает слепоту и медлительность"
+            - "&fна 8 секунд"
+            - "<trap_price_status>"
+            - ""
+            - "<upgrade_status>"
+        counter-offensive_trap:
+          name: "<color>Контрнаступательная ловушка"
+          lore:
+            - "&fДаёт Скорость I и Прыгучесть II"
+            - "&fна 10 секунд союзникам"
+            - "&fвблизи вашей базы"
+            - "<trap_price_status>"
+            - ""
+            - "<upgrade_status>"
+        alarm_trap:
+          name: "<color>Сигнализация"
+          lore:
+            - "&fОповещает о враге, а также"
+            - "&fпоказывает их ник и команду"
+            - "<trap_price_status>"
+            - ""
+            - "<upgrade_status>"
+        miner_fatigue_trap:
+          name: "<color>Ловушка усталости"
+          lore:
+            - "&fДаёт врагам усталость"
+            - "&fна 10 секунд"
+            - "<trap_price_status>"
+            - ""
+            - "<upgrade_status>"
+        return:
+          name: "&aНазад"
+          lore:
+            - "&fК улучшениям и ловушкам"
+favorite_menu:
+  inventory_title: "Добавить в быстрые покупки"
+  status:
+    adding: "&eДобавить предмет в быстрые покупки!"
+    replace: "&aНажмите, чтобы заменить!"
+    set: "&aНажмите, чтобы установить!"
+shop_menu:
+  status:
+    favorite:
+      add: "&bНажмите Shift+ЛКМ для добавления в быстрые покупки!"
+      remove: "&bНажмите Shift+ЛКМ для удаления из быстрых покупок!"
+    price:
+      buy: "&aНажмите, чтобы приобрести!"
+      need: "&cУ вас недостаточно ресурсов!"
+    color:
+      buy: "&a"
+      need: "&c"
+  extras:
+    favorite:
+      name: "&cПустой слот!"
+      lore:
+        - "&fЭто слот для быстрой покупки!"
+        - ""
+        - "&fНажмите &aShift+ЛКМ &fпо любому"
+        - "&fпредмету для добавления его сюда"
+    in_category:
+      name: "&8&l⬆ &7Категории"
+      lore:
+        - "&8&l⬇ &7Предметы"
+    out_category:
+      name: "&8&l⬆ &7Категории"
+      lore:
+        - "&8&l⬇ &7Предметы"
+    hotbar_editor:
+      name: "&aМенеджер панели быстрого доступа"
+      lore:
+        - "&fРедактируйте слоты для ваших"
+        - "&fпредметов по категориям"
+        - ""
+        - "&aНажмите, чтобы редактировать!"
+    load_favorites:
+      name: "&aShop & Hotbar &6(Hypixel)"
+      lore:
+        - "&fBy clicking you will get your"
+        - "&fhypixel configuration"
+        - ""
+        - "&cOnly for hypixel users"
+        - ""
+        - "&e&l→ &eClick to load the configuration!"
+  hotbar:
+    title: "Менеджер панели быстрого доступа"
+    contents:
+      return:
+        name: "&aНазад"
+        lore:
+          - "&fВернуться в магазин"
+      reset:
+        name: "&cУстановить по умолчанию"
+        lore:
+          - "&fСбрасывает ваш хотбар"
+          - "&fдо прежнего состояния"
+      separator:
+        name: "&8&l⬆ &7Категории"
+        lore:
+          - "&8&l⬇ &7Хотбар"
+      compass:
+        name: "&aКомпас"
+        lore:
+          - "&fПеретащите это в слот вашего"
+          - "&fкомпаса, и он будет показывать спавн"
+          - ""
+          - "&cЕсли ни в одном слоте нет"
+          - "&cкомпаса, вам его не дадут"
+          - ""
+          - "&aНажмите, чтобы переместить!"
+      add_favorite:
+        name: "&cПустой слот!"
+        lore:
+          - "&fНажмите, чтобы выбрать слот"
+          - "&fдля этой категории"
+          - ""
+          - "&aНажмите, чтобы выбрать!"
+      favorites:
+        blocks:
+          name: "&aБлоки"
+          lore:
+            - "&fБлоки будут приоритизировать"
+            - "&fэтот слот!"
+            - ""
+            - "&aНажмите, чтобы удалить!"
+        melee:
+          name: "&aМечи"
+          lore:
+            - "&fБлоки будут приоритизировать"
+            - "&fэтот слот!"
+            - ""
+            - "&aНажмите, чтобы удалить!"
+        armor:
+          name: "&aБроня"
+          lore:
+            - "&fБлоки будут приоритизировать"
+            - "&fэтот слот!"
+            - ""
+            - "&aНажмите, чтобы удалить!"
+        tools:
+          name: "&aИнструменты"
+          lore:
+            - "&fБлоки будут приоритизировать"
+            - "&fэтот слот!"
+            - ""
+            - "&aНажмите, чтобы удалить!"
+        ranged:
+          name: "&aЛуки"
+          lore:
+            - "&fБлоки будут приоритизировать"
+            - "&fэтот слот!"
+            - ""
+            - "&aНажмите, чтобы удалить!"
+        potions:
+          name: "&aЗелья"
+          lore:
+            - "&fБлоки будут приоритизировать"
+            - "&fэтот слот!"
+            - ""
+            - "&aНажмите, чтобы удалить!"
+        utility:
+          name: "&aУтилиты"
+          lore:
+            - "&fБлоки будут приоритизировать"
+            - "&fэтот слот!"
+            - ""
+            - "&aНажмите, чтобы удалить!"
+        compass:
+          name: "&aКомпас"
+          lore:
+            - "&fБлоки будут приоритизировать"
+            - "&fэтот слот!"
+            - ""
+            - "&aНажмите, чтобы удалить!"
+      categories:
+        blocks:
+          name: "&aБлоки"
+          lore:
+            - "&fПеретащите это в слоты хотбара ниже,"
+            - "&fчтобы при покупке предмета"
+            - "&fкатегории или при возрождении"
+            - "&fтут появился данный предмет"
+            - ""
+            - "&aНажмите, чтобы переместить!"
+        melee:
+          name: "&aМечи"
+          lore:
+            - "&fПеретащите это в слоты хотбара ниже,"
+            - "&fчтобы при покупке предмета"
+            - "&fкатегории или при возрождении"
+            - "&fтут появился данный предмет"
+            - ""
+            - "&aНажмите, чтобы переместить!"
+        armor:
+          name: "&aБроня"
+          lore:
+            - "&fПеретащите это в слоты хотбара ниже,"
+            - "&fчтобы при покупке предмета"
+            - "&fкатегории или при возрождении"
+            - "&fтут появился данный предмет"
+            - ""
+            - "&aНажмите, чтобы переместить!"
+        tools:
+          name: "&aИнструменты"
+          lore:
+            - "&fПеретащите это в слоты хотбара ниже,"
+            - "&fчтобы при покупке предмета"
+            - "&fкатегории или при возрождении"
+            - "&fтут появился данный предмет"
+            - ""
+            - "&aНажмите, чтобы переместить!"
+        ranged:
+          name: "&aЛуки"
+          lore:
+            - "&fПеретащите это в слоты хотбара ниже,"
+            - "&fчтобы при покупке предмета"
+            - "&fкатегории или при возрождении"
+            - "&fтут появился данный предмет"
+            - ""
+            - "&aНажмите, чтобы переместить!"
+        potions:
+          name: "&aЗелья"
+          lore:
+            - "&fПеретащите это в слоты хотбара ниже,"
+            - "&fчтобы при покупке предмета"
+            - "&fкатегории или при возрождении"
+            - "&fтут появился данный предмет"
+            - ""
+            - "&aНажмите, чтобы переместить!"
+        utility:
+          name: "&aУтилиты"
+          lore:
+            - "&fПеретащите это в слоты хотбара ниже,"
+            - "&fчтобы при покупке предмета"
+            - "&fкатегории или при возрождении"
+            - "&fтут появился данный предмет"
+            - ""
+            - "&aНажмите, чтобы переместить!"
+  basic:
+    quick_buy:
+      category_title: "Быстрая покупка"
+      category_item_name: "&bБыстрая покупка"
+    blocks:
+      category_title: "Блоки"
+      category_item_name: "&bБлоки"
+      contents:
+        wool:
+          name: "<color>Шерсть"
+          lore:
+            - "&fСтоимость: &78 железа"
+            - ""
+            - "<buy_status>"
+        hardened_clay:
+          name: "<color>Обожженная Глина"
+          lore:
+            - "&fСтоимость: &724 железа"
+            - ""
+            - "<buy_status>"
+        blast-proof_glass:
+          name: "<color>Бронестекло"
+          lore:
+            - "&fСтоимость: &724 железа"
+            - ""
+            - "<buy_status>"
+        end_stone:
+          name: "<color>Камень Края"
+          lore:
+            - "&fСтоимость: &724 железа"
+            - ""
+            - "<buy_status>"
+        ladder:
+          name: "<color>Лестница"
+          lore:
+            - "&fСтоимость: &74 железа"
+            - ""
+            - "<buy_status>"
+        oak_wood_planks:
+          name: "<color>Дубовые доски"
+          lore:
+            - "&fСтоимость: &66 золота"
+            - ""
+            - "<buy_status>"
+    melee:
+      category_title: "Мечи"
+      category_item_name: "&bМечи"
+      contents:
+        stone_sword:
+          name: "<color>Каменный меч"
+          lore:
+            - "&fСтоимость: &725 железа"
+            - ""
+            - "<buy_status>"
+        iron_sword:
+          name: "<color>Железный меч"
+          lore:
+            - "&fСтоимость: &612 золота"
+            - ""
+            - "<buy_status>"
+        diamond_sword:
+          name: "<color>Алмазный меч"
+          lore:
+            - "&fСтоимость: &26 изумрудов"
+            - ""
+            - "<buy_status>"
+    armor:
+      category_title: "Броня"
+      category_item_name: "&bБроня"
+      contents:
+        chainmail_boots:
+          name: "<color>Кольчужная броня"
+          lore:
+            - "&fСтоимость: &7120 железа"
+            - ""
+            - "<buy_status>"
+        iron_boots:
+          name: "<color>Железная броня"
+          lore:
+            - "&fСтоимость: &618 золота"
+            - ""
+            - "<buy_status>"
+        diamond_boots:
+          name: "<color>Алмазная броня"
+          lore:
+            - "&fСтоимость: &28 изумрудов"
+            - ""
+            - "<buy_status>"
+    tools:
+      category_title: "Инструменты"
+      category_item_name: "&bИнструменты"
+      contents:
+        shears:
+          name: "<color>Ножницы"
+          lore:
+            - "&fСтоимость: &740 железа"
+            - ""
+            - "<buy_status>"
+        wooden_pickaxe:
+          levels:
+            '1':
+              name: "<color>Деревянная кирка (Эффективность I)"
+              lore:
+                - "&fСтоимость: &715 железа"
+                - "&fУровень: &eI"
+                - ""
+                - "&fЭто улучшаемый предмет"
+                - "&fТеряет I уровень после смерти!"
+                - ""
+                - "<buy_status>"
+            '2':
+              name: "<color>Железная кирка (Эффективность II)"
+              lore:
+                - "&fСтоимость: &720 железа"
+                - "&fУровень: &eII"
+                - ""
+                - "&fЭто улучшаемый предмет"
+                - "&fТеряет 1 уровень после смерти!"
+                - ""
+                - "<buy_status>"
+            '3':
+              name: "<color>Золотая кирка (Эффективность II, Острота II)"
+              lore:
+                - "&fСтоимость: &66 золота"
+                - "&fУровень: &eIII"
+                - ""
+                - "&fЭто улучшаемый предмет"
+                - "&fТеряет 1 уровень после смерти!"
+                - ""
+                - "<buy_status>"
+            '4':
+              name: "<color>Алмазная кирка (Эффективность III)"
+              lore:
+                - "&fСтоимость: &612 золота"
+                - "&fУровень: &eIV"
+                - ""
+                - "&fЭто улучшаемый предмет"
+                - "&fТеряет 1 уровень после смерти!"
+                - ""
+                - "<buy_status>"
+        wooden_axe:
+          levels:
+            '1':
+              name: "<color>Деревянный топор (Эффективность I)"
+              lore:
+                - "&fСтоимость: &715 железа"
+                - "&fУровень: &eI"
+                - ""
+                - "&fЭто улучшаемый предмет"
+                - "&fТеряет 1 уровень после смерти!"
+                - ""
+                - "<buy_status>"
+            '2':
+              name: "<color>Железный топор (Эффективность II)"
+              lore:
+                - "&fСтоимость: &720 железа"
+                - "&fУровень: &eII"
+                - ""
+                - "&fЭто улучшаемый предмет"
+                - "&fТеряет 1 уровень после смерти!"
+                - ""
+                - "<buy_status>"
+            '3':
+              name: "<color>Золотой топор (Эффективность III)"
+              lore:
+                - "&fСтоимость: &66 золота"
+                - "&fУровень: &eIII"
+                - ""
+                - "&fЭто улучшаемый предмет"
+                - "&fТеряет 1 уровень после смерти!"
+                - ""
+                - "<buy_status>"
+            '4':
+              name: "<color>Алмазный топор (Эффективность IV)"
+              lore:
+                - "&fСтоимость: &612 золота"
+                - "&fУровень: &eIV"
+                - ""
+                - "&fЭто улучшаемый предмет"
+                - "&fТеряет 1 уровень после смерти!"
+                - ""
+                - "<buy_status>"
+    ranged:
+      category_title: "Луки"
+      category_item_name: "&bЛуки"
+      contents:
+        arrow:
+          name: "<color>Стрела"
+          lore:
+            - "&fСтоимость: &62 золота"
+            - ""
+            - "<buy_status>"
+        bow:
+          name: "<color>Лук"
+          lore:
+            - "&fСтоимость: &624 золота"
+            - ""
+            - "<buy_status>"
+        bow_(power_i):
+          name: "<color>Лук (Сила I)"
+          lore:
+            - "&fСтоимость: &650 золота"
+            - ""
+            - "<buy_status>"
+    potions:
+      category_title: "Зелья"
+      category_item_name: "&bЗелья"
+      contents:
+        speed_ii_potion_(45_seconds):
+          name: "<color>Зелье скорости II (45 секунд)"
+          lore:
+            - "&fСтоимость: &22 изумруда"
+            - ""
+            - "&9Скорость II (0:45)"
+            - ""
+            - "<buy_status>"
+        jump_v_potion_(45_seconds):
+          name: "<color>Зелье прыгучести V (45 секунд)"
+          lore:
+            - "&fСтоимость: &22 изумруда"
+            - ""
+            - "&9Прыгучесть V (0:45)"
+            - ""
+            - "<buy_status>"
+        invisibility_potion_(30_seconds):
+          name: "<color>Зелье невидимости (30 секунд)"
+          lore:
+            - "&fСтоимость: &24 изумруда"
+            - ""
+            - "&9Невидимость (0:30)"
+            - ""
+            - "<buy_status>"
+    utility:
+      category_title: "Утилиты"
+      category_item_name: "&bУтилиты"
+      contents:
+        golden_apple:
+          name: "<color>Золотое яблоко"
+          lore:
+            - "&fСтоимость: &68 золота"
+            - ""
+            - "&fВсестороннее исцеление"
+            - ""
+            - "<buy_status>"
+        fireball:
+          item: "Огненный шар"
+          name: "<color>Огненный шар"
+          lore:
+            - "&fСтоимость: &760 железа"
+            - ""
+            - "&fОтлично откидывает врагов,"
+            - "&fидущих по мостам"
+            - ""
+            - "<buy_status>"
+        tnt:
+          name: "<color>Динамит"
+          lore:
+            - "&fСтоимость: &612 золота"
+            - ""
+            - "&fМгновенно воспламеняется!"
+            - "&fПодходит для взрыва блоков"
+            - ""
+            - "<buy_status>"
+        ender_pearl:
+          name: "<color>Жемчуг края"
+          lore:
+            - "&fСтоимость: &26 изумрудов"
+            - ""
+            - "&fКротчайший путь, чтобы"
+            - "&fвторгнуться на базу врагов"
+            - ""
+            - "<buy_status>"
+        magic_milk:
+          item: "Волшебное молоко"
+          name: "<color>Волшебное молоко"
+          lore:
+            - "&fСтоимость: &68 золота"
+            - ""
+            - "&fНейтрализует действие ловушек в течение"
+            - "&f30 сек. после использования"
+            - ""
+            - "<buy_status>"
+        compact_pop-up_tower:
+          item: "&6Самовозводящаяся башня"
+          name: "<color>Самовозводящаяся башня"
+          lore:
+            - "&fСтоимость: &750 железа"
+            - ""
+            - "&fПоставьте переносную защиту"
+            - ""
+            - "<buy_status>"
+  default:
+    quick_buy:
+      category_title: "Быстрая покупка"
+      category_item_name: "&bБыстрая покупка"
+    blocks:
+      category_title: "Блоки"
+      category_item_name: "&bБлоки"
+      contents:
+        wool:
+          name: "<color>Шерсть"
+          lore:
+            - "&fСтоимость: &74 железа"
+            - ""
+            - "<buy_status>"
+        hardened_clay:
+          name: "<color>Обожженная Глина"
+          lore:
+            - "&fСтоимость: &712 железа"
+            - ""
+            - "<buy_status>"
+        blast-proof_glass:
+          name: "<color>Бронестекло"
+          lore:
+            - "&fСтоимость: &712 железа"
+            - ""
+            - "<buy_status>"
+        end_stone:
+          name: "<color>Камень Края"
+          lore:
+            - "&fСтоимость: &724 железа"
+            - ""
+            - "<buy_status>"
+        ladder:
+          name: "<color>Лестница"
+          lore:
+            - "&fСтоимость: &74 железа"
+            - ""
+            - "<buy_status>"
+        oak_wood_planks:
+          name: "<color>Дубовые доски"
+          lore:
+            - "&fСтоимость: &64 золота"
+            - ""
+            - "<buy_status>"
+        obsidian:
+          name: "<color>Обсидиан"
+          lore:
+            - "&fСтоимость: &24 изумрудов"
+            - ""
+            - "&fЭкстремальная защита для вашей кровати"
+            - ""
+            - "<buy_status>"
+    melee:
+      category_title: "Мечи"
+      category_item_name: "&bМечи"
+      contents:
+        stone_sword:
+          name: "<color>Каменный меч"
+          lore:
+            - "&fСтоимость: &710 железа"
+            - ""
+            - "<buy_status>"
+        iron_sword:
+          name: "<color>Железный меч"
+          lore:
+            - "&fСтоимость: &67 золота"
+            - ""
+            - "<buy_status>"
+        diamond_sword:
+          name: "<color>Алмазный меч"
+          lore:
+            - "&fСтоимость: &24 изумрудов"
+            - ""
+            - "<buy_status>"
+        stick_(knockback_i):
+          name: "<color>Палка (Отдача I)"
+          lore:
+            - "&fСтоимость: &65 золота"
+            - ""
+            - "<buy_status>"
+    armor:
+      category_title: "Броня"
+      category_item_name: "&bБроня"
+      contents:
+        chainmail_boots:
+          name: "<color>Кольчужная броня"
+          lore:
+            - "&fСтоимость: &740 железа"
+            - ""
+            - "<buy_status>"
+        iron_boots:
+          name: "<color>Железная броня"
+          lore:
+            - "&fСтоимость: &612 золота"
+            - ""
+            - "<buy_status>"
+        diamond_boots:
+          name: "<color>Алмазная броня"
+          lore:
+            - "&fСтоимость: &26 изумрудов"
+            - ""
+            - "<buy_status>"
+    tools:
+      category_title: "Инструменты"
+      category_item_name: "&bИнструменты"
+      contents:
+        shears:
+          name: "<color>Ножницы"
+          lore:
+            - "&fСтоимость: &720 железа"
+            - ""
+            - "<buy_status>"
+        wooden_pickaxe:
+          levels:
+            '1':
+              name: "<color>Деревянная кирка (Эффективность I)"
+              lore:
+                - "&fСтоимость: &710 железа"
+                - "&fУровень: &eI"
+                - ""
+                - "&fЭто улучшаемый предмет"
+                - "&fТеряет 1 уровень после смерти!"
+                - ""
+                - "<buy_status>"
+            '2':
+              name: "<color>Железная кирка (Эффективность II)"
+              lore:
+                - "&fСтоимость: &710 железа"
+                - "&fУровень: &eII"
+                - ""
+                - "&fЭто улучшаемый предмет"
+                - "&fТеряет 1 уровень после смерти!"
+                - ""
+                - "<buy_status>"
+            '3':
+              name: "<color>Золотая кирка (Эффективность II, Острота II)"
+              lore:
+                - "&fСтоимость: &63 золота"
+                - "&fУровень: &eIII"
+                - ""
+                - "&fЭто улучшаемый предмет"
+                - "&fТеряет 1 уровень после смерти!"
+                - ""
+                - "<buy_status>"
+            '4':
+              name: "<color>Алмазная кирка (Эффективность III)"
+              lore:
+                - "&fСтоимость: &66 золота"
+                - "&fУровень: &eIV"
+                - ""
+                - "&fЭто улучшаемый предмет"
+                - "&fТеряет 1 уровень после смерти!"
+                - ""
+                - "<buy_status>"
+        wooden_axe:
+          levels:
+            '1':
+              name: "<color>Деревянный топор (Эффективность I)"
+              lore:
+                - "&fСтоимость: &710 железа"
+                - "&fУровень: &eI"
+                - ""
+                - "&fЭто улучшаемый предмет"
+                - "&fТеряет 1 уровень после смерти!"
+                - ""
+                - "<buy_status>"
+            '2':
+              name: "<color>Железный топор (Эффективность II)"
+              lore:
+                - "&fСтоимость: &710 железа"
+                - "&fУровень: &eII"
+                - ""
+                - "&fЭто улучшаемый предмет"
+                - "&fТеряет 1 уровень после смерти!"
+                - ""
+                - "<buy_status>"
+            '3':
+              name: "<color>Золотой топор (Эффективность III)"
+              lore:
+                - "&fСтоимость: &63 золота"
+                - "&fУровень: &eIII"
+                - ""
+                - "&fЭто улучшаемый предмет"
+                - "&fТеряет 1 уровень после смерти!"
+                - ""
+                - "<buy_status>"
+            '4':
+              name: "<color>Алмазный топор (Эффективность IV)"
+              lore:
+                - "&fСтоимость: &66 золота"
+                - "&fУровень: &eIV"
+                - ""
+                - "&fЭто улучшаемый предмет"
+                - "&fТеряет 1 уровень после смерти!"
+                - ""
+                - "<buy_status>"
+    ranged:
+      category_title: "Луки"
+      category_item_name: "&bЛуки"
+      contents:
+        arrow:
+          name: "<color>Стрела"
+          lore:
+            - "&fСтоимость: &62 золота"
+            - ""
+            - "<buy_status>"
+        bow:
+          name: "<color>Лук"
+          lore:
+            - "&fСтоимость: &612 золота"
+            - ""
+            - "<buy_status>"
+        bow_(power_i):
+          name: "<color>Лук (Сила I)"
+          lore:
+            - "&fСтоимость: &624 золота"
+            - ""
+            - "<buy_status>"
+        bow_(power_i__punch_i):
+          name: "<color>Лук (Сила I, Откидывание I)"
+          lore:
+            - "&fСтоимость: &26 изумрудов"
+            - ""
+            - "<buy_status>"
+    potions:
+      category_title: "Зелья"
+      category_item_name: "&bЗелья"
+      contents:
+        speed_ii_potion_(45_seconds):
+          name: "<color>Зелье скорости II (45 секунд)"
+          lore:
+            - "&fСтоимость: &21 изумруда"
+            - ""
+            - "&9Скорость II (0:45)"
+            - ""
+            - "<buy_status>"
+        jump_v_potion_(45_seconds):
+          name: "<color>Зелье прыгучести V (45 секунд)"
+          lore:
+            - "&fСтоимость: &21 изумруда"
+            - ""
+            - "&9Прыгучесть V (0:45)"
+            - ""
+            - "<buy_status>"
+        invisibility_potion_(30_seconds):
+          name: "<color>Зелье невидимости (30 секунд)"
+          lore:
+            - "&fСтоимость: &22 изумруда"
+            - ""
+            - "&9Невидимость (0:30)"
+            - ""
+            - "<buy_status>"
+    utility:
+      category_title: "Утилиты"
+      category_item_name: "&bУтилиты"
+      contents:
+        golden_apple:
+          name: "<color>Золотое яблоко"
+          lore:
+            - "&fСтоимость: &63 золота"
+            - ""
+            - "&fВсестороннее исцеление"
+            - ""
+            - "<buy_status>"
+        bedbug:
+          item: "Постельный клоп"
+          name: "<color>Постельный клоп"
+          lore:
+            - "&fСтоимость: &740 железа"
+            - ""
+            - "&fПризывает чешуйницу на месте"
+            - "&fпадения снежка для отвлечения"
+            - "&fпротивников. Живёт 15 секунд"
+            - ""
+            - "<buy_status>"
+        dream_defender:
+          item: "Защитник мечты"
+          name: "<color>Защитник мечты"
+          lore:
+            - "&fСтоимость: &7120 железа"
+            - ""
+            - "&fЖелезный голем, который поможет"
+            - "&fзащитить вашу базу. Живёт 4 минуты"
+            - ""
+            - "<buy_status>"
+        fireball:
+          item: "Огненный шар"
+          name: "<color>Огненный шар"
+          lore:
+            - "&fСтоимость: &740 железа"
+            - ""
+            - "&fОтлично откидывает врагов,"
+            - "&fидущих по мостам"
+            - ""
+            - "<buy_status>"
+        tnt:
+          name: "<color>Динамит"
+          lore:
+            - "&fСтоимость: &64 золота"
+            - ""
+            - "&fМгновенно воспламеняется!"
+            - "&fПодходит для взрыва блоков"
+            - ""
+            - "<buy_status>"
+        ender_pearl:
+          name: "<color>Жемчуг края"
+          lore:
+            - "&fСтоимость: &24 изумруда"
+            - ""
+            - "&fКротчайший путь, чтобы"
+            - "&fвторгнуться на базу врагов"
+            - ""
+            - "<buy_status>"
+        water_bucket:
+          name: "<color>Ведро воды"
+          lore:
+            - "&fСтоимость: &63 золота"
+            - ""
+            - "&fОтлично, чтобы замедлить"
+            - "&fприближающихся врагов. Также"
+            - "&fможет защитить от динамита"
+            - ""
+            - "<buy_status>"
+        bridge_egg:
+          item: "Мостовое яйцо"
+          name: "<color>Мостовое яйцо"
+          lore:
+            - "&fСтоимость: &22 изумруда"
+            - ""
+            - "&fЭто яйцо создает мост прямо"
+            - "&fпо траектории падения яйца"
+            - ""
+            - "<buy_status>"
+        magic_milk:
+          item: "Волшебное молоко"
+          name: "<color>Волшебное молоко"
+          lore:
+            - "&fСтоимость: &64 золота"
+            - ""
+            - "&fИзбегайте ловушки в течение 30"
+            - "&fсекунд после использования"
+            - ""
+            - "<buy_status>"
+        sponge:
+          name: "<color>Губка"
+          lore:
+            - "&fСтоимость: &63 золота"
+            - ""
+            - "&fОтлично подходит для впитывания воды"
+            - ""
+            - "<buy_status>"
+        compact_pop-up_tower:
+          item: "&6Самовозводящаяся башня"
+          name: "<color>Самовозводящаяся башня"
+          lore:
+            - "&fСтоимость: &724 железа"
+            - ""
+            - "&fПоставьте переносную защиту"
+            - ""
+            - "<buy_status>"
+  overpowered:
+    quick_buy:
+      category_title: "Быстрая покупка"
+      category_item_name: "&bБыстрая покупка"
+    blocks:
+      category_title: "Блоки"
+      category_item_name: "&bБлоки"
+      contents:
+        wool:
+          name: "<color>Шерсть"
+          lore:
+            - "&fСтоимость: &72 железа"
+            - ""
+            - "<buy_status>"
+        hardened_clay:
+          name: "<color>Обожженная Глина"
+          lore:
+            - "&fСтоимость: &78 железа"
+            - ""
+            - "<buy_status>"
+        blast-proof_glass:
+          name: "<color>Бронестекло"
+          lore:
+            - "&fСтоимость: &78 железа"
+            - ""
+            - "<buy_status>"
+        end_stone:
+          name: "<color>Камень Края"
+          lore:
+            - "&fСтоимость: &712 железа"
+            - ""
+            - "<buy_status>"
+        ladder:
+          name: "<color>Лестница"
+          lore:
+            - "&fСтоимость: &72 железа"
+            - ""
+            - "<buy_status>"
+        oak_wood_planks:
+          name: "<color>Дубовые доски"
+          lore:
+            - "&fСтоимость: &62 золота"
+            - ""
+            - "<buy_status>"
+        obsidian:
+          name: "<color>Обсидиан"
+          lore:
+            - "&fСтоимость: &22 изумруда"
+            - ""
+            - "&fЭкстремальная защита для вашей кровати"
+            - ""
+            - "<buy_status>"
+    melee:
+      category_title: "Мечи"
+      category_item_name: "&bМечи"
+      contents:
+        stone_sword:
+          name: "<color>Каменный меч"
+          lore:
+            - "&fСтоимость: &75 железа"
+            - ""
+            - "<buy_status>"
+        iron_sword:
+          name: "<color>Железный меч"
+          lore:
+            - "&fСтоимость: &64 золота"
+            - ""
+            - "<buy_status>"
+        diamond_sword:
+          name: "<color>Алмазный меч"
+          lore:
+            - "&fСтоимость: &22 изумруда"
+            - ""
+            - "<buy_status>"
+        stick_(knockback_i):
+          name: "<color>Палка (Отдача I)"
+          lore:
+            - "&fСтоимость: &63 золота"
+            - ""
+            - "<buy_status>"
+    armor:
+      category_title: "Броня"
+      category_item_name: "&bБроня"
+      contents:
+        chainmail_boots:
+          name: "<color>Кольчужная броня"
+          lore:
+            - "&fСтоимость: &720 железа"
+            - ""
+            - "<buy_status>"
+        iron_boots:
+          name: "<color>Железная броня"
+          lore:
+            - "&fСтоимость: &68 золота"
+            - ""
+            - "<buy_status>"
+        diamond_boots:
+          name: "<color>Алмазная броня"
+          lore:
+            - "&fСтоимость: &24 изумрудов"
+            - ""
+            - "<buy_status>"
+    tools:
+      category_title: "Инструменты"
+      category_item_name: "&bИнструменты"
+      contents:
+        shears:
+          name: "<color>Ножницы"
+          lore:
+            - "&fСтоимость: &710 железа"
+            - ""
+            - "<buy_status>"
+        wooden_pickaxe:
+          levels:
+            '1':
+              name: "<color>Деревянная кирка (Эффективность I)"
+              lore:
+                - "&fСтоимость: &75 железа"
+                - "&fУровень: &eI"
+                - ""
+                - "&fЭто улучшаемый предмет"
+                - "&fТеряет 1 уровень после смерти!"
+                - ""
+                - "<buy_status>"
+            '2':
+              name: "<color>Железная кирка (Эффективность II)"
+              lore:
+                - "&fСтоимость: &75 железа"
+                - "&fУровень: &eII"
+                - ""
+                - "&fЭто улучшаемый предмет"
+                - "&fТеряет 1 уровень после смерти!"
+                - ""
+                - "<buy_status>"
+            '3':
+              name: "<color>Золотая кирка (Эффективность II, Острота II)"
+              lore:
+                - "&fСтоимость: &62 золота"
+                - "&fУровень: &eIII"
+                - ""
+                - "&fЭто улучшаемый предмет"
+                - "&fТеряет 1 уровень после смерти!"
+                - ""
+                - "<buy_status>"
+            '4':
+              name: "<color>Алмазная кирка (Эффективность III)"
+              lore:
+                - "&fСтоимость: &64 золота"
+                - "&fУровень: &eIV"
+                - ""
+                - "&fЭто улучшаемый предмет"
+                - "&fТеряет 1 уровень после смерти!"
+                - ""
+                - "<buy_status>"
+        wooden_axe:
+          levels:
+            '1':
+              name: "<color>Деревянный топор (Эффективность I)"
+              lore:
+                - "&fСтоимость: &75 железа"
+                - "&fУровень: &eI"
+                - ""
+                - "&fЭто улучшаемый предмет"
+                - "&fТеряет 1 уровень после смерти!"
+                - ""
+                - "<buy_status>"
+            '2':
+              name: "<color>Железный топор (Эффективность II)"
+              lore:
+                - "&fСтоимость: &75 железа"
+                - "&fУровень: &eII"
+                - ""
+                - "&fЭто улучшаемый предмет"
+                - "&fТеряет 1 уровень после смерти!"
+                - ""
+                - "<buy_status>"
+            '3':
+              name: "<color>Золотой топор (Эффективность III)"
+              lore:
+                - "&fСтоимость: &62 золота"
+                - "&fУровень: &eIII"
+                - ""
+                - "&fЭто улучшаемый предмет"
+                - "&fТеряет 1 уровень после смерти!"
+                - ""
+                - "<buy_status>"
+            '4':
+              name: "<color>Алмазный топор (Эффективность IV)"
+              lore:
+                - "&fСтоимость: &64 золота"
+                - "&fУровень: &eIV"
+                - ""
+                - "&fЭто улучшаемый предмет"
+                - "&fТеряет 1 уровень после смерти!"
+                - ""
+                - "<buy_status>"
+    ranged:
+      category_title: "Луки"
+      category_item_name: "&bЛуки"
+      contents:
+        arrow:
+          name: "<color>Стрела"
+          lore:
+            - "&fСтоимость: &61 золота"
+            - ""
+            - "<buy_status>"
+        bow:
+          name: "<color>Лук"
+          lore:
+            - "&fСтоимость: &66 золота"
+            - ""
+            - "<buy_status>"
+        bow_(power_i):
+          name: "<color>Лук (Сила I)"
+          lore:
+            - "&fСтоимость: &612 золота"
+            - ""
+            - "<buy_status>"
+        bow_(power_i__punch_i):
+          name: "<color>Лук (Сила I, Откидывание I)"
+          lore:
+            - "&fСтоимость: &24 изумрудов"
+            - ""
+            - "<buy_status>"
+    potions:
+      category_title: "Зелья"
+      category_item_name: "&bЗелья"
+      contents:
+        speed_ii_potion_(45_seconds):
+          name: "<color>Зелье скорости II (45 секунд)"
+          lore:
+            - "&fСтоимость: &21 изумруда"
+            - ""
+            - "&9Скорость II (0:45)"
+            - ""
+            - "<buy_status>"
+        jump_v_potion_(45_seconds):
+          name: "<color>Зелье прыгучести V (45 секунд)"
+          lore:
+            - "&fСтоимость: &21 изумруда"
+            - ""
+            - "&9Прыгучесть V (0:45)"
+            - ""
+            - "<buy_status>"
+        invisibility_potion_(30_seconds):
+          name: "<color>Зелье невидимости (30 секунд)"
+          lore:
+            - "&fСтоимость: &21 изумруда"
+            - ""
+            - "&9Невидимость (0:30)"
+            - ""
+            - "<buy_status>"
+    utility:
+      category_title: "Утилиты"
+      category_item_name: "&bУтилиты"
+      contents:
+        golden_apple:
+          name: "<color>Золотое яблоко"
+          lore:
+            - "&fСтоимость: &62 золота"
+            - ""
+            - "&fВсестороннее исцеление"
+            - ""
+            - "<buy_status>"
+        bedbug:
+          item: "Постельный клоп"
+          name: "<color>Постельный клоп"
+          lore:
+            - "&fСтоимость: &720 железа"
+            - ""
+            - "&fПризывает чешуйницу на месте"
+            - "&fпадения снежка для отвлечения"
+            - "&fпротивников. Живёт 15 секунд"
+            - ""
+            - "<buy_status>"
+        dream_defender:
+          item: "Защитник мечты"
+          name: "<color>Защитник мечты"
+          lore:
+            - "&fСтоимость: &7100 железа"
+            - ""
+            - "&fЖелезный голем, который поможет"
+            - "&fзащитить вашу базу. Живёт 4 минуты"
+            - ""
+            - "<buy_status>"
+        fireball:
+          item: "Огненный шар"
+          name: "<color>Огненный шар"
+          lore:
+            - "&fСтоимость: &720 железа"
+            - ""
+            - "&fОтлично откидывает врагов,"
+            - "&fидущих по мостам"
+            - ""
+            - "<buy_status>"
+        tnt:
+          name: "<color>Динамит"
+          lore:
+            - "&fСтоимость: &62 золота"
+            - ""
+            - "&fМгновенно воспламеняется!"
+            - "&fПодходит для взрыва блоков"
+            - ""
+            - "<buy_status>"
+        ender_pearl:
+          name: "<color>Жемчуг края"
+          lore:
+            - "&fСтоимость: &22 изумруда"
+            - ""
+            - "&fКротчайший путь, чтобы"
+            - "&fвторгнуться на базу врагов"
+            - ""
+            - "<buy_status>"
+        water_bucket:
+          name: "<color>Ведро воды"
+          lore:
+            - "&fСтоимость: &61 золота"
+            - ""
+            - "&fОтлично, чтобы замедлить"
+            - "&fприближающихся врагов. Также"
+            - "&fможет защитить от динамита"
+            - ""
+            - "<buy_status>"
+        bridge_egg:
+          item: "Мостовое яйцо"
+          name: "<color>Мостовое яйцо"
+          lore:
+            - "&fСтоимость: &21 изумруда"
+            - ""
+            - "&fЭто яйцо создает мост прямо"
+            - "&fпо траектории падения яйца"
+            - ""
+            - "<buy_status>"
+        magic_milk:
+          item: "Волшебное молоко"
+          name: "<color>Волшебное молоко"
+          lore:
+            - "&fСтоимость: &62 золота"
+            - ""
+            - "&fНейтрализует действие ловушек в течение"
+            - "&f30 сек. после использования"
+            - ""
+            - "<buy_status>"
+        sponge:
+          name: "<color>Губка"
+          lore:
+            - "&fСтоимость: &61 золота"
+            - ""
+            - "&fОтлично подходит для впитывания воды"
+            - ""
+            - "<buy_status>"
+        compact_pop-up_tower:
+          item: "&6Самовозводящаяся башня"
+          name: "<color>Самовозводящаяся башня"
+          lore:
+            - "&fСтоимость: &712 железа"
+            - ""
+            - "&fПоставьте переносную защиту"
+            - ""
+            - "<buy_status>"
+time_format:
+  second: "сек."
+  seconds: "сек."
+  minute: "мин."
+  minutes: "мин."
+  hour: "час"
+  hours: "часы"
+  day: "день"
+  days: "дней"
+  week: "недели"
+  weeks: "недель"
+scoreboard:
+  lobby:
+    title: "&c&lBedWars"
+    lines:
+      - ""
+      - "Уровень: &7<bw-level>✯"
+      - ""
+      - "Прогресс: &b<bw-experience>&7/&a<bw-experience_next_level>"
+      - " <bw-experience_bar>"
+      - ""
+      - "Монет: &6<bw-points>"
+      - ""
+      - "Всего убийств: &a<bw-total_all_kills>"
+      - "Всего побед: &a<bw-total_wins>"
+      - ""
+      - "&b&lmcsnapix.ru"
+  solo:
+    waiting:
+      title: "&c&lBedWars"
+      status:
+        waiting: "&fПоиск игроков..."
+        starting: "&fНачало через: &a<time>"
+      lines:
+        - "&7%localtime_timezone_GMT+3% &8(%server_name%)"
+        - ""
+        - "<waiting_state>"
+        - ""
+        - "&fИгроков: &a<bw-current_players>&f/&b<bw-max_players>"
+        - ""
+        - "&fКарта: &a<bw-displayname>"
+        - ""
+        - "&b&lmcsnapix.ru"
+    game:
+      title: "&c&lBedWars"
+      format:
+        event:
+          generator: "<color><name>ы <tier> &fчерез: &a<time>"
+          bed: "Разрушение кроватей: &a<time>"
+          sudden: "Внезапная смерть: &a<time>"
+          end: "Завершение игры через: &a<time>"
+          default: "Игровое время: &a<time>"
+          restart: "Перезапуск через: &a<time>"
+        team:
+          line: "<team_color><team_state> <team_color><team_name> <you_team>"
+          bed_destroyed: " &l<players>"
+          eliminated: "&l✕"
+          alive: "✔"
+          you: "&7⇦ ВЫ"
+      lines:
+        - "&7%localtime_timezone_GMT+3% &8(%server_name%)"
+        - ""
+        - "<event_format>"
+        - ""
+        - "<team_format>"
+        - ""
+        - "&b&lmcsnapix.ru"
+  default:
+    waiting:
+      title: "&c&lBedWars"
+      status:
+        waiting: "&fПоиск игроков..."
+        starting: "&fНачало через: &a<time>"
+      lines:
+        - "&7%localtime_timezone_GMT+3% &8(%server_name%)"
+        - ""
+        - "<waiting_state>"
+        - ""
+        - "&fИгроков: &a<bw-current_players>&f/&b<bw-max_players>"
+        - ""
+        - "&fКарта: &a<bw-displayname>"
+        - ""
+        - "&b&lmcsnapix.ru"
+    game:
+      title: "&c&lBedWars"
+      format:
+        event:
+          generator: "<color><name> <tier> &fчерез: &a<time>"
+          bed: "Разрушение кроватей: &a<time>"
+          sudden: "Внезапная смерть: &a<time>"
+          end: "Завершение игры через: &a<time>"
+          default: "Игровое время: &a<time>"
+          restart: "Перезапуск через: &a<time>"
+        team:
+          line: "<team_color><team_state> <team_color><team_name> <you_team>"
+          bed_destroyed: " &l<players>"
+          eliminated: "&l✕"
+          alive: "✔"
+          you: "&7⇦ ВЫ"
+      lines:
+        - "&7%localtime_timezone_GMT+3% &8(%server_name%)"
+        - ""
+        - "<event_format>"
+        - ""
+        - "<team_format>"
+        - ""
+        - "Финальные убийства: &a<bw-game_final_kills>"
+        - "Уничтоженных кроватей: &a<bw-game_beds>"
+        - ""
+        - "&b&lmcsnapix.ru"

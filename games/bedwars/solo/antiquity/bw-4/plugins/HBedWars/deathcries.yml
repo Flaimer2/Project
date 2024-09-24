@@ -1,0 +1,50 @@
+cries:
+  '1':
+    id: bat
+    price: 500
+    permission: false
+    sound: BAT_DEATH
+    volume: 1.0
+    pitch: 1.0
+  '2':
+    id: skeleton
+    price: 1000
+    permission: false
+    sound: SKELETON_DEATH
+    volume: 1.0
+    pitch: 1.0
+  '3':
+    id: wolf
+    price: 1500
+    permission: false
+    sound: WOLF_DEATH
+    volume: 1.0
+    pitch: 1.0
+  '4':
+    id: enderdragon
+    price: 2000
+    permission: false
+    sound: ENDERDRAGON_DEATH
+    volume: 1.0
+    pitch: 1.0
+  '5':
+    id: burp
+    price: 2500
+    permission: false
+    sound: BURP
+    volume: 1.0
+    pitch: 1.0
+  '6':
+    id: enderman
+    price: 3000
+    permission: true
+    sound: ENDERMAN_DEATH
+    volume: 1.0
+    pitch: 1.0
+  '7':
+    id: firework
+    price: 3500
+    permission: true
+    sound: FIREWORK_LAUNCH
+    volume: 1.0
+    pitch: 1.0

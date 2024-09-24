@@ -1,0 +1,618 @@
+settings:
+  default_category: quick_buy
+  default_upgrades_category: upgrades_menu
+  # The slot where it will be to load the hypixel configuration.
+  favorite_slot: 45
+  hotbar_slot: 53
+  max_traps: 3
+  # The price that increases, if there are two traps bought the price will be 2
+  trap_price: 1
+  # The material with which the traps are bought
+  trap_buy_material: DIAMOND
+
+tracker:
+  price: 1
+  material: EMERALD
+
+items:
+  # ID/MATERIAL;DATA;AMOUNT
+  favorite: 160;14;1
+  hotbar_editor: 377;0;1
+  in_category: 160;13;1
+  out_category: 160;7;1
+  # IT IS A HEAD WITH A CUSTOM ID, IF YOU WANT TO PUT ANOTHER ITEM, USE THE EXAMPLE ABOVE.
+  load_favorites: "url;http://textures.minecraft.net/texture/d2b8a5476f4126bf0daaee6b72afcb5ba0cd2ab1cae3eef794ca344ed30d9b89"
+
+hotbar_settings:
+  return:
+    item: 262;0;1
+    slot: 3
+  reset:
+    item: 166;0;1
+    slot: 5
+  separator:
+    item: 160;7;1
+  compass:
+    item: compass;0;1
+    slot: 25
+  categories:
+    blocks:
+      slot: 19
+    melee:
+      slot: 20
+    tools:
+      slot: 21
+    ranged:
+      slot: 22
+    potions:
+      slot: 23
+    utility:
+      slot: 24
+
+shop_settings:
+  quick_buy:
+    category_item: NETHER_STAR;0;1
+    category_slot: 0
+  blocks:
+    category_item: 172;0;1
+    category_slot: 1
+    category_content:
+      'wool':
+        material: WOOL
+        amount: 16
+        buy_material: IRON_INGOT
+        buy_amount: 2
+      'hardened_clay':
+        material: 172
+        amount: 16
+        buy_material: IRON_INGOT
+        buy_amount: 8
+      'blast-proof_glass':
+        material: glass
+        amount: 4
+        buy_material: IRON_INGOT
+        buy_amount: 8
+      'end_stone':
+        material: 121
+        amount: 12
+        buy_material: IRON_INGOT
+        buy_amount: 12
+      'ladder':
+        material: ladder
+        amount: 16
+        buy_material: IRON_INGOT
+        buy_amount: 2
+      'oak_wood_planks':
+        material: 5
+        amount: 16
+        buy_material: GOLD_INGOT
+        buy_amount: 2
+      'obsidian':
+        material: obsidian
+        amount: 4
+        buy_material: EMERALD
+        buy_amount: 2
+  melee:
+    category_item: 283;0;1
+    category_slot: 2
+    category_content:
+      'stone_sword':
+        material: stone_sword
+        amount: 1
+        buy_material: IRON_INGOT
+        buy_amount: 5
+        options:
+          replacement: true
+          droppable: false
+          only_one: true
+      'iron_sword':
+        material: iron_sword
+        amount: 1
+        buy_material: GOLD_INGOT
+        buy_amount: 4
+        options:
+          replacement: true
+          droppable: false
+          only_one: true
+      'diamond_sword':
+        material: diamond_sword
+        amount: 1
+        buy_material: EMERALD
+        buy_amount: 2
+        options:
+          replacement: true
+          droppable: false
+          only_one: true
+      'stick_(knockback_i)':
+        material: stick
+        amount: 1
+        enchants:
+          - KNOCKBACK 1
+        buy_material: GOLD_INGOT
+        buy_amount: 3
+        options:
+          droppable: false
+  armor:
+    category_item: 305;0;1
+    category_slot: 3
+    category_content:
+      'chainmail_boots':
+        material: chainmail_boots
+        amount: 1
+        buy_material: IRON_INGOT
+        buy_amount: 20
+        options:
+          only_one: true
+          permanent: true
+      'iron_boots':
+        material: iron_boots
+        amount: 1
+        buy_material: GOLD_INGOT
+        buy_amount: 8
+        options:
+          only_one: true
+          permanent: true
+      'diamond_boots':
+        material: diamond_boots
+        amount: 1
+        buy_material: EMERALD
+        buy_amount: 4
+        options:
+          only_one: true
+          permanent: true
+  tools:
+    category_item: 274;0;1
+    category_slot: 4
+    category_content:
+      'shears':
+        material: 359
+        amount: 1
+        buy_material: IRON_INGOT
+        buy_amount: 10
+        options:
+          only_one: true
+          droppable: false
+          permanent: true
+      'wooden_pickaxe':
+        levels:
+          '1':
+            material: 270
+            amount: 1
+            buy_material: IRON_INGOT
+            buy_amount: 5
+            enchants:
+              - DIG_SPEED 1
+            options:
+              replacement: true
+              droppable: false
+              permanent: true
+              only_one: true
+          '2':
+            material: 257
+            amount: 1
+            buy_material: IRON_INGOT
+            buy_amount: 5
+            enchants:
+              - DIG_SPEED 2
+            options:
+              replacement: true
+              droppable: false
+              only_one: true
+              decrease_previous_Level: true
+          '3':
+            material: 285
+            amount: 1
+            buy_material: GOLD_INGOT
+            buy_amount: 2
+            enchants:
+              - DIG_SPEED 2
+              - DAMAGE_ALL 2
+            options:
+              replacement: true
+              droppable: false
+              only_one: true
+              decrease_previous_Level: true
+          '4':
+            material: 278
+            amount: 1
+            buy_material: GOLD_INGOT
+            buy_amount: 4
+            enchants:
+              - DIG_SPEED 3
+            options:
+              replacement: true
+              droppable: false
+              only_one: true
+              decrease_previous_Level: true
+      'wooden_axe':
+        levels:
+          '1':
+            material: 271
+            amount: 1
+            buy_material: IRON_INGOT
+            buy_amount: 5
+            enchants:
+              - DIG_SPEED 1
+            options:
+              replacement: true
+              droppable: false
+              permanent: true
+              only_one: true
+          '2':
+            material: 258
+            amount: 1
+            buy_material: IRON_INGOT
+            buy_amount: 5
+            enchants:
+              - DIG_SPEED 2
+            options:
+              replacement: true
+              droppable: false
+              only_one: true
+              decrease_previous_Level: true
+          '3':
+            material: 286
+            amount: 1
+            buy_material: GOLD_INGOT
+            buy_amount: 2
+            enchants:
+              - DIG_SPEED 3
+            options:
+              replacement: true
+              droppable: false
+              only_one: true
+              decrease_previous_Level: true
+          '4':
+            material: 279
+            amount: 1
+            buy_material: GOLD_INGOT
+            buy_amount: 4
+            enchants:
+              - DIG_SPEED 4
+            options:
+              replacement: true
+              droppable: false
+              only_one: true
+              decrease_previous_Level: true
+  ranged:
+    category_item: bow;0;1
+    category_slot: 5
+    category_content:
+      'arrow':
+        material: arrow
+        amount: 8
+        buy_material: GOLD_INGOT
+        buy_amount: 1
+      'bow':
+        material: bow
+        amount: 1
+        buy_material: GOLD_INGOT
+        buy_amount: 6
+        options:
+          only_one: true
+      'bow_(power_i)':
+        material: bow
+        amount: 1
+        buy_material: GOLD_INGOT
+        buy_amount: 15
+        enchants:
+          - ARROW_DAMAGE 1
+        options:
+          only_one: true
+      'bow_(power_i__punch_i)':
+        material: bow
+        amount: 1
+        buy_material: EMERALD
+        buy_amount: 4
+        enchants:
+          - ARROW_DAMAGE 1
+          - ARROW_KNOCKBACK 1
+        options:
+          only_one: true
+  potions:
+    category_item: 379;0;1
+    category_slot: 6
+    category_content:
+      'speed_ii_potion_(45_seconds)':
+        material: potion
+        data: 8195
+        amount: 1
+        buy_material: EMERALD
+        buy_amount: 1
+        potion: SPEED 2 45
+      'jump_v_potion_(45_seconds)':
+        material: potion
+        data: 8203
+        amount: 1
+        buy_material: EMERALD
+        buy_amount: 1
+        potion: JUMP 5 45
+      'invisibility_potion_(30_seconds)':
+        material: potion
+        data: 8206
+        amount: 1
+        buy_material: EMERALD
+        buy_amount: 1
+        potion: INVISIBILITY 1 30
+  utility:
+    category_item: tnt;0;1
+    category_slot: 7
+    category_content:
+      'golden_apple':
+        material: golden_apple
+        amount: 1
+        buy_material: GOLD_INGOT
+        buy_amount: 2
+      'bedbug':
+        material: 332
+        amount: 1
+        buy_material: IRON_INGOT
+        buy_amount: 20
+      'dream_defender':
+        material: 383
+        data: 99
+        amount: 1
+        buy_material: IRON_INGOT
+        buy_amount: 100
+      'fireball':
+        material: 385
+        amount: 1
+        buy_material: IRON_INGOT
+        buy_amount: 20
+      'tnt':
+        material: tnt
+        amount: 1
+        buy_material: GOLD_INGOT
+        buy_amount: 2
+      'ender_pearl':
+        material: ender_pearl
+        amount: 1
+        buy_material: EMERALD
+        buy_amount: 2
+      'water_bucket':
+        material: 326
+        amount: 1
+        buy_material: GOLD_INGOT
+        buy_amount: 1
+      'bridge_egg':
+        material: egg
+        amount: 1
+        buy_material: EMERALD
+        buy_amount: 1
+      'magic_milk':
+        material: 335
+        amount: 1
+        buy_material: GOLD_INGOT
+        buy_amount: 2
+      'sponge':
+        material: 19
+        amount: 1
+        buy_material: GOLD_INGOT
+        buy_amount: 1
+      'compact_pop-up_tower':
+        material: 146
+        amount: 1
+        buy_material: IRON_INGOT
+        buy_amount: 12
+
+
+upgrades_settings:
+  upgrades_menu:
+    inventory_size: 5
+    decoration:
+      '1':
+        material: 160
+        data: 7
+        slot: 18 to 26
+    upgrades:
+      sharpened_swords:
+        settings:
+          permanent: true
+          team: true
+          slot: 10
+        material: 267
+        buy_material: DIAMOND
+        buy_amount: 2
+        receive:
+          type: ENCHANTMENT
+          give: SWORD
+          enchantments:
+            # ENCHANTMENT LEVEL
+            - DAMAGE_ALL 1
+      reinforced_armor:
+        settings:
+          permanent: true
+          team: true
+          slot: 11
+        levels:
+          '1':
+            material: 307
+            buy_material: DIAMOND
+            buy_amount: 1
+            receive:
+              type: ENCHANTMENT
+              give: ARMOR
+              enchantments:
+                - PROTECTION_ENVIRONMENTAL 1
+          '2':
+            material: 307
+            buy_material: DIAMOND
+            buy_amount: 2
+            receive:
+              type: ENCHANTMENT
+              give: ARMOR
+              enchantments:
+                - PROTECTION_ENVIRONMENTAL 2
+          '3':
+            material: 307
+            buy_material: DIAMOND
+            buy_amount: 4
+            receive:
+              type: ENCHANTMENT
+              give: ARMOR
+              enchantments:
+                - PROTECTION_ENVIRONMENTAL 3
+          '4':
+            material: 307
+            buy_material: DIAMOND
+            buy_amount: 8
+            receive:
+              type: ENCHANTMENT
+              give: ARMOR
+              enchantments:
+                - PROTECTION_ENVIRONMENTAL 4
+      maniac_miner:
+        settings:
+          permanent: true
+          team: true
+          slot: 12
+        levels:
+          '1':
+            material: 285
+            buy_material: DIAMOND
+            buy_amount: 1
+            receive:
+              type: POTION_EFFECT
+              give: TEAM
+              effects:
+                # EFFECT_TYPE LEVEL DURATION (IF DURATION IS 0 IS PERMANENTLY)
+                - FAST_DIGGING 1 0
+          '2':
+            material: 285
+            buy_material: DIAMOND
+            buy_amount: 2
+            receive:
+              type: POTION_EFFECT
+              give: TEAM
+              effects:
+                - FAST_DIGGING 2 0
+      iron_forge:
+        settings:
+          # SON GENERATORS OF THE EQUIPMENT, MUST BE ACTIVATED.
+          team: true
+          slot: 13
+        levels:
+          '1':
+            material: 61
+            buy_material: DIAMOND
+            buy_amount: 1
+            receive:
+              type: ISLAND_GENERATOR
+          '2':
+            material: 61
+            buy_material: DIAMOND
+            buy_amount: 2
+            receive:
+              type: ISLAND_GENERATOR
+          '3':
+            material: 61
+            buy_material: DIAMOND
+            buy_amount: 4
+            receive:
+              type: ISLAND_GENERATOR
+          '4':
+            material: 61
+            buy_material: DIAMOND
+            buy_amount: 6
+            receive:
+              type: ISLAND_GENERATOR
+      heal_pool:
+        settings:
+          permanent: true
+          team: true
+          slot: 14
+        material: 138
+        buy_material: DIAMOND
+        buy_amount: 1
+        receive:
+          type: POTION_EFFECT
+          give: ISLAND
+          effects:
+            - REGENERATION 2 0
+      sudden_death:
+        settings:
+          team: true
+          slot: 15
+        material: 122
+        buy_material: DIAMOND
+        buy_amount: 2
+        receive:
+          type: DRAGON
+          dragon_amount: 2
+      buy_traps:
+        settings:
+          slot: 16
+        material: 334
+        receive:
+          type: OPEN_CATEGORY
+          open: traps_menu
+      selected_trap_1:
+        settings:
+          slot: 30
+        material: 95
+        data: 8
+        receive:
+          type: TRAP_BUYED
+          identifier: 0
+      selected_trap_2:
+        settings:
+          slot: 31
+        material: 95
+        data: 8
+        receive:
+          type: TRAP_BUYED
+          identifier: 1
+      selected_trap_3:
+        settings:
+          slot: 32
+        material: 95
+        data: 8
+        receive:
+          type: TRAP_BUYED
+          identifier: 2
+  traps_menu:
+    inventory_size: 3
+    upgrades:
+      blindness:
+        settings:
+          slot: 10
+        material: 131
+        receive:
+          type: TRAP
+          give: EFFECT ENEMY
+          effects:
+            - BLINDNESS 1 8
+            - SLOW 1 8
+      counter-offensive_trap:
+        settings:
+          slot: 11
+        material: 288
+        receive:
+          type: TRAP
+          give: EFFECT TEAM
+          effects:
+            - SPEED 1 10
+            - JUMP 1 10
+      alarm_trap:
+        settings:
+          slot: 12
+        material: 76
+        receive:
+          type: TRAP
+          give: ALARM
+      miner_fatigue_trap:
+        settings:
+          slot: 13
+        material: 257
+        receive:
+          type: TRAP
+          give: EFFECT ENEMY
+          effects:
+            - SLOW_DIGGING 1 10
+      return:
+        settings:
+          slot: 22
+        material: arrow
+        receive:
+          type: OPEN_CATEGORY
+          open: upgrades

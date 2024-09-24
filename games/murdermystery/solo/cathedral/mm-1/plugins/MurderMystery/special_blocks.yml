@@ -1,0 +1,70 @@
+#
+#             Murder Mystery special blocks configuration
+#
+Special-Blocks:
+  Cauldron-Potions:
+    Mystery-I:
+      Type: JUMP
+      Duration: 35
+      Amplifier: 1
+      Name: "&7Секретное зелье &8(???)&1"
+      Subtitle: "&a&l35 &fСЕКУНД ПРЫГУЧЕСТИ"
+    Mystery-0:
+      # Uppercased potion effect type (https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html)
+      Type: SPEED
+      # Duration of potion effect
+      Duration: 30
+      # Amplifier of potion effect
+      Amplifier: 1
+      # Name of potion
+      Name: "&7Секретное зелье &8(???)&2"
+      # Subtitle message when you drink potion
+      Subtitle: "&a&l30 &fСЕКУНД СКОРОСТИ"
+    Mystery-II:
+      Type: SLOW
+      Duration: 40
+      Amplifier: 1
+      # Beware that we use '&f' at the end to make it different from above!
+      # Otherwise it will count as Mystery-I potion!
+      Name: "&7Секретное зелье &8(???)&3"
+      Subtitle: "&a&l40 &fСЕКУНД МЕДЛИТЕЛЬННОСТИ"
+    Mystery-III:
+      Type: INVISIBILITY
+      Duration: 25
+      Amplifier: 1
+      # Beware that we use '&a' at the end to make it different from above!
+      # Otherwise it will count as Mystery-I potion!
+      Name: "&7Секретное зелье &8(???)&4"
+      Subtitle: "&a&l25 &fСЕКУНД НЕВИДИМОСТИ"
+    Mystery-IV:
+      Type: HARM
+      Duration: 1
+      Amplifier: 10
+      # Beware that we use '&a' at the end to make it different from above!
+      # Otherwise it will count as Mystery-I potion!
+      Name: "&7Секретное зелье &8(???)&5"
+      Subtitle: "&fЧТО-ТО ОЧЕНЬ ПЛОХОЕ!"
+    Mystery-V:
+      Type: NIGHT_VISION
+      Duration: 40
+      Amplifier: 1
+      # Beware that we use '&a' at the end to make it different from above!
+      # Otherwise it will count as Mystery-I potion!
+      Name: "&7Секретное зелье &8(???)&6"
+      Subtitle: "&a&l25 &fСЕКУНД НОЧНОГО ЗРЕНИЯ"
+    Mystery-VI:
+      Type: SPEED
+      Duration: 1
+      Amplifier: 0
+      # Beware that we use '&a' at the end to make it different from above!
+      # Otherwise it will count as Mystery-I potion!
+      Name: "&7Секретное зелье &8(???)&7"
+      Subtitle: "&fХМ... НИЧЕГО..."
+    Mystery-VII:
+      Type: CONFUSION
+      Duration: 25
+      Amplifier: 1
+      # Beware that we use '&a' at the end to make it different from above!
+      # Otherwise it will count as Mystery-I potion!
+      Name: "&7Секретное зелье &8(???)&8"
+      Subtitle: "&fЧТО-ТО МНЕ НЕ ХОРОШО"

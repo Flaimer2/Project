@@ -1,0 +1,565 @@
+ # 
+ # Messages configuration
+ # 
+ # 
+ # In most cases, the variables inside the default messages are those available
+ # in that specific message. The exception to this is messages which are related
+ # to a certain punishment.
+ # 
+ # When message has an associated punishment, multiple variables are available:
+ # 
+ # %ID% - punishment ID number
+ # %TYPE% - punishment type, e.g. 'Ban'
+ # %TYPE_VERB% - punishment type as a verb, e.g. 'Banned'
+ # %VICTIM% - display name of the victim of the punishment
+ # %VICTIM_ID% - internal identifier of victim
+ # %OPERATOR% - display name of the staff member who made the punishment
+ # %OPERATOR_ID% - internal identifier of the operator
+ # %UNOPERATOR% - staff member undoing the punishment. available only when the punishment is undone
+ # %UNOPERATOR_ID% - internal identifier of staff member undoing the punishment
+ # %REASON% - reason for the punishment
+ # %SCOPE% - scope of the punishment
+ # %DURATION% - original duration (how long the punishment was made for)
+ # %START_DATE% - the date the punishment was created
+ # %TIME_PASSED% - the time since the punishment was created
+ # %TIME_PASSED_SIMPLE% - the time since the punishment was created, rounded to the biggest time unit possible (e.g. 2 months instead of 1 month 23 days)
+ # %END_DATE% - the date the punishment will end, or formatting.permanent-display.absolute for permanent punishments
+ # %TIME_REMAINING% - the time until the punishment ends, or formatting.permanent-display.relative for permanent punishments
+ # %TIME_REMAINING_SIMPLE% - the time until the punishment ends, rounded to the biggest time unit possible (e.g. 10 days instead of 9 days 13 hours)
+ # %HAS_EXPIRED% - Shows if a punishments duration has run out. Does not check if the punishment is revoked!
+ # %TRACK% - the escalation track of the punishment, for example if you are using layouts
+ # %TRACK_ID% - the ID of the escalation track
+ # %TRACK_NAMESPACE% - the namespace of a track can be used by other plugins to implement their own layouts
+ # 
+ # The following variables have limited availability:
+ # %TARGET% - the original target argument of a command. For example, in '/ipban Player1', %TARGET% is Player1
+ # %NEXTPAGE% - the number of the next page of a list like history
+ # %PREVIOUSPAGE% - the number of the previous page of a list like history
+ # 
+ # 
+ # Used for /banlist, /mutelist, /history, /warns, /blame
+lists:
+  warns:
+    permission:
+      command: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+
+    layout:
+      body: '  &f[&a%ID%&f] &e%OPERATOR% &7| &f%REASON% &7| &f%TIME_REMAINING%'
+      header: 
+        - ''
+        - '  &c&lСписок варнов игрока'
+        - ''
+        - '  &f[&aID&f] &aАдминистратор &7| &fПричина &7| &fДо снятия'
+        - ''
+      footer: 
+        - ''
+        - '  &fСтраница &a%PAGE%||ttp:&aНажмите, чтобы открыть следующую страницу||cmd:/libertybans warns %TARGET% %NEXTPAGE%'
+        - ''
+
+    perPage: 10
+    noPages: '&fУ игрока &a%TARGET% &fнет варнов'
+    maxPages: '&fСтраницы &a%PAGE%&f не существует'
+    usage: '&fИспользуйте: &a/warns игрок страница'
+
+  blame:
+    permission:
+      command: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+
+    layout:
+      body:
+        - '  &f[&a%ID%&f] &a%VICTIM% &7| %TYPE%'
+        - '  &f%REASON% &7| &f%START_DATE%'
+      header:
+        - ''
+        - '  &e&lИстория наказаний'
+        - ''
+        - '  &f[&aID&f] &aНаказуемый &7| &eВид наказания'
+        - '  &fПричина &7| &fДата принятия'
+        - ''
+      footer: 
+        - ''
+        - '  &fСтраница &a%PAGE%||ttp:&aНажмите, чтобы открыть следующую страницу||cmd:/libertybans warns %TARGET% %NEXTPAGE%'
+        - ''
+
+    perPage: 10
+    noPages: '&fАдминистратор &a%TARGET%&f ещё &aне наказывал &fигроков'
+    maxPages: '&fСтраницы &a%PAGE%&f не существует'
+    usage: '&fИспользуйте: &a/blame игрок страница'
+
+  ban-list:
+    permission:
+      command: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+
+    layout:
+      body:
+        - '  &f[&a%ID%&f] &a%VICTIM% &7| &e%OPERATOR%'
+        - '  &f%REASON% &7| &f%TIME_REMAINING%'
+      header:
+        - ''
+        - '  &c&lСписок банов'
+        - ''
+        - '  &f[&aID&f] &aНаказуемый &7| &eОбвиняющий'
+        - '  &fПричина &7| &fОсталось времени'
+        - ''
+      footer: 
+        - ''
+        - '  &fСтраница &a%PAGE%||ttp:&aНажмите, чтобы открыть следующую страницу||cmd:/libertybans banlist %NEXTPAGE%'
+        - ''
+
+    perPage: 10
+    noPages: '&fСейчас &cнет &fактивных банов'
+    maxPages: '&fСтраницы &a%PAGE%&f не существует'
+    usage: '&fИспользуйте: &a/banlist страница'
+
+  mute-list:
+    permission:
+      command: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+
+    layout:
+      body:
+        - '  &f[&a%ID%&f] &a%VICTIM% &7| &e%OPERATOR%'
+        - '  &f%REASON% &7| &f%TIME_REMAINING%'
+      header:
+        - ''
+        - '  &b&lСписок мутов'
+        - ''
+        - '  &f[&aID&f] &aНаказуемый &7| &eОбвиняющий'
+        - '  &fПричина &7| &fОсталось времени'
+        - ''
+      footer: 
+        - ''
+        - '  &fСтраница &a%PAGE%||ttp:&aНажмите, чтобы открыть следующую страницу||cmd:/libertybans mutelist %NEXTPAGE%'
+        - ''
+
+    perPage: 10
+    noPages: '&fСейчас &cнет &fактивных мутов'
+    maxPages: '&fСтраницы &a%PAGE%&f не существует'
+    usage: '&fИспользуйте: &a/mutelist страница'
+
+  history:
+    permission:
+      command: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+
+    layout:
+      body:
+        - '  &f[&a%ID%&f] %TYPE% &7| &e%OPERATOR%'
+        - '  &f%REASON% &7| &f%START_DATE%'
+      header:
+        - ''
+        - '  &a&lИстория наказаний игрока'
+        - ''
+        - '  &f[&aID&f] &aВид наказания &7| &eОбвиняющий'
+        - '  &fПричина &7| &fДата'
+        - ''
+      footer:
+        - ''
+        - '  &fСтраница &a%PAGE%||ttp:Следуюшая страница||cmd:/libertybans history %TARGET% %NEXTPAGE%'
+        - ''
+
+    perPage: 10
+    noPages: '&fУ игрока &a%TARGET%&f ещё не было наказаний! Какой хороший...'
+    maxPages: '&fСтраницы &a%PAGE%&f не существует'
+    usage: '&fИспользуйте: &a/history игрок страница'
+
+
+all:
+  prefix:
+     # The prefix to use
+    value: '&6&lLibertyBans &8»&7 '
+     # If enabled, all messages will be prefixed
+    enable: false
+
+  usage: '&cНеизвестная &fподкоманда. Может вы имели ввиду это:'
+   # If a player types /libertybans but does not have the permission 'libertybans.commands', this is the denial message
+  base-permission-message: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+   # This section is only relevant if using the server scopes feature
+  scopes:
+    invalid: '&cInvalid scope specified: &e%SCOPE_ARG%&c'
+    no-permission: '&cYou may not use scope &e%SCOPE%&c'
+    no-permission-for-default: '&cYou may not use this command without specifying a scope'
+
+   # When issuing commands, if the specified player or IP was not found, what should the error message be?
+  not-found:
+    player-or-address: '&fИгрок или IP-адрес &a%TARGET%&f не был найден'
+    uuid: '&a%TARGET%&7 - &fнеправильный формат uuid'
+    player: '&a%TARGET%&f не был найден'
+
+
+admin:
+  ellipses: '&fНачалась &aперезагрузка&f...'
+  reload-failed: '&cAn error occurred reloading the configuration. Please check the server console'
+  restarted: '&fУспешно &aперезапущено&f! Можно банить :o'
+  reloaded: '&fУспешно &aперезагружено&f! Можно банить :o'
+  importing:
+    failure: '&fИмпорт данных &aзавершился&f! Больше информации в консоли'
+    started: '&fИмпорт данных закончился &cнеудачей&f. Больше информации в консоли'
+    complete: '&fИмпорт данных &aуспешно &fзавершён'
+    usage: '&fИспользуйте: &a/libertybans import advancedban|litebans|vanilla'
+     # To prevent mistakes, it is not allowed to import multiple times at once.
+    in-progress: '&fИмпорт данных &aуже &fзапущен! Пожалуйста, дождитесь его окончания'
+
+  addons:
+    reload-addon:
+      success: '&aReloaded addon &e%ADDON%&a'
+      failed: '&cAn error occurred reloading addon configuration. Please check the server console'
+      does-not-exist: '&cThat addon does not exist'
+      usage: '&cUsage: /libertybans addon reload <addon>. To reload all addons, /libertybans reload will suffice'
+
+    listing:
+      message: '&b&lAddons Installed'
+      layout: '&7- %ADDON%'
+
+    usage: '&cUsage: /libertybans addon <list|reload>'
+
+  no-permission: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+
+ # Regards /unban, /unmute, /unwarn
+removals:
+  warns:
+    success:
+      message: '&fC игрока &a%VICTIM% &fбыло &aснято &fпредупреждение'
+      notification: '&fАдминистратор &a%UNOPERATOR%&f снял предупреждение с игрока &a%VICTIM%&f'
+
+    not-a-number: '&a%ID_ARG%&f не является номером'
+    usage: '&fИспользуйте: &a/unwarn игрок id'
+    not-found: '&fУ игрока &a%TARGET%&f нет предупреждений с id &a%ID%&f'
+    permission:
+      ip-address: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+      both: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+      uuid: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+
+
+  bans:
+    success:
+      message: '&fВы сняли бан с игрока &a%VICTIM%&f'
+      notification: '&fАдминистратор &a%UNOPERATOR%&f снял бан с игрока &a%VICTIM%&f'
+
+    usage: '&fИспользуйте: &a/unban игрок'
+    not-found: '&fИгрок &a%TARGET%&f сейчас не заблокирован'
+    permission:
+      ip-address: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+      both: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+      uuid: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+
+
+  mutes:
+    success:
+      message: '&fВы сняли мут с игрока &a%VICTIM%&f'
+      notification: '&fАдминистратор &a%UNOPERATOR%&f размутил игрока &a%VICTIM%&f'
+
+    usage: '&fИспользуйте: &a/unmute игрок'
+    not-found: '&fУ игрока &a%TARGET%&f сейчас нет мута'
+    permission:
+      ip-address: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+      both: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+      uuid: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+
+
+
+ # Configuration for the /accounthistory command
+account-history:
+   # Pertains to /accounthistory delete <user> <timestamp>
+  delete:
+    permission: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+    success: '&fЗаписанный у &a%TARGET% &fаккаунт &aуспешно &fудалён'
+    no-such-account: '&fУ &a%TARGET% &fне было записанных акаунтов в тот момент времени'
+    usage:
+      - '&fИспользуйте: &a/accounthistory delete пользователь момент времент'
+      - ''
+      - '&f&oМомент времени измеряется в &e&oсекундах&f&o. Вы можете использовать &a&o/accounthistory list &f&oдля того, чтобы посмотреть возможные значения'
+
+   # Regards /accounthistory list <user>
+  listing:
+     # The message to display before the account listing. Set to an empty string to disable
+    header:
+      - '  &b&lИзвестные аккаунты игрока'
+      - ''
+    permission: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+    none-found: '&cНе найдено &fзаписанных акаунтов'
+    usage: '&fИспользуйте: &a/accounthistory list user|ip'
+     # How a single recorded account should be displayed
+     # Available variables:
+     # %TARGET% - the original input to the command
+     # %USERNAME% - the username the player connected with
+     # %ADDRESS% - the address the player connected with
+     # %DATE_RECORDED% - the date the join was recorded
+     # %DATE_RECORDED_RAW% - the raw timestamp the join was recorded
+    layout: '  &a%USERNAME% &7(%ADDRESS%) &fна &e%DATE_RECORDED% &7(%DATE_RECORDED_RAW%)||ttp:&aНажмите, чтобы удалить аккаунт||cmd:/accounthistory delete %TARGET% %DATE_RECORDED_RAW%'
+
+  usage: '&fИспользуйте: &a/accounthistory delete|list'
+
+ # Messages for alt-checks and alt account notifications
+ # 
+ # Before configuring this section, it is necessary to look at the address-enforcement
+ # settings in the main config.yml and understand the different kinds of alt detection.
+ # There is normal and strict detection.
+alts:
+   # Regarding the /alts command
+  command:
+     # The message to display atop the alt check. Set to an empty string to disable
+    header:
+      - ''
+      - '  &a&lВозможные фейковые аккаунты игрока'
+      - ''
+      - '  &a&oБольшая вероятность &7&o- &f&oу игрока тот же адрес, что и у заблокированного игрока&f'
+      - '  &c&oНебольшая вероятность &7&o- &f&oу игроков один и тот же предыдущий адрес'
+      - ''
+    permission: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+    none-found: '&cНе найдено &fфейковых аккаунтов'
+    usage: '&fИспользуйте: &a/alts игрок'
+
+  auto-show:
+     # The message to display atop the alt check. Set to an empty string to disable
+    header:
+      - ''
+      - '  &fВозможно, &a%TARGET%&7 - &fфейковый аккаунт'
+      - ''
+      - '  &a&oБольшая вероятность &7&o- &f&oу игрока тот же адрес, что и у заблокированного игрока&f'
+      - '  &c&oНебольшая вероятность &7&o- &f&oу игроков один и тот же предыдущий адрес'
+      - ''
+  formatting:
+     # The description for an alt account detected by strict detection.
+    strict: '&cНебольшая вероятность'
+     # The description for an alt account detected by normal detection.
+    normal: '&aБольшая вероятность'
+     # In the alt-check layout, the username of the alt may be formatted depending upon whether it is banned
+     # For example, the usernames of banned alts may be colored red whereas alts not banned are green
+     # Variables: %USERNAME%
+    name-display:
+      banned: '&c%USERNAME%'
+      muted: '&6%USERNAME%'
+      not-punished: '&a%USERNAME%'
+     # How a single detected alt should be displayed
+     # Available variables:
+     # %DETECTION_KIND% - how the account was detected. Will be replaced by the normal or strict options.
+     # %ADDRESS% - the address in question which led to the detection
+     # %RELEVANT_USER% - the username of the other account, formatted according to the name-display option
+     # %RELEVANT_USERID% - the uuid of the other account
+     # %DATE_RECORDED% - the date the alt account was recorded
+    layout: '  &a%RELEVANT_USER% &7(%ADDRESS%) &fна &e%DATE_RECORDED% &7- %DETECTION_KIND%'
+
+
+ # Specific formatting options
+formatting:
+   # How should 'permanent' be displayed as a length of time?
+  permanent-display:
+     # When does a permanent punishment end?
+    absolute: 'Перманентно'
+     # What do you call a permanent duration?
+    duration: 'Перманентно'
+     # How do you describe the time remaining in a permanent punishment?
+    relative: 'Перманентно'
+
+   # Controls how the %TRACK%, %TRACK_ID%, and %TRACK_NAMESPACE% variables are displayed
+  track-display:
+     # How do you describe the lack of an escalation track with respect to its ID?
+     # The value will be displayed for the %TRACK_ID% variable
+    no-track-id: 'Нет ID'
+     # You may wish to override the track display names. Normally the track ID is displayed,
+     # which is lowercase and stored in the database. If you want a different name to be displayed
+     # for the track, write it here.
+     # 
+     # This option affects the %TRACK% variable but not the %TRACK_ID% variable.
+    track-display-names:
+      spam: 'Рассылка спама'
+      hacking: 'Взлом'
+
+     # How do you describe the lack of an escalation track with respect to its namespace?
+     # The value will be displayed for the %TRACK_NAMESPACE% variable
+    no-track-namespace: '(нет)'
+     # How do you describe the lack of an escalation track?
+     # The value will be displayed for the %TRACK% variable
+    no-track: 'Нет'
+
+   # How should the console be displayed?
+  console-display: 'Администрация проекта'
+   # Controls how victims are displayed
+  victim-display:
+     # The substitute text when an IP address cannot be viewed because the user lacks permission
+    censored-ip-address: '<censored IP address>'
+     # Whether to censor IP addresses for players without the libertybans.admin.viewips permission
+    censor-ip-addresses: false
+     # In rare cases, you may have punishments for a user whose name is unknown. This can happen because
+     # users are punished by UUID, but on some configurations it is not possible to lookup player names.
+     # When this occurs, the following text is used instead of the player name.
+    player-name-unknown: '-NameUnknown-'
+
+   # How should the global scope be displayed?
+  global-scope-display: 'Все сервера'
+   # When using /blame, how should the console be specified?
+  console-arguments:
+    - 'console'
+   # There are 2 ways to make permanent punishments. The first is to not specify a time (/ban <player> <reason>).
+   # The second is to specify a permanent amount of time (/ban <player> perm <reason>).
+   # When typing commands, what time arguments will be counted as permanent?
+  permanent-arguments:
+    - 'perm'
+    - 'permanent'
+    - 'permanently'
+   # When there is no more time remaining in a punishment (the punishment has expired),
+   # this becomes the value of the %TIME_REMAINING% variable
+  no-time-remaining-display: 'Нет'
+   # How should punishment types be displayed as a verb? Used for the %TYPE_VERB% variable.
+  punishment-type-verb-display:
+    BAN: 'Заблокирован'
+    MUTE: 'Заглушен'
+    WARN: 'Предупрежден'
+    KICK: 'Кикнут'
+
+   # How should the %HAS_EXPIRED% variable be displayed?
+  punishment-expired-display:
+     # How do you describe an expired punishment?
+    expired: 'Более неактивен'
+     # How do you describe a punishment which is not expired?
+    not-expired: 'Активен'
+
+   # How should punishment types be displayed?
+  punishment-type-display:
+    BAN: '§cБан'
+    MUTE: '§6Мут'
+    WARN: '§bПредупреждение'
+    KICK: '§eКик'
+
+
+misc:
+   # Concerns formatting of relative times and durations
+  time:
+    grammar:
+       # What should come before the last fragment? Set to empty text to disable
+      and: 'и '
+       # If enabled, places commas after each time fragment, except the last one
+      comma: true
+
+     # Times are formatted to seconds accuracy, but you may not want to display seconds 
+     # for most times. However, for very small durations, you need to display a value in seconds.
+     # If you are using SECONDS in the above section, this value is meaningless.
+    fallback-seconds: '%VALUE% сек.'
+    fragments:
+      YEARS: '%VALUE% лет'
+      DAYS: '%VALUE% д.'
+      HOURS: '%VALUE% ч.'
+      WEEKS: '%VALUE% н.'
+      MONTHS: '%VALUE% мес.'
+      MINUTES: '%VALUE% мин.'
+
+
+  unknown-error: '&cПроизошла неизвестная ошибка'
+   # Only applicable if synchronous enforcement strategy is DENY in the main config
+  sync-chat-denial-message: '&fСинхронный чат &cотключён&f. Попробуйте еще раз позже'
+
+ # 
+ # Messages regarding /ban, /mute, /warn, /kick
+ # Includes punishment layouts
+ # 
+ # 
+additions:
+  kicks:
+    success:
+      message: '&fИгрок &a%VICTIM%&f был кикнут по причине: &a%REASON%&f'
+      notification: '&fАдминистратор &a%OPERATOR%&f кикнул игрока &a%VICTIM%&f по причине: &a%REASON%&7'
+
+    exempted: '&fИгрок &a%TARGET%&f не может быть кикнут!'
+    must-be-online: '&fИгрок &a%TARGET%&f должен быть онлайн!'
+    usage: '&fИспользуйте: &a/kick игрок причина'
+    layout:
+      - '&c&lВы были кикнуты с проекта!'
+      - ''
+      - '&fКик выдан: &a%OPERATOR%'
+      - ''
+      - '&fПо причине:'
+      - '&a%REASON%'
+      - ''
+      - '&f&oЕсли кик был &c&oнеправомерным&f&o,'
+      - '&f&oобратитесь на форум &7&o(forum.mcsnapix.ru) &f&oили в'
+      - '&f&oличные сообщения сообщества &7&o(vk.com/mcsnapix)'
+    permission:
+      ip-address: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+      both: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+      uuid: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+
+
+  warns:
+    success:
+      message: '&fИгрок &a%VICTIM%&f получил варн на &a%DURATION%&f по причине: &a%REASON%&a'
+      notification: '&fАдминистратор &a%OPERATOR%&f выдал варн игроку &a%VICTIM%&f на &a%DURATION%&f по причине: &a%REASON%&7'
+
+    exempted: '&fИгроку &a%TARGET%&f не может быть выдан варн'
+    usage: '&fИспользуйте: &a/warn игрок время причина'
+    layout:
+      - ''
+      - '  &e&lВы получили варн!'
+      - ''
+      - '  &fВарн выдан: &a%OPERATOR%'
+      - '  &fДлительность: &a%TIME_REMAINING%&f'
+      - ''
+      - '  &fПричина:'
+      - '  &a%REASON%'
+      - ''
+      - '  &f&oЕсли варн был &c&oнеправомерным&f&o,'
+      - '  &f&oобратитесь на форум &7&o(forum.mcsnapix.ru) &f&oили в'
+      - '  &f&oличные сообщения сообщества &7&o(vk.com/mcsnapix)'
+      - ''
+    permission:
+      duration: '&fВам &cнельзя &fварнить игроков на &a%DURATION%&f'
+      ip-address: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+      both: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+      uuid: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+
+
+  bans:
+    conflicting: '&fИгрок &a%TARGET%&f уже заблокирован!'
+    success:
+      message: '&fИгрок &a%VICTIM%&f заблокирован на &a%DURATION%&f по причине: &a%REASON%&a'
+      notification: '&fАдминистратор &a%OPERATOR%&f заблокировал игрока &a%VICTIM%&f на &a%DURATION%&f по причине: &a%REASON%&7'
+
+    exempted: '&fИгрок &a%TARGET%&f не может быть забанен!'
+    usage: '&fИспользуйте: &a/ban игрок длительность причина'
+    layout:
+      - '&c&lВы были заблокированы на проекте!'
+      - ''
+      - '&fВас забанил: &a%OPERATOR%'
+      - '&fДлительность бана: &a%TIME_REMAINING%&f'
+      - ''
+      - '&fПричина:'
+      - '&a%REASON%'
+      - ''
+      - '&f&oЕсли бан был &c&oнеправомерным&f&o,'
+      - '&f&oобратитесь на форум &7&o(forum.mcsnapix.ru) &f&oили в'
+      - '&f&oличные сообщения сообщества &7&o(vk.com/mcsnapix)'
+    permission:
+      duration: '&fВам &cнельзя &fбанить на &a%DURATION%&f'
+      ip-address: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+      both: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+      uuid: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+
+
+  mutes:
+    conflicting: '&fИгрок &a%TARGET%&f уже заглушён!'
+    success:
+      message: '&fИгрок &a%VICTIM%&f заглушён на &a%DURATION%&f по причине: &a%REASON%'
+      notification: '&fАдминистратор &a%OPERATOR%&f заглушил игрока &a%VICTIM%&f на &a%DURATION%&f по причине: &a%REASON%'
+
+    exempted: '&fИгрок &a%TARGET%&f не может быть заглушён!'
+    usage: '&fИспользуйте: &a/mute &e<игрок> [длительность] <причина>&c'
+    layout:
+      - ''
+      - '  &c&lВы получили мут!'
+      - ''
+      - '  &fМут выдан: &a%OPERATOR%'
+      - '  &fДлительность: &a%TIME_REMAINING%&f'
+      - ''
+      - '  &fПричина:'
+      - '  &a%REASON%'
+      - ''
+      - '  &f&oЕсли мут был &c&oнеправомерным&f&o,'
+      - '  &f&oобратитесь на форум &7&o(forum.mcsnapix.ru) &f&oили в'
+      - '  &f&oличные сообщения сообщества &7&o(vk.com/mcsnapix)'
+      - ''
+    permission:
+      duration: '&fВам &cнельзя &fмутить на &a%DURATION%&f'
+      ip-address: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+      both: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+      uuid: '&fУ вас &cнет &fразрешения, чтобы сделать это!'
+
+
+

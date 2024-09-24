@@ -1,0 +1,118 @@
+settings:
+  name: Antiquity
+  displayname: Antiquity
+  min_players: 6
+  group: solo
+  island_radius: 25
+  respawn_protection: 5
+  max_build_height: 90
+  border: 150
+  locations:
+    waiting: wait;1000.5;43.8125;0.5;0.0;0.0
+    spectator: Antiquity;0.5;120.0;0.5;0.0;0.0
+    generator:
+      diamond:
+      - Antiquity;-57.0;69.0;0.0;0.0;0.0
+      - Antiquity;0.0;69.0;-57.0;0.0;0.0
+      - Antiquity;57.0;69.0;0.0;0.0;0.0
+      - Antiquity;0.0;69.0;57.0;0.0;0.0
+      coal: []
+      emerald:
+      - Antiquity;-10.0;69.0;0.0;0.0;0.0
+      - Antiquity;0.0;69.0;-10.0;0.0;0.0
+      - Antiquity;10.0;69.0;0.0;0.0;0.0
+      - Antiquity;0.0;69.0;10.0;0.0;0.0
+votes:
+  enabled: false
+  shop: default
+  health: default
+  time: day
+team_settings:
+  YELLOW:
+    identifier: 4
+    respawn: Antiquity;-29.5;74.0;-56.5;0.0;-90.0
+    upgrades: Antiquity;-36.5;74.0;-59.5;0.0;0.0
+    shop: Antiquity;-36.5;74.0;-53.5;0.0;179.85
+    chest: Antiquity;-42.0;74.0;-56.0;0.0;0.0
+    generator: Antiquity;-40.0;73.5;-57.0;0.0;0.0
+    topper: Antiquity;-29.5;90.0;-56.5;0.0;-90.0
+    bed_locations:
+    - Antiquity;-22.0;71.0;-57.0;0.0;0.0
+    - Antiquity;-21.0;71.0;-57.0;0.0;0.0
+  AQUA:
+    identifier: 5
+    respawn: Antiquity;57.5;74.0;30.5;0.0;180.0
+    upgrades: Antiquity;54.5;74.0;37.5;0.0;-90.0
+    shop: Antiquity;60.5;74.0;37.5;0.0;90.0
+    chest: Antiquity;58.0;74.0;42.0;0.0;0.0
+    generator: Antiquity;57.0;73.5;40.0;0.0;0.0
+    topper: Antiquity;57.5;90.0;30.5;0.0;180.0
+    bed_locations:
+    - Antiquity;57.0;71.0;22.0;0.0;0.0
+    - Antiquity;57.0;71.0;21.0;0.0;0.0
+  RED:
+    identifier: 1
+    respawn: Antiquity;-56.5;74.0;30.5;0.0;180.0
+    upgrades: Antiquity;-59.5;74.0;37.5;0.0;-90.0
+    shop: Antiquity;-53.5;74.0;37.5;0.0;90.0
+    chest: Antiquity;-56.0;74.0;42.0;0.0;0.0
+    generator: Antiquity;-57.0;73.5;40.0;0.0;0.0
+    topper: Antiquity;-56.5;90.0;30.5;0.0;180.0
+    bed_locations:
+    - Antiquity;-57.0;71.0;22.0;0.0;0.0
+    - Antiquity;-57.0;71.0;21.0;0.0;0.0
+  BLUE:
+    identifier: 2
+    respawn: Antiquity;-56.5;74.0;-29.5;0.0;0.0
+    upgrades: Antiquity;-53.5;74.0;-36.5;0.0;90.0
+    shop: Antiquity;-59.5;74.0;-36.5;0.0;-90.0
+    chest: Antiquity;-58.0;74.0;-42.0;0.0;0.0
+    generator: Antiquity;-57.0;73.5;-40.0;0.0;0.0
+    topper: Antiquity;-56.5;90.0;-29.5;0.0;0.0
+    bed_locations:
+    - Antiquity;-57.0;71.0;-22.0;0.0;0.0
+    - Antiquity;-57.0;71.0;-21.0;0.0;0.0
+  PINK:
+    identifier: 7
+    respawn: Antiquity;-29.5;74.0;57.5;0.0;-90.0
+    upgrades: Antiquity;-36.5;74.0;54.5;0.0;0.0
+    shop: Antiquity;-36.5;74.0;60.5;0.0;180.0
+    chest: Antiquity;-42.0;74.0;58.0;0.0;0.0
+    generator: Antiquity;-40.0;73.5;57.0;0.0;0.0
+    topper: Antiquity;-29.5;90.0;57.5;0.0;-90.0
+    bed_locations:
+    - Antiquity;-22.0;71.0;57.0;0.0;0.0
+    - Antiquity;-21.0;71.0;57.0;0.0;0.0
+  GRAY:
+    identifier: 8
+    respawn: Antiquity;30.5;74.0;57.5;0.0;90.0
+    upgrades: Antiquity;37.5;74.0;60.5;0.0;180.0
+    shop: Antiquity;37.5;74.0;54.5;0.0;0.0
+    chest: Antiquity;42.0;74.0;56.0;0.0;0.0
+    generator: Antiquity;40.0;73.5;57.0;0.0;0.0
+    topper: Antiquity;30.5;90.0;57.5;0.0;90.0
+    bed_locations:
+    - Antiquity;22.0;71.0;57.0;0.0;0.0
+    - Antiquity;21.0;71.0;57.0;0.0;0.0
+  GREEN:
+    identifier: 3
+    respawn: Antiquity;30.5;74.0;-56.5;0.0;90.0
+    upgrades: Antiquity;37.5;74.0;-53.5;0.0;180.0
+    shop: Antiquity;37.5;74.0;-59.5;0.0;0.0
+    chest: Antiquity;42.0;74.0;-58.0;0.0;0.0
+    generator: Antiquity;40.0;73.5;-57.0;0.0;0.0
+    topper: Antiquity;30.5;90.0;-56.5;0.0;90.0
+    bed_locations:
+    - Antiquity;22.0;71.0;-57.0;0.0;0.0
+    - Antiquity;21.0;71.0;-57.0;0.0;0.0
+  WHITE:
+    identifier: 6
+    respawn: Antiquity;57.5;74.0;-29.5;0.0;0.0
+    upgrades: Antiquity;60.5;74.0;-36.5;0.0;90.0
+    shop: Antiquity;54.5;74.0;-36.5;0.0;-90.0
+    chest: Antiquity;56.0;74.0;-42.0;0.0;0.0
+    generator: Antiquity;57.0;73.5;-40.0;0.0;0.0
+    topper: Antiquity;57.5;90.0;-29.5;0.0;0.0
+    bed_locations:
+    - Antiquity;57.0;71.0;-22.0;0.0;0.0
+    - Antiquity;57.0;71.0;-21.0;0.0;0.0

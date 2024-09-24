@@ -1,0 +1,60 @@
+# 
+# Don't edit it. But who's stopping you? It's your server!
+# Really, don't edit ;p
+# You edited it, huh? Next time hurt yourself!
+instances:
+  Condo:
+    isdone: true
+    lobbylocation: Condo,34.5,98.0,0.5,89.992584,0.0
+    startlocation: Condo,34.5,98.0,0.5,89.992584,0.0
+    spectatorlocation: Condo,0.5,110.0,0.5,269.99194,0.0
+    midlocation: Condo,0.5,93.0,0.5,264.59204,0.0
+    arenalocation:
+      '1': Condo,-46.0,80.0,12.0,0.0,0.0
+      '2': Condo,46.0,100.0,-12.0,0.0,0.0
+    endlocation: Condo,34.5,98.0,0.5,89.992584,0.0
+    minimumplayers: 2
+    maximumplayers: 2
+    maximumsize: 1
+    modevalue: 5
+    resetblocks: 0
+    mode: points
+    bridges:
+      '1':
+        '1': Condo,-20.0,84.0,0.0,0.0,0.0
+        '2': Condo,20.0,92.0,0.0,0.0,0.0
+    bases:
+      '0':
+        color: RED
+        baselocation:
+          '1': Condo,23.0,80.0,12.0,0.0,0.0
+          '2': Condo,46.0,100.0,-12.0,0.0,0.0
+        portallocation:
+          '1': Condo,40.0,90.0,2.0,0.0,0.0
+          '2': Condo,36.0,90.0,-2.0,0.0,0.0
+        cagelocation:
+          '1': Condo,37.0,101.0,-4.0,0.0,0.0
+          '2': Condo,31.0,106.0,4.0,0.0,0.0
+        spawnpoint: Condo,34.5,103.0,0.5,89.992035,0.0
+        respawnpoint: Condo,34.5,98.0,0.5,89.99214,0.0
+        portalhologram: Condo,38.0,92.0,0.0,0.0,0.0
+        isdone: true
+      '1':
+        color: BLUE
+        baselocation:
+          '1': Condo,-46.0,80.0,12.0,0.0,0.0
+          '2': Condo,-23.0,100.0,-12.0,0.0,0.0
+        portallocation:
+          '1': Condo,-40.0,90.0,-2.0,0.0,0.0
+          '2': Condo,-36.0,90.0,2.0,0.0,0.0
+        cagelocation:
+          '1': Condo,-37.0,101.0,4.0,0.0,0.0
+          '2': Condo,-31.0,106.0,-4.0,0.0,0.0
+        spawnpoint: Condo,-33.5,103.0,0.5,269.99182,0.0
+        respawnpoint: Condo,-33.5,98.0,0.5,269.99173,0.0
+        portalhologram: Condo,-38.0,92.0,0.0,0.0,0.0
+        isdone: true
+    mapname: Condo
+Do-Not-Edit:
+  File-Version: 0
+  Core-Version: 1

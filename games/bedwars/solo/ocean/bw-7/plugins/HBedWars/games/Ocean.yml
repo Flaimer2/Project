@@ -1,0 +1,118 @@
+settings:
+  name: Ocean
+  displayname: Ocean
+  min_players: 6
+  group: solo
+  island_radius: 25
+  respawn_protection: 5
+  max_build_height: 90
+  border: 150
+  locations:
+    waiting: wait;1000.5;43.8125;0.5;0.0;0.0
+    spectator: Ocean;0.5;120.0;0.5;0.0;0.0
+    generator:
+      diamond:
+      - Ocean;2.0;68.0;-56.0;0.0;0.0
+      - Ocean;56.0;68.0;2.0;0.0;0.0
+      - Ocean;-2.0;68.0;56.0;0.0;0.0
+      - Ocean;-56.0;68.0;-2.0;0.0;0.0
+      coal: []
+      emerald:
+      - Ocean;-21.0;69.0;0.0;0.0;0.0
+      - Ocean;0.0;69.0;-21.0;0.0;0.0
+      - Ocean;21.0;69.0;0.0;0.0;0.0
+      - Ocean;0.0;69.0;21.0;0.0;0.0
+votes:
+  enabled: false
+  shop: default
+  health: default
+  time: day
+team_settings:
+  RED:
+    identifier: 1
+    respawn: Ocean;-69.5;70.0;-37.5;-0.15;0.0
+    upgrades: Ocean;-66.5;70.0;-36.5;0.0;90.0
+    shop: Ocean;-66.5;70.0;-38.5;0.0;90.0
+    chest: Ocean;-73.0;70.0;-44.0;0.0;0.0
+    generator: Ocean;-70.0;69.0;-43.0;0.0;0.0
+    topper: Ocean;-69.5;90.0;-37.5;0.0;0.0
+    bed_locations:
+    - Ocean;-70.0;69.0;-29.0;0.0;0.0
+    - Ocean;-70.0;69.0;-28.0;0.0;0.0
+  YELLOW:
+    identifier: 4
+    respawn: Ocean;36.5;70.0;70.5;0.0;90.0
+    upgrades: Ocean;35.5;70.0;67.5;0.15;0.0
+    shop: Ocean;37.5;70.0;67.5;0.15;0.0
+    chest: Ocean;42.0;70.0;73.0;0.0;0.0
+    generator: Ocean;41.0;69.0;70.0;0.0;0.0
+    topper: Ocean;36.5;90.0;70.5;0.0;90.0
+    bed_locations:
+    - Ocean;27.0;69.0;70.0;0.0;0.0
+    - Ocean;26.0;69.0;70.0;0.0;0.0
+  GRAY:
+    identifier: 8
+    respawn: Ocean;-35.5;70.0;-69.5;0.0;-90.0
+    upgrades: Ocean;-34.5;70.0;-66.5;0.0;180.0
+    shop: Ocean;-36.5;70.0;-66.5;0.0;180.0
+    chest: Ocean;-42.0;70.0;-73.0;0.0;0.0
+    generator: Ocean;-41.0;69.0;-70.0;0.0;0.0
+    topper: Ocean;-35.5;90.0;-69.5;0.0;-90.0
+    bed_locations:
+    - Ocean;-27.0;69.0;-70.0;0.0;0.0
+    - Ocean;-26.0;69.0;-70.0;0.0;0.0
+  AQUA:
+    identifier: 5
+    respawn: Ocean;70.5;70.0;38.5;0.0;180.0
+    upgrades: Ocean;67.5;70.0;37.5;0.0;-89.85
+    shop: Ocean;67.5;70.0;39.5;0.0;-90.0
+    chest: Ocean;73.0;70.0;44.0;0.0;0.0
+    generator: Ocean;70.0;69.0;43.0;0.0;0.0
+    topper: Ocean;70.5;90.0;38.5;0.0;180.0
+    bed_locations:
+    - Ocean;70.0;69.0;29.0;0.0;0.0
+    - Ocean;70.0;69.0;28.0;0.0;0.0
+  BLUE:
+    identifier: 2
+    respawn: Ocean;-69.5;70.0;36.5;0.15;180.0
+    upgrades: Ocean;-66.5;70.0;35.5;0.0;90.0
+    shop: Ocean;-66.5;70.0;37.5;0.0;90.0
+    chest: Ocean;-73.0;70.0;42.0;0.0;0.0
+    generator: Ocean;-70.0;69.0;41.0;0.0;0.0
+    topper: Ocean;-69.5;90.0;36.5;6.8999786;179.55002
+    bed_locations:
+    - Ocean;-70.0;69.0;27.0;0.0;0.0
+    - Ocean;-70.0;69.0;26.0;0.0;0.0
+  GREEN:
+    identifier: 3
+    respawn: Ocean;-37.5;70.0;70.5;0.0;-90.0
+    upgrades: Ocean;-36.5;70.0;67.5;0.0;0.0
+    shop: Ocean;-38.5;70.0;67.5;0.0;0.0
+    chest: Ocean;-44.0;70.0;73.0;0.0;0.0
+    generator: Ocean;-43.0;69.0;70.0;0.0;0.0
+    topper: Ocean;-37.5;90.0;70.5;0.0;-90.0
+    bed_locations:
+    - Ocean;-29.0;69.0;70.0;0.0;0.0
+    - Ocean;-28.0;69.0;70.0;0.0;0.0
+  WHITE:
+    identifier: 6
+    respawn: Ocean;70.5;70.0;-35.5;0.0;0.0
+    upgrades: Ocean;67.5;70.0;-34.5;0.0;-90.0
+    shop: Ocean;67.5;70.0;-36.5;0.0;-89.85
+    chest: Ocean;73.0;70.0;-42.0;0.0;0.0
+    generator: Ocean;70.0;69.0;-41.0;0.0;0.0
+    topper: Ocean;70.5;90.0;-35.5;0.0;0.0
+    bed_locations:
+    - Ocean;70.0;69.0;-27.0;0.0;0.0
+    - Ocean;70.0;69.0;-26.0;0.0;0.0
+  PINK:
+    identifier: 7
+    respawn: Ocean;38.5;70.0;-69.5;0.0;90.0
+    upgrades: Ocean;37.5;70.0;-66.5;0.0;180.0
+    shop: Ocean;39.5;70.0;-66.5;0.0;180.0
+    chest: Ocean;44.0;70.0;-73.0;0.0;0.0
+    generator: Ocean;43.0;69.0;-70.0;0.0;0.0
+    topper: Ocean;38.5;90.0;-69.5;0.15;90.0
+    bed_locations:
+    - Ocean;29.0;69.0;-70.0;0.0;0.0
+    - Ocean;28.0;69.0;-70.0;0.0;0.0

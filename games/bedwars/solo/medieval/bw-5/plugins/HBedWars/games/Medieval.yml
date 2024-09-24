@@ -1,0 +1,118 @@
+settings:
+  name: Medieval
+  displayname: Medieval
+  min_players: 6
+  group: solo
+  island_radius: 25
+  respawn_protection: 5
+  max_build_height: 90
+  border: 150
+  locations:
+    waiting: wait;1000.5;43.8125;0.5;0.0;0.0
+    spectator: Medieval;0.5;110.0;0.5;0.15;0.0
+    generator:
+      diamond:
+      - Medieval;60.0;72.0;0.0;0.0;0.0
+      - Medieval;0.0;72.0;60.0;0.0;0.0
+      - Medieval;-60.0;72.0;0.0;0.0;0.0
+      - Medieval;0.0;72.0;-60.0;0.0;0.0
+      coal: []
+      emerald:
+      - Medieval;0.0;63.0;-12.0;0.0;0.0
+      - Medieval;12.0;63.0;0.0;0.0;0.0
+      - Medieval;0.0;63.0;12.0;0.0;0.0
+      - Medieval;-12.0;63.0;0.0;0.0;0.0
+votes:
+  enabled: false
+  shop: default
+  health: default
+  time: day
+team_settings:
+  RED:
+    identifier: 1
+    respawn: Medieval;38.5;78.0;75.5;0.0;90.0
+    upgrades: Medieval;39.0;78.0;71.5;-0.45000002;0.0
+    shop: Medieval;39.0;78.0;79.5;0.0;180.0
+    chest: Medieval;41.0;78.0;77.0;0.0;0.0
+    generator: Medieval;41.0;77.0;75.0;0.0;0.0
+    topper: Medieval;38.5;130.0;75.5;0.0;90.0
+    bed_locations:
+    - Medieval;31.0;78.0;65.0;0.0;0.0
+    - Medieval;31.0;78.0;64.0;0.0;0.0
+  YELLOW:
+    identifier: 4
+    respawn: Medieval;-74.5;78.0;38.5;0.0;180.0
+    upgrades: Medieval;-70.5;78.0;39.0;0.0;90.0
+    shop: Medieval;-78.5;78.0;39.0;0.0;-90.0
+    chest: Medieval;-77.0;78.0;41.0;0.0;0.0
+    generator: Medieval;-75.0;77.0;41.0;0.0;0.0
+    topper: Medieval;-74.5;130.0;38.5;0.0;180.0
+    bed_locations:
+    - Medieval;-65.0;78.0;31.0;0.0;0.0
+    - Medieval;-64.0;78.0;31.0;0.0;0.0
+  AQUA:
+    identifier: 5
+    respawn: Medieval;38.5;78.0;-74.5;0.0;90.0
+    upgrades: Medieval;39.0;78.0;-70.5;0.15;180.0
+    shop: Medieval;39.0;78.0;-78.5;0.0;-0.3
+    chest: Medieval;41.0;78.0;-77.0;0.0;0.0
+    generator: Medieval;41.0;77.0;-75.0;0.0;0.0
+    topper: Medieval;38.5;130.0;-74.5;0.0;90.0
+    bed_locations:
+    - Medieval;31.0;78.0;-65.0;0.0;0.0
+    - Medieval;31.0;78.0;-64.0;0.0;0.0
+  GRAY:
+    identifier: 8
+    respawn: Medieval;75.5;78.0;-37.5;0.0;0.0
+    upgrades: Medieval;71.5;78.0;-38.0;0.0;-90.0
+    shop: Medieval;79.5;78.0;-38.0;0.0;90.0
+    chest: Medieval;77.0;78.0;-41.0;0.0;0.0
+    generator: Medieval;75.0;77.0;-41.0;0.0;0.0
+    topper: Medieval;75.5;130.0;-37.5;0.0;0.0
+    bed_locations:
+    - Medieval;65.0;78.0;-31.0;0.0;0.0
+    - Medieval;64.0;78.0;-31.0;0.0;0.0
+  BLUE:
+    identifier: 2
+    respawn: Medieval;-37.5;78.0;75.5;0.0;-90.0
+    upgrades: Medieval;-38.0;78.0;71.5;0.0;0.0
+    shop: Medieval;-38.0;78.0;79.5;0.0;180.0
+    chest: Medieval;-41.0;78.0;77.0;0.0;0.0
+    generator: Medieval;-41.0;77.0;75.0;0.0;0.0
+    topper: Medieval;-37.5;130.0;75.5;0.0;-90.0
+    bed_locations:
+    - Medieval;-31.0;78.0;65.0;0.0;0.0
+    - Medieval;-31.0;78.0;64.0;0.0;0.0
+  WHITE:
+    identifier: 6
+    respawn: Medieval;-37.5;78.0;-74.5;0.0;-90.0
+    upgrades: Medieval;-38.0;78.0;-78.5;0.0;0.0
+    shop: Medieval;-38.0;78.0;-70.5;0.0;180.0
+    chest: Medieval;-41.0;78.0;-77.0;0.0;0.0
+    generator: Medieval;-41.0;77.0;-75.0;0.0;0.0
+    topper: Medieval;-37.5;130.0;-74.5;0.0;-90.0
+    bed_locations:
+    - Medieval;-31.0;78.0;-65.0;0.0;0.0
+    - Medieval;-31.0;78.0;-64.0;0.0;0.0
+  GREEN:
+    identifier: 3
+    respawn: Medieval;-74.5;78.0;-37.5;0.0;0.0
+    upgrades: Medieval;-70.5;78.0;-38.0;0.0;90.0
+    shop: Medieval;-78.5;78.0;-38.0;0.0;-90.0
+    chest: Medieval;-77.0;78.0;-41.0;0.0;0.0
+    generator: Medieval;-75.0;77.0;-41.0;0.0;0.0
+    topper: Medieval;-74.5;130.0;-37.5;0.0;0.0
+    bed_locations:
+    - Medieval;-65.0;78.0;-31.0;0.0;0.0
+    - Medieval;-64.0;78.0;-31.0;0.0;0.0
+  PINK:
+    identifier: 7
+    respawn: Medieval;75.5;78.0;38.5;0.0;180.0
+    upgrades: Medieval;71.5;78.0;39.0;0.0;-90.0
+    shop: Medieval;79.5;78.0;39.0;0.0;90.0
+    chest: Medieval;77.0;78.0;41.0;0.0;0.0
+    generator: Medieval;75.0;77.0;41.0;0.0;0.0
+    topper: Medieval;75.5;130.0;38.5;0.0;180.0
+    bed_locations:
+    - Medieval;65.0;78.0;31.0;0.0;0.0
+    - Medieval;64.0;78.0;31.0;0.0;0.0

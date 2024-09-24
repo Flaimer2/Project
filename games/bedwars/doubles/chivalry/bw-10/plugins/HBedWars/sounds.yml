@@ -1,0 +1,57 @@
+sounds_settings:
+  join:
+    sound: CHICKEN_EGG_POP
+    volume: 1.0
+    pitch: 1.0
+  leave:
+    sound: SLIME_ATTACK
+    volume: 1.0
+    pitch: 1.0
+  game_full:
+    sound: ANVIL_USE
+    volume: 1.0
+    pitch: 1.0
+  game_starting:
+    sound: SUCCESSFUL_HIT
+    volume: 1.0
+    pitch: 1.0
+  force_start:
+    sound: ANVIL_USE
+    volume: 1.0
+    pitch: 1.0
+  cancel_start:
+    sound: NOTE_BASS
+    volume: 1.0
+    pitch: 1.0
+  generator_pickup:
+    sound: ITEM_PICKUP
+    volume: 1.0
+    pitch: 1.0
+  put_spray:
+    sound: ANVIL_USE
+    volume: 1.0
+    pitch: 0.1
+  break_bed:
+    sound: ENDERDRAGON_GROWL
+    volume: 1.0
+    pitch: 1.0
+  shop_bought:
+    sound: VILLAGER_YES
+    volume: 1.0
+    pitch: 1.0
+  shop_insufficient:
+    sound: VILLAGER_NO
+    volume: 1.0
+    pitch: 1.0
+  sponge_destroy:
+    sound: SPLASH
+    volume: 1.0
+    pitch: 1.0
+  sponge_animation:
+    sound: WOOD_CLICK
+    volume: 1.0
+    pitch: 17.0
+  leaderboard:
+    sound: CLICK
+    volume: 1.0
+    pitch: 1.0

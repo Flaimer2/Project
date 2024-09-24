@@ -1,0 +1,42 @@
+trails:
+  '1':
+    # To identify the cosmetic.
+    id: hearts
+    # The particle.
+    particle: HEART
+    # If permission is needed to use.
+    permission: false
+    # The price to buy.
+    price: 200
+    # NORMAL | SPIRAL | PYRAMID | HELIX
+    type: NORMAL
+  '2':
+    id: flame
+    particle: FLAME
+    permission: false
+    price: 400
+    type: SPIRAL
+  '3':
+    id: water_splash
+    particle: WATER_SPLASH
+    permission: false
+    price: 600
+    type: SPIRAL
+  '4':
+    id: drip_lava
+    particle: DRIP_LAVA
+    permission: true
+    price: 800
+    type: PYRAMID
+  '5':
+    id: redstone
+    particle: REDSTONE
+    permission: true
+    price: 1000
+    type: HELIX
+  '6':
+    id: note
+    particle: NOTE
+    permission: true
+    price: 1200
+    type: HELIX

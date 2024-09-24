@@ -1,0 +1,78 @@
+skins:
+  '1':
+    id: spruce_plank
+    price: 1000
+    permission: false
+    material: 5
+    data: 1
+    replace: 5
+  '2':
+    id: birch_plank
+    price: 2000
+    permission: false
+    material: 5
+    data: 2
+    replace: 5
+  '3':
+    id: jungle_plank
+    price: 3000
+    permission: false
+    material: 5
+    data: 3
+    replace: 5
+  '4':
+    id: acacia_plank
+    price: 4000
+    permission: false
+    material: 5
+    data: 4
+    replace: 5
+  '5':
+    id: dark_oak_plank
+    price: 5000
+    permission: false
+    material: 5
+    data: 5
+    replace: 5
+  '6':
+    id: oak_log
+    price: 6000
+    permission: false
+    material: 17
+    data: 0
+    replace: 5
+  '7':
+    id: spruce_log
+    price: 7000
+    permission: true
+    material: 17
+    data: 1
+    replace: 5
+  '8':
+    id: birch_log
+    price: 8000
+    permission: true
+    material: 17
+    data: 2
+    replace: 5
+  '9':
+    id: jungle_log
+    price: 9000
+    permission: true
+    material: 17
+    data: 3
+    replace: 5
+  '10':
+    id: acacia_log
+    price: 10000
+    permission: true
+    material: 162
+    data: 0
+    replace: 5
+  '11':
+    id: dark_oak_log
+    price: 11000
+    permission: true
+    material: 162
+    data: 1
+    replace: 5

@@ -1,0 +1,74 @@
+settings:
+  name: Township
+  displayname: Township
+  min_players: 12
+  group: quartets
+  island_radius: 25
+  respawn_protection: 5
+  max_build_height: 90
+  border: 150
+  locations:
+    waiting: wait;1000.5;43.8125;0.5;0.0;0.0
+    spectator: Township;0.5;100.0;0.5;0.0;0.0
+    generator:
+      diamond:
+      - Township;-53.0;69.0;-53.0;0.0;0.0
+      - Township;53.0;69.0;-53.0;0.0;0.0
+      - Township;53.0;69.0;53.0;0.0;0.0
+      - Township;-53.0;69.0;53.0;0.0;0.0
+      coal: []
+      emerald:
+      - Township;-19.0;69.0;0.0;0.0;0.0
+      - Township;0.0;69.0;-19.0;0.0;0.0
+      - Township;19.0;69.0;0.0;0.0;0.0
+      - Township;0.0;69.0;19.0;0.0;0.0
+votes:
+  enabled: false
+  shop: default
+  health: default
+  time: day
+team_settings:
+  RED:
+    identifier: 1
+    respawn: Township;0.5;70.0;91.5;0.0;180.0
+    upgrades: Township;5.5;70.5;92.5;0.0;180.0
+    shop: Township;-4.5;70.5;92.5;0.0;180.0
+    chest: Township;-3.0;70.0;92.0;0.0;0.0
+    generator: Township;0.0;69.0;102.0;0.0;0.0
+    topper: Township;0.5;120.0;91.5;0.15;180.0
+    bed_locations:
+    - Township;0.0;70.0;87.0;0.0;0.0
+    - Township;0.0;70.0;86.0;0.0;0.0
+  BLUE:
+    identifier: 2
+    respawn: Township;0.5;70.0;-90.5;0.0;0.0
+    upgrades: Township;-4.5;70.5;-91.5;0.0;0.0
+    shop: Township;5.5;70.5;-91.5;0.0;0.0
+    chest: Township;3.0;70.0;-92.0;0.0;0.0
+    generator: Township;0.0;69.0;-102.0;0.0;0.0
+    topper: Township;0.5;120.0;-90.5;0.0;-0.15
+    bed_locations:
+    - Township;0.0;70.0;-87.0;0.0;0.0
+    - Township;0.0;70.0;-86.0;0.0;0.0
+  GREEN:
+    identifier: 3
+    respawn: Township;91.5;70.0;0.5;0.0;90.0
+    upgrades: Township;92.5;70.5;-4.5;0.0;90.0
+    shop: Township;92.5;70.5;5.5;0.0;90.0
+    chest: Township;92.0;70.0;3.0;0.0;0.0
+    generator: Township;102.0;69.0;0.0;0.0;0.0
+    topper: Township;91.5;120.0;0.5;0.0;90.0
+    bed_locations:
+    - Township;87.0;70.0;0.0;0.0;0.0
+    - Township;86.0;70.0;0.0;0.0;0.0
+  YELLOW:
+    identifier: 4
+    respawn: Township;-90.5;70.0;0.5;0.0;-90.0
+    upgrades: Township;-91.5;70.5;5.5;0.15;-90.0
+    shop: Township;-91.5;70.5;-4.5;0.0;-90.0
+    chest: Township;-92.0;70.0;-3.0;0.0;0.0
+    generator: Township;-102.0;69.0;0.0;0.0;0.0
+    topper: Township;-90.5;120.0;0.5;0.0;-90.0
+    bed_locations:
+    - Township;-87.0;70.0;0.0;0.0;0.0
+    - Township;-86.0;70.0;0.0;0.0;0.0

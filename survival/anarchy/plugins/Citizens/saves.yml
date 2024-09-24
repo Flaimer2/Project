@@ -49,7 +49,7 @@ npc:
             globalcooldown: -1
             n: -1
             delay: -1
-    traitnames: spawned,inventory,type,commandtrait,age,skintrait,hologramtrait,owner,scoreboardtrait,mounttrait,location
+    traitnames: owner,location,hologramtrait,mounttrait,inventory,skintrait,age,spawned,scoreboardtrait,type,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -105,7 +105,7 @@ npc:
             globalcooldown: 0
             n: -1
             delay: 0
-    traitnames: spawned,inventory,type,commandtrait,age,skintrait,owner,hologramtrait,scoreboardtrait,mounttrait,location
+    traitnames: owner,location,hologramtrait,mounttrait,skintrait,inventory,spawned,scoreboardtrait,age,type,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -160,7 +160,7 @@ npc:
             globalcooldown: -1
             n: -1
             delay: -1
-    traitnames: spawned,inventory,type,commandtrait,age,skintrait,owner,scoreboardtrait,hologramtrait,mounttrait,location
+    traitnames: owner,location,hologramtrait,mounttrait,skintrait,inventory,age,spawned,scoreboardtrait,type,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -219,7 +219,7 @@ npc:
             globalcooldown: -1
             n: -1
             delay: -1
-    traitnames: spawned,inventory,type,commandtrait,age,skintrait,owner,scoreboardtrait,hologramtrait,mounttrait,location
+    traitnames: owner,location,hologramtrait,mounttrait,inventory,skintrait,age,spawned,scoreboardtrait,type,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -269,7 +269,7 @@ npc:
             globalcooldown: 0
             n: -1
             delay: 0
-    traitnames: spawned,inventory,type,commandtrait,age,skintrait,owner,scoreboardtrait,mounttrait,location
+    traitnames: owner,location,mounttrait,skintrait,inventory,age,spawned,scoreboardtrait,type,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -326,7 +326,7 @@ npc:
             globalcooldown: -1
             n: -1
             delay: -1
-    traitnames: spawned,inventory,type,commandtrait,age,skintrait,hologramtrait,scoreboardtrait,owner,mounttrait,location
+    traitnames: owner,location,hologramtrait,mounttrait,inventory,skintrait,spawned,scoreboardtrait,age,type,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -367,7 +367,7 @@ npc:
           '0': '&aЖдите в следующем сезоне!'
           '1': '&fУ вас &6&lОбычный &fуровень'
           '2': '&b&lSnapi&b&lPass'
-    traitnames: spawned,inventory,type,age,skintrait,scoreboardtrait,owner,hologramtrait,mounttrait,location
+    traitnames: owner,location,hologramtrait,mounttrait,inventory,skintrait,scoreboardtrait,age,spawned,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -441,7 +441,7 @@ npc:
         text:
           '0': '&fПриветствую! Пока что мы сами справляемся с делами в шахте. Заходи
             в &aследующем обновлении &f— возможно, понадобится твоя помощь!'
-    traitnames: spawned,speech,inventory,text,age,hologramtrait,owner,lookclose,location,rotationtrait,type,commandtrait,skintrait,scoreboardtrait,mounttrait
+    traitnames: location,speech,inventory,skintrait,age,scoreboardtrait,spawned,type,owner,lookclose,hologramtrait,mounttrait,rotationtrait,text,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -503,7 +503,7 @@ npc:
             n: -1
             delay: -1
       mounttrait:
-        mountedon: b8a43830-662f-4f1e-a8fd-190ca195ba00
+        mountedon: 531ab842-bf24-4dae-a662-2800e263d6b6
       sittrait:
         sittingAt:
           world: lobby
@@ -512,7 +512,7 @@ npc:
           z: '-23.6999'
           yaw: '-180.0'
           pitch: '0.0'
-    traitnames: spawned,inventory,age,owner,hologramtrait,location,sitting,type,commandtrait,skintrait,scoreboardtrait,mounttrait,scripttrait,sittrait
+    traitnames: location,sittrait,skintrait,inventory,age,sitting,spawned,scoreboardtrait,type,owner,hologramtrait,mounttrait,scripttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -569,7 +569,7 @@ npc:
           '0': '&aНажмите, чтобы телепортироваться'
           '1': '&fИли напишите &b/arena leave'
           '2': '&c&lВыйти с арены'
-    traitnames: spawned,inventory,type,commandtrait,age,skintrait,hologramtrait,scoreboardtrait,owner,mounttrait,location
+    traitnames: owner,location,hologramtrait,mounttrait,inventory,skintrait,age,scoreboardtrait,spawned,type,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -640,7 +640,7 @@ npc:
         text:
           '0': '&fКхм... Привет. Я знаю, что ты меня совсем не знаешь, но скоро...
             Скоро меня будут знать здесь все! Но пока, я буду готовиться'
-    traitnames: spawned,speech,inventory,text,age,hologramtrait,owner,lookclose,location,rotationtrait,type,skintrait,scoreboardtrait,mounttrait
+    traitnames: location,speech,inventory,skintrait,scoreboardtrait,spawned,age,type,owner,lookclose,hologramtrait,mounttrait,rotationtrait,text
     navigator:
       speedmodifier: '1.0'
       avoidwater: false

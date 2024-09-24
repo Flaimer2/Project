@@ -1,0 +1,257 @@
+license-key: VVak5FF8NWzzmICYdkS5CgQPU
+
+database:
+  # SQLite or MySQL
+  type: MySQL
+  table: BedWars
+  log: false
+  credentials:
+    host: 127.0.0.1
+    port: 3306
+    database: server_minigames
+    username: root
+    password: root
+
+bungeemode:
+  log: false
+  type: MULTIARENA
+  bungee: BW-1
+  main: Lobby-2
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: ''
+    timeout: 2000
+    ssl: false
+
+chat_settings:
+  settings:
+    enabled: false
+    # if it is false, players will have to use '!' To send a message to all teams
+    global: false
+    min_caps: 99999
+    interval: 3
+  lobby: "<bw-level_color>[<bw-level><bw-level_symbol>] %vault_prefix%&f<bw-name>%vault_suffix% &7> &f<message>"
+  waiting: "%vault_prefix%&f<bw-name>%vault_suffix% &7> &f<message>"
+  global: "&eВсем %vault_prefix%&f<bw-name>%vault_suffix% &7> &f<message>"
+  game: "<team_color>⚑ %vault_prefix%&f<bw-name>%vault_suffix% &7> &f<message>"
+  spectator: "&7Наблюдатель %vault_prefix%&f<bw-name>%vault_suffix% &7> &f<message>"
+
+# The permissions are: bedwars.map_selector.<key>
+# If the amount is -1 you can choose infinite maps!
+map_selector:
+  mvp+: -1
+  mvp: 3
+  vip: 2
+  default: 1
+
+game_settings:
+  # If a player is falling, they will not be able to drop items.
+  drop_items_void: false
+  generator_split:
+    # If it is activated in the island generators, the items will be doubled if there are players so that they do not run out of items.
+    enabled: true
+    # The radius that the players will be in.
+    radius: 1.7
+  # If a player is killed, what fear will he give the murderer?
+  drop_items:
+    - IRON_INGOT
+    - GOLD_INGOT
+    - DIAMOND
+    - EMERALD
+  # These commands will be blocked in game
+  blocked_commands:
+    - gamemode
+    - give
+    - fly
+  generator_events:
+    - GENERATOR diamond
+    - GENERATOR emerald
+    - GENERATOR diamond
+    - GENERATOR emerald
+    - BED_DESTRUCTION 360
+    - SUDDEN_DEATH 360
+    - FINAL_GAME 600
+  # The time that players can enter, in seconds.
+  rejoin: 0
+  fireball:
+    # The time to re-throw a fireball.
+    cooldown: 2
+    # The damage the fireball does
+    damage: 3.0
+    # The distance the knockback will be affected
+    range: 3
+    # How much height is added
+    height: 1
+    # The thrust speed multiplier
+    multiplier: 2.5
+    # The radius of the explosion
+    yield: 3
+    # The speed at which the fireball will go when shooting
+    speed: 10
+  tnt:
+    # The damage tnt does
+    damage: 6.0
+    # The distance the knockback will be affected
+    range: 6
+    # How much height is added
+    height: 0.8
+    # The thrust speed multiplier
+    multiplier: 1.2
+    # The time when tnt exploded
+    fuse_ticks: 45
+  # The messages have to be added / translated in the languages, more can be added.
+  quick_communications:
+    hello:
+      type: none
+    im_coming:
+      type: none
+    im_defending:
+      type: none
+    im_attacking:
+      type: team
+    im_collecting:
+      type: resources
+    i_have_resources:
+      type: resources
+    thanks_you:
+      type: none
+    get_back:
+      type: none
+    please_defend:
+      type: none
+    lets_attack:
+      type: team
+    we_need_resources:
+      type: resources
+    player_incoming:
+      type: none
+  # These messages must be in each language.
+  announcement:
+    # seconds in game
+    every: 99999999
+    messages:
+      - cross_teaming
+  # The immunity time a player will have when entering a base with traps.
+  magic_milk: 30
+  silverfish:
+    despawn: 15
+    damage: 2.0
+    health: 9.0
+    speed: 0.25
+  iron_golem:
+    despawn: 240
+    health: 100.0
+    speed: 0.25
+  egg_bridge:
+    length: 27
+    cooldown: 2
+  spray_cooldown: 3
+
+task_settings:
+  cooldown_force: 5
+  cooldown_full: 10
+  cooldown_no_full: 30
+  cooldown_end: 10
+  respawn_seconds: 5
+  countdown:
+    - 60
+    - 50
+    - 40
+    - 30
+    - 20
+    - 10
+    - 5
+    - 4
+    - 3
+    - 2
+    - 1
+
+location_settings:
+  spawn: wait;0.4925384968535609;117.22064676123665;0.32884123224028183;-2.8500438;-87.60095
+
+settings:
+  lobby_protect: false
+  # If it is activated, it will automatically search for a team that does not have players and will fill it
+  kick_server: none
+  # In each world open a different chat
+  per_world_chat: false
+  # Players will not come out on the same tab
+  per_world_tab: false
+  # Enter your time zone.
+  time_zone: Europe/Moscow
+  date_format: dd/MM/yyyy
+  # The default language that players will have.
+  default_language: russian
+  # Economy Types:
+  # Custom, Vault, PlayerPoints
+  economy: Vault
+  # Activate the multiarena party!
+  party: false
+  # Entering the server will send you to spawn
+  spawn: false
+
+level_settings:
+  # The amount of experience it takes for the next level.
+  upgrade_level: 200.0
+  # If you are at level 1, multiply by one to get the amount of experience for the next level.
+  multiply_per_level: true
+  colors:
+    1 to 100:
+      symbol: ✯
+      color: "&7"
+    100 to 200:
+      symbol: ✯
+      color: "&f"
+    200 to 300:
+      symbol: ✯✯
+      color: "&2"
+    300 to 400:
+      symbol: ✯✯
+      color: "&a"
+    400 to 500:
+      symbol: ✯✯
+      color: "&3"
+    500 to 600:
+      symbol: ✯✯✯
+      color: "&b"
+    600 to 700:
+      symbol: ✯✯✯
+      color: "&d"
+    700 to >:
+      symbol: ✯✯✯✯
+      color: "&5"
+
+scoreboard:
+  # Teams that have been destroyed will disappear from the scoreboard.
+  delete_teams: false
+  # Your team will be placed at the top of the other teams on the scoreboard
+  order_first_your_team: false
+  # If you want the scoreboard titles to be animated.
+  animated_title: false
+  # In the worlds where the scoreboard will appear
+  worlds:
+    - world
+  title_frames:
+    - "&e&lBedWars"
+    - "&6&lB&e&ledWars"
+    - "&e&lB&6&le&e&ldWars"
+    - "&e&lBe&6&ld&e&lWars"
+    - "&e&lBed&6&lW&e&lars"
+    - "&e&lBedW&6&la&e&lrs"
+    - "&e&lBedWa&6&lr&e&ls"
+    - "&e&lBedWar&6&ls"
+    - "&e&lBedWars"
+    - "&e&lBedWars"
+    - "&e&lBedWars"
+    - "&e&lBedWar&6&ls"
+    - "&e&lBedWa&6&lr&e&ls"
+    - "&e&lBedW&6&la&e&lrs"
+    - "&e&lBed&6&lW&e&lars"
+    - "&e&lBe&6&ld&e&lWars"
+    - "&e&lB&6&le&e&ldWars"
+    - "&6&lBedWars"
+
+# If you want to edit the waiting lobby use /setup waiting edit
+waiting_lobby:
+  data: 0;2;2;AIR;7

@@ -1,0 +1,7 @@
+_DEFAULT_:
+  tabprefix: "%javascript_teamcolor%"
+  tagprefix: "%javascript_teamcolor%"
+  tabsuffix: ""
+  tagsuffix: ""
+
+per-world: {}

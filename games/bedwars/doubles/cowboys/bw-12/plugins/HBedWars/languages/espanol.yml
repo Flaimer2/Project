@@ -1,0 +1,4955 @@
+# Traductores: iAmForyyDev, Th3ZombieG4mer
+
+messages:
+  command_permission: "&cNo tienes permiso para ejecutar este comando!"
+  join_error:
+    loading: "&cLa partida esta cargando."
+    full: "&cEl juego ya esta lleno!"
+    game: "&cLa partida ya inicio."
+    end: "&cLa partida esta terminando."
+  join: "&a<name> &eha entrado (&b<bw-current_players>&e/&b<bw-max_players>&e)"
+  leave: "&a<name> &eha salido!"
+  start: "&eEl juego comenzara pronto."
+  cancel: "&cNo hay suficientes jugadores. Se a cancelado el conteo!"
+  full: "&aEl juego está lleno, comenzara pronto."
+  no_games_available: "&cNo hay partidas disponibles."
+  game_not_exists: "&cEsta partida no existe."
+  start_force_error: "&cNo puedes forzar el inicio del juego."
+  start_force: "&eEl juego ha sido forzado a comenzar por <name>"
+  start_countdown: "&eEl juego empieza en <time> <time_format>."
+  start_announce:
+    - "<center>&a&m&l---------------------------------------------"
+    - "<center>&f&lBedWars"
+    - ""
+    - "<center>&e&lProtege tu cama y destruye las camas enemigas."
+    - "<center>&e&lMejórate a ti mismo y a tu equipo recolectando"
+    - "<center>&e&lHierro, Esmeralda y Diamante de los generadores"
+    - "<center>&e&lpara acceso a potentes mejoras."
+    - ""
+    - "<center>&a&m&l---------------------------------------------"
+  generator_upgrade: "&eLos <color>generadores de <name> &ehan sido actualizados al nivel &c<level_name>"
+  bed_destroy_event: "&aTodas las camas restantes fueron eliminadas."
+  sudden_death_event: "&cLos dragones de los equipos salieron, prepárate para luchar."
+  final_game_event: "&cEl juego tiene que terminar, cada segundo la vida será reducida."
+  cannot_place_blocks: "&cNo puedes colocar bloques aquí!"
+  cannot_break_blocks: "&cSolo puedes romper bloques colocados por un jugador!"
+  cannot_break_your_bed: "&cNo puedes romper tu cama!"
+  cannot_open_chest: "&cNo puedes abrir este cofre porque este equipo no ha sido eliminado!"
+  max_build_height: "&c¡Se alcanzó el límite de altura de construcción!"
+  blocked_command: "&cEste comando no puede ser usado en partida!"
+  respawn: "&eReaparecerás en &c<time> &e<time_format>!"
+  player_loot: "<color>+<amount> <name>"
+  spray_cooldown: "&cDebes esperar <time> <time_format> entre los usos de spray!"
+  dont_leave_map: "&cNo puedes abandonar el mapa!"
+  team_eliminated:
+    - ""
+    - "&f&lEQUIPO ELIMINADO > <team_color>Equipo <team_name> &cha sido eliminado!"
+    - ""
+  use_cooldown: "&cPor favor espera <time><time_format> para volver a usarlo."
+  win:
+    - "<center>&a&m&l---------------------------------------------"
+    - "<center>&f&lBedWars"
+    - ""
+    - "<center>&eGanador &7- <color><winner>"
+    - ""
+    - "<center>&e&l1er Asesino &7- <top1> &7- <number1>"
+    - "<center>&6&l2do Asesino &7- <top2> &7- <number2>"
+    - "<center>&c&l3er Asesino &7- <top3> &7- <number3>"
+    - ""
+    - "&a&m&l---------------------------------------------"
+  win_none: "nadie"
+  alarm_trap_announce: "&c&lAlarma desactivada por &7&l<name> &c&ldel equipo <team_color>&l<team_name>&c&l!"
+  lang:
+    not_exist: "&cEste lenguaje no existe."
+    selected: "&aLenguaje seleccionado &e<bw-lang>"
+  mobs:
+    iron_golem: "<team_color><time><time_format> &l<team_name> &8[ <team_color><health> &8]"
+    silverfish: "<team_color>&l<team_name> <team_color>Lepisma"
+  shop:
+    insufficient: "&cNo tienes suficiente <material>! Necesitas <amount> más!"
+    purchase: "&aHas comprado &6<name>"
+    already_bought: "&cYa has comprado esto!"
+    load: "&8» &aTienda & Hotbar fue cargada completamente."
+    load_error: "&8» &cSu tienda no pudo ser cargada correctamente."
+    load_cooldown: "&8» &cDebes esperar <time> <time_format> para volver a volver a cargar."
+  upgrade:
+    insufficient: "&cNo tienes suficientes materiales para desbloquear esta mejora!"
+    purchase: "&a<player> ha comprado &6<name>"
+    already_bought: "&cYa has desbloqueado esta mejora!"
+    max_traps: "&cLa cola de trampas esta llena!"
+  team_selector:
+    already: "&cYa estás en este equipo"
+    full: "&cEste equipo ya esta lleno!"
+    join: "&a<name> se ha unido al equipo."
+  holograms:
+    generator:
+      - "&eTier &c<level_name>"
+      - "<team_color>&l<name>"
+      - "&eAparecerá en &c<time> &e<time_format>"
+    shop:
+      - "<team_color>TIENDA DE ITEMS"
+      - "&e&lCLICK DERECHO"
+    upgrades:
+      - "<team_color>MEJORAS"
+      - "&e&lCLICK DERECHO"
+  tab_prefix:
+    white: "&f&lB &f"
+    orange: "&6&lN &6"
+    yellow: "&e&lA &e"
+    red: "&4&lR &4"
+    pink: "&d&lR &d"
+    purple: "&5&lM &5"
+    green: "&a&lV &a"
+    dark_green: "&2&lVO &2"
+    aqua: "&b&lA &b"
+    cyan: "&3&lC &3"
+    blue: "&9&lA &9"
+    black: "&0&lN &0"
+    gray: "&7&lG &7"
+    dark_gray: "&8&lGO &8"
+    spectator: "&7&lE &7&o"
+  team_name:
+    white: "Blanco"
+    orange: "Naranja"
+    yellow: "Amarillo"
+    red: "Rojo"
+    pink: "Rosa"
+    purple: "Morado"
+    green: "Verde"
+    dark_green: "Verde Oscuro"
+    aqua: "Aqua"
+    cyan: "Cian"
+    blue: "Azul"
+    black: "Negro"
+    gray: "Gris"
+    dark_gray: "Gris Oscuro"
+  materials:
+    iron_ingot:
+      singular: "Hierro"
+      plural: "Hierro"
+      color: "&f"
+    gold_ingot:
+      singular: "Oro"
+      plural: "Oro"
+      color: "&6"
+    diamond:
+      singular: "Diamante"
+      plural: "Diamantes"
+      color: "&b"
+    emerald:
+      singular: "Esmeralda"
+      plural: "Esmeraldas"
+      color: "&2"
+    coal:
+      singular: "Carbón"
+      plural: "Carbón"
+      color: "&0"
+  help:
+    - ""
+    - "<center>&6&lBedWars &7v.<bw-version>"
+    - ""
+    - " &7· &a/join &7- &fPara entrar a una arena."
+    - " &7· &a/lang &7- &fPara cambiar el lenguaje."
+    - " &7· &a/puntos &7- &fPara ver tus puntos."
+    - ""
+  cosmetics:
+    permission: "&cNo tienes permiso para este cosmético."
+    not_enough_money: "&cNo tienes suficientes puntos para comprar eso!"
+    purchased: "&6Has comprado &a<cosmetic>&6!"
+    already_selected: "&cYa has seleccionado este cosmético."
+    selected: "&6Has seleccionado &a<cosmetic>&6!"
+    unselected: "&aHas quitado este cosmético."
+  votes:
+    permission: "&cNo tienes permiso para votar."
+    already_voted: "&cYa has votado!"
+    vote_shop: "&e<name> &fha votado por la tienda y mejoras &6<vote>&f!"
+    vote_health: "&e<name> &fvotó por vida &6<vote>&f!"
+    vote_time: "&e<name> &fvotó por el tiempo de &6<vote>&f!"
+    announce:
+      shop: "&eSe ha seleccionado la tienda y mejoras &6<name> &econ &6<votes> &evotos."
+      health: "&eSe ha seleccionado la vida &6<name> &econ &6<votes> &evotos."
+      time: "&eSe ha seleccionado la tiempo &6<name> &econ &6<votes> &evotos."
+  progress_bar:
+    symbol: "■"
+    progress_color: "&b"
+    left_color: "&7"
+    max: "&cMáximo"
+    finish: "&8[ <progress> &8]"
+  groups:
+    solo: "Solo"
+    doubles: "Dobles"
+    trios: "Tríos"
+    quartets: "Cuartetos"
+    1vs1: "1vs1"
+  leaderboard:
+    line: "&e<position>. &f<name> &7- &e<amount>"
+    empty: "&cNo hay estadísticas cargadas."
+  points:
+    see: "&aTus Puntos: &f<bw-points>"
+    online: "&cEl jugador no esta conectado."
+    integer: "&cDebes introducir una cantidad válida."
+    sender:
+      add: "&aHas añadido <points> puntos a <name>."
+      remove: "&cHas tomado <points> puntos de <name>."
+    target:
+      add: "&aTe han dado <points> puntos."
+      remove: "&cTe han quitado <points> puntos."
+  compass_tracker:
+    not_all_beds_destroyed: "&cNo se han destruido todas las camas enemigas!"
+    not_enough_resources: "&cNo tienes suficiente dinero!"
+    already_tracking: "&cYa estás en este equipo!"
+    purchase: "&cPerderás la capacidad de rastrear a este equipo cuando mueras!"
+  quick_communications:
+    format: "&a&lEQUIPO > &7<name>&f: &a<message>"
+    hello: "Hola ( ﾟ◡ﾟ)/!"
+    im_coming: "¡Estoy volviendo a la base!"
+    im_defending: "¡Estoy defendiendo!"
+    im_attacking: "Estoy atacando <team>"
+    im_collecting: "Estoy recogiendo <resource>"
+    i_have_resources: "Tengo <resource>"
+    thanks_you: "Muchas gracias"
+    get_back: "Vuelve a la base"
+    please_defend: "¡Por favor, defienda!"
+    lets_attack: "Ataquemos a <team>"
+    we_need_resources: "Necesitamos <resource>"
+    player_incoming: "¡Jugador entrante!"
+  announcement:
+    rejoin: "&c&lSi te desconectas, usa /rejoin para entrar de nuevo en la partida."
+    cross_teaming: "&c&l¡Cross-teaming no está permitido! Reporta equipos cruzados utilizando /report."
+  rejoin:
+    no_arena: "&cNo hay ninguna arena a la que reconectar!"
+    denied: "&cNo puedes volver a entrar en la arena. El juego ha terminado o se ha destruido la cama."
+    allowed: "&eUniéndose a arena &a<arena>&e!"
+    reconnected: "&7<name> &ese ha reconectado!"
+  cannot_use_chat:
+    - "&6&m-----------------------------------"
+    - "&cNo puedes decir dos veces el mismo mensaje!"
+    - "&6&m-----------------------------------"
+  map_selection:
+    daily_limit_exceeded:
+      - "&c¡Ha utilizado todas sus selecciones de mapas gratuitas diarias!"
+      - "&cPara desbloquear usos ilimitados de selección de mapas, puede comprar &bMVP&c+ en &ehttps: //store.minecraft.net"
+  party:
+    help:
+      - ""
+      - "&aComandos de Party:"
+      - " &e/party help &b- Para obtener los mensajes de ayuda"
+      - " &e/party invite <player> &b- Invitar a un jugador"
+      - " &e/party leave &b- Salir de la party"
+      - " &e/party promote <player> &b- Promover a un lider!"
+      - " &e/party remove <player> &b- Remover a un jugador de la party"
+      - " &e/party accept <player> &b- Aceptar a un jugador"
+      - " &e/party disband &b- Deshacer la party"
+      - ""
+    no_online: "&cEste jugador no esta conectado!"
+    only_leader: "&cSolo el lider puede realizar esta acción."
+    created: "&aHas creado una party!"
+    not_in_party: "&cNo estas en una party!"
+    invite:
+      sender: "&aHas invitado a <name>!"
+      invited: "&aHas sido invitado a la party de <name>'s, Tienes 60 segundos para aceptar!"
+      no_invitation: "&cNo tienes una invitación de este jugador!"
+      expired: "&cLa invitación a esta party ya expiró!"
+      already: "&cYa has invitado a este jugador!"
+      join: "&a<name> se ha unido a la party!"
+    leave: "&c<name> ha dejado la party!"
+    promote:
+      no_in_your_party: "&cEste jugador no esta en la party!"
+      sender: "&aAhora <name> es el lider!"
+      promoted: "&aHas promovido a un nuevo lider!"
+    remove:
+      sender: "&aSacaste a <namre> de la party!"
+      removed: "&cYa no estas en la party :("
+    disband: "&cLa party se ha disuelto!"
+  tnt_boost:
+    no_arena: "&cEste comando se debe de usar en la partida!"
+    only_double: "Debes de usar un valor entero o decimal!"
+    not_zero: "&cEl valor debe de ser mayor a 0!"
+    multiplied: "&aSe ha multiplicado el valor de la TNT a 10!"
+  bungeemode:
+    connecting: "&aEstas siendo conectado al servidor..."
+    no_data: "&cNo hay datos tuyos!"
+    no_arena: "&cEl servidor no esta disponible!"
+  cosmetics_command:
+    no_online: "&cEste jugador no se encuentra conectado!"
+    add:
+      sender: "&aLe has agregado el cosmetico <cosmetic> al jugador <name>"
+      receiver: "&aTe han dado el cosmetico &l<cosmetic>"
+    remove:
+      sender: "&aLe has removido el cosmetico <cosmetic> al jugador <name>"
+      receiver: "&cTe han quitado el cosmetico &l<cosmetic>"
+
+actionbar:
+  target_first_person: "&fObjetivo: &a&l<name>   &aLEFT CLICK para menú &cNEAK para salir"
+  target_default: "&fObjetivo: &a&l<name>  &fDistancia &a&l<distance>m"
+  tracking: "&fRastreando: <team_color>&l<team_name> &f- Distancia: &a&l<distance>m"
+
+titles:
+  join:
+    title: "&6&lBedWars"
+    subtitle: "&e<bw-mode>"
+  respawn:
+    title: "&c¡HAS MUERTO!"
+    subtitle: "&eReaparecerás en &c<time> &e<time_format>!"
+  starting:
+    title: "&eIniciando en"
+    subtitle: "&6<time> &e<time_format>"
+  bed_destroyed:
+    title: "&c&l¡CAMA DESTRUIDA!"
+    subtitle: ""
+  alarm:
+    title: "&c&lALARMA!"
+    subtitle: "&fLa trampa fue activada por el equipo <team_color>&l<team_name>&f!"
+  first_person:
+    title: "&aEspectando &6<name>"
+    subtitle: "&aCLICK IZQUIERDO para el menú &cAGACHATE para salir"
+  exit_first_person:
+    title: "&eSaliendo del Modo Espectador"
+    subtitle: " "
+
+votes:
+  shop:
+    basic: "Básico"
+    default: "Normal"
+    overpowered: "Sobrecargado"
+  health:
+    hardcore: "Hardcore"
+    default: "Normal"
+    double: "Doble"
+  time:
+    day: "Día"
+    sunset: "Soleado"
+    night: "Noche"
+
+cosmetics:
+  trails:
+    hearts: "Corazones"
+    flame: "Llama"
+    water_splash: "Brote de agua"
+    drip_lava: "Goteo de Lava"
+    redstone: "Redstone"
+    note: "Notas"
+    none: "Ninguna"
+  windances:
+    anvil_rain: "Lluvia del Yunque"
+    fireworks: "Fuegos Artificiales"
+    cold_snap: "Onda de Frio"
+    yee_haw: "Yee Haw"
+    meteors: "Meteoros"
+    night_shift: "Turno de Noche"
+    wither: "Wither"
+    gravity: "Gravedad"
+    dragon: "Dragón"
+    floating_lanterns: "Linternas Flotantes"
+    pig_rain: "Lluvia de Cerdos"
+    war_sheep: "Oveja de Guerra"
+    vulcan: "Volcán"
+    vulcan_wool: "Volcán de Lana"
+    sheeps: "Ovejas"
+    fly_carpet: "Alfombra Mágica"
+    none: "Ninguna"
+  killeffects:
+    love: "Amor"
+    tnt: "Aura de Corazones"
+    egg_explosion: "Explosión de Huevos"
+    final_smash: "Golpe Final"
+    head_rocket: "Cabeza-Cohete"
+    cookie_fountain: "Fuente de Galletas"
+    blood: "Explosión Sangrienta"
+    ghost: "Fantasma"
+    creeper: "Creeper"
+    diamond: "Diamante"
+    dyes: "Tintes"
+    flowers: "Flores"
+    rain: "Lluvia"
+    bunny_explosion: "Explosión De Conejos"
+    none: "Ninguna"
+  sprays:
+    bed: "Cama"
+    tnt: "TNT"
+    water_bucket: "Cubo de Agua"
+    none: "Ninguna"
+  cries:
+    bat: "Murciélagos"
+    skeleton: "Esqueleto"
+    wolf: "Lobo"
+    enderdragon: "Rugido del Dragón"
+    burp: "Burbuja"
+    enderman: "Enderman"
+    firework: "Fuegos Artificiales"
+    none: "Ninguna"
+  shopkeepers:
+    adventure_time: "Hora de Aventura"
+    amongus: "Among Us"
+    astronaut: "Astronauta"
+    axolotl: "Ajolote"
+    covid: "Covid 19"
+    alien: "Alien"
+    pokemon: "Pokemon"
+    naruto: "Naruto"
+    police: "Policía"
+    dragonball: "Dragon Ball"
+    lgbt: "LGBT"
+  killmessages:
+    default:
+      name: "Predeterminado"
+      default:
+        killer: " por <color><name>"
+        default: "<color><name> &fmurio"
+        disconnect: "<color><name> &fse ha desconectado del juego"
+        final_kill: " &b&lASESINATO FINAL"
+        final_kill_top: " &ffinal &e#<position> &7(<amount>)&f."
+        bed_destroyed_top:
+          - ""
+          - "&f&lDESTRUCCIÓN DE CAMA > &7La cama <bed_color><bed_team_name> &7es la cama &e#<position> &7(<amount>) &7destruida por <team_color><name>&7!"
+          - ""
+        bed_destroyed_you:
+          - ""
+          - "&f&lDESTRUCCIÓN DE CAMA > &7Tu cama fue destruida por <team_color><name>"
+          - ""
+        bed_destroyed_everyone:
+          - ""
+          - "&f&lDESTRUCCIÓN DE CAMA > &7La cama <bed_color><bed_team_name> &cfue destruida por <team_color><name>"
+          - ""
+      messages:
+        contact: "<color><name> &fha sido golpeado hasta la muerte"
+        entity_attack: "<color><name> &ffue asesinado"
+        projectile: "<color><name> &ffue disparado"
+        fall: "<color><name> &fcayo desde un lugar alto"
+        fire: "<color><name> &fse prendió fuego"
+        fire_tick: "<color><name> &fquemado hasta la muerte"
+        block_explosion: "<color><name> &ffue explotado"
+        entity_explosion: "<color><name> &ffue explotado"
+        void: "<color><name> &fcayo fuera del mundo"
+        falling_block: "<color><name> &ffué aplastado"
+        custom: "<color><name> &murió de una manera única"
+      entity:
+        iron_golem: " por el &7Golem de Hierro de <color><name>"
+        silverfish: " por el &7Lepisma de <color><name>"
+    dramatic:
+      name: "Dramático"
+      default:
+        killer: " por <color><name>"
+        default: "<color><name> &fmurio"
+        disconnect: "<color><name> &fse ha desconectado del juego"
+        final_kill: " &b&lASESINATO FINAL"
+        final_kill_top: " &ffinal &e#<position> &7(<amount>)&f."
+        bed_destroyed_top:
+          - ""
+          - "&f&lDESTRUCCIÓN DE CAMA > &7La cama <bed_color><bed_team_name> &7es la cama &e#<position> &7(<amount>) &7destruida por <team_color><name>&7!"
+          - ""
+        bed_destroyed_you:
+          - ""
+          - "&f&lDESTRUCCIÓN DE CAMA > &7Tu cama fue masacrada por <team_color><name>"
+          - ""
+        bed_destroyed_everyone:
+          - ""
+          - "&f&lDESTRUCCIÓN DE CAMA > &cLa cama <bed_color><bed_team_name> &cfue destruida brutalmente por <team_color><name>"
+          - ""
+      messages:
+        contact: "<color><name> &frogó por tanto golpe"
+        entity_attack: "<color><name> &ffue brutalmente asesinado"
+        projectile: "<color><name> &fle han dado un súper disparo en la cabeza"
+        fall: "<color><name> &fcayó de un lugar demasiado alto"
+        fire: "<color><name> &ffue reducido a cenizas"
+        fire_tick: "<color><name> &ffue brutalmente quemado vivo"
+        block_explosion: "<color><name> &ffue despedazado por el aire"
+        entity_explosion: "<color><name> &ffue despedazado por el aire"
+        void: "<color><name> &fcayó al vacío de sus besos"
+        falling_block: "<color><name> &ffue brutalmente aplastado"
+        custom: "<color><name> &fmurio de una manera única y bastarda"
+      entity:
+        iron_golem: " por el &7Golem de Hierro de <color><name>"
+        silverfish: " por el &7Lepisma de <color><name>"
+  glyphs:
+    diamond: "Diamante"
+    emerald: "Esmeralda"
+    gold: "Oro"
+    urss: "URSS"
+    none: "Ninguna"
+  beddestroys:
+    squid_missile: "Misil de Calamar"
+    firework: "Fuegos Artificiales"
+    lightning_strike: "Golpe Relámpago"
+    lava_explosion: "Explosión de Lava"
+    pig_missile: "Misil de Cerdos"
+    tornado: "Tornado"
+    thief: "Ladrón"
+    egg_explosion: "Explosión de Huevos"
+    blizzard: "Ventisca"
+    pig_explosion: "Explosión de Cerdos"
+    lady_bug: "Lady Bug"
+    fire_dance: "Baile de Fuego"
+    none: "Ninguna"
+  woodskins:
+    spruce_plank: "Tabla de Abeto"
+    birch_plank: "Tabla de Abedul"
+    jungle_plank: "Tabla de Jungla"
+    acacia_plank: "Tabla de Acacia"
+    dark_oak_plank: "Tabla de Roble Oscuro"
+    oak_log: "Tronco de Roble"
+    spruce_log: "Tronco de Roble"
+    birch_log: "Tronco de Abedul"
+    jungle_log: "Tronco de Jungla"
+    acacia_log: "Tronco de Acacia"
+    dark_oak_log: "Tronco de Roble Oscuro"
+    none: "Ninguna"
+  toppers:
+    bunny: "Conejito"
+    chicken: "Pollo"
+    sheep: "Oveja"
+    slime: "Slime"
+    sword: "Espada"
+    sheep_rainbow: "Oveja Arcoiris"
+    none: "Ninguna"
+
+items:
+  servers:
+    name: "&9Ejemplo &7(Click Derecho)"
+    lore:
+      - "&7Item de Ejemplo."
+  cosmetics:
+    name: "&aCosméticos de BedWars &7(Click Derecho)"
+    lore:
+      - "&7Tus cosméticos"
+  random:
+    name: "&eJuego Aleatorio &7(Click Derecho)"
+    lore:
+      - "&7Únete a una partida aleatoria."
+  team_selector:
+    name: "&aSelector de Equipo &7(Click Derecho)"
+    lore:
+      - "&7Selecciona tu equipo"
+  votes:
+    name: "&aVotos &7(Click Derecho)"
+    lore:
+      - "&7Modos de votación."
+  teleport_spectator:
+    name: "&a&lTeletransportador &7(Click Derecho)"
+    lore:
+      - "&7Abrir menú de teletransportador."
+  options_spectator:
+    name: "&b&lAjustes de Espectador &7(Click Derecho)"
+    lore:
+      - "&7Abrir menú de ajustes."
+  play_again:
+    name: "&b&lJugar de Nuevo &7(Click Derecho)"
+    lore:
+      - "&7Jugar de nuevo."
+  leave:
+    name: "&c&lVolver al Lobby &7(Click Derecho)"
+    lore:
+      - "&7Salir del juego."
+  tracker_shop:
+    name: "&aTracker &7(Click Derecho)"
+    lore: []
+
+holograms:
+  soloWins:
+    - "&b&lVictorias Permanentes"
+    - "&7BedWars • Solo"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&l¡Haz click para alternar!"
+    - "&a&lSiempre &7Mensual &7Semanal &7Diario"
+  soloWinsMonthly:
+    - "&b&lVictorias Mensuales"
+    - "&7BedWars • Solo"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&l¡Haz click para alternar!"
+    - "&7Siempre &a&lMensual &7Semanal &7Diario"
+  soloWinsWeekly:
+    - "&b&lVictorias Semanales"
+    - "&7BedWars • Solo"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&l¡Haz click para alternar!"
+    - "&7Siempre &7Mensual &a&lSemanal &7Diario"
+  soloWinsDaily:
+    - "&b&lVictorias Diarias"
+    - "&7BedWars • Solo"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&l¡Haz click para alternar!"
+    - "&7Siempre &7Mensual &7Semanal &a&lDiario"
+  soloFinalKills:
+    - "&b&lAsesinatos Finales (Permanente)"
+    - "&7BedWars • Solo"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&l¡Haz click para alternar!"
+    - "&a&lSiempre &7Mensual &7Semanal &7Diario"
+  soloFinalKillsMonthly:
+    - "&b&lAsesinatos Finales (Mensuales)"
+    - "&7BedWars • Solo"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&l¡Haz click para alternar!"
+    - "&7Siempre &a&lMensual &7Semanal &7Diario"
+  soloFinalKillsWeekly:
+    - "&b&lAsesinatos Finales (Semanales)"
+    - "&7BedWars • Solo"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&l¡Haz click para alternar!"
+    - "&7Siempre &7Mensual &a&lSemanal &7Diario"
+  soloFinalKillsDaily:
+    - "&b&lAsesinatos Finales (Diarios)"
+    - "&7BedWars • Solo"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&l¡Haz click para alternar!"
+    - "&7Siempre &7Mensual &7Semanal &a&lDiario"
+  totalWins:
+    - "&b&lVictorias Permanentes"
+    - "&7Todos los Modos"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&l¡Haz click para alternar!"
+    - "&a&lSiempre &7Mensual &7Semanal &7Diario"
+  totalWinsMonthly:
+    - "&b&lVictorias Mensuales"
+    - "&7Todos los Modos"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&l¡Haz click para alternar!"
+    - "&7Siempre &a&lMensual &7Semanal &7Diario"
+  totalWinsWeekly:
+    - "&b&lVictorias Semanales"
+    - "&7Todos los Modos"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&l¡Haz click para alternar!"
+    - "&7Siempre &7Mensual &a&lSemanal &7Diario"
+  totalWinsDaily:
+    - "&b&lVictorias Diarias"
+    - "&7Todos los Modos"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&l¡Haz click para alternar!"
+    - "&7Siempre &7Mensual &7Semanal &a&lDiario"
+  totalFinalKills:
+    - "&b&lAsesinatos Finales (Permanente)"
+    - "&7Todos los Modos"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&l¡Haz click para alternar!"
+    - "&a&lSiempre &7Mensual &7Semanal &7Diario"
+  totalFinalKillsMonthly:
+    - "&b&lAsesinatos Finales (Mensuales)"
+    - "&7Todos los Modos"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&l¡Haz click para alternar!"
+    - "&7Siempre &a&lMensual &7Semanal &7Diario"
+  totalFinalKillsWeekly:
+    - "&b&lAsesinatos Finales (Semanales)"
+    - "&7Todos los Modos"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&l¡Haz click para alternar!"
+    - "&7Siempre &7Mensual &a&lSemanal &7Diario"
+  totalFinalKillsDaily:
+    - "&b&lAsesinatos Finales (Diarios)"
+    - "&7Todos los Modos"
+    - ""
+    - "<leaderboard>"
+    - ""
+    - "&6&l¡Haz click para alternar!"
+    - "&7Siempre &7Mensual &7Semanal &a&lDiario"
+
+menus:
+  replacement:
+    cosmetics:
+      permission: "&cNo tienes permiso!"
+      purchase: "&e¡Clic para comprar!"
+      selected: "&aSELECCIONADO!"
+      select: "&e¡Clic para seleccionar!"
+      need: "&cNo tienes suficiente dinero."
+      price:
+        - ""
+        - "&7Costo: &6<cost>"
+    votes:
+      permission: "&cNo tienes permiso para votar"
+      already_voted: "&cYa has votado."
+      vote: "&e¡Click para votar!"
+    team:
+      full: "&cEste equipo ya esta lleno!"
+      already: "&cYa estás en este equipo!"
+      join: "&e¡Clic para unirte al equipo!"
+      member: " &7- &f<name>"
+      empty: "&cEl equipo esta vacío!"
+    spectator:
+      auto_teleport:
+        enabled:
+          name: "&cDesactivar Auto Teletransporte"
+          lore:
+            - "&7¡Click para desactivar el teletransporte automático!"
+        disabled:
+          name: "&aActivar Auto Teletransporte"
+          lore:
+            - "&7¡Click para activar el teletransporte automático!"
+      night_vision:
+        enabled:
+          name: "&cDesactivar visión nocturna"
+          lore:
+            - "&7¡Clic para desactivar la visión nocturna!"
+        disabled:
+          name: "&aHabilitar visión nocturna"
+          lore:
+            - "&7¡Clic para activar la visión nocturna!"
+      first_person:
+        enabled:
+          name: "&cDesactivar Primera Persona"
+          lore:
+            - "&7Clic para desactivar primera"
+            - "&7persona observando al usar"
+            - "&7la brújula!"
+            - "&7También puedes hacer clic derecho en"
+            - "&7un jugador para observarlo en"
+            - "&7primera persona."
+        disabled:
+          name: "&aActivar Primera Persona"
+          lore:
+            - "&7Clic para activar la primera persona"
+            - "&7espectando al usar la brújula!"
+            - "&7Puedes hacer clic derecho en"
+            - "&7jugador para observarlos en"
+            - "&7primera persona."
+      show_spectator:
+        enabled:
+          name: "&cOcultar Espectadores"
+          lore:
+            - "&7Click para ocultar otros espectadores!"
+        disabled:
+          name: "&aMostrar Espectadores"
+          lore:
+            - "&7Click para mostrar otros espectadores!"
+    track_shop:
+      price:
+        - ""
+        - "&7Costo: <color><amount> <material>"
+      status:
+        already_purchased: "&eYa lo tienes comprado!"
+        not_enough: "&cNo tienes suficiente recurso!"
+        locked: "&c¡Se desbloquea si todas las camas estan rotas!"
+        purchase: "&e¡Haz clic para comprar!"
+    map_selection:
+      favorite: "&b✫ "
+      status:
+        available_animation1: "&a► Click para Jugar"
+        available_animation2: "&a Click para Jugar"
+        un_available_animation1: "&c► Límite diario excedido!"
+        un_available_animation2: "&c Límite diario excedido!"
+      color:
+        available: "&a"
+        un_available: "&c"
+  cosmetics:
+    title: "Cosméticos"
+    icons:
+      '9':
+        name: "&aRastros de Proyectil"
+        lore:
+          - "&7Cambia el efecto de tu rastro de"
+          - "&7particulas."
+          - ""
+          - "&7Desbloqueado &a<bw-projectiles_purchased>/<bw-projectiles_total> &8(<bw-projectiles_percent>%)"
+          - "&7Seleccionado actualmente"
+          - "&a<bw-projectiles_selected>"
+          - ""
+          - "&e¡Haz clic para ver!"
+      '11':
+        name: "&aBailes de Victoria"
+        lore:
+          - "&7Celebra regodeando y"
+          - "&7presumiendo tu victoria frente a"
+          - "&7los demas jugadores cuando"
+          - "&7ganes!"
+          - ""
+          - "&7Desbloqueado &a<bw-windances_purchased>/<bw-windances_total> &8(<bw-windances_percent>%)"
+          - "&7Seleccionado Actualmente"
+          - "&a<bw-windances_selected>"
+          - ""
+          - "&e¡Haz clic para ver!"
+      '13':
+        name: "&aEfectos de Asesinatos Finales"
+        lore:
+          - "&7Una selección de varios efectos"
+          - "&7para elegir, que se activarán"
+          - "&7cada vez que mates a un enemigo"
+          - "&7permanentemente!"
+          - ""
+          - "&7Desbloqueado &a<bw-killeffects_purchased>/<bw-killeffects_total> &8(<bw-killeffects_percent>%)"
+          - "&7Seleccionado actualmente"
+          - "&a<bw-killeffects_selected>"
+          - ""
+          - "&e¡Haz clic para ver!"
+      '15':
+        name: "&aSprays"
+        lore:
+          - "&7Selecciona un spray para"
+          - "&7presumir en todo el lugar! Los"
+          - "&7sitios para Sprays pueden"
+          - "&7encontrarse en cada isla de"
+          - "&7spawn y algunas islas del"
+          - "&7centro."
+          - ""
+          - "&7Desbloqueado &a<bw-sprays_purchased>/<bw-sprays_total> &8(<bw-sprays_percent>%)"
+          - "&7Seleccionado actualmente"
+          - "&a<bw-sprays_selected>"
+          - ""
+          - "&e¡Haz clic para ver!"
+      '17':
+        name: "&aIsland Toppers"
+        lore:
+          - "&7Selecciona un Topper de Isla"
+          - "&7para decorar la isla! En"
+          - "&7Dobles y en Modo Team se elijira"
+          - "&7uno aleatorio de todos los jugadores"
+          - ""
+          - "&7Desbloqueado &a<bw-toppers_purchased>/<bw-toppers_total> &8(<bw-toppers_percent>%)"
+          - "&7Seleccionado actualmente"
+          - "&a<bw-toppers_selected>"
+          - ""
+          - "&e¡Haz clic para ver!"
+      '22':
+        name: "&aSonidos de Muerte"
+        lore:
+          - "&7Haz que otros sepan que tan"
+          - "&7fuerte lloras con estos gritos"
+          - "&7de muerte!"
+          - ""
+          - "&7Desbloqueado &a<bw-deathcries_purchased>/<bw-deathcries_total> &8(<bw-deathcries_percent>%)"
+          - "&7Seleccionado actualmente"
+          - "&a<bw-deathcries_selected>"
+          - ""
+          - "&e¡Haz clic para ver!"
+      '27':
+        name: "&aSkins de Tenderos"
+        lore:
+          - "&7Selecciona entre varias skin"
+          - "&7para el Tendero, que"
+          - "&7reeplazaran como se ven los"
+          - "&7Tenderos dentro del juego!"
+          - ""
+          - "&7Desbloqueado &a<bw-shopkeepers_purchased>/<bw-shopkeepers_total> &8(<bw-shopkeepers_percent>%)"
+          - "&7Seleccionado actualmente"
+          - "&a<bw-shopkeepers_selected>"
+          - ""
+          - "&e¡Haz clic para ver!"
+      '29':
+        name: "&aMensajes de Muerte"
+        lore:
+          - "&7Seleccione un paquete de mensajes de Kill a"
+          - "&7reemplazar los mensajes de chat cuando tú"
+          - "&7matar jugadores, equipos y romperlos"
+          - "&7Camas!"
+          - ""
+          - "&7Desbloqueado &a<bw-killmessages_purchased>/<bw-killmessages_total> &8(<bw-killmessages_percent>%)"
+          - "&7Seleccionado actualmente"
+          - "&a<bw-killmessages_selected>"
+          - ""
+          - "&e¡Haz clic para ver!"
+      '31':
+        name: "&aGlifos"
+        lore:
+          - "&7Elige una imagen de Glifo, que"
+          - "&7aparecerá al recoger diamantes y"
+          - "&7esmeraldas!"
+          - ""
+          - "&7Desbloqueado &a<bw-glyphs_purchased>/<bw-glyphs_total> &8(<bw-glyphs_percent>%)"
+          - "&7Seleccionado actualmente"
+          - "&a<bw-glyphs_selected>"
+          - ""
+          - "&e¡Haz clic para ver!"
+      '33':
+        name: "&aDestrucción de Camas"
+        lore:
+          - "&7Selecciona de varios efectos de"
+          - "&7Destrucción de Cama, que se"
+          - "&7producen cuando se rompe una"
+          - "&7cama!"
+          - ""
+          - "&7Desbloqueado &a<bw-beddestroys_purchased>/<bw-beddestroys_total> &8(<bw-beddestroys_percent>%)"
+          - "&7Seleccionado Actualmente"
+          - "&a<bw-beddestroys_selected>"
+          - ""
+          - "&e¡Haz clic para ver!"
+      '35':
+        name: "&aSkins de Madera"
+        lore:
+          - "&7Cambia el tipo de madera en el"
+          - "&7juego."
+          - ""
+          - "&7Desbloqueado &a<bw-woodskins_purchased>/<bw-woodskins_total> &8(<bw-woodskins_percent>%)"
+          - "&7Seleccionado actualmente"
+          - "&a<bw-woodskins_selected>"
+          - ""
+          - "&e¡Haz clic para ver!"
+      '48':
+        name: "&cCerrar"
+        lore:
+          - "&7Cerrar tienda de BedWars"
+      '50':
+        name: "&aTus Puntos: &f<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  trails:
+    title: "Rastros de Flecha"
+    icons:
+      '10':
+        name: "&aNinguno"
+        lore:
+          - "&7Rastro de Proyectil"
+          - ""
+          - "&7Seleccionado esta opción"
+          - "&7deshabilita tu Rastro de"
+          - "&7Proyectil."
+          - ""
+          - "<select_status>"
+      '11':
+        name: "&aCorazones"
+        lore:
+          - "&7Rastro de Proyectil"
+          - ""
+          - "&7Selecciona el Rastro de"
+          - "&7Proyectil de Corazones."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '12':
+        name: "&aFlama"
+        lore:
+          - "&7Rastro de Proyectil"
+          - ""
+          - "&7Selecciona el Rastro de"
+          - "&7Proyectil de Flama."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '13':
+        name: "&aAgua"
+        lore:
+          - "&7Rastro de Proyectil"
+          - ""
+          - "&7Selecciona el Rastro de"
+          - "&7Proyectil de Agua."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '14':
+        name: "&aLava"
+        lore:
+          - "&7Rastro de Proyectil"
+          - ""
+          - "&7Selecciona el Rastro de"
+          - "&7Proyectil de Lava."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '15':
+        name: "&aRedstone"
+        lore:
+          - "&7Rastro de Proyectil"
+          - ""
+          - "&7Selecciona el Rastro de"
+          - "&7Proyectil de Redstone."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '16':
+        name: "&aNotas"
+        lore:
+          - "&7Rastro de Proyectil"
+          - ""
+          - "&7Selecciona el Rastro de"
+          - "&7Proyectil de Notas."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '30':
+        name: "&aVolver"
+        lore:
+          - "&7Ir a mis Cosmeticos"
+      '32':
+        name: "&6Puntos Totales: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  windances:
+    title: "Bailes de Victoria"
+    icons:
+      '10':
+        name: "&aNinguno"
+        lore:
+          - "&8Baile de Victoria"
+          - ""
+          - "&7Seleccionado esta opción"
+          - "&7deshabilita tu Baile de"
+          - "&7Victoria."
+          - ""
+          - "<select_status>"
+      '11':
+        name: "&aLluvia de Yunques"
+        lore:
+          - "&8Baile de Victoria"
+          - ""
+          - "&7Lloverán yunques desde el cielo."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '12':
+        name: "&aFuegos Artificiales"
+        lore:
+          - "&8Baile de Victoria"
+          - ""
+          - "&7Celebra con un show de Fuegos"
+          - "&7Artificiales."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '13':
+        name: "&aOnda de Frio"
+        lore:
+          - "&8Baile de Victoria"
+          - ""
+          - "&7Enfria tu alrededor al cero"
+          - "&7absoluto."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '14':
+        name: "&aYeehaw"
+        lore:
+          - "&8Baile de Victoria"
+          - ""
+          - "&7Monta un caballo como el de 1876."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '15':
+        name: "&aLluvia de Meteoritos"
+        lore:
+          - "&8Baile de Victoria"
+          - ""
+          - "&7Invoca una lluvia de meteoritos"
+          - "&7para que caiga desde el cielo."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '16':
+        name: "&aTurno de Noche"
+        lore:
+          - "&8Baile de Victoria"
+          - ""
+          - "&7Haz de día, haz de noche,"
+          - "&7repitelo, como un dios."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '19':
+        name: "&aJinete de Wither"
+        lore:
+          - "&8Baile de Victoria"
+          - ""
+          - "&7Monta un Wither como un verdadero"
+          - "&7domador de la noche!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '20':
+        name: "&aGravedad"
+        lore:
+          - "&8Baile de Victoria"
+          - ""
+          - "&7En un área alrededor de ti los bloques"
+          - "&7volará."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '21':
+        name: "&aJinete de Dragon"
+        lore:
+          - "&8Baile de Victoria"
+          - ""
+          - "&7Monta en un dragón que tiene la"
+          - "&7capacidad de destruir el mapa"
+          - "&7entero."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '22':
+        name: "&aLinternas Flotantes"
+        lore:
+          - "&8Baile de Victoria"
+          - ""
+          - "&7Invoca cerca defarolillos"
+          - "&7flotantes que iluminarán durante"
+          - "&7la noche."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '23':
+        name: "&aLluvia de Cerdos"
+        lore:
+          - "&8Baile de Victoria"
+          - ""
+          - "&7Lloverán cerdos desde el cielo."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '24':
+        name: "&aOveja de Guerra"
+        lore:
+          - "&8Baile de Victoria"
+          - ""
+          - "&7Monta en una oveja colorida que"
+          - "&7cambia sus colores."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '25':
+        name: "&aVolcan"
+        lore:
+          - "&8Baile de Victoria"
+          - ""
+          - "&7Serás un volcán vivo."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '28':
+        name: "&aVolcán de Lana"
+        lore:
+          - "&8Baile de Victoria"
+          - ""
+          - "&7Serás un volcan de ovejas"
+          - "&7vivo!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '29':
+        name: "&aVolcan de Ovejas"
+        lore:
+          - "&8Baile de Victoria"
+          - ""
+          - "&7Serás el volcan de Ovjeas mas"
+          - "&7colorido que haya visto."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '30':
+        name: "&aAlfombra Mágica"
+        lore:
+          - "&8Baile de Victoria"
+          - ""
+          - "&7Volarás en una alfombra voladora."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '48':
+        name: "&aVolver"
+        lore:
+          - "&7Ir a mis Cosmeticos"
+      '50':
+        name: "&6Puntos Totales: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  killeffects:
+    title: "Efectos de Asesinato Final"
+    icons:
+      '10':
+        name: "&aNinguno"
+        lore:
+          - "&8Efecto de Asesinato Final"
+          - ""
+          - "&7Seleccionado esta opción"
+          - "&7deshabilita tu Efecto de"
+          - "&7Asesinato Final."
+          - ""
+          - "<select_status>"
+      '11':
+        name: "&aAura de Corazones"
+        lore:
+          - "&8Efecto de Asesinato Final"
+          - ""
+          - "&7Al matar a un enemigo se"
+          - "&7producirá mucho amor."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '12':
+        name: "&aTNT"
+        lore:
+          - "&8Efecto de Asesinato Final"
+          - ""
+          - "&7Al matar a un enemigo, este"
+          - "&7desaparecerá en TNT."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '13':
+        name: "&aExplosión de Huevos"
+        lore:
+          - "&8Efecto de Asesinato Final"
+          - ""
+          - "&7Al matar a un enemigo saldran"
+          - "&7huevos y emergeran pollos!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '14':
+        name: "&aGolpe Final"
+        lore:
+          - "&8Efecto de Asesinato Final"
+          - ""
+          - "&7Al matar a un enemigo este"
+          - "&7saldra disparado del mundo."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '15':
+        name: "&aCabeza-Cohete"
+        lore:
+          - "&8Efecto de Asesinato Final"
+          - ""
+          - "&7Al matar a un enemigo, se"
+          - "&7enviará su cabeza por los aires"
+          - "&7como si fuera un misil."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '16':
+        name: "&aFuente de Galletas"
+        lore:
+          - "&8Efecto de Asesinato Final"
+          - ""
+          - "&7Al matar a un enemigo, saldrá"
+          - "&7una fuente de galletas de tu"
+          - "&7interior."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '19':
+        name: "&aExplosión Sangrienta"
+        lore:
+          - "&8Efecto de Asesinato Final"
+          - ""
+          - "&7Al matar a un enemigo, este"
+          - "&7explotará en sangre."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '20':
+        name: "&aFantasma"
+        lore:
+          - "&8Efecto de Asesinato Final"
+          - ""
+          - "&7Al matar a un enemigo saldra"
+          - "&7su fantasma a reclamarte."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '21':
+        name: "&aCreeper"
+        lore:
+          - "&8Efecto de Asesinato Final"
+          - ""
+          - "&7Saldra un creeper explosivo."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '22':
+        name: "&aDiamantes"
+        lore:
+          - "&8Efecto de Asesinato Final"
+          - ""
+          - "&7Al matar a un enemigo saldra"
+          - "&7una fuente de diamantes."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '23':
+        name: "&aColores"
+        lore:
+          - "&8Efecto de Asesinato Final"
+          - ""
+          - "&7Al matar a un enemigo saldra"
+          - "&7una fuente de colores."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '24':
+        name: "&aFlores"
+        lore:
+          - "&8Efecto de Asesinato Final"
+          - ""
+          - "&7Al matar a un enemigo saldra"
+          - "&7una fuente de flores."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '25':
+        name: "&aLluvia"
+        lore:
+          - "&8Efecto de Asesinato Final"
+          - ""
+          - "&7Al matar a un enemigo caera"
+          - "&7una lluvia de lagrimas."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '28':
+        name: "&aExplosión De Conejos"
+        lore:
+          - "&8Efecto de Asesinato Final"
+          - ""
+          - "&7Al matar a un enemigo saldra"
+          - "&7una fuente de conejos."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '48':
+        name: "&aVolver"
+        lore:
+          - "&7Ir a mis Cosmeticos"
+      '50':
+        name: "&6Puntos Totales: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  sprays:
+    title: "Sprays"
+    icons:
+      '10':
+        name: "&aNinguno"
+        lore:
+          - "&8Spray"
+          - ""
+          - "&7Seleccionado esta opción"
+          - "&7deshabilita tu Spray."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '11':
+        name: "&aCama"
+        lore:
+          - "&8Spray"
+          - ""
+          - "&7Selecciona el Spray de Cama."
+          - "&7Este cambio solo es decorativo."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '12':
+        name: "&aTNT"
+        lore:
+          - "&8Spray"
+          - ""
+          - "&7Selecciona el Spray de TNT."
+          - "&7Este cambio solo es decorativo."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '13':
+        name: "&aCubo de Agua"
+        lore:
+          - "&8Spray"
+          - ""
+          - "&7Selecciona el Spray de Cubo de Agua."
+          - "&7Este cambio solo es decorativo."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '30':
+        name: "&aVolver"
+        lore:
+          - "&7Ir a mis Cosmeticos"
+      '32':
+        name: "&6Puntos Totales: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  toppers:
+    title: "Island Toppers"
+    icons:
+      '10':
+        name: "&aNinguno"
+        lore:
+          - "&8Topper de la Isla"
+          - ""
+          - "&7Seleccione NINGUNO Island Topper"
+          - "&7para engendrar sobre su isla."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '11':
+        name: "&aConejo"
+        lore:
+          - "&8Topper de la Isla"
+          - ""
+          - "&7Seleccione el Conejo Island Topper"
+          - "&7para engendrar sobre su isla."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '12':
+        name: "&aPollo"
+        lore:
+          - "&8Topper de la Isla"
+          - ""
+          - "&7Seleccione el Pollo Island Topper"
+          - "&7para engendrar sobre su isla."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '13':
+        name: "&aOveja"
+        lore:
+          - "&8Topper de la Isla"
+          - ""
+          - "&7Seleccione el Oveja Island Topper"
+          - "&7para engendrar sobre su isla."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '14':
+        name: "&aSlime"
+        lore:
+          - "&8Topper de la Isla"
+          - ""
+          - "&7Seleccione el Slima Island Topper"
+          - "&7para engendrar sobre su isla."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '15':
+        name: "&aEspada"
+        lore:
+          - "&8Topper de la Isla"
+          - ""
+          - "&7Seleccione el Espada Island Topper"
+          - "&7para engendrar sobre su isla."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '16':
+        name: "&aOveja Arcoiris"
+        lore:
+          - "&8Topper de la Isla"
+          - ""
+          - "&7Seleccione el Topper de la isla"
+          - "&7de la oveja arcoiris para que"
+          - "&7aparezca sobre su isla."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '30':
+        name: "&aVolver"
+        lore:
+          - "&7Ir a mis Cosmeticos"
+      '32':
+        name: "&6Puntos Totales: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  cries:
+    title: "Gritos de Muerte"
+    icons:
+      '10':
+        name: "&aNinguno"
+        lore:
+          - "&8Gritos de Muerte"
+          - ""
+          - "&7Seleccionado este Grito de Muerte"
+          - "&7no reproducira ningun sonido al"
+          - "&7morir."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '11':
+        name: "&aMurcielago"
+        lore:
+          - "&8Gritos de Muerte"
+          - ""
+          - "&7Reproduce el Grito de Murcielago"
+          - "&7al morir."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '12':
+        name: "&aEsqueleto"
+        lore:
+          - "&8Gritos de Muerte"
+          - ""
+          - "&7Reproduce el Grito de Esqueleto"
+          - "&7al morir."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '13':
+        name: "&aLobo"
+        lore:
+          - "&8Gritos de Muerte"
+          - ""
+          - "&7Reproduce el Grito de Lobo"
+          - "&7al morir."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '14':
+        name: "&aDragón del Ender"
+        lore:
+          - "&8Gritos de Muerte"
+          - ""
+          - "&7Reproduce el Grito de Dragón"
+          - "&7al morir."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '15':
+        name: "&aBurbuja"
+        lore:
+          - "&8Gritos de Muerte"
+          - ""
+          - "&7Reproduce el Grito de Burbuja"
+          - "&7al morir."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '16':
+        name: "&aEnderman"
+        lore:
+          - "&8Gritos de Muerte"
+          - ""
+          - "&7Reproduce el Grito de Enderman"
+          - "&7al morir."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '19':
+        name: "&a"
+        lore:
+          - "&8Gritos de Muerte"
+          - ""
+          - "&7Reproduce el Grito de Fuegos"
+          - "&7Artificiales al morir."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '39':
+        name: "&aVolver"
+        lore:
+          - "&7Ir a mis Cosmeticos"
+      '41':
+        name: "&6Puntos Totales: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  shopkeepers:
+    title: "Skins de Tenderos"
+    icons:
+      '10':
+        name: "&aHora de Aventura"
+        lore:
+          - "&8Skin de Tendero"
+          - ""
+          - "&7Elige Hora de Aventura como tu"
+          - "&7Tendero!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '11':
+        name: "&aAmong Us"
+        lore:
+          - "&8Skin de Tendero"
+          - ""
+          - "&7Elige Among Us como tu"
+          - "&7Tendero!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '12':
+        name: "&aAstronauta"
+        lore:
+          - "&8Skin de Tendero"
+          - ""
+          - "&7Elige Astronauta como tu"
+          - "&7Tendero!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '13':
+        name: "&aAjolote"
+        lore:
+          - "&8Skin de Tendero"
+          - ""
+          - "&7Elige Ajolote como tu Tendero!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '14':
+        name: "&aCovid 19"
+        lore:
+          - "&8Skin de Tendero"
+          - ""
+          - "&7Elige Covid 19 como tu Tendero!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '15':
+        name: "&aAlien"
+        lore:
+          - "&8Skin de Tendero"
+          - ""
+          - "&7Elige Alien como tu Tendero!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '16':
+        name: "&aPokemon"
+        lore:
+          - "&8Skin de Tendero"
+          - ""
+          - "&7Elige Pokemon como tu Tendero!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '19':
+        name: "&aNaruto"
+        lore:
+          - "&8Skin de Tendero"
+          - ""
+          - "&7Elige Naruto como tu Tendero!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '20':
+        name: "&aPolicía"
+        lore:
+          - "&8Skin de Tendero"
+          - ""
+          - "&7Elige Policía como tu Tendero!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '21':
+        name: "&aDragon Ball"
+        lore:
+          - "&8Skin de Tendero"
+          - ""
+          - "&7Elige Dragon Ball como tu Tendero!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '22':
+        name: "&aLGBT"
+        lore:
+          - "&8Skin de Tendero"
+          - ""
+          - "&7Elige LGBT como tu Tendero!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '39':
+        name: "&aVolver"
+        lore:
+          - "&7Ir a mis Cosmeticos"
+      '41':
+        name: "&6Puntos Totales: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  killmessages:
+    title: "Mensajes de Muerte"
+    icons:
+      '10':
+        name: "&aPor Defecto"
+        lore:
+          - "&7Mensajes de Muerte"
+          - ""
+          - "&7Selecciona los Mensajes de"
+          - "&7muerte POR DEFECTO para los"
+          - "&7mensajes de chat dentro del"
+          - "&7juego!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '11':
+        name: "&aDramático"
+        lore:
+          - "&7Mensajes de Muerte"
+          - ""
+          - "&7Selecciona los Mensajes de"
+          - "&7Muerte Dramaticos para los"
+          - "&7mensajes de chat dentro del"
+          - "&7juego!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '30':
+        name: "&aVolver"
+        lore:
+          - "&7Ir a mis Cosmeticos"
+      '32':
+        name: "&6Puntos Totales: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  beddestroys:
+    title: "Destrucción de Camas"
+    icons:
+      '10':
+        name: "&aNinguno"
+        lore:
+          - "&8Cama Destruida"
+          - ""
+          - "&7Selecciona para quitar tu efecto"
+          - "&7al romper la cama."
+          - ""
+          - <select_status>"
+      '11':
+        name: "&aMisil de Calamar"
+        lore:
+          - "&8Cama Destruida"
+          - ""
+          - "&7Al romper una cama, se invocará"
+          - "&7a una criatura aliada."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '12':
+        name: "&aFuegos Artificiales"
+        lore:
+          - "&8Cama Destruida"
+          - ""
+          - "&7Al romper una cama, se lanzarán"
+          - "&7fuegos artificiales."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '13':
+        name: "&aRayo"
+        lore:
+          - "&8Cama Destruida"
+          - ""
+          - "&7Al romper una cama, Thor se"
+          - "&7despertará."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '14':
+        name: "&aExplosión de Lava"
+        lore:
+          - "&8Cama Destruida"
+          - ""
+          - "&7Al romper una cama, surgirá una"
+          - "&7explosión de lava."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '15':
+        name: "&aMisil de Cerdos"
+        lore:
+          - "&8Cama Destruida"
+          - ""
+          - "&7Al romper una cama, se invocará"
+          - "&7a una criatura aliada."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '16':
+        name: "&aTornado"
+        lore:
+          - "&8Cama Destruida"
+          - ""
+          - "&7Al romper una cama, aparecerá"
+          - "&7un vórtice!"
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '19':
+        name: "&aLadrón"
+        lore:
+          - "&8Cama Destruida"
+          - ""
+          - "&7Al romper una cama, aparecera un"
+          - "&7ladrón aliado."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '20':
+        name: "&aExplosión de Huevos"
+        lore:
+          - "&8Cama Destruida"
+          - ""
+          - "&7Al romper una cama, se creara una"
+          - "&7explosión de huevos."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '21':
+        name: "&aVentisca"
+        lore:
+          - "&8Cama Destruida"
+          - ""
+          - "&7Al romper una cama, se creara una"
+          - "&7tormenta invernal."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '22':
+        name: "&aExplosión de Cerdos"
+        lore:
+          - "&8Cama Destruida"
+          - ""
+          - "&7Al romper una cama, se invocarán"
+          - "&7muchos cerdos bebes."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '23':
+        name: "&aLady Bug"
+        lore:
+          - "&8Cama Destruida"
+          - ""
+          - "&7Al romper una cama, se invocará a"
+          - "&7la misteriosa Lady Bug."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '24':
+        name: "&aDanza de Fuego"
+        lore:
+          - "&8Cama Destruida"
+          - ""
+          - "&7Al romper una cama, se invocará una"
+          - "&7Danza de Fuego."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '39':
+        name: "&aVolver"
+        lore:
+          - "&7Ir a mis Cosmeticos"
+      '41':
+        name: "&6Puntos Totales: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  woodskins:
+    title: "&aSkins de Madera"
+    icons:
+      '10':
+        name: "&aNinguno"
+        lore:
+          - "&8Tipo de Madera"
+          - ""
+          - "&7Seleccionar esta opción para desactivar"
+          - "&7tu Skin de Madera."
+          - ""
+          - "<select_status>"
+      '11':
+        name: "&aTabla de Abeto"
+        lore:
+          - "&8Tipo de Madera"
+          - ""
+          - "&7Selecciona la Tipo de Madera de"
+          - "&7Tabla de Abeto que se usará"
+          - "&7cuando coloques bloques de"
+          - "&7madera."
+          - "&7bloques de madera."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '12':
+        name: "&aTabla de Abedul"
+        lore:
+          - "&8Tipo de Madera"
+          - ""
+          - "&7Selecciona la Tipo de Madera de"
+          - "&7Tabla de Abedul que se usará"
+          - "&7cuando coloques bloques de"
+          - "&7madera."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '13':
+        name: "&aTabla de Jungla"
+        lore:
+          - "&8Tipo de Madera"
+          - ""
+          - "&7Selecciona la Tipo de Madera de"
+          - "&7Tabla de Jungla que se usará"
+          - "&7cuando coloques bloques de"
+          - "&7madera."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '14':
+        name: "&aTabla de Acacia"
+        lore:
+          - "&8Tipo de Madera"
+          - ""
+          - "&7Selecciona la Tipo de Madera de"
+          - "&7Tabla de Acacia que se usará"
+          - "&7cuando coloques bloques de"
+          - "&7madera."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '15':
+        name: "&aTabla de Roble Oscuro"
+        lore:
+          - "&8Tipo de Madera"
+          - ""
+          - "&7Selecciona la Tipo de Madera de"
+          - "&7Tabla de Roble Oscuro que se"
+          - "&7usará cuando coloques bloques de"
+          - "&7madera."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '16':
+        name: "&aTronco de Roble"
+        lore:
+          - "&8Tipo de Madera"
+          - ""
+          - "&7Selecciona la Tipo de Madera de"
+          - "&7Tronco de Roble que se usará"
+          - "&7cuando coloques bloques de"
+          - "&7madera."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '19':
+        name: "&aTronco de Abeto"
+        lore:
+          - "&8Tipo de Madera"
+          - ""
+          - "&7Selecciona la Tipo de Madera de"
+          - "&7Tronco de Abeto que se usará"
+          - "&7cuando coloques bloques de"
+          - "&7madera."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '20':
+        name: "&aTronco de Abedul"
+        lore:
+          - "&8Tipo de Madera"
+          - ""
+          - "&7Selecciona la Tipo de Madera de"
+          - "&7Tronco de Abedul que se usará"
+          - "&7cuando coloques bloques de"
+          - "&7madera."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '21':
+        name: "&aTronco de Jungla"
+        lore:
+          - "&8Tipo de Madera"
+          - ""
+          - "&7Selecciona la Tipo de Madera de"
+          - "&7Tronco de Jungla que se usará"
+          - "&7cuando coloques bloques de"
+          - "&7madera."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '22':
+        name: "&aTronco de Acacia"
+        lore:
+          - "&8Tipo de Madera"
+          - ""
+          - "&7Selecciona la Tipo de Madera de"
+          - "&7Tronco de Acacia que se usará"
+          - "&7cuando coloques bloques de"
+          - "&7madera."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '23':
+        name: "&aTronco de Roble Oscuro"
+        lore:
+          - "&8Tipo de Madera"
+          - ""
+          - "&7Selecciona la Tipo de Madera de"
+          - "&7Tronco de Roble Oscuro que se"
+          - "&7usará cuando coloques bloques de"
+          - "&7madera."
+          - "<price_status>"
+          - ""
+          - "<select_status>"
+      '39':
+        name: "&aVolver"
+        lore:
+          - "&7Ir a mis Cosmeticos"
+      '41':
+        name: "&6Puntos Totales: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  votes:
+    title: "Votos"
+    icons:
+      '11':
+        name: "&aTienda & Mejoras"
+        lore:
+          - "&8Voto de Tiendas & Mejoras"
+          - ""
+          - "&7Puedes votar por los items, precios"
+          - "&7de la tienda y las mejoras."
+          - ""
+          - "&eSolo para donadores."
+      '13':
+        name: "&aVida"
+        lore:
+          - "&8Vota de Vida"
+          - ""
+          - "&7Puedes votar por la cantidad de"
+          - "&7corazones en la partida."
+          - ""
+          - "&eSolo para donadores."
+      '15':
+        name: "&aTiempo"
+        lore:
+          - "&8Voto de Tiempo"
+          - ""
+          - "&7Puedes votar por el tiempo del juego."
+          - ""
+          - "&eSolo para donadores."
+      '31':
+        name: "&cCerrar"
+  shop_votes:
+    title: "Voto de Tienda & Mejoras"
+    icons:
+      '11':
+        name: "&aBásico"
+        lore:
+          - "&8Tienda & Mejoras"
+          - ""
+          - "&7Los precios de la tienda serán más altos"
+          - "&7de lo normal y habrá menos objetos."
+          - ""
+          - "&7Hay &6<votes> &7votos."
+          - ""
+          - "<vote_status>"
+      '13':
+        name: "&aNormal"
+        lore:
+          - "&8Tienda & Mejoras"
+          - ""
+          - "&7Los items y los precios son normales."
+          - ""
+          - "&7Hay &6<votes> &7votos."
+          - ""
+          - "<vote_status>"
+      '15':
+        name: "&aPotenciado"
+        lore:
+          - "&8Tienda & Mejoras"
+          - ""
+          - "&7Los precios de la tienda serán"
+          - "&7más bajos y habrá más objetos."
+          - ""
+          - "&7Hay &6<votes> &7votos."
+          - ""
+          - "<vote_status>"
+      '31':
+        name: "&cRegresar"
+        lore:
+          - "&7Regresar al menu de votos."
+  health_votes:
+    title: "Voto de Vida"
+    icons:
+      '11':
+        name: "&aHardcore"
+        lore:
+          - "&8Vida"
+          - ""
+          - "&7La vida de todos los jugadores"
+          - "&7sera de 5 corazones!"
+          - ""
+          - "&7Hay &6<votes> &7votos."
+          - ""
+          - "<vote_status>"
+      '13':
+        name: "&aNormal"
+        lore:
+          - "&8Vida"
+          - ""
+          - "&7La vida de todos los jugadores"
+          - "&7sera de 20 corazones!"
+          - ""
+          - "&7Hay &6<votes> &7votos."
+          - ""
+          - "<vote_status>"
+      '15':
+        name: "&aDoble"
+        lore:
+          - "&8Vida"
+          - ""
+          - "&7La vida de todos los jugadores"
+          - "&7sera de 40 corazones!"
+          - ""
+          - "&7Hay &6<votes> &7votos."
+          - ""
+          - "<vote_status>"
+      '31':
+        name: "&cRegresar"
+        lore:
+          - "&7Regresar al menu de votos."
+  time_votes:
+    title: "Voto de Tiempo"
+    icons:
+      '11':
+        name: "&aDía"
+        lore:
+          - "&8Tiempo"
+          - ""
+          - "&7El tiempo en la partida"
+          - "&7sera de Día."
+          - ""
+          - "&7Hay &6<votes> &7votos."
+          - ""
+          - "<vote_status>"
+      '13':
+        name: "&aSoleado"
+        lore:
+          - "&8Tiempo"
+          - ""
+          - "&7El tiempo en la partida"
+          - "&7sera Soleado."
+          - ""
+          - "&7Hay &6<votes> &7votos."
+          - ""
+          - "<vote_status>"
+      '15':
+        name: "&aNoche"
+        lore:
+          - "&8Tiempo"
+          - ""
+          - "&7El tiempo en la partida"
+          - "&7sera de Noche."
+          - ""
+          - "&7Hay &6<votes> &7votos."
+          - ""
+          - "<vote_status>"
+      '31':
+        name: "&cRegresar"
+        lore:
+          - "&7Regresar al menu de votos."
+  stats:
+    title: "Estadísticas de Bed Wars"
+    icons:
+      '4':
+        name: "&aEstadísticas Generales"
+        lore:
+          - "&7Juegos Jugados: &a<bw-total_games_played>"
+          - ""
+          - "&7Camas Destruidas: &a<bw-total_beds_broken>"
+          - "&7Camas Perdidas: &a<bw-total_beds_lost>"
+          - ""
+          - "&7Asesinatos: &a<bw-total_kills>"
+          - "&7Muertes: &a<bw-total_deaths>"
+          - "&7Asesinatos Finales: &a<bw-total_final_kills>"
+          - "&7Muertes Finales: &a<bw-total_final_deaths>"
+          - "&7K/D Final: &a<bw-total_final_kd>"
+          - ""
+          - "&7Victorias: &a<bw-total_wins>"
+          - "&7Derrotas: &a<bw-total_losses>"
+      '19':
+        name: "&aEstadísticas Solos"
+        lore:
+          - "&7Juegos Jugados: &a<bw-solo_games_played>"
+          - ""
+          - "&7Camas Destruidas: &a<bw-solo_beds_broken>"
+          - "&7Camas Perdidas: &a<bw-solo_beds_lost>"
+          - ""
+          - "&7Asesinatos: &a<bw-solo_kills>"
+          - "&7Muertes: &a<bw-solo_deaths>"
+          - "&7Asesinatos Finales: &a<bw-solo_final_kills>"
+          - "&7Muertes Finales: &a<bw-solo_final_deaths>"
+          - "&7K/D Final: &a<bw-solo_final_kd>"
+          - ""
+          - "&7Victorias: &a<bw-solo_wins>"
+          - "&7Derrotas: &a<bw-solo_losses>"
+      '21':
+        name: "&aEstadísticas Dobles"
+        lore:
+          - "&7Juegos Jugados: &a<bw-doubles_games_played>"
+          - ""
+          - "&7Camas Destruidas: &a<bw-doubles_beds_broken>"
+          - "&7Camas Perdidas: &a<bw-doubles_beds_lost>"
+          - ""
+          - "&7Asesinatos: &a<bw-doubles_kills>"
+          - "&7Muertes: &a<bw-doubles_deaths>"
+          - "&7Asesinatos Finales: &a<bw-doubles_final_kills>"
+          - "&7Muertes Finales: &a<bw-doubles_final_deaths>"
+          - "&7K/D Final: &a<bw-doubles_final_kd>"
+          - ""
+          - "&7Victorias: &a<bw-doubles_wins>"
+          - "&7Derrotas: &a<bw-doubles_losses>"
+      '23':
+        name: "&aEstadísticas Trios"
+        lore:
+          - "&7Juegos Jugados: &a<bw-trios_games_played>"
+          - ""
+          - "&7Camas Destruidas: &a<bw-trios_beds_broken>"
+          - "&7Camas Perdidas: &a<bw-trios_beds_lost>"
+          - ""
+          - "&7Asesinatos: &a<bw-trios_kills>"
+          - "&7Muertes: &a<bw-trios_deaths>"
+          - "&7Asesinatos Finales: &a<bw-trios_final_kills>"
+          - "&7Muertes Finales: &a<bw-trios_final_deaths>"
+          - "&7K/D Final: &a<bw-trios_final_kd>"
+          - ""
+          - "&7Victorias: &a<bw-trios_wins>"
+          - "&7Derrotas: &a<bw-trios_losses>"
+      '25':
+        name: "&aEstadísticas Cuartetos"
+        lore:
+          - "&7Juegos Jugados: &a<bw-quartets_games_played>"
+          - ""
+          - "&7Camas Destruidas: &a<bw-quartets_beds_broken>"
+          - "&7Camas Perdidas: &a<bw-quartets_beds_lost>"
+          - ""
+          - "&7Asesinatos: &a<bw-quartets_kills>"
+          - "&7Muertes: &a<bw-quartets_deaths>"
+          - "&7Asesinatos Finales: &a<bw-quartets_final_kills>"
+          - "&7Muertes Finales: &a<bw-quartets_final_deaths>"
+          - "&7K/D Final: &a<bw-quartets_final_kd>"
+          - ""
+          - "&7Victorias: &a<bw-quartets_wins>"
+          - "&7Derrotas: &a<bw-quartets_losses>"
+      '31':
+        name: "&a1vs1 Statistics"
+        lore:
+          - "&7Juegos Jugados: &a<bw-1vs1_games_played>"
+          - ""
+          - "&7Camas Destruidas: &a<bw-1vs1_beds_broken>"
+          - "&7Camas Perdidas: &a<bw-1vs1_beds_lost>"
+          - ""
+          - "&7Asesinatos: &a<bw-1vs1_kills>"
+          - "&7Muertes: &a<bw-1vs1_deaths>"
+          - "&7Asesinatos Finales: &a<bw-1vs1_final_kills>"
+          - "&7Muertes Finales: &a<bw-1vs1_final_deaths>"
+          - "&7K/D Final: &a<bw-1vs1_final_kd>"
+          - ""
+          - "&7Victorias: &a<bw-1vs1_wins>"
+          - "&7Derrotas: &a<bw-1vs1_losses>"
+      '49':
+        name: "&cCerrar"
+  team_selector:
+    title: "Selector de Equipo"
+    icons:
+      '{team}':
+        name: "&fEquipo: <color><team_name>"
+        lore:
+          - "&8BedWars Equipo"
+          - ""
+          - "&eMiembros:"
+          - "<team_players>"
+          - ""
+          - "<team_status>"
+      '40':
+        name: "&cCerrar"
+  teleport_spectator:
+    title: "Teletransportador"
+    icons:
+      '{player}':
+        name: "&a<name>"
+        lore:
+          - "&7Vida: &f<health>%"
+          - "&7Comida: &f<food>%"
+          - "&7Equipo: <team_color><team_name>"
+          - ""
+          - "&7Click para observar!"
+  options_spectator:
+    title: "Opciones de Espectador"
+    icons:
+      '11':
+        name: "&aNo Velocidad"
+      '12':
+        name: "&aVelocidad I"
+      '13':
+        name: "&aVelocidad II"
+      '14':
+        name: "&aVelocidad III"
+      '15':
+        name: "&aVelocidad IV"
+      '20':
+        name: "<spectator_status>"
+        lore:
+          - "<spectator_status>"
+      '21':
+        name: "<spectator_status>"
+        lore:
+          - "<spectator_status>"
+      '23':
+        name: "<spectator_status>"
+        lore:
+          - "<spectator_status>"
+      '24':
+        name: "<spectator_status>"
+        lore:
+          - "<spectator_status>"
+  tracker_communication:
+    title: "Rastrador & Comunicador"
+    icons:
+      '11':
+        name: "&aComunicación Rapida"
+        lore:
+          - "&7Envia mensajes resaltados a"
+          - "&7los miembros de tu equipo!"
+          - ""
+          - "&eClick para abrir!"
+      '15':
+        name: "&aTienda de Rastrador"
+        lore:
+          - "&7Compra una actualización de seguimiento"
+          - "&7para tu brújula que rastreará a cada"
+          - "&7cada jugador en un equipo específico"
+          - "&7hasta que mueras."
+          - ""
+          - "&eClick para abrir!"
+  quick_communications:
+    title: "Comunicación Rapida"
+    icons:
+      '10':
+        name: "&aHola ( ﾟ◡ﾟ)/!"
+        lore:
+          - ""
+          - "&eClick para enviar!"
+      '11':
+        name: "&a¡Estoy volviendo a la base!"
+        lore:
+          - ""
+          - "&eClick para enviar!"
+      '12':
+        name: "&a¡Estoy defendiendo!"
+        lore:
+          - ""
+          - "&eClick para enviar!"
+      '13':
+        name: "&aEstoy atacando"
+        lore:
+          - "&7Podrás seleccionar el"
+          - "&7Equipo."
+          - ""
+          - "&eClick para enviar!"
+      '14':
+        name: "&aEstoy recogiendo"
+        lore:
+          - "&7Podrás seleccionar el"
+          - "&7Material."
+          - ""
+          - "&eClick para enviar!"
+      '15':
+        name: "&aTengo ASD!"
+        lore:
+          - "&7Podrás seleccionar el"
+          - "&7Material."
+          - ""
+          - "&eClick para enviar!"
+      '20':
+        name: "&aMuchas gracias"
+        lore:
+          - ""
+          - "&eClick para enviar!"
+      '21':
+        name: "&aVuelve a la base"
+        lore:
+          - ""
+          - "&eClick to send!"
+      '22':
+        name: "&a¡Por favor, defienda!"
+        lore:
+          - ""
+          - "&eClick para enviar!"
+      '23':
+        name: "&aAtaquemos a ASD!"
+        lore:
+          - "&7Podrás seleccionar el"
+          - "&7Equipo."
+          - ""
+          - "&eClick para enviar!"
+      '24':
+        name: "&aNecesitamos materiales!"
+        lore:
+          - "&7Podrás seleccionar el"
+          - "&7Material."
+          - ""
+          - "&eClick para enviar!"
+      '25':
+        name: "&a¡Jugador entrante!"
+        lore:
+          - ""
+          - "&eClick para enviar!"
+      '40':
+        name: "&aRegresar"
+        lore:
+          - "&7Al Rastreador & Comunicador"
+  '{quick_communications_resources}':
+    title: "Selecciona una opción:"
+    icons:
+      '{diamond}':
+        name: "&a<message>"
+        lore:
+          - "&7Click para enviar: '&a<message>&7'"
+          - "&7a los miembros de tu equipo!"
+          - ""
+          - "&eClick para enviar!"
+      '{iron}':
+        name: "&a<message>"
+        lore:
+          - "&7Click para enviar: '&a<message>&7'"
+          - "&7a los miembros de tu equipo!"
+          - ""
+          - "&eClick para enviar!"
+      '{gold}':
+        name: "&a<message>"
+        lore:
+          - "&7Click para enviar: '&a<message>&7'"
+          - "&7a los miembros de tu equipo!"
+          - ""
+          - "&eClick para enviar!"
+      '{emerald}':
+        name: "&a<message>"
+        lore:
+          - "&7Click para enviar: '&a<message>&7'"
+          - "&7a los miembros de tu equipo!"
+          - ""
+          - "&eClick para enviar!"
+  '{quick_communications_team}':
+    title: "Selecciona una opción:"
+    icons:
+      '{team}':
+        name: "&a<message>"
+        lore:
+          - "&7Click para enviar: '&a<message>&7'"
+          - "&7a los miembros de tu equipo!"
+          - ""
+          - "&eClick para enviar!"
+  tracker_shop:
+    title: "Compra un Rastrador"
+    icons:
+      '{team}':
+        name: "<team_color>Rastrea al Equipo <team_name>"
+        lore:
+          - "&7Compra una actualización de seguimiento"
+          - "&7para tu brújula que rastreará a cada"
+          - "&7cada jugador en un equipo específico"
+          - "&7hasta que mueras."
+          - "<cost_status>"
+          - ""
+          - "<status>"
+      '40':
+        name: "&aRegresar"
+        lore:
+          - "&7Al Rastreador & Comunicador"
+  solo:
+    title: "Jugar BedWars"
+    icons:
+      '12':
+        name: "&aBed Wars (Solo)"
+        lore:
+          - "&7Jugar Bed Wars Solo."
+          - ""
+          - "&e¡Click para jugar!"
+      '14':
+        name: "&aSelector de Mapa (Solo)"
+        lore:
+          - "&7Elija qué mapa desea jugar de una"
+          - "&7lista de servidores disponibles."
+          - ""
+          - "&e¡Click para buscar!"
+      '31':
+        name: "&cCerrar"
+        lore: []
+      '35':
+        name: "&cClic aquí para volver a unirse!"
+        lore:
+          - "&7Haga clic aquí para volver a unirse"
+          - "&7a su juego si se ha desconectado de él."
+  doubles:
+    title: "Jugar BedWars"
+    icons:
+      '12':
+        name: "&aBed Wars (Dobles)"
+        lore:
+          - "&7Jugar Bed Wars Dobles."
+          - ""
+          - "&e¡Click para jugar!"
+      '14':
+        name: "&aSelector de Mapa (Dobles)"
+        lore:
+          - "&7Elija qué mapa desea jugar de una"
+          - "&7lista de servidores disponibles."
+          - ""
+          - "&e¡Click para buscar!"
+      '31':
+        name: "&cCerrar"
+        lore: []
+      '35':
+        name: "&cClic aquí para volver a unirse!"
+        lore:
+          - "&7Haga clic aquí para volver a unirse"
+          - "&7a su juego si se ha desconectado de él."
+  trios:
+    title: "Jugar BedWars"
+    icons:
+      '12':
+        name: "&aBed Wars (Trios)"
+        lore:
+          - "&7Jugar Bed Wars Trios."
+          - ""
+          - "&e¡Click para jugar!"
+      '14':
+        name: "&aSelector de Mapa (Trios)"
+        lore:
+          - "&7Elija qué mapa desea jugar de una"
+          - "&7lista de servidores disponibles."
+          - ""
+          - "&e¡Click para buscar!"
+      '31':
+        name: "&cCerrar"
+        lore: []
+      '35':
+        name: "&cClic aquí para volver a unirse!"
+        lore:
+          - "&7Haga clic aquí para volver a unirse"
+          - "&7a su juego si se ha desconectado de él."
+  quartets:
+    title: "Jugar BedWars"
+    icons:
+      '12':
+        name: "&aBed Wars Cuartetos"
+        lore:
+          - "&7Jugar Bed Wars Cuartetos."
+          - ""
+          - "&e¡Click para jugar!"
+      '14':
+        name: "&aSelector de Mapa (Cuartetos)"
+        lore:
+          - "&7Elija qué mapa desea jugar de una"
+          - "&7lista de servidores disponibles."
+          - ""
+          - "&e¡Click para buscar!"
+      '31':
+        name: "&cCerrar"
+        lore: []
+      '35':
+        name: "&cClic aquí para volver a unirse!"
+        lore:
+          - "&7Haga clic aquí para volver a unirse"
+          - "&7a su juego si se ha desconectado de él."
+  1vs1:
+    title: "Jugar BedWars"
+    icons:
+      '12':
+        name: "&aBed Wars (1vs1)"
+        lore:
+          - "&7Jugar Bed Wars 1vs1."
+          - ""
+          - "&e¡Click para jugar!"
+      '14':
+        name: "&aSelector de Mapa (1vs1)"
+        lore:
+          - "&7Elija qué mapa desea jugar de una"
+          - "&7lista de servidores disponibles."
+          - ""
+          - "&e¡Click para buscar!"
+      '31':
+        name: "&cCerrar"
+        lore: []
+      '35':
+        name: "&cClic aquí para volver a unirse!"
+        lore:
+          - "&7Haga clic aquí para volver a unirse"
+          - "&7a su juego si se ha desconectado de él."
+  map_selector:
+    title: "Mapas de Bed Wars"
+    icons:
+      '{map}':
+        name: "<color><name>"
+        lore:
+          - "&8<group>"
+          - ""
+          - "&7Servidores Disponibles: &a<available_servers>"
+          - "&7Tiempos Unidos: &a<times_joined>"
+          - "&7Mapas Seleccionados: &a<map_selections>"
+          - ""
+          - "<status>"
+          - "&eHaga clic derecho para cambiar favorito!"
+      '{random}':
+        name: "&aJuego Aleatorio"
+        lore:
+          - "&8<group>"
+          - ""
+          - "&Mapas Seleccionados: &a<map_selections>"
+          - ""
+          - "<status>"
+          - "&eHaga clic derecho para cambiar favorito!"
+      '{favourite}':
+        name: "&aFavorito Aleatorio"
+        lore:
+          - "&8<group>"
+          - ""
+          - "&Mapas Seleccionados: &a<map_selections>"
+          - ""
+          - "<status>"
+          - "&eHaga clic derecho para cambiar favorito!"
+      '{next}':
+        name: "&aSiguiente Pagina!"
+        lore:
+          - "&7Click para ir a la pagina <page>!"
+      '{previous}':
+        name: "&aPagina Anterior!"
+        lore:
+          - "&7Click para ir a la pagina <page>!"
+      '53':
+        name: "&aSeleccion de Mapa"
+        lore:
+          - "&7Cada día puedes elegir qué mapa quieres"
+          - "&7jugar 1 vez. ¡Desbloquea una selección"
+          - "&7de mapas ilimitados actualizándote a"
+          - "&7el rango &bMVP&c+ &7en la tienda!"
+          - ""
+          - "&ehttps://store.minecraft.net"
+
+upgrade_menus:
+  status:
+    price:
+      unlock: "&aDESBLOQUEADO"
+      buy: "&eClick para comprar!"
+      need: "&cNo tienes suficiente <material>!"
+    color_name:
+      buy: "&a"
+      need: "&c"
+    color_level:
+      buyed: "&a"
+      default: "&7"
+    trap:
+      max: "&cTrampas llenas!"
+      browse: "&eClick para buscar!"
+    trap_price:
+      - ""
+      - "&7Costo: &b<cost> diamante(s)"
+    trap_queue_lore:
+      - "&7En espera por: &a<name>"
+  basic:
+    upgrades_menu:
+      inventory_title: Mejoras y trampas
+      decoration:
+        '1':
+          name: "&8⬆ &7Comprable"
+          lore:
+            - "&8⬇ &7Cola de trampas"
+      contents:
+        sharpened_swords:
+          name: "<color>Espadas afiladas"
+          lore:
+            - "&7Tus espadas obtienen"
+            - "&7sharpness I de forma permanente"
+            - "&7en todas las espadas y hachas!"
+            - ""
+            - "&7Costo: &b8 Diamantes"
+            - ""
+            - "<upgrade_status>"
+        reinforced_armor:
+          levels:
+            '1':
+              name: "<color>Armadura reforzada I"
+              lore:
+                - "&7Tu equipo obtiene protección de forma permanente"
+                - "&7en todas las piezas de armadura!"
+                - ""
+                - "<color>Nivel 1: Protección I, &b4 Diamantes"
+                - "&7Nivel 2: Protección II, &b8 Diamantes"
+                - "&7Nivel 3: Protección III, &b16 Diamantes"
+                - "&7Nivel 4: Protección IV, &b24 Diamantes"
+                - ""
+                - "<upgrade_status>"
+            '2':
+              name: "<color>Armadura reforzada II"
+              lore:
+                - "&7Tu equipo obtiene protección de forma permanente"
+                - "&7en todas las piezas de armadura!"
+                - ""
+                - "&aNivel 1: Protección I, &b4 Diamantes"
+                - "<color>Nivel 2: Protección II, &b8 Diamantes"
+                - "&7Nivel 3: Protección III, &b16 Diamantes"
+                - "&7Nivel 4: Protección IV, &b124 Diamantes"
+                - ""
+                - "<upgrade_status>"
+            '3':
+              name: "<color>Armadura reforzada III"
+              lore:
+                - "&7Tu equipo obtiene protección de forma permanente"
+                - "&7en todas las piezas de armadura!"
+                - ""
+                - "&aNivel 1: Protección I, &b4 Diamantes"
+                - "&aNivel 2: Protección II, &b8 Diamantes"
+                - "<color>Nivel 3: Protección III, &b16 Diamantes"
+                - "&7Nivel 4: Protección IV, &b24 Diamantes"
+                - ""
+                - "<upgrade_status>"
+            '4':
+              name: "<color>Armadura reforzada IV"
+              lore:
+                - "&7Tu equipo obtiene protección de forma permanente"
+                - "&7en todas las piezas de armadura!"
+                - ""
+                - "&aNivel 1: Protección I, &b4 Diamantes"
+                - "&aNivel 2: Protección II, &b8 Diamantes"
+                - "&aNivel 3: Protección III, &b16 Diamantes"
+                - "<color>Nivel 4: Protección IV, &b24 Diamantes"
+                - ""
+                - "<upgrade_status>"
+        maniac_miner:
+          levels:
+            '1':
+              name: "<color>Minero maniaco I"
+              lore:
+                - "&7Todos los jugadores de tu equipo ganan"
+                - "&7prisa de forma permanente."
+                - ""
+                - "<color>Nivel 1: Prisa I, &b4 Diamantes"
+                - "&7Nivel 2: Prisa II, &b6 Diamantes"
+                - ""
+                - "<upgrade_status>"
+            '2':
+              name: "<color>Minero maniaco II"
+              lore:
+                - "&7Todos los jugadores de tu equipo ganan"
+                - "&7prisa de forma permanente."
+                - ""
+                - "&aNivel 1: Prisa I, &b4 Diamantes"
+                - "<color>Nivel 2: Prisa II, &b6 Diamantes"
+                - ""
+                - "<upgrade_status>"
+        iron_forge:
+          levels:
+            '1':
+              name: "<color>Forja de hierro"
+              lore:
+                - "&7Actualiza la velocidad de aparición"
+                - "&7de recursos en tu isla."
+                - ""
+                - "<color>Nivel 1: +50% de recursos, &b6 Diamantes"
+                - "&7Nivel 2: +100% de recursos, &b12 Diamantes"
+                - "&7Nivel 3: Genera esmeraldas &b18 Diamantes"
+                - "&7Nivel 4: +200% de recursos, &b24 Diamantes"
+                - ""
+                - "<upgrade_status>"
+            '2':
+              name: "<color>Forja de hierro"
+              lore:
+                - "&7Actualiza la velocidad de aparición"
+                - "&7de recursos en tu isla."
+                - ""
+                - "&aNivel 1: +50% de recursos, &b6 Diamantes"
+                - "<color>Nivel 2: +100% de recursos, &b12 Diamantes"
+                - "&7Nivel 3: Genera esmeraldas &b18 Diamantes"
+                - "&7Nivel 4: +200% de recursos, &b24 Diamantes"
+                - ""
+                - "<upgrade_status>"
+            '3':
+              name: "<color>Forja de hierro"
+              lore:
+                - "&7Actualiza la velocidad de aparición"
+                - "&7de recursos en tu isla."
+                - ""
+                - "&aNivel 1: +50% de recursos, &b6 Diamantes"
+                - "&aNivel 2: +100% de recursos, &b12 Diamantes"
+                - "<color>Nivel 3: Genera esmeraldas &b18 Diamantes"
+                - "&7Nivel 4: +200% de recursos, &b24 Diamantes"
+                - ""
+                - "<upgrade_status>"
+            '4':
+              name: "<color>Forja de hierro"
+              lore:
+                - "&7Actualiza la velocidad de aparición"
+                - "&7de recursos en tu isla."
+                - ""
+                - "&aNivel 1: +50% de recursos, &b6 Diamantes"
+                - "&aNivel 2: +100% de recursos, &b12 Diamantes"
+                - "&aNivel 3: Genera esmeraldas &b18 Diamantes"
+                - "<color>Nivel 4: +200% de recursos, &b24 Diamantes"
+                - ""
+                - "<upgrade_status>"
+        heal_pool:
+          name: "<color>Piscina de curación"
+          lore:
+            - "&7Crea un campo de regenearción"
+            - "&7al rededor de tu base!"
+            - ""
+            - "&7Costo: &b3 Diamante"
+            - ""
+            - "<upgrade_status>"
+        sudden_death:
+          name: "<color>La muerte súbita"
+          lore:
+            - "&7Tu equipo tendrá 2 dragones"
+            - "&7en lugar de uno durante la muerte súbita!"
+            - ""
+            - "&7Costo: &b10 Diamantes"
+            - ""
+            - "<upgrade_status>"
+        buy_traps:
+          name: "&eCompra una trampa"
+          lore:
+            - "&7Las trampas compradas se pondrán en cola"
+            - "&7a la derecha.  "
+            - ""
+            - "&eClick para buscar!"
+        selected_trap_1:
+          name: "<color>Trampa #1: Sin trampas!"
+          lore:
+            - "&7El primer enemigo que camine en"
+            - "&7tu base activará esta trampa!"
+            - ""
+            - "&7La compra de una trampa la pondrá en cola aquí"
+            - "&7Su costo subirá en función del número de trampas en cola"
+            - ""
+            - "&7Siguiente trampa: <color><cost> <material>"
+        selected_trap_2:
+          name: "<color>Trampa #2: Sin trampas!"
+          lore:
+            - "&7El segundo enemigo que camine en"
+            - "&7tu base activará esta trampa!"
+            - ""
+            - "&7La compra de una trampa la pondrá en cola aquí"
+            - "&7Su costo subirá en función del número de trampas en cola"
+            - ""
+            - "&7Siguiente trampa: <color><cost> <material>"
+    traps_menu:
+      inventory_title: "Menú de trampas"
+      contents:
+        blindness:
+          name: "<color>Es una trampa!"
+          lore:
+            - "&7Causa ceguera y lentitud"
+            - "&7durante 8 segundos."
+            - "<trap_price_status>"
+            - ""
+            - "<upgrade_status>"
+        counter-offensive_trap:
+          name: "<color>Trampa de contraofensiva"
+          lore:
+            - "&7Concede velocidad y salto elevado"
+            - "&7durante 10 segundos para todo tu equipo"
+            - "&7que esté cerca de la base."
+            - "<trap_price_status>"
+            - ""
+            - "<upgrade_status>"
+        alarm_trap:
+          name: "<color>Trampa de alarma"
+          lore:
+            - "&7Revela a los jugadores invisibles,"
+            - "&7así como su nombre y equipo."
+            - "<trap_price_status>"
+            - ""
+            - "<upgrade_status>"
+        miner_fatigue_trap:
+          name: "<color>Trampa de fatiga minera"
+          lore:
+            - "&7Causa fatiga minera durante"
+            - "&710 segundos."
+            - "<trap_price_status>"
+            - ""
+            - "<upgrade_status>"
+        return:
+          name: "&aRegresar"
+          lore:
+            - "&7A mejoras y trampas"
+  default:
+    upgrades_menu:
+      inventory_title: "Mejoras y trampas"
+      decoration:
+        '1':
+          name: "&8⬆ &7Comprable"
+          lore:
+            - "&8⬇ &7Cola de trampas"
+      contents:
+        sharpened_swords:
+          name: "<color>Espadas afiladas"
+          lore:
+            - "&7Tus espadas obtienen"
+            - "&7sharpness I de forma permanente"
+            - "&7en todas las espadas y hachas!"
+            - ""
+            - "&7Costo: &b4 Diamantes"
+            - ""
+            - "<upgrade_status>"
+        reinforced_armor:
+          levels:
+            '1':
+              name: "<color>Armadura reforzada I"
+              lore:
+                - "&7Tu equipo obtiene protección de forma permanente"
+                - "&7en todas las piezas de armadura!"
+                - ""
+                - "<color>Nivel 1: Protection I, &b2 Diamantes"
+                - "&7Nivel 2: Protection II, &b4 Diamantes"
+                - "&7Nivel 3: Protection III, &b8 Diamantes"
+                - "&7Nivel 4: Protection IV, &b16 Diamantes"
+                - ""
+                - "<upgrade_status>"
+            '2':
+              name: "<color>Armadura reforzada II"
+              lore:
+                - "&7Tu equipo obtiene protección de forma permanente"
+                - "&7en todas las piezas de armadura!"
+                - ""
+                - "&aNivel 1: Protection I, &b2 Diamantes"
+                - "<color>Nivel 2: Protection II, &b4 Diamantes"
+                - "&7Nivel 3: Protection III, &b8 Diamantes"
+                - "&7Nivel 4: Protection IV, &b16 Diamantes"
+                - ""
+                - "<upgrade_status>"
+            '3':
+              name: "<color>Armadura reforzada III"
+              lore:
+                - "&7Tu equipo obtiene protección de forma permanente"
+                - "&7en todas las piezas de armadura!"
+                - ""
+                - "&aNivel 1: Protection I, &b2 Diamantes"
+                - "&aNivel 2: Protection II, &b4 Diamantes"
+                - "<color>Nivel 3: Protection III, &b8 Diamantes"
+                - "&7Nivel 4: Protection IV, &b16 Diamantes"
+                - ""
+                - "<upgrade_status>"
+            '4':
+              name: "<color>Armadura reforzada IV"
+              lore:
+                - "&7Tu equipo obtiene protección de forma permanente"
+                - "&7en todas las piezas de armadura!"
+                - ""
+                - "&aNivel 1: Protection I, &b2 Diamantes"
+                - "&aNivel 2: Protection II, &b4 Diamantes"
+                - "&aNivel 3: Protection III, &b8 Diamantes"
+                - "<color>Nivel 4: Protection IV, &b16 Diamantes"
+                - ""
+                - "<upgrade_status>"
+        maniac_miner:
+          levels:
+            '1':
+              name: "<color>Minero maniaco I"
+              lore:
+                - "&7Todos los jugadores de tu equipo ganan"
+                - "&7prisa de forma permanente."
+                - ""
+                - "<color>Nivel 1: Prisa I, &b2 Diamantes"
+                - "&7Nivel 2: Prisa II, &b4 Diamantes"
+                - ""
+                - "<upgrade_status>"
+            '2':
+              name: "<color>Minero maniaco II"
+              lore:
+                - "&7Todos los jugadores de tu equipo ganan"
+                - "&7prisa de forma permanente."
+                - ""
+                - "&aNivel 1: Prisa I, &b2 Diamantes"
+                - "<color>Nivel 2: Prisa II, &b4 Diamantes"
+                - ""
+                - "<upgrade_status>"
+        iron_forge:
+          levels:
+            '1':
+              name: "<color>Forja de hierro"
+              lore:
+                - "&7Actualiza la velocidad de aparición"
+                - "&7de recursos en tu isla."
+                - ""
+                - "<color>Nivel 1: +50% de recursos, &b2 Diamantes"
+                - "&7Nivel 2: +100% de recursos, &b4 Diamantes"
+                - "&7Nivel 3: Genera esmeraldas &b6 Diamantes"
+                - "&7Nivel 4: +200% de recursos, &b8 Diamantes"
+                - ""
+                - "<upgrade_status>"
+            '2':
+              name: "<color>Forja de hierro"
+              lore:
+                - "&7Actualiza la velocidad de aparición"
+                - "&7de recursos en tu isla."
+                - ""
+                - "&aNivel 1: +50% de recursos, &b2 Diamantes"
+                - "<color>Nivel 2: +100% de recursos, &b4 Diamantes"
+                - "&7Nivel 3: Genera esmeraldas &b6 Diamantes"
+                - "&7Nivel 4: +200% de recursos, &b8 Diamantes"
+                - ""
+                - "<upgrade_status>"
+            '3':
+              name: "<color>Forja de hierro"
+              lore:
+                - "&7Actualiza la velocidad de aparición"
+                - "&7de recursos en tu isla."
+                - ""
+                - "&aNivel 1: +50% de recursos, &b2 Diamantes"
+                - "&aNivel 2: +100% de recursos, &b4 Diamantes"
+                - "<color>Nivel 3: Genera esmeraldas &b6 Diamantes"
+                - "&7Nivel 4: +200% de recursos, &b8 Diamantes"
+                - ""
+                - "<upgrade_status>"
+            '4':
+              name: "<color>Forja de hierro"
+              lore:
+                - "&7Actualiza la velocidad de aparición"
+                - "&7de recursos en tu isla."
+                - ""
+                - "&aNivel 1: +50% de recursos, &b2 Diamantes"
+                - "&aNivel 2: +100% de recursos, &b4 Diamantes"
+                - "&aNivel 3: Genera esmeraldas &b6 Diamantes"
+                - "<color>Nivel 4: +200% de recursos, &b8 Diamantes"
+                - ""
+                - "<upgrade_status>"
+        heal_pool:
+          name: "<color>Piscina de curación"
+          lore:
+            - "&7Crea un campo de regenearción"
+            - "&7al rededor de tu base!"
+            - ""
+            - "&7Costo: &b1 Diamante"
+            - ""
+            - "<upgrade_status>"
+        sudden_death:
+          name: "<color>La muerte súbita"
+          lore:
+            - "&7Tu equipo tendrá 2 dragones"
+            - "&7en lugar de uno durante la muerte súbita!"
+            - ""
+            - "&7Costo: &b5 Diamantes"
+            - ""
+            - "<upgrade_status>"
+        buy_traps:
+          name: "&eCompra una trampa"
+          lore:
+            - "&7Las trampas compradas se pondrán en cola"
+            - "&7a la derecha.  "
+            - ""
+            - "<trap_status>"
+        selected_trap_1:
+          name: "<color>Trampa #1: Sin trampas!"
+          lore:
+            - "&7El primer enemigo que camine en"
+            - "&7tu base activará esta trampa!"
+            - ""
+            - "&7La compra de una trampa la pondrá en cola aquí"
+            - "&7Su costo subirá en función del número de trampas en cola"
+            - ""
+            - "&7Siguiente trampa: <color><cost> <material>"
+        selected_trap_2:
+          name: "<color>Trampa #2: Sin trampas!"
+          lore:
+            - "&7El segundo enemigo que camine en"
+            - "&7tu base activará esta trampa!"
+            - ""
+            - "&7La compra de una trampa la pondrá en cola aquí"
+            - "&7Su costo subirá en función del número de trampas en cola"
+            - ""
+            - "&7Siguiente trampa: <color><cost> <material>"
+        selected_trap_3:
+          name: "<color>Trampa #3: Sin trampas!"
+          lore:
+            - "&7El tercer enemigo que camine en"
+            - "&7tu base activará esta trampa!"
+            - ""
+            - "&7La compra de una trampa la pondrá en cola aquí"
+            - "&7Su costo subirá en función del número de trampas en cola"
+            - ""
+            - "&7Siguiente trampa: <color><cost> <material>"
+    traps_menu:
+      inventory_title: "Menú de trampas"
+      contents:
+        blindness:
+          name: "<color>Es una trampa!"
+          lore:
+            - "&7Causa ceguera y lentitud"
+            - "&7durante 8 segundos."
+            - "<trap_price_status>"
+            - ""
+            - "<upgrade_status>"
+        counter-offensive_trap:
+          name: "<color>Trampa de contraofensiva"
+          lore:
+            - "&7Concede velocidad y salto elevado"
+            - "&7durante 10 segundos para todo tu equipo"
+            - "&7que esté cerca de la base."
+            - "<trap_price_status>"
+            - ""
+            - "<upgrade_status>"
+        alarm_trap:
+          name: "<color>Trampa de alarma"
+          lore:
+            - "&7Revela a los jugadores invisibles,"
+            - "&7así como su nombre y equipo."
+            - "<trap_price_status>"
+            - ""
+            - "<upgrade_status>"
+        miner_fatigue_trap:
+          name: "<color>Trampa de fatiga minera"
+          lore:
+            - "&7Causa fatiga minera durante"
+            - "&710 segundos."
+            - "<trap_price_status>"
+            - ""
+            - "<upgrade_status>"
+        return:
+          name: "&aRegresar"
+          lore:
+            - "&7A mejoras y trampas"
+  overpowered:
+    upgrades_menu:
+      inventory_title: "Mejoras y trampas"
+      decoration:
+        '1':
+          name: "&8⬆ &7Comprable"
+          lore:
+            - "&8⬇ &7Cola de trampas"
+      contents:
+        sharpened_swords:
+          name: "<color>Espadas afiladas"
+          lore:
+            - "&7Tus espadas ganan de forma permanente"
+            - "&7Filo I en todas las espadas y hachas"
+            - ""
+            - "&7Costo: &b2 Diamantes"
+            - ""
+            - "<upgrade_status>"
+        reinforced_armor:
+          levels:
+            '1':
+              name: "<color>Armadura reforzada I"
+              lore:
+                - "&7Tu equipo obtiene protección de forma"
+                - "&7permanente en todas las piezas de armadura!"
+                - ""
+                - "<color>Nivel 1: Protection I, &b1 Diamantes"
+                - "&7Nivel 2: Proteccion II, &b2 Diamantes"
+                - "&7Nivel 3: Proteccion III, &b4 Diamantes"
+                - "&7Nivel 4: Proteccion IV, &b8 Diamantes"
+                - ""
+                - "<upgrade_status>"
+            '2':
+              name: "<color>Armadura reforzada II"
+              lore:
+                - "&7Tu equipo obtiene protección de forma"
+                - "&7permanente en todas las piezas de armadura!"
+                - ""
+                - "&aNivel 1: Proteccion I, &b1 Diamantes"
+                - "<color>Nivel 2: Proteccion II, &b2 Diamantes"
+                - "&7Nivel 3: Proteccion III, &b4 Diamantes"
+                - "&7Nivel 4: Proteccion IV, &b8 Diamantes"
+                - ""
+                - "<upgrade_status>"
+            '3':
+              name: "<color>Armadura reforzada III"
+              lore:
+                - "&7Tu equipo obtiene protección de forma"
+                - "&7permanente en todas las piezas de armadura!"
+                - ""
+                - "&aNivel 1: Protection I, &b1 Diamantes"
+                - "&aNivel 2: Protection II, &b2 Diamantes"
+                - "<color>Nivel 3: Protection III, &b4 Diamantes"
+                - "&7Nivel 4: Protection IV, &b8 Diamantes"
+                - ""
+                - "<upgrade_status>"
+            '4':
+              name: "<color>Armadura reforzada IV"
+              lore:
+                - "&7Tu equipo obtiene protección de forma"
+                - "&7permanente en todas las piezas de armadura!"
+                - ""
+                - "&aNivel 1: Proteccion I, &b1 Diamantes"
+                - "&aNivel 2: Proteccion II, &b2 Diamantes"
+                - "&aNivel 3: Proteccion III, &b4 Diamantes"
+                - "<color>Nivel 4: Proteccion IV, &b8 Diamantes"
+                - ""
+                - "<upgrade_status>"
+        maniac_miner:
+          levels:
+            '1':
+              name: "<color>Minero maníaco I"
+              lore:
+                - "&7Todos las jugadores de tu equipo"
+                - "&7obtienen prisa de forma permanente."
+                - ""
+                - "<color>Nivel 1: Prisa I, &b1 Diamante"
+                - "&7Nivel 2: Prisa II, &b2 Diamantes"
+                - ""
+                - "<upgrade_status>"
+            '2':
+              name: "<color>Minero maníaco II"
+              lore:
+                - "&7Todos las jugadores de tu equipo"
+                - "&7obtienen prisa de forma permanente."
+                - ""
+                - "&aNivel 1: Prisa I, &b1 Diamante"
+                - "<color>Nivel 2: Prisa II, &b2 Diamantes"
+                - ""
+                - "<upgrade_status>"
+        iron_forge:
+          levels:
+            '1':
+              name: "<color>Forja de hierro"
+              lore:
+                - "&7Mejora la generación de"
+                - "&7recursos en tu isla."
+                - ""
+                - "<color>Nivel 1: +50% Recursos, &b1 Diamante"
+                - "&aNivel 2: +100% Recursos, &b2 Diamantes"
+                - "<color>Nivel 3: Engendrada Esmeraldas, &b4 Diamantes"
+                - "&aNivel 4: +200% Recursos, &b6 Diamantes"
+                - ""
+                - "<upgrade_status>"
+            '2':
+              name: "<color>Forja de hierro"
+              lore:
+                - "&7Mejora la generación de"
+                - "&7recursos en tu isla."
+                - ""
+                - "&aNivel 1: +50% Recursos, &b1 Diamante"
+                - "<color>Nivel 2: +100% Recursos, &b2 Diamantes"
+                - "&aNivel 3: Engendrada Esmeraldas, &b4 Diamantes"
+                - "&aNivel 4: +200% Recursos, &b6 Diamantes"
+                - ""
+                - "<upgrade_status>"
+            '3':
+              name: "<color>Forja de hierro"
+              lore:
+                - "&7Mejora la generación de"
+                - "&7recursos en tu isla."
+                - ""
+                - "&aNivel 1: +50% Recursos, &b1 Diamante"
+                - "&aNivel 2: +100% Recursos, &b2 Diamantes"
+                - "<color>Nivel 3: Engendrada Esmeraldas, &b4 Diamantes"
+                - "&aNivel 4: +200% Recursos, &b6 Diamantes"
+                - ""
+                - "<upgrade_status>"
+            '4':
+              name: "<color>Forja de hierro"
+              lore:
+                - "&7Mejora la generación de"
+                - "&7recursos en tu isla."
+                - ""
+                - "&aNivel 1: +50% Recursos, &b1 Diamante"
+                - "&aNivel 2: +100% Recursos, &b2 Diamantes"
+                - "&aNivel 3: Engendrada Esmeraldas, &b4 Diamantes"
+                - "<color>Nivel 4: +200% Recursos, &b6 Diamantes"
+                - ""
+                - "<upgrade_status>"
+        heal_pool:
+          name: "<color>Piscina de curación"
+          lore:
+            - "&7¡Crea un campo de regeneración"
+            - "&7alrededor de tu base!"
+            - ""
+            - "&7Costo: &b1 Diamante"
+            - ""
+            - "<upgrade_status>"
+        sudden_death:
+          name: "<color>La muerte súbita"
+          lore:
+            - "&7¡Tu equipo tendrá 2 dragones en lugar"
+            - "&7de 1 durante el combate a muerte!"
+            - ""
+            - "&7Costo: &b2 Diamantes"
+            - ""
+            - "<upgrade_status>"
+        buy_traps:
+          name: "&eCompra una trampa"
+          lore:
+            - "&7Las trampas compradas se pondrán"
+            - "&7en cola a la derecha."
+            - ""
+            - "<trap_status>"
+        selected_trap_1:
+          name: "<color>Trampa #1: ¡Sin trampa!"
+          lore:
+            - "&7¡El primero enemigo que entre"
+            - "&7en tu base activará"
+            - "&7esta trampa!"
+            - ""
+            - "&7La compra de una trampa la pondrá en"
+            - "&7cola aquí. Su costo aumentará según"
+            - "&7la cantidad de trampas en cola."
+            - "&7Siguiente trampa: <color><cost> <material>"
+        selected_trap_2:
+          name: "<color>Trampa #2: ¡Sin trampa!"
+          lore:
+            - "&7¡El segundo enemigo que entre"
+            - "&7en tu base activará"
+            - "&7esta trampa!"
+            - ""
+            - "&7La compra de una trampa la pondrá en"
+            - "&7cola aquí. Su costo aumentará según"
+            - "&7la cantidad de trampas en cola."
+            - ""
+            - "&7Siguiente trampa: <color><cost> <material>"
+        selected_trap_3:
+          name: "<color>Trampa #3: ¡Sin trampa!"
+          lore:
+            - "&7¡El tercer enemigo que entre"
+            - "&7en tu base activará"
+            - "&7esta trampa!"
+            - ""
+            - "&7La compra de una trampa la pondrá en"
+            - "&7cola aquí. Su costo aumentará según"
+            - "&7la cantidad de trampas en cola."
+            - ""
+            - "&7Siguiente trampa: <color><cost> <material>"
+    traps_menu:
+      inventory_title: "Menú de trampas"
+      contents:
+        blindness:
+          name: "<color>¡Es una trampa!"
+          lore:
+            - "&7Inflige ceguera y lentitud"
+            - "&7durante 8 segundos."
+            - "<trap_price_status>"
+            - ""
+            - "<upgrade_status>"
+        counter-offensive_trap:
+          name: "<color>Trampa de contraofensiva"
+          lore:
+            - "&7Otorga Speed I y Jump Boost II"
+            - "&7durante 10 segundos a los jugadores"
+            - "&7aliados cerca de tu base."
+            - "<trap_price_status>"
+            - ""
+            - "<upgrade_status>"
+        alarm_trap:
+          name: "<color>Trampa de alarma"
+          lore:
+            - "&7Revela jugadores invisibles,"
+            - "&7así como su nombre y equipo."
+            - "<trap_price_status>"
+            - ""
+            - "<upgrade_status>"
+        miner_fatigue_trap:
+          name: "<color>Trampa de fatiga"
+          lore:
+            - "&7Infligir fatiga minera durante"
+            - "&710 segundos."
+            - "<trap_price_status>"
+            - ""
+            - "<upgrade_status>"
+        return:
+          name: "&aRegresar"
+          lore:
+            - "&7A actualizaciones y trampas"
+
+favorite_menu:
+  inventory_title: "Agregando a Compra Rápida"
+  status:
+    adding: "&eAgregar elemento a compra rápida!"
+    replace: "&eHaga clic para reemplazar!"
+    set: "&eHaga clic para establecer!"
+
+shop_menu:
+  status:
+    favorite:
+      add: "&bAgachese y presione click para agregar a compra rápida!"
+      remove: "&bAgachese y presione click para eliminar de compra rápida"
+    price:
+      buy: "&eClic para comprar!"
+      need: "&cNo tienes suficiente <material>!"
+    color:
+      buy: "&a"
+      need: "&c"
+  extras:
+    favorite:
+      name: "&cEspacio vacio!"
+      lore:
+        - "&7Esta es una ranura de compra rápida!"
+        - "&bHaga clic en cualquier artículo de la tienda"
+        - "&7y agachese para agregarlo aquí."
+    in_category:
+      name: "&8&l⬆ &7Categorias"
+      lore:
+        - "&8&l⬇ &7Items"
+    out_category:
+      name: "&8&l⬆ &7Categorias"
+      lore:
+        - "&8&l⬇ &7Items"
+    hotbar_editor:
+      name: "&aEditor de Hotbar"
+      lore:
+        - "&7Edite los espacios de preferencia para"
+        - "&7sus artículos por categoría."
+        - ""
+        - "&e¡Haga clic para editar!"
+    load_favorites:
+      name: "&aTienda & Hotbar &6(Hypixel)"
+      lore:
+        - "&7Al hacer clic obtendrá su"
+        - "&7configuración de hypixel."
+        - ""
+        - "&cSolo para usuarios de Hypixel."
+        - ""
+        - "&e&l→ &e¡Haga clic para cargar su configuración!"
+  hotbar:
+    title: "Administrador de Hotbar"
+    contents:
+      return:
+        name: "&aRegresar"
+        lore:
+          - "&7Para Compra Rápida"
+      reset:
+        name: "&cRestablecer ajustes"
+        lore:
+          - "&7Restablece tu barra de acceso rápido al"
+          - "&7predeterminado."
+      separator:
+        name: "&8&l⬆ &7Categorías"
+        lore:
+          - "&8&l⬇ &7Hotbar"
+      compass:
+        name: "&aCompass"
+        lore:
+          - "&7Arrástrelo a la ranura en la que se"
+          - "&7configurará su brújula al generar."
+          - ""
+          - "&cSi ninguna ranura tiene brújula,"
+          - "&cno se le dará una."
+          - ""
+          - "&eHaga clic para arrastrar!"
+      add_favorite:
+        name: "&cEspacio vacio!"
+        lore:
+          - "&7Haga clic para elegir la ranura"
+          - "&7para esta categoría."
+          - ""
+          - "&e&l→ &eClic para seleccionar!"
+      favorites:
+        blocks:
+          name: "&aBloques"
+          lore:
+            - "&7Los elementos de los bloques darán"
+            - "&7prioridad a este espacio!"
+            - ""
+            - "&eHaga clic para eliminar!"
+        melee:
+          name: "&aArmas"
+          lore:
+            - "&7Los elementos de los bloques darán"
+            - "&7prioridad a este espacio!"
+            - ""
+            - "&eHaga clic para eliminar!"
+        armor:
+          name: "&aArmadura"
+          lore:
+            - "&7Los elementos de los bloques darán"
+            - "&7prioridad a este espacio!"
+            - ""
+            - "&eHaga clic para eliminar!"
+        tools:
+          name: "&aHerramientas"
+          lore:
+            - "&7Los elementos de los bloques darán"
+            - "&7prioridad a este espacio!"
+            - ""
+            - "&eHaga clic para eliminar!"
+        ranged:
+          name: "&aA distancia"
+          lore:
+            - "&7Los elementos de los bloques darán"
+            - "&7prioridad a este espacio!"
+            - ""
+            - "&eHaga clic para eliminar!"
+        potions:
+          name: "&aPociones"
+          lore:
+            - "&7Los elementos de los bloques darán"
+            - "&7prioridad a este espacio!"
+            - ""
+            - "&eHaga clic para eliminar!"
+        utility:
+          name: "&aUtilidad"
+          lore:
+            - "&7Los elementos de los bloques darán"
+            - "&7prioridad a este espacio!"
+            - ""
+            - "&eHaga clic para eliminar!"
+        compass:
+          name: "&aCompass"
+          lore:
+            - "&7Los elementos de los bloques darán"
+            - "&7prioridad a este espacio!"
+            - ""
+            - "&eHaga clic para eliminar!"
+      categories:
+        blocks:
+          name: "&aBloques"
+          lore:
+            - "&7Arrastre esto a las ranuras de la barra"
+            - "&7de acceso rápido a continuación para"
+            - "&7favorecer esa ranura al comprar un artículo"
+            - "&7en esta categoría o en el spawn."
+            - ""
+            - "&eHaga clic para arrastrar!"
+        melee:
+          name: "&aArmas"
+          lore:
+            - "&7Arrastre esto a las ranuras de la barra"
+            - "&7de acceso rápido a continuación para"
+            - "&7favorecer esa ranura al comprar un artículo"
+            - "&7en esta categoría o en el spawn."
+            - ""
+            - "&eHaga clic para arrastrar!"
+        armor:
+          name: "&aArmadura"
+          lore:
+            - "&7Arrastre esto a las ranuras de la barra"
+            - "&7de acceso rápido a continuación para"
+            - "&7favorecer esa ranura al comprar un artículo"
+            - "&7en esta categoría o en el spawn."
+            - ""
+            - "&eHaga clic para arrastrar!"
+        tools:
+          name: "&aHerramientas"
+          lore:
+            - "&7Arrastre esto a las ranuras de la barra"
+            - "&7de acceso rápido a continuación para"
+            - "&7favorecer esa ranura al comprar un artículo"
+            - "&7en esta categoría o en el spawn."
+            - ""
+            - "&eHaga clic para arrastrar!"
+        ranged:
+          name: "&aA distancia"
+          lore:
+            - "&7Arrastre esto a las ranuras de la barra"
+            - "&7de acceso rápido a continuación para"
+            - "&7favorecer esa ranura al comprar un artículo"
+            - "&7en esta categoría o en el spawn."
+            - ""
+            - "&eHaga clic para arrastrar!"
+        potions:
+          name: "&aPociones"
+          lore:
+            - "&7Arrastre esto a las ranuras de la barra"
+            - "&7de acceso rápido a continuación para"
+            - "&7favorecer esa ranura al comprar un artículo"
+            - "&7en esta categoría o en el spawn."
+            - ""
+            - "&eHaga clic para arrastrar!"
+        utility:
+          name: "&aUtilidad"
+          lore:
+            - "&7Arrastre esto a las ranuras de la barra"
+            - "&7de acceso rápido a continuación para"
+            - "&7favorecer esa ranura al comprar un artículo"
+            - "&7en esta categoría o en el spawn."
+            - ""
+            - "&eHaga clic para arrastrar!"
+  basic:
+    quick_buy:
+      category_title: "Compra rapida"
+      category_item_name: "&bCompra rapida"
+    blocks:
+      category_title: "Bloques"
+      category_item_name: "&bBloques"
+      contents:
+        wool:
+          name: "<color>Lana"
+          lore:
+            - "&7Costo: &f8 Hierro"
+            - ""
+            - "&7Ideal para cruzar islas."
+            - "&7Se convierte en el color de tu"
+            - "&7equipo."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        hardened_clay:
+          name: "<color>Arcilla endurecida"
+          lore:
+            - "&7Costo: &f24 Hierro"
+            - ""
+            - "&7Bloque básico para defender tu cama."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        blast-proof_glass:
+          name: "<color>Vidrio a prueba de explosiones"
+          lore:
+            - "&7Costo: &f24 Hierro"
+            - ""
+            - "&7Inmune a explosiones."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        end_stone:
+          name: "<color>Piedra final"
+          lore:
+            - "&7Costo: &f24 Hierro"
+            - ""
+            - "&7Bloque sólido para defender tu cama."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        ladder:
+          name: "<color>Escaleras"
+          lore:
+            - "&7Costo: &f4 Hierro"
+            - ""
+            - "&7Útil para salvar gatos atrapados"
+            - "&7en árboles."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        oak_wood_planks:
+          name: "<color>Tablones de madera de roble"
+          lore:
+            - "&7Costo: &66 Oro"
+            - ""
+            - "&7Buen bloque para defender tu cama."
+            - "&7Fuerte contra picos."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+    melee:
+      category_title: "Armas"
+      category_item_name: "&bArmas"
+      contents:
+        stone_sword:
+          name: "<color>Espada de piedra"
+          lore:
+            - "&7Costo: &f25 Hierro"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        iron_sword:
+          name: "<color>Espada de hierro"
+          lore:
+            - "&7Costo: &612 Oro"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        diamond_sword:
+          name: "<color>Espada de diamante"
+          lore:
+            - "&7Costo: &26 Esmeraldas"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+    armor:
+      category_title: "Armadura"
+      category_item_name: "&bArmadura"
+      contents:
+        chainmail_boots:
+          name: "<color>Armadura de Malla permanente"
+          lore:
+            - "&7Costo: &f120 Hierro"
+            - ""
+            - "&7Pantalones y botas de cota de malla"
+            - "&7con las que siempre aparecerás."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        iron_boots:
+          name: "<color>Armadura de Hierro permanente"
+          lore:
+            - "&7Costo: &618 Oro"
+            - ""
+            - "&7Pantalones y botas de hierro con"
+            - "&7las que siempre aparecerás."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        diamond_boots:
+          name: "<color>Armadura de Diamante permanente"
+          lore:
+            - "&7Costo: &28 Esmeraldas"
+            - ""
+            - "&7Pantalones y botas de diamante con"
+            - "&7las que siempre aparecerás."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+    tools:
+      category_title: "Herramientas"
+      category_item_name: "&bHerramientas"
+      contents:
+        shears:
+          name: "<color>Tijeras permanentes"
+          lore:
+            - "&7Costo: &f40 Hierro"
+            - ""
+            - "&7Genial para deshacerse de la lana."
+            - "&7Siempre aparecerás con estas tijeras."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        wooden_pickaxe:
+          levels:
+            '1':
+              name: "<color>Pico de Madera (Eficiencia I)"
+              lore:
+                - "&7Costo: &f15 Hierro"
+                - "&7Nivel: &eI"
+                - ""
+                - "&7Este es un artículo actualizable."
+                - "&7Perderá 1 nivel al morir!"
+                - ""
+                - "&7Reaparecerás permanentemente"
+                - "&7con al menos el nivel más bajo."
+                - ""
+                - "<favorite_status>"
+                - "<buy_status>"
+            '2':
+              name: "<color>Pico de Hierro (Eficiencia II)"
+              lore:
+                - "&7Costo: &f20 Hierro"
+                - "&7Nivel: &eII"
+                - ""
+                - "&7Este es un artículo actualizable."
+                - "&7Perderá 1 nivel al morir!"
+                - ""
+                - "&7Reaparecerás permanentemente"
+                - "&7con al menos el nivel más bajo."
+                - ""
+                - "<favorite_status>"
+                - "<buy_status>"
+            '3':
+              name: "<color>Pico de Oro (Eficiencia II, Filo II)"
+              lore:
+                - "&7Costo: &66 Oro"
+                - "&7Nivel: &eIII"
+                - ""
+                - "&7Este es un artículo actualizable."
+                - "&7Perderá 1 nivel al morir!"
+                - ""
+                - "&7Reaparecerás permanentemente"
+                - "&7con al menos el nivel más bajo."
+                - ""
+                - "<favorite_status>"
+                - "<buy_status>"
+            '4':
+              name: "<color>Pico de Diamante (Eficiencia (III))"
+              lore:
+                - "&7Costo: &612 Oro"
+                - "&7Nivel: &eIV"
+                - ""
+                - "&7Este es un artículo actualizable."
+                - "&7Perderá 1 nivel al morir!"
+                - ""
+                - "&7Reaparecerás permanentemente"
+                - "&7con al menos el nivel más bajo."
+                - ""
+                - "<favorite_status>"
+                - "<buy_status>"
+        wooden_axe:
+          levels:
+            '1':
+              name: "<color>Hacha de Madera (Eficiencia I)"
+              lore:
+                - "&7Costo: &f15 Hierro"
+                - "&7Nivel: &eI"
+                - ""
+                - "&7Este es un artículo actualizable."
+                - "&7Perderá 1 nivel al morir!"
+                - ""
+                - "&7Reaparecerás permanentemente"
+                - "&7con al menos el nivel más bajo."
+                - ""
+                - "<favorite_status>"
+                - "<buy_status>"
+            '2':
+              name: "<color>Hacha de Hierro (Eficiencia II)"
+              lore:
+                - "&7Costo: &f20 Hierro"
+                - "&7Nivel: &eII"
+                - ""
+                - "&7Este es un artículo actualizable."
+                - "&7Perderá 1 nivel al morir!"
+                - ""
+                - "&7Reaparecerás permanentemente"
+                - "&7con al menos el nivel más bajo."
+                - ""
+                - "<favorite_status>"
+                - "<buy_status>"
+            '3':
+              name: "<color>Hacha de Oro (Eficiencia III)"
+              lore:
+                - "&7Costo: &66 Oro"
+                - "&7Nivel: &eIII"
+                - ""
+                - "&7Este es un artículo actualizable."
+                - "&7Perderá 1 nivel al morir!"
+                - ""
+                - "&7Reaparecerás permanentemente"
+                - "&7con al menos el nivel más bajo."
+                - ""
+                - "<favorite_status>"
+                - "<buy_status>"
+            '4':
+              name: "<color>Hacha de diamante (Eficiencia IV)"
+              lore:
+                - "&7Costo: &612 Oro"
+                - "&7Nivel: &eIV"
+                - ""
+                - "&7Este es un artículo actualizable."
+                - "&7¡Perderá 1 nivel al morir!"
+                - ""
+                - "&7Reaparecerás permanentemente"
+                - "&7con al menos el nivel más bajo."
+                - ""
+                - "<favorite_status>"
+                - "<buy_status>"
+    ranged:
+      category_title: "A distancia"
+      category_item_name: "&bA distancia"
+      contents:
+        arrow:
+          name: "<color>Flecha"
+          lore:
+            - "&7Costo: &62 Oro"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        bow:
+          name: "<color>Arco"
+          lore:
+            - "&7Costo: &624 Oro"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        bow_(power_i):
+          name: "<color>Arco (Poder I)"
+          lore:
+            - "&7Costo: &650 Oro"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+    potions:
+      category_title: "Pociones"
+      category_item_name: "&bPociones"
+      contents:
+        speed_ii_potion_(45_seconds):
+          name: "<color>Velocidad II Pocion (45 segundos)"
+          lore:
+            - "&7Costo: &22 Esmeraldas"
+            - ""
+            - "&9Velocidad II (0:45)"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        jump_v_potion_(45_seconds):
+          name: "<color>Salto V Pocion (45 segundos)"
+          lore:
+            - "&7Costo: &22 Esmeraldas"
+            - ""
+            - "&9Impulso de salto (0:45)"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        invisibility_potion_(30_seconds):
+          name: "<color>Pocion de Invisibilidad (30 segundos)"
+          lore:
+            - "&7Costo: &24 Esmeraldas"
+            - ""
+            - "&9Invisibilidad completa (0:30)"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+    utility:
+      category_title: "Utilidad"
+      category_item_name: "&bUtilidad"
+      contents:
+        golden_apple:
+          name: "<color>Manzana Dorada"
+          lore:
+            - "&7Costo: &68 Oro"
+            - ""
+            - "&7Curación completa."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        fireball:
+          item: "Fireball"
+          name: "<color>Fireball"
+          lore:
+            - "&7Costo: &f60 Hierro"
+            - ""
+            - "&7¡Haz clic derecho para iniciar!"
+            - "&7Genial para derribar a los enemigos"
+            - "&7que caminan sobre puentes delgados"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        tnt:
+          name: "<color>TNT"
+          lore:
+            - "&7Costo: &612 Oro"
+            - ""
+            - "&7Se enciende instantáneamente,"
+            - "&7apropiado para explotar cosas!"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        ender_pearl:
+          name: "<color>Perlas del enderman"
+          lore:
+            - "&7Costo: &26 Esmeraldas"
+            - ""
+            - "&7La forma más rápida de invadir"
+            - "&7bases enemigas."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        magic_milk:
+          item: "Leche mágica"
+          name: "<color>Leche mágica"
+          lore:
+            - "&7Costo: &68 Oro"
+            - ""
+            - "&7Evite activar trampas durante"
+            - "&730 segundos después de consumir."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        compact_pop-up_tower:
+          item: "&6Torre emergente compacta"
+          name: "<color>Torre emergente compacta"
+          lore:
+            - "&7Costo: &f50 Hierro"
+            - ""
+            - "&7Coloca una defensa emergente."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+  default:
+    quick_buy:
+      category_title: "Compra rapida"
+      category_item_name: "&bCompra rapida"
+    blocks:
+      category_title: "Bloques"
+      category_item_name: "&bBloques"
+      contents:
+        wool:
+          name: "<color>Lana"
+          lore:
+            - "&7Costo: &f4 Hierro"
+            - ""
+            - "&7Ideal para cruzar islas."
+            - "&7Se convierte en el color de tu"
+            - "&7equipo."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        hardened_clay:
+          name: "<color>Arcilla endurecida"
+          lore:
+            - "&7Costo: &f12 Hierro"
+            - ""
+            - "&7Bloque básico para defender tu cama."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        blast-proof_glass:
+          name: "<color>Vidrio a prueba de explosiones"
+          lore:
+            - "&7Costo: &f12 Hierro"
+            - ""
+            - "&7Inmune a explosiones."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        end_stone:
+          name: "<color>Piedra final"
+          lore:
+            - "&7Costo: &f24 Hierro"
+            - ""
+            - "&7Bloque sólido para defender tu cama."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        ladder:
+          name: "<color>Escaleras"
+          lore:
+            - "&7Costo: &f4 Hierro"
+            - ""
+            - "&7Útil para salvar gatos atrapados"
+            - "&7en árboles."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        oak_wood_planks:
+          name: "<color>Tablones de madera de roble"
+          lore:
+            - "&7Costo: &64 Oro"
+            - ""
+            - "&7Buen bloque para defender tu cama."
+            - "&7Fuerte contra picos."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        obsidian:
+          name: "<color>Obsidian"
+          lore:
+            - "&7Costo: &24 Esmeraldas"
+            - ""
+            - "&7Extreme protection for your bed."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+    melee:
+      category_title: "Armas"
+      category_item_name: "&bArmas"
+      contents:
+        stone_sword:
+          name: "<color>Espada de piedra"
+          lore:
+            - "&7Costo: &f10 Hierro"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        iron_sword:
+          name: "<color>Espada de hierro"
+          lore:
+            - "&7Costo: &67 Oro"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        diamond_sword:
+          name: "<color>Espada de diamante"
+          lore:
+            - "&7Costo: &24 Esmeraldas"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        stick_(knockback_i):
+          name: "<color>Palo (Empuje I)"
+          lore:
+            - "&7Costo: &65 Oro"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+    armor:
+      category_title: "Armadura"
+      category_item_name: "&bArmadura"
+      contents:
+        chainmail_boots:
+          name: "<color>Armadura de Malla permanente"
+          lore:
+            - "&7Costo: &f40 Hierro"
+            - ""
+            - "&7Pantalones y botas de cota de malla"
+            - "&7con las que siempre aparecerás."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        iron_boots:
+          name: "<color>Armadura de Hierro permanente"
+          lore:
+            - "&7Costo: &612 Oro"
+            - ""
+            - "&7Pantalones y botas de hierro con"
+            - "&7las que siempre aparecerás."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        diamond_boots:
+          name: "<color>Armadura de Diamante permanente"
+          lore:
+            - "&7Costo: &26 Esmeraldas"
+            - ""
+            - "&7Pantalones y botas de diamante con"
+            - "&7las que siempre aparecerás."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+    tools:
+      category_title: "Herramientas"
+      category_item_name: "&bHerramientas"
+      contents:
+        shears:
+          name: "<color>Tijeras permanentes"
+          lore:
+            - "&7Costo: &f20 Hierro"
+            - ""
+            - "&7Genial para deshacerse de la lana."
+            - "&7Siempre aparecerás con estas tijeras."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        wooden_pickaxe:
+          levels:
+            '1':
+              name: "<color>Pico de Madera (Eficiencia I)"
+              lore:
+                - "&7Costo: &f10 Hierro"
+                - "&7Nivel: &eI"
+                - ""
+                - "&7Este es un artículo actualizable."
+                - "&7Perderá 1 nivel al morir!"
+                - ""
+                - "&7Reaparecerás permanentemente"
+                - "&7con al menos el nivel más bajo."
+                - ""
+                - "<favorite_status>"
+                - "<buy_status>"
+            '2':
+              name: "<color>Pico de Hierro (Eficiencia II)"
+              lore:
+                - "&7Costo: &f10 Hierro"
+                - "&7Nivel: &eII"
+                - ""
+                - "&7Este es un artículo actualizable."
+                - "&7Perderá 1 nivel al morir!"
+                - ""
+                - "&7Reaparecerás permanentemente"
+                - "&7con al menos el nivel más bajo."
+                - ""
+                - "<favorite_status>"
+                - "<buy_status>"
+            '3':
+              name: "<color>Pico de Oro (Eficiencia II, Filo II)"
+              lore:
+                - "&7Costo: &63 Oro"
+                - "&7Nivel: &eIII"
+                - ""
+                - "&7Este es un artículo actualizable."
+                - "&7Perderá 1 nivel al morir!"
+                - ""
+                - "&7Reaparecerás permanentemente"
+                - "&7con al menos el nivel más bajo."
+                - ""
+                - "<favorite_status>"
+                - "<buy_status>"
+            '4':
+              name: "<color>Pico de Diamante (Eficiencia (III))"
+              lore:
+                - "&7Costo: &66 Oro"
+                - "&7Nivel: &eIV"
+                - ""
+                - "&7Este es un artículo actualizable."
+                - "&7Perderá 1 nivel al morir!"
+                - ""
+                - "&7Reaparecerás permanentemente"
+                - "&7con al menos el nivel más bajo."
+                - ""
+                - "<favorite_status>"
+                - "<buy_status>"
+        wooden_axe:
+          levels:
+            '1':
+              name: "<color>Hacha de Madera (Eficiencia I)"
+              lore:
+                - "&7Costo: &f10 Hierro"
+                - "&7Nivel: &eI"
+                - ""
+                - "&7Este es un artículo actualizable."
+                - "&7Perderá 1 nivel al morir!"
+                - ""
+                - "&7Reaparecerás permanentemente"
+                - "&7con al menos el nivel más bajo."
+                - ""
+                - "<favorite_status>"
+                - "<buy_status>"
+            '2':
+              name: "<color>Hacha de Hierro (Eficiencia II)"
+              lore:
+                - "&7Costo: &f10 Hierro"
+                - "&7Nivel: &eII"
+                - ""
+                - "&7Este es un artículo actualizable."
+                - "&7Perderá 1 nivel al morir!"
+                - ""
+                - "&7Reaparecerás permanentemente"
+                - "&7con al menos el nivel más bajo."
+                - ""
+                - "<favorite_status>"
+                - "<buy_status>"
+            '3':
+              name: "<color>Hacha de Oro (Eficiencia III)"
+              lore:
+                - "&7Costo: &63 Oro"
+                - "&7Nivel: &eIII"
+                - ""
+                - "&7Este es un artículo actualizable."
+                - "&7Perderá 1 nivel al morir!"
+                - ""
+                - "&7Reaparecerás permanentemente"
+                - "&7con al menos el nivel más bajo."
+                - ""
+                - "<favorite_status>"
+                - "<buy_status>"
+            '4':
+              name: "<color>Hacha de diamante (Eficiencia IV)"
+              lore:
+                - "&7Costo: &66 Oro"
+                - "&7Nivel: &eIV"
+                - ""
+                - "&7Este es un artículo actualizable."
+                - "&7¡Perderá 1 nivel al morir!"
+                - ""
+                - "&7Reaparecerás permanentemente"
+                - "&7con al menos el nivel más bajo."
+                - ""
+                - "<favorite_status>"
+                - "<buy_status>"
+    ranged:
+      category_title: "A distancia"
+      category_item_name: "&bA distancia"
+      contents:
+        arrow:
+          name: "<color>Flecha"
+          lore:
+            - "&7Costo: &62 Oro"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        bow:
+          name: "<color>Arco"
+          lore:
+            - "&7Costo: &612 Oro"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        bow_(power_i):
+          name: "<color>Arco (Poder I)"
+          lore:
+            - "&7Costo: &624 Oro"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        bow_(power_i__punch_i):
+          name: "<color>Arco (Poder I, Punch I)"
+          lore:
+            - "&7Costo: &26 Esmeraldas"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+    potions:
+      category_title: "Pociones"
+      category_item_name: "&bPociones"
+      contents:
+        speed_ii_potion_(45_seconds):
+          name: "<color>Velocidad II Pocion (45 segundos)"
+          lore:
+            - "&7Costo: &21 Esmeralda"
+            - ""
+            - "&9Velocidad II (0:45)"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        jump_v_potion_(45_seconds):
+          name: "<color>Salto V Pocion (45 segundos)"
+          lore:
+            - "&7Costo: &21 Esmeralda"
+            - ""
+            - "&9Impulso de salto (0:45)"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        invisibility_potion_(30_seconds):
+          name: "<color>Pocion de Invisibilidad (30 segundos)"
+          lore:
+            - "&7Costo: &22 Esmeraldas"
+            - ""
+            - "&9Invisibilidad completa (0:30)"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+    utility:
+      category_title: "Utilidad"
+      category_item_name: "&bUtilidad"
+      contents:
+        golden_apple:
+          name: "<color>Manzana Dorada"
+          lore:
+            - "&7Costo: &63 Oro"
+            - ""
+            - "&7Curación completa."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        bedbug:
+          item: "Bedbug"
+          name: "<color>Bedbug"
+          lore:
+            - "&7Costo: &f40 Hierro"
+            - ""
+            - "&7Genera peces plateados donde aterriza"
+            - "&7la bola de nieve para distraer a tus"
+            - "&7enemigos. Dura 15 segundos."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        dream_defender:
+          item: "Defensor de los sueños"
+          name: "<color>Defensor de los sueños"
+          lore:
+            - "&7Costo: &f120 Hierro"
+            - ""
+            - "&7Golem de Hierro para ayudar a defender tu"
+            - "&7base. Dura 4 minutos."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        fireball:
+          item: "Fireball"
+          name: "<color>Fireball"
+          lore:
+            - "&7Costo: &f40 Hierro"
+            - ""
+            - "&7¡Haz clic derecho para iniciar!"
+            - "&7Genial para derribar a los enemigos"
+            - "&7que caminan sobre puentes delgados"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        tnt:
+          name: "<color>TNT"
+          lore:
+            - "&7Costo: &64 Oro"
+            - ""
+            - "&7Se enciende instantáneamente,"
+            - "&7apropiado para explotar cosas!"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        ender_pearl:
+          name: "<color>Perlas del enderman"
+          lore:
+            - "&7Costo: &24 Esmeralda"
+            - ""
+            - "&7La forma más rápida de invadir"
+            - "&7bases enemigas."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        water_bucket:
+          name: "<color>Cubo de agua"
+          lore:
+            - "&7Costo: &63 Oro"
+            - ""
+            - "&7Great to slow down approaching"
+            - "&7enemies. Can also protect"
+            - "&7against TNT."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        bridge_egg:
+          item: "Huevo de puente"
+          name: "<color>Huevo de puente"
+          lore:
+            - "&7Costo: &22 Esmeraldas"
+            - ""
+            - "&7Este huevo crea un puente en su"
+            - "&7rastro después de ser arrojado."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        magic_milk:
+          item: "Leche mágica"
+          name: "<color>Leche mágica"
+          lore:
+            - "&7Costo: &64 Oro"
+            - ""
+            - "&7Evite activar trampas durante"
+            - "&730 segundos después de consumir."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        sponge:
+          name: "<color>Esponja"
+          lore:
+            - "&7Costo: &63 Oro"
+            - ""
+            - "&7Genial para absorber agua."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        compact_pop-up_tower:
+          item: "&6Torre emergente compacta"
+          name: "<color>Torre emergente compacta"
+          lore:
+            - "&7Costo: &f24 Hierro"
+            - ""
+            - "&7Coloca una defensa emergente."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+  overpowered:
+    quick_buy:
+      category_title: "Compra rapida"
+      category_item_name: "&bCompra rapida"
+    blocks:
+      category_title: "Bloques"
+      category_item_name: "&bBloques"
+      contents:
+        wool:
+          name: "<color>Lana"
+          lore:
+            - "&7Costo: &f2 Hierro"
+            - ""
+            - "&7Ideal para cruzar islas."
+            - "&7Se convierte en el color de tu"
+            - "&7equipo."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        hardened_clay:
+          name: "<color>Arcilla endurecida"
+          lore:
+            - "&7Costo: &f8 Hierro"
+            - ""
+            - "&7Bloque básico para defender tu cama."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        blast-proof_glass:
+          name: "<color>Vidrio a prueba de explosiones"
+          lore:
+            - "&7Costo: &f8 Hierro"
+            - ""
+            - "&7Inmune a explosiones."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        end_stone:
+          name: "<color>Piedra final"
+          lore:
+            - "&7Costo: &f12 Hierro"
+            - ""
+            - "&7Bloque sólido para defender tu cama."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        ladder:
+          name: "<color>Escaleras"
+          lore:
+            - "&7Costo: &f2 Hierro"
+            - ""
+            - "&7Útil para salvar gatos atrapados"
+            - "&7en árboles."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        oak_wood_planks:
+          name: "<color>Tablones de madera de roble"
+          lore:
+            - "&7Costo: &62 Oro"
+            - ""
+            - "&7Buen bloque para defender tu cama."
+            - "&7Fuerte contra picos."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        obsidian:
+          name: "<color>Obsidian"
+          lore:
+            - "&7Costo: &22 Emeralds"
+            - ""
+            - "&7Extreme protection for your bed."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+    melee:
+      category_title: "Armas"
+      category_item_name: "&bArmas"
+      contents:
+        stone_sword:
+          name: "<color>Espada de piedra"
+          lore:
+            - "&7Costo: &f5 Hierro"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        iron_sword:
+          name: "<color>Espada de hierro"
+          lore:
+            - "&7Costo: &64 Gold"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        diamond_sword:
+          name: "<color>Espada de diamante"
+          lore:
+            - "&7Costo: &22 Esmeraldas"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        stick_(knockback_i):
+          name: "<color>Palo (Empuje I)"
+          lore:
+            - "&7Costo: &63 Oro"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+    armor:
+      category_title: "Armadura"
+      category_item_name: "&bArmadura"
+      contents:
+        chainmail_boots:
+          name: "<color>Armadura de Malla permanente"
+          lore:
+            - "&7Costo: &f20 Hierro"
+            - ""
+            - "&7Pantalones y botas de cota de malla"
+            - "&7con las que siempre aparecerás."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        iron_boots:
+          name: "<color>Armadura de Hierro permanente"
+          lore:
+            - "&7Costo: &68 Oro"
+            - ""
+            - "&7Pantalones y botas de hierro con"
+            - "&7las que siempre aparecerás."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        diamond_boots:
+          name: "<color>Armadura de Diamante permanente"
+          lore:
+            - "&7Costo: &24 Esmeraldas"
+            - ""
+            - "&7Pantalones y botas de diamante con"
+            - "&7las que siempre aparecerás."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+    tools:
+      category_title: "Herramientas"
+      category_item_name: "&bHerramientas"
+      contents:
+        shears:
+          name: "<color>Tijeras permanentes"
+          lore:
+            - "&7Costo: &f10 Hierro"
+            - ""
+            - "&7Genial para deshacerse de la lana."
+            - "&7Siempre aparecerás con estas tijeras."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        wooden_pickaxe:
+          levels:
+            '1':
+              name: "<color>Pico de Madera (Eficiencia I)"
+              lore:
+                - "&7Costo: &f5 Hierro"
+                - "&7Nivel: &eI"
+                - ""
+                - "&7Este es un artículo actualizable."
+                - "&7Perderá 1 nivel al morir!"
+                - ""
+                - "&7Reaparecerás permanentemente"
+                - "&7con al menos el nivel más bajo."
+                - ""
+                - "<favorite_status>"
+                - "<buy_status>"
+            '2':
+              name: "<color>Pico de Hierro (Eficiencia II)"
+              lore:
+                - "&7Costo: &f5 Hierro"
+                - "&7Nivel: &eII"
+                - ""
+                - "&7Este es un artículo actualizable."
+                - "&7Perderá 1 nivel al morir!"
+                - ""
+                - "&7Reaparecerás permanentemente"
+                - "&7con al menos el nivel más bajo."
+                - ""
+                - "<favorite_status>"
+                - "<buy_status>"
+            '3':
+              name: "<color>Pico de Oro (Eficiencia II, Filo II)"
+              lore:
+                - "&7Costo: &62 Oro"
+                - "&7Nivel: &eIII"
+                - ""
+                - "&7Este es un artículo actualizable."
+                - "&7Perderá 1 nivel al morir!"
+                - ""
+                - "&7Reaparecerás permanentemente"
+                - "&7con al menos el nivel más bajo."
+                - ""
+                - "<favorite_status>"
+                - "<buy_status>"
+            '4':
+              name: "<color>Pico de Diamante (Eficiencia (III))"
+              lore:
+                - "&7Costo: &64 Oro"
+                - "&7Nivel: &eIV"
+                - ""
+                - "&7Este es un artículo actualizable."
+                - "&7Perderá 1 nivel al morir!"
+                - ""
+                - "&7Reaparecerás permanentemente"
+                - "&7con al menos el nivel más bajo."
+                - ""
+                - "<favorite_status>"
+                - "<buy_status>"
+        wooden_axe:
+          levels:
+            '1':
+              name: "<color>Hacha de Madera (Eficiencia I)"
+              lore:
+                - "&7Costo: &f5 Hierro"
+                - "&7Nivel: &eI"
+                - ""
+                - "&7Este es un artículo actualizable."
+                - "&7Perderá 1 nivel al morir!"
+                - ""
+                - "&7Reaparecerás permanentemente"
+                - "&7con al menos el nivel más bajo."
+                - ""
+                - "<favorite_status>"
+                - "<buy_status>"
+            '2':
+              name: "<color>Hacha de Hierro (Eficiencia II)"
+              lore:
+                - "&7Costo: &f5 Oro"
+                - "&7Nivel: &eII"
+                - ""
+                - "&7Este es un artículo actualizable."
+                - "&7Perderá 1 nivel al morir!"
+                - ""
+                - "&7Reaparecerás permanentemente"
+                - "&7con al menos el nivel más bajo."
+                - ""
+                - "<favorite_status>"
+                - "<buy_status>"
+            '3':
+              name: "<color>Hacha de Oro (Eficiencia III)"
+              lore:
+                - "&7Costo: &62 Oro"
+                - "&7Nivel: &eIII"
+                - ""
+                - "&7Este es un artículo actualizable."
+                - "&7Perderá 1 nivel al morir!"
+                - ""
+                - "&7Reaparecerás permanentemente"
+                - "&7con al menos el nivel más bajo."
+                - ""
+                - "<favorite_status>"
+                - "<buy_status>"
+            '4':
+              name: "<color>Hacha de diamante (Eficiencia IV)"
+              lore:
+                - "&7Costo: &64 Oro"
+                - "&7Nivel: &eIV"
+                - ""
+                - "&7Este es un artículo actualizable."
+                - "&7¡Perderá 1 nivel al morir!"
+                - ""
+                - "&7Reaparecerás permanentemente"
+                - "&7con al menos el nivel más bajo."
+                - ""
+                - "<favorite_status>"
+                - "<buy_status>"
+    ranged:
+      category_title: "A distancia"
+      category_item_name: "&bA distancia"
+      contents:
+        arrow:
+          name: "<color>Flecha"
+          lore:
+            - "&7Costo: &61 Oro"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        bow:
+          name: "<color>Arco"
+          lore:
+            - "&7Costo: &66 Oro"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        bow_(power_i):
+          name: "<color>Arco (Poder I)"
+          lore:
+            - "&7Costo: &612 Oro"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        bow_(power_i__punch_i):
+          name: "<color>Arco (Poder I, Punch I)"
+          lore:
+            - "&7Costo: &24 Esmeraldas"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+    potions:
+      category_title: "Pociones"
+      category_item_name: "&bPociones"
+      contents:
+        speed_ii_potion_(45_seconds):
+          name: "<color>Velocidad II Pocion (45 segundos)"
+          lore:
+            - "&7Costo: &21 Esmeraldas"
+            - ""
+            - "&9Velocidad II (0:45)"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        jump_v_potion_(45_seconds):
+          name: "<color>Salto V Pocion (45 segundos)"
+          lore:
+            - "&7Costo: &21 Esmeraldas"
+            - ""
+            - "&9Impulso de salto (0:45)"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        invisibility_potion_(30_seconds):
+          name: "<color>Invisibility Potion (30 seconds)"
+          lore:
+            - "&7Costo: &21 Emerald"
+            - ""
+            - "&9Invisibilidad completa (0:30)"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+    utility:
+      category_title: "Utilidad"
+      category_item_name: "&bUtilidad"
+      contents:
+        golden_apple:
+          name: "<color>Manzana Dorada"
+          lore:
+            - "&7Costo: &62 Oro"
+            - ""
+            - "&7Curación completa."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        bedbug:
+          item: "Bedbug"
+          name: "<color>Bedbug"
+          lore:
+            - "&7Costo: &f20 Hierro"
+            - ""
+            - "&7Genera peces plateados donde aterriza"
+            - "&7la bola de nieve para distraer a tus"
+            - "&7enemigos. Dura 15 segundos."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        dream_defender:
+          item: "Defensor de los sueños"
+          name: "<color>Defensor de los sueños"
+          lore:
+            - "&7Costo: &f100 Hierro"
+            - ""
+            - "&7Golem de Hierro para ayudar a defender tu"
+            - "&7base. Dura 4 minutos."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        fireball:
+          item: "Fireball"
+          name: "<color>Fireball"
+          lore:
+            - "&7Costo: &f20 Hierro"
+            - ""
+            - "&7¡Haz clic derecho para iniciar!"
+            - "&7Genial para derribar a los enemigos"
+            - "&7que caminan sobre puentes delgados"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        tnt:
+          name: "<color>TNT"
+          lore:
+            - "&7Costo: &62 Oro"
+            - ""
+            - "&7Se enciende instantáneamente,"
+            - "&7apropiado para explotar cosas!"
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        ender_pearl:
+          name: "<color>Perlas del enderman"
+          lore:
+            - "&7Costo: &22 Esmeralda"
+            - ""
+            - "&7La forma más rápida de invadir"
+            - "&7bases enemigas."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        water_bucket:
+          name: "<color>Cubo de agua"
+          lore:
+            - "&7Costo: &61 Oro"
+            - ""
+            - "&7Great to slow down approaching"
+            - "&7enemies. Can also protect"
+            - "&7against TNT."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        bridge_egg:
+          item: "Huevo de puente"
+          name: "<color>Huevo de puente"
+          lore:
+            - "&7Costo: &21 Esmeraldas"
+            - ""
+            - "&7Este huevo crea un puente en su"
+            - "&7rastro después de ser arrojado."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        magic_milk:
+          item: "Leche mágica"
+          name: "<color>Leche mágica"
+          lore:
+            - "&7Costo: &62 Oro"
+            - ""
+            - "&7Evite activar trampas durante"
+            - "&730 segundos después de consumir."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        sponge:
+          name: "<color>Esponja"
+          lore:
+            - "&7Costo: &61 Oro"
+            - ""
+            - "&7Genial para absorber agua."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+        compact_pop-up_tower:
+          item: "&6Torre emergente compacta"
+          name: "<color>Torre emergente compacta"
+          lore:
+            - "&7Costo: &f12 Hierro"
+            - ""
+            - "&7Coloca una defensa emergente."
+            - ""
+            - "<favorite_status>"
+            - "<buy_status>"
+
+time_format:
+  second: "segundo"
+  seconds: "segundos"
+  minute: "minuto"
+  minutes: "minutos"
+  hour: "hora"
+  hours: "horas"
+  day: "día"
+  days: "días"
+  week: "semana"
+  weeks: "semanas"
+
+scoreboard:
+  lobby:
+    title: "&e&lBedWars"
+    lines:
+      - ""
+      - "Nivel: &7<bw-level>✯"
+      - ""
+      - "Progreso: &b<bw-experience>&7/&a<bw-experience_next_level>"
+      - " <bw-experience_bar>"
+      - ""
+      - "Puntos: &6<bw-points>"
+      - ""
+      - "Asesinatos Totales: &a<bw-total_all_kills>"
+      - "Victorias Totales: &a<bw-total_wins>"
+      - ""
+      - " &emc.minecraft.net"
+  solo:
+    waiting:
+      title: "&e&lBedWars"
+      status:
+        waiting: "&cEsperando jugadores<...>"
+        starting: "Iniciando en &a<time> <time_format>"
+      lines:
+        - "&7<date> &8<bw-server>"
+        - ""
+        - "Mapa: &a<bw-displayname>"
+        - "Jugadores: &a<bw-current_players>/<bw-max_players>"
+        - ""
+        - "<waiting_state>"
+        - ""
+        - "Versión: &a<bw-version>"
+        - "Modo: &a<bw-mode>"
+        - ""
+        - " &emc.minecraft.net"
+    game:
+      title: "&e&lBedWars"
+      format:
+        event:
+          generator: "<name> <tier> en &a<time>"
+          bed: "Destrucción de Cama en: &a<time>"
+          sudden: "Muerte Súbita en: &a<time>"
+          end: "Fin del Juego en: &a<time>"
+          default: "Tiempo de Juego: &a<time>"
+          restart: "Reiniciando en: &a<time>"
+        team:
+          line: "<team_color><team_initial> &f<team_name>: <team_state> <you_team>"
+          bed_destroyed: "&c<players>"
+          eliminated: "&c&l✘"
+          alive: "&a&l✓"
+          you: "&7TÚ"
+      lines:
+        - "&7<date> &8<bw-server>"
+        - ""
+        - "<event_format>"
+        - ""
+        - "<team_format>"
+        - ""
+        - " &emc.minecraft.net"
+  default:
+    waiting:
+      title: "&e&lBedWars"
+      status:
+        waiting: "&cEsperando jugadores<...>"
+        starting: "Iniciando en &a<time> <time_format>"
+      lines:
+        - "&7<date> &8<bw-server>"
+        - ""
+        - "Mapa: &a<bw-displayname>"
+        - "Jugadores: &a<bw-current_players>/<bw-max_players>"
+        - ""
+        - "<waiting_state>"
+        - ""
+        - "Versión: &a<bw-version>"
+        - "Modo: &a<bw-mode>"
+        - ""
+        - " &emc.minecraft.net"
+    game:
+      title: "&e&lBedWars"
+      format:
+        event:
+          generator: "<name> <tier> en &a<time>"
+          bed: "Destrucción de Cama en: &a<time>"
+          sudden: "Muerte Súbita en: &a<time>"
+          end: "Fin del Juego en: &a<time>"
+          default: "Tiempo de Juego: &a<time>"
+          restart: "Reiniciando en: &a<time>"
+        team:
+          line: "<team_color><team_initial> &f<team_name>: <team_state> <you_team>"
+          bed_destroyed: "&c<players>"
+          eliminated: "&c&l✘"
+          alive: "&a&l✓"
+          you: "&7TÚ"
+      lines:
+        - "&7<date> &8<bw-server>"
+        - ""
+        - "<event_format>"
+        - ""
+        - "<team_format>"
+        - ""
+        - "Asesinatos Finales: &a<bw-game_final_kills>"
+        - "Camas Destruidas: &a<bw-game_beds>"
+        - ""
+        - " &emc.minecraft.net"

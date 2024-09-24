@@ -1,0 +1,55 @@
+# They are the groups of arenas that you can create!
+# If you want to add a new one you can do it and restart with /sw reload
+# The statistics will be saved for each group, that is, the single and double statistics will not be combined.
+
+groups:
+  solo:
+    team_size: 1
+    points:
+      kill: 0
+      final_kill: 1
+      win: 2
+    experience:
+      kill: 1
+      final_kill: 5
+      win: 10
+  doubles:
+    team_size: 2
+    points:
+      kill: 0
+      final_kill: 1
+      win: 3
+    experience:
+      kill: 1
+      final_kill: 5
+      win: 10
+  trios:
+    team_size: 3
+    points:
+      kill: 0
+      final_kill: 1
+      win: 4
+    experience:
+      kill: 1
+      final_kill: 5
+      win: 10
+  quartets:
+    team_size: 4
+    points:
+      kill: 0
+      final_kill: 1
+      win: 5
+    experience:
+      kill: 1
+      final_kill: 5
+      win: 10
+  1vs1:
+    team_size: 1
+    points:
+      kill: 0
+      final_kill: 2
+      win: 5
+    experience:
+      kill: 1
+      final_kill: 5
+      win: 10

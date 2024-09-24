@@ -1,0 +1,4 @@
+ # Whether to exempt victims with the same weight as the operator.
+exempt-same: false
+ # Whether to enable this addon at all
+enable: true

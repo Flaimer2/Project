@@ -144,7 +144,7 @@ disable-death-message:
   - auth
   use-spawn-radius: false
 disable-creature-spawn:
-  enable: true
+  enable: false
   world:
   - lobby
   - auth

@@ -1,0 +1,30 @@
+Last-Words:
+  Hologram:
+    Title: "&fПоследние слова &a%player%&f:"
+    Content:
+      'default':
+        Message: "&fПожалуйста, возродите меня :("
+      'god':
+        Message: "&fТеперь я отправляюсь к богу((("
+        Permission: "murdermystery.lastwords.god"
+      'kill':
+        Message: "&fЗАЧЕМ ТЫ УБИЛ МЕНЯ?!!?"
+        Permission: "murdermystery.lastwords.kill"
+      'bug':
+        Message: "&f&fЭто был баг..."
+        Permission: "murdermystery.lastwords.bug"
+      'hacker':
+        Message: "&cЧувствую, что маньяк читак..."
+        Permission: "murdermystery.lastwords.hacker"
+      'family':
+        Message: "&fА У МЕНЯ БЫЛА СЕМЬЯ!"
+        Permission: "murdermystery.lastwords.family"
+      'gold':
+        Message: "&fЯ просто искал &eзолото&f ;c"
+        Permission: "murdermystery.lastwords.gold"
+      'what':
+        Message: "&fЗа чтоооо? Что я тебе сделал? Знай: я тебя ещё встречу..."
+        Permission: "murdermystery.lastwords.what"
+      'ihacker':
+        Message: "&fВот бы скачать читы... Хотя нет, я же нормальный :p"
+        Permission: "murdermystery.lastwords.ihacker"

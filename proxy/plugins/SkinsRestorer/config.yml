@@ -305,7 +305,7 @@ advanced:
 # Enable these on the dev's request
 dev:
     # Enable to start receiving debug messages about api requests & more.
-    debug: true
+    debug: false
 
 # End #
 

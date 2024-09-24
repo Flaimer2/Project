@@ -1,0 +1,89 @@
+dances:
+  '1':
+    id: anvil_rain
+    type: AnvilRain
+    price: 1000
+    permission: false
+    per_task: 10
+    size: 50
+  '2':
+    id: fireworks
+    type: Fireworks
+    price: 2000
+    permission: false
+    per_task: 5
+    size: 50
+  '3':
+    id: cold_snap
+    type: ColdSnap
+    price: 3000
+    permission: false
+  '4':
+    id: yee_haw
+    type: YeeHaw
+    price: 4000
+    permission: false
+  '5':
+    id: meteors
+    type: Meteors
+    price: 5000
+    permission: false
+    velocity: 1.0
+  '6':
+    id: night_shift
+    type: NightShift
+    price: 6000
+    permission: false
+  '7':
+    id: wither
+    type: Wither
+    price: 7000
+    permission: false
+  '8':
+    id: gravity
+    type: Gravity
+    price: 8000
+    permission: true
+  '9':
+    id: dragon
+    type: Dragon
+    price: 9000
+    permission: false
+  '10':
+    id: floating_lanterns
+    type: FloatingLanterns
+    price: 10000
+    permission: false
+    skull: name;<player>
+  '11':
+    id: pig_rain
+    type: PigRain
+    price: 11000
+    permission: false
+    per_task: 5
+    size: 50
+  '12':
+    id: war_sheep
+    type: WarSheep
+    price: 12000
+    permission: true
+  '13':
+    id: vulcan
+    type: Vulcan
+    price: 13000
+    permission: false
+  '14':
+    id: vulcan_wool
+    type: VulcanWool
+    price: 14000
+    permission: true
+  '15':
+    id: sheeps
+    type: Sheeps
+    price: 15000
+    permission: false
+  '16':
+    id: fly_carpet
+    type: FlyCarpet
+    price: 16000
+    permission: true

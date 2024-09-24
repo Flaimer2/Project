@@ -1,0 +1,61 @@
+effects:
+  '1':
+    id: squid_missile
+    type: SquidMissile
+    price: 500
+    permission: false
+  '2':
+    id: firework
+    type: Firework
+    price: 1000
+    permission: false
+  '3':
+    id: lightning_strike
+    type: Lightning
+    price: 1500
+    permission: false
+  '4':
+    id: lava_explosion
+    type: LavaExplosion
+    price: 2000
+    permission: false
+  '5':
+    id: pig_missile
+    type: PigMissile
+    price: 2500
+    permission: false
+  '6':
+    id: tornado
+    type: Tornado
+    price: 3000
+    permission: false
+  '7':
+    id: thief
+    type: Thief
+    price: 3500
+    permission: false
+  '8':
+    id: egg_explosion
+    type: EggExplosion
+    price: 4000
+    permission: false
+  '9':
+    id: blizzard
+    type: Blizzard
+    price: 4500
+    permission: true
+  '10':
+    id: pig_explosion
+    type: PigExplosion
+    price: 5000
+    permission: true
+  '11':
+    id: lady_bug
+    type: LadyBug
+    price: 5500
+    permission: true
+  '12':
+    id: fire_dance
+    type: FireDance
+    price: 6000
+    permission: true

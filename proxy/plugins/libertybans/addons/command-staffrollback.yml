@@ -1,0 +1,20 @@
+no-punishments-to-rollback: '&e%OPERATOR%&7 has not punished anyone in the specified time period.'
+no-permission: '&cSorry, you cannot use this.'
+ # If enabled, users will be sent a confirmation message asking if they wish to proceed with the rollback
+ # The confirmation feature uses a confirmation code which is intended to be used with clickable text.
+confirmation:
+   # The amount of time, in seconds, before the confirmation code expires.
+  expiration-time-seconds: 60
+  message:
+    - '&fВы хотите &cудалить &fвсе наказания, наложенные администратором &a%OPERATOR%&f? Всего &a%COUNT% &fнаказаний'
+    - '&fЭто действие необратимо. Нажмите, чтобы ||&aПодтвердить||ttp:&фНажмите, чтобы подтвердить||cmd:/libertybans staffrollback confirm:%CONFIRMATION_CODE%'
+   # Whether to enable this feature
+  enable: true
+  nonexistent-code: '&fВремя на подтверждение &cистекло&f!'
+  invalid-code: '&cНеверный &fкод подтверждения'
+
+invalid-duration: '&fУказана &cнедопустимая &fпродолжительность'
+usage: '&fИспользуйте: &a/libertybans staffrollback администратор время'
+success: '&fОткат &aвыполнен &fдля &e%COUNT%&f наказаний, наложенных администратором &a%OPERATOR%'
+ # Whether to enable this addon at all
+enable: true

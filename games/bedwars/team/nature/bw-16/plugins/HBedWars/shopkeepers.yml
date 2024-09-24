@@ -1,0 +1,71 @@
+default: adventure_time
+
+# Place the url of https://mineskin.org/
+
+shops:
+  '1':
+    id: adventure_time
+    price: 0
+    permission: false
+    shop_texture: "https://mineskin.org/a15e643c21a04e3d82c51447ecfdec06"
+    upgrades_texture: "https://mineskin.org/5a0d3339b0d840e3bbf004dc030b6e9b"
+  '2':
+    id: amongus
+    price: 0
+    permission: false
+    shop_texture: "https://mineskin.org/30a3f93dd1b3404db925b77c4aefc04b"
+    upgrades_texture: "https://mineskin.org/b1f61557575c44d899ab337f6b0b2ae0"
+  '3':
+    id: astronaut
+    price: 1000
+    permission: false
+    shop_texture: "https://mineskin.org/316d317ca1534868aca4f89a5deea78e"
+    upgrades_texture: "https://mineskin.org/263fa209d4c748f6b1b7029020bc649f"
+  '4':
+    id: axolotl
+    price: 2000
+    permission: false
+    shop_texture: "https://mineskin.org/ccd408a37a7b4e9dae055967fad67775"
+    upgrades_texture: "https://mineskin.org/7f008d04a6c24441b997b467160912e9"
+  '5':
+    id: covid
+    price: 3000
+    permission: false
+    shop_texture: "https://mineskin.org/7f533341883e43b093cd1e21d754279e"
+    upgrades_texture: "https://mineskin.org/d4ae35a51ac04cbcb435c2f0fe36dade"
+  '6':
+    id: alien
+    price: 4000
+    permission: false
+    shop_texture: "https://mineskin.org/9f11d33982c447b3abb50d64c67bfa1c"
+    upgrades_texture: "https://mineskin.org/4aad38ec29b1489d953505cca31eec67"
+  '7':
+    id: pokemon
+    price: 5000
+    permission: false
+    shop_texture: "https://mineskin.org/2efbd53d9a9b4639a0a74b1af3ce97e0"
+    upgrades_texture: "https://mineskin.org/325a9185e4ed4bbb9ac52cf05f0726bf"
+  '8':
+    id: naruto
+    price: 6000
+    permission: false
+    shop_texture: "https://mineskin.org/b6ca482d121e4b79ab4713bcba99c3ad"
+    upgrades_texture: "https://mineskin.org/0c60517185724df0bb463520d5115dde"
+  '9':
+    id: police
+    price: 7000
+    permission: false
+    shop_texture: "https://mineskin.org/13aca1e6398f41488d022eaece8ddb21"
+    upgrades_texture: "https://mineskin.org/76c8b72d394d435798b4b96d45ec373f"
+  '10':
+    id: dragonball
+    price: 8000
+    permission: false
+    shop_texture: "https://mineskin.org/3c2267050ab04c48a3991cb7a0b284a9"
+    upgrades_texture: "https://mineskin.org/9655712abb5a44c09e5f33885eb46e57"
+  '11':
+    id: lgbt
+    price: 9000
+    permission: false
+    shop_texture: "https://mineskin.org/19fb05c7b7454c98b7633d7ef47786bb"
+    upgrades_texture: "https://mineskin.org/2aca85c8033b4fc38352543a9f4bcdd7"

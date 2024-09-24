@@ -1,0 +1,7 @@
+_DEFAULT_:
+  tabprefix: "%thebridge_player_base_color_only%⚑ %vault_prefix%"
+  tagprefix: "%thebridge_player_base_color_only%⚑ &f"
+  tabsuffix: ""
+  tagsuffix: ""
+
+per-world: {}

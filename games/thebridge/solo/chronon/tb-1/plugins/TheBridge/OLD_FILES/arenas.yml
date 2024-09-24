@@ -1,0 +1,44 @@
+instances:
+  Chronon:
+    lobbylocation: Chronon,26.5,100.0,0.5,90.00073,0.0
+    endlocation: Chronon,26.5,100.0,0.5,90.00073,0.0
+    spectatorlocation: Chronon,0.5,110.0,0.5,270.00052,0.0
+    minimumplayers: 2
+    maximumplayers: 2
+    mapname: Chronon
+    world: Chronon
+    signs: [ ]
+    isdone: true
+    midlocation: Chronon,0.5,93.0,0.5,90.45078,0.0
+    arenalocation1: Chronon,41.0,80.0,-14.0,0.0,0.0
+    arenalocation2: Chronon,-41.0,100.0,19.0,0.0,0.0
+    maximumsize: 1
+    modevalue: 5
+    mode: POINTS
+    resetblocks: 0
+    bases:
+      '0':
+        color: RED
+        baselocation1: Chronon,41.0,80.0,-14.0,0.0,0.0
+        baselocation2: Chronon,23.0,99.0,19.0,0.0,0.0
+        portallocation1: Chronon,36.0,92.0,-2.0,0.0,0.0
+        portallocation2: Chronon,32.0,92.0,2.0,0.0,0.0
+        portalhologram: Chronon,34.0,94.0,0.0,0.0,0.0
+        cagelocation1: Chronon,28.0,104.0,-2.0,0.0,0.0
+        cagelocation2: Chronon,24.0,104.0,2.0,0.0,0.0
+        spawnpoint: Chronon,26.5,105.0,0.5,90.00245,0.0
+        respawnpoint: Chronon,26.5,100.0,0.5,-269.99762,0.0
+        isdone: true
+      '1':
+        color: BLUE
+        baselocation1: Chronon,-41.0,99.0,19.0,0.0,0.0
+        baselocation2: Chronon,-23.0,80.0,-14.0,0.0,0.0
+        portallocation1: Chronon,-36.0,92.0,-2.0,0.0,0.0
+        portallocation2: Chronon,-32.0,92.0,2.0,0.0,0.0
+        portalhologram: Chronon,-34.0,94.0,0.0,0.0,0.0
+        cagelocation1: Chronon,-24.0,104.0,-2.0,0.0,0.0
+        cagelocation2: Chronon,-28.0,104.0,2.0,0.0,0.0
+        spawnpoint: Chronon,-25.5,105.0,0.5,270.0031,0.0
+        respawnpoint: Chronon,-25.5,100.0,0.5,-89.99661,0.0
+        isdone: true
+    resettime: 5

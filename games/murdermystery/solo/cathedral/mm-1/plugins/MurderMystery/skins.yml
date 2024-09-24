@@ -1,0 +1,46 @@
+Skins:
+  Sword:
+    'default':
+      Material: IRON_SWORD
+    'WoodenSword':
+      Material: WOODEN_SWORD
+      Permission: "murdermystery.skins.sword.wooden"
+    'StoneSword':
+      Material: STONE_SWORD
+      Permission: "murdermystery.skins.sword.stone"
+    'Stick':
+      Material: STICK
+      Permission: "murdermystery.skins.sword.stick"
+    'IronShovel':
+      Material: IRON_SHOVEL
+      Permission: "murdermystery.skins.sword.ironshovel"
+    'GoldPickaxe':
+      Material: GOLD_PICKAXE
+      Permission: "murdermystery.skins.sword.goldpickaxe"
+    'Bone':
+      Material: BONE
+      Permission: "murdermystery.skins.sword.bone"
+    'Carrot':
+      Material: CARROT
+      Permission: "murdermystery.skins.sword.carrot"
+    'BlazeRod':
+      Material: BLAZE_ROD
+      Permission: "murdermystery.skins.sword.blazerod"
+    'GoldSword':
+      Material: GOLD_SWORD
+      Permission: "murdermystery.skins.sword.goldsword"
+    'DiamondSword':
+      Material: DIAMOND_SWORD
+      Permission: "murdermystery.skins.sword.diamondsword"
+    'DiamondAxe':
+      Material: DIAMOND_AXE
+      Permission: "murdermystery.skins.sword.diamondaxe"
+    'DiamondHoe':
+      Material: DIAMOND_HOE
+      Permission: "murdermystery.skins.sword.diamondhoe"
+    'Shears':
+      Material: SHEARS
+      Permission: "murdermystery.skins.sword.shears"
+    'Dandelion':
+      Material: YELLOW_FLOWER
+      Permission: "murdermystery.skins.sword.dandelion"

@@ -1,0 +1,106 @@
+holograms:
+  # /setup hologram add <id> soloWins
+  soloWins:
+    # Configure the sound in sounds.yml
+    # If you don't want it to have no sound just remove this setting
+    sound: leaderboard
+    lines:
+      - soloWins
+      - soloWinsMonthly
+      - soloWinsWeekly
+      - soloWinsDaily
+  # /setup hologram add <id> soloFinalKills
+  soloFinalKills:
+    lines:
+      - soloFinalKills
+      - soloFinalKillsMonthly
+      - soloFinalKillsWeekly
+      - soloFinalKillsDaily
+  totalWins:
+    lines:
+      - totalWins
+      - totalWinsMonthly
+      - totalWinsWeekly
+      - totalWinsDaily
+  totalFinalKills:
+    lines:
+      - totalFinalKills
+      - totalFinalKillsMonthly
+      - totalFinalKillsWeekly
+      - totalFinalKillsDaily
+
+# DATES TYPES
+#   gamesPlayed   |   blockPlaced
+#   finalKills    |   tntPlaced
+#   kills         |   projectileShoot
+#   finalDeaths   |   projectileHit
+#   deaths        |   fireballShoot
+#   bedsBroken    |   emeraldCollected
+#   bedsLost      |   diamondCollected
+#   wins          |   goldCollected
+#   winSteak      |   ironCollected
+#   blockBreak
+leaderboards:
+  soloWins:
+    group: solo
+    data: wins
+  soloWinsDaily:
+    group: solo
+    data: wins
+    time: DAILY
+  soloWinsWeekly:
+    group: solo
+    data: wins
+    time: WEEKLY
+  soloWinsMonthly:
+    group: solo
+    data: wins
+    time: MONTHLY
+
+  soloFinalKills:
+    group: solo
+    data: finalKills
+  soloFinalKillsDaily:
+    group: solo
+    data: finalKills
+    time: DAILY
+  soloFinalKillsWeekly:
+    group: solo
+    data: finalKills
+    time: WEEKLY
+  soloFinalKillsMonthly:
+    group: solo
+    data: finalKills
+    time: MONTHLY
+
+  totalWins:
+    total: true
+    data: wins
+  totalWinsDaily:
+    total: true
+    data: wins
+    time: DAILY
+  totalWinsWeekly:
+    total: true
+    data: wins
+    time: WEEKLY
+  totalWinsMonthly:
+    total: true
+    data: wins
+    time: MONTHLY
+
+  totalFinalKills:
+    total: true
+    data: finalKills
+  totalFinalKillsDaily:
+    total: true
+    data: finalKills
+    time: DAILY
+  totalFinalKillsWeekly:
+    total: true
+    data: finalKills
+    time: WEEKLY
+  totalFinalKillsMonthly:
+    total: true
+    data: finalKills
+    time: MONTHLY

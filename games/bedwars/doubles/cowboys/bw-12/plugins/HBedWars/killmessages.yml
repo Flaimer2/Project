@@ -1,0 +1,14 @@
+# In the language configuration files you can configure the murder messages.
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html
+
+default: default
+
+taunts:
+  '1':
+    id: default
+    price: 0
+    permission: false
+  '2':
+    id: dramatic
+    price: 2500
+    permission: false

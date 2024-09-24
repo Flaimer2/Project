@@ -1,0 +1,78 @@
+settings:
+  # This item is for the votes, if they are deactivated it will not appear
+  VOTES_ITEM: votes
+  TRACKER_ITEM: tracker_shop
+  # These items will be given upon entering
+  JOIN: ''
+  # These items will be given when entering a match
+  WAITING_GAME:
+    - leave
+  # These items will be given to you in spectator mode
+  SPECTATOR_GAME:
+    - teleport_spectator
+    - options_spectator
+    - leave
+
+# You can add the items you want
+items:
+  servers:
+    material: compass
+    amount: 1
+    data: 0
+    slot: 0
+    actions:
+      # COMMAND;COMMAND TO EXECUTE
+      - command;bw
+      # CONSOLE;COMMAND EXECUTE BY CONSOLE
+      - console;say <player> hi
+      # MENU;MENU WHICH YOU WANT TO OPEN
+      - menu;stats
+      # SOUND;SOUND-PITCH-YAW
+      - sound;level_up-1F-1F
+  cosmetics:
+    material: bed
+    slot: 3
+    actions:
+      - menu;cosmetics
+      - sound;level_up-0.1F-0.1F
+  random:
+    material: paper
+    slot: 5
+    actions:
+      - command;join random
+  team_selector:
+    material: 399
+    slot: 0
+    actions:
+      - menu;team_selector
+  votes:
+    material: paper
+    slot: 1
+    actions:
+      - menu;votes
+  teleport_spectator:
+    material: compass
+    slot: 0
+    actions:
+      - menu;teleport_spectator
+  options_spectator:
+    material: 404
+    slot: 4
+    actions:
+      - menu;options_spectator
+  play_again:
+    material: paper
+    slot: 7
+    actions:
+      - command;join again
+      - sound;level_up-1F-1F
+  leave:
+    material: bed
+    slot: 8
+    actions:
+      - command;leave
+  # Item for the tracker shop, it is necessary. DO NOT DELETE
+  tracker_shop:
+    material: compass
+    actions:
+      - menu;tracker_communication

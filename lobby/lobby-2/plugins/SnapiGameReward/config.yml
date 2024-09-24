@@ -3,8 +3,55 @@ rewards:
     message: 'Вы получили за игру %reward%'
     separator: ', '
     rewardsType:
+      SNAPICOIN:
+        format: '%amount% coin'
+        formatPriority: 2
+        range:
+          WIN: '2-3|0.1'
+          KILL: '1-2|0.1'
+          DEATH: '1-2'
+      VAULT:
+        format: '%amount%$'
+        formatPriority: 1
+        range:
+          WIN: '2000-3000'
+          KILL: '1000-2000'
+          DEATH: '1000-2000'
       EXPERIENCE:
         format: '%amount%exp'
         formatPriority: 0
         range:
+          WIN: '1000-2000'
           KILL: '500-1000'
+          DEATH: '300-500'
+  THEBRIDGE:
+    message: 'Вы получили за игру %reward%'
+    separator: ', '
+    rewardsType:
+      SNAPICOIN:
+        format: '%amount% coin'
+        formatPriority: 2
+        range:
+          WIN: '2-3|0.1'
+          LOSE: '2-3|0.1'
+          KILL: '1-2|0.1'
+          DEATH: '1-2|0.1'
+          POINT: '1-2|0.1'
+      VAULT:
+        format: '%amount%$'
+        formatPriority: 1
+        range:
+          WIN: '2000-3000'
+          LOSE: '2000-3000'
+          KILL: '1000-2000'
+          DEATH: '1000-2000'
+          POINT: '1-2|0.1'
+      EXPERIENCE:
+        format: '%amount%exp'
+        formatPriority: 0
+        range:
+          WIN: '1000-2000'
+          LOSE: '2000-3000'
+          KILL: '500-1000'
+          DEATH: '300-500'
+          POINT: '1-2|0.1'

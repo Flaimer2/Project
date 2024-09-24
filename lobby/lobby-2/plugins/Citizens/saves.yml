@@ -31,7 +31,7 @@ npc:
         age: 0
         locked: true
       spawned: true
-    traitnames: type,owner,location,skintrait,inventory,age,scoreboardtrait,mounttrait,spawned
+    traitnames: scoreboardtrait,spawned,location,age,inventory,type,skintrait,owner,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -65,7 +65,7 @@ npc:
         age: 0
         locked: true
       spawned: true
-    traitnames: type,owner,location,skintrait,inventory,scoreboardtrait,age,mounttrait,spawned
+    traitnames: scoreboardtrait,spawned,location,age,inventory,type,skintrait,owner,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -98,7 +98,7 @@ npc:
         age: 0
         locked: true
       spawned: true
-    traitnames: type,owner,location,skintrait,inventory,age,scoreboardtrait,mounttrait,spawned
+    traitnames: scoreboardtrait,spawned,location,age,inventory,type,owner,skintrait,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -132,25 +132,25 @@ npc:
         age: 0
         locked: true
       spawned: true
-    traitnames: type,owner,location,skintrait,inventory,age,scoreboardtrait,mounttrait,spawned
+    traitnames: scoreboardtrait,spawned,location,age,inventory,type,owner,skintrait,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
       usedefaultstuckaction: true
   '2':
     metadata:
-      cached-skin-uuid: 59fc4db7-8908-40fb-b4f7-148f95b1b875
-      cached-skin-uuid-name: 6548dcc8-8510-4e75-9b31-916fc1399146
+      cached-skin-uuid: d4152112-57d9-428e-a264-2f6639b10023
+      cached-skin-uuid-name: flaimerpro
       nameplate-visible: 'false'
     name: games
     uuid: f7d8a007-101f-4a9a-886d-986bb402e5bf
     traits:
       skintrait:
         fetchDefaultSkin: true
-        signature: w49dBHExpQzBZ7ZPpA5JYuNWHiXs1XLWYzF/Xx7k49+lWHG77fhRja96N3L2p1zC7O0UJQTgMopWvHCQByWU2MLfOeBG02hQF0zye3Q9DeWOE/jeKD7U/UrdQHobIfhxOWUoaZjlIJaMbCdCRpv4PNbq2DVMrg5PrSEO8fprmzZNArmtyaBPDFOSZgUZUAxAgFwV4Ex9rre6Uy211warGL8uXLGZW46JM4jVANZZPn6MUU//uTM6EFzAXLfs+JRUP/UogQT8JhYFHOz+yMRVvHdexnPR4ehRKIovPp1kHuQkgvIQ/ac3V7XPBths/6+lNm8pc7idDP/F3J1pYCR5Pjh20TyPdn7XebX4OfpCF6MrlSP7jKIFOp51Ff22ZB9FY38JDkU8syezq9EVFkivnpBMonEq8AlkwZC+6kF02+WMi2Z9bQbWMpWgPXHMuslVxmSjahzvpVNhKqlVk8oAbMbzMYh6I5JufqaXiSP/ixnGHuqp/tV9qO8QGckLiuE5XE8BvpvIW+uT1cMg8aP96TZ5JAMa+BRUWRTvvA0AaN7py5g1oj76Ujh0cZ4sc+Bg/ckybqQEffnfCKPpcjVmQlrwXtwOSsn8szIGOuGaWgILVMrfU43+iVKS+FpFW6W9cuI/y0Fg4OQDVFSfd95UTZgBvt3goH0cg3U0946yafQ=
-        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTcyMjg1ODM4NjI3OCwKICAicHJvZmlsZUlkIiA6ICJkOWYxNTlhYWYxZjY0NGZlOTEwOTg0NzI2ZDBjMWJjMCIsCiAgInByb2ZpbGVOYW1lIiA6ICJtYW5vbmFtaXNzaW9uRyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9jM2FkYWQ1YjViYzUzYTZlZjkzYzdiY2Q4YzllNWIzYjE0OTU1MzlmZmQ5YzhjNWUxNDNmMmJlZGEzNzBlMjRlIgogICAgfQogIH0KfQ==
+        signature: hPfpMlCZ9wReEzMtRQBZsH0eS54oFwptVtba0aGeesbg99u0haIlGuU0uVgzfYK8CN3FwPfWMdez3MJqUvmla7COmx3w36Xa43TkcYia7J3t1pns+U5+eMC/Cv97zQr+KNhpPSlhAJAE22JrwJm4vel5hbC+Dss2ayRcjikuCs3OG98aUiDodQXfZDQNhSbc7VgBBumN5uuyzod4rfF3RCmeD0yH1eG+6VIOr4zhZ/NLRBMmeKTZ9ZExWUnJuE7QTy0rRc4p/YEQc2EQu/9Q7cO33z/NzrO+8B2ilK7NWMaOU1ljKNZlEF892YlxMBWMPvTV1SjtWtqKCaBClOfRfpmf2r0isI+dd34pKr1DCfSyb/5LXh/ndlx+WXA22a1CrtMps85TkYvmPvCUF4BNUhuNexW2IxdyJtAn9ij+sec/xhKKS4rBuSXww7HckUO7oD7omrRd7E5rfAXQB+WOXLrQrb2o0CjXl5UPlADI/+ud5kb4fg9jzNmmjblRw2Lg01Sl0+m8888cepH04Tw5qYHHRAHqCNoZ27yLmmSK2paTc2+yTT4rW5u/XtcNO5ySylNzbZJSW7hTnTtu9mXMW7SEhEetB7j3Aqqq2dfnH1BW+BuMMugpAR0SJSZ1jh+6dBduGWb5PoM0UmTANlfw0Tc9Y0mWtDI/AGj4l3iLydM=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTcyMzEwNDEzNTA2OSwKICAicHJvZmlsZUlkIiA6ICJkNDE1MjExMjU3ZDk0MjhlYTI2NDJmNjYzOWIxMDAyMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJGbGFpbWVyUHJvIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzc3MmEwNDEwMGI3Y2E3MTFmMjZlMTk0YzMzMzA1NTA2YjlkYzVkZmI2ZGQ0Y2NjYzJlZjg5NGU0ZWNkNDZlZDgiCiAgICB9CiAgfQp9
         updateSkins: false
-        skinName: 6548dcc8-8510-4e75-9b31-916fc1399146
+        skinName: FlaimerPro
       location:
         bodyYaw: 0.0
         world: lobby
@@ -166,7 +166,7 @@ npc:
         age: 0
         locked: true
       spawned: true
-    traitnames: type,owner,location,skintrait,inventory,age,scoreboardtrait,mounttrait,spawned
+    traitnames: scoreboardtrait,spawned,location,age,inventory,type,owner,skintrait,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -200,7 +200,7 @@ npc:
         age: 0
         locked: true
       spawned: true
-    traitnames: type,owner,location,skintrait,inventory,scoreboardtrait,age,mounttrait,spawned
+    traitnames: scoreboardtrait,spawned,location,age,inventory,type,owner,skintrait,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -234,7 +234,7 @@ npc:
         age: 0
         locked: true
       spawned: true
-    traitnames: type,owner,location,skintrait,inventory,scoreboardtrait,age,mounttrait,spawned
+    traitnames: scoreboardtrait,spawned,location,age,inventory,type,owner,skintrait,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false

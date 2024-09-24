@@ -1,0 +1,20 @@
+# The size of the images must be 128x128
+# and the format must be .png or .jpg
+
+sprays:
+  '1':
+    id: bed
+    price: 1000
+    permission: false
+    image: bed.jpg
+  '2':
+    id: tnt
+    price: 2000
+    permission: false
+    image: tnt.png
+  '3':
+    id: water_bucket
+    price: 3000
+    permission: true
+    image: water_bucket.png
+
