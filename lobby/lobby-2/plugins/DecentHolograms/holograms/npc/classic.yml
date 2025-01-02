@@ -1,4 +1,4 @@
-location: lobby:-268,5:33,5:-179,5
+location: lobby:-255,5:33,5:-180,5
 enabled: true
 display-range: 48
 update-range: 48
@@ -7,13 +7,13 @@ facing: 0.0
 down-origin: false
 pages:
 - lines:
-  - content: '&e&lClassic'
+  - content: '&b&lSkyWars'
     height: 0.3
   - content: '&7&l⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀'
     height: 0.3
-  - content: '&fОнлайн: &a%balancer_count:classic%'
+  - content: '&fОнлайн: &a%balancer_count:skywars%'
     height: 0.3
-  - content: '&fПопулярность: %progress_bar_{balancer_count:classic}_c:&a■_p:&7■_r:&7■_l:10_m:{balancer_count:all}_fullbar:&a■■■■■■■■■■%'
+  - content: '&fПопулярность: %progress_bar_{balancer_count:skywars}_c:&a■_p:&7■_r:&7■_l:10_m:{balancer_count:all}_fullbar:&a■■■■■■■■■■%'
     height: 0.3
   - content: '&aНажмите, чтобы войти'
     height: 0.3

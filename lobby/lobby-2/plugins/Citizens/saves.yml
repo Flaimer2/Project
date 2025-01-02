@@ -31,7 +31,7 @@ npc:
         age: 0
         locked: true
       spawned: true
-    traitnames: scoreboardtrait,spawned,location,age,inventory,type,skintrait,owner,mounttrait
+    traitnames: mounttrait,type,inventory,owner,location,age,spawned,scoreboardtrait,skintrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -53,7 +53,7 @@ npc:
       location:
         bodyYaw: 0.0
         world: lobby
-        x: '-273.5'
+        x: '-245.5'
         y: '30.0'
         z: '-177.5'
         yaw: '0.0'
@@ -65,7 +65,7 @@ npc:
         age: 0
         locked: true
       spawned: true
-    traitnames: scoreboardtrait,spawned,location,age,inventory,type,skintrait,owner,mounttrait
+    traitnames: mounttrait,type,owner,inventory,location,spawned,scoreboardtrait,age,skintrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -86,9 +86,9 @@ npc:
       location:
         bodyYaw: 0.0
         world: lobby
-        x: '-250.5'
+        x: '-273.5'
         y: '30.0'
-        z: '-179.5'
+        z: '-177.5'
         yaw: '0.0'
         pitch: '0.0'
       type: PLAYER
@@ -98,7 +98,7 @@ npc:
         age: 0
         locked: true
       spawned: true
-    traitnames: scoreboardtrait,spawned,location,age,inventory,type,owner,skintrait,mounttrait
+    traitnames: mounttrait,type,owner,inventory,location,age,spawned,scoreboardtrait,skintrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -120,74 +120,6 @@ npc:
       location:
         bodyYaw: 0.0
         world: lobby
-        x: '-255.5'
-        y: '30.0'
-        z: '-180.5'
-        yaw: '0.0'
-        pitch: '0.0'
-      type: PLAYER
-      owner:
-        uuid: 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-      age:
-        age: 0
-        locked: true
-      spawned: true
-    traitnames: scoreboardtrait,spawned,location,age,inventory,type,owner,skintrait,mounttrait
-    navigator:
-      speedmodifier: '1.0'
-      avoidwater: false
-      usedefaultstuckaction: true
-  '2':
-    metadata:
-      cached-skin-uuid: d4152112-57d9-428e-a264-2f6639b10023
-      cached-skin-uuid-name: flaimerpro
-      nameplate-visible: 'false'
-    name: games
-    uuid: f7d8a007-101f-4a9a-886d-986bb402e5bf
-    traits:
-      skintrait:
-        fetchDefaultSkin: true
-        signature: hPfpMlCZ9wReEzMtRQBZsH0eS54oFwptVtba0aGeesbg99u0haIlGuU0uVgzfYK8CN3FwPfWMdez3MJqUvmla7COmx3w36Xa43TkcYia7J3t1pns+U5+eMC/Cv97zQr+KNhpPSlhAJAE22JrwJm4vel5hbC+Dss2ayRcjikuCs3OG98aUiDodQXfZDQNhSbc7VgBBumN5uuyzod4rfF3RCmeD0yH1eG+6VIOr4zhZ/NLRBMmeKTZ9ZExWUnJuE7QTy0rRc4p/YEQc2EQu/9Q7cO33z/NzrO+8B2ilK7NWMaOU1ljKNZlEF892YlxMBWMPvTV1SjtWtqKCaBClOfRfpmf2r0isI+dd34pKr1DCfSyb/5LXh/ndlx+WXA22a1CrtMps85TkYvmPvCUF4BNUhuNexW2IxdyJtAn9ij+sec/xhKKS4rBuSXww7HckUO7oD7omrRd7E5rfAXQB+WOXLrQrb2o0CjXl5UPlADI/+ud5kb4fg9jzNmmjblRw2Lg01Sl0+m8888cepH04Tw5qYHHRAHqCNoZ27yLmmSK2paTc2+yTT4rW5u/XtcNO5ySylNzbZJSW7hTnTtu9mXMW7SEhEetB7j3Aqqq2dfnH1BW+BuMMugpAR0SJSZ1jh+6dBduGWb5PoM0UmTANlfw0Tc9Y0mWtDI/AGj4l3iLydM=
-        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTcyMzEwNDEzNTA2OSwKICAicHJvZmlsZUlkIiA6ICJkNDE1MjExMjU3ZDk0MjhlYTI2NDJmNjYzOWIxMDAyMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJGbGFpbWVyUHJvIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzc3MmEwNDEwMGI3Y2E3MTFmMjZlMTk0YzMzMzA1NTA2YjlkYzVkZmI2ZGQ0Y2NjYzJlZjg5NGU0ZWNkNDZlZDgiCiAgICB9CiAgfQp9
-        updateSkins: false
-        skinName: FlaimerPro
-      location:
-        bodyYaw: 0.0
-        world: lobby
-        x: '-245.5'
-        y: '30.0'
-        z: '-177.5'
-        yaw: '0.0'
-        pitch: '0.0'
-      type: PLAYER
-      owner:
-        uuid: 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
-      age:
-        age: 0
-        locked: true
-      spawned: true
-    traitnames: scoreboardtrait,spawned,location,age,inventory,type,owner,skintrait,mounttrait
-    navigator:
-      speedmodifier: '1.0'
-      avoidwater: false
-      usedefaultstuckaction: true
-  '1':
-    metadata:
-      cached-skin-uuid: 92e91de1-b4e1-491d-ab6e-2977c5fc9f08
-      cached-skin-uuid-name: fa216bbc-97a1-4f03-825a-6b15818a5694
-      nameplate-visible: 'false'
-    name: classic
-    uuid: 8d061bc6-3bda-4625-82e7-b88977fdcdf1
-    traits:
-      skintrait:
-        fetchDefaultSkin: true
-        signature: NlkfUrnyBuhGZ72ochckYpI/KmnrZqhtBiTTw+lsvzeaKRb8hVNJUZHamzC2rY1uU1wyJPNKNJaVPxbkdKRa2Knz6JXSpvdFz0U4gU7wBoos4P3csrUun08wSaz6IMIu2nNT7h45pbg1Y0I5VhmM5pT1+CbzyPodPz6D4I5NtjYC2s/stkVb863G4N5srwXolpFZocrFYv88I1HNRQ102IiEXg6Bl2xnbTq+PPc/9fFRkUSxPssEyup3Wdd5F6+Z/juzk5e5a73YUwknXNyfD+rI24kx6f4JpwBeQNm8b+PSnoRHs8yVlVy5q1o+vJ4x5+dFz9NzHB6f6QC/U17UrJ9UKS6thTxiTie2qEJupkevCRj3V6/nn6eMT0u0g8hSVZ1ZYmc4s4y7fCI832kmbZWRSOstDkn2xMUbLBySe4m7HxdP9m+IOV9ppQx0bl3URaa01oWuhdMCPO2TsBrTsTjxLpTV9JbY0YE26PNEE1tDQhAXRaEi+9EgAokzZtAuEHXROvOKWJ79WNmuJDXU02H8avWXLHxPm0s5kLc9BktiI++SmlDrtZvwVA1DTv2msagJP6hz8n6DvrDNWC4AjAXF6QstMRAS3WqR2YWeJRJemqzg0gfvckfWZDc0OWU0h/308g8iPGFyFV1huNcAUltj7yqCIhoUQoN4N3F0MWQ=
-        skinName: fa216bbc-97a1-4f03-825a-6b15818a5694
-        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTYxNjYxODUyNTkzMSwKICAicHJvZmlsZUlkIiA6ICI4MmM2MDZjNWM2NTI0Yjc5OGI5MWExMmQzYTYxNjk3NyIsCiAgInByb2ZpbGVOYW1lIiA6ICJOb3ROb3RvcmlvdXNOZW1vIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2Q5NjYzNzcwYTQ0NTBhYmRlNTM0ZTM4MmU0NzI4NDQ5NzU3MDRjNmM3YzQ4MmQzZjc4MWFjNDE5ZGVlMjE5MzYiCiAgICB9CiAgfQp9
-        updateSkins: false
-      location:
-        bodyYaw: 0.0
-        world: lobby
         x: '-268.5'
         y: '30.0'
         z: '-179.5'
@@ -200,7 +132,75 @@ npc:
         age: 0
         locked: true
       spawned: true
-    traitnames: scoreboardtrait,spawned,location,age,inventory,type,owner,skintrait,mounttrait
+    traitnames: mounttrait,type,owner,inventory,location,age,spawned,scoreboardtrait,skintrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '2':
+    metadata:
+      cached-skin-uuid: c2c78a7e-25b4-4592-8214-0ec3e1d5bcb0
+      cached-skin-uuid-name: x_kabanos_wtf
+      nameplate-visible: 'false'
+    name: games
+    uuid: f7d8a007-101f-4a9a-886d-986bb402e5bf
+    traits:
+      skintrait:
+        fetchDefaultSkin: true
+        signature: YO/CVIcZ07nItrCVix2eOcLEBAAwqhWbeQzwQG2Kpw2L5kekRLS5VQZwG3s0hkYfpNe5UE4/kyqJizB0N1BgJjlR3rHW3WyOiyu5skzvXafwG21vEkoI2Vh7UR8nb1falnaNdlcdgSq/3WC3Fq/pL0N/gZmzBSRXYIPc59osetAmVeAvbrC0Cv6AyQqV0GjgcGylFzeXxQnlkAgnbpiUC6gvhL3gqr6CUP8RuUrXV7o7tuTs+9z5MN/CyXDKmr6sXSC8Pmfu9TIdUUN1I9AvHOjtmoX3cJhCs3Tgj8JUXgMLte5V7r30xS6Q3fKUsxadMaunfI8LkRJrWtvOi3Ugnaad1Ky5POGTTPamev+RgrsRRfBChgEIrm6rfIvTwroGlekwIeeNXFrXbr/GRZLONvfgzpxUbYsz64dLY04Cq4fXM2v6UJEhuy5NKy28njymlfYO9AgWXkJebUhR0hMgvbSHBNpeLkFG5Uj1v8PpLaa/sMh8T1xLjk+JrImCdDVK2f9f2i3Obg3YZmQPpA8kmWJ7lQnTRk09KZGzyDUkZHzepcSLQ0ecyVgG3yv+PPIBRexsfkwzlep9RklM/128KvB3R0MljUKC7rR/juPQj5HxFAhN/4K3VpLiV2Ro5MugjA6meiGFS0c65Bcj1R6ulU3Jri4zx4jH02fAAEKzjqU=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTczNTE1NzUwOTk5NywKICAicHJvZmlsZUlkIiA6ICJjMmM3OGE3ZTI1YjQ0NTkyODIxNDBlYzNlMWQ1YmNiMCIsCiAgInByb2ZpbGVOYW1lIiA6ICJ4X2thYmFub3NfV1RGIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzU2ZmNjMzkwMDI2NWZjY2YyY2E5MGUwYjU5Njg2MTc3OWUzZWZjYmNjYjcxYzk4OGM5ZWI4MjVlNGFiNDEyYSIKICAgIH0KICB9Cn0=
+        updateSkins: false
+        skinName: x_kabanos_WTF
+      location:
+        bodyYaw: 0.0
+        world: lobby
+        x: '-250.5'
+        y: '30.0'
+        z: '-179.5'
+        yaw: '0.0'
+        pitch: '0.0'
+      type: PLAYER
+      owner:
+        uuid: 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
+      age:
+        age: 0
+        locked: true
+      spawned: true
+    traitnames: mounttrait,type,owner,inventory,location,age,spawned,scoreboardtrait,skintrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '1':
+    metadata:
+      cached-skin-uuid: 64e21032-fb8d-4e5e-8876-9fef6cbd3078
+      cached-skin-uuid-name: hadgers
+      nameplate-visible: 'false'
+    name: classic
+    uuid: 8d061bc6-3bda-4625-82e7-b88977fdcdf1
+    traits:
+      skintrait:
+        fetchDefaultSkin: true
+        signature: EnlqJyvLqmLUpyLQzo50OHxKcmH+evz5QQXxtmeH85yz1RbwiIaHUbjnlc7JcszPUZVVQoVD+c69b2Hpml/db2AXWxSX8wOYCrRbW3NDer4QTgkdnDCjJNRRyaXQU2Yic+hL8i3/L4DEET3OPx1Fs3+Q/MVXhe48BLcXf3xyVH1bI7FdEEaM/Q9OjW6Skj8b63Ee45hrbawrAgf3yyUWylWCHVW82YPr5semPX95p7cLbtMzBl6t2L+YK0NKnMz+6whHGYV7yEb1TO4bopXRSyYzWeKCsABm+zqVTIhEdle0hBrnILJMRP7wInmbhuIRGJvPK8GwdEtPuJQzpRhn+1H9Rev6nFoft5GW+olmwy1G1dytZyLfHQmsR3Qbr1spQc7u9VcUOwoSyS+ib48JueeNmuwteIbzyVIVKEidKktujyuc/mr9TinMM0xjJs+vDxOJ4uPiCSTBV98CJyW24JeM61FcD8fvKmEc6et0zOmarZzJ7NHA0bHV7PdT4U9+r/PdB8cMMD9B+NZud3vV5hBjlETXQXMF+EB+lCqGGbSd8gUixtHVBEV2IdayWZHlR0GY9oMoFxl4n1ArWBN4cW6HmeBTQ1ZGwlcJ9q9kLOnKugRarc2U24gz1kesD75HLrsPRiP38I1NByfKpGi+FOF8etHnfVI2t41QiU/wcE0=
+        skinName: hadgers
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTczNTE0NDEzMDIyMSwKICAicHJvZmlsZUlkIiA6ICI2NGUyMTAzMmZiOGQ0ZTVlODg3NjlmZWY2Y2JkMzA3OCIsCiAgInByb2ZpbGVOYW1lIiA6ICJoYWRnZXJzIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2U1MGY0MjE4ODkwZTYyMjY5ZTgxNDkxNzE1ZmRlYjk4NTg0OGZlZjMxMjUxMjIyMTFlNGYxNWVhZWNmZmUzZDUiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ==
+        updateSkins: false
+      location:
+        bodyYaw: 0.0
+        world: lobby
+        x: '-255.5'
+        y: '30.0'
+        z: '-180.5'
+        yaw: '0.0'
+        pitch: '0.0'
+      type: PLAYER
+      owner:
+        uuid: 67b6efe6-bf52-3c13-8d21-291fd6b1fe76
+      age:
+        age: 0
+        locked: true
+      spawned: true
+    traitnames: mounttrait,type,inventory,owner,location,spawned,scoreboardtrait,age,skintrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -234,7 +234,7 @@ npc:
         age: 0
         locked: true
       spawned: true
-    traitnames: scoreboardtrait,spawned,location,age,inventory,type,owner,skintrait,mounttrait
+    traitnames: mounttrait,type,owner,inventory,location,scoreboardtrait,age,spawned,skintrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false

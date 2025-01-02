@@ -9,9 +9,5 @@ MaxInactivity: 30
 Players:
   b8a47f4c-108e-33dd-a551-34497268b20f:
     player: Danuk16
-    timestamp: 1723752437
-    sound: true
-  67b6efe6-bf52-3c13-8d21-291fd6b1fe76:
-    player: FlaimerPro
-    timestamp: 1723062005
+    timestamp: 1734806553
     sound: true

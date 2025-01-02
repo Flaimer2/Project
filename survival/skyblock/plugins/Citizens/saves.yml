@@ -78,7 +78,7 @@ npc:
             globalcooldown: -1
             n: -1
             delay: -1
-    traitnames: mounttrait,gravity,scoreboardtrait,owner,skintrait,hologramtrait,inventory,spawned,type,lookclose,location,equipment,commandtrait
+    traitnames: gravity,owner,type,location,skintrait,mounttrait,scoreboardtrait,hologramtrait,equipment,inventory,commandtrait,spawned,lookclose
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -154,7 +154,7 @@ npc:
         lines:
           '0': '&aНажмите, чтобы открыть меню'
           '1': '&e&lУлучшение острова'
-    traitnames: mounttrait,gravity,scoreboardtrait,owner,skintrait,hologramtrait,rotationtrait,inventory,spawned,type,lookclose,location,equipment,commandtrait
+    traitnames: gravity,rotationtrait,owner,type,location,skintrait,mounttrait,scoreboardtrait,equipment,hologramtrait,inventory,commandtrait,spawned,lookclose
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -213,7 +213,7 @@ npc:
         lines:
           '0': '&aНажмите, чтобы открыть меню'
           '1': '&b&lЗадания'
-    traitnames: mounttrait,spawned,gravity,inventory,type,scoreboardtrait,owner,location,skintrait,equipment,hologramtrait,commandtrait
+    traitnames: location,skintrait,mounttrait,scoreboardtrait,equipment,hologramtrait,gravity,inventory,commandtrait,spawned,owner,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -271,7 +271,7 @@ npc:
             globalcooldown: -1
             n: -1
             delay: -1
-    traitnames: mounttrait,inventory,gravity,spawned,type,scoreboardtrait,owner,location,skintrait,hologramtrait,equipment,commandtrait
+    traitnames: location,skintrait,mounttrait,scoreboardtrait,hologramtrait,equipment,gravity,inventory,commandtrait,spawned,owner,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -325,7 +325,7 @@ npc:
             globalcooldown: -1
             n: -1
             delay: -1
-    traitnames: mounttrait,gravity,inventory,spawned,type,scoreboardtrait,owner,location,skintrait,equipment,hologramtrait,commandtrait
+    traitnames: location,skintrait,mounttrait,scoreboardtrait,equipment,hologramtrait,gravity,inventory,commandtrait,spawned,owner,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -380,7 +380,7 @@ npc:
             globalcooldown: 0
             n: -1
             delay: 0
-    traitnames: mounttrait,spawned,inventory,gravity,type,scoreboardtrait,owner,location,skintrait,hologramtrait,equipment,commandtrait
+    traitnames: location,skintrait,mounttrait,scoreboardtrait,hologramtrait,equipment,gravity,inventory,commandtrait,spawned,owner,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -429,7 +429,7 @@ npc:
             globalcooldown: -1
             n: -1
             delay: -1
-    traitnames: mounttrait,spawned,inventory,type,age,scoreboardtrait,owner,location,skintrait,hologramtrait,commandtrait
+    traitnames: location,skintrait,mounttrait,age,scoreboardtrait,hologramtrait,inventory,commandtrait,spawned,owner,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -486,7 +486,7 @@ npc:
             globalcooldown: 0
             n: -1
             delay: 0
-    traitnames: mounttrait,spawned,inventory,type,age,scoreboardtrait,owner,location,skintrait,hologramtrait,commandtrait
+    traitnames: location,skintrait,mounttrait,age,scoreboardtrait,hologramtrait,inventory,commandtrait,spawned,owner,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -543,7 +543,7 @@ npc:
             globalcooldown: -1
             n: -1
             delay: -1
-    traitnames: mounttrait,inventory,spawned,type,age,scoreboardtrait,owner,location,skintrait,hologramtrait,commandtrait
+    traitnames: location,skintrait,mounttrait,age,scoreboardtrait,hologramtrait,inventory,commandtrait,spawned,owner,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -580,7 +580,7 @@ npc:
           '0': '&aЖдите в следующем сезоне!'
           '1': '&fУ вас &6&lОбычный &fуровень'
           '2': '&b&lSnapi&b&lPass'
-    traitnames: mounttrait,inventory,spawned,type,age,scoreboardtrait,owner,location,skintrait,hologramtrait
+    traitnames: location,skintrait,mounttrait,scoreboardtrait,age,hologramtrait,inventory,spawned,owner,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -637,7 +637,7 @@ npc:
           '0': '&aНажмите, чтобы телепортироваться'
           '1': '&fИли напишите &b/arena leave'
           '2': '&c&lВыйти с арены'
-    traitnames: mounttrait,inventory,spawned,type,age,scoreboardtrait,owner,location,skintrait,hologramtrait,commandtrait
+    traitnames: location,skintrait,mounttrait,age,scoreboardtrait,hologramtrait,inventory,commandtrait,spawned,owner,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false

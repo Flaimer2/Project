@@ -1,4 +1,4 @@
-location: lobby:-273,5:32,3:-177,5
+location: lobby:-245.5:32,3:-177.5
 enabled: true
 display-range: 48
 update-range: 48
@@ -7,6 +7,6 @@ facing: 0.0
 down-origin: false
 pages:
 - lines:
-  - content: '&cСкоро...'
+  - content: '&c&lСкоро...'
     height: 0.3
   actions: {}

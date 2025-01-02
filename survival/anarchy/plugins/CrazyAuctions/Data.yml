@@ -1,17 +1,2 @@
 Items: {}
-OutOfTime/Cancelled:
-  '1':
-    Seller: Danuk16
-    Full-Time: 1723634820654
-    StoreID: 170210
-    Item:
-      ==: org.bukkit.inventory.ItemStack
-      type: IRON_BLOCK
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: §aБлок привата
-        lore:
-        - '§a§fМаксимум владельцев: §a2'
-        - '§a§fМаксимум участников: §a9'
-        internal: H4sIAAAAAAAAAONiYOBg4MxNrPBNzU1KLWJgNOZg4ABy/cvzQDxDBgCp0K6YIQAAAA==
+OutOfTime/Cancelled: {}
